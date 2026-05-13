@@ -1,0 +1,67 @@
+package io.github.lucideicons.kmp.core
+
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.unit.dp
+import io.github.lucideicons.kmp.core.model.LucideIconKey
+import io.github.lucideicons.kmp.core.model.LucideIconMetadata
+import io.github.lucideicons.kmp.core.registry.BuiltInIconRegistrar
+import io.github.lucideicons.kmp.core.registry.DefaultIconRegistry
+import io.github.lucideicons.kmp.core.registry.IconRenderParameters
+import io.github.lucideicons.kmp.core.registry.LucideIconCreator
+import kotlin.test.Test
+import kotlin.test.assertEquals
+import kotlin.test.assertNotNull
+import kotlin.test.assertSame
+import kotlin.test.assertTrue
+
+class IconRegistryTest {
+    @Test
+    fun lazilyCreatesAndCachesIcons() {
+        val registry = DefaultIconRegistry()
+        var creations = 0
+
+        registry.register(
+            metadata = LucideIconMetadata(LucideIconKey("demo")),
+            creator = LucideIconCreator {
+                creations += 1
+                ImageVector.Builder("demo", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+
+        assertEquals(0, creations)
+        val first = registry.get("demo")
+        val second = registry.get("demo")
+
+        assertEquals(1, creations)
+        assertSame(first, second)
+    }
+
+    @Test
+    fun returnsMetadataWithoutCreatingImageVector() {
+        val registry = DefaultIconRegistry()
+        var creations = 0
+        registry.register(
+            metadata = LucideIconMetadata(LucideIconKey("demo"), displayName = "Demo"),
+            creator = LucideIconCreator {
+                creations += 1
+                ImageVector.Builder("demo", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+
+        val metadata = registry.metadata("demo")
+
+        assertEquals("Demo", metadata?.displayName)
+        assertEquals(0, creations)
+    }
+
+    @Test
+    fun resolvesGeneratedIcons() {
+        val registry = DefaultIconRegistry().apply {
+            BuiltInIconRegistrar.registerInto(this)
+        }
+
+        assertTrue(registry.contains("activity"))
+        assertNotNull(registry.get("activity"))
+        assertNotNull(registry.resolve("activity", IconRenderParameters(strokeWidth = 3f)))
+    }
+}
