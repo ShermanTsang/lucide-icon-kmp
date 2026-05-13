@@ -11,5 +11,7 @@ data class IconRenderParameters(
 }
 
 fun interface ParameterizedIconProvider {
-    fun create(parameters: IconRenderParameters = IconRenderParameters()): ImageVector
+    fun create(parameters: IconRenderParameters): ImageVector
 }
+
+fun ParameterizedIconProvider.create(): ImageVector = create(IconRenderParameters())

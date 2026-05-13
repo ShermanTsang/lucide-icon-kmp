@@ -1,0 +1,25 @@
+.gradle/
+.kotlin/
+
+# Gradle and Kotlin build outputs
+build/
+**/build/
+out/
+
+# Kotlin/JS and Wasm local caches
+kotlin-js-store/
+
+# Local environment files
+local.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# Android build artifacts
+captures/
+.externalNativeBuild/
+
+# OS files
+.DS_Store
+Thumbs.db

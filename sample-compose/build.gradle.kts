@@ -5,9 +5,19 @@ plugins {
     alias(libs.plugins.compose.compiler)
 }
 
+@OptIn(org.jetbrains.kotlin.gradle.ExperimentalWasmDsl::class)
 kotlin {
     androidTarget()
     jvm("desktop")
+    wasmJs {
+        moduleName = "sample-compose"
+        browser {
+            commonWebpackConfig {
+                outputFileName = "sample-compose.js"
+            }
+        }
+        binaries.executable()
+    }
     iosX64()
     iosArm64()
     iosSimulatorArm64()

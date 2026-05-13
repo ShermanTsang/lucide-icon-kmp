@@ -4,7 +4,6 @@ import androidx.compose.ui.graphics.vector.ImageVector
 
 internal class IconFactory {
     private val cachedIcons = mutableMapOf<String, ImageVector>()
-    private val cacheLock = Any()
 
     fun create(name: String, entry: IconEntry, parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
         val provider = entry.parameterizedProvider
@@ -12,10 +11,8 @@ internal class IconFactory {
             return provider.create(parameters)
         }
 
-        return synchronized(cacheLock) {
-            cachedIcons.getOrPut(name) {
-                entry.creator.create()
-            }
+        return cachedIcons.getOrPut(name) {
+            entry.creator.create()
         }
     }
 }

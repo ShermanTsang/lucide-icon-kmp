@@ -5,9 +5,13 @@ plugins {
     alias(libs.plugins.compose.compiler)
 }
 
+@OptIn(org.jetbrains.kotlin.gradle.ExperimentalWasmDsl::class)
 kotlin {
     androidTarget()
     jvm("desktop")
+    wasmJs {
+        browser()
+    }
     iosX64()
     iosArm64()
     iosSimulatorArm64()

@@ -5,6 +5,7 @@ import io.github.lucideicons.kmp.core.generated.icons.airplayProvider
 import io.github.lucideicons.kmp.core.generated.icons.arrowRightProvider
 import io.github.lucideicons.kmp.core.registry.LucideIconCreator
 import io.github.lucideicons.kmp.core.registry.MutableIconRegistry
+import io.github.lucideicons.kmp.core.registry.create
 
 internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
     registry.register(

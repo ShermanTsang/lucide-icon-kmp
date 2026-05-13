@@ -1,5 +1,7 @@
 package io.github.lucideicons.kmp.core.model
 
+import kotlin.jvm.JvmInline
+
 @JvmInline
 value class LucideIconKey(val value: String) {
     init {

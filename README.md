@@ -7,13 +7,14 @@ A Kotlin / Kotlin Multiplatform project that wraps Lucide Icons for Compose Mult
 - `lucide-core`: shared icon models, metadata, lazy registry, search, and built-in icon registration.
 - `lucide-compose`: Compose Multiplatform UI components including `LucideIcon` and `LucideIconPicker`.
 - `lucide-generator`: JVM generator that reads Lucide SVG files and emits Kotlin source files and indexes.
-- `sample-compose`: Android, Desktop, and iOS sample entry points demonstrating preview, picker usage, and custom icons.
+- `sample-compose`: Android, Desktop, iOS, and Web sample entry points demonstrating preview, picker usage, and custom icons.
 
 ## Platform Support
 
 - Android: supported via Compose Android.
 - Desktop: supported via Compose Desktop.
 - iOS: supported via Compose Multiplatform iOS entry points.
+- Web: supported via Compose Multiplatform `wasmJs` in the browser.
 
 ## Usage
 
@@ -62,6 +63,20 @@ The generator reads SVG files and emits Kotlin source outputs for icon files and
 ```
 
 Generated icon files are intended to be committed so consumers do not need to regenerate them during normal library usage.
+
+## Run Web Sample
+
+Launch the browser sample with:
+
+```bash
+./gradlew :sample-compose:wasmJsBrowserDevelopmentRun
+```
+
+Build the production web distribution with:
+
+```bash
+./gradlew :sample-compose:wasmJsBrowserDistribution
+```
 
 ## Search Behavior
 
