@@ -1,0 +1,54 @@
+package io.github.lucideicons.kmp.compose.picker
+
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
+
+data class LucideIconPickerStyle(
+    val containerPadding: PaddingValues = PaddingValues(0.dp),
+    val containerVerticalSpacing: Dp = 0.dp,
+    val containerBackgroundColor: Color = Color.Unspecified,
+    val containerShape: Shape,
+    val searchBar: LucideIconPickerSearchBarStyle,
+    val categories: LucideIconPickerCategoryTabsStyle,
+    val grid: LucideIconPickerGridStyle,
+)
+
+data class LucideIconPickerSearchBarStyle(
+    val height: Dp = 0.dp,
+    val shape: Shape,
+    val backgroundColor: Color = Color.Unspecified,
+    val borderColor: Color = Color.Unspecified,
+    val borderWidth: Dp = 0.dp,
+    val contentPadding: PaddingValues = PaddingValues(0.dp),
+    val labelText: String = "",
+    val labelTextStyle: TextStyle = TextStyle.Default,
+    val textStyle: TextStyle = TextStyle.Default,
+    val cursorColor: Color = Color.Unspecified,
+)
+
+data class LucideIconPickerCategoryTabsStyle(
+    val chipSpacing: Dp = 0.dp,
+    val chipContentPadding: PaddingValues = PaddingValues(0.dp),
+    val chipShape: Shape,
+    val chipBorderWidth: Dp = 0.dp,
+    val unselectedBackgroundColor: Color = Color.Unspecified,
+    val unselectedBorderColor: Color = Color.Unspecified,
+    val unselectedContentColor: Color = Color.Unspecified,
+    val selectedBackgroundColor: Color = Color.Unspecified,
+    val selectedBorderColor: Color = Color.Unspecified,
+    val selectedContentColor: Color = Color.Unspecified,
+    val allLabelText: String = "",
+    val textStyle: TextStyle = TextStyle.Default,
+)
+
+data class LucideIconPickerGridStyle(
+    val horizontalSpacing: Dp = 0.dp,
+    val verticalSpacing: Dp = 0.dp,
+    val itemPadding: PaddingValues = PaddingValues(0.dp),
+    val itemVerticalSpacing: Dp = 0.dp,
+    val labelTextStyle: TextStyle = TextStyle.Default,
+)

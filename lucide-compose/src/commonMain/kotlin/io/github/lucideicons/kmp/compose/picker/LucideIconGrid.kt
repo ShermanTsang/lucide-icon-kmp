@@ -8,13 +8,12 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.material3.Text
+import androidx.compose.foundation.text.BasicText
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
-import androidx.compose.ui.unit.dp
 import io.github.lucideicons.kmp.compose.LucideIcon
 import io.github.lucideicons.kmp.core.model.LucideIconMetadata
 
@@ -27,20 +26,21 @@ internal fun LucideIconGrid(
     strokeWidth: Float,
     onIconSelected: (LucideIconMetadata) -> Unit,
     modifier: Modifier = Modifier,
+    style: LucideIconPickerGridStyle,
 ) {
     LazyVerticalGrid(
         columns = GridCells.Fixed(columns),
         modifier = modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp),
+        horizontalArrangement = Arrangement.spacedBy(style.horizontalSpacing),
+        verticalArrangement = Arrangement.spacedBy(style.verticalSpacing),
     ) {
         items(icons, key = { it.key.value }) { metadata ->
             Column(
                 modifier = Modifier
                     .clickable { onIconSelected(metadata) }
-                    .padding(8.dp),
+                    .padding(style.itemPadding),
                 horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.spacedBy(6.dp),
+                verticalArrangement = Arrangement.spacedBy(style.itemVerticalSpacing),
             ) {
                 LucideIcon(
                     name = metadata.key.value,
@@ -48,7 +48,10 @@ internal fun LucideIconGrid(
                     color = iconColor,
                     strokeWidth = strokeWidth,
                 )
-                Text(text = metadata.displayName)
+                BasicText(
+                    text = metadata.displayName,
+                    style = style.labelTextStyle,
+                )
             }
         }
     }

@@ -1,5 +1,6 @@
 package io.github.lucideicons.kmp.compose.picker
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -7,6 +8,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -27,6 +29,7 @@ fun LucideIconPicker(
     strokeWidth: Float = LucideIconDefaults.StrokeWidth,
     showSearchBar: Boolean = true,
     showCategories: Boolean = true,
+    style: LucideIconPickerStyle = LucideIconPickerDefaults.style(),
     onIconSelected: (LucideIconMetadata) -> Unit,
 ) {
     val categories = remember(registry) { LucideIconCategory.entries }
@@ -38,13 +41,25 @@ fun LucideIconPicker(
     }
 
     Column(
-        modifier = modifier.fillMaxSize().padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp),
+        modifier = modifier
+            .fillMaxSize()
+            .then(
+                if (style.containerBackgroundColor != Color.Unspecified) {
+                    Modifier
+                        .clip(style.containerShape)
+                        .background(style.containerBackgroundColor)
+                } else {
+                    Modifier
+                },
+            )
+            .padding(style.containerPadding),
+        verticalArrangement = Arrangement.spacedBy(style.containerVerticalSpacing),
     ) {
         if (showSearchBar) {
             LucideIconSearchBar(
                 query = state.query,
                 onQueryChange = { state.query = it },
+                style = style.searchBar,
             )
         }
         if (showCategories) {
@@ -52,6 +67,7 @@ fun LucideIconPicker(
                 categories = categories,
                 selectedCategory = state.selectedCategory,
                 onCategorySelected = { state.selectedCategory = it },
+                style = style.categories,
             )
         }
         LucideIconGrid(
@@ -61,6 +77,7 @@ fun LucideIconPicker(
             iconColor = iconColor,
             strokeWidth = strokeWidth,
             onIconSelected = onIconSelected,
+            style = style.grid,
         )
     }
 }
@@ -72,21 +89,24 @@ fun LucideIconPicker(
     onQueryChange: (String) -> Unit,
     onIconSelected: (String) -> Unit,
     registry: IconRegistry = LucideIcons.registry,
+    style: LucideIconPickerStyle = LucideIconPickerDefaults.style(),
 ) {
     val state = rememberLucideIconPickerState(initialQuery = query)
     state.query = query
     Column(
         modifier = modifier,
-        verticalArrangement = Arrangement.spacedBy(12.dp),
+        verticalArrangement = Arrangement.spacedBy(style.containerVerticalSpacing),
     ) {
         LucideIconSearchBar(
             query = query,
             onQueryChange = onQueryChange,
+            style = style.searchBar,
         )
         LucideIconPicker(
             state = state,
             registry = registry,
             showSearchBar = false,
+            style = style,
             onIconSelected = { onIconSelected(it.key.value) },
         )
     }

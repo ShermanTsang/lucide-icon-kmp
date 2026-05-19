@@ -5,6 +5,9 @@ plugins {
     alias(libs.plugins.compose.compiler)
 }
 
+val localPublish = providers.gradleProperty("localPublish").orNull == "true" ||
+    System.getenv("ACT") == "true"
+
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalWasmDsl::class)
 kotlin {
     androidTarget()
@@ -18,9 +21,11 @@ kotlin {
         }
         binaries.executable()
     }
-    iosX64()
-    iosArm64()
-    iosSimulatorArm64()
+    if (!localPublish) {
+        iosX64()
+        iosArm64()
+        iosSimulatorArm64()
+    }
 
     sourceSets {
         commonMain.dependencies {
