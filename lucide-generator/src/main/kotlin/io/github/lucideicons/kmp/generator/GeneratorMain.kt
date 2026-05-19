@@ -21,9 +21,7 @@ fun main(args: Array<String>) {
 
     val parser = SvgIconParser()
     val source = LucideSvgSource()
-    val icons = source.load(config.inputDirectory).map { (name, content) ->
-        parser.parse(name, content)
-    }
+    val icons = source.load(config.inputDirectory).map(parser::parse)
 
     val iconOutputDirectory = config.outputDirectory.resolve("icons")
     val fileWriter = IconFileWriter()

@@ -9,6 +9,10 @@ plugins {
 kotlin {
     androidTarget()
     jvm("desktop")
+    js(IR) {
+        browser()
+        useEsModules()
+    }
     wasmJs {
         browser()
     }

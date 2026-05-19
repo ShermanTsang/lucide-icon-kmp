@@ -1,0 +1,71 @@
+package io.github.lucideicons.kmp.core.generated.icons
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.PathParser
+import androidx.compose.ui.unit.dp
+import io.github.lucideicons.kmp.core.registry.IconRenderParameters
+import io.github.lucideicons.kmp.core.registry.ParameterizedIconProvider
+
+val mapPinPlusProvider = ParameterizedIconProvider { parameters ->
+    buildMapPinPlus(parameters)
+}
+
+private val mapPinPlusPath0 = PathParser().parsePathString("M19.914 11.105A7.298 7.298 0 0 0 20 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 1.202 0 32 32 0 0 0 .824-.738").toNodes()
+private val mapPinPlusPath1 = PathParser().parsePathString("M 15 10 A 3 3 0 1 0 9 10 A 3 3 0 1 0 15 10 Z").toNodes()
+private val mapPinPlusPath2 = PathParser().parsePathString("M16 18h6").toNodes()
+private val mapPinPlusPath3 = PathParser().parsePathString("M19 15v6").toNodes()
+
+private fun buildMapPinPlus(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
+    val iconSize = (parameters.size ?: 24.0f).dp
+    val strokeWidth = parameters.strokeWidth ?: 2.0f
+
+    return ImageVector.Builder(
+        name = "map-pin-plus",
+        defaultWidth = iconSize,
+        defaultHeight = iconSize,
+        viewportWidth = 24.0f,
+        viewportHeight = 24.0f,
+    ).apply {
+        addPath(
+            pathData = mapPinPlusPath0,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = mapPinPlusPath1,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = mapPinPlusPath2,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = mapPinPlusPath3,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+    }.build()
+}

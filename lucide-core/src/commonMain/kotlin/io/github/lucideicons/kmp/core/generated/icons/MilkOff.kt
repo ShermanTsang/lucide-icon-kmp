@@ -1,0 +1,71 @@
+package io.github.lucideicons.kmp.core.generated.icons
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.PathParser
+import androidx.compose.ui.unit.dp
+import io.github.lucideicons.kmp.core.registry.IconRenderParameters
+import io.github.lucideicons.kmp.core.registry.ParameterizedIconProvider
+
+val milkOffProvider = ParameterizedIconProvider { parameters ->
+    buildMilkOff(parameters)
+}
+
+private val milkOffPath0 = PathParser().parsePathString("M8 2h8").toNodes()
+private val milkOffPath1 = PathParser().parsePathString("M9 2v1.343M15 2v2.789a4 4 0 0 0 .672 2.219l.656.984a4 4 0 0 1 .672 2.22v1.131M7.8 7.8l-.128.192A4 4 0 0 0 7 10.212V20a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-3").toNodes()
+private val milkOffPath2 = PathParser().parsePathString("M7 15a6.47 6.47 0 0 1 5 0 6.472 6.472 0 0 0 3.435.435").toNodes()
+private val milkOffPath3 = PathParser().parsePathString("M 2 2 L 22 22").toNodes()
+
+private fun buildMilkOff(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
+    val iconSize = (parameters.size ?: 24.0f).dp
+    val strokeWidth = parameters.strokeWidth ?: 2.0f
+
+    return ImageVector.Builder(
+        name = "milk-off",
+        defaultWidth = iconSize,
+        defaultHeight = iconSize,
+        viewportWidth = 24.0f,
+        viewportHeight = 24.0f,
+    ).apply {
+        addPath(
+            pathData = milkOffPath0,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = milkOffPath1,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = milkOffPath2,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = milkOffPath3,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+    }.build()
+}

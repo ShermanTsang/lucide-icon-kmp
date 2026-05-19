@@ -4,6 +4,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 import io.github.lucideicons.kmp.core.model.LucideIconKey
 import io.github.lucideicons.kmp.core.model.LucideIconMetadata
+import io.github.lucideicons.kmp.core.model.LucideIconCategory
 import io.github.lucideicons.kmp.core.registry.BuiltInIconRegistrar
 import io.github.lucideicons.kmp.core.registry.DefaultIconRegistry
 import io.github.lucideicons.kmp.core.registry.IconRenderParameters
@@ -61,7 +62,12 @@ class IconRegistryTest {
         }
 
         assertTrue(registry.contains("activity"))
+        assertTrue(registry.contains("airplay"))
+        assertTrue(registry.contains("camera"))
+        assertTrue(registry.keys().size > 1000)
         assertNotNull(registry.get("activity"))
         assertNotNull(registry.resolve("activity", IconRenderParameters(strokeWidth = 3f)))
+        assertNotNull(registry.resolve("airplay", IconRenderParameters(strokeWidth = 1.5f)))
+        assertTrue(registry.byCategory(LucideIconCategory.Multimedia).isNotEmpty())
     }
 }

@@ -1,0 +1,4 @@
+commit=3c62e4bf
+source=https://github.com/lucide-icons/lucide
+svg_count=1695
+metadata_json_count=1695

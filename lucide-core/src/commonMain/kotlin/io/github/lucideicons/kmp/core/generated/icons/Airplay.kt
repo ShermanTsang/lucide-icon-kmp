@@ -6,7 +6,7 @@ import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import io.github.lucideicons.kmp.core.registry.IconRenderParameters
 import io.github.lucideicons.kmp.core.registry.ParameterizedIconProvider
@@ -15,39 +15,37 @@ val airplayProvider = ParameterizedIconProvider { parameters ->
     buildAirplay(parameters)
 }
 
+private val airplayPath0 = PathParser().parsePathString("M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1").toNodes()
+private val airplayPath1 = PathParser().parsePathString("m12 15 5 6H7Z").toNodes()
+
 private fun buildAirplay(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
-    val iconSize = (parameters.size ?: 24f).dp
-    val strokeWidth = parameters.strokeWidth ?: 2f
+    val iconSize = (parameters.size ?: 24.0f).dp
+    val strokeWidth = parameters.strokeWidth ?: 2.0f
 
     return ImageVector.Builder(
         name = "airplay",
         defaultWidth = iconSize,
         defaultHeight = iconSize,
-        viewportWidth = 24f,
-        viewportHeight = 24f,
+        viewportWidth = 24.0f,
+        viewportHeight = 24.0f,
     ).apply {
-        path(
+        addPath(
+            pathData = airplayPath0,
+            pathFillType = PathFillType.NonZero,
             fill = null,
             stroke = SolidColor(Color.Black),
             strokeLineWidth = strokeWidth,
             strokeLineCap = StrokeCap.Round,
             strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = airplayPath1,
             pathFillType = PathFillType.NonZero,
-        ) {
-            moveTo(5f, 17f)
-            horizontalLineTo(4f)
-            curveTo(2.9f, 17f, 2f, 16.1f, 2f, 15f)
-            verticalLineTo(5f)
-            curveTo(2f, 3.9f, 2.9f, 3f, 4f, 3f)
-            horizontalLineTo(20f)
-            curveTo(21.1f, 3f, 22f, 3.9f, 22f, 5f)
-            verticalLineTo(15f)
-            curveTo(22f, 16.1f, 21.1f, 17f, 20f, 17f)
-            horizontalLineTo(19f)
-            moveTo(12f, 15f)
-            lineTo(17f, 21f)
-            horizontalLineTo(7f)
-            close()
-        }
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
     }.build()
 }

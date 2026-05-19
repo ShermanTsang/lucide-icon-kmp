@@ -26,7 +26,7 @@ internal fun LucideIconCategoryTabs(
             FilterChip(
                 selected = selectedCategory == category,
                 onClick = { onCategorySelected(category) },
-                label = { Text(category.name) },
+                label = { Text(category.displayName) },
             )
         }
     }

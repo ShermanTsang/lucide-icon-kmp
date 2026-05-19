@@ -22,8 +22,19 @@ class IconSearchEngineTest {
     fun filtersByCategory() {
         val registry = LucideIcons.registry
 
-        val results = registry.byCategory(LucideIconCategory.Devices)
+        val results = registry.byCategory(LucideIconCategory.Connectivity)
 
-        assertEquals(listOf("airplay"), results.map { it.key.value })
+        assertTrue(results.any { it.key.value == "airplay" })
+        assertTrue(results.size > 5)
+    }
+
+    @Test
+    fun exposesRichMetadataForSearchAndPicker() {
+        val registry = LucideIcons.registry
+        val metadata = registry.metadata("activity")
+
+        assertEquals("Activity", metadata?.displayName)
+        assertTrue(metadata?.tags?.contains("pulse") == true)
+        assertTrue(metadata?.categories?.contains(LucideIconCategory.Multimedia) == true)
     }
 }

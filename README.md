@@ -58,13 +58,17 @@ LucideIcons.registry.registerCustomIcon(
 
 ## Generator Flow
 
-The generator reads SVG files and emits Kotlin source outputs for icon files and indexes.
+The repository vendors a pinned Lucide snapshot under `lucide-generator/src/main/resources/lucide-icons` and commits the generated Kotlin outputs in `lucide-core`.
 
 ```bash
-./gradlew :lucide-generator:run --args="inputSvgDir outputDir io.github.generated"
+./gradlew :lucide-generator:generateBundledLucide
 ```
 
+This task regenerates the built-in registry, metadata chunks, and icon providers in `lucide-core/src/commonMain/kotlin/io/github/lucideicons/kmp/core/generated`.
+
 Generated icon files are intended to be committed so consumers do not need to regenerate them during normal library usage.
+
+The pinned Lucide snapshot version is recorded in `lucide-generator/src/main/resources/lucide-icons/VERSION.txt`.
 
 ## Run Web Sample
 

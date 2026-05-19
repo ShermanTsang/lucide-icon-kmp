@@ -6,7 +6,7 @@ import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import io.github.lucideicons.kmp.core.registry.IconRenderParameters
 import io.github.lucideicons.kmp.core.registry.ParameterizedIconProvider
@@ -15,31 +15,27 @@ val activityProvider = ParameterizedIconProvider { parameters ->
     buildActivity(parameters)
 }
 
+private val activityPath0 = PathParser().parsePathString("M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2").toNodes()
+
 private fun buildActivity(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
-    val iconSize = (parameters.size ?: 24f).dp
-    val strokeWidth = parameters.strokeWidth ?: 2f
+    val iconSize = (parameters.size ?: 24.0f).dp
+    val strokeWidth = parameters.strokeWidth ?: 2.0f
 
     return ImageVector.Builder(
         name = "activity",
         defaultWidth = iconSize,
         defaultHeight = iconSize,
-        viewportWidth = 24f,
-        viewportHeight = 24f,
+        viewportWidth = 24.0f,
+        viewportHeight = 24.0f,
     ).apply {
-        path(
+        addPath(
+            pathData = activityPath0,
+            pathFillType = PathFillType.NonZero,
             fill = null,
             stroke = SolidColor(Color.Black),
             strokeLineWidth = strokeWidth,
             strokeLineCap = StrokeCap.Round,
             strokeLineJoin = StrokeJoin.Round,
-            pathFillType = PathFillType.NonZero,
-        ) {
-            moveTo(22f, 12f)
-            horizontalLineTo(18f)
-            lineTo(15f, 21f)
-            lineTo(9f, 3f)
-            lineTo(6f, 12f)
-            horizontalLineTo(2f)
-        }
+        )
     }.build()
 }

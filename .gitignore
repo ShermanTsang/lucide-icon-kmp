@@ -23,3 +23,9 @@ captures/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Temp files
+temp/
+tmp/
+.temp/
+.tmp/
