@@ -18,6 +18,8 @@ A Kotlin / Kotlin Multiplatform project that wraps Lucide Icons for Compose Mult
 
 ## Usage
 
+For local integration from another Kotlin Multiplatform project, see [LOCAL_USAGE.md](LOCAL_USAGE.md).
+
 ### Show an icon
 
 ```kotlin
