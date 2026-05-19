@@ -40,7 +40,7 @@ kotlin {
 }
 
 android {
-    namespace = "io.github.lucideicons.kmp.compose"
+    namespace = "com.shermant.compose"
     compileSdk = libs.versions.android.compile.sdk.get().toInt()
 
     defaultConfig {

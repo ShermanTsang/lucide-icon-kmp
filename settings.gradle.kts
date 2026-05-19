@@ -1,4 +1,4 @@
-rootProject.name = "lucide-icon-kotlin-kmp"
+rootProject.name = "lucide-icon-kmp"
 
 pluginManagement {
     repositories {

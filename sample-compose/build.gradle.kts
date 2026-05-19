@@ -43,11 +43,11 @@ kotlin {
 }
 
 android {
-    namespace = "io.github.lucideicons.kmp.sample"
+    namespace = "com.shermant.sample"
     compileSdk = libs.versions.android.compile.sdk.get().toInt()
 
     defaultConfig {
-        applicationId = "io.github.lucideicons.kmp.sample"
+        applicationId = "com.shermant.sample"
         minSdk = libs.versions.android.min.sdk.get().toInt()
         targetSdk = libs.versions.android.target.sdk.get().toInt()
         versionCode = 1
@@ -57,6 +57,6 @@ android {
 
 compose.desktop {
     application {
-        mainClass = "io.github.lucideicons.kmp.sample.MainKt"
+        mainClass = "com.shermant.sample.MainKt"
     }
 }

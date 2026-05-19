@@ -1,10 +1,10 @@
-name: Act Publish Maven Check
+name: Local Maven Publish via act
 
 on:
   workflow_dispatch:
 
 jobs:
-  publish-check:
+  local-publish:
     runs-on: ubuntu-latest
     env:
       ACT: "true"

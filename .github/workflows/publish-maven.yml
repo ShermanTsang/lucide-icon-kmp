@@ -1,4 +1,4 @@
-name: Publish Maven
+name: Remote Maven Publish
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
       - "v*"
 
 jobs:
-  publish:
+  remote-publish:
     runs-on: macos-latest
     permissions:
       contents: read

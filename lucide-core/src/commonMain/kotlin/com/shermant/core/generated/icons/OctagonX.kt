@@ -1,0 +1,61 @@
+package com.shermant.core.generated.icons
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.PathParser
+import androidx.compose.ui.unit.dp
+import com.shermant.core.registry.IconRenderParameters
+import com.shermant.core.registry.ParameterizedIconProvider
+
+val octagonXProvider = ParameterizedIconProvider { parameters ->
+    buildOctagonX(parameters)
+}
+
+private val octagonXPath0 = PathParser().parsePathString("m15 9-6 6").toNodes()
+private val octagonXPath1 = PathParser().parsePathString("M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z").toNodes()
+private val octagonXPath2 = PathParser().parsePathString("m9 9 6 6").toNodes()
+
+private fun buildOctagonX(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
+    val iconSize = (parameters.size ?: 24.0f).dp
+    val strokeWidth = parameters.strokeWidth ?: 2.0f
+
+    return ImageVector.Builder(
+        name = "octagon-x",
+        defaultWidth = iconSize,
+        defaultHeight = iconSize,
+        viewportWidth = 24.0f,
+        viewportHeight = 24.0f,
+    ).apply {
+        addPath(
+            pathData = octagonXPath0,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = octagonXPath1,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = octagonXPath2,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+    }.build()
+}

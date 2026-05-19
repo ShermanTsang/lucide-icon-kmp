@@ -1,4 +1,4 @@
-# lucide-icon-kotlin-kmp
+# lucide-icon-kmp
 
 A Kotlin / Kotlin Multiplatform project that wraps Lucide Icons for Compose Multiplatform and provides a lazy icon registry, configurable `LucideIcon`, searchable `LucideIconPicker`, custom icon registration, and a build-time generator.
 

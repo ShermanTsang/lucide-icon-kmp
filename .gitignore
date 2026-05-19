@@ -11,6 +11,8 @@ kotlin-js-store/
 
 # Local environment files
 local.properties
+.env.publish
+.secrets.publish
 
 # IntelliJ / Android Studio
 .idea/

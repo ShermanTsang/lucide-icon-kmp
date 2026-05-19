@@ -36,7 +36,7 @@ kotlin {
 }
 
 android {
-    namespace = "io.github.lucideicons.kmp.core"
+    namespace = "com.shermant.core"
     compileSdk = libs.versions.android.compile.sdk.get().toInt()
 
     defaultConfig {

@@ -25,12 +25,12 @@ dependencies {
 }
 
 application {
-    mainClass.set("io.github.lucideicons.kmp.generator.GeneratorMainKt")
+    mainClass.set("com.shermant.generator.GeneratorMainKt")
 }
 
 val bundledLucideInputDirectory = layout.projectDirectory.dir("src/main/resources/lucide-icons/icons")
 val generatedCoreOutputDirectory = layout.projectDirectory.dir("../lucide-core/src/commonMain/kotlin/io/github/lucideicons/kmp/core/generated")
-val generatedCorePackageName = "io.github.lucideicons.kmp.core.generated"
+val generatedCorePackageName = "com.shermant.core.generated"
 
 tasks.register<JavaExec>("generateBundledLucide") {
     group = "generation"

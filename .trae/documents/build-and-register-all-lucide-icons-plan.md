@@ -85,7 +85,7 @@ Implement a reproducible full-catalog built-in icon pipeline for this repository
 
 ### 5. Replace simplified writers with production `lucide-core` writers
 
-- Rework `lucide-generator/src/main/kotlin/io/github/lucideicons/kmp/generator/writer/IconFileWriter.kt` to emit one provider file per icon under the exact package currently consumed by `lucide-core`, such as `io.github.lucideicons.kmp.core.generated.icons`.
+- Rework `lucide-generator/src/main/kotlin/io/github/lucideicons/kmp/generator/writer/IconFileWriter.kt` to emit one provider file per icon under the exact package currently consumed by `lucide-core`, such as `com.shermant.core.generated.icons`.
 - Generated icon files should follow the current production pattern already visible in `lucide-core/src/commonMain/kotlin/io/github/lucideicons/kmp/core/generated/icons/Activity.kt`:
   - `ParameterizedIconProvider`
   - private builder function
@@ -120,7 +120,7 @@ Implement a reproducible full-catalog built-in icon pipeline for this repository
 - Update `lucide-generator/build.gradle.kts` to expose a maintainable generation task for the vendored full catalog, for example by configuring the existing `run` entry or adding a dedicated Gradle task that targets:
   - input: vendored Lucide snapshot directory
   - output: `lucide-core/src/commonMain/kotlin/io/github/lucideicons/kmp/core/generated`
-  - package: `io.github.lucideicons.kmp.core.generated`
+  - package: `com.shermant.core.generated`
 - Ensure the task is deterministic and suitable for maintainers, but do not require normal library consumers to execute it.
 - Keep task naming and variable names clear and unified.
 

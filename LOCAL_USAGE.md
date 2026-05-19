@@ -80,7 +80,7 @@ After Gradle sync, add a simple composable in your consumer project:
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import io.github.lucideicons.kmp.compose.LucideIcon
+import com.shermant.compose.LucideIcon
 
 @Composable
 fun LocalLucideSmokeTest() {
@@ -101,8 +101,8 @@ You can also test the picker component:
 
 ```kotlin
 import androidx.compose.runtime.Composable
-import io.github.lucideicons.kmp.compose.picker.LucideIconPicker
-import io.github.lucideicons.kmp.compose.picker.rememberLucideIconPickerState
+import com.shermant.compose.picker.LucideIconPicker
+import com.shermant.compose.picker.rememberLucideIconPickerState
 
 @Composable
 fun LocalLucidePickerTest() {
@@ -139,7 +139,7 @@ On Windows PowerShell:
 .\gradlew.bat build
 ```
 
-If the build succeeds and your app can import `io.github.lucideicons.kmp.*`, the composite build setup is working.
+If the build succeeds and your app can import `com.shermant.*`, the composite build setup is working.
 
 ## Common Issues
 

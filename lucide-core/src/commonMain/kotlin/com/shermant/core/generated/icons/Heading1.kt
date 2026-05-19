@@ -1,0 +1,71 @@
+package com.shermant.core.generated.icons
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.PathParser
+import androidx.compose.ui.unit.dp
+import com.shermant.core.registry.IconRenderParameters
+import com.shermant.core.registry.ParameterizedIconProvider
+
+val heading1Provider = ParameterizedIconProvider { parameters ->
+    buildHeading1(parameters)
+}
+
+private val heading1Path0 = PathParser().parsePathString("M4 12h8").toNodes()
+private val heading1Path1 = PathParser().parsePathString("M4 18V6").toNodes()
+private val heading1Path2 = PathParser().parsePathString("M12 18V6").toNodes()
+private val heading1Path3 = PathParser().parsePathString("m17 12 3-2v8").toNodes()
+
+private fun buildHeading1(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
+    val iconSize = (parameters.size ?: 24.0f).dp
+    val strokeWidth = parameters.strokeWidth ?: 2.0f
+
+    return ImageVector.Builder(
+        name = "heading-1",
+        defaultWidth = iconSize,
+        defaultHeight = iconSize,
+        viewportWidth = 24.0f,
+        viewportHeight = 24.0f,
+    ).apply {
+        addPath(
+            pathData = heading1Path0,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = heading1Path1,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = heading1Path2,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = heading1Path3,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+    }.build()
+}
