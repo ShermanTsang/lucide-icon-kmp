@@ -1,6 +1,8 @@
 import org.gradle.api.publish.PublishingExtension
 import org.gradle.api.publish.maven.MavenPublication
 import org.gradle.plugins.signing.SigningExtension
+import java.nio.charset.StandardCharsets
+import java.util.Base64
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform) apply false
@@ -51,10 +53,10 @@ val repositoryPasswordProvider =
     providers
         .gradleProperty("mavenPassword")
         .orElse(providers.environmentVariable("MAVEN_PASSWORD"))
-val signingKeyProvider =
+val signingKeyBase64Provider =
     providers
-        .gradleProperty("signingInMemoryKey")
-        .orElse(providers.environmentVariable("SIGNING_KEY"))
+        .gradleProperty("signingInMemoryKeyBase64")
+        .orElse(providers.environmentVariable("SIGNING_KEY_BASE64"))
 val signingPasswordProvider =
     providers
         .gradleProperty("signingInMemoryKeyPassword")
@@ -159,9 +161,11 @@ subprojects {
         }
     }
 
-    val signingKey = signingKeyProvider.orNull
+    val signingKeyBase64 = signingKeyBase64Provider.orNull
     val signingPassword = signingPasswordProvider.orNull
-    if (!signingKey.isNullOrBlank() && !signingPassword.isNullOrBlank()) {
+    if (!signingKeyBase64.isNullOrBlank() && !signingPassword.isNullOrBlank()) {
+        val signingKey =
+            String(Base64.getDecoder().decode(signingKeyBase64), StandardCharsets.UTF_8)
         extensions.configure<SigningExtension> {
             useInMemoryPgpKeys(signingKey, signingPassword)
             sign(extensions.getByType<PublishingExtension>().publications)

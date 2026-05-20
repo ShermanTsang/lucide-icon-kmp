@@ -70,6 +70,26 @@ Generated icon files are intended to be committed so consumers do not need to re
 
 The pinned Lucide snapshot version is recorded in `lucide-generator/src/main/resources/lucide-icons/VERSION.txt`.
 
+## Validate Publish Workflow Locally
+
+This repository keeps strict remote publish validation in both GitHub Actions and local `act` runs.
+
+Before running the publish workflow locally:
+
+1. Copy `.env.publish.example` to `.env.publish`.
+2. Copy `.secrets.publish.example` to `.secrets.publish`.
+3. Fill in your real remote Maven repository URL and credentials.
+4. If signing is required, set `SIGNING_KEY_BASE64` to the Base64-encoded ASCII-armored private key on a single line.
+5. Keep `MAVEN_REPOSITORY_URL` set, because the workflow does not fall back to local-only publishing.
+
+Run the workflow with:
+
+```bash
+act workflow_dispatch -W .github/workflows/publish-maven.yml --env-file .env.publish --secret-file .secrets.publish
+```
+
+If any required publish variables are missing, the workflow fails in `Validate publish configuration` before Gradle `publish` starts.
+
 ## Run Web Sample
 
 Launch the browser sample with:

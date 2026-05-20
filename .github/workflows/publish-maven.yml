@@ -8,14 +8,14 @@ on:
 
 jobs:
   remote-publish:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     env:
       MAVEN_REPOSITORY_URL: ${{ secrets.MAVEN_REPOSITORY_URL }}
       MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
       MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
-      SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+      SIGNING_KEY_BASE64: ${{ secrets.SIGNING_KEY_BASE64 }}
       SIGNING_PASSWORD: ${{ secrets.SIGNING_PASSWORD }}
 
     steps:
@@ -34,31 +34,47 @@ jobs:
       - name: Validate publish configuration
         shell: bash
         run: |
+          print_act_hint() {
+            cat <<'EOF'
+          For local act runs, copy:
+            - .env.publish.example -> .env.publish
+            - .secrets.publish.example -> .secrets.publish
+          Use SIGNING_KEY_BASE64 for the Base64-encoded ASCII-armored private key on one line.
+          Then pass them explicitly, for example:
+            act workflow_dispatch -W .github/workflows/publish-maven.yml --env-file .env.publish --secret-file .secrets.publish
+          EOF
+          }
+
           if [ -z "$MAVEN_REPOSITORY_URL" ]; then
-            echo "MAVEN_REPOSITORY_URL is required."
+            echo "MAVEN_REPOSITORY_URL is required for strict remote publish validation."
+            print_act_hint
             exit 1
           fi
 
           if [ -n "$MAVEN_USERNAME" ] && [ -z "$MAVEN_PASSWORD" ]; then
             echo "MAVEN_PASSWORD is required when MAVEN_USERNAME is set."
+            print_act_hint
             exit 1
           fi
 
           if [ -z "$MAVEN_USERNAME" ] && [ -n "$MAVEN_PASSWORD" ]; then
             echo "MAVEN_USERNAME is required when MAVEN_PASSWORD is set."
+            print_act_hint
             exit 1
           fi
 
-          if [ -n "$SIGNING_KEY" ] && [ -z "$SIGNING_PASSWORD" ]; then
-            echo "SIGNING_PASSWORD is required when SIGNING_KEY is set."
+          if [ -n "$SIGNING_KEY_BASE64" ] && [ -z "$SIGNING_PASSWORD" ]; then
+            echo "SIGNING_PASSWORD is required when SIGNING_KEY_BASE64 is set."
+            print_act_hint
             exit 1
           fi
 
-          if [ -z "$SIGNING_KEY" ] && [ -n "$SIGNING_PASSWORD" ]; then
-            echo "SIGNING_KEY is required when SIGNING_PASSWORD is set."
+          if [ -z "$SIGNING_KEY_BASE64" ] && [ -n "$SIGNING_PASSWORD" ]; then
+            echo "SIGNING_KEY_BASE64 is required when SIGNING_PASSWORD is set."
+            print_act_hint
             exit 1
           fi
 
       - name: Publish libraries
         shell: bash
-        run: bash ./gradlew publish
+        run: bash ./gradlew publish -PlocalPublish=true
