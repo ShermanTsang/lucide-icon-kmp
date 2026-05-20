@@ -1,24 +1,80 @@
 # lucide-icon-kmp
 
-A Kotlin / Kotlin Multiplatform project that wraps Lucide Icons for Compose Multiplatform and provides a lazy icon registry, configurable `LucideIcon`, searchable `LucideIconPicker`, custom icon registration, and a build-time generator.
+[简体中文](README.zh-CN.md)
 
-## Modules
+`lucide-icon-kmp` is a Kotlin Multiplatform wrapper around Lucide Icons for Compose Multiplatform. It provides a lazy icon registry, configurable `LucideIcon`, searchable `LucideIconPicker`, custom icon registration, and a build-time generator for bundled icons.
 
-- `lucide-core`: shared icon models, metadata, lazy registry, search, and built-in icon registration.
-- `lucide-compose`: Compose Multiplatform UI components including `LucideIcon` and `LucideIconPicker`.
-- `lucide-generator`: JVM generator that reads Lucide SVG files and emits Kotlin source files and indexes.
-- `sample-compose`: Android, Desktop, iOS, and Web sample entry points demonstrating preview, picker usage, and custom icons.
+## Overview
+
+This repository is organized as a multi-module Kotlin Multiplatform build:
+
+- `lucide-core`: shared icon models, metadata, lazy registry, search, and bundled icon registration.
+- `lucide-compose`: Compose Multiplatform UI components such as `LucideIcon` and `LucideIconPicker`.
+- `lucide-generator`: JVM generator that reads vendored Lucide SVG files and emits Kotlin source files and indexes.
+- `sample-compose`: sample app targets that demonstrate icon rendering, picker usage, and custom icon registration.
+
+## Maven Coordinates
+
+Current publish coordinates are:
+
+- `group`: `com.shermant`
+- `version`: `0.1.0-SNAPSHOT`
+- `lucide-core`: `com.shermant:lucide-icon-kmp:0.1.0-SNAPSHOT`
+- `lucide-compose`: `com.shermant:lucide-icon-kmp-compose:0.1.0-SNAPSHOT`
+
+For the current snapshot publish setup, the local publish environment points to:
+
+```text
+https://central.sonatype.com/repository/maven-snapshots/
+```
+
+Use that repository only when your snapshot artifacts have been published there. The publish workflow still reads the repository URL from `MAVEN_REPOSITORY_URL`, so it can be changed per environment.
+
+Example dependency setup:
+
+```kotlin
+repositories {
+    maven("https://central.sonatype.com/repository/maven-snapshots/")
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    implementation("com.shermant:lucide-icon-kmp:0.1.0-SNAPSHOT")
+    implementation("com.shermant:lucide-icon-kmp-compose:0.1.0-SNAPSHOT")
+}
+```
+
+For local integration from another Kotlin Multiplatform project, see [LOCAL_USAGE.md](LOCAL_USAGE.md).
 
 ## Platform Support
 
-- Android: supported via Compose Android.
-- Desktop: supported via Compose Desktop.
-- iOS: supported via Compose Multiplatform iOS entry points.
-- Web: supported via Compose Multiplatform `wasmJs` in the browser.
+### Library targets
+
+`lucide-core` and `lucide-compose` currently declare these Kotlin Multiplatform targets:
+
+- Android
+- Desktop JVM
+- JS (IR)
+- WasmJs
+- iOS (`iosX64`, `iosArm64`, `iosSimulatorArm64`)
+
+### Sample coverage
+
+`sample-compose` currently includes runnable entry points for:
+
+- Android
+- Desktop JVM
+- WasmJs browser
+- iOS
+
+Current gaps and caveats:
+
+- The sample app does not currently provide a dedicated JS (IR) demo entry point.
+- When `ACT=true` or `-PlocalPublish=true` is used, iOS targets are skipped in `lucide-core`, `lucide-compose`, and `sample-compose`.
+- Because of that conditional target exclusion, local publish validation and `act` runs do not prove iOS artifacts in that workflow.
 
 ## Usage
-
-For local integration from another Kotlin Multiplatform project, see [LOCAL_USAGE.md](LOCAL_USAGE.md).
 
 ### Show an icon
 
@@ -64,7 +120,7 @@ The repository vendors a pinned Lucide snapshot under `lucide-generator/src/main
 ./gradlew :lucide-generator:generateBundledLucide
 ```
 
-This task regenerates the built-in registry, metadata chunks, and icon providers in `lucide-core/src/commonMain/kotlin/io/github/lucideicons/kmp/core/generated`.
+This task regenerates the built-in registry, metadata chunks, and icon providers under `lucide-core/src/commonMain/kotlin/com/shermant/core/generated`.
 
 Generated icon files are intended to be committed so consumers do not need to regenerate them during normal library usage.
 
@@ -78,9 +134,10 @@ Before running the publish workflow locally:
 
 1. Copy `.env.publish.example` to `.env.publish`.
 2. Copy `.secrets.publish.example` to `.secrets.publish`.
-3. Fill in your real remote Maven repository URL and credentials.
-4. If signing is required, set `SIGNING_KEY_BASE64` to the Base64-encoded ASCII-armored private key on a single line.
-5. Keep `MAVEN_REPOSITORY_URL` set, because the workflow does not fall back to local-only publishing.
+3. Set `MAVEN_REPOSITORY_URL` to a real remote Maven repository. The current local example points to Sonatype snapshots.
+4. If authentication is required, fill in `MAVEN_USERNAME` and `MAVEN_PASSWORD`.
+5. If signing is required, set `SIGNING_KEY_BASE64` to the Base64-encoded ASCII-armored private key on a single line, then provide `SIGNING_PASSWORD`.
+6. Keep `MAVEN_REPOSITORY_URL` set, because the workflow does not fall back to local-only publishing.
 
 Run the workflow with:
 
@@ -90,19 +147,21 @@ act workflow_dispatch -W .github/workflows/publish-maven.yml --env-file .env.pub
 
 If any required publish variables are missing, the workflow fails in `Validate publish configuration` before Gradle `publish` starts.
 
-## Run Web Sample
+## Run Sample Targets
 
-Launch the browser sample with:
+Launch the Wasm browser sample with:
 
 ```bash
 ./gradlew :sample-compose:wasmJsBrowserDevelopmentRun
 ```
 
-Build the production web distribution with:
+Build the production Wasm distribution with:
 
 ```bash
 ./gradlew :sample-compose:wasmJsBrowserDistribution
 ```
+
+Desktop, Android, and iOS sample entry points also exist in `sample-compose`, but their execution depends on the corresponding local toolchains and host environment.
 
 ## Search Behavior
 
