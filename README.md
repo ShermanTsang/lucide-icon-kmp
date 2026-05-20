@@ -71,8 +71,7 @@ For local integration from another Kotlin Multiplatform project, see [LOCAL_USAG
 Current gaps and caveats:
 
 - The sample app does not currently provide a dedicated JS (IR) demo entry point.
-- When `ACT=true` or `-PlocalPublish=true` is used, iOS targets are skipped in `lucide-core`, `lucide-compose`, and `sample-compose`.
-- Because of that conditional target exclusion, local publish validation and `act` runs do not prove iOS artifacts in that workflow.
+- Library and sample modules keep their full declared target set during local and CI builds, including iOS variants.
 
 ## Usage
 
@@ -130,6 +129,7 @@ The pinned Lucide snapshot version is recorded in `lucide-generator/src/main/res
 ## Validate Publish Workflow Locally
 
 This repository keeps strict remote publish validation in both GitHub Actions and local `act` runs.
+Actual full-platform publication runs on `macos-latest` in GitHub Actions so Apple variants are included.
 
 Before running the publish workflow locally:
 
@@ -140,12 +140,14 @@ Before running the publish workflow locally:
 5. If signing is required, set `SIGNING_KEY_BASE64` to the Base64-encoded ASCII-armored private key on a single line, then provide `SIGNING_PASSWORD`.
 6. Keep `MAVEN_REPOSITORY_URL` set, because the workflow does not fall back to local-only publishing.
 
-Run the workflow with:
+Run the validation workflow locally with:
 
 ```bash
 act workflow_dispatch -W .github/workflows/publish-maven.yml --env-file .env.publish --secret-file .secrets.publish
 ```
 
+When running through `act`, the workflow stops after `Validate publish configuration`.
+Full publication, including iOS artifacts, requires the GitHub Actions macOS runner or a local macOS host.
 If any required publish variables are missing, the workflow fails in `Validate publish configuration` before Gradle `publish` starts.
 
 ## Run Sample Targets

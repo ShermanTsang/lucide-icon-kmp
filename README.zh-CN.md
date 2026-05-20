@@ -71,8 +71,7 @@ dependencies {
 当前需要特别说明的限制：
 
 - 示例应用目前没有单独的 JS (IR) Demo 入口。
-- 当设置 `ACT=true` 或使用 `-PlocalPublish=true` 时，`lucide-core`、`lucide-compose` 和 `sample-compose` 都会跳过 iOS targets。
-- 因此，本地发布校验与 `act` 工作流并不能证明 iOS 制品已经在该流程下完成构建或发布验证。
+- 库模块与示例模块在本地和 CI 构建中都会保留完整声明的平台集合，包括 iOS variants。
 
 ## 使用示例
 
@@ -130,6 +129,7 @@ LucideIcons.registry.registerCustomIcon(
 ## 本地校验发布流程
 
 该仓库在 GitHub Actions 与本地 `act` 运行中都保持严格的远端发布配置校验。
+真正的全平台发布会在 GitHub Actions 的 `macos-latest` runner 上执行，以包含 Apple variants。
 
 本地执行发布工作流前，请先完成以下准备：
 
@@ -140,12 +140,14 @@ LucideIcons.registry.registerCustomIcon(
 5. 如果需要签名，请将单行 Base64 编码的 ASCII-armored 私钥写入 `SIGNING_KEY_BASE64`，并同时提供 `SIGNING_PASSWORD`。
 6. 保持 `MAVEN_REPOSITORY_URL` 已设置，因为该工作流不会回退到纯本地发布模式。
 
-运行方式：
+本地运行校验工作流：
 
 ```bash
 act workflow_dispatch -W .github/workflows/publish-maven.yml --env-file .env.publish --secret-file .secrets.publish
 ```
 
+通过 `act` 运行时，工作流会在 `Validate publish configuration` 后结束。
+要产出包含 iOS 制品的完整发布，需要使用 GitHub Actions 的 macOS runner，或在本地 macOS 主机上执行。
 如果缺少必要的发布变量，工作流会在 `Validate publish configuration` 步骤直接失败，Gradle `publish` 不会开始执行。
 
 ## 运行示例

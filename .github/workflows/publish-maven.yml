@@ -7,8 +7,10 @@ on:
       - "v*"
 
 jobs:
-  remote-publish:
+  validate-publish:
     runs-on: ubuntu-latest
+    outputs:
+      should_publish: ${{ steps.publish-mode.outputs.should_publish }}
     permissions:
       contents: read
     env:
@@ -22,14 +24,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: Setup JDK
-        uses: actions/setup-java@v4.7.1
-        with:
-          distribution: temurin
-          java-version: "23"
-
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4.4.4
+      - name: Detect publish mode
+        id: publish-mode
+        shell: bash
+        run: |
+          if [ "${ACT:-}" = "true" ]; then
+            echo "should_publish=false" >> "$GITHUB_OUTPUT"
+            echo "Local act run detected; workflow will stop after validation."
+          else
+            echo "should_publish=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Validate publish configuration
         shell: bash
@@ -75,6 +79,32 @@ jobs:
             exit 1
           fi
 
+  remote-publish:
+    if: ${{ needs.validate-publish.outputs.should_publish == 'true' }}
+    needs: validate-publish
+    runs-on: macos-latest
+    permissions:
+      contents: read
+    env:
+      MAVEN_REPOSITORY_URL: ${{ secrets.MAVEN_REPOSITORY_URL }}
+      MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+      MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
+      SIGNING_KEY_BASE64: ${{ secrets.SIGNING_KEY_BASE64 }}
+      SIGNING_PASSWORD: ${{ secrets.SIGNING_PASSWORD }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Setup JDK
+        uses: actions/setup-java@v4.7.1
+        with:
+          distribution: temurin
+          java-version: "23"
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4.4.4
+
       - name: Publish libraries
         shell: bash
-        run: bash ./gradlew publish -PlocalPublish=true
+        run: ./gradlew publish
