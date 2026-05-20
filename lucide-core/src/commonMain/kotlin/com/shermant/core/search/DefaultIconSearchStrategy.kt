@@ -10,35 +10,57 @@ class DefaultIconSearchStrategy : IconSearchStrategy {
                 .take(query.limit)
         }
 
-        return entries
-            .mapNotNull { metadata ->
-                val localizedNames = buildList {
-                    add(metadata.key.value)
-                    add(metadata.displayName)
-                    if (query.locale == com.shermant.core.model.LucideLocale.Zh) {
-                        metadata.zhDisplayName?.let(::add)
-                    }
-                }
-                val fallbackNames = listOfNotNull(metadata.zhDisplayName)
-                val normalizedNameTerms = (localizedNames + fallbackNames)
-                    .distinct()
-                    .map(IconQuery::normalize)
-                val normalizedTagTerms = (metadata.tags + metadata.zhTags)
-                    .map(IconQuery::normalize)
-                val score = when {
-                    normalizedNameTerms.any { it == query.normalizedValue } -> 0
-                    normalizedNameTerms.any { it.startsWith(query.normalizedValue) } -> 1
-                    normalizedNameTerms.any { it.contains(query.normalizedValue) } -> 2
-                    normalizedTagTerms.any { it.contains(query.normalizedValue) } -> 3
-                    else -> null
-                }
-                score?.let { it to metadata }
+        val rankedEntries = mutableListOf<Pair<Int, LucideIconMetadata>>()
+        for (metadata in entries) {
+            val score = metadata.matchScore(query.normalizedValue)
+            if (score != null) {
+                rankedEntries += score to metadata
             }
-            .sortedWith(
-                compareBy<Pair<Int, LucideIconMetadata>> { it.first }
-                    .thenBy { it.second.displayName(query.locale) },
-            )
-            .map { it.second }
+        }
+
+        rankedEntries.sortWith(
+            compareBy<Pair<Int, LucideIconMetadata>> { it.first }
+                .thenBy { it.second.displayName(query.locale) },
+        )
+
+        return rankedEntries
+            .asSequence()
             .take(query.limit)
+            .map { it.second }
+            .toList()
+    }
+
+    private fun LucideIconMetadata.matchScore(normalizedQuery: String): Int? {
+        val normalizedKey = IconQuery.normalize(key.value)
+        val normalizedDisplayName = IconQuery.normalize(displayName)
+        val normalizedZhDisplayName = zhDisplayName?.let(IconQuery::normalize)
+
+        evaluateNameMatch(normalizedKey, normalizedQuery)?.let { return it }
+        if (normalizedDisplayName != normalizedKey) {
+            evaluateNameMatch(normalizedDisplayName, normalizedQuery)?.let { return it }
+        }
+        if (
+            normalizedZhDisplayName != null &&
+            normalizedZhDisplayName != normalizedKey &&
+            normalizedZhDisplayName != normalizedDisplayName
+        ) {
+            evaluateNameMatch(normalizedZhDisplayName, normalizedQuery)?.let { return it }
+        }
+
+        if (tags.any { IconQuery.normalize(it).contains(normalizedQuery) }) {
+            return 3
+        }
+        if (zhTags.any { IconQuery.normalize(it).contains(normalizedQuery) }) {
+            return 3
+        }
+
+        return null
+    }
+
+    private fun evaluateNameMatch(normalizedName: String, normalizedQuery: String): Int? = when {
+        normalizedName == normalizedQuery -> 0
+        normalizedName.startsWith(normalizedQuery) -> 1
+        normalizedName.contains(normalizedQuery) -> 2
+        else -> null
     }
 }

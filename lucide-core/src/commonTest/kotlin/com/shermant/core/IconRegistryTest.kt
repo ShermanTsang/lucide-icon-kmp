@@ -10,6 +10,9 @@ import com.shermant.core.registry.BuiltInIconRegistrar
 import com.shermant.core.registry.DefaultIconRegistry
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.LucideIconCreator
+import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.search.DefaultIconSearchStrategy
+import com.shermant.core.search.IconSearchStrategy
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
@@ -75,5 +78,120 @@ class IconRegistryTest {
         assertNotNull(registry.resolve("activity", IconRenderParameters(strokeWidth = 3f)))
         assertNotNull(registry.resolve("airplay", IconRenderParameters(strokeWidth = 1.5f)))
         assertTrue(registry.byCategory(LucideIconCategory.Multimedia).isNotEmpty())
+    }
+
+    @Test
+    fun cachesParameterizedIconsByRenderParameters() {
+        val registry = DefaultIconRegistry()
+        var parameterizedCreations = 0
+        registry.register(
+            metadata = LucideIconMetadata(LucideIconKey("demo")),
+            creator = LucideIconCreator {
+                ImageVector.Builder("demo-default", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+            parameterizedProvider = ParameterizedIconProvider {
+                parameterizedCreations += 1
+                ImageVector.Builder("demo-parameterized-$parameterizedCreations", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+
+        val first = registry.resolve("demo", IconRenderParameters(size = 20f, strokeWidth = 2f))
+        val second = registry.resolve("demo", IconRenderParameters(size = 20f, strokeWidth = 2f))
+        val third = registry.resolve("demo", IconRenderParameters(size = 24f, strokeWidth = 2f))
+
+        assertSame(first, second)
+        assertTrue(first !== third)
+        assertEquals(2, parameterizedCreations)
+    }
+
+    @Test
+    fun replacingRegisteredIconInvalidatesResolvedIconCaches() {
+        val registry = DefaultIconRegistry()
+        var firstDefaultCreations = 0
+        var secondDefaultCreations = 0
+        var firstParameterizedCreations = 0
+        var secondParameterizedCreations = 0
+
+        registry.register(
+            metadata = LucideIconMetadata(LucideIconKey("demo")),
+            creator = LucideIconCreator {
+                firstDefaultCreations += 1
+                ImageVector.Builder("demo-first-default", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+            parameterizedProvider = ParameterizedIconProvider {
+                firstParameterizedCreations += 1
+                ImageVector.Builder("demo-first-parameterized", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+
+        val firstDefault = registry.get("demo")
+        val firstParameterized = registry.resolve("demo", IconRenderParameters(size = 20f, strokeWidth = 2f))
+
+        registry.register(
+            metadata = LucideIconMetadata(LucideIconKey("demo")),
+            creator = LucideIconCreator {
+                secondDefaultCreations += 1
+                ImageVector.Builder("demo-second-default", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+            parameterizedProvider = ParameterizedIconProvider {
+                secondParameterizedCreations += 1
+                ImageVector.Builder("demo-second-parameterized", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+            replace = true,
+        )
+
+        val secondDefault = registry.get("demo")
+        val secondParameterized = registry.resolve("demo", IconRenderParameters(size = 20f, strokeWidth = 2f))
+
+        assertTrue(firstDefault !== secondDefault)
+        assertTrue(firstParameterized !== secondParameterized)
+        assertEquals(1, firstDefaultCreations)
+        assertEquals(1, secondDefaultCreations)
+        assertEquals(1, firstParameterizedCreations)
+        assertEquals(1, secondParameterizedCreations)
+    }
+
+    @Test
+    fun cachesSearchResultsAndInvalidatesOnRegister() {
+        val delegateStrategy = DefaultIconSearchStrategy()
+        var searchCalls = 0
+        val registry = DefaultIconRegistry(
+            searchStrategy = IconSearchStrategy { entries, query ->
+                searchCalls += 1
+                delegateStrategy.search(entries, query)
+            },
+        )
+        registry.register(
+            metadata = LucideIconMetadata(LucideIconKey("alpha"), displayName = "Alpha"),
+            creator = LucideIconCreator {
+                ImageVector.Builder("alpha", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+        registry.register(
+            metadata = LucideIconMetadata(LucideIconKey("beta"), displayName = "Beta"),
+            creator = LucideIconCreator {
+                ImageVector.Builder("beta", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+
+        val firstResults = registry.search("alp")
+        val secondResults = registry.search("alp")
+        registry.search("")
+        registry.search("")
+
+        assertEquals(1, searchCalls)
+        assertEquals(firstResults.map { it.key }, secondResults.map { it.key })
+
+        registry.register(
+            metadata = LucideIconMetadata(LucideIconKey("alpine"), displayName = "Alpine"),
+            creator = LucideIconCreator {
+                ImageVector.Builder("alpine", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+
+        val refreshedResults = registry.search("alp")
+
+        assertEquals(2, searchCalls)
+        assertTrue(refreshedResults.any { it.key.value == "alpine" })
     }
 }

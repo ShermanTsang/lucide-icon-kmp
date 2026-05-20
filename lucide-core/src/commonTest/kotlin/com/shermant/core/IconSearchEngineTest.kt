@@ -50,4 +50,29 @@ class IconSearchEngineTest {
         assertTrue(metadata?.tags?.contains("pulse") == true)
         assertTrue(metadata?.categories?.contains(LucideIconCategory.Multimedia) == true)
     }
+
+    @Test
+    fun keepsSearchResultsStableForRepeatedQueriesAndBlankQueries() {
+        val registry = LucideIcons.registry
+
+        val firstEnglishResults = registry.search("mail")
+        val secondEnglishResults = registry.search("mail")
+        val firstChineseResults = registry.search("邮件", locale = LucideLocale.Zh)
+        val secondChineseResults = registry.search("邮件", locale = LucideLocale.Zh)
+        val blankEnglishResults = registry.search("", locale = LucideLocale.En, limit = 20)
+        val blankChineseResults = registry.search("", locale = LucideLocale.Zh, limit = 20)
+
+        assertEquals(firstEnglishResults.map { it.key }, secondEnglishResults.map { it.key })
+        assertEquals(firstChineseResults.map { it.key }, secondChineseResults.map { it.key })
+        assertEquals(20, blankEnglishResults.size)
+        assertEquals(20, blankChineseResults.size)
+        assertEquals(
+            blankEnglishResults.map { it.displayName(LucideLocale.En) }.sorted(),
+            blankEnglishResults.map { it.displayName(LucideLocale.En) },
+        )
+        assertEquals(
+            blankChineseResults.map { it.displayName(LucideLocale.Zh) }.sorted(),
+            blankChineseResults.map { it.displayName(LucideLocale.Zh) },
+        )
+    }
 }

@@ -16,6 +16,11 @@ class DefaultIconRegistry(
 ) : MutableIconRegistry {
     private val iconFactory = IconFactory()
     private val entries = linkedMapOf<String, IconEntry>()
+    private var metadataSnapshot: List<LucideIconMetadata>? = null
+    private var keySnapshot: List<LucideIconKey>? = null
+    private var categoryIndex: Map<LucideIconCategory, List<LucideIconMetadata>>? = null
+    private val blankSearchCache = mutableMapOf<LucideLocale, List<LucideIconMetadata>>()
+    private val searchCache = mutableMapOf<SearchCacheKey, List<LucideIconMetadata>>()
 
     override fun register(
         metadata: LucideIconMetadata,
@@ -32,6 +37,8 @@ class DefaultIconRegistry(
             creator = creator,
             parameterizedProvider = parameterizedProvider,
         )
+        iconFactory.invalidate(name)
+        invalidateDerivedCaches()
     }
 
     override fun register(key: String, creator: LucideIconCreator) {
@@ -58,7 +65,7 @@ class DefaultIconRegistry(
 
     override fun contains(name: String): Boolean = entries.containsKey(name)
 
-    override fun keys(): List<LucideIconKey> = entries.values.map { it.metadata.key }
+    override fun keys(): List<LucideIconKey> = keySnapshot ?: buildKeySnapshot().also { keySnapshot = it }
 
     override fun metadata(name: String): LucideIconMetadata? = entries[name]?.metadata
 
@@ -68,11 +75,67 @@ class DefaultIconRegistry(
         search(query = query, locale = LucideLocale.En, limit = limit)
 
     override fun search(query: String, locale: LucideLocale, limit: Int): List<LucideIconMetadata> =
-        searchStrategy.search(
-            entries = entries.values.map { it.metadata },
+        searchInternal(
             query = IconQuery(rawValue = query, locale = locale, limit = limit),
         )
 
     override fun byCategory(category: LucideIconCategory): List<LucideIconMetadata> =
-        entries.values.map { it.metadata }.filter { category in it.categories }
+        categoryIndex?.get(category) ?: buildCategoryIndex().also { categoryIndex = it }[category].orEmpty()
+
+    private fun searchInternal(query: IconQuery): List<LucideIconMetadata> {
+        if (query.normalizedValue.isBlank()) {
+            val cachedResults = blankSearchCache.getOrPut(query.locale) {
+                metadataSnapshot()
+                    .sortedBy { it.displayName(query.locale) }
+            }
+            return cachedResults.limitTo(query.limit)
+        }
+
+        val cacheKey = SearchCacheKey(
+            normalizedQuery = query.normalizedValue,
+            locale = query.locale,
+            limit = query.limit,
+        )
+        return searchCache.getOrPut(cacheKey) {
+            searchStrategy.search(
+                entries = metadataSnapshot(),
+                query = query,
+            )
+        }
+    }
+
+    private fun metadataSnapshot(): List<LucideIconMetadata> =
+        metadataSnapshot ?: entries.values.map { it.metadata }.also { metadataSnapshot = it }
+
+    private fun buildKeySnapshot(): List<LucideIconKey> =
+        metadataSnapshot().map { it.key }
+
+    private fun buildCategoryIndex(): Map<LucideIconCategory, List<LucideIconMetadata>> {
+        val indexedMetadata = mutableMapOf<LucideIconCategory, MutableList<LucideIconMetadata>>()
+        for (metadata in metadataSnapshot()) {
+            for (category in metadata.categories) {
+                indexedMetadata.getOrPut(category) { mutableListOf() }.add(metadata)
+            }
+        }
+        return LucideIconCategory.entries.associateWith { category ->
+            indexedMetadata[category].orEmpty()
+        }
+    }
+
+    private fun invalidateDerivedCaches() {
+        metadataSnapshot = null
+        keySnapshot = null
+        categoryIndex = null
+        blankSearchCache.clear()
+        searchCache.clear()
+    }
+
+    private fun List<LucideIconMetadata>.limitTo(limit: Int): List<LucideIconMetadata> =
+        if (size <= limit) this else take(limit)
+
+    private data class SearchCacheKey(
+        val normalizedQuery: String,
+        val locale: LucideLocale,
+        val limit: Int,
+    )
 }

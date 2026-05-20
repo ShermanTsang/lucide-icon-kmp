@@ -35,11 +35,13 @@ fun LucideIconPicker(
     onIconSelected: (LucideIconMetadata) -> Unit,
 ) {
     val categories = remember(registry) { LucideIconCategory.entries }
-    val results = remember(registry, locale, state.query, state.selectedCategory) {
-        val filtered = registry.search(state.query, locale = locale)
+    val searchResults = remember(registry, locale, state.query) {
+        registry.search(state.query, locale = locale)
+    }
+    val visibleResults = remember(searchResults, state.selectedCategory) {
         state.selectedCategory?.let { category ->
-            filtered.filter { category in it.categories }
-        } ?: filtered
+            searchResults.filter { category in it.categories }
+        } ?: searchResults
     }
 
     Column(
@@ -74,7 +76,7 @@ fun LucideIconPicker(
             )
         }
         LucideIconGrid(
-            icons = results,
+            icons = visibleResults,
             columns = columns,
             iconSize = iconSize,
             iconColor = iconColor,
