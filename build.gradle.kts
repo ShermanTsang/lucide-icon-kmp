@@ -40,6 +40,11 @@ val publishedArtifactIds =
         ":lucide-core" to "lucide-icon-kmp",
         ":lucide-compose" to "lucide-icon-kmp-compose",
     )
+val publishedPomNames =
+    mapOf(
+        ":lucide-core" to "lucide-icon-kmp",
+        ":lucide-compose" to "lucide-icon-kmp-compose",
+    )
 
 val repositoryUrlProvider =
     providers
@@ -99,6 +104,7 @@ subprojects {
     group = rootProject.group
     version = rootProject.version
     val publishedArtifactId = publishedArtifactIds[path]
+    val publishedPomName = publishedPomNames[path]
 
     if (path !in publishableLibraryProjects) {
         return@subprojects
@@ -133,7 +139,7 @@ subprojects {
             publishedArtifactId?.let { artifactId = it }
 
             pom {
-                name.set(pomNameProvider)
+                name.set(publishedPomName ?: pomNameProvider.get())
                 description.set(pomDescriptionProvider)
                 url.set(pomUrlProvider)
 
