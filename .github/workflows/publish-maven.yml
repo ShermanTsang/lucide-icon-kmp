@@ -1,4 +1,4 @@
-name: Remote Maven Publish
+name: Maven Publish
 
 on:
   workflow_dispatch:
@@ -20,18 +20,18 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       - name: Setup JDK
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v4.7.1
         with:
           distribution: temurin
           java-version: "23"
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v4.4.4
 
-      - name: Validate repository configuration
+      - name: Validate publish configuration
         shell: bash
         run: |
           if [ -z "$MAVEN_REPOSITORY_URL" ]; then
@@ -39,5 +39,26 @@ jobs:
             exit 1
           fi
 
+          if [ -n "$MAVEN_USERNAME" ] && [ -z "$MAVEN_PASSWORD" ]; then
+            echo "MAVEN_PASSWORD is required when MAVEN_USERNAME is set."
+            exit 1
+          fi
+
+          if [ -z "$MAVEN_USERNAME" ] && [ -n "$MAVEN_PASSWORD" ]; then
+            echo "MAVEN_USERNAME is required when MAVEN_PASSWORD is set."
+            exit 1
+          fi
+
+          if [ -n "$SIGNING_KEY" ] && [ -z "$SIGNING_PASSWORD" ]; then
+            echo "SIGNING_PASSWORD is required when SIGNING_KEY is set."
+            exit 1
+          fi
+
+          if [ -z "$SIGNING_KEY" ] && [ -n "$SIGNING_PASSWORD" ]; then
+            echo "SIGNING_KEY is required when SIGNING_PASSWORD is set."
+            exit 1
+          fi
+
       - name: Publish libraries
-        run: ./gradlew publish
+        shell: bash
+        run: bash ./gradlew publish
