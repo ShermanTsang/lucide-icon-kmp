@@ -58,6 +58,12 @@ class IconCategoryWriter {
             appendLine("        key = LucideIconKey(${icon.name.asKotlinStringLiteral()}),")
             appendLine("        displayName = ${icon.displayName.asKotlinStringLiteral()},")
             appendLine("        tags = ${icon.tagsExpression()},")
+            icon.zhDisplayName?.let {
+                appendLine("        zhDisplayName = ${it.asKotlinStringLiteral()},")
+            }
+            if (icon.zhTags.isNotEmpty()) {
+                appendLine("        zhTags = ${icon.zhTagsExpression()},")
+            }
             appendLine("        categories = ${icon.categoriesExpression()},")
             appendLine("        defaultStrokeWidth = ${icon.defaultStrokeWidth}f,")
             appendLine("        sourceSet = IconSourceSet.BuiltIn,")
@@ -89,6 +95,9 @@ class IconCategoryWriter {
             "setOf(${combinedTags.joinToString(", ") { it.asKotlinStringLiteral() }})"
         }
     }
+
+    private fun ParsedIcon.zhTagsExpression(): String =
+        "setOf(${zhTags.sorted().joinToString(", ") { it.asKotlinStringLiteral() }})"
 
     private fun ParsedIcon.categoriesExpression(): String {
         val sortedCategories = categories.sorted()

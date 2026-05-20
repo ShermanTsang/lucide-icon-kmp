@@ -16,10 +16,13 @@ import androidx.compose.foundation.text.BasicText
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import com.shermant.core.model.LucideIconCategory
+import com.shermant.core.model.LucideLocale
+import com.shermant.core.model.displayName
 
 @Composable
 internal fun LucideIconCategoryTabs(
     categories: List<LucideIconCategory>,
+    locale: LucideLocale,
     selectedCategory: LucideIconCategory?,
     onCategorySelected: (LucideIconCategory?) -> Unit,
     modifier: Modifier = Modifier,
@@ -37,7 +40,7 @@ internal fun LucideIconCategoryTabs(
         )
         categories.forEach { category ->
             CategoryChip(
-                label = category.displayName,
+                label = category.displayName(locale),
                 selected = selectedCategory == category,
                 onClick = { onCategorySelected(category) },
                 style = style,

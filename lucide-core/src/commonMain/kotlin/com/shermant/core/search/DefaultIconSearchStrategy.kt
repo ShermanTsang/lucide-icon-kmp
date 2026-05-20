@@ -5,24 +5,39 @@ import com.shermant.core.model.LucideIconMetadata
 class DefaultIconSearchStrategy : IconSearchStrategy {
     override fun search(entries: List<LucideIconMetadata>, query: IconQuery): List<LucideIconMetadata> {
         if (query.normalizedValue.isBlank()) {
-            return entries.sortedBy { it.displayName }.take(query.limit)
+            return entries
+                .sortedBy { it.displayName(query.locale) }
+                .take(query.limit)
         }
 
         return entries
             .mapNotNull { metadata ->
-                val normalizedName = IconQuery.normalize(metadata.key.value)
-                val normalizedDisplayName = IconQuery.normalize(metadata.displayName)
-                val normalizedTags = metadata.tags.map(IconQuery::normalize)
+                val localizedNames = buildList {
+                    add(metadata.key.value)
+                    add(metadata.displayName)
+                    if (query.locale == com.shermant.core.model.LucideLocale.Zh) {
+                        metadata.zhDisplayName?.let(::add)
+                    }
+                }
+                val fallbackNames = listOfNotNull(metadata.zhDisplayName)
+                val normalizedNameTerms = (localizedNames + fallbackNames)
+                    .distinct()
+                    .map(IconQuery::normalize)
+                val normalizedTagTerms = (metadata.tags + metadata.zhTags)
+                    .map(IconQuery::normalize)
                 val score = when {
-                    normalizedName == query.normalizedValue || normalizedDisplayName == query.normalizedValue -> 0
-                    normalizedName.startsWith(query.normalizedValue) || normalizedDisplayName.startsWith(query.normalizedValue) -> 1
-                    normalizedName.contains(query.normalizedValue) || normalizedDisplayName.contains(query.normalizedValue) -> 2
-                    normalizedTags.any { it.contains(query.normalizedValue) } -> 3
+                    normalizedNameTerms.any { it == query.normalizedValue } -> 0
+                    normalizedNameTerms.any { it.startsWith(query.normalizedValue) } -> 1
+                    normalizedNameTerms.any { it.contains(query.normalizedValue) } -> 2
+                    normalizedTagTerms.any { it.contains(query.normalizedValue) } -> 3
                     else -> null
                 }
                 score?.let { it to metadata }
             }
-            .sortedWith(compareBy<Pair<Int, LucideIconMetadata>> { it.first }.thenBy { it.second.displayName })
+            .sortedWith(
+                compareBy<Pair<Int, LucideIconMetadata>> { it.first }
+                    .thenBy { it.second.displayName(query.locale) },
+            )
             .map { it.second }
             .take(query.limit)
     }

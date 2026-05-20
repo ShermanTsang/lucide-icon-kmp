@@ -29,7 +29,7 @@ application {
 }
 
 val bundledLucideInputDirectory = layout.projectDirectory.dir("src/main/resources/lucide-icons/icons")
-val generatedCoreOutputDirectory = layout.projectDirectory.dir("../lucide-core/src/commonMain/kotlin/io/github/lucideicons/kmp/core/generated")
+val generatedCoreOutputDirectory = layout.projectDirectory.dir("../lucide-core/src/commonMain/kotlin/com/shermant/core/generated")
 val generatedCorePackageName = "com.shermant.core.generated"
 
 tasks.register<JavaExec>("generateBundledLucide") {

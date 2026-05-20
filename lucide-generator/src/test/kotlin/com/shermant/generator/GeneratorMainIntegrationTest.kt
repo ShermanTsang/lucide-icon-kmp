@@ -28,6 +28,16 @@ class GeneratorMainIntegrationTest {
             }
             """.trimIndent(),
         )
+        inputDirectory.parent.resolve("localized-icons.zh-CN.json").writeText(
+            """
+            {
+              "airplay": {
+                "displayName": "隔空播放",
+                "tags": ["投屏"]
+              }
+            }
+            """.trimIndent(),
+        )
 
         main(
             arrayOf(
@@ -41,6 +51,8 @@ class GeneratorMainIntegrationTest {
         val chunk = outputDirectory.resolve("LucideGeneratedMetadataChunk0.kt").readText()
         assertTrue(metadata.contains("get() = LucideGeneratedMetadataChunk0.Airplay"))
         assertTrue(chunk.contains("setOf(\"air-play\", \"screen\", \"stream\")"))
+        assertTrue(chunk.contains("zhDisplayName = \"隔空播放\""))
+        assertTrue(chunk.contains("zhTags = setOf(\"投屏\")"))
         assertTrue(chunk.contains("setOf(LucideIconCategory.Connectivity, LucideIconCategory.Multimedia)"))
     }
 }

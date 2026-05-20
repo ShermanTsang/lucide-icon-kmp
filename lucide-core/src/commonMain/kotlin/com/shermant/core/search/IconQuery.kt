@@ -1,7 +1,10 @@
 package com.shermant.core.search
 
+import com.shermant.core.model.LucideLocale
+
 data class IconQuery(
     val rawValue: String,
+    val locale: LucideLocale = LucideLocale.En,
     val limit: Int = 100,
 ) {
     val normalizedValue: String = normalize(rawValue)

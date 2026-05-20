@@ -94,6 +94,7 @@ val state = rememberLucideIconPickerState()
 
 LucideIconPicker(
     state = state,
+    locale = LucideLocale.Zh,
     columns = 4,
     iconSize = 20.dp,
     onIconSelected = { metadata ->
@@ -169,6 +170,8 @@ act workflow_dispatch -W .github/workflows/publish-maven.yml --env-file .env.pub
 - 支持前缀匹配。
 - 支持子串匹配。
 - 支持基于标签的匹配。
+- 支持 `en` 与 `zh` 两种 locale 的选择器文案。
+- 在设置对应 `locale` 后，内置图标支持使用英文和中文搜索。
 
 ## 许可证
 

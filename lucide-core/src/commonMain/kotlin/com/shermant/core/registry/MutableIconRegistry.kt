@@ -3,6 +3,7 @@ package com.shermant.core.registry
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.shermant.core.model.LucideIconCategory
 import com.shermant.core.model.LucideIconKey
+import com.shermant.core.model.LucideLocale
 import com.shermant.core.model.LucideIconMetadata
 import com.shermant.core.search.DefaultIconSearchStrategy
 import com.shermant.core.search.IconQuery
@@ -64,9 +65,12 @@ class DefaultIconRegistry(
     override fun metadata(key: LucideIconKey): LucideIconMetadata? = metadata(key.value)
 
     override fun search(query: String, limit: Int): List<LucideIconMetadata> =
+        search(query = query, locale = LucideLocale.En, limit = limit)
+
+    override fun search(query: String, locale: LucideLocale, limit: Int): List<LucideIconMetadata> =
         searchStrategy.search(
             entries = entries.values.map { it.metadata },
-            query = IconQuery(rawValue = query, limit = limit),
+            query = IconQuery(rawValue = query, locale = locale, limit = limit),
         )
 
     override fun byCategory(category: LucideIconCategory): List<LucideIconMetadata> =

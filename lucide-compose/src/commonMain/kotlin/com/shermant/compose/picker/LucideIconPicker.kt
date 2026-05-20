@@ -14,6 +14,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.shermant.compose.LucideIconDefaults
 import com.shermant.core.model.LucideIconCategory
+import com.shermant.core.model.LucideLocale
 import com.shermant.core.model.LucideIconMetadata
 import com.shermant.core.registry.IconRegistry
 import com.shermant.core.registry.LucideIcons
@@ -23,6 +24,7 @@ fun LucideIconPicker(
     state: LucideIconPickerState,
     modifier: Modifier = Modifier,
     registry: IconRegistry = LucideIcons.registry,
+    locale: LucideLocale = LucideLocale.En,
     columns: Int = 6,
     iconSize: Dp = 20.dp,
     iconColor: Color = Color.Unspecified,
@@ -33,8 +35,8 @@ fun LucideIconPicker(
     onIconSelected: (LucideIconMetadata) -> Unit,
 ) {
     val categories = remember(registry) { LucideIconCategory.entries }
-    val results = remember(registry, state.query, state.selectedCategory) {
-        val filtered = registry.search(state.query)
+    val results = remember(registry, locale, state.query, state.selectedCategory) {
+        val filtered = registry.search(state.query, locale = locale)
         state.selectedCategory?.let { category ->
             filtered.filter { category in it.categories }
         } ?: filtered
@@ -65,6 +67,7 @@ fun LucideIconPicker(
         if (showCategories) {
             LucideIconCategoryTabs(
                 categories = categories,
+                locale = locale,
                 selectedCategory = state.selectedCategory,
                 onCategorySelected = { state.selectedCategory = it },
                 style = style.categories,
@@ -89,7 +92,8 @@ fun LucideIconPicker(
     onQueryChange: (String) -> Unit,
     onIconSelected: (String) -> Unit,
     registry: IconRegistry = LucideIcons.registry,
-    style: LucideIconPickerStyle = LucideIconPickerDefaults.style(),
+    locale: LucideLocale = LucideLocale.En,
+    style: LucideIconPickerStyle = LucideIconPickerDefaults.style(locale = locale),
 ) {
     val state = rememberLucideIconPickerState(initialQuery = query)
     state.query = query
@@ -105,6 +109,7 @@ fun LucideIconPicker(
         LucideIconPicker(
             state = state,
             registry = registry,
+            locale = locale,
             showSearchBar = false,
             style = style,
             onIconSelected = { onIconSelected(it.key.value) },

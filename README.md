@@ -94,6 +94,7 @@ val state = rememberLucideIconPickerState()
 
 LucideIconPicker(
     state = state,
+    locale = LucideLocale.Zh,
     columns = 4,
     iconSize = 20.dp,
     onIconSelected = { metadata ->
@@ -169,6 +170,8 @@ Desktop, Android, and iOS sample entry points also exist in `sample-compose`, bu
 - Supports prefix matching.
 - Supports substring matching.
 - Supports tag-based matching.
+- Supports localized picker labels for `en` and `zh`.
+- Supports searching built-in icons in English and Chinese when `locale` is set accordingly.
 
 ## License
 

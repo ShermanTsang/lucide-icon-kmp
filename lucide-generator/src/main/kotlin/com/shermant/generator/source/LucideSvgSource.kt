@@ -5,6 +5,8 @@ import com.shermant.generator.model.RawLucideMetadata
 import java.nio.file.Files
 import java.nio.file.Path
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.contentOrNull
 import kotlinx.serialization.json.jsonArray
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
@@ -16,6 +18,7 @@ class LucideSvgSource {
     fun load(directory: Path): List<RawLucideIcon> {
         require(Files.exists(directory)) { "Input directory does not exist: $directory" }
         require(directory.isDirectory()) { "Input directory is not a directory: $directory" }
+        val localizedZhMetadata = readLocalizedZhMetadata(directory.parent.resolve("localized-icons.zh-CN.json"))
 
         val svgFiles = Files.list(directory).use { stream ->
             stream
@@ -34,18 +37,38 @@ class LucideSvgSource {
             RawLucideIcon(
                 name = iconName,
                 svgContent = Files.readString(svgFile),
-                metadata = readMetadata(metadataFile),
+                metadata = readMetadata(
+                    file = metadataFile,
+                    localizedZhMetadata = localizedZhMetadata[iconName],
+                ),
             )
         }
     }
 
-    private fun readMetadata(file: Path): RawLucideMetadata {
+    private fun readMetadata(file: Path, localizedZhMetadata: LocalizedIconText?): RawLucideMetadata {
         val root = json.parseToJsonElement(Files.readString(file)).jsonObject
         return RawLucideMetadata(
             tags = root.stringArray("tags").toSortedSet(),
+            zhDisplayName = localizedZhMetadata?.displayName,
+            zhTags = localizedZhMetadata?.tags?.toSortedSet() ?: emptySet(),
             aliases = root.aliasNames().toSortedSet(),
             categories = root.stringArray("categories").toSortedSet(),
         )
+    }
+
+    private fun readLocalizedZhMetadata(file: Path): Map<String, LocalizedIconText> {
+        if (!Files.exists(file)) {
+            return emptyMap()
+        }
+
+        val root = json.parseToJsonElement(Files.readString(file)).jsonObject
+        return root.mapValues { (_, value) ->
+            val item = value.jsonObject
+            LocalizedIconText(
+                displayName = item["displayName"]?.jsonPrimitive?.contentOrNull,
+                tags = item.stringArray("tags"),
+            )
+        }
     }
 
     private fun kotlinx.serialization.json.JsonObject.stringArray(fieldName: String): Set<String> =
@@ -63,6 +86,11 @@ class LucideSvgSource {
             }
             ?.toSet()
             ?: emptySet()
+
+    private data class LocalizedIconText(
+        val displayName: String? = null,
+        val tags: Set<String> = emptySet(),
+    )
 
     private companion object {
         val json = Json {

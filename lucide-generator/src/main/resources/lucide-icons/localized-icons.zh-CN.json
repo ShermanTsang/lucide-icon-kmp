@@ -1,0 +1,6782 @@
+{
+  "a-arrow-down": {
+    "displayName": "向下箭头",
+    "tags": []
+  },
+  "a-arrow-up": {
+    "displayName": "向上箭头",
+    "tags": []
+  },
+  "a-large-small": {
+    "displayName": "一大一小",
+    "tags": []
+  },
+  "accessibility": {
+    "displayName": "无障碍",
+    "tags": []
+  },
+  "activity": {
+    "displayName": "活动",
+    "tags": []
+  },
+  "air-vent": {
+    "displayName": "通风口",
+    "tags": []
+  },
+  "airplay": {
+    "displayName": "空中播放",
+    "tags": []
+  },
+  "alarm-clock-check": {
+    "displayName": "闹钟检查",
+    "tags": []
+  },
+  "alarm-clock-minus": {
+    "displayName": "闹钟减号",
+    "tags": []
+  },
+  "alarm-clock-off": {
+    "displayName": "闹钟关闭",
+    "tags": []
+  },
+  "alarm-clock-plus": {
+    "displayName": "闹钟加",
+    "tags": []
+  },
+  "alarm-clock": {
+    "displayName": "闹钟",
+    "tags": []
+  },
+  "alarm-smoke": {
+    "displayName": "报警烟雾",
+    "tags": []
+  },
+  "album": {
+    "displayName": "专辑",
+    "tags": []
+  },
+  "align-center-horizontal": {
+    "displayName": "水平居中对齐",
+    "tags": []
+  },
+  "align-center-vertical": {
+    "displayName": "垂直居中对齐",
+    "tags": []
+  },
+  "align-end-horizontal": {
+    "displayName": "水平对齐端部",
+    "tags": []
+  },
+  "align-end-vertical": {
+    "displayName": "垂直对齐端部",
+    "tags": []
+  },
+  "align-horizontal-distribute-center": {
+    "displayName": "水平分布中心对齐",
+    "tags": []
+  },
+  "align-horizontal-distribute-end": {
+    "displayName": "对齐水平分布端",
+    "tags": []
+  },
+  "align-horizontal-distribute-start": {
+    "displayName": "水平对齐分布起点",
+    "tags": []
+  },
+  "align-horizontal-justify-center": {
+    "displayName": "水平居中对齐",
+    "tags": []
+  },
+  "align-horizontal-justify-end": {
+    "displayName": "水平对齐 两端对齐",
+    "tags": []
+  },
+  "align-horizontal-justify-start": {
+    "displayName": "水平对齐 对齐开始",
+    "tags": []
+  },
+  "align-horizontal-space-around": {
+    "displayName": "对齐周围的水平空间",
+    "tags": []
+  },
+  "align-horizontal-space-between": {
+    "displayName": "对齐之间的水平空间",
+    "tags": []
+  },
+  "align-start-horizontal": {
+    "displayName": "水平起始对齐",
+    "tags": []
+  },
+  "align-start-vertical": {
+    "displayName": "垂直起始对齐",
+    "tags": []
+  },
+  "align-vertical-distribute-center": {
+    "displayName": "垂直分布中心对齐",
+    "tags": []
+  },
+  "align-vertical-distribute-end": {
+    "displayName": "对齐垂直分布端",
+    "tags": []
+  },
+  "align-vertical-distribute-start": {
+    "displayName": "对齐垂直分布起点",
+    "tags": []
+  },
+  "align-vertical-justify-center": {
+    "displayName": "垂直居中对齐",
+    "tags": []
+  },
+  "align-vertical-justify-end": {
+    "displayName": "垂直对齐端对齐",
+    "tags": []
+  },
+  "align-vertical-justify-start": {
+    "displayName": "垂直对齐 开始对齐",
+    "tags": []
+  },
+  "align-vertical-space-around": {
+    "displayName": "对齐周围的垂直空间",
+    "tags": []
+  },
+  "align-vertical-space-between": {
+    "displayName": "对齐之间的垂直空间",
+    "tags": []
+  },
+  "ambulance": {
+    "displayName": "救护车",
+    "tags": []
+  },
+  "ampersand": {
+    "displayName": "和号",
+    "tags": []
+  },
+  "ampersands": {
+    "displayName": "& 符号",
+    "tags": []
+  },
+  "amphora": {
+    "displayName": "双耳瓶",
+    "tags": []
+  },
+  "anchor": {
+    "displayName": "锚",
+    "tags": []
+  },
+  "angry": {
+    "displayName": "生气",
+    "tags": []
+  },
+  "annoyed": {
+    "displayName": "生气",
+    "tags": []
+  },
+  "antenna": {
+    "displayName": "天线",
+    "tags": []
+  },
+  "anvil": {
+    "displayName": "铁砧",
+    "tags": []
+  },
+  "aperture": {
+    "displayName": "光圈",
+    "tags": []
+  },
+  "app-window-mac": {
+    "displayName": "应用程序窗口 Mac",
+    "tags": []
+  },
+  "app-window": {
+    "displayName": "应用程序窗口",
+    "tags": []
+  },
+  "apple": {
+    "displayName": "苹果",
+    "tags": []
+  },
+  "archive-restore": {
+    "displayName": "存档恢复",
+    "tags": []
+  },
+  "archive-x": {
+    "displayName": "档案X",
+    "tags": []
+  },
+  "archive": {
+    "displayName": "存档",
+    "tags": []
+  },
+  "armchair": {
+    "displayName": "扶手椅",
+    "tags": []
+  },
+  "arrow-big-down-dash": {
+    "displayName": "箭头大向下破折号",
+    "tags": []
+  },
+  "arrow-big-down": {
+    "displayName": "大向下箭头",
+    "tags": []
+  },
+  "arrow-big-left-dash": {
+    "displayName": "箭头大左破折号",
+    "tags": []
+  },
+  "arrow-big-left": {
+    "displayName": "大左箭头",
+    "tags": []
+  },
+  "arrow-big-right-dash": {
+    "displayName": "箭头大右破折号",
+    "tags": []
+  },
+  "arrow-big-right": {
+    "displayName": "向右大箭头",
+    "tags": []
+  },
+  "arrow-big-up-dash": {
+    "displayName": "箭头大向上冲刺",
+    "tags": []
+  },
+  "arrow-big-up": {
+    "displayName": "向上箭头",
+    "tags": []
+  },
+  "arrow-down-0-1": {
+    "displayName": "向下箭头 0 1",
+    "tags": []
+  },
+  "arrow-down-1-0": {
+    "displayName": "向下箭头 1 0",
+    "tags": []
+  },
+  "arrow-down-a-z": {
+    "displayName": "向下箭头 A Z",
+    "tags": []
+  },
+  "arrow-down-from-line": {
+    "displayName": "从线向下箭头",
+    "tags": []
+  },
+  "arrow-down-left": {
+    "displayName": "左下箭头",
+    "tags": []
+  },
+  "arrow-down-narrow-wide": {
+    "displayName": "向下箭头 窄 宽",
+    "tags": []
+  },
+  "arrow-down-right": {
+    "displayName": "右下箭头",
+    "tags": []
+  },
+  "arrow-down-to-dot": {
+    "displayName": "向下箭头到点",
+    "tags": []
+  },
+  "arrow-down-to-line": {
+    "displayName": "向下箭头至线",
+    "tags": []
+  },
+  "arrow-down-up": {
+    "displayName": "向下箭头向上",
+    "tags": []
+  },
+  "arrow-down-wide-narrow": {
+    "displayName": "向下箭头 宽 窄",
+    "tags": []
+  },
+  "arrow-down-z-a": {
+    "displayName": "向下箭头 Z A",
+    "tags": []
+  },
+  "arrow-down": {
+    "displayName": "向下箭头",
+    "tags": []
+  },
+  "arrow-left-from-line": {
+    "displayName": "从线向左箭头",
+    "tags": []
+  },
+  "arrow-left-right": {
+    "displayName": "箭头 左 右",
+    "tags": []
+  },
+  "arrow-left-to-line": {
+    "displayName": "向左箭头到线",
+    "tags": []
+  },
+  "arrow-left": {
+    "displayName": "向左箭头",
+    "tags": []
+  },
+  "arrow-right-from-line": {
+    "displayName": "线右箭头",
+    "tags": []
+  },
+  "arrow-right-left": {
+    "displayName": "箭头右左",
+    "tags": []
+  },
+  "arrow-right-to-line": {
+    "displayName": "向右箭头到线",
+    "tags": []
+  },
+  "arrow-right": {
+    "displayName": "向右箭头",
+    "tags": []
+  },
+  "arrow-up-0-1": {
+    "displayName": "向上箭头 0 1",
+    "tags": []
+  },
+  "arrow-up-1-0": {
+    "displayName": "向上箭头 1 0",
+    "tags": []
+  },
+  "arrow-up-a-z": {
+    "displayName": "向上箭头 A Z",
+    "tags": []
+  },
+  "arrow-up-down": {
+    "displayName": "向上箭头 向下箭头",
+    "tags": []
+  },
+  "arrow-up-from-dot": {
+    "displayName": "从点向上箭头",
+    "tags": []
+  },
+  "arrow-up-from-line": {
+    "displayName": "从线向上箭头",
+    "tags": []
+  },
+  "arrow-up-left": {
+    "displayName": "左上箭头",
+    "tags": []
+  },
+  "arrow-up-narrow-wide": {
+    "displayName": "向上箭头 窄 宽",
+    "tags": []
+  },
+  "arrow-up-right": {
+    "displayName": "右上箭头",
+    "tags": []
+  },
+  "arrow-up-to-line": {
+    "displayName": "向上箭头至行",
+    "tags": []
+  },
+  "arrow-up-wide-narrow": {
+    "displayName": "箭头向上 宽 窄",
+    "tags": []
+  },
+  "arrow-up-z-a": {
+    "displayName": "向上箭头 Z A",
+    "tags": []
+  },
+  "arrow-up": {
+    "displayName": "向上箭头",
+    "tags": []
+  },
+  "arrows-up-from-line": {
+    "displayName": "从线向上的箭头",
+    "tags": []
+  },
+  "asterisk": {
+    "displayName": "星号",
+    "tags": []
+  },
+  "at-sign": {
+    "displayName": "在标志处",
+    "tags": []
+  },
+  "atom": {
+    "displayName": "原子",
+    "tags": []
+  },
+  "audio-lines": {
+    "displayName": "音频线",
+    "tags": []
+  },
+  "audio-waveform": {
+    "displayName": "音频波形",
+    "tags": []
+  },
+  "award": {
+    "displayName": "奖项",
+    "tags": []
+  },
+  "axe": {
+    "displayName": "斧头",
+    "tags": []
+  },
+  "axis-3d": {
+    "displayName": "轴 3d",
+    "tags": []
+  },
+  "baby": {
+    "displayName": "宝贝",
+    "tags": []
+  },
+  "backpack": {
+    "displayName": "背包",
+    "tags": []
+  },
+  "badge-alert": {
+    "displayName": "徽章警报",
+    "tags": []
+  },
+  "badge-cent": {
+    "displayName": "徽章中心",
+    "tags": []
+  },
+  "badge-check": {
+    "displayName": "徽章检查",
+    "tags": []
+  },
+  "badge-dollar-sign": {
+    "displayName": "徽章美元符号",
+    "tags": []
+  },
+  "badge-euro": {
+    "displayName": "欧元徽章",
+    "tags": []
+  },
+  "badge-indian-rupee": {
+    "displayName": "徽章印度卢比",
+    "tags": []
+  },
+  "badge-info": {
+    "displayName": "徽章信息",
+    "tags": []
+  },
+  "badge-japanese-yen": {
+    "displayName": "徽章日元",
+    "tags": []
+  },
+  "badge-minus": {
+    "displayName": "徽章减号",
+    "tags": []
+  },
+  "badge-percent": {
+    "displayName": "徽章百分比",
+    "tags": []
+  },
+  "badge-plus": {
+    "displayName": "徽章加号",
+    "tags": []
+  },
+  "badge-pound-sterling": {
+    "displayName": "徽章英镑",
+    "tags": []
+  },
+  "badge-question-mark": {
+    "displayName": "徽章问号",
+    "tags": []
+  },
+  "badge-russian-ruble": {
+    "displayName": "徽章俄罗斯卢布",
+    "tags": []
+  },
+  "badge-swiss-franc": {
+    "displayName": "徽章瑞士法郎",
+    "tags": []
+  },
+  "badge-turkish-lira": {
+    "displayName": "徽章土耳其里拉",
+    "tags": []
+  },
+  "badge-x": {
+    "displayName": "徽章X",
+    "tags": []
+  },
+  "badge": {
+    "displayName": "徽章",
+    "tags": []
+  },
+  "baggage-claim": {
+    "displayName": "行李领取处",
+    "tags": []
+  },
+  "balloon": {
+    "displayName": "气球",
+    "tags": []
+  },
+  "ban": {
+    "displayName": "班",
+    "tags": []
+  },
+  "banana": {
+    "displayName": "香蕉",
+    "tags": []
+  },
+  "bandage": {
+    "displayName": "绷带",
+    "tags": []
+  },
+  "banknote-arrow-down": {
+    "displayName": "钞票箭头向下",
+    "tags": []
+  },
+  "banknote-arrow-up": {
+    "displayName": "钞票向上箭头",
+    "tags": []
+  },
+  "banknote-x": {
+    "displayName": "钞票X",
+    "tags": []
+  },
+  "banknote": {
+    "displayName": "钞票",
+    "tags": []
+  },
+  "barcode": {
+    "displayName": "条码",
+    "tags": []
+  },
+  "barrel": {
+    "displayName": "桶",
+    "tags": []
+  },
+  "baseline": {
+    "displayName": "基线",
+    "tags": []
+  },
+  "bath": {
+    "displayName": "巴斯",
+    "tags": []
+  },
+  "battery-charging": {
+    "displayName": "电池充电",
+    "tags": []
+  },
+  "battery-full": {
+    "displayName": "电池充满",
+    "tags": []
+  },
+  "battery-low": {
+    "displayName": "电池电量低",
+    "tags": []
+  },
+  "battery-medium": {
+    "displayName": "电池介质",
+    "tags": []
+  },
+  "battery-plus": {
+    "displayName": "电池加",
+    "tags": []
+  },
+  "battery-warning": {
+    "displayName": "电池警告",
+    "tags": []
+  },
+  "battery": {
+    "displayName": "电池",
+    "tags": []
+  },
+  "beaker": {
+    "displayName": "烧杯",
+    "tags": []
+  },
+  "bean-off": {
+    "displayName": "豆关",
+    "tags": []
+  },
+  "bean": {
+    "displayName": "豆",
+    "tags": []
+  },
+  "bed-double": {
+    "displayName": "双人床",
+    "tags": []
+  },
+  "bed-single": {
+    "displayName": "单人床",
+    "tags": []
+  },
+  "bed": {
+    "displayName": "床",
+    "tags": []
+  },
+  "beef-off": {
+    "displayName": "音频波形",
+    "tags": []
+  },
+  "beef": {
+    "displayName": "奖项",
+    "tags": []
+  },
+  "beer-off": {
+    "displayName": "斧头",
+    "tags": []
+  },
+  "beer": {
+    "displayName": "轴 3d",
+    "tags": []
+  },
+  "bell-dot": {
+    "displayName": "宝贝",
+    "tags": []
+  },
+  "bell-electric": {
+    "displayName": "背包",
+    "tags": []
+  },
+  "bell-minus": {
+    "displayName": "徽章警报",
+    "tags": []
+  },
+  "bell-off": {
+    "displayName": "徽章中心",
+    "tags": []
+  },
+  "bell-plus": {
+    "displayName": "徽章检查",
+    "tags": []
+  },
+  "bell-ring": {
+    "displayName": "徽章美元符号",
+    "tags": []
+  },
+  "bell": {
+    "displayName": "欧元徽章",
+    "tags": []
+  },
+  "between-horizontal-end": {
+    "displayName": "徽章印度卢比",
+    "tags": []
+  },
+  "between-horizontal-start": {
+    "displayName": "徽章信息",
+    "tags": []
+  },
+  "between-vertical-end": {
+    "displayName": "徽章日元",
+    "tags": []
+  },
+  "between-vertical-start": {
+    "displayName": "徽章减号",
+    "tags": []
+  },
+  "biceps-flexed": {
+    "displayName": "徽章百分比",
+    "tags": []
+  },
+  "bike": {
+    "displayName": "徽章加号",
+    "tags": []
+  },
+  "binary": {
+    "displayName": "徽章英镑",
+    "tags": []
+  },
+  "binoculars": {
+    "displayName": "徽章问号",
+    "tags": []
+  },
+  "biohazard": {
+    "displayName": "徽章俄罗斯卢布",
+    "tags": []
+  },
+  "bird": {
+    "displayName": "徽章瑞士法郎",
+    "tags": []
+  },
+  "birdhouse": {
+    "displayName": "徽章土耳其里拉",
+    "tags": []
+  },
+  "bitcoin": {
+    "displayName": "徽章X",
+    "tags": []
+  },
+  "blend": {
+    "displayName": "徽章",
+    "tags": []
+  },
+  "blinds": {
+    "displayName": "行李领取处",
+    "tags": []
+  },
+  "blocks": {
+    "displayName": "气球",
+    "tags": []
+  },
+  "bluetooth-connected": {
+    "displayName": "班",
+    "tags": []
+  },
+  "bluetooth-off": {
+    "displayName": "香蕉",
+    "tags": []
+  },
+  "bluetooth-searching": {
+    "displayName": "绷带",
+    "tags": []
+  },
+  "bluetooth": {
+    "displayName": "钞票箭头向下",
+    "tags": []
+  },
+  "bold": {
+    "displayName": "钞票向上箭头",
+    "tags": []
+  },
+  "bolt": {
+    "displayName": "钞票X",
+    "tags": []
+  },
+  "bomb": {
+    "displayName": "钞票",
+    "tags": []
+  },
+  "bone": {
+    "displayName": "条码",
+    "tags": []
+  },
+  "book-a": {
+    "displayName": "桶",
+    "tags": []
+  },
+  "book-alert": {
+    "displayName": "基线",
+    "tags": []
+  },
+  "book-audio": {
+    "displayName": "巴斯",
+    "tags": []
+  },
+  "book-check": {
+    "displayName": "电池充电",
+    "tags": []
+  },
+  "book-copy": {
+    "displayName": "电池充满",
+    "tags": []
+  },
+  "book-dashed": {
+    "displayName": "电池电量低",
+    "tags": []
+  },
+  "book-down": {
+    "displayName": "电池介质",
+    "tags": []
+  },
+  "book-headphones": {
+    "displayName": "电池加",
+    "tags": []
+  },
+  "book-heart": {
+    "displayName": "电池警告",
+    "tags": []
+  },
+  "book-image": {
+    "displayName": "电池",
+    "tags": []
+  },
+  "book-key": {
+    "displayName": "烧杯",
+    "tags": []
+  },
+  "book-lock": {
+    "displayName": "豆关",
+    "tags": []
+  },
+  "book-marked": {
+    "displayName": "豆",
+    "tags": []
+  },
+  "book-minus": {
+    "displayName": "双人床",
+    "tags": []
+  },
+  "book-open-check": {
+    "displayName": "单人床",
+    "tags": []
+  },
+  "book-open-text": {
+    "displayName": "床",
+    "tags": []
+  },
+  "book-open": {
+    "displayName": "已开放预订",
+    "tags": []
+  },
+  "book-plus": {
+    "displayName": "书加",
+    "tags": []
+  },
+  "book-search": {
+    "displayName": "图书搜索",
+    "tags": []
+  },
+  "book-text": {
+    "displayName": "书籍正文",
+    "tags": []
+  },
+  "book-type": {
+    "displayName": "书籍类型",
+    "tags": []
+  },
+  "book-up-2": {
+    "displayName": "预订 2",
+    "tags": []
+  },
+  "book-up": {
+    "displayName": "预订",
+    "tags": []
+  },
+  "book-user": {
+    "displayName": "预订用户",
+    "tags": []
+  },
+  "book-x": {
+    "displayName": "第十册",
+    "tags": []
+  },
+  "book": {
+    "displayName": "预订",
+    "tags": []
+  },
+  "bookmark-check": {
+    "displayName": "书签检查",
+    "tags": []
+  },
+  "bookmark-minus": {
+    "displayName": "书签减号",
+    "tags": []
+  },
+  "bookmark-off": {
+    "displayName": "关闭书签",
+    "tags": []
+  },
+  "bookmark-plus": {
+    "displayName": "书签加",
+    "tags": []
+  },
+  "bookmark-x": {
+    "displayName": "书签X",
+    "tags": []
+  },
+  "bookmark": {
+    "displayName": "书签",
+    "tags": []
+  },
+  "boom-box": {
+    "displayName": "音箱",
+    "tags": []
+  },
+  "bot-message-square": {
+    "displayName": "机器人消息广场",
+    "tags": []
+  },
+  "bot-off": {
+    "displayName": "机器人关闭",
+    "tags": []
+  },
+  "bot": {
+    "displayName": "机器人",
+    "tags": []
+  },
+  "bottle-wine": {
+    "displayName": "瓶装酒",
+    "tags": []
+  },
+  "bow-arrow": {
+    "displayName": "弓箭",
+    "tags": []
+  },
+  "box": {
+    "displayName": "盒子",
+    "tags": []
+  },
+  "boxes": {
+    "displayName": "盒子",
+    "tags": []
+  },
+  "braces": {
+    "displayName": "牙套",
+    "tags": []
+  },
+  "brackets": {
+    "displayName": "括号",
+    "tags": []
+  },
+  "brain-circuit": {
+    "displayName": "脑回路",
+    "tags": []
+  },
+  "brain-cog": {
+    "displayName": "大脑齿轮",
+    "tags": []
+  },
+  "brain": {
+    "displayName": "大脑",
+    "tags": []
+  },
+  "brick-wall-fire": {
+    "displayName": "砖墙火灾",
+    "tags": []
+  },
+  "brick-wall-shield": {
+    "displayName": "砖墙盾",
+    "tags": []
+  },
+  "brick-wall": {
+    "displayName": "砖墙",
+    "tags": []
+  },
+  "briefcase-business": {
+    "displayName": "公文包业务",
+    "tags": []
+  },
+  "briefcase-conveyor-belt": {
+    "displayName": "公文包传送带",
+    "tags": []
+  },
+  "briefcase-medical": {
+    "displayName": "公文包医疗",
+    "tags": []
+  },
+  "briefcase": {
+    "displayName": "公文包",
+    "tags": []
+  },
+  "bring-to-front": {
+    "displayName": "带到前面",
+    "tags": []
+  },
+  "brush-cleaning": {
+    "displayName": "刷子清洁",
+    "tags": []
+  },
+  "brush": {
+    "displayName": "刷子",
+    "tags": []
+  },
+  "bubbles": {
+    "displayName": "气泡",
+    "tags": []
+  },
+  "bug-off": {
+    "displayName": "关闭",
+    "tags": []
+  },
+  "bug-play": {
+    "displayName": "虫子游戏",
+    "tags": []
+  },
+  "bug": {
+    "displayName": "错误",
+    "tags": []
+  },
+  "building-2": {
+    "displayName": "2号楼",
+    "tags": []
+  },
+  "building": {
+    "displayName": "建筑",
+    "tags": []
+  },
+  "bus-front": {
+    "displayName": "巴士前部",
+    "tags": []
+  },
+  "bus": {
+    "displayName": "巴士",
+    "tags": []
+  },
+  "cable-car": {
+    "displayName": "缆车",
+    "tags": []
+  },
+  "cable": {
+    "displayName": "电缆",
+    "tags": []
+  },
+  "cake-slice": {
+    "displayName": "蛋糕片",
+    "tags": []
+  },
+  "cake": {
+    "displayName": "蛋糕",
+    "tags": []
+  },
+  "calculator": {
+    "displayName": "计算器",
+    "tags": []
+  },
+  "calendar-1": {
+    "displayName": "日历1",
+    "tags": []
+  },
+  "calendar-arrow-down": {
+    "displayName": "日历向下箭头",
+    "tags": []
+  },
+  "calendar-arrow-up": {
+    "displayName": "日历箭头向上",
+    "tags": []
+  },
+  "calendar-check-2": {
+    "displayName": "日历检查2",
+    "tags": []
+  },
+  "calendar-check": {
+    "displayName": "日历检查",
+    "tags": []
+  },
+  "calendar-clock": {
+    "displayName": "日历时钟",
+    "tags": []
+  },
+  "calendar-cog": {
+    "displayName": "日历齿轮",
+    "tags": []
+  },
+  "calendar-days": {
+    "displayName": "日历日",
+    "tags": []
+  },
+  "calendar-fold": {
+    "displayName": "日历折叠",
+    "tags": []
+  },
+  "calendar-heart": {
+    "displayName": "日历心",
+    "tags": []
+  },
+  "calendar-minus-2": {
+    "displayName": "日历减 2",
+    "tags": []
+  },
+  "calendar-minus": {
+    "displayName": "日历减号",
+    "tags": []
+  },
+  "calendar-off": {
+    "displayName": "日历关闭",
+    "tags": []
+  },
+  "calendar-plus-2": {
+    "displayName": "日历加2",
+    "tags": []
+  },
+  "calendar-plus": {
+    "displayName": "日历加",
+    "tags": []
+  },
+  "calendar-range": {
+    "displayName": "日历范围",
+    "tags": []
+  },
+  "calendar-search": {
+    "displayName": "日历搜索",
+    "tags": []
+  },
+  "calendar-sync": {
+    "displayName": "日历同步",
+    "tags": []
+  },
+  "calendar-x-2": {
+    "displayName": "日历×2",
+    "tags": []
+  },
+  "calendar-x": {
+    "displayName": "日历 X",
+    "tags": []
+  },
+  "calendar": {
+    "displayName": "日历",
+    "tags": []
+  },
+  "calendars": {
+    "displayName": "日历",
+    "tags": []
+  },
+  "camera-off": {
+    "displayName": "相机关闭",
+    "tags": []
+  },
+  "camera": {
+    "displayName": "相机",
+    "tags": []
+  },
+  "candy-cane": {
+    "displayName": "拐杖糖",
+    "tags": []
+  },
+  "candy-off": {
+    "displayName": "糖果关",
+    "tags": []
+  },
+  "candy": {
+    "displayName": "糖果",
+    "tags": []
+  },
+  "cannabis-off": {
+    "displayName": "大麻关闭",
+    "tags": []
+  },
+  "cannabis": {
+    "displayName": "大麻",
+    "tags": []
+  },
+  "captions-off": {
+    "displayName": "字幕关闭",
+    "tags": []
+  },
+  "captions": {
+    "displayName": "字幕",
+    "tags": []
+  },
+  "car-front": {
+    "displayName": "汽车前部",
+    "tags": []
+  },
+  "car-taxi-front": {
+    "displayName": "汽车出租车前面",
+    "tags": []
+  },
+  "car": {
+    "displayName": "汽车",
+    "tags": []
+  },
+  "caravan": {
+    "displayName": "大篷车",
+    "tags": []
+  },
+  "card-sim": {
+    "displayName": "卡SIM卡",
+    "tags": []
+  },
+  "carrot": {
+    "displayName": "胡萝卜",
+    "tags": []
+  },
+  "case-lower": {
+    "displayName": "下壳",
+    "tags": []
+  },
+  "case-sensitive": {
+    "displayName": "区分大小写",
+    "tags": []
+  },
+  "case-upper": {
+    "displayName": "外壳上部",
+    "tags": []
+  },
+  "cassette-tape": {
+    "displayName": "盒式磁带",
+    "tags": []
+  },
+  "cast": {
+    "displayName": "演员阵容",
+    "tags": []
+  },
+  "castle": {
+    "displayName": "城堡",
+    "tags": []
+  },
+  "cat": {
+    "displayName": "猫",
+    "tags": []
+  },
+  "cctv-off": {
+    "displayName": "闭路电视",
+    "tags": []
+  },
+  "cctv": {
+    "displayName": "中央电视台",
+    "tags": []
+  },
+  "chart-area": {
+    "displayName": "图表区",
+    "tags": []
+  },
+  "chart-bar-big": {
+    "displayName": "图表栏大",
+    "tags": []
+  },
+  "chart-bar-decreasing": {
+    "displayName": "图表栏减少",
+    "tags": []
+  },
+  "chart-bar-increasing": {
+    "displayName": "图表栏增加",
+    "tags": []
+  },
+  "chart-bar-stacked": {
+    "displayName": "堆叠图表栏",
+    "tags": []
+  },
+  "chart-bar": {
+    "displayName": "图表栏",
+    "tags": []
+  },
+  "chart-candlestick": {
+    "displayName": "图表烛台",
+    "tags": []
+  },
+  "chart-column-big": {
+    "displayName": "图表栏大",
+    "tags": []
+  },
+  "chart-column-decreasing": {
+    "displayName": "图表列递减",
+    "tags": []
+  },
+  "chart-column-increasing": {
+    "displayName": "图表列增加",
+    "tags": []
+  },
+  "chart-column-stacked": {
+    "displayName": "堆积图表柱",
+    "tags": []
+  },
+  "chart-column": {
+    "displayName": "图表栏",
+    "tags": []
+  },
+  "chart-gantt": {
+    "displayName": "甘特图",
+    "tags": []
+  },
+  "chart-line": {
+    "displayName": "图表线",
+    "tags": []
+  },
+  "chart-network": {
+    "displayName": "图网",
+    "tags": []
+  },
+  "chart-no-axes-column-decreasing": {
+    "displayName": "图表无轴列递减",
+    "tags": []
+  },
+  "chart-no-axes-column-increasing": {
+    "displayName": "图表无轴列增加",
+    "tags": []
+  },
+  "chart-no-axes-column": {
+    "displayName": "图表无轴列",
+    "tags": []
+  },
+  "chart-no-axes-combined": {
+    "displayName": "图表没有组合轴",
+    "tags": []
+  },
+  "chart-no-axes-gantt": {
+    "displayName": "图表无轴甘特图",
+    "tags": []
+  },
+  "chart-pie": {
+    "displayName": "图表饼图",
+    "tags": []
+  },
+  "chart-scatter": {
+    "displayName": "图表散点图",
+    "tags": []
+  },
+  "chart-spline": {
+    "displayName": "图表样条线",
+    "tags": []
+  },
+  "check-check": {
+    "displayName": "支票 支票",
+    "tags": []
+  },
+  "check-line": {
+    "displayName": "检查线",
+    "tags": []
+  },
+  "check": {
+    "displayName": "检查",
+    "tags": []
+  },
+  "chef-hat": {
+    "displayName": "厨师帽",
+    "tags": []
+  },
+  "cherry": {
+    "displayName": "樱桃",
+    "tags": []
+  },
+  "chess-bishop": {
+    "displayName": "国际象棋主教",
+    "tags": []
+  },
+  "chess-king": {
+    "displayName": "棋王",
+    "tags": []
+  },
+  "chess-knight": {
+    "displayName": "国际象棋骑士",
+    "tags": []
+  },
+  "chess-pawn": {
+    "displayName": "国际象棋棋子",
+    "tags": []
+  },
+  "chess-queen": {
+    "displayName": "国际象棋皇后",
+    "tags": []
+  },
+  "chess-rook": {
+    "displayName": "国际象棋车",
+    "tags": []
+  },
+  "chevron-down": {
+    "displayName": "雪佛龙羽绒服",
+    "tags": []
+  },
+  "chevron-first": {
+    "displayName": "雪佛龙第一",
+    "tags": []
+  },
+  "chevron-last": {
+    "displayName": "雪佛龙最后",
+    "tags": []
+  },
+  "chevron-left": {
+    "displayName": "雪佛龙左",
+    "tags": []
+  },
+  "chevron-right": {
+    "displayName": "雪佛龙右",
+    "tags": []
+  },
+  "chevron-up": {
+    "displayName": "雪佛龙向上",
+    "tags": []
+  },
+  "chevrons-down-up": {
+    "displayName": "V 形向下向上",
+    "tags": []
+  },
+  "chevrons-down": {
+    "displayName": "人字形羽绒服",
+    "tags": []
+  },
+  "chevrons-left-right-ellipsis": {
+    "displayName": "V 字形左右省略号",
+    "tags": []
+  },
+  "chevrons-left-right": {
+    "displayName": "V 字形 左 右",
+    "tags": []
+  },
+  "chevrons-left": {
+    "displayName": "V 形左",
+    "tags": []
+  },
+  "chevrons-right-left": {
+    "displayName": "V 形右左",
+    "tags": []
+  },
+  "chevrons-right": {
+    "displayName": "人字形右",
+    "tags": []
+  },
+  "chevrons-up-down": {
+    "displayName": "V 字形向上向下",
+    "tags": []
+  },
+  "chevrons-up": {
+    "displayName": "V 字形向上",
+    "tags": []
+  },
+  "church": {
+    "displayName": "教堂",
+    "tags": []
+  },
+  "cigarette-off": {
+    "displayName": "关掉香烟",
+    "tags": []
+  },
+  "cigarette": {
+    "displayName": "香烟",
+    "tags": []
+  },
+  "circle-alert": {
+    "displayName": "圆圈警报",
+    "tags": []
+  },
+  "circle-arrow-down": {
+    "displayName": "向下圆圈箭头",
+    "tags": []
+  },
+  "circle-arrow-left": {
+    "displayName": "向左圆圈箭头",
+    "tags": []
+  },
+  "circle-arrow-out-down-left": {
+    "displayName": "向左下方向外的圆形箭头",
+    "tags": []
+  },
+  "circle-arrow-out-down-right": {
+    "displayName": "圆圈箭头向右下方",
+    "tags": []
+  },
+  "circle-arrow-out-up-left": {
+    "displayName": "左上圆圈箭头",
+    "tags": []
+  },
+  "circle-arrow-out-up-right": {
+    "displayName": "向右上方向外的圆圈箭头",
+    "tags": []
+  },
+  "circle-arrow-right": {
+    "displayName": "向右圆圈箭头",
+    "tags": []
+  },
+  "circle-arrow-up": {
+    "displayName": "圆圈向上箭头",
+    "tags": []
+  },
+  "circle-check-big": {
+    "displayName": "圆圈检查大",
+    "tags": []
+  },
+  "circle-check": {
+    "displayName": "圆圈检查",
+    "tags": []
+  },
+  "circle-chevron-down": {
+    "displayName": "圆形 V 形向下",
+    "tags": []
+  },
+  "circle-chevron-left": {
+    "displayName": "圆圈 V 形左",
+    "tags": []
+  },
+  "circle-chevron-right": {
+    "displayName": "圆圈 V 形右",
+    "tags": []
+  },
+  "circle-chevron-up": {
+    "displayName": "向上圈 V 形",
+    "tags": []
+  },
+  "circle-dashed": {
+    "displayName": "圆圈虚线",
+    "tags": []
+  },
+  "circle-divide": {
+    "displayName": "圆分割",
+    "tags": []
+  },
+  "circle-dollar-sign": {
+    "displayName": "圆圈美元符号",
+    "tags": []
+  },
+  "circle-dot-dashed": {
+    "displayName": "圆点虚线",
+    "tags": []
+  },
+  "circle-dot": {
+    "displayName": "圆点",
+    "tags": []
+  },
+  "circle-ellipsis": {
+    "displayName": "圆省略号",
+    "tags": []
+  },
+  "circle-equal": {
+    "displayName": "等圆",
+    "tags": []
+  },
+  "circle-fading-arrow-up": {
+    "displayName": "圆圈淡出箭头向上",
+    "tags": []
+  },
+  "circle-fading-plus": {
+    "displayName": "圆淡入加",
+    "tags": []
+  },
+  "circle-gauge": {
+    "displayName": "圆规",
+    "tags": []
+  },
+  "circle-minus": {
+    "displayName": "圆减号",
+    "tags": []
+  },
+  "circle-off": {
+    "displayName": "圈出",
+    "tags": []
+  },
+  "circle-parking-off": {
+    "displayName": "圆圈停车",
+    "tags": []
+  },
+  "circle-parking": {
+    "displayName": "环形停车场",
+    "tags": []
+  },
+  "circle-pause": {
+    "displayName": "圆圈暂停",
+    "tags": []
+  },
+  "circle-percent": {
+    "displayName": "圆百分比",
+    "tags": []
+  },
+  "circle-pile": {
+    "displayName": "圆桩",
+    "tags": []
+  },
+  "circle-play": {
+    "displayName": "圆圈游戏",
+    "tags": []
+  },
+  "circle-plus": {
+    "displayName": "圆加",
+    "tags": []
+  },
+  "circle-pound-sterling": {
+    "displayName": "圆圈 英镑",
+    "tags": []
+  },
+  "circle-power": {
+    "displayName": "圆动力",
+    "tags": []
+  },
+  "circle-question-mark": {
+    "displayName": "圆圈问号",
+    "tags": []
+  },
+  "circle-slash-2": {
+    "displayName": "圆斜线 2",
+    "tags": []
+  },
+  "circle-slash": {
+    "displayName": "圆斜线",
+    "tags": []
+  },
+  "circle-small": {
+    "displayName": "小圆圈",
+    "tags": []
+  },
+  "circle-star": {
+    "displayName": "圆星",
+    "tags": []
+  },
+  "circle-stop": {
+    "displayName": "圆圈停止",
+    "tags": []
+  },
+  "circle-user-round": {
+    "displayName": "圈用户回合",
+    "tags": []
+  },
+  "circle-user": {
+    "displayName": "圈子用户",
+    "tags": []
+  },
+  "circle-x": {
+    "displayName": "圆X",
+    "tags": []
+  },
+  "circle": {
+    "displayName": "圆",
+    "tags": []
+  },
+  "circuit-board": {
+    "displayName": "电路板",
+    "tags": []
+  },
+  "citrus": {
+    "displayName": "柑橘类",
+    "tags": []
+  },
+  "clapperboard": {
+    "displayName": "场记板",
+    "tags": []
+  },
+  "clipboard-check": {
+    "displayName": "剪贴板检查",
+    "tags": []
+  },
+  "clipboard-clock": {
+    "displayName": "剪贴板时钟",
+    "tags": []
+  },
+  "clipboard-copy": {
+    "displayName": "剪贴板复制",
+    "tags": []
+  },
+  "clipboard-list": {
+    "displayName": "剪贴板列表",
+    "tags": []
+  },
+  "clipboard-minus": {
+    "displayName": "剪贴板减号",
+    "tags": []
+  },
+  "clipboard-paste": {
+    "displayName": "剪贴板粘贴",
+    "tags": []
+  },
+  "clipboard-pen-line": {
+    "displayName": "剪贴板笔线",
+    "tags": []
+  },
+  "clipboard-pen": {
+    "displayName": "剪贴板笔",
+    "tags": []
+  },
+  "clipboard-plus": {
+    "displayName": "剪贴板加",
+    "tags": []
+  },
+  "clipboard-type": {
+    "displayName": "剪贴板类型",
+    "tags": []
+  },
+  "clipboard-x": {
+    "displayName": "剪贴板X",
+    "tags": []
+  },
+  "clipboard": {
+    "displayName": "剪贴板",
+    "tags": []
+  },
+  "clock-1": {
+    "displayName": "时钟1",
+    "tags": []
+  },
+  "clock-10": {
+    "displayName": "时钟10",
+    "tags": []
+  },
+  "clock-11": {
+    "displayName": "时钟11",
+    "tags": []
+  },
+  "clock-12": {
+    "displayName": "时钟 12",
+    "tags": []
+  },
+  "clock-2": {
+    "displayName": "时钟2",
+    "tags": []
+  },
+  "clock-3": {
+    "displayName": "时钟3",
+    "tags": []
+  },
+  "clock-4": {
+    "displayName": "时钟4",
+    "tags": []
+  },
+  "clock-5": {
+    "displayName": "时钟5",
+    "tags": []
+  },
+  "clock-6": {
+    "displayName": "时钟 6",
+    "tags": []
+  },
+  "clock-7": {
+    "displayName": "时钟7",
+    "tags": []
+  },
+  "clock-8": {
+    "displayName": "时钟8",
+    "tags": []
+  },
+  "clock-9": {
+    "displayName": "时钟 9",
+    "tags": []
+  },
+  "clock-alert": {
+    "displayName": "时钟警报",
+    "tags": []
+  },
+  "clock-arrow-down": {
+    "displayName": "时钟箭头向下",
+    "tags": []
+  },
+  "clock-arrow-up": {
+    "displayName": "时钟箭头向上",
+    "tags": []
+  },
+  "clock-check": {
+    "displayName": "时钟检查",
+    "tags": []
+  },
+  "clock-fading": {
+    "displayName": "时钟衰落",
+    "tags": []
+  },
+  "clock-plus": {
+    "displayName": "时钟加",
+    "tags": []
+  },
+  "clock": {
+    "displayName": "时钟",
+    "tags": []
+  },
+  "closed-caption": {
+    "displayName": "隐藏式字幕",
+    "tags": []
+  },
+  "cloud-alert": {
+    "displayName": "云警报",
+    "tags": []
+  },
+  "cloud-backup": {
+    "displayName": "云备份",
+    "tags": []
+  },
+  "cloud-check": {
+    "displayName": "云查",
+    "tags": []
+  },
+  "cloud-cog": {
+    "displayName": "云齿轮",
+    "tags": []
+  },
+  "cloud-download": {
+    "displayName": "云下载",
+    "tags": []
+  },
+  "cloud-drizzle": {
+    "displayName": "云细雨",
+    "tags": []
+  },
+  "cloud-fog": {
+    "displayName": "云雾",
+    "tags": []
+  },
+  "cloud-hail": {
+    "displayName": "云冰雹",
+    "tags": []
+  },
+  "cloud-lightning": {
+    "displayName": "云闪电",
+    "tags": []
+  },
+  "cloud-moon-rain": {
+    "displayName": "云 月亮 雨",
+    "tags": []
+  },
+  "cloud-moon": {
+    "displayName": "云月",
+    "tags": []
+  },
+  "cloud-off": {
+    "displayName": "云关闭",
+    "tags": []
+  },
+  "cloud-rain-wind": {
+    "displayName": "云 雨 风",
+    "tags": []
+  },
+  "cloud-rain": {
+    "displayName": "云雨",
+    "tags": []
+  },
+  "cloud-snow": {
+    "displayName": "云雪",
+    "tags": []
+  },
+  "cloud-sun-rain": {
+    "displayName": "云 太阳 雨",
+    "tags": []
+  },
+  "cloud-sun": {
+    "displayName": "云太阳",
+    "tags": []
+  },
+  "cloud-sync": {
+    "displayName": "云同步",
+    "tags": []
+  },
+  "cloud-upload": {
+    "displayName": "云端上传",
+    "tags": []
+  },
+  "cloud": {
+    "displayName": "云",
+    "tags": []
+  },
+  "cloudy": {
+    "displayName": "多云",
+    "tags": []
+  },
+  "clover": {
+    "displayName": "三叶草",
+    "tags": []
+  },
+  "club": {
+    "displayName": "俱乐部",
+    "tags": []
+  },
+  "code-xml": {
+    "displayName": "代码 XML",
+    "tags": []
+  },
+  "code": {
+    "displayName": "代码",
+    "tags": []
+  },
+  "coffee": {
+    "displayName": "咖啡",
+    "tags": []
+  },
+  "cog": {
+    "displayName": "齿轮",
+    "tags": []
+  },
+  "coins": {
+    "displayName": "硬币",
+    "tags": []
+  },
+  "columns-2": {
+    "displayName": "第 2 栏",
+    "tags": []
+  },
+  "columns-3-cog": {
+    "displayName": "第 3 列齿轮",
+    "tags": []
+  },
+  "columns-3": {
+    "displayName": "第 3 栏",
+    "tags": []
+  },
+  "columns-4": {
+    "displayName": "第 4 栏",
+    "tags": []
+  },
+  "combine": {
+    "displayName": "结合",
+    "tags": []
+  },
+  "command": {
+    "displayName": "命令",
+    "tags": []
+  },
+  "compass": {
+    "displayName": "指南针",
+    "tags": []
+  },
+  "component": {
+    "displayName": "组件",
+    "tags": []
+  },
+  "computer": {
+    "displayName": "电脑",
+    "tags": []
+  },
+  "concierge-bell": {
+    "displayName": "礼宾服务铃",
+    "tags": []
+  },
+  "cone": {
+    "displayName": "锥体",
+    "tags": []
+  },
+  "construction": {
+    "displayName": "建筑工程",
+    "tags": []
+  },
+  "contact-round": {
+    "displayName": "接触轮",
+    "tags": []
+  },
+  "contact": {
+    "displayName": "联系方式",
+    "tags": []
+  },
+  "container": {
+    "displayName": "集装箱",
+    "tags": []
+  },
+  "contrast": {
+    "displayName": "对比",
+    "tags": []
+  },
+  "cookie": {
+    "displayName": "饼干",
+    "tags": []
+  },
+  "cooking-pot": {
+    "displayName": "煮锅",
+    "tags": []
+  },
+  "copy-check": {
+    "displayName": "复印检查",
+    "tags": []
+  },
+  "copy-minus": {
+    "displayName": "复制减号",
+    "tags": []
+  },
+  "copy-plus": {
+    "displayName": "复制加",
+    "tags": []
+  },
+  "copy-slash": {
+    "displayName": "复制斜杠",
+    "tags": []
+  },
+  "copy-x": {
+    "displayName": "复制X",
+    "tags": []
+  },
+  "copy": {
+    "displayName": "复制",
+    "tags": []
+  },
+  "copyleft": {
+    "displayName": "版权左",
+    "tags": []
+  },
+  "copyright": {
+    "displayName": "版权",
+    "tags": []
+  },
+  "corner-down-left": {
+    "displayName": "左下角",
+    "tags": []
+  },
+  "corner-down-right": {
+    "displayName": "右下角",
+    "tags": []
+  },
+  "corner-left-down": {
+    "displayName": "左下角",
+    "tags": []
+  },
+  "corner-left-up": {
+    "displayName": "角向左向上",
+    "tags": []
+  },
+  "corner-right-down": {
+    "displayName": "右下角",
+    "tags": []
+  },
+  "corner-right-up": {
+    "displayName": "右角向上",
+    "tags": []
+  },
+  "corner-up-left": {
+    "displayName": "左上角",
+    "tags": []
+  },
+  "corner-up-right": {
+    "displayName": "右上角",
+    "tags": []
+  },
+  "cpu": {
+    "displayName": "中央处理器",
+    "tags": []
+  },
+  "creative-commons": {
+    "displayName": "知识共享",
+    "tags": []
+  },
+  "credit-card": {
+    "displayName": "信用卡",
+    "tags": []
+  },
+  "croissant": {
+    "displayName": "羊角面包",
+    "tags": []
+  },
+  "crop": {
+    "displayName": "作物",
+    "tags": []
+  },
+  "cross": {
+    "displayName": "克罗斯",
+    "tags": []
+  },
+  "crosshair": {
+    "displayName": "十字线",
+    "tags": []
+  },
+  "crown": {
+    "displayName": "皇冠",
+    "tags": []
+  },
+  "cuboid": {
+    "displayName": "长方体",
+    "tags": []
+  },
+  "cup-soda": {
+    "displayName": "杯苏打水",
+    "tags": []
+  },
+  "currency": {
+    "displayName": "货币",
+    "tags": []
+  },
+  "cylinder": {
+    "displayName": "气缸",
+    "tags": []
+  },
+  "dam": {
+    "displayName": "坝",
+    "tags": []
+  },
+  "database-backup": {
+    "displayName": "数据库备份",
+    "tags": []
+  },
+  "database-search": {
+    "displayName": "数据库检索",
+    "tags": []
+  },
+  "database-zap": {
+    "displayName": "数据库攻击",
+    "tags": []
+  },
+  "database": {
+    "displayName": "数据库",
+    "tags": []
+  },
+  "decimals-arrow-left": {
+    "displayName": "小数向左箭头",
+    "tags": []
+  },
+  "decimals-arrow-right": {
+    "displayName": "小数向右箭头",
+    "tags": []
+  },
+  "delete": {
+    "displayName": "删除",
+    "tags": []
+  },
+  "dessert": {
+    "displayName": "甜点",
+    "tags": []
+  },
+  "diameter": {
+    "displayName": "直径",
+    "tags": []
+  },
+  "diamond-minus": {
+    "displayName": "钻石减号",
+    "tags": []
+  },
+  "diamond-percent": {
+    "displayName": "钻石百分比",
+    "tags": []
+  },
+  "diamond-plus": {
+    "displayName": "钻石加号",
+    "tags": []
+  },
+  "diamond": {
+    "displayName": "钻石",
+    "tags": []
+  },
+  "dice-1": {
+    "displayName": "骰子 1",
+    "tags": []
+  },
+  "dice-2": {
+    "displayName": "骰子2",
+    "tags": []
+  },
+  "dice-3": {
+    "displayName": "骰子 3",
+    "tags": []
+  },
+  "dice-4": {
+    "displayName": "骰子 4",
+    "tags": []
+  },
+  "dice-5": {
+    "displayName": "骰子 5",
+    "tags": []
+  },
+  "dice-6": {
+    "displayName": "骰子 6",
+    "tags": []
+  },
+  "dices": {
+    "displayName": "骰子",
+    "tags": []
+  },
+  "diff": {
+    "displayName": "差异",
+    "tags": []
+  },
+  "disc-2": {
+    "displayName": "光盘2",
+    "tags": []
+  },
+  "disc-3": {
+    "displayName": "光盘3",
+    "tags": []
+  },
+  "disc-album": {
+    "displayName": "唱片专辑",
+    "tags": []
+  },
+  "disc": {
+    "displayName": "光盘",
+    "tags": []
+  },
+  "divide": {
+    "displayName": "划分",
+    "tags": []
+  },
+  "dna-off": {
+    "displayName": "脱氧核糖核酸",
+    "tags": []
+  },
+  "dna": {
+    "displayName": "脱氧核糖核酸",
+    "tags": []
+  },
+  "dock": {
+    "displayName": "码头",
+    "tags": []
+  },
+  "dog": {
+    "displayName": "狗",
+    "tags": []
+  },
+  "dollar-sign": {
+    "displayName": "美元符号",
+    "tags": []
+  },
+  "donut": {
+    "displayName": "甜甜圈",
+    "tags": []
+  },
+  "door-closed-locked": {
+    "displayName": "门关闭锁上",
+    "tags": []
+  },
+  "door-closed": {
+    "displayName": "门已关闭",
+    "tags": []
+  },
+  "door-open": {
+    "displayName": "门打开",
+    "tags": []
+  },
+  "dot": {
+    "displayName": "点",
+    "tags": []
+  },
+  "download": {
+    "displayName": "下载",
+    "tags": []
+  },
+  "drafting-compass": {
+    "displayName": "制图指南针",
+    "tags": []
+  },
+  "drama": {
+    "displayName": "戏剧",
+    "tags": []
+  },
+  "drill": {
+    "displayName": "钻",
+    "tags": []
+  },
+  "drone": {
+    "displayName": "无人机",
+    "tags": []
+  },
+  "droplet-off": {
+    "displayName": "滴落关闭",
+    "tags": []
+  },
+  "droplet": {
+    "displayName": "水滴",
+    "tags": []
+  },
+  "droplets": {
+    "displayName": "水滴",
+    "tags": []
+  },
+  "drum": {
+    "displayName": "鼓",
+    "tags": []
+  },
+  "drumstick": {
+    "displayName": "鼓槌",
+    "tags": []
+  },
+  "dumbbell": {
+    "displayName": "哑铃",
+    "tags": []
+  },
+  "ear-off": {
+    "displayName": "耳朵关闭",
+    "tags": []
+  },
+  "ear": {
+    "displayName": "耳朵",
+    "tags": []
+  },
+  "earth-lock": {
+    "displayName": "地锁",
+    "tags": []
+  },
+  "earth": {
+    "displayName": "地球",
+    "tags": []
+  },
+  "eclipse": {
+    "displayName": "日食",
+    "tags": []
+  },
+  "egg-fried": {
+    "displayName": "鸡蛋煎",
+    "tags": []
+  },
+  "egg-off": {
+    "displayName": "蛋关",
+    "tags": []
+  },
+  "egg": {
+    "displayName": "鸡蛋",
+    "tags": []
+  },
+  "ellipse": {
+    "displayName": "椭圆",
+    "tags": []
+  },
+  "ellipsis-vertical": {
+    "displayName": "垂直省略号",
+    "tags": []
+  },
+  "ellipsis": {
+    "displayName": "省略号",
+    "tags": []
+  },
+  "equal-approximately": {
+    "displayName": "大约相等",
+    "tags": []
+  },
+  "equal-not": {
+    "displayName": "等于不",
+    "tags": []
+  },
+  "equal": {
+    "displayName": "平等",
+    "tags": []
+  },
+  "eraser": {
+    "displayName": "橡皮擦",
+    "tags": []
+  },
+  "ethernet-port": {
+    "displayName": "以太网端口",
+    "tags": []
+  },
+  "euro": {
+    "displayName": "欧元",
+    "tags": []
+  },
+  "ev-charger": {
+    "displayName": "电动车充电器",
+    "tags": []
+  },
+  "expand": {
+    "displayName": "展开",
+    "tags": []
+  },
+  "external-link": {
+    "displayName": "外部链接",
+    "tags": []
+  },
+  "eye-closed": {
+    "displayName": "闭眼",
+    "tags": []
+  },
+  "eye-off": {
+    "displayName": "移开视线",
+    "tags": []
+  },
+  "eye": {
+    "displayName": "眼睛",
+    "tags": []
+  },
+  "factory": {
+    "displayName": "工厂",
+    "tags": []
+  },
+  "fan": {
+    "displayName": "风扇",
+    "tags": []
+  },
+  "fast-forward": {
+    "displayName": "快进",
+    "tags": []
+  },
+  "feather": {
+    "displayName": "羽毛",
+    "tags": []
+  },
+  "fence": {
+    "displayName": "栅栏",
+    "tags": []
+  },
+  "ferris-wheel": {
+    "displayName": "摩天轮",
+    "tags": []
+  },
+  "file-archive": {
+    "displayName": "文件存档",
+    "tags": []
+  },
+  "file-axis-3d": {
+    "displayName": "文件轴 3d",
+    "tags": []
+  },
+  "file-badge": {
+    "displayName": "文件徽章",
+    "tags": []
+  },
+  "file-box": {
+    "displayName": "文件盒",
+    "tags": []
+  },
+  "file-braces-corner": {
+    "displayName": "文件括号角",
+    "tags": []
+  },
+  "file-braces": {
+    "displayName": "文件大括号",
+    "tags": []
+  },
+  "file-chart-column-increasing": {
+    "displayName": "文件图表列增加",
+    "tags": []
+  },
+  "file-chart-column": {
+    "displayName": "文件图表栏",
+    "tags": []
+  },
+  "file-chart-line": {
+    "displayName": "文件图表线",
+    "tags": []
+  },
+  "file-chart-pie": {
+    "displayName": "文件图表饼图",
+    "tags": []
+  },
+  "file-check-corner": {
+    "displayName": "文件检查角",
+    "tags": []
+  },
+  "file-check": {
+    "displayName": "文件检查",
+    "tags": []
+  },
+  "file-clock": {
+    "displayName": "文件时钟",
+    "tags": []
+  },
+  "file-code-corner": {
+    "displayName": "文件代码角",
+    "tags": []
+  },
+  "file-code": {
+    "displayName": "文件代码",
+    "tags": []
+  },
+  "file-cog": {
+    "displayName": "文件齿轮",
+    "tags": []
+  },
+  "file-diff": {
+    "displayName": "文件差异",
+    "tags": []
+  },
+  "file-digit": {
+    "displayName": "文件位数",
+    "tags": []
+  },
+  "file-down": {
+    "displayName": "文件下载",
+    "tags": []
+  },
+  "file-exclamation-point": {
+    "displayName": "文件感叹号",
+    "tags": []
+  },
+  "file-headphone": {
+    "displayName": "文件耳机",
+    "tags": []
+  },
+  "file-heart": {
+    "displayName": "锉心",
+    "tags": []
+  },
+  "file-image": {
+    "displayName": "文件图像",
+    "tags": []
+  },
+  "file-input": {
+    "displayName": "文件输入",
+    "tags": []
+  },
+  "file-key": {
+    "displayName": "文件密钥",
+    "tags": []
+  },
+  "file-lock": {
+    "displayName": "文件锁",
+    "tags": []
+  },
+  "file-minus-corner": {
+    "displayName": "文件减角",
+    "tags": []
+  },
+  "file-minus": {
+    "displayName": "文件减号",
+    "tags": []
+  },
+  "file-music": {
+    "displayName": "文件音乐",
+    "tags": []
+  },
+  "file-output": {
+    "displayName": "文件输出",
+    "tags": []
+  },
+  "file-pen-line": {
+    "displayName": "锉刀线",
+    "tags": []
+  },
+  "file-pen": {
+    "displayName": "文件笔",
+    "tags": []
+  },
+  "file-play": {
+    "displayName": "文件播放",
+    "tags": []
+  },
+  "file-plus-corner": {
+    "displayName": "文件加角",
+    "tags": []
+  },
+  "file-plus": {
+    "displayName": "文件加",
+    "tags": []
+  },
+  "file-question-mark": {
+    "displayName": "文件问号",
+    "tags": []
+  },
+  "file-scan": {
+    "displayName": "文件扫描",
+    "tags": []
+  },
+  "file-search-corner": {
+    "displayName": "文件搜索角",
+    "tags": []
+  },
+  "file-search": {
+    "displayName": "文件搜索",
+    "tags": []
+  },
+  "file-signal": {
+    "displayName": "文件信号",
+    "tags": []
+  },
+  "file-sliders": {
+    "displayName": "文件滑块",
+    "tags": []
+  },
+  "file-spreadsheet": {
+    "displayName": "文件电子表格",
+    "tags": []
+  },
+  "file-stack": {
+    "displayName": "文件堆栈",
+    "tags": []
+  },
+  "file-symlink": {
+    "displayName": "文件符号链接",
+    "tags": []
+  },
+  "file-terminal": {
+    "displayName": "文件终端",
+    "tags": []
+  },
+  "file-text": {
+    "displayName": "文件文本",
+    "tags": []
+  },
+  "file-type-corner": {
+    "displayName": "文件类型角",
+    "tags": []
+  },
+  "file-type": {
+    "displayName": "文件类型",
+    "tags": []
+  },
+  "file-up": {
+    "displayName": "归档",
+    "tags": []
+  },
+  "file-user": {
+    "displayName": "文件用户",
+    "tags": []
+  },
+  "file-video-camera": {
+    "displayName": "文件摄像机",
+    "tags": []
+  },
+  "file-volume": {
+    "displayName": "文件容量",
+    "tags": []
+  },
+  "file-x-corner": {
+    "displayName": "文件 X 角",
+    "tags": []
+  },
+  "file-x": {
+    "displayName": "文件X",
+    "tags": []
+  },
+  "file": {
+    "displayName": "文件",
+    "tags": []
+  },
+  "files": {
+    "displayName": "文件",
+    "tags": []
+  },
+  "film": {
+    "displayName": "电影",
+    "tags": []
+  },
+  "fingerprint-pattern": {
+    "displayName": "指纹图案",
+    "tags": []
+  },
+  "fire-extinguisher": {
+    "displayName": "灭火器",
+    "tags": []
+  },
+  "fish-off": {
+    "displayName": "钓鱼关闭",
+    "tags": []
+  },
+  "fish-symbol": {
+    "displayName": "鱼符号",
+    "tags": []
+  },
+  "fish": {
+    "displayName": "鱼",
+    "tags": []
+  },
+  "fishing-hook": {
+    "displayName": "钓鱼钩",
+    "tags": []
+  },
+  "fishing-rod": {
+    "displayName": "钓鱼竿",
+    "tags": []
+  },
+  "flag-off": {
+    "displayName": "旗帜关闭",
+    "tags": []
+  },
+  "flag-triangle-left": {
+    "displayName": "左旗三角",
+    "tags": []
+  },
+  "flag-triangle-right": {
+    "displayName": "右旗三角",
+    "tags": []
+  },
+  "flag": {
+    "displayName": "旗帜",
+    "tags": []
+  },
+  "flame-kindling": {
+    "displayName": "火焰点燃",
+    "tags": []
+  },
+  "flame": {
+    "displayName": "火焰",
+    "tags": []
+  },
+  "flashlight-off": {
+    "displayName": "手电筒关闭",
+    "tags": []
+  },
+  "flashlight": {
+    "displayName": "手电筒",
+    "tags": []
+  },
+  "flask-conical-off": {
+    "displayName": "锥形烧瓶关闭",
+    "tags": []
+  },
+  "flask-conical": {
+    "displayName": "锥形烧瓶",
+    "tags": []
+  },
+  "flask-round": {
+    "displayName": "圆形烧瓶",
+    "tags": []
+  },
+  "flip-horizontal-2": {
+    "displayName": "水平翻转 2",
+    "tags": []
+  },
+  "flip-vertical-2": {
+    "displayName": "垂直翻转 2",
+    "tags": []
+  },
+  "flower-2": {
+    "displayName": "花2",
+    "tags": []
+  },
+  "flower": {
+    "displayName": "花",
+    "tags": []
+  },
+  "focus": {
+    "displayName": "焦点",
+    "tags": []
+  },
+  "fold-horizontal": {
+    "displayName": "水平折叠",
+    "tags": []
+  },
+  "fold-vertical": {
+    "displayName": "垂直折叠",
+    "tags": []
+  },
+  "folder-archive": {
+    "displayName": "文件夹存档",
+    "tags": []
+  },
+  "folder-check": {
+    "displayName": "文件夹检查",
+    "tags": []
+  },
+  "folder-clock": {
+    "displayName": "文件夹时钟",
+    "tags": []
+  },
+  "folder-closed": {
+    "displayName": "文件夹已关闭",
+    "tags": []
+  },
+  "folder-code": {
+    "displayName": "文件夹代码",
+    "tags": []
+  },
+  "folder-cog": {
+    "displayName": "文件夹齿轮",
+    "tags": []
+  },
+  "folder-dot": {
+    "displayName": "文件夹点",
+    "tags": []
+  },
+  "folder-down": {
+    "displayName": "文件夹向下",
+    "tags": []
+  },
+  "folder-git-2": {
+    "displayName": "文件夹 Git 2",
+    "tags": []
+  },
+  "folder-git": {
+    "displayName": "文件夹 Git",
+    "tags": []
+  },
+  "folder-heart": {
+    "displayName": "文件夹心",
+    "tags": []
+  },
+  "folder-input": {
+    "displayName": "文件夹输入",
+    "tags": []
+  },
+  "folder-kanban": {
+    "displayName": "文件夹看板",
+    "tags": []
+  },
+  "folder-key": {
+    "displayName": "文件夹键",
+    "tags": []
+  },
+  "folder-lock": {
+    "displayName": "文件夹锁",
+    "tags": []
+  },
+  "folder-minus": {
+    "displayName": "文件夹减号",
+    "tags": []
+  },
+  "folder-open-dot": {
+    "displayName": "文件夹打开点",
+    "tags": []
+  },
+  "folder-open": {
+    "displayName": "文件夹打开",
+    "tags": []
+  },
+  "folder-output": {
+    "displayName": "文件夹输出",
+    "tags": []
+  },
+  "folder-pen": {
+    "displayName": "文件夹笔",
+    "tags": []
+  },
+  "folder-plus": {
+    "displayName": "文件夹加",
+    "tags": []
+  },
+  "folder-root": {
+    "displayName": "文件夹根目录",
+    "tags": []
+  },
+  "folder-search-2": {
+    "displayName": "文件夹搜索2",
+    "tags": []
+  },
+  "folder-search": {
+    "displayName": "文件夹搜索",
+    "tags": []
+  },
+  "folder-symlink": {
+    "displayName": "文件夹符号链接",
+    "tags": []
+  },
+  "folder-sync": {
+    "displayName": "文件夹同步",
+    "tags": []
+  },
+  "folder-tree": {
+    "displayName": "文件夹树",
+    "tags": []
+  },
+  "folder-up": {
+    "displayName": "文件夹向上",
+    "tags": []
+  },
+  "folder-x": {
+    "displayName": "文件夹X",
+    "tags": []
+  },
+  "folder": {
+    "displayName": "文件夹",
+    "tags": []
+  },
+  "folders": {
+    "displayName": "文件夹",
+    "tags": []
+  },
+  "footprints": {
+    "displayName": "足迹",
+    "tags": []
+  },
+  "forklift": {
+    "displayName": "叉车",
+    "tags": []
+  },
+  "form": {
+    "displayName": "形式",
+    "tags": []
+  },
+  "forward": {
+    "displayName": "前进",
+    "tags": []
+  },
+  "frame": {
+    "displayName": "框架",
+    "tags": []
+  },
+  "frown": {
+    "displayName": "皱眉",
+    "tags": []
+  },
+  "fuel": {
+    "displayName": "燃料",
+    "tags": []
+  },
+  "fullscreen": {
+    "displayName": "全屏",
+    "tags": []
+  },
+  "funnel-plus": {
+    "displayName": "漏斗加",
+    "tags": []
+  },
+  "funnel-x": {
+    "displayName": "漏斗X",
+    "tags": []
+  },
+  "funnel": {
+    "displayName": "漏斗",
+    "tags": []
+  },
+  "gallery-horizontal-end": {
+    "displayName": "画廊水平端",
+    "tags": []
+  },
+  "gallery-horizontal": {
+    "displayName": "画廊水平",
+    "tags": []
+  },
+  "gallery-thumbnails": {
+    "displayName": "画廊缩略图",
+    "tags": []
+  },
+  "gallery-vertical-end": {
+    "displayName": "画廊垂直端",
+    "tags": []
+  },
+  "gallery-vertical": {
+    "displayName": "垂直画廊",
+    "tags": []
+  },
+  "gamepad-2": {
+    "displayName": "游戏手柄2",
+    "tags": []
+  },
+  "gamepad-directional": {
+    "displayName": "游戏手柄方向",
+    "tags": []
+  },
+  "gamepad": {
+    "displayName": "游戏手柄",
+    "tags": []
+  },
+  "gauge": {
+    "displayName": "仪表",
+    "tags": []
+  },
+  "gavel": {
+    "displayName": "木槌",
+    "tags": []
+  },
+  "gem": {
+    "displayName": "宝石",
+    "tags": []
+  },
+  "georgian-lari": {
+    "displayName": "格鲁吉亚拉里",
+    "tags": []
+  },
+  "ghost": {
+    "displayName": "幽灵",
+    "tags": []
+  },
+  "gift": {
+    "displayName": "礼物",
+    "tags": []
+  },
+  "git-branch-minus": {
+    "displayName": "Git 分支减号",
+    "tags": []
+  },
+  "git-branch-plus": {
+    "displayName": "Git 分支增强版",
+    "tags": []
+  },
+  "git-branch": {
+    "displayName": "git分支",
+    "tags": []
+  },
+  "git-commit-horizontal": {
+    "displayName": "Git 水平提交",
+    "tags": []
+  },
+  "git-commit-vertical": {
+    "displayName": "Git 垂直提交",
+    "tags": []
+  },
+  "git-compare-arrows": {
+    "displayName": "Git 比较箭头",
+    "tags": []
+  },
+  "git-compare": {
+    "displayName": "Git 比较",
+    "tags": []
+  },
+  "git-fork": {
+    "displayName": "git 分叉",
+    "tags": []
+  },
+  "git-graph": {
+    "displayName": "git图",
+    "tags": []
+  },
+  "git-merge-conflict": {
+    "displayName": "Git 合并冲突",
+    "tags": []
+  },
+  "git-merge": {
+    "displayName": "git合并",
+    "tags": []
+  },
+  "git-pull-request-arrow": {
+    "displayName": "Git 拉取请求箭头",
+    "tags": []
+  },
+  "git-pull-request-closed": {
+    "displayName": "Git 拉取请求已关闭",
+    "tags": []
+  },
+  "git-pull-request-create-arrow": {
+    "displayName": "Git 拉取请求创建箭头",
+    "tags": []
+  },
+  "git-pull-request-create": {
+    "displayName": "Git 拉取请求创建",
+    "tags": []
+  },
+  "git-pull-request-draft": {
+    "displayName": "Git Pull 请求草稿",
+    "tags": []
+  },
+  "git-pull-request": {
+    "displayName": "Git 拉取请求",
+    "tags": []
+  },
+  "glass-water": {
+    "displayName": "玻璃水",
+    "tags": []
+  },
+  "glasses": {
+    "displayName": "眼镜",
+    "tags": []
+  },
+  "globe-lock": {
+    "displayName": "球形锁",
+    "tags": []
+  },
+  "globe-off": {
+    "displayName": "地球关闭",
+    "tags": []
+  },
+  "globe-x": {
+    "displayName": "环球X",
+    "tags": []
+  },
+  "globe": {
+    "displayName": "地球仪",
+    "tags": []
+  },
+  "goal": {
+    "displayName": "目标",
+    "tags": []
+  },
+  "gpu": {
+    "displayName": "图形处理器",
+    "tags": []
+  },
+  "graduation-cap": {
+    "displayName": "毕业帽",
+    "tags": []
+  },
+  "grape": {
+    "displayName": "葡萄",
+    "tags": []
+  },
+  "grid-2x2-check": {
+    "displayName": "网格 2x2 检查",
+    "tags": []
+  },
+  "grid-2x2-plus": {
+    "displayName": "网格 2x2 加",
+    "tags": []
+  },
+  "grid-2x2-x": {
+    "displayName": "网格 2x2 X",
+    "tags": []
+  },
+  "grid-2x2": {
+    "displayName": "网格 2x2",
+    "tags": []
+  },
+  "grid-3x2": {
+    "displayName": "网格 3x2",
+    "tags": []
+  },
+  "grid-3x3": {
+    "displayName": "网格 3x3",
+    "tags": []
+  },
+  "grip-horizontal": {
+    "displayName": "水平握持",
+    "tags": []
+  },
+  "grip-vertical": {
+    "displayName": "垂直握把",
+    "tags": []
+  },
+  "grip": {
+    "displayName": "握力",
+    "tags": []
+  },
+  "group": {
+    "displayName": "集团",
+    "tags": []
+  },
+  "guitar": {
+    "displayName": "吉他",
+    "tags": []
+  },
+  "ham": {
+    "displayName": "火腿",
+    "tags": []
+  },
+  "hamburger": {
+    "displayName": "汉堡包",
+    "tags": []
+  },
+  "hammer": {
+    "displayName": "锤子",
+    "tags": []
+  },
+  "hand-coins": {
+    "displayName": "手硬币",
+    "tags": []
+  },
+  "hand-fist": {
+    "displayName": "手拳头",
+    "tags": []
+  },
+  "hand-grab": {
+    "displayName": "手抓",
+    "tags": []
+  },
+  "hand-heart": {
+    "displayName": "手心",
+    "tags": []
+  },
+  "hand-helping": {
+    "displayName": "伸出援手",
+    "tags": []
+  },
+  "hand-metal": {
+    "displayName": "手工金属",
+    "tags": []
+  },
+  "hand-platter": {
+    "displayName": "手拼盘",
+    "tags": []
+  },
+  "hand": {
+    "displayName": "手",
+    "tags": []
+  },
+  "handbag": {
+    "displayName": "手提包",
+    "tags": []
+  },
+  "handshake": {
+    "displayName": "握手",
+    "tags": []
+  },
+  "hard-drive-download": {
+    "displayName": "硬盘下载",
+    "tags": []
+  },
+  "hard-drive-upload": {
+    "displayName": "硬盘上传",
+    "tags": []
+  },
+  "hard-drive": {
+    "displayName": "硬盘",
+    "tags": []
+  },
+  "hard-hat": {
+    "displayName": "安全帽",
+    "tags": []
+  },
+  "hash": {
+    "displayName": "哈希值",
+    "tags": []
+  },
+  "hat-glasses": {
+    "displayName": "帽子眼镜",
+    "tags": []
+  },
+  "haze": {
+    "displayName": "雾霾",
+    "tags": []
+  },
+  "hd": {
+    "displayName": "高清",
+    "tags": []
+  },
+  "hdmi-port": {
+    "displayName": "HDMI端口",
+    "tags": []
+  },
+  "heading-1": {
+    "displayName": "标题 1",
+    "tags": []
+  },
+  "heading-2": {
+    "displayName": "标题 2",
+    "tags": []
+  },
+  "heading-3": {
+    "displayName": "标题 3",
+    "tags": []
+  },
+  "heading-4": {
+    "displayName": "标题 4",
+    "tags": []
+  },
+  "heading-5": {
+    "displayName": "标题 5",
+    "tags": []
+  },
+  "heading-6": {
+    "displayName": "标题 6",
+    "tags": []
+  },
+  "heading": {
+    "displayName": "标题",
+    "tags": []
+  },
+  "headphone-off": {
+    "displayName": "耳机关闭",
+    "tags": []
+  },
+  "headphones": {
+    "displayName": "耳机",
+    "tags": []
+  },
+  "headset": {
+    "displayName": "耳机",
+    "tags": []
+  },
+  "heart-crack": {
+    "displayName": "心裂",
+    "tags": []
+  },
+  "heart-handshake": {
+    "displayName": "心形握手",
+    "tags": []
+  },
+  "heart-minus": {
+    "displayName": "心减",
+    "tags": []
+  },
+  "heart-off": {
+    "displayName": "心关闭",
+    "tags": []
+  },
+  "heart-plus": {
+    "displayName": "心加",
+    "tags": []
+  },
+  "heart-pulse": {
+    "displayName": "心脏脉搏",
+    "tags": []
+  },
+  "heart": {
+    "displayName": "心",
+    "tags": []
+  },
+  "heater": {
+    "displayName": "加热器",
+    "tags": []
+  },
+  "helicopter": {
+    "displayName": "直升机",
+    "tags": []
+  },
+  "hexagon": {
+    "displayName": "六边形",
+    "tags": []
+  },
+  "highlighter": {
+    "displayName": "荧光笔",
+    "tags": []
+  },
+  "history": {
+    "displayName": "历史",
+    "tags": []
+  },
+  "hop-off": {
+    "displayName": "随上随下",
+    "tags": []
+  },
+  "hop": {
+    "displayName": "啤酒花",
+    "tags": []
+  },
+  "hospital": {
+    "displayName": "医院",
+    "tags": []
+  },
+  "hotel": {
+    "displayName": "酒店",
+    "tags": []
+  },
+  "hourglass": {
+    "displayName": "沙漏",
+    "tags": []
+  },
+  "house-heart": {
+    "displayName": "房子之心",
+    "tags": []
+  },
+  "house-plug": {
+    "displayName": "家用插头",
+    "tags": []
+  },
+  "house-plus": {
+    "displayName": "房子加",
+    "tags": []
+  },
+  "house-wifi": {
+    "displayName": "家庭无线网络",
+    "tags": []
+  },
+  "house": {
+    "displayName": "房子",
+    "tags": []
+  },
+  "ice-cream-bowl": {
+    "displayName": "冰淇淋碗",
+    "tags": []
+  },
+  "ice-cream-cone": {
+    "displayName": "蛋卷冰淇淋",
+    "tags": []
+  },
+  "id-card-lanyard": {
+    "displayName": "身份证挂绳",
+    "tags": []
+  },
+  "id-card": {
+    "displayName": "身份证",
+    "tags": []
+  },
+  "image-down": {
+    "displayName": "图像向下",
+    "tags": []
+  },
+  "image-minus": {
+    "displayName": "图像减号",
+    "tags": []
+  },
+  "image-off": {
+    "displayName": "图像关闭",
+    "tags": []
+  },
+  "image-play": {
+    "displayName": "图片播放",
+    "tags": []
+  },
+  "image-plus": {
+    "displayName": "图像加",
+    "tags": []
+  },
+  "image-up": {
+    "displayName": "图像向上",
+    "tags": []
+  },
+  "image-upscale": {
+    "displayName": "图像高档",
+    "tags": []
+  },
+  "image": {
+    "displayName": "图片",
+    "tags": []
+  },
+  "images": {
+    "displayName": "图片",
+    "tags": []
+  },
+  "import": {
+    "displayName": "进口",
+    "tags": []
+  },
+  "inbox": {
+    "displayName": "收件箱",
+    "tags": []
+  },
+  "indian-rupee": {
+    "displayName": "印度卢比",
+    "tags": []
+  },
+  "infinity": {
+    "displayName": "无限",
+    "tags": []
+  },
+  "info": {
+    "displayName": "信息",
+    "tags": []
+  },
+  "inspection-panel": {
+    "displayName": "检查小组",
+    "tags": []
+  },
+  "italic": {
+    "displayName": "斜体",
+    "tags": []
+  },
+  "iteration-ccw": {
+    "displayName": "迭代CCW",
+    "tags": []
+  },
+  "iteration-cw": {
+    "displayName": "迭代连续波",
+    "tags": []
+  },
+  "japanese-yen": {
+    "displayName": "日元",
+    "tags": []
+  },
+  "joystick": {
+    "displayName": "操纵杆",
+    "tags": []
+  },
+  "kanban": {
+    "displayName": "看板",
+    "tags": []
+  },
+  "kayak": {
+    "displayName": "皮划艇",
+    "tags": []
+  },
+  "key-round": {
+    "displayName": "关键回合",
+    "tags": []
+  },
+  "key-square": {
+    "displayName": "基广场",
+    "tags": []
+  },
+  "key": {
+    "displayName": "钥匙",
+    "tags": []
+  },
+  "keyboard-music": {
+    "displayName": "键盘音乐",
+    "tags": []
+  },
+  "keyboard-off": {
+    "displayName": "键盘关闭",
+    "tags": []
+  },
+  "keyboard": {
+    "displayName": "键盘",
+    "tags": []
+  },
+  "lamp-ceiling": {
+    "displayName": "灯顶",
+    "tags": []
+  },
+  "lamp-desk": {
+    "displayName": "灯台",
+    "tags": []
+  },
+  "lamp-floor": {
+    "displayName": "灯底板",
+    "tags": []
+  },
+  "lamp-wall-down": {
+    "displayName": "灯墙倒下",
+    "tags": []
+  },
+  "lamp-wall-up": {
+    "displayName": "灯墙向上",
+    "tags": []
+  },
+  "lamp": {
+    "displayName": "灯",
+    "tags": []
+  },
+  "land-plot": {
+    "displayName": "荧光笔",
+    "tags": []
+  },
+  "landmark": {
+    "displayName": "历史",
+    "tags": []
+  },
+  "languages": {
+    "displayName": "随上随下",
+    "tags": []
+  },
+  "laptop-minimal-check": {
+    "displayName": "啤酒花",
+    "tags": []
+  },
+  "laptop-minimal": {
+    "displayName": "医院",
+    "tags": []
+  },
+  "laptop": {
+    "displayName": "酒店",
+    "tags": []
+  },
+  "lasso-select": {
+    "displayName": "沙漏",
+    "tags": []
+  },
+  "lasso": {
+    "displayName": "房子之心",
+    "tags": []
+  },
+  "laugh": {
+    "displayName": "家用插头",
+    "tags": []
+  },
+  "layers-2": {
+    "displayName": "房子加",
+    "tags": []
+  },
+  "layers-plus": {
+    "displayName": "家庭无线网络",
+    "tags": []
+  },
+  "layers": {
+    "displayName": "房子",
+    "tags": []
+  },
+  "layout-dashboard": {
+    "displayName": "冰淇淋碗",
+    "tags": []
+  },
+  "layout-grid": {
+    "displayName": "蛋卷冰淇淋",
+    "tags": []
+  },
+  "layout-list": {
+    "displayName": "身份证挂绳",
+    "tags": []
+  },
+  "layout-panel-left": {
+    "displayName": "身份证",
+    "tags": []
+  },
+  "layout-panel-top": {
+    "displayName": "图像向下",
+    "tags": []
+  },
+  "layout-template": {
+    "displayName": "图像减号",
+    "tags": []
+  },
+  "leaf": {
+    "displayName": "图像关闭",
+    "tags": []
+  },
+  "leafy-green": {
+    "displayName": "图片播放",
+    "tags": []
+  },
+  "lectern": {
+    "displayName": "图像加",
+    "tags": []
+  },
+  "lens-concave": {
+    "displayName": "图像向上",
+    "tags": []
+  },
+  "lens-convex": {
+    "displayName": "图像高档",
+    "tags": []
+  },
+  "library-big": {
+    "displayName": "图片",
+    "tags": []
+  },
+  "library": {
+    "displayName": "图片",
+    "tags": []
+  },
+  "life-buoy": {
+    "displayName": "进口",
+    "tags": []
+  },
+  "ligature": {
+    "displayName": "收件箱",
+    "tags": []
+  },
+  "lightbulb-off": {
+    "displayName": "印度卢比",
+    "tags": []
+  },
+  "lightbulb": {
+    "displayName": "无限",
+    "tags": []
+  },
+  "line-dot-right-horizontal": {
+    "displayName": "信息",
+    "tags": []
+  },
+  "line-squiggle": {
+    "displayName": "检查小组",
+    "tags": []
+  },
+  "line-style": {
+    "displayName": "斜体",
+    "tags": []
+  },
+  "link-2-off": {
+    "displayName": "迭代CCW",
+    "tags": []
+  },
+  "link-2": {
+    "displayName": "迭代连续波",
+    "tags": []
+  },
+  "link": {
+    "displayName": "日元",
+    "tags": []
+  },
+  "list-check": {
+    "displayName": "操纵杆",
+    "tags": []
+  },
+  "list-checks": {
+    "displayName": "看板",
+    "tags": []
+  },
+  "list-chevrons-down-up": {
+    "displayName": "皮划艇",
+    "tags": []
+  },
+  "list-chevrons-up-down": {
+    "displayName": "关键回合",
+    "tags": []
+  },
+  "list-collapse": {
+    "displayName": "基广场",
+    "tags": []
+  },
+  "list-end": {
+    "displayName": "钥匙",
+    "tags": []
+  },
+  "list-filter-plus": {
+    "displayName": "键盘音乐",
+    "tags": []
+  },
+  "list-filter": {
+    "displayName": "键盘关闭",
+    "tags": []
+  },
+  "list-indent-decrease": {
+    "displayName": "键盘",
+    "tags": []
+  },
+  "list-indent-increase": {
+    "displayName": "灯顶",
+    "tags": []
+  },
+  "list-minus": {
+    "displayName": "灯台",
+    "tags": []
+  },
+  "list-music": {
+    "displayName": "灯底板",
+    "tags": []
+  },
+  "list-ordered": {
+    "displayName": "灯墙倒下",
+    "tags": []
+  },
+  "list-plus": {
+    "displayName": "灯墙向上",
+    "tags": []
+  },
+  "list-restart": {
+    "displayName": "灯",
+    "tags": []
+  },
+  "list-start": {
+    "displayName": "列表开始",
+    "tags": []
+  },
+  "list-todo": {
+    "displayName": "列出待办事项",
+    "tags": []
+  },
+  "list-tree": {
+    "displayName": "列表树",
+    "tags": []
+  },
+  "list-video": {
+    "displayName": "列表视频",
+    "tags": []
+  },
+  "list-x": {
+    "displayName": "列表X",
+    "tags": []
+  },
+  "list": {
+    "displayName": "列表",
+    "tags": []
+  },
+  "loader-circle": {
+    "displayName": "装载机圈",
+    "tags": []
+  },
+  "loader-pinwheel": {
+    "displayName": "装载机风车",
+    "tags": []
+  },
+  "loader": {
+    "displayName": "装载机",
+    "tags": []
+  },
+  "locate-fixed": {
+    "displayName": "定位固定",
+    "tags": []
+  },
+  "locate-off": {
+    "displayName": "定位关闭",
+    "tags": []
+  },
+  "locate": {
+    "displayName": "定位",
+    "tags": []
+  },
+  "lock-keyhole-open": {
+    "displayName": "锁钥匙孔打开",
+    "tags": []
+  },
+  "lock-keyhole": {
+    "displayName": "锁钥匙孔",
+    "tags": []
+  },
+  "lock-open": {
+    "displayName": "锁开",
+    "tags": []
+  },
+  "lock": {
+    "displayName": "锁",
+    "tags": []
+  },
+  "log-in": {
+    "displayName": "登录",
+    "tags": []
+  },
+  "log-out": {
+    "displayName": "退出",
+    "tags": []
+  },
+  "logs": {
+    "displayName": "日志",
+    "tags": []
+  },
+  "lollipop": {
+    "displayName": "棒棒糖",
+    "tags": []
+  },
+  "luggage": {
+    "displayName": "行李",
+    "tags": []
+  },
+  "magnet": {
+    "displayName": "磁铁",
+    "tags": []
+  },
+  "mail-check": {
+    "displayName": "邮件支票",
+    "tags": []
+  },
+  "mail-minus": {
+    "displayName": "邮件减号",
+    "tags": []
+  },
+  "mail-open": {
+    "displayName": "邮件打开",
+    "tags": []
+  },
+  "mail-plus": {
+    "displayName": "邮件加号",
+    "tags": []
+  },
+  "mail-question-mark": {
+    "displayName": "邮件问号",
+    "tags": []
+  },
+  "mail-search": {
+    "displayName": "邮件搜索",
+    "tags": []
+  },
+  "mail-warning": {
+    "displayName": "邮件警告",
+    "tags": []
+  },
+  "mail-x": {
+    "displayName": "邮件X",
+    "tags": []
+  },
+  "mail": {
+    "displayName": "邮件",
+    "tags": []
+  },
+  "mailbox": {
+    "displayName": "邮箱",
+    "tags": []
+  },
+  "mails": {
+    "displayName": "邮件",
+    "tags": []
+  },
+  "map-minus": {
+    "displayName": "地图减号",
+    "tags": []
+  },
+  "map-pin-check-inside": {
+    "displayName": "地图图钉检查内部",
+    "tags": []
+  },
+  "map-pin-check": {
+    "displayName": "地图图钉检查",
+    "tags": []
+  },
+  "map-pin-house": {
+    "displayName": "地图别针屋",
+    "tags": []
+  },
+  "map-pin-minus-inside": {
+    "displayName": "地图图钉减去内部",
+    "tags": []
+  },
+  "map-pin-minus": {
+    "displayName": "地图图钉减号",
+    "tags": []
+  },
+  "map-pin-off": {
+    "displayName": "地图固定",
+    "tags": []
+  },
+  "map-pin-pen": {
+    "displayName": "地图针笔",
+    "tags": []
+  },
+  "map-pin-plus-inside": {
+    "displayName": "地图图钉加内部",
+    "tags": []
+  },
+  "map-pin-plus": {
+    "displayName": "地图图钉加号",
+    "tags": []
+  },
+  "map-pin-search": {
+    "displayName": "地图图钉搜索",
+    "tags": []
+  },
+  "map-pin-x-inside": {
+    "displayName": "地图图钉 X 内部",
+    "tags": []
+  },
+  "map-pin-x": {
+    "displayName": "地图图钉 X",
+    "tags": []
+  },
+  "map-pin": {
+    "displayName": "地图图钉",
+    "tags": []
+  },
+  "map-pinned": {
+    "displayName": "地图固定",
+    "tags": []
+  },
+  "map-plus": {
+    "displayName": "地图加号",
+    "tags": []
+  },
+  "map": {
+    "displayName": "地图",
+    "tags": []
+  },
+  "mars-stroke": {
+    "displayName": "火星中风",
+    "tags": []
+  },
+  "mars": {
+    "displayName": "火星",
+    "tags": []
+  },
+  "martini": {
+    "displayName": "马提尼",
+    "tags": []
+  },
+  "maximize-2": {
+    "displayName": "最大化 2",
+    "tags": []
+  },
+  "maximize": {
+    "displayName": "最大化",
+    "tags": []
+  },
+  "medal": {
+    "displayName": "奖章",
+    "tags": []
+  },
+  "megaphone-off": {
+    "displayName": "扩音器关闭",
+    "tags": []
+  },
+  "megaphone": {
+    "displayName": "扩音器",
+    "tags": []
+  },
+  "meh": {
+    "displayName": "嗯",
+    "tags": []
+  },
+  "memory-stick": {
+    "displayName": "记忆棒",
+    "tags": []
+  },
+  "menu": {
+    "displayName": "菜单",
+    "tags": []
+  },
+  "merge": {
+    "displayName": "合并",
+    "tags": []
+  },
+  "message-circle-check": {
+    "displayName": "消息圈查看",
+    "tags": []
+  },
+  "message-circle-code": {
+    "displayName": "留言圈码",
+    "tags": []
+  },
+  "message-circle-dashed": {
+    "displayName": "消息圈虚线",
+    "tags": []
+  },
+  "message-circle-heart": {
+    "displayName": "留言圈心",
+    "tags": []
+  },
+  "message-circle-more": {
+    "displayName": "留言圈 更多",
+    "tags": []
+  },
+  "message-circle-off": {
+    "displayName": "消息圈关闭",
+    "tags": []
+  },
+  "message-circle-plus": {
+    "displayName": "留言圈加号",
+    "tags": []
+  },
+  "message-circle-question-mark": {
+    "displayName": "消息圈问号",
+    "tags": []
+  },
+  "message-circle-reply": {
+    "displayName": "留言圈回复",
+    "tags": []
+  },
+  "message-circle-warning": {
+    "displayName": "消息圈警告",
+    "tags": []
+  },
+  "message-circle-x": {
+    "displayName": "留言圈X",
+    "tags": []
+  },
+  "message-circle": {
+    "displayName": "留言圈",
+    "tags": []
+  },
+  "message-square-check": {
+    "displayName": "留言广场检查",
+    "tags": []
+  },
+  "message-square-code": {
+    "displayName": "消息方代码",
+    "tags": []
+  },
+  "message-square-dashed": {
+    "displayName": "消息方块虚线",
+    "tags": []
+  },
+  "message-square-diff": {
+    "displayName": "消息广场差异",
+    "tags": []
+  },
+  "message-square-dot": {
+    "displayName": "消息方点",
+    "tags": []
+  },
+  "message-square-heart": {
+    "displayName": "留言方心",
+    "tags": []
+  },
+  "message-square-lock": {
+    "displayName": "消息方锁",
+    "tags": []
+  },
+  "message-square-more": {
+    "displayName": "留言广场 更多",
+    "tags": []
+  },
+  "message-square-off": {
+    "displayName": "消息广场关闭",
+    "tags": []
+  },
+  "message-square-plus": {
+    "displayName": "留言广场Plus",
+    "tags": []
+  },
+  "message-square-quote": {
+    "displayName": "留言广场报价",
+    "tags": []
+  },
+  "message-square-reply": {
+    "displayName": "留言广场回复",
+    "tags": []
+  },
+  "message-square-share": {
+    "displayName": "留言广场 分享",
+    "tags": []
+  },
+  "message-square-text": {
+    "displayName": "消息方块文本",
+    "tags": []
+  },
+  "message-square-warning": {
+    "displayName": "消息广场警告",
+    "tags": []
+  },
+  "message-square-x": {
+    "displayName": "留言广场X",
+    "tags": []
+  },
+  "message-square": {
+    "displayName": "留言广场",
+    "tags": []
+  },
+  "messages-square": {
+    "displayName": "留言广场",
+    "tags": []
+  },
+  "metronome": {
+    "displayName": "节拍器",
+    "tags": []
+  },
+  "mic-off": {
+    "displayName": "麦克风关闭",
+    "tags": []
+  },
+  "mic-vocal": {
+    "displayName": "麦克风人声",
+    "tags": []
+  },
+  "mic": {
+    "displayName": "麦克风",
+    "tags": []
+  },
+  "microchip": {
+    "displayName": "微芯片",
+    "tags": []
+  },
+  "microscope": {
+    "displayName": "显微镜",
+    "tags": []
+  },
+  "microwave": {
+    "displayName": "微波炉",
+    "tags": []
+  },
+  "milestone": {
+    "displayName": "里程碑",
+    "tags": []
+  },
+  "milk-off": {
+    "displayName": "牛奶关闭",
+    "tags": []
+  },
+  "milk": {
+    "displayName": "牛奶",
+    "tags": []
+  },
+  "minimize-2": {
+    "displayName": "最小化 2",
+    "tags": []
+  },
+  "minimize": {
+    "displayName": "最小化",
+    "tags": []
+  },
+  "minus": {
+    "displayName": "减号",
+    "tags": []
+  },
+  "mirror-rectangular": {
+    "displayName": "镜子 长方形",
+    "tags": []
+  },
+  "mirror-round": {
+    "displayName": "镜面圆",
+    "tags": []
+  },
+  "monitor-check": {
+    "displayName": "监控检查",
+    "tags": []
+  },
+  "monitor-cloud": {
+    "displayName": "监控云",
+    "tags": []
+  },
+  "monitor-cog": {
+    "displayName": "监控齿轮",
+    "tags": []
+  },
+  "monitor-dot": {
+    "displayName": "监控点",
+    "tags": []
+  },
+  "monitor-down": {
+    "displayName": "显示器关闭",
+    "tags": []
+  },
+  "monitor-off": {
+    "displayName": "显示器关闭",
+    "tags": []
+  },
+  "monitor-pause": {
+    "displayName": "监控暂停",
+    "tags": []
+  },
+  "monitor-play": {
+    "displayName": "监听播放",
+    "tags": []
+  },
+  "monitor-smartphone": {
+    "displayName": "监控智能手机",
+    "tags": []
+  },
+  "monitor-speaker": {
+    "displayName": "监听音箱",
+    "tags": []
+  },
+  "monitor-stop": {
+    "displayName": "监控停止",
+    "tags": []
+  },
+  "monitor-up": {
+    "displayName": "监控上行",
+    "tags": []
+  },
+  "monitor-x": {
+    "displayName": "监视器X",
+    "tags": []
+  },
+  "monitor": {
+    "displayName": "监视器",
+    "tags": []
+  },
+  "moon-star": {
+    "displayName": "月亮星",
+    "tags": []
+  },
+  "moon": {
+    "displayName": "月亮",
+    "tags": []
+  },
+  "motorbike": {
+    "displayName": "摩托车",
+    "tags": []
+  },
+  "mountain-snow": {
+    "displayName": "山雪",
+    "tags": []
+  },
+  "mountain": {
+    "displayName": "山",
+    "tags": []
+  },
+  "mouse-left": {
+    "displayName": "鼠标左键",
+    "tags": []
+  },
+  "mouse-off": {
+    "displayName": "鼠标关闭",
+    "tags": []
+  },
+  "mouse-pointer-2-off": {
+    "displayName": "鼠标指针 2 关闭",
+    "tags": []
+  },
+  "mouse-pointer-2": {
+    "displayName": "鼠标指针2",
+    "tags": []
+  },
+  "mouse-pointer-ban": {
+    "displayName": "鼠标指针禁令",
+    "tags": []
+  },
+  "mouse-pointer-click": {
+    "displayName": "鼠标指针单击",
+    "tags": []
+  },
+  "mouse-pointer": {
+    "displayName": "鼠标指针",
+    "tags": []
+  },
+  "mouse-right": {
+    "displayName": "鼠标右键",
+    "tags": []
+  },
+  "mouse": {
+    "displayName": "鼠标",
+    "tags": []
+  },
+  "move-3d": {
+    "displayName": "移动 3d",
+    "tags": []
+  },
+  "move-diagonal-2": {
+    "displayName": "移动对角线 2",
+    "tags": []
+  },
+  "move-diagonal": {
+    "displayName": "移动对角线",
+    "tags": []
+  },
+  "move-down-left": {
+    "displayName": "向左下移",
+    "tags": []
+  },
+  "move-down-right": {
+    "displayName": "右下移动",
+    "tags": []
+  },
+  "move-down": {
+    "displayName": "下移",
+    "tags": []
+  },
+  "move-horizontal": {
+    "displayName": "水平移动",
+    "tags": []
+  },
+  "move-left": {
+    "displayName": "向左移动",
+    "tags": []
+  },
+  "move-right": {
+    "displayName": "向右移动",
+    "tags": []
+  },
+  "move-up-left": {
+    "displayName": "向左上移",
+    "tags": []
+  },
+  "move-up-right": {
+    "displayName": "向右上移",
+    "tags": []
+  },
+  "move-up": {
+    "displayName": "向上移动",
+    "tags": []
+  },
+  "move-vertical": {
+    "displayName": "垂直移动",
+    "tags": []
+  },
+  "move": {
+    "displayName": "移动",
+    "tags": []
+  },
+  "music-2": {
+    "displayName": "音乐2",
+    "tags": []
+  },
+  "music-3": {
+    "displayName": "音乐3",
+    "tags": []
+  },
+  "music-4": {
+    "displayName": "音乐4",
+    "tags": []
+  },
+  "music": {
+    "displayName": "音乐",
+    "tags": []
+  },
+  "navigation-2-off": {
+    "displayName": "导航 2 关闭",
+    "tags": []
+  },
+  "navigation-2": {
+    "displayName": "导航2",
+    "tags": []
+  },
+  "navigation-off": {
+    "displayName": "导航关闭",
+    "tags": []
+  },
+  "navigation": {
+    "displayName": "导航",
+    "tags": []
+  },
+  "network": {
+    "displayName": "网络",
+    "tags": []
+  },
+  "newspaper": {
+    "displayName": "报纸",
+    "tags": []
+  },
+  "nfc": {
+    "displayName": "近场通信",
+    "tags": []
+  },
+  "non-binary": {
+    "displayName": "非二进制",
+    "tags": []
+  },
+  "notebook-pen": {
+    "displayName": "笔记本笔",
+    "tags": []
+  },
+  "notebook-tabs": {
+    "displayName": "笔记本标签",
+    "tags": []
+  },
+  "notebook-text": {
+    "displayName": "笔记本文本",
+    "tags": []
+  },
+  "notebook": {
+    "displayName": "笔记本",
+    "tags": []
+  },
+  "notepad-text-dashed": {
+    "displayName": "记事本文本虚线",
+    "tags": []
+  },
+  "notepad-text": {
+    "displayName": "记事本文本",
+    "tags": []
+  },
+  "nut-off": {
+    "displayName": "螺母关闭",
+    "tags": []
+  },
+  "nut": {
+    "displayName": "坚果",
+    "tags": []
+  },
+  "octagon-alert": {
+    "displayName": "八边形警报",
+    "tags": []
+  },
+  "octagon-minus": {
+    "displayName": "八边形减号",
+    "tags": []
+  },
+  "octagon-pause": {
+    "displayName": "八边形暂停",
+    "tags": []
+  },
+  "octagon-x": {
+    "displayName": "八边形X",
+    "tags": []
+  },
+  "octagon": {
+    "displayName": "八边形",
+    "tags": []
+  },
+  "omega": {
+    "displayName": "欧米茄",
+    "tags": []
+  },
+  "option": {
+    "displayName": "选项",
+    "tags": []
+  },
+  "orbit": {
+    "displayName": "轨道",
+    "tags": []
+  },
+  "origami": {
+    "displayName": "折纸",
+    "tags": []
+  },
+  "package-2": {
+    "displayName": "套餐2",
+    "tags": []
+  },
+  "package-check": {
+    "displayName": "包裹检查",
+    "tags": []
+  },
+  "package-minus": {
+    "displayName": "套餐减号",
+    "tags": []
+  },
+  "package-open": {
+    "displayName": "包装打开",
+    "tags": []
+  },
+  "package-plus": {
+    "displayName": "套餐加",
+    "tags": []
+  },
+  "package-search": {
+    "displayName": "套餐搜索",
+    "tags": []
+  },
+  "package-x": {
+    "displayName": "套餐X",
+    "tags": []
+  },
+  "package": {
+    "displayName": "套餐",
+    "tags": []
+  },
+  "paint-bucket": {
+    "displayName": "油漆桶",
+    "tags": []
+  },
+  "paint-roller": {
+    "displayName": "油漆滚筒",
+    "tags": []
+  },
+  "paintbrush-vertical": {
+    "displayName": "画笔垂直",
+    "tags": []
+  },
+  "paintbrush": {
+    "displayName": "画笔",
+    "tags": []
+  },
+  "palette": {
+    "displayName": "调色板",
+    "tags": []
+  },
+  "panda": {
+    "displayName": "熊猫",
+    "tags": []
+  },
+  "panel-bottom-close": {
+    "displayName": "面板底部关闭",
+    "tags": []
+  },
+  "panel-bottom-dashed": {
+    "displayName": "面板底部虚线",
+    "tags": []
+  },
+  "panel-bottom-open": {
+    "displayName": "面板底部打开",
+    "tags": []
+  },
+  "panel-bottom": {
+    "displayName": "面板底部",
+    "tags": []
+  },
+  "panel-left-close": {
+    "displayName": "面板左关闭",
+    "tags": []
+  },
+  "panel-left-dashed": {
+    "displayName": "面板左虚线",
+    "tags": []
+  },
+  "panel-left-open": {
+    "displayName": "面板左开",
+    "tags": []
+  },
+  "panel-left-right-dashed": {
+    "displayName": "面板左右虚线",
+    "tags": []
+  },
+  "panel-left": {
+    "displayName": "面板左",
+    "tags": []
+  },
+  "panel-right-close": {
+    "displayName": "面板右关闭",
+    "tags": []
+  },
+  "panel-right-dashed": {
+    "displayName": "面板右虚线",
+    "tags": []
+  },
+  "panel-right-open": {
+    "displayName": "面板右开",
+    "tags": []
+  },
+  "panel-right": {
+    "displayName": "右面板",
+    "tags": []
+  },
+  "panel-top-bottom-dashed": {
+    "displayName": "面板顶部底部虚线",
+    "tags": []
+  },
+  "panel-top-close": {
+    "displayName": "面板顶部关闭",
+    "tags": []
+  },
+  "panel-top-dashed": {
+    "displayName": "面板顶部虚线",
+    "tags": []
+  },
+  "panel-top-open": {
+    "displayName": "面板顶部打开",
+    "tags": []
+  },
+  "panel-top": {
+    "displayName": "面板顶部",
+    "tags": []
+  },
+  "panels-left-bottom": {
+    "displayName": "面板左下",
+    "tags": []
+  },
+  "panels-right-bottom": {
+    "displayName": "面板右下",
+    "tags": []
+  },
+  "panels-top-left": {
+    "displayName": "面板左上",
+    "tags": []
+  },
+  "paperclip": {
+    "displayName": "回形针",
+    "tags": []
+  },
+  "parentheses": {
+    "displayName": "括号",
+    "tags": []
+  },
+  "parking-meter": {
+    "displayName": "停车计时器",
+    "tags": []
+  },
+  "party-popper": {
+    "displayName": "派对波普",
+    "tags": []
+  },
+  "pause": {
+    "displayName": "暂停",
+    "tags": []
+  },
+  "paw-print": {
+    "displayName": "爪印",
+    "tags": []
+  },
+  "pc-case": {
+    "displayName": "电脑机箱",
+    "tags": []
+  },
+  "pen-line": {
+    "displayName": "笔线",
+    "tags": []
+  },
+  "pen-off": {
+    "displayName": "落笔",
+    "tags": []
+  },
+  "pen-tool": {
+    "displayName": "钢笔工具",
+    "tags": []
+  },
+  "pen": {
+    "displayName": "笔",
+    "tags": []
+  },
+  "pencil-line": {
+    "displayName": "铅笔线",
+    "tags": []
+  },
+  "pencil-off": {
+    "displayName": "铅笔关闭",
+    "tags": []
+  },
+  "pencil-ruler": {
+    "displayName": "铅笔尺",
+    "tags": []
+  },
+  "pencil": {
+    "displayName": "铅笔",
+    "tags": []
+  },
+  "pentagon": {
+    "displayName": "五角大楼",
+    "tags": []
+  },
+  "percent": {
+    "displayName": "百分比",
+    "tags": []
+  },
+  "person-standing": {
+    "displayName": "人站着",
+    "tags": []
+  },
+  "philippine-peso": {
+    "displayName": "菲律宾比索",
+    "tags": []
+  },
+  "phone-call": {
+    "displayName": "电话",
+    "tags": []
+  },
+  "phone-forwarded": {
+    "displayName": "电话转接",
+    "tags": []
+  },
+  "phone-incoming": {
+    "displayName": "电话来电",
+    "tags": []
+  },
+  "phone-missed": {
+    "displayName": "电话未接",
+    "tags": []
+  },
+  "phone-off": {
+    "displayName": "电话关闭",
+    "tags": []
+  },
+  "phone-outgoing": {
+    "displayName": "电话拨出",
+    "tags": []
+  },
+  "phone": {
+    "displayName": "电话",
+    "tags": []
+  },
+  "pi": {
+    "displayName": "圆周率",
+    "tags": []
+  },
+  "piano": {
+    "displayName": "钢琴",
+    "tags": []
+  },
+  "pickaxe": {
+    "displayName": "镐",
+    "tags": []
+  },
+  "picture-in-picture-2": {
+    "displayName": "画中画2",
+    "tags": []
+  },
+  "picture-in-picture": {
+    "displayName": "画中画",
+    "tags": []
+  },
+  "piggy-bank": {
+    "displayName": "存钱罐",
+    "tags": []
+  },
+  "pilcrow-left": {
+    "displayName": "皮尔克劳左",
+    "tags": []
+  },
+  "pilcrow-right": {
+    "displayName": "皮尔克罗右",
+    "tags": []
+  },
+  "pilcrow": {
+    "displayName": "皮尔克罗",
+    "tags": []
+  },
+  "pill-bottle": {
+    "displayName": "药瓶",
+    "tags": []
+  },
+  "pill": {
+    "displayName": "丸",
+    "tags": []
+  },
+  "pin-off": {
+    "displayName": "面板左",
+    "tags": []
+  },
+  "pin": {
+    "displayName": "面板右关闭",
+    "tags": []
+  },
+  "pipette": {
+    "displayName": "面板右虚线",
+    "tags": []
+  },
+  "pizza": {
+    "displayName": "面板右开",
+    "tags": []
+  },
+  "plane-landing": {
+    "displayName": "右面板",
+    "tags": []
+  },
+  "plane-takeoff": {
+    "displayName": "面板顶部底部虚线",
+    "tags": []
+  },
+  "plane": {
+    "displayName": "面板顶部关闭",
+    "tags": []
+  },
+  "play": {
+    "displayName": "面板顶部虚线",
+    "tags": []
+  },
+  "plug-2": {
+    "displayName": "面板顶部打开",
+    "tags": []
+  },
+  "plug-zap": {
+    "displayName": "面板顶部",
+    "tags": []
+  },
+  "plug": {
+    "displayName": "面板左下",
+    "tags": []
+  },
+  "plus": {
+    "displayName": "面板右下",
+    "tags": []
+  },
+  "pocket-knife": {
+    "displayName": "面板左上",
+    "tags": []
+  },
+  "podcast": {
+    "displayName": "回形针",
+    "tags": []
+  },
+  "pointer-off": {
+    "displayName": "括号",
+    "tags": []
+  },
+  "pointer": {
+    "displayName": "停车计时器",
+    "tags": []
+  },
+  "popcorn": {
+    "displayName": "派对波普",
+    "tags": []
+  },
+  "popsicle": {
+    "displayName": "暂停",
+    "tags": []
+  },
+  "pound-sterling": {
+    "displayName": "爪印",
+    "tags": []
+  },
+  "power-off": {
+    "displayName": "电脑机箱",
+    "tags": []
+  },
+  "power": {
+    "displayName": "笔线",
+    "tags": []
+  },
+  "presentation": {
+    "displayName": "落笔",
+    "tags": []
+  },
+  "printer-check": {
+    "displayName": "钢笔工具",
+    "tags": []
+  },
+  "printer-x": {
+    "displayName": "笔",
+    "tags": []
+  },
+  "printer": {
+    "displayName": "铅笔线",
+    "tags": []
+  },
+  "projector": {
+    "displayName": "铅笔关闭",
+    "tags": []
+  },
+  "proportions": {
+    "displayName": "铅笔尺",
+    "tags": []
+  },
+  "puzzle": {
+    "displayName": "铅笔",
+    "tags": []
+  },
+  "pyramid": {
+    "displayName": "五角大楼",
+    "tags": []
+  },
+  "qr-code": {
+    "displayName": "百分比",
+    "tags": []
+  },
+  "quote": {
+    "displayName": "人站着",
+    "tags": []
+  },
+  "rabbit": {
+    "displayName": "菲律宾比索",
+    "tags": []
+  },
+  "radar": {
+    "displayName": "电话",
+    "tags": []
+  },
+  "radiation": {
+    "displayName": "电话转接",
+    "tags": []
+  },
+  "radical": {
+    "displayName": "电话来电",
+    "tags": []
+  },
+  "radio-off": {
+    "displayName": "电话未接",
+    "tags": []
+  },
+  "radio-receiver": {
+    "displayName": "电话关闭",
+    "tags": []
+  },
+  "radio-tower": {
+    "displayName": "电话拨出",
+    "tags": []
+  },
+  "radio": {
+    "displayName": "电话",
+    "tags": []
+  },
+  "radius": {
+    "displayName": "圆周率",
+    "tags": []
+  },
+  "rainbow": {
+    "displayName": "钢琴",
+    "tags": []
+  },
+  "rat": {
+    "displayName": "镐",
+    "tags": []
+  },
+  "ratio": {
+    "displayName": "画中画2",
+    "tags": []
+  },
+  "receipt-cent": {
+    "displayName": "画中画",
+    "tags": []
+  },
+  "receipt-euro": {
+    "displayName": "存钱罐",
+    "tags": []
+  },
+  "receipt-indian-rupee": {
+    "displayName": "皮尔克劳左",
+    "tags": []
+  },
+  "receipt-japanese-yen": {
+    "displayName": "皮尔克罗右",
+    "tags": []
+  },
+  "receipt-pound-sterling": {
+    "displayName": "皮尔克罗",
+    "tags": []
+  },
+  "receipt-russian-ruble": {
+    "displayName": "药瓶",
+    "tags": []
+  },
+  "receipt-swiss-franc": {
+    "displayName": "丸",
+    "tags": []
+  },
+  "receipt-text": {
+    "displayName": "收据文本",
+    "tags": []
+  },
+  "receipt-turkish-lira": {
+    "displayName": "收据土耳其里拉",
+    "tags": []
+  },
+  "receipt": {
+    "displayName": "收据",
+    "tags": []
+  },
+  "rectangle-circle": {
+    "displayName": "矩形 圆形",
+    "tags": []
+  },
+  "rectangle-ellipsis": {
+    "displayName": "矩形省略号",
+    "tags": []
+  },
+  "rectangle-goggles": {
+    "displayName": "长方形护目镜",
+    "tags": []
+  },
+  "rectangle-horizontal": {
+    "displayName": "矩形 水平",
+    "tags": []
+  },
+  "rectangle-vertical": {
+    "displayName": "矩形 垂直",
+    "tags": []
+  },
+  "recycle": {
+    "displayName": "回收",
+    "tags": []
+  },
+  "redo-2": {
+    "displayName": "重做2",
+    "tags": []
+  },
+  "redo-dot": {
+    "displayName": "重做点",
+    "tags": []
+  },
+  "redo": {
+    "displayName": "重做",
+    "tags": []
+  },
+  "refresh-ccw-dot": {
+    "displayName": "刷新《特定常规武器公约》点",
+    "tags": []
+  },
+  "refresh-ccw": {
+    "displayName": "刷新《特定常规武器公约》",
+    "tags": []
+  },
+  "refresh-cw-off": {
+    "displayName": "刷新 CW 关闭",
+    "tags": []
+  },
+  "refresh-cw": {
+    "displayName": "刷新CW",
+    "tags": []
+  },
+  "refrigerator": {
+    "displayName": "冰箱",
+    "tags": []
+  },
+  "regex": {
+    "displayName": "正则表达式",
+    "tags": []
+  },
+  "remove-formatting": {
+    "displayName": "删除格式",
+    "tags": []
+  },
+  "repeat-1": {
+    "displayName": "重复1",
+    "tags": []
+  },
+  "repeat-2": {
+    "displayName": "重复2",
+    "tags": []
+  },
+  "repeat": {
+    "displayName": "重复",
+    "tags": []
+  },
+  "replace-all": {
+    "displayName": "全部替换",
+    "tags": []
+  },
+  "replace": {
+    "displayName": "更换",
+    "tags": []
+  },
+  "reply-all": {
+    "displayName": "全部回复",
+    "tags": []
+  },
+  "reply": {
+    "displayName": "回复",
+    "tags": []
+  },
+  "rewind": {
+    "displayName": "倒带",
+    "tags": []
+  },
+  "ribbon": {
+    "displayName": "丝带",
+    "tags": []
+  },
+  "road": {
+    "displayName": "道路",
+    "tags": []
+  },
+  "rocket": {
+    "displayName": "火箭",
+    "tags": []
+  },
+  "rocking-chair": {
+    "displayName": "摇椅",
+    "tags": []
+  },
+  "roller-coaster": {
+    "displayName": "过山车",
+    "tags": []
+  },
+  "rose": {
+    "displayName": "玫瑰",
+    "tags": []
+  },
+  "rotate-3d": {
+    "displayName": "旋转 3d",
+    "tags": []
+  },
+  "rotate-ccw-key": {
+    "displayName": "旋转 CCW 键",
+    "tags": []
+  },
+  "rotate-ccw-square": {
+    "displayName": "逆时针旋转广场",
+    "tags": []
+  },
+  "rotate-ccw": {
+    "displayName": "逆时针旋转",
+    "tags": []
+  },
+  "rotate-cw-square": {
+    "displayName": "顺时针旋转方形",
+    "tags": []
+  },
+  "rotate-cw": {
+    "displayName": "顺时针旋转",
+    "tags": []
+  },
+  "route-off": {
+    "displayName": "路线关闭",
+    "tags": []
+  },
+  "route": {
+    "displayName": "路线",
+    "tags": []
+  },
+  "router": {
+    "displayName": "路由器",
+    "tags": []
+  },
+  "rows-2": {
+    "displayName": "第 2 行",
+    "tags": []
+  },
+  "rows-3": {
+    "displayName": "第 3 行",
+    "tags": []
+  },
+  "rows-4": {
+    "displayName": "第 4 行",
+    "tags": []
+  },
+  "rss": {
+    "displayName": "RSS",
+    "tags": []
+  },
+  "ruler-dimension-line": {
+    "displayName": "标尺尺寸线",
+    "tags": []
+  },
+  "ruler": {
+    "displayName": "尺子",
+    "tags": []
+  },
+  "russian-ruble": {
+    "displayName": "俄罗斯卢布",
+    "tags": []
+  },
+  "sailboat": {
+    "displayName": "帆船",
+    "tags": []
+  },
+  "salad": {
+    "displayName": "沙拉",
+    "tags": []
+  },
+  "sandwich": {
+    "displayName": "三明治",
+    "tags": []
+  },
+  "satellite-dish": {
+    "displayName": "卫星天线",
+    "tags": []
+  },
+  "satellite": {
+    "displayName": "卫星",
+    "tags": []
+  },
+  "saudi-riyal": {
+    "displayName": "沙特里亚尔",
+    "tags": []
+  },
+  "save-all": {
+    "displayName": "全部保存",
+    "tags": []
+  },
+  "save-off": {
+    "displayName": "保存关闭",
+    "tags": []
+  },
+  "save": {
+    "displayName": "保存",
+    "tags": []
+  },
+  "scale-3d": {
+    "displayName": "缩放 3d",
+    "tags": []
+  },
+  "scale": {
+    "displayName": "规模",
+    "tags": []
+  },
+  "scaling": {
+    "displayName": "缩放",
+    "tags": []
+  },
+  "scan-barcode": {
+    "displayName": "扫描条码",
+    "tags": []
+  },
+  "scan-eye": {
+    "displayName": "扫描眼",
+    "tags": []
+  },
+  "scan-face": {
+    "displayName": "扫描脸部",
+    "tags": []
+  },
+  "scan-heart": {
+    "displayName": "扫描心脏",
+    "tags": []
+  },
+  "scan-line": {
+    "displayName": "扫描线",
+    "tags": []
+  },
+  "scan-qr-code": {
+    "displayName": "扫描二维码",
+    "tags": []
+  },
+  "scan-search": {
+    "displayName": "扫描搜索",
+    "tags": []
+  },
+  "scan-text": {
+    "displayName": "扫描文本",
+    "tags": []
+  },
+  "scan": {
+    "displayName": "扫描",
+    "tags": []
+  },
+  "school": {
+    "displayName": "学校",
+    "tags": []
+  },
+  "scissors-line-dashed": {
+    "displayName": "剪刀线虚线",
+    "tags": []
+  },
+  "scissors": {
+    "displayName": "剪刀",
+    "tags": []
+  },
+  "scooter": {
+    "displayName": "踏板车",
+    "tags": []
+  },
+  "screen-share-off": {
+    "displayName": "屏幕共享关闭",
+    "tags": []
+  },
+  "screen-share": {
+    "displayName": "屏幕共享",
+    "tags": []
+  },
+  "scroll-text": {
+    "displayName": "滚动文字",
+    "tags": []
+  },
+  "scroll": {
+    "displayName": "滚动",
+    "tags": []
+  },
+  "search-alert": {
+    "displayName": "搜索警报",
+    "tags": []
+  },
+  "search-check": {
+    "displayName": "搜索检查",
+    "tags": []
+  },
+  "search-code": {
+    "displayName": "搜寻码",
+    "tags": []
+  },
+  "search-slash": {
+    "displayName": "搜索斜线",
+    "tags": []
+  },
+  "search-x": {
+    "displayName": "搜索X",
+    "tags": []
+  },
+  "search": {
+    "displayName": "搜索",
+    "tags": []
+  },
+  "section": {
+    "displayName": "部分",
+    "tags": []
+  },
+  "send-horizontal": {
+    "displayName": "发送水平",
+    "tags": []
+  },
+  "send-to-back": {
+    "displayName": "发送到后面",
+    "tags": []
+  },
+  "send": {
+    "displayName": "发送",
+    "tags": []
+  },
+  "separator-horizontal": {
+    "displayName": "卧式分离器",
+    "tags": []
+  },
+  "separator-vertical": {
+    "displayName": "垂直分离器",
+    "tags": []
+  },
+  "server-cog": {
+    "displayName": "服务器齿轮",
+    "tags": []
+  },
+  "server-crash": {
+    "displayName": "服务器崩溃",
+    "tags": []
+  },
+  "server-off": {
+    "displayName": "服务器关闭",
+    "tags": []
+  },
+  "server": {
+    "displayName": "服务器",
+    "tags": []
+  },
+  "settings-2": {
+    "displayName": "设置2",
+    "tags": []
+  },
+  "settings": {
+    "displayName": "设置",
+    "tags": []
+  },
+  "shapes": {
+    "displayName": "形状",
+    "tags": []
+  },
+  "share-2": {
+    "displayName": "分享2",
+    "tags": []
+  },
+  "share": {
+    "displayName": "分享",
+    "tags": []
+  },
+  "sheet": {
+    "displayName": "板材",
+    "tags": []
+  },
+  "shell": {
+    "displayName": "壳牌",
+    "tags": []
+  },
+  "shelving-unit": {
+    "displayName": "搁架单元",
+    "tags": []
+  },
+  "shield-alert": {
+    "displayName": "护盾警报",
+    "tags": []
+  },
+  "shield-ban": {
+    "displayName": "盾牌禁令",
+    "tags": []
+  },
+  "shield-check": {
+    "displayName": "屏蔽检查",
+    "tags": []
+  },
+  "shield-cog-corner": {
+    "displayName": "盾牌齿轮角",
+    "tags": []
+  },
+  "shield-cog": {
+    "displayName": "盾牌齿轮",
+    "tags": []
+  },
+  "shield-ellipsis": {
+    "displayName": "盾牌省略号",
+    "tags": []
+  },
+  "shield-half": {
+    "displayName": "盾牌一半",
+    "tags": []
+  },
+  "shield-minus": {
+    "displayName": "护盾减号",
+    "tags": []
+  },
+  "shield-off": {
+    "displayName": "屏蔽关闭",
+    "tags": []
+  },
+  "shield-plus": {
+    "displayName": "盾加",
+    "tags": []
+  },
+  "shield-question-mark": {
+    "displayName": "盾牌问号",
+    "tags": []
+  },
+  "shield-user": {
+    "displayName": "护盾使用者",
+    "tags": []
+  },
+  "shield-x": {
+    "displayName": "盾牌X",
+    "tags": []
+  },
+  "shield": {
+    "displayName": "盾牌",
+    "tags": []
+  },
+  "ship-wheel": {
+    "displayName": "船轮",
+    "tags": []
+  },
+  "ship": {
+    "displayName": "船舶",
+    "tags": []
+  },
+  "shirt": {
+    "displayName": "衬衫",
+    "tags": []
+  },
+  "shopping-bag": {
+    "displayName": "购物袋",
+    "tags": []
+  },
+  "shopping-basket": {
+    "displayName": "购物篮",
+    "tags": []
+  },
+  "shopping-cart": {
+    "displayName": "购物车",
+    "tags": []
+  },
+  "shovel": {
+    "displayName": "铲子",
+    "tags": []
+  },
+  "shower-head": {
+    "displayName": "淋浴喷头",
+    "tags": []
+  },
+  "shredder": {
+    "displayName": "碎纸机",
+    "tags": []
+  },
+  "shrimp": {
+    "displayName": "虾",
+    "tags": []
+  },
+  "shrink": {
+    "displayName": "收缩",
+    "tags": []
+  },
+  "shrub": {
+    "displayName": "灌木",
+    "tags": []
+  },
+  "shuffle": {
+    "displayName": "随机播放",
+    "tags": []
+  },
+  "sigma": {
+    "displayName": "西格玛",
+    "tags": []
+  },
+  "signal-high": {
+    "displayName": "信号高",
+    "tags": []
+  },
+  "signal-low": {
+    "displayName": "信号低",
+    "tags": []
+  },
+  "signal-medium": {
+    "displayName": "信号介质",
+    "tags": []
+  },
+  "signal-zero": {
+    "displayName": "信号归零",
+    "tags": []
+  },
+  "signal": {
+    "displayName": "信号",
+    "tags": []
+  },
+  "signature": {
+    "displayName": "签名",
+    "tags": []
+  },
+  "signpost-big": {
+    "displayName": "路标大",
+    "tags": []
+  },
+  "signpost": {
+    "displayName": "路标",
+    "tags": []
+  },
+  "siren": {
+    "displayName": "海妖",
+    "tags": []
+  },
+  "skip-back": {
+    "displayName": "跳回",
+    "tags": []
+  },
+  "skip-forward": {
+    "displayName": "向前跳",
+    "tags": []
+  },
+  "skull": {
+    "displayName": "头骨",
+    "tags": []
+  },
+  "slash": {
+    "displayName": "斜线",
+    "tags": []
+  },
+  "slice": {
+    "displayName": "切片",
+    "tags": []
+  },
+  "sliders-horizontal": {
+    "displayName": "水平滑块",
+    "tags": []
+  },
+  "sliders-vertical": {
+    "displayName": "垂直滑块",
+    "tags": []
+  },
+  "smartphone-charging": {
+    "displayName": "智能手机充电",
+    "tags": []
+  },
+  "smartphone-nfc": {
+    "displayName": "智能手机 NFC",
+    "tags": []
+  },
+  "smartphone": {
+    "displayName": "智能手机",
+    "tags": []
+  },
+  "smile-plus": {
+    "displayName": "微笑加",
+    "tags": []
+  },
+  "smile": {
+    "displayName": "微笑",
+    "tags": []
+  },
+  "snail": {
+    "displayName": "蜗牛",
+    "tags": []
+  },
+  "snowflake": {
+    "displayName": "雪花",
+    "tags": []
+  },
+  "soap-dispenser-droplet": {
+    "displayName": "皂液器水滴",
+    "tags": []
+  },
+  "sofa": {
+    "displayName": "沙发",
+    "tags": []
+  },
+  "solar-panel": {
+    "displayName": "太阳能电池板",
+    "tags": []
+  },
+  "soup": {
+    "displayName": "汤",
+    "tags": []
+  },
+  "space": {
+    "displayName": "空间",
+    "tags": []
+  },
+  "spade": {
+    "displayName": "黑桃",
+    "tags": []
+  },
+  "sparkle": {
+    "displayName": "闪闪发光",
+    "tags": []
+  },
+  "sparkles": {
+    "displayName": "闪闪发光",
+    "tags": []
+  },
+  "speaker": {
+    "displayName": "扬声器",
+    "tags": []
+  },
+  "speech": {
+    "displayName": "演讲",
+    "tags": []
+  },
+  "spell-check-2": {
+    "displayName": "拼写检查 2",
+    "tags": []
+  },
+  "spell-check": {
+    "displayName": "拼写检查",
+    "tags": []
+  },
+  "spline-pointer": {
+    "displayName": "样条指针",
+    "tags": []
+  },
+  "spline": {
+    "displayName": "样条线",
+    "tags": []
+  },
+  "split": {
+    "displayName": "斯普利特",
+    "tags": []
+  },
+  "spool": {
+    "displayName": "线轴",
+    "tags": []
+  },
+  "sport-shoe": {
+    "displayName": "运动鞋",
+    "tags": []
+  },
+  "spotlight": {
+    "displayName": "聚光灯",
+    "tags": []
+  },
+  "spray-can": {
+    "displayName": "喷雾罐",
+    "tags": []
+  },
+  "sprout": {
+    "displayName": "发芽",
+    "tags": []
+  },
+  "square-activity": {
+    "displayName": "广场活动",
+    "tags": []
+  },
+  "square-arrow-down-left": {
+    "displayName": "左下方形箭头",
+    "tags": []
+  },
+  "square-arrow-down-right": {
+    "displayName": "右下方形箭头",
+    "tags": []
+  },
+  "square-arrow-down": {
+    "displayName": "向下方形箭头",
+    "tags": []
+  },
+  "square-arrow-left": {
+    "displayName": "向左方箭头",
+    "tags": []
+  },
+  "square-arrow-out-down-left": {
+    "displayName": "左下方箭头",
+    "tags": []
+  },
+  "square-arrow-out-down-right": {
+    "displayName": "右下方箭头",
+    "tags": []
+  },
+  "square-arrow-out-up-left": {
+    "displayName": "左上方箭头",
+    "tags": []
+  },
+  "square-arrow-out-up-right": {
+    "displayName": "向右上方的方形箭头",
+    "tags": []
+  },
+  "square-arrow-right-enter": {
+    "displayName": "方形箭头右输入",
+    "tags": []
+  },
+  "square-arrow-right-exit": {
+    "displayName": "方形箭头右出口",
+    "tags": []
+  },
+  "square-arrow-right": {
+    "displayName": "向右方箭头",
+    "tags": []
+  },
+  "square-arrow-up-left": {
+    "displayName": "左上方形箭头",
+    "tags": []
+  },
+  "square-arrow-up-right": {
+    "displayName": "右上方形箭头",
+    "tags": []
+  },
+  "square-arrow-up": {
+    "displayName": "向上方形箭头",
+    "tags": []
+  },
+  "square-asterisk": {
+    "displayName": "方形星号",
+    "tags": []
+  },
+  "square-bottom-dashed-scissors": {
+    "displayName": "方底虚线剪刀",
+    "tags": []
+  },
+  "square-centerline-dashed-horizontal": {
+    "displayName": "方形中心线水平虚线",
+    "tags": []
+  },
+  "square-centerline-dashed-vertical": {
+    "displayName": "方形中心线垂直虚线",
+    "tags": []
+  },
+  "square-chart-gantt": {
+    "displayName": "方形图甘特图",
+    "tags": []
+  },
+  "square-check-big": {
+    "displayName": "方格大号",
+    "tags": []
+  },
+  "square-check": {
+    "displayName": "方形格子",
+    "tags": []
+  },
+  "square-chevron-down": {
+    "displayName": "方形 V 形羽绒服",
+    "tags": []
+  },
+  "square-chevron-left": {
+    "displayName": "方形雪佛龙左",
+    "tags": []
+  },
+  "square-chevron-right": {
+    "displayName": "方形雪佛龙右",
+    "tags": []
+  },
+  "square-chevron-up": {
+    "displayName": "方形 V 形向上",
+    "tags": []
+  },
+  "square-code": {
+    "displayName": "方码",
+    "tags": []
+  },
+  "square-dashed-bottom-code": {
+    "displayName": "方形虚线底部代码",
+    "tags": []
+  },
+  "square-dashed-bottom": {
+    "displayName": "方形虚线底",
+    "tags": []
+  },
+  "square-dashed-kanban": {
+    "displayName": "方形虚线看板",
+    "tags": []
+  },
+  "square-dashed-mouse-pointer": {
+    "displayName": "方形虚线鼠标指针",
+    "tags": []
+  },
+  "square-dashed-text": {
+    "displayName": "方形虚线文本",
+    "tags": []
+  },
+  "square-dashed-top-solid": {
+    "displayName": "方形虚线顶实线",
+    "tags": []
+  },
+  "square-dashed": {
+    "displayName": "方形虚线",
+    "tags": []
+  },
+  "square-divide": {
+    "displayName": "平方除法",
+    "tags": []
+  },
+  "square-dot": {
+    "displayName": "方点",
+    "tags": []
+  },
+  "square-equal": {
+    "displayName": "平方等于",
+    "tags": []
+  },
+  "square-function": {
+    "displayName": "平方函数",
+    "tags": []
+  },
+  "square-kanban": {
+    "displayName": "方形看板",
+    "tags": []
+  },
+  "square-library": {
+    "displayName": "广场图书馆",
+    "tags": []
+  },
+  "square-m": {
+    "displayName": "方米",
+    "tags": []
+  },
+  "square-menu": {
+    "displayName": "方形菜单",
+    "tags": []
+  },
+  "square-minus": {
+    "displayName": "平方减",
+    "tags": []
+  },
+  "square-mouse-pointer": {
+    "displayName": "方形鼠标指针",
+    "tags": []
+  },
+  "square-parking-off": {
+    "displayName": "广场停车场关闭",
+    "tags": []
+  },
+  "square-parking": {
+    "displayName": "广场停车场",
+    "tags": []
+  },
+  "square-pause": {
+    "displayName": "方形暂停",
+    "tags": []
+  },
+  "square-pen": {
+    "displayName": "方笔",
+    "tags": []
+  },
+  "square-percent": {
+    "displayName": "平方百分比",
+    "tags": []
+  },
+  "square-pi": {
+    "displayName": "平方圆周率",
+    "tags": []
+  },
+  "square-pilcrow": {
+    "displayName": "方形枕头",
+    "tags": []
+  },
+  "square-play": {
+    "displayName": "广场游戏",
+    "tags": []
+  },
+  "square-plus": {
+    "displayName": "方加",
+    "tags": []
+  },
+  "square-power": {
+    "displayName": "平方功率",
+    "tags": []
+  },
+  "square-radical": {
+    "displayName": "方根式",
+    "tags": []
+  },
+  "square-round-corner": {
+    "displayName": "方圆角",
+    "tags": []
+  },
+  "square-scissors": {
+    "displayName": "方剪刀",
+    "tags": []
+  },
+  "square-sigma": {
+    "displayName": "平方西格玛",
+    "tags": []
+  },
+  "square-slash": {
+    "displayName": "方斜线",
+    "tags": []
+  },
+  "square-split-horizontal": {
+    "displayName": "方形水平分割",
+    "tags": []
+  },
+  "square-split-vertical": {
+    "displayName": "方形分割垂直",
+    "tags": []
+  },
+  "square-square": {
+    "displayName": "方形 方形",
+    "tags": []
+  },
+  "square-stack": {
+    "displayName": "方形堆栈",
+    "tags": []
+  },
+  "square-star": {
+    "displayName": "方星",
+    "tags": []
+  },
+  "square-stop": {
+    "displayName": "方形停止",
+    "tags": []
+  },
+  "square-terminal": {
+    "displayName": "方形终端",
+    "tags": []
+  },
+  "square-user-round": {
+    "displayName": "方 用户 圆",
+    "tags": []
+  },
+  "square-user": {
+    "displayName": "方用户",
+    "tags": []
+  },
+  "square-x": {
+    "displayName": "方X",
+    "tags": []
+  },
+  "square": {
+    "displayName": "广场",
+    "tags": []
+  },
+  "squares-exclude": {
+    "displayName": "正方形排除",
+    "tags": []
+  },
+  "squares-intersect": {
+    "displayName": "正方形相交",
+    "tags": []
+  },
+  "squares-subtract": {
+    "displayName": "平方减法",
+    "tags": []
+  },
+  "squares-unite": {
+    "displayName": "广场联合",
+    "tags": []
+  },
+  "squircle-dashed": {
+    "displayName": "方格虚线",
+    "tags": []
+  },
+  "squircle": {
+    "displayName": "松鼠",
+    "tags": []
+  },
+  "squirrel": {
+    "displayName": "松鼠",
+    "tags": []
+  },
+  "stamp": {
+    "displayName": "邮票",
+    "tags": []
+  },
+  "star-half": {
+    "displayName": "星半",
+    "tags": []
+  },
+  "star-off": {
+    "displayName": "星关闭",
+    "tags": []
+  },
+  "star": {
+    "displayName": "明星",
+    "tags": []
+  },
+  "step-back": {
+    "displayName": "退后一步",
+    "tags": []
+  },
+  "step-forward": {
+    "displayName": "向前迈进",
+    "tags": []
+  },
+  "stethoscope": {
+    "displayName": "听诊器",
+    "tags": []
+  },
+  "sticker": {
+    "displayName": "贴纸",
+    "tags": []
+  },
+  "sticky-note": {
+    "displayName": "便利贴",
+    "tags": []
+  },
+  "stone": {
+    "displayName": "石头",
+    "tags": []
+  },
+  "store": {
+    "displayName": "商店",
+    "tags": []
+  },
+  "stretch-horizontal": {
+    "displayName": "水平拉伸",
+    "tags": []
+  },
+  "stretch-vertical": {
+    "displayName": "垂直拉伸",
+    "tags": []
+  },
+  "strikethrough": {
+    "displayName": "删除线",
+    "tags": []
+  },
+  "subscript": {
+    "displayName": "下标",
+    "tags": []
+  },
+  "sun-dim": {
+    "displayName": "太阳昏暗",
+    "tags": []
+  },
+  "sun-medium": {
+    "displayName": "太阳媒体",
+    "tags": []
+  },
+  "sun-moon": {
+    "displayName": "日月",
+    "tags": []
+  },
+  "sun-snow": {
+    "displayName": "太阳雪",
+    "tags": []
+  },
+  "sun": {
+    "displayName": "太阳",
+    "tags": []
+  },
+  "sunrise": {
+    "displayName": "日出",
+    "tags": []
+  },
+  "sunset": {
+    "displayName": "日落",
+    "tags": []
+  },
+  "superscript": {
+    "displayName": "上标",
+    "tags": []
+  },
+  "swatch-book": {
+    "displayName": "样本书",
+    "tags": []
+  },
+  "swiss-franc": {
+    "displayName": "瑞士法郎",
+    "tags": []
+  },
+  "switch-camera": {
+    "displayName": "切换相机",
+    "tags": []
+  },
+  "sword": {
+    "displayName": "剑",
+    "tags": []
+  },
+  "swords": {
+    "displayName": "剑",
+    "tags": []
+  },
+  "syringe": {
+    "displayName": "注射器",
+    "tags": []
+  },
+  "table-2": {
+    "displayName": "表2",
+    "tags": []
+  },
+  "table-cells-merge": {
+    "displayName": "表格单元格合并",
+    "tags": []
+  },
+  "table-cells-split": {
+    "displayName": "表格单元格拆分",
+    "tags": []
+  },
+  "table-columns-split": {
+    "displayName": "表列拆分",
+    "tags": []
+  },
+  "table-of-contents": {
+    "displayName": "目录",
+    "tags": []
+  },
+  "table-properties": {
+    "displayName": "表属性",
+    "tags": []
+  },
+  "table-rows-split": {
+    "displayName": "表行拆分",
+    "tags": []
+  },
+  "table": {
+    "displayName": "表",
+    "tags": []
+  },
+  "tablet-smartphone": {
+    "displayName": "平板电脑 智能手机",
+    "tags": []
+  },
+  "tablet": {
+    "displayName": "平板电脑",
+    "tags": []
+  },
+  "tablets": {
+    "displayName": "平板电脑",
+    "tags": []
+  },
+  "tag": {
+    "displayName": "标签",
+    "tags": []
+  },
+  "tags": {
+    "displayName": "标签",
+    "tags": []
+  },
+  "tally-1": {
+    "displayName": "理货1",
+    "tags": []
+  },
+  "tally-2": {
+    "displayName": "理货2",
+    "tags": []
+  },
+  "tally-3": {
+    "displayName": "计数 3",
+    "tags": []
+  },
+  "tally-4": {
+    "displayName": "计数 4",
+    "tags": []
+  },
+  "tally-5": {
+    "displayName": "计数 5",
+    "tags": []
+  },
+  "tangent": {
+    "displayName": "切线",
+    "tags": []
+  },
+  "target": {
+    "displayName": "目标",
+    "tags": []
+  },
+  "telescope": {
+    "displayName": "望远镜",
+    "tags": []
+  },
+  "tent-tree": {
+    "displayName": "帐篷树",
+    "tags": []
+  },
+  "tent": {
+    "displayName": "帐篷",
+    "tags": []
+  },
+  "terminal": {
+    "displayName": "终端",
+    "tags": []
+  },
+  "test-tube-diagonal": {
+    "displayName": "试管对角线",
+    "tags": []
+  },
+  "test-tube": {
+    "displayName": "试管",
+    "tags": []
+  },
+  "test-tubes": {
+    "displayName": "试管",
+    "tags": []
+  },
+  "text-align-center": {
+    "displayName": "文本居中对齐",
+    "tags": []
+  },
+  "text-align-end": {
+    "displayName": "文本对齐结束",
+    "tags": []
+  },
+  "text-align-justify": {
+    "displayName": "文本对齐对齐",
+    "tags": []
+  },
+  "text-align-start": {
+    "displayName": "文本对齐开始",
+    "tags": []
+  },
+  "text-cursor-input": {
+    "displayName": "文本光标输入",
+    "tags": []
+  },
+  "text-cursor": {
+    "displayName": "文本光标",
+    "tags": []
+  },
+  "text-initial": {
+    "displayName": "文本首字母",
+    "tags": []
+  },
+  "text-quote": {
+    "displayName": "文字引用",
+    "tags": []
+  },
+  "text-search": {
+    "displayName": "文本搜索",
+    "tags": []
+  },
+  "text-wrap": {
+    "displayName": "文字换行",
+    "tags": []
+  },
+  "theater": {
+    "displayName": "剧院",
+    "tags": []
+  },
+  "thermometer-snowflake": {
+    "displayName": "温度计雪花",
+    "tags": []
+  },
+  "thermometer-sun": {
+    "displayName": "温度计太阳",
+    "tags": []
+  },
+  "thermometer": {
+    "displayName": "温度计",
+    "tags": []
+  },
+  "thumbs-down": {
+    "displayName": "拇指朝下",
+    "tags": []
+  },
+  "thumbs-up": {
+    "displayName": "竖起大拇指",
+    "tags": []
+  },
+  "ticket-check": {
+    "displayName": "检票",
+    "tags": []
+  },
+  "ticket-minus": {
+    "displayName": "票减",
+    "tags": []
+  },
+  "ticket-percent": {
+    "displayName": "票价百分比",
+    "tags": []
+  },
+  "ticket-plus": {
+    "displayName": "门票加",
+    "tags": []
+  },
+  "ticket-slash": {
+    "displayName": "门票斜线",
+    "tags": []
+  },
+  "ticket-x": {
+    "displayName": "票X",
+    "tags": []
+  },
+  "ticket": {
+    "displayName": "门票",
+    "tags": []
+  },
+  "tickets-plane": {
+    "displayName": "机票 飞机",
+    "tags": []
+  },
+  "tickets": {
+    "displayName": "门票",
+    "tags": []
+  },
+  "timer-off": {
+    "displayName": "定时器关闭",
+    "tags": []
+  },
+  "timer-reset": {
+    "displayName": "定时器重置",
+    "tags": []
+  },
+  "timer": {
+    "displayName": "定时器",
+    "tags": []
+  },
+  "toggle-left": {
+    "displayName": "向左切换",
+    "tags": []
+  },
+  "toggle-right": {
+    "displayName": "向右切换",
+    "tags": []
+  },
+  "toilet": {
+    "displayName": "厕所",
+    "tags": []
+  },
+  "tool-case": {
+    "displayName": "工具箱",
+    "tags": []
+  },
+  "toolbox": {
+    "displayName": "工具箱",
+    "tags": []
+  },
+  "tornado": {
+    "displayName": "龙卷风",
+    "tags": []
+  },
+  "torus": {
+    "displayName": "环面",
+    "tags": []
+  },
+  "touchpad-off": {
+    "displayName": "触摸板关闭",
+    "tags": []
+  },
+  "touchpad": {
+    "displayName": "触摸板",
+    "tags": []
+  },
+  "towel-rack": {
+    "displayName": "毛巾架",
+    "tags": []
+  },
+  "tower-control": {
+    "displayName": "塔台控制",
+    "tags": []
+  },
+  "toy-brick": {
+    "displayName": "玩具积木",
+    "tags": []
+  },
+  "tractor": {
+    "displayName": "拖拉机",
+    "tags": []
+  },
+  "traffic-cone": {
+    "displayName": "交通锥",
+    "tags": []
+  },
+  "train-front-tunnel": {
+    "displayName": "火车前隧道",
+    "tags": []
+  },
+  "train-front": {
+    "displayName": "火车头",
+    "tags": []
+  },
+  "train-track": {
+    "displayName": "火车轨道",
+    "tags": []
+  },
+  "tram-front": {
+    "displayName": "电车前线",
+    "tags": []
+  },
+  "transgender": {
+    "displayName": "跨性别",
+    "tags": []
+  },
+  "trash-2": {
+    "displayName": "垃圾2",
+    "tags": []
+  },
+  "trash": {
+    "displayName": "垃圾",
+    "tags": []
+  },
+  "tree-deciduous": {
+    "displayName": "落叶树",
+    "tags": []
+  },
+  "tree-palm": {
+    "displayName": "棕榈树",
+    "tags": []
+  },
+  "tree-pine": {
+    "displayName": "树松",
+    "tags": []
+  },
+  "trees": {
+    "displayName": "树木",
+    "tags": []
+  },
+  "trending-down": {
+    "displayName": "趋势下降",
+    "tags": []
+  },
+  "trending-up-down": {
+    "displayName": "趋势向上 向下",
+    "tags": []
+  },
+  "trending-up": {
+    "displayName": "趋势上升",
+    "tags": []
+  },
+  "triangle-alert": {
+    "displayName": "三角警报",
+    "tags": []
+  },
+  "triangle-dashed": {
+    "displayName": "三角形虚线",
+    "tags": []
+  },
+  "triangle-right": {
+    "displayName": "右三角",
+    "tags": []
+  },
+  "triangle": {
+    "displayName": "三角形",
+    "tags": []
+  },
+  "trophy": {
+    "displayName": "奖杯",
+    "tags": []
+  },
+  "truck-electric": {
+    "displayName": "电动卡车",
+    "tags": []
+  },
+  "truck": {
+    "displayName": "卡车",
+    "tags": []
+  },
+  "turkish-lira": {
+    "displayName": "土耳其里拉",
+    "tags": []
+  },
+  "turntable": {
+    "displayName": "转盘",
+    "tags": []
+  },
+  "turtle": {
+    "displayName": "海龟",
+    "tags": []
+  },
+  "tv-minimal-play": {
+    "displayName": "电视最低限度播放",
+    "tags": []
+  },
+  "tv-minimal": {
+    "displayName": "电视最小",
+    "tags": []
+  },
+  "tv": {
+    "displayName": "电视",
+    "tags": []
+  },
+  "type-outline": {
+    "displayName": "类型概要",
+    "tags": []
+  },
+  "type": {
+    "displayName": "类型",
+    "tags": []
+  },
+  "umbrella-off": {
+    "displayName": "关闭雨伞",
+    "tags": []
+  },
+  "umbrella": {
+    "displayName": "雨伞",
+    "tags": []
+  },
+  "underline": {
+    "displayName": "下划线",
+    "tags": []
+  },
+  "undo-2": {
+    "displayName": "撤消 2",
+    "tags": []
+  },
+  "undo-dot": {
+    "displayName": "撤消点",
+    "tags": []
+  },
+  "undo": {
+    "displayName": "撤消",
+    "tags": []
+  },
+  "unfold-horizontal": {
+    "displayName": "水平展开",
+    "tags": []
+  },
+  "unfold-vertical": {
+    "displayName": "垂直展开",
+    "tags": []
+  },
+  "ungroup": {
+    "displayName": "取消分组",
+    "tags": []
+  },
+  "university": {
+    "displayName": "大学",
+    "tags": []
+  },
+  "unlink-2": {
+    "displayName": "取消链接2",
+    "tags": []
+  },
+  "unlink": {
+    "displayName": "取消链接",
+    "tags": []
+  },
+  "unplug": {
+    "displayName": "拔掉插头",
+    "tags": []
+  },
+  "upload": {
+    "displayName": "上传",
+    "tags": []
+  },
+  "usb": {
+    "displayName": "优盘",
+    "tags": []
+  },
+  "user-check": {
+    "displayName": "用户检查",
+    "tags": []
+  },
+  "user-cog": {
+    "displayName": "用户齿轮",
+    "tags": []
+  },
+  "user-key": {
+    "displayName": "用户密钥",
+    "tags": []
+  },
+  "user-lock": {
+    "displayName": "用户锁",
+    "tags": []
+  },
+  "user-minus": {
+    "displayName": "用户减号",
+    "tags": []
+  },
+  "user-pen": {
+    "displayName": "用户笔",
+    "tags": []
+  },
+  "user-plus": {
+    "displayName": "用户加号",
+    "tags": []
+  },
+  "user-round-check": {
+    "displayName": "用户回合检查",
+    "tags": []
+  },
+  "user-round-cog": {
+    "displayName": "用户圆形齿轮",
+    "tags": []
+  },
+  "user-round-key": {
+    "displayName": "用户轮密钥",
+    "tags": []
+  },
+  "user-round-minus": {
+    "displayName": "用户回合减",
+    "tags": []
+  },
+  "user-round-pen": {
+    "displayName": "用户圆笔",
+    "tags": []
+  },
+  "user-round-plus": {
+    "displayName": "用户回合加",
+    "tags": []
+  },
+  "user-round-search": {
+    "displayName": "用户轮次搜索",
+    "tags": []
+  },
+  "user-round-x": {
+    "displayName": "用户第 X 轮",
+    "tags": []
+  },
+  "user-round": {
+    "displayName": "用户回合",
+    "tags": []
+  },
+  "user-search": {
+    "displayName": "用户搜索",
+    "tags": []
+  },
+  "user-star": {
+    "displayName": "用户之星",
+    "tags": []
+  },
+  "user-x": {
+    "displayName": "用户X",
+    "tags": []
+  },
+  "user": {
+    "displayName": "用户",
+    "tags": []
+  },
+  "users-round": {
+    "displayName": "用户回合",
+    "tags": []
+  },
+  "users": {
+    "displayName": "用户",
+    "tags": []
+  },
+  "utensils-crossed": {
+    "displayName": "交叉的器皿",
+    "tags": []
+  },
+  "utensils": {
+    "displayName": "餐具",
+    "tags": []
+  },
+  "utility-pole": {
+    "displayName": "电线杆",
+    "tags": []
+  },
+  "van": {
+    "displayName": "货车",
+    "tags": []
+  },
+  "variable": {
+    "displayName": "变量",
+    "tags": []
+  },
+  "vault": {
+    "displayName": "避难所",
+    "tags": []
+  },
+  "vector-square": {
+    "displayName": "矢量正方形",
+    "tags": []
+  },
+  "vegan": {
+    "displayName": "素食主义者",
+    "tags": []
+  },
+  "venetian-mask": {
+    "displayName": "威尼斯面具",
+    "tags": []
+  },
+  "venus-and-mars": {
+    "displayName": "金星和火星",
+    "tags": []
+  },
+  "venus": {
+    "displayName": "金星",
+    "tags": []
+  },
+  "vibrate-off": {
+    "displayName": "振动关闭",
+    "tags": []
+  },
+  "vibrate": {
+    "displayName": "振动",
+    "tags": []
+  },
+  "video-off": {
+    "displayName": "视频关闭",
+    "tags": []
+  },
+  "video": {
+    "displayName": "视频",
+    "tags": []
+  },
+  "videotape": {
+    "displayName": "录像带",
+    "tags": []
+  },
+  "view": {
+    "displayName": "查看",
+    "tags": []
+  },
+  "voicemail": {
+    "displayName": "语音信箱",
+    "tags": []
+  },
+  "volleyball": {
+    "displayName": "排球",
+    "tags": []
+  },
+  "volume-1": {
+    "displayName": "第 1 卷",
+    "tags": []
+  },
+  "volume-2": {
+    "displayName": "第 2 卷",
+    "tags": []
+  },
+  "volume-off": {
+    "displayName": "音量关闭",
+    "tags": []
+  },
+  "volume-x": {
+    "displayName": "第 X 卷",
+    "tags": []
+  },
+  "volume": {
+    "displayName": "体积",
+    "tags": []
+  },
+  "vote": {
+    "displayName": "投票",
+    "tags": []
+  },
+  "wallet-cards": {
+    "displayName": "钱包卡",
+    "tags": []
+  },
+  "wallet-minimal": {
+    "displayName": "钱包最小",
+    "tags": []
+  },
+  "wallet": {
+    "displayName": "钱包",
+    "tags": []
+  },
+  "wallpaper": {
+    "displayName": "壁纸",
+    "tags": []
+  },
+  "wand-sparkles": {
+    "displayName": "魔杖闪闪发光",
+    "tags": []
+  },
+  "wand": {
+    "displayName": "魔杖",
+    "tags": []
+  },
+  "warehouse": {
+    "displayName": "仓库",
+    "tags": []
+  },
+  "washing-machine": {
+    "displayName": "洗衣机",
+    "tags": []
+  },
+  "watch": {
+    "displayName": "手表",
+    "tags": []
+  },
+  "waves-arrow-down": {
+    "displayName": "向下波浪箭头",
+    "tags": []
+  },
+  "waves-arrow-up": {
+    "displayName": "向上波浪箭头",
+    "tags": []
+  },
+  "waves-ladder": {
+    "displayName": "波浪梯",
+    "tags": []
+  },
+  "waves": {
+    "displayName": "波浪",
+    "tags": []
+  },
+  "waypoints": {
+    "displayName": "航点",
+    "tags": []
+  },
+  "webcam": {
+    "displayName": "网络摄像头",
+    "tags": []
+  },
+  "webhook-off": {
+    "displayName": "网络挂接关闭",
+    "tags": []
+  },
+  "webhook": {
+    "displayName": "网络钩子",
+    "tags": []
+  },
+  "weight-tilde": {
+    "displayName": "重量波形符",
+    "tags": []
+  },
+  "weight": {
+    "displayName": "重量",
+    "tags": []
+  },
+  "wheat-off": {
+    "displayName": "小麦关闭",
+    "tags": []
+  },
+  "wheat": {
+    "displayName": "小麦",
+    "tags": []
+  },
+  "whole-word": {
+    "displayName": "整个词",
+    "tags": []
+  },
+  "wifi-cog": {
+    "displayName": "无线网络齿轮",
+    "tags": []
+  },
+  "wifi-high": {
+    "displayName": "无线网络高",
+    "tags": []
+  },
+  "wifi-low": {
+    "displayName": "无线网络信号低",
+    "tags": []
+  },
+  "wifi-off": {
+    "displayName": "无线网络关闭",
+    "tags": []
+  },
+  "wifi-pen": {
+    "displayName": "无线笔",
+    "tags": []
+  },
+  "wifi-sync": {
+    "displayName": "无线网络同步",
+    "tags": []
+  },
+  "wifi-zero": {
+    "displayName": "无线网络零",
+    "tags": []
+  },
+  "wifi": {
+    "displayName": "无线网络",
+    "tags": []
+  },
+  "wind-arrow-down": {
+    "displayName": "风箭向下",
+    "tags": []
+  },
+  "wind": {
+    "displayName": "风",
+    "tags": []
+  },
+  "wine-off": {
+    "displayName": "酒关",
+    "tags": []
+  },
+  "wine": {
+    "displayName": "酒",
+    "tags": []
+  },
+  "workflow": {
+    "displayName": "工作流程",
+    "tags": []
+  },
+  "worm": {
+    "displayName": "蠕虫",
+    "tags": []
+  },
+  "wrench": {
+    "displayName": "扳手",
+    "tags": []
+  },
+  "x-line-top": {
+    "displayName": "X 线上衣",
+    "tags": []
+  },
+  "x": {
+    "displayName": "X",
+    "tags": []
+  },
+  "zap-off": {
+    "displayName": "关闭",
+    "tags": []
+  },
+  "zap": {
+    "displayName": "电击",
+    "tags": []
+  },
+  "zodiac-aquarius": {
+    "displayName": "十二生肖水瓶座",
+    "tags": []
+  },
+  "zodiac-aries": {
+    "displayName": "白羊座",
+    "tags": []
+  },
+  "zodiac-cancer": {
+    "displayName": "巨蟹座",
+    "tags": []
+  },
+  "zodiac-capricorn": {
+    "displayName": "星座 摩羯座",
+    "tags": []
+  },
+  "zodiac-gemini": {
+    "displayName": "双子座",
+    "tags": []
+  },
+  "zodiac-leo": {
+    "displayName": "狮子座",
+    "tags": []
+  },
+  "zodiac-libra": {
+    "displayName": "天秤座",
+    "tags": []
+  },
+  "zodiac-ophiuchus": {
+    "displayName": "蛇夫座",
+    "tags": []
+  },
+  "zodiac-pisces": {
+    "displayName": "双鱼座",
+    "tags": []
+  },
+  "zodiac-sagittarius": {
+    "displayName": "十二生肖射手座",
+    "tags": []
+  },
+  "zodiac-scorpio": {
+    "displayName": "天蝎座",
+    "tags": []
+  },
+  "zodiac-taurus": {
+    "displayName": "十二生肖金牛座",
+    "tags": []
+  },
+  "zodiac-virgo": {
+    "displayName": "星座 处女座",
+    "tags": []
+  },
+  "zoom-in": {
+    "displayName": "放大",
+    "tags": []
+  },
+  "zoom-out": {
+    "displayName": "缩小",
+    "tags": []
+  }
+}

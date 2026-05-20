@@ -3,6 +3,7 @@ package com.shermant.core.registry
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.shermant.core.model.LucideIconCategory
 import com.shermant.core.model.LucideIconKey
+import com.shermant.core.model.LucideLocale
 import com.shermant.core.model.LucideIconMetadata
 
 interface IconRegistry {
@@ -34,6 +35,8 @@ interface IconRegistry {
     fun metadata(key: LucideIconKey): LucideIconMetadata?
 
     fun search(query: String, limit: Int = 100): List<LucideIconMetadata>
+
+    fun search(query: String, locale: LucideLocale, limit: Int = 100): List<LucideIconMetadata>
 
     fun byCategory(category: LucideIconCategory): List<LucideIconMetadata>
 }

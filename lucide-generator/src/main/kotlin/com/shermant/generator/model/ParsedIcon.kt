@@ -12,11 +12,13 @@ data class ParsedVectorPath(
 data class ParsedIcon(
     val name: String,
     val displayName: String,
+    val zhDisplayName: String? = null,
     val viewportWidth: Float,
     val viewportHeight: Float,
     val defaultStrokeWidth: Float,
     val paths: List<ParsedVectorPath>,
     val tags: Set<String>,
+    val zhTags: Set<String> = emptySet(),
     val aliases: Set<String>,
     val categories: Set<String>,
 )
@@ -29,6 +31,8 @@ data class RawLucideIcon(
 
 data class RawLucideMetadata(
     val tags: Set<String>,
+    val zhDisplayName: String? = null,
+    val zhTags: Set<String> = emptySet(),
     val aliases: Set<String>,
     val categories: Set<String>,
 )

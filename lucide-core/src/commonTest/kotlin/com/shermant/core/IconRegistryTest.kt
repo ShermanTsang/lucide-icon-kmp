@@ -5,6 +5,7 @@ import androidx.compose.ui.unit.dp
 import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 import com.shermant.core.model.LucideIconCategory
+import com.shermant.core.model.LucideLocale
 import com.shermant.core.registry.BuiltInIconRegistrar
 import com.shermant.core.registry.DefaultIconRegistry
 import com.shermant.core.registry.IconRenderParameters
@@ -42,7 +43,11 @@ class IconRegistryTest {
         val registry = DefaultIconRegistry()
         var creations = 0
         registry.register(
-            metadata = LucideIconMetadata(LucideIconKey("demo"), displayName = "Demo"),
+            metadata = LucideIconMetadata(
+                LucideIconKey("demo"),
+                displayName = "Demo",
+                zhDisplayName = "示例",
+            ),
             creator = LucideIconCreator {
                 creations += 1
                 ImageVector.Builder("demo", 24f.dp, 24f.dp, 24f, 24f).build()
@@ -52,6 +57,7 @@ class IconRegistryTest {
         val metadata = registry.metadata("demo")
 
         assertEquals("Demo", metadata?.displayName)
+        assertEquals("示例", metadata?.displayName(LucideLocale.Zh))
         assertEquals(0, creations)
     }
 

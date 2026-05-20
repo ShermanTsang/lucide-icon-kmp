@@ -57,11 +57,13 @@ class SvgIconParser {
         return ParsedIcon(
             name = icon.name,
             displayName = icon.name.toDisplayName(),
+            zhDisplayName = icon.metadata.zhDisplayName,
             viewportWidth = viewportWidth,
             viewportHeight = viewportHeight,
             defaultStrokeWidth = inheritedStyle.strokeWidth,
             paths = parsedPaths,
             tags = icon.metadata.tags,
+            zhTags = icon.metadata.zhTags,
             aliases = icon.metadata.aliases,
             categories = icon.metadata.categories,
         )
