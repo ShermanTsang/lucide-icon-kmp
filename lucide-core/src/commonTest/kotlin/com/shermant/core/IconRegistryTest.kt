@@ -105,6 +105,28 @@ class IconRegistryTest {
     }
 
     @Test
+    fun reusesParameterizedIconsAcrossRepeatedResolves() {
+        val registry = DefaultIconRegistry()
+        var parameterizedCreations = 0
+        registry.register(
+            metadata = LucideIconMetadata(LucideIconKey("demo")),
+            creator = LucideIconCreator {
+                ImageVector.Builder("demo-default", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+            parameterizedProvider = ParameterizedIconProvider {
+                parameterizedCreations += 1
+                ImageVector.Builder("demo-parameterized-$parameterizedCreations", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+
+        repeat(50) {
+            registry.resolve("demo", IconRenderParameters(size = 20f, strokeWidth = 2f))
+        }
+
+        assertEquals(1, parameterizedCreations)
+    }
+
+    @Test
     fun replacingRegisteredIconInvalidatesResolvedIconCaches() {
         val registry = DefaultIconRegistry()
         var firstDefaultCreations = 0
@@ -193,5 +215,82 @@ class IconRegistryTest {
 
         assertEquals(2, searchCalls)
         assertTrue(refreshedResults.any { it.key.value == "alpine" })
+    }
+
+    @Test
+    fun cachesBlankQueriesByLocaleWithoutInvokingSearchStrategy() {
+        var searchCalls = 0
+        val registry = DefaultIconRegistry(
+            searchStrategy = IconSearchStrategy { _, _ ->
+                searchCalls += 1
+                emptyList()
+            },
+        )
+        registry.register(
+            metadata = LucideIconMetadata(
+                LucideIconKey("alpha"),
+                displayName = "Alpha",
+                zhDisplayName = "阿尔法",
+            ),
+            creator = LucideIconCreator {
+                ImageVector.Builder("alpha", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+        registry.register(
+            metadata = LucideIconMetadata(
+                LucideIconKey("beta"),
+                displayName = "Beta",
+                zhDisplayName = "贝塔",
+            ),
+            creator = LucideIconCreator {
+                ImageVector.Builder("beta", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+
+        val firstEnglish = registry.search("", locale = LucideLocale.En, limit = 10)
+        val secondEnglish = registry.search("", locale = LucideLocale.En, limit = 1)
+        val firstChinese = registry.search("", locale = LucideLocale.Zh, limit = 10)
+        val secondChinese = registry.search("", locale = LucideLocale.Zh, limit = 1)
+
+        assertEquals(0, searchCalls)
+        assertEquals(listOf("Alpha", "Beta"), firstEnglish.map { it.displayName(LucideLocale.En) })
+        assertEquals(listOf("Alpha"), secondEnglish.map { it.displayName(LucideLocale.En) })
+        assertEquals(
+            firstChinese.map { it.displayName(LucideLocale.Zh) }.sorted(),
+            firstChinese.map { it.displayName(LucideLocale.Zh) },
+        )
+        assertEquals(
+            firstChinese.take(1).map { it.displayName(LucideLocale.Zh) },
+            secondChinese.map { it.displayName(LucideLocale.Zh) },
+        )
+    }
+
+    @Test
+    fun invalidatesCategoryIndexAfterRegister() {
+        val registry = DefaultIconRegistry()
+        registry.register(
+            metadata = LucideIconMetadata(
+                key = LucideIconKey("alpha"),
+                categories = setOf(LucideIconCategory.Text),
+            ),
+            creator = LucideIconCreator {
+                ImageVector.Builder("alpha", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+
+        val firstResults = registry.byCategory(LucideIconCategory.Text)
+        registry.register(
+            metadata = LucideIconMetadata(
+                key = LucideIconKey("beta"),
+                categories = setOf(LucideIconCategory.Text),
+            ),
+            creator = LucideIconCreator {
+                ImageVector.Builder("beta", 24f.dp, 24f.dp, 24f, 24f).build()
+            },
+        )
+        val refreshedResults = registry.byCategory(LucideIconCategory.Text)
+
+        assertEquals(listOf("alpha"), firstResults.map { it.key.value })
+        assertEquals(listOf("alpha", "beta"), refreshedResults.map { it.key.value })
     }
 }
