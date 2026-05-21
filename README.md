@@ -133,17 +133,17 @@ Actual full-platform publication runs on `macos-latest` in GitHub Actions so App
 
 Before running the publish workflow locally:
 
-1. Copy `.env.publish.example` to `.env.publish`.
-2. Copy `.secrets.publish.example` to `.secrets.publish`.
-3. Set `MAVEN_REPOSITORY_URL` to a real remote Maven repository. The current local example points to Sonatype snapshots.
-4. If authentication is required, fill in `MAVEN_USERNAME` and `MAVEN_PASSWORD`.
-5. If signing is required, set `SIGNING_KEY_BASE64` to the Base64-encoded ASCII-armored private key on a single line, then provide `SIGNING_PASSWORD`.
-6. Keep `MAVEN_REPOSITORY_URL` set, because the workflow does not fall back to local-only publishing.
+1. Create a local `.env` file.
+2. Create a local `.secrets` file.
+3. Set `MAVEN_REPOSITORY_URL` in `.secrets` to a real remote Maven repository.
+4. If authentication is required, fill in `MAVEN_USERNAME` and `MAVEN_PASSWORD` in `.secrets`.
+5. If signing is required, set `SIGNING_KEY_BASE64` in `.secrets` to the Base64-encoded ASCII-armored private key on a single line, then provide `SIGNING_PASSWORD`.
+6. Keep `ACT=true` in `.env` so the workflow stops after validation during local `act` runs.
 
 Run the validation workflow locally with:
 
 ```bash
-act workflow_dispatch -W .github/workflows/publish-maven.yml --env-file .env.publish --secret-file .secrets.publish
+act
 ```
 
 When running through `act`, the workflow stops after `Validate publish configuration`.

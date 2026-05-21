@@ -133,17 +133,17 @@ LucideIcons.registry.registerCustomIcon(
 
 本地执行发布工作流前，请先完成以下准备：
 
-1. 将 `.env.publish.example` 复制为 `.env.publish`。
-2. 将 `.secrets.publish.example` 复制为 `.secrets.publish`。
-3. 为 `MAVEN_REPOSITORY_URL` 设置一个真实可用的远端 Maven 仓库地址；当前本地示例值指向 Sonatype snapshots。
-4. 如果仓库需要鉴权，请填写 `MAVEN_USERNAME` 与 `MAVEN_PASSWORD`。
-5. 如果需要签名，请将单行 Base64 编码的 ASCII-armored 私钥写入 `SIGNING_KEY_BASE64`，并同时提供 `SIGNING_PASSWORD`。
-6. 保持 `MAVEN_REPOSITORY_URL` 已设置，因为该工作流不会回退到纯本地发布模式。
+1. 在本地创建 `.env` 文件。
+2. 在本地创建 `.secrets` 文件。
+3. 在 `.secrets` 中为 `MAVEN_REPOSITORY_URL` 设置一个真实可用的远端 Maven 仓库地址。
+4. 如果仓库需要鉴权，请在 `.secrets` 中填写 `MAVEN_USERNAME` 与 `MAVEN_PASSWORD`。
+5. 如果需要签名，请在 `.secrets` 中提供单行 Base64 编码的 `SIGNING_KEY_BASE64`，并同时提供 `SIGNING_PASSWORD`。
+6. 在 `.env` 中保留 `ACT=true`，这样本地 `act` 运行会在校验后停止。
 
 本地运行校验工作流：
 
 ```bash
-act workflow_dispatch -W .github/workflows/publish-maven.yml --env-file .env.publish --secret-file .secrets.publish
+act
 ```
 
 通过 `act` 运行时，工作流会在 `Validate publish configuration` 后结束。

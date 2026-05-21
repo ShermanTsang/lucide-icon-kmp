@@ -40,12 +40,12 @@ jobs:
         run: |
           print_act_hint() {
             cat <<'EOF'
-          For local act runs, copy:
-            - .env.publish.example -> .env.publish
-            - .secrets.publish.example -> .secrets.publish
+          For local act runs, keep only these local files:
+            - .env
+            - .secrets
+          Repo `.actrc` already points `act` to `.env` and `.secrets`.
           Use SIGNING_KEY_BASE64 for the Base64-encoded ASCII-armored private key on one line.
-          Then pass them explicitly, for example:
-            act workflow_dispatch -W .github/workflows/publish-maven.yml --env-file .env.publish --secret-file .secrets.publish
+          Run plain `act` after filling the required values.
           EOF
           }
 

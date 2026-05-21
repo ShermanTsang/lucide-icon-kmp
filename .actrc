@@ -1,4 +1,4 @@
 --env-file
-.env.publish
+.env
 --secret-file
-.secrets.publish
+.secrets
