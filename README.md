@@ -131,11 +131,17 @@ The current pinned Lucide snapshot is `1.16.0`; the exact tag, commit, and resou
 This repository now targets Maven Central only.
 Use `publishCentralSnapshot` when `VERSION_NAME` ends with `-SNAPSHOT`.
 
-Before running a snapshot publish, provide your Central Portal user token through either:
+For local publishing in this repository, keep one source of truth per config type:
 
-- `~/.gradle/gradle.properties` with `mavenCentralUsername` and `mavenCentralPassword`
-- standard Gradle environment variables `ORG_GRADLE_PROJECT_mavenCentralUsername` and `ORG_GRADLE_PROJECT_mavenCentralPassword`
-- the simplified environment variables supported by this build: `MAVEN_CENTRAL_USERNAME` and `MAVEN_CENTRAL_PASSWORD`
+- checked-in project metadata such as `VERSION_NAME` stays in `gradle.properties`
+- local publish credentials stay in the root `.secrets` file
+- `.env` is not part of the publish flow
+- local PowerShell publishing should go through `scripts/publish-central.ps1`, which loads `.secrets` into the Gradle properties expected by the publishing plugin
+
+Before running a snapshot publish, set your Central Portal token in `.secrets`:
+
+- `MAVEN_CENTRAL_USERNAME`
+- `MAVEN_CENTRAL_PASSWORD`
 
 Because these publish tasks include Android publications, configure a local Android SDK before running them:
 
@@ -143,10 +149,8 @@ Because these publish tasks include Android publications, configure a local Andr
 - or set `ANDROID_HOME` / `ANDROID_SDK_ROOT` in your shell environment
 
 Signing is optional for snapshots.
-If you want to sign snapshot artifacts locally, this build accepts:
+If you want to sign snapshot artifacts locally, add these to `.secrets`:
 
-- `signingInMemoryKey` / `signingInMemoryKeyPassword`
-- `ORG_GRADLE_PROJECT_signingInMemoryKey` / `ORG_GRADLE_PROJECT_signingInMemoryKeyPassword`
 - `SIGNING_KEY_BASE64` / `SIGNING_PASSWORD`
 
 Publish a snapshot with:
@@ -158,7 +162,7 @@ Publish a snapshot with:
 On Windows PowerShell, use:
 
 ```powershell
-.\gradlew.bat publishCentralSnapshot
+.\scripts\publish-central.ps1 -Task publishCentralSnapshot
 ```
 
 The task fails early if the version is not a snapshot or if the Central token is missing.
@@ -176,10 +180,8 @@ Formal releases require all of the following:
 
 Recommended credential sources are:
 
-- `~/.gradle/gradle.properties`
-- `ORG_GRADLE_PROJECT_mavenCentralUsername` / `ORG_GRADLE_PROJECT_mavenCentralPassword`
-- `MAVEN_CENTRAL_USERNAME` / `MAVEN_CENTRAL_PASSWORD`
-- `SIGNING_KEY_BASE64` / `SIGNING_PASSWORD` for the existing single-line Base64 private key workflow
+- local `.secrets` with `MAVEN_CENTRAL_USERNAME`, `MAVEN_CENTRAL_PASSWORD`, `SIGNING_KEY_BASE64`, and `SIGNING_PASSWORD`
+- CI or automation can still use environment variables when needed
 
 Configure a local Android SDK before running the release task because the publication graph also resolves Android artifacts:
 
@@ -195,7 +197,7 @@ Publish and auto-release through Central Portal with:
 On Windows PowerShell, use:
 
 ```powershell
-.\gradlew.bat publishCentralRelease
+.\scripts\publish-central.ps1 -Task publishCentralRelease
 ```
 
 This build validates the release mode before upload:
@@ -204,8 +206,8 @@ This build validates the release mode before upload:
 - Central token credentials must be present
 - signing key and signing password must both be present
 
-The tracked `.secrets` filename is only a local convenience if you load it into your shell yourself.
-Gradle does not automatically read `.secrets`.
+For local PowerShell publishing, `scripts/publish-central.ps1` reads the tracked root `.secrets` file and exports the Gradle properties expected by the publishing plugin.
+Use environment variables directly only when you intentionally need a CI or non-file-based shell setup.
 
 Remote publishing from Windows does not guarantee complete Apple variants output.
 If you need the full Apple artifact set, run the same publish command on a macOS host.

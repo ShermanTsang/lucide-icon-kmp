@@ -131,11 +131,17 @@ LucideIcons.registry.registerCustomIcon(
 该仓库现在只面向 Maven Central。
 当 `VERSION_NAME` 以 `-SNAPSHOT` 结尾时，请使用 `publishCentralSnapshot`。
 
-执行 snapshot 发布前，请通过以下任一方式提供 Central Portal user token：
+对于当前仓库的本地发布，建议每类配置只保留一个来源：
 
-- 在 `~/.gradle/gradle.properties` 中设置 `mavenCentralUsername` 和 `mavenCentralPassword`
-- 使用标准 Gradle 环境变量 `ORG_GRADLE_PROJECT_mavenCentralUsername` 和 `ORG_GRADLE_PROJECT_mavenCentralPassword`
-- 使用当前构建额外兼容的简化环境变量 `MAVEN_CENTRAL_USERNAME` 和 `MAVEN_CENTRAL_PASSWORD`
+- `VERSION_NAME` 这类受版本控制的项目元数据继续放在 `gradle.properties`
+- 本地发布凭据统一放在仓库根目录 `.secrets`
+- `.env` 不再参与发布流程
+- Windows PowerShell 本地发布统一通过 `scripts/publish-central.ps1`，由它把 `.secrets` 转成发布插件实际读取的 Gradle 属性
+
+执行 snapshot 发布前，请在 `.secrets` 中设置 Central Portal token：
+
+- `MAVEN_CENTRAL_USERNAME`
+- `MAVEN_CENTRAL_PASSWORD`
 
 由于这些发布任务会包含 Android publication，请先在本机配置 Android SDK：
 
@@ -143,10 +149,8 @@ LucideIcons.registry.registerCustomIcon(
 - 或在当前 shell 环境中设置 `ANDROID_HOME` / `ANDROID_SDK_ROOT`
 
 Snapshot 发布不强制要求签名。
-如果你希望在本地对 snapshot 也签名，当前构建接受以下任一方式：
+如果你希望在本地对 snapshot 也签名，请把以下配置写入 `.secrets`：
 
-- `signingInMemoryKey` / `signingInMemoryKeyPassword`
-- `ORG_GRADLE_PROJECT_signingInMemoryKey` / `ORG_GRADLE_PROJECT_signingInMemoryKeyPassword`
 - `SIGNING_KEY_BASE64` / `SIGNING_PASSWORD`
 
 推荐使用以下命令发布 snapshot：
@@ -158,7 +162,7 @@ Snapshot 发布不强制要求签名。
 在 Windows PowerShell 中可使用：
 
 ```powershell
-.\gradlew.bat publishCentralSnapshot
+.\scripts\publish-central.ps1 -Task publishCentralSnapshot
 ```
 
 如果版本不是 snapshot，或者缺少 Central token，任务会在进入上传前直接失败。
@@ -176,10 +180,8 @@ Snapshot 发布不强制要求签名。
 
 推荐的凭据来源包括：
 
-- `~/.gradle/gradle.properties`
-- `ORG_GRADLE_PROJECT_mavenCentralUsername` / `ORG_GRADLE_PROJECT_mavenCentralPassword`
-- `MAVEN_CENTRAL_USERNAME` / `MAVEN_CENTRAL_PASSWORD`
-- 继续沿用当前单行 Base64 私钥流程时可使用 `SIGNING_KEY_BASE64` / `SIGNING_PASSWORD`
+- 本地 `.secrets`，包含 `MAVEN_CENTRAL_USERNAME`、`MAVEN_CENTRAL_PASSWORD`、`SIGNING_KEY_BASE64`、`SIGNING_PASSWORD`
+- 如需 CI 或自动化环境，仍可按需改用环境变量
 
 由于正式版发布同样会解析 Android 相关构件，请先在本机配置 Android SDK：
 
@@ -195,7 +197,7 @@ Snapshot 发布不强制要求签名。
 在 Windows PowerShell 中可使用：
 
 ```powershell
-.\gradlew.bat publishCentralRelease
+.\scripts\publish-central.ps1 -Task publishCentralRelease
 ```
 
 当前构建会在上传前先校验正式版模式：
@@ -204,8 +206,8 @@ Snapshot 发布不强制要求签名。
 - 必须提供 Central token
 - 必须同时提供签名私钥和签名密码
 
-`.secrets` 文件如果继续保留，只能作为你自己的本地凭据文件。
-Gradle 不会自动读取 `.secrets`。
+对于本地 PowerShell 发布，`scripts/publish-central.ps1` 会读取仓库根目录 `.secrets`，并转成发布插件实际读取的 Gradle 属性。
+只有在你明确需要 CI 或 shell 注入时，才建议直接改用环境变量。
 
 在 Windows 上执行远端发布时，不保证能够产出完整的 Apple variants。
 如果你需要完整的 Apple 制品集合，请在 macOS 主机上执行相同的 Gradle 发布命令。

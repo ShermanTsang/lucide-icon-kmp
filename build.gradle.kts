@@ -1,8 +1,10 @@
 import com.vanniktech.maven.publish.MavenPublishBaseExtension
 import org.gradle.api.GradleException
 import org.gradle.api.Project
+import org.gradle.plugins.signing.SigningExtension
 import java.nio.charset.StandardCharsets
 import java.util.Base64
+import java.util.Properties
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform) apply false
@@ -31,6 +33,19 @@ description =
         .orElse("Lucide icons for Kotlin Multiplatform and Compose Multiplatform.")
         .get()
 
+val localSecretsFile = rootProject.layout.projectDirectory.file(".secrets").asFile
+val localSecrets =
+    Properties().apply {
+        if (localSecretsFile.isFile) {
+            localSecretsFile.inputStream().use(::load)
+        }
+    }
+
+fun localSecretProvider(propertyName: String) =
+    providers.provider {
+        localSecrets.getProperty(propertyName)?.trim()?.takeIf(String::isNotBlank)
+    }
+
 val publishableLibraryProjects =
     setOf(
         ":lucide-core",
@@ -50,22 +65,24 @@ val publishedPomNames =
 val mavenCentralUsernameProvider =
     providers
         .gradleProperty("mavenCentralUsername")
+        .orElse(localSecretProvider("MAVEN_CENTRAL_USERNAME"))
         .orElse(providers.environmentVariable("ORG_GRADLE_PROJECT_mavenCentralUsername"))
         .orElse(providers.environmentVariable("MAVEN_CENTRAL_USERNAME"))
-        .orElse(providers.environmentVariable("MAVEN_USERNAME"))
 val mavenCentralPasswordProvider =
     providers
         .gradleProperty("mavenCentralPassword")
+        .orElse(localSecretProvider("MAVEN_CENTRAL_PASSWORD"))
         .orElse(providers.environmentVariable("ORG_GRADLE_PROJECT_mavenCentralPassword"))
         .orElse(providers.environmentVariable("MAVEN_CENTRAL_PASSWORD"))
-        .orElse(providers.environmentVariable("MAVEN_PASSWORD"))
 val signingKeyBase64Provider =
     providers
         .gradleProperty("signingInMemoryKeyBase64")
+        .orElse(localSecretProvider("SIGNING_KEY_BASE64"))
         .orElse(providers.environmentVariable("SIGNING_KEY_BASE64"))
 val signingInMemoryKeyProvider =
     providers
         .gradleProperty("signingInMemoryKey")
+        .orElse(localSecretProvider("SIGNING_IN_MEMORY_KEY"))
         .orElse(providers.environmentVariable("ORG_GRADLE_PROJECT_signingInMemoryKey"))
         .orElse(
             signingKeyBase64Provider.map { encodedSigningKey ->
@@ -75,6 +92,7 @@ val signingInMemoryKeyProvider =
 val signingInMemoryKeyPasswordProvider =
     providers
         .gradleProperty("signingInMemoryKeyPassword")
+        .orElse(localSecretProvider("SIGNING_PASSWORD"))
         .orElse(providers.environmentVariable("ORG_GRADLE_PROJECT_signingInMemoryKeyPassword"))
         .orElse(providers.environmentVariable("SIGNING_PASSWORD"))
 val pomNameProvider =
@@ -263,6 +281,15 @@ subprojects {
     bridgeExtraPropertyIfMissing("signingInMemoryKeyPassword", signingInMemoryKeyPasswordProvider.orNull?.trim())
 
     apply(plugin = "com.vanniktech.maven.publish")
+
+    extensions.configure<SigningExtension> {
+        val signingInMemoryKey = signingInMemoryKeyProvider.orNull?.trim()
+        val signingInMemoryKeyPassword = signingInMemoryKeyPasswordProvider.orNull?.trim()
+
+        if (signingInMemoryKey.isConfigured() && signingInMemoryKeyPassword.isConfigured()) {
+            useInMemoryPgpKeys(signingInMemoryKey, signingInMemoryKeyPassword)
+        }
+    }
 
     extensions.configure<MavenPublishBaseExtension> {
         coordinates(rootProject.group.toString(), publishedArtifactId ?: project.name, rootProject.version.toString())
