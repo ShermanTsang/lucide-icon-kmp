@@ -6,6 +6,76 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk11 {
+    val PanelBottomDashed = LucideIconMetadata(
+        key = LucideIconKey("panel-bottom-dashed"),
+        displayName = "Panel Bottom Dashed",
+        tags = setOf("bleed", "dock", "drawer", "guide", "layout", "margin", "padding", "panel-bottom-inactive", "reveal", "show"),
+        zhDisplayName = "面板底部虚线",
+        categories = setOf(LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val PanelBottomOpen = LucideIconMetadata(
+        key = LucideIconKey("panel-bottom-open"),
+        displayName = "Panel Bottom Open",
+        tags = setOf("chevron", "dock", "drawer", "reveal", "show", "up"),
+        zhDisplayName = "面板底部打开",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val PanelBottom = LucideIconMetadata(
+        key = LucideIconKey("panel-bottom"),
+        displayName = "Panel Bottom",
+        tags = setOf("dock", "drawer"),
+        zhDisplayName = "面板底部",
+        categories = setOf(LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val PanelLeftClose = LucideIconMetadata(
+        key = LucideIconKey("panel-left-close"),
+        displayName = "Panel Left Close",
+        tags = setOf("<", "chevron", "drawer", "hide", "primary", "sidebar-close"),
+        zhDisplayName = "面板左关闭",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val PanelLeftDashed = LucideIconMetadata(
+        key = LucideIconKey("panel-left-dashed"),
+        displayName = "Panel Left Dashed",
+        tags = setOf("bleed", "drawer", "guide", "layout", "margin", "padding", "panel-left-inactive", "primary", "reveal", "show", "sidebar"),
+        zhDisplayName = "面板左虚线",
+        categories = setOf(LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val PanelLeftOpen = LucideIconMetadata(
+        key = LucideIconKey("panel-left-open"),
+        displayName = "Panel Left Open",
+        tags = setOf(">", "chevron", "drawer", "primary", "reveal", "right", "show", "sidebar-open"),
+        zhDisplayName = "面板左开",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val PanelLeftRightDashed = LucideIconMetadata(
+        key = LucideIconKey("panel-left-right-dashed"),
+        displayName = "Panel Left Right Dashed",
+        tags = setOf("bleed", "drawer", "guide", "layout", "margin", "padding", "primary", "reveal", "show", "sidebar", "vertical"),
+        zhDisplayName = "面板左右虚线",
+        categories = setOf(LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val PanelLeft = LucideIconMetadata(
         key = LucideIconKey("panel-left"),
         displayName = "Panel Left",
@@ -936,77 +1006,14 @@ internal object LucideGeneratedMetadataChunk11 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val ReceiptCent = LucideIconMetadata(
-        key = LucideIconKey("receipt-cent"),
-        displayName = "Receipt Cent",
-        tags = setOf("$", "bill", "cents", "check", "counterfoil", "currency", "dollar", "slip", "usd", "voucher", "¢"),
-        zhDisplayName = "画中画",
-        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ReceiptEuro = LucideIconMetadata(
-        key = LucideIconKey("receipt-euro"),
-        displayName = "Receipt Euro",
-        tags = setOf("bill", "check", "counterfoil", "currency", "slip", "voucher", "€"),
-        zhDisplayName = "存钱罐",
-        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ReceiptIndianRupee = LucideIconMetadata(
-        key = LucideIconKey("receipt-indian-rupee"),
-        displayName = "Receipt Indian Rupee",
-        tags = setOf("bill", "check", "counterfoil", "currency", "inr", "slip", "voucher", "₹"),
-        zhDisplayName = "皮尔克劳左",
-        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ReceiptJapaneseYen = LucideIconMetadata(
-        key = LucideIconKey("receipt-japanese-yen"),
-        displayName = "Receipt Japanese Yen",
-        tags = setOf("bill", "check", "counterfoil", "currency", "jpy", "slip", "voucher", "¥"),
-        zhDisplayName = "皮尔克罗右",
-        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ReceiptPoundSterling = LucideIconMetadata(
-        key = LucideIconKey("receipt-pound-sterling"),
-        displayName = "Receipt Pound Sterling",
-        tags = setOf("bill", "british", "check", "counterfoil", "currency", "gbp", "slip", "voucher", "£"),
-        zhDisplayName = "皮尔克罗",
-        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ReceiptRussianRuble = LucideIconMetadata(
-        key = LucideIconKey("receipt-russian-ruble"),
-        displayName = "Receipt Russian Ruble",
-        tags = setOf("bill", "check", "counterfoil", "currency", "rub", "slip", "voucher", "₽"),
-        zhDisplayName = "药瓶",
-        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ReceiptSwissFranc = LucideIconMetadata(
-        key = LucideIconKey("receipt-swiss-franc"),
-        displayName = "Receipt Swiss Franc",
-        tags = setOf("bill", "check", "chf", "counterfoil", "currency", "slip", "voucher", "₣"),
-        zhDisplayName = "丸",
-        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        PanelBottomDashed,
+        PanelBottomOpen,
+        PanelBottom,
+        PanelLeftClose,
+        PanelLeftDashed,
+        PanelLeftOpen,
+        PanelLeftRightDashed,
         PanelLeft,
         PanelRightClose,
         PanelRightDashed,
@@ -1099,13 +1106,6 @@ internal object LucideGeneratedMetadataChunk11 {
         Radius,
         Rainbow,
         Rat,
-        Ratio,
-        ReceiptCent,
-        ReceiptEuro,
-        ReceiptIndianRupee,
-        ReceiptJapaneseYen,
-        ReceiptPoundSterling,
-        ReceiptRussianRuble,
-        ReceiptSwissFranc
+        Ratio
     )
 }

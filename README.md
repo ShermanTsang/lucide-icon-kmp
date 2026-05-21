@@ -124,7 +124,7 @@ This task regenerates the built-in registry, metadata chunks, and icon providers
 
 Generated icon files are intended to be committed so consumers do not need to regenerate them during normal library usage.
 
-The pinned Lucide snapshot version is recorded in `lucide-generator/src/main/resources/lucide-icons/VERSION.txt`.
+The current pinned Lucide snapshot is `1.16.0`; the exact tag, commit, and resource counts are recorded in `lucide-generator/src/main/resources/lucide-icons/VERSION.txt`.
 
 ## Validate Publish Workflow Locally
 

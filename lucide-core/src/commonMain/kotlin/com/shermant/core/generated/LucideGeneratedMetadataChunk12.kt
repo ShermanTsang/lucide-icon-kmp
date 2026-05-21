@@ -6,6 +6,76 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk12 {
+    val ReceiptCent = LucideIconMetadata(
+        key = LucideIconKey("receipt-cent"),
+        displayName = "Receipt Cent",
+        tags = setOf("$", "bill", "cents", "check", "counterfoil", "currency", "dollar", "slip", "usd", "voucher", "¢"),
+        zhDisplayName = "画中画",
+        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ReceiptEuro = LucideIconMetadata(
+        key = LucideIconKey("receipt-euro"),
+        displayName = "Receipt Euro",
+        tags = setOf("bill", "check", "counterfoil", "currency", "slip", "voucher", "€"),
+        zhDisplayName = "存钱罐",
+        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ReceiptIndianRupee = LucideIconMetadata(
+        key = LucideIconKey("receipt-indian-rupee"),
+        displayName = "Receipt Indian Rupee",
+        tags = setOf("bill", "check", "counterfoil", "currency", "inr", "slip", "voucher", "₹"),
+        zhDisplayName = "皮尔克劳左",
+        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ReceiptJapaneseYen = LucideIconMetadata(
+        key = LucideIconKey("receipt-japanese-yen"),
+        displayName = "Receipt Japanese Yen",
+        tags = setOf("bill", "check", "counterfoil", "currency", "jpy", "slip", "voucher", "¥"),
+        zhDisplayName = "皮尔克罗右",
+        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ReceiptPoundSterling = LucideIconMetadata(
+        key = LucideIconKey("receipt-pound-sterling"),
+        displayName = "Receipt Pound Sterling",
+        tags = setOf("bill", "british", "check", "counterfoil", "currency", "gbp", "slip", "voucher", "£"),
+        zhDisplayName = "皮尔克罗",
+        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ReceiptRussianRuble = LucideIconMetadata(
+        key = LucideIconKey("receipt-russian-ruble"),
+        displayName = "Receipt Russian Ruble",
+        tags = setOf("bill", "check", "counterfoil", "currency", "rub", "slip", "voucher", "₽"),
+        zhDisplayName = "药瓶",
+        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ReceiptSwissFranc = LucideIconMetadata(
+        key = LucideIconKey("receipt-swiss-franc"),
+        displayName = "Receipt Swiss Franc",
+        tags = setOf("bill", "check", "chf", "counterfoil", "currency", "slip", "voucher", "₣"),
+        zhDisplayName = "丸",
+        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val ReceiptText = LucideIconMetadata(
         key = LucideIconKey("receipt-text"),
         displayName = "Receipt Text",
@@ -212,6 +282,15 @@ internal object LucideGeneratedMetadataChunk12 {
         tags = setOf("arrows", "loop", "repeat", "repost", "retweet", "share"),
         zhDisplayName = "重复2",
         categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Multimedia, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val RepeatOff = LucideIconMetadata(
+        key = LucideIconKey("repeat-off"),
+        displayName = "Repeat Off",
+        tags = setOf("again", "arrows", "loop", "recurring"),
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Multimedia),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -926,87 +1005,14 @@ internal object LucideGeneratedMetadataChunk12 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val ServerOff = LucideIconMetadata(
-        key = LucideIconKey("server-off"),
-        displayName = "Server Off",
-        tags = setOf("cloud", "storage"),
-        zhDisplayName = "服务器关闭",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Server = LucideIconMetadata(
-        key = LucideIconKey("server"),
-        displayName = "Server",
-        tags = setOf("cloud", "storage"),
-        zhDisplayName = "服务器",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Settings2 = LucideIconMetadata(
-        key = LucideIconKey("settings-2"),
-        displayName = "Settings 2",
-        tags = setOf("cog", "edit", "gear", "preferences", "slider"),
-        zhDisplayName = "设置2",
-        categories = setOf(LucideIconCategory.Account),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Settings = LucideIconMetadata(
-        key = LucideIconKey("settings"),
-        displayName = "Settings",
-        tags = setOf("cog", "edit", "gear", "preferences"),
-        zhDisplayName = "设置",
-        categories = setOf(LucideIconCategory.Account),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Shapes = LucideIconMetadata(
-        key = LucideIconKey("shapes"),
-        displayName = "Shapes",
-        tags = setOf("blocks", "circle", "classification", "collection", "different", "equilateral", "learning", "square", "toy", "triangle"),
-        zhDisplayName = "形状",
-        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Share2 = LucideIconMetadata(
-        key = LucideIconKey("share-2"),
-        displayName = "Share 2",
-        tags = setOf("connections", "network"),
-        zhDisplayName = "分享2",
-        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Share = LucideIconMetadata(
-        key = LucideIconKey("share"),
-        displayName = "Share",
-        tags = setOf("connections", "network"),
-        zhDisplayName = "分享",
-        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Sheet = LucideIconMetadata(
-        key = LucideIconKey("sheet"),
-        displayName = "Sheet",
-        tags = setOf("excel", "spreadsheets", "table"),
-        zhDisplayName = "板材",
-        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        ReceiptCent,
+        ReceiptEuro,
+        ReceiptIndianRupee,
+        ReceiptJapaneseYen,
+        ReceiptPoundSterling,
+        ReceiptRussianRuble,
+        ReceiptSwissFranc,
         ReceiptText,
         ReceiptTurkishLira,
         Receipt,
@@ -1028,6 +1034,7 @@ internal object LucideGeneratedMetadataChunk12 {
         RemoveFormatting,
         Repeat1,
         Repeat2,
+        RepeatOff,
         Repeat,
         ReplaceAll,
         Replace,
@@ -1098,14 +1105,6 @@ internal object LucideGeneratedMetadataChunk12 {
         SeparatorHorizontal,
         SeparatorVertical,
         ServerCog,
-        ServerCrash,
-        ServerOff,
-        Server,
-        Settings2,
-        Settings,
-        Shapes,
-        Share2,
-        Share,
-        Sheet
+        ServerCrash
     )
 }

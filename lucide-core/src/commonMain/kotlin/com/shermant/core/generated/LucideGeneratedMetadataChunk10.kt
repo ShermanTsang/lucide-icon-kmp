@@ -6,6 +6,76 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk10 {
+    val MicOff = LucideIconMetadata(
+        key = LucideIconKey("mic-off"),
+        displayName = "Mic Off",
+        tags = setOf("microphone", "mute", "record", "sound"),
+        zhDisplayName = "麦克风关闭",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MicVocal = LucideIconMetadata(
+        key = LucideIconKey("mic-vocal"),
+        displayName = "Mic Vocal",
+        tags = setOf("karaoke", "listen", "lyrics", "mic-2", "microphone", "music", "podcast", "radio", "singing", "sound", "voice"),
+        zhDisplayName = "麦克风人声",
+        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Mic = LucideIconMetadata(
+        key = LucideIconKey("mic"),
+        displayName = "Mic",
+        tags = setOf("listen", "microphone", "podcast", "radio", "record", "sound"),
+        zhDisplayName = "麦克风",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Microchip = LucideIconMetadata(
+        key = LucideIconKey("microchip"),
+        displayName = "Microchip",
+        tags = setOf("chip", "computer", "cores", "ghz", "gigahertz", "gpu", "integrated circuit", "memory", "processor", "ram", "specs", "technology"),
+        zhDisplayName = "微芯片",
+        categories = setOf(LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Microscope = LucideIconMetadata(
+        key = LucideIconKey("microscope"),
+        displayName = "Microscope",
+        tags = setOf("education", "imaging", "medical", "research", "science"),
+        zhDisplayName = "显微镜",
+        categories = setOf(LucideIconCategory.Medical, LucideIconCategory.Science),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Microwave = LucideIconMetadata(
+        key = LucideIconKey("microwave"),
+        displayName = "Microwave",
+        tags = setOf("bake", "cooker", "oven", "toaster oven"),
+        zhDisplayName = "微波炉",
+        categories = setOf(LucideIconCategory.FoodBeverage, LucideIconCategory.Home),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Milestone = LucideIconMetadata(
+        key = LucideIconKey("milestone"),
+        displayName = "Milestone",
+        tags = setOf("direction", "east", "forward", "right", "signpost", "version control", "waypoint"),
+        zhDisplayName = "里程碑",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val MilkOff = LucideIconMetadata(
         key = LucideIconKey("milk-off"),
         displayName = "Milk Off",
@@ -936,77 +1006,14 @@ internal object LucideGeneratedMetadataChunk10 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val PanelBottomDashed = LucideIconMetadata(
-        key = LucideIconKey("panel-bottom-dashed"),
-        displayName = "Panel Bottom Dashed",
-        tags = setOf("bleed", "dock", "drawer", "guide", "layout", "margin", "padding", "panel-bottom-inactive", "reveal", "show"),
-        zhDisplayName = "面板底部虚线",
-        categories = setOf(LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PanelBottomOpen = LucideIconMetadata(
-        key = LucideIconKey("panel-bottom-open"),
-        displayName = "Panel Bottom Open",
-        tags = setOf("chevron", "dock", "drawer", "reveal", "show", "up"),
-        zhDisplayName = "面板底部打开",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PanelBottom = LucideIconMetadata(
-        key = LucideIconKey("panel-bottom"),
-        displayName = "Panel Bottom",
-        tags = setOf("dock", "drawer"),
-        zhDisplayName = "面板底部",
-        categories = setOf(LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PanelLeftClose = LucideIconMetadata(
-        key = LucideIconKey("panel-left-close"),
-        displayName = "Panel Left Close",
-        tags = setOf("<", "chevron", "drawer", "hide", "primary", "sidebar-close"),
-        zhDisplayName = "面板左关闭",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PanelLeftDashed = LucideIconMetadata(
-        key = LucideIconKey("panel-left-dashed"),
-        displayName = "Panel Left Dashed",
-        tags = setOf("bleed", "drawer", "guide", "layout", "margin", "padding", "panel-left-inactive", "primary", "reveal", "show", "sidebar"),
-        zhDisplayName = "面板左虚线",
-        categories = setOf(LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PanelLeftOpen = LucideIconMetadata(
-        key = LucideIconKey("panel-left-open"),
-        displayName = "Panel Left Open",
-        tags = setOf(">", "chevron", "drawer", "primary", "reveal", "right", "show", "sidebar-open"),
-        zhDisplayName = "面板左开",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PanelLeftRightDashed = LucideIconMetadata(
-        key = LucideIconKey("panel-left-right-dashed"),
-        displayName = "Panel Left Right Dashed",
-        tags = setOf("bleed", "drawer", "guide", "layout", "margin", "padding", "primary", "reveal", "show", "sidebar", "vertical"),
-        zhDisplayName = "面板左右虚线",
-        categories = setOf(LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        MicOff,
+        MicVocal,
+        Mic,
+        Microchip,
+        Microscope,
+        Microwave,
+        Milestone,
         MilkOff,
         Milk,
         Minimize2,
@@ -1099,13 +1106,6 @@ internal object LucideGeneratedMetadataChunk10 {
         Paintbrush,
         Palette,
         Panda,
-        PanelBottomClose,
-        PanelBottomDashed,
-        PanelBottomOpen,
-        PanelBottom,
-        PanelLeftClose,
-        PanelLeftDashed,
-        PanelLeftOpen,
-        PanelLeftRightDashed
+        PanelBottomClose
     )
 }

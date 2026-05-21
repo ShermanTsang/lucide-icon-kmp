@@ -2,6 +2,7 @@ package com.shermant.core
 
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
+import com.shermant.core.generated.LucideGeneratedMetadata
 import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 import com.shermant.core.model.LucideIconCategory
@@ -20,6 +21,10 @@ import kotlin.test.assertSame
 import kotlin.test.assertTrue
 
 class IconRegistryTest {
+    private companion object {
+        const val expectedGeneratedIconCount = 1711
+    }
+
     @Test
     fun lazilyCreatesAndCachesIcons() {
         val registry = DefaultIconRegistry()
@@ -70,13 +75,18 @@ class IconRegistryTest {
             BuiltInIconRegistrar.registerInto(this)
         }
 
+        assertEquals(expectedGeneratedIconCount, LucideGeneratedMetadata.all.size)
+        assertEquals(expectedGeneratedIconCount, registry.keys().size)
         assertTrue(registry.contains("activity"))
         assertTrue(registry.contains("airplay"))
+        assertTrue(registry.contains("blender"))
+        assertTrue(registry.contains("broccoli"))
         assertTrue(registry.contains("camera"))
-        assertTrue(registry.keys().size > 1000)
         assertNotNull(registry.get("activity"))
         assertNotNull(registry.resolve("activity", IconRenderParameters(strokeWidth = 3f)))
         assertNotNull(registry.resolve("airplay", IconRenderParameters(strokeWidth = 1.5f)))
+        assertNotNull(registry.resolve("blender", IconRenderParameters(strokeWidth = 2.25f)))
+        assertNotNull(registry.resolve("sticky-notes", IconRenderParameters(strokeWidth = 1.75f)))
         assertTrue(registry.byCategory(LucideIconCategory.Multimedia).isNotEmpty())
     }
 

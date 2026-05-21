@@ -15,9 +15,9 @@ val rotate3dProvider = ParameterizedIconProvider { parameters ->
     buildRotate3d(parameters)
 }
 
-private val rotate3dPath0 = PathParser().parsePathString("M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2").toNodes()
-private val rotate3dPath1 = PathParser().parsePathString("m15.194 13.707 3.814 1.86-1.86 3.814").toNodes()
-private val rotate3dPath2 = PathParser().parsePathString("M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4").toNodes()
+private val rotate3dPath0 = PathParser().parsePathString("m15.194 13.707 3.814 1.86-1.86 3.814").toNodes()
+private val rotate3dPath1 = PathParser().parsePathString("M16.47214 7.52786 A 5 10 0 1 0 13 21.79796").toNodes()
+private val rotate3dPath2 = PathParser().parsePathString("M21.79796 11 A 10 5 0 1 0 19 15.57071").toNodes()
 
 private fun buildRotate3d(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

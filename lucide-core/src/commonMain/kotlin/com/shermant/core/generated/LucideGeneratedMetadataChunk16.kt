@@ -6,6 +6,156 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk16 {
+    val Ungroup = LucideIconMetadata(
+        key = LucideIconKey("ungroup"),
+        displayName = "Ungroup",
+        tags = setOf("cluster", "collection", "cubes", "packages", "parts", "separate", "units"),
+        zhDisplayName = "取消分组",
+        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Shapes),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val University = LucideIconMetadata(
+        key = LucideIconKey("university"),
+        displayName = "University",
+        tags = setOf("academy", "building", "childhood", "college", "education", "institute", "school", "school-2"),
+        zhDisplayName = "大学",
+        categories = setOf(LucideIconCategory.Buildings, LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Unlink2 = LucideIconMetadata(
+        key = LucideIconKey("unlink-2"),
+        displayName = "Unlink 2",
+        tags = setOf("unchain", "url"),
+        zhDisplayName = "取消链接2",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Unlink = LucideIconMetadata(
+        key = LucideIconKey("unlink"),
+        displayName = "Unlink",
+        tags = setOf("unchain", "url"),
+        zhDisplayName = "取消链接",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Unplug = LucideIconMetadata(
+        key = LucideIconKey("unplug"),
+        displayName = "Unplug",
+        tags = setOf("disconnect", "electricity", "electronics", "energy", "outlet", "socket"),
+        zhDisplayName = "拔掉插头",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Upload = LucideIconMetadata(
+        key = LucideIconKey("upload"),
+        displayName = "Upload",
+        tags = setOf("file"),
+        zhDisplayName = "上传",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Usb = LucideIconMetadata(
+        key = LucideIconKey("usb"),
+        displayName = "Usb",
+        tags = setOf("bus", "connector", "controller", "interface", "serial", "universal"),
+        zhDisplayName = "优盘",
+        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Home, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val UserCheck = LucideIconMetadata(
+        key = LucideIconKey("user-check"),
+        displayName = "User Check",
+        tags = setOf("complete", "done", "followed", "subscribed", "task", "tick", "todo"),
+        zhDisplayName = "用户检查",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val UserCog = LucideIconMetadata(
+        key = LucideIconKey("user-cog"),
+        displayName = "User Cog",
+        tags = setOf("cog", "edit", "gear", "settings"),
+        zhDisplayName = "用户齿轮",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val UserKey = LucideIconMetadata(
+        key = LucideIconKey("user-key"),
+        displayName = "User Key",
+        tags = setOf("account", "authentication", "authorization", "contact", "login", "passkey", "password", "permissions", "person", "private", "public", "roles", "security"),
+        zhDisplayName = "用户密钥",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val UserLock = LucideIconMetadata(
+        key = LucideIconKey("user-lock"),
+        displayName = "User Lock",
+        tags = setOf("account", "lock", "locked", "person", "secure"),
+        zhDisplayName = "用户锁",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Security),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val UserMinus = LucideIconMetadata(
+        key = LucideIconKey("user-minus"),
+        displayName = "User Minus",
+        tags = setOf("delete", "remove", "unfollow", "unsubscribe"),
+        zhDisplayName = "用户减号",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val UserPen = LucideIconMetadata(
+        key = LucideIconKey("user-pen"),
+        displayName = "User Pen",
+        tags = setOf("account", "change", "contact", "edit", "person", "profile"),
+        zhDisplayName = "用户笔",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val UserPlus = LucideIconMetadata(
+        key = LucideIconKey("user-plus"),
+        displayName = "User Plus",
+        tags = setOf("add", "create", "follow", "new", "subscribe"),
+        zhDisplayName = "用户加号",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val UserRoundCheck = LucideIconMetadata(
+        key = LucideIconKey("user-round-check"),
+        displayName = "User Round Check",
+        tags = setOf("complete", "done", "followed", "subscribed", "task", "tick", "todo", "user-check-2"),
+        zhDisplayName = "用户回合检查",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val UserRoundCog = LucideIconMetadata(
         key = LucideIconKey("user-round-cog"),
         displayName = "User Round Cog",
@@ -506,6 +656,15 @@ internal object LucideGeneratedMetadataChunk16 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val WavesHorizontal = LucideIconMetadata(
+        key = LucideIconKey("waves-horizontal"),
+        displayName = "Waves Horizontal",
+        tags = setOf("frequency", "hertz", "ocean", "sea", "sound", "swimming", "vibrate", "water", "wavelength", "waves"),
+        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Navigation, LucideIconCategory.Sustainability, LucideIconCategory.Weather),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val WavesLadder = LucideIconMetadata(
         key = LucideIconKey("waves-ladder"),
         displayName = "Waves Ladder",
@@ -516,12 +675,11 @@ internal object LucideGeneratedMetadataChunk16 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val Waves = LucideIconMetadata(
-        key = LucideIconKey("waves"),
-        displayName = "Waves",
-        tags = setOf("hertz", "sea", "sound", "vibrate", "water", "wavelength"),
-        zhDisplayName = "波浪",
-        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Navigation, LucideIconCategory.Sustainability, LucideIconCategory.Weather),
+    val WavesVertical = LucideIconMetadata(
+        key = LucideIconKey("waves-vertical"),
+        displayName = "Waves Vertical",
+        tags = setOf("aroma", "boiling", "burn", "heat", "hot", "sauna", "smell", "smoke", "steam", "temperature", "vapor", "warmth"),
+        categories = setOf(LucideIconCategory.Sustainability, LucideIconCategory.Weather),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -789,7 +947,7 @@ internal object LucideGeneratedMetadataChunk16 {
     val ZapOff = LucideIconMetadata(
         key = LucideIconKey("zap-off"),
         displayName = "Zap Off",
-        tags = setOf("camera", "electricity", "energy", "flash", "lightning"),
+        tags = setOf("camera", "electricity", "energy", "flash", "lightning", "power"),
         zhDisplayName = "关闭",
         categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Photography, LucideIconCategory.Weather),
         defaultStrokeWidth = 2.0f,
@@ -799,7 +957,7 @@ internal object LucideGeneratedMetadataChunk16 {
     val Zap = LucideIconMetadata(
         key = LucideIconKey("zap"),
         displayName = "Zap",
-        tags = setOf("camera", "electricity", "energy", "flash", "lightning"),
+        tags = setOf("camera", "electricity", "energy", "flash", "lightning", "power", "quick"),
         zhDisplayName = "电击",
         categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Photography, LucideIconCategory.Weather),
         defaultStrokeWidth = 2.0f,
@@ -846,117 +1004,22 @@ internal object LucideGeneratedMetadataChunk16 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val ZodiacGemini = LucideIconMetadata(
-        key = LucideIconKey("zodiac-gemini"),
-        displayName = "Zodiac Gemini",
-        tags = setOf("adaptability", "air", "astrology", "celestial", "communication", "constellation", "duality", "horoscope", "star sign", "twins"),
-        zhDisplayName = "双子座",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ZodiacLeo = LucideIconMetadata(
-        key = LucideIconKey("zodiac-leo"),
-        displayName = "Zodiac Leo",
-        tags = setOf("astrology", "celestial", "confidence", "constellation", "crown", "fire", "horoscope", "leadership", "lion", "star sign"),
-        zhDisplayName = "狮子座",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ZodiacLibra = LucideIconMetadata(
-        key = LucideIconKey("zodiac-libra"),
-        displayName = "Zodiac Libra",
-        tags = setOf("air", "astrology", "balance", "celestial", "constellation", "harmony", "horoscope", "justice", "scales", "star sign"),
-        zhDisplayName = "天秤座",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ZodiacOphiuchus = LucideIconMetadata(
-        key = LucideIconKey("zodiac-ophiuchus"),
-        displayName = "Zodiac Ophiuchus",
-        tags = setOf("astrology", "astronomy", "celestial", "constellation", "healing", "horoscope", "knowledge", "serpent", "snake holder", "star sign"),
-        zhDisplayName = "蛇夫座",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ZodiacPisces = LucideIconMetadata(
-        key = LucideIconKey("zodiac-pisces"),
-        displayName = "Zodiac Pisces",
-        tags = setOf("astrology", "celestial", "constellation", "dreams", "duality", "empathy", "fish", "horoscope", "star sign", "water"),
-        zhDisplayName = "双鱼座",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ZodiacSagittarius = LucideIconMetadata(
-        key = LucideIconKey("zodiac-sagittarius"),
-        displayName = "Zodiac Sagittarius",
-        tags = setOf("archer", "arrow", "astrology", "celestial", "constellation", "exploration", "fire", "horoscope", "philosophy", "star sign"),
-        zhDisplayName = "十二生肖射手座",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ZodiacScorpio = LucideIconMetadata(
-        key = LucideIconKey("zodiac-scorpio"),
-        displayName = "Zodiac Scorpio",
-        tags = setOf("astrology", "celestial", "constellation", "horoscope", "intensity", "scorpion", "star sign", "stinger", "transformation", "water"),
-        zhDisplayName = "天蝎座",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ZodiacTaurus = LucideIconMetadata(
-        key = LucideIconKey("zodiac-taurus"),
-        displayName = "Zodiac Taurus",
-        tags = setOf("astrology", "bull", "celestial", "constellation", "earth", "endurance", "horoscope", "stability", "star sign", "strength"),
-        zhDisplayName = "十二生肖金牛座",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ZodiacVirgo = LucideIconMetadata(
-        key = LucideIconKey("zodiac-virgo"),
-        displayName = "Zodiac Virgo",
-        tags = setOf("analysis", "astrology", "celestial", "constellation", "earth", "harvest", "horoscope", "maiden", "precision", "star sign", "virgin"),
-        zhDisplayName = "星座 处女座",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ZoomIn = LucideIconMetadata(
-        key = LucideIconKey("zoom-in"),
-        displayName = "Zoom In",
-        tags = setOf("magnifying glass", "plus"),
-        zhDisplayName = "放大",
-        categories = setOf(LucideIconCategory.Accessibility, LucideIconCategory.Design, LucideIconCategory.Layout, LucideIconCategory.Photography, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ZoomOut = LucideIconMetadata(
-        key = LucideIconKey("zoom-out"),
-        displayName = "Zoom Out",
-        tags = setOf("magnifying glass", "plus"),
-        zhDisplayName = "缩小",
-        categories = setOf(LucideIconCategory.Accessibility, LucideIconCategory.Design, LucideIconCategory.Layout, LucideIconCategory.Photography, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        Ungroup,
+        University,
+        Unlink2,
+        Unlink,
+        Unplug,
+        Upload,
+        Usb,
+        UserCheck,
+        UserCog,
+        UserKey,
+        UserLock,
+        UserMinus,
+        UserPen,
+        UserPlus,
+        UserRoundCheck,
         UserRoundCog,
         UserRoundKey,
         UserRoundMinus,
@@ -1007,8 +1070,9 @@ internal object LucideGeneratedMetadataChunk16 {
         Watch,
         WavesArrowDown,
         WavesArrowUp,
+        WavesHorizontal,
         WavesLadder,
-        Waves,
+        WavesVertical,
         Waypoints,
         Webcam,
         WebhookOff,
@@ -1040,17 +1104,6 @@ internal object LucideGeneratedMetadataChunk16 {
         ZodiacAquarius,
         ZodiacAries,
         ZodiacCancer,
-        ZodiacCapricorn,
-        ZodiacGemini,
-        ZodiacLeo,
-        ZodiacLibra,
-        ZodiacOphiuchus,
-        ZodiacPisces,
-        ZodiacSagittarius,
-        ZodiacScorpio,
-        ZodiacTaurus,
-        ZodiacVirgo,
-        ZoomIn,
-        ZoomOut
+        ZodiacCapricorn
     )
 }

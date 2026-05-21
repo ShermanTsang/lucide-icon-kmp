@@ -15,11 +15,11 @@ val candyCaneProvider = ParameterizedIconProvider { parameters ->
     buildCandyCane(parameters)
 }
 
-private val candyCanePath0 = PathParser().parsePathString("M5.7 21a2 2 0 0 1-3.5-2l8.6-14a6 6 0 0 1 10.4 6 2 2 0 1 1-3.464-2 2 2 0 1 0-3.464-2Z").toNodes()
+private val candyCanePath0 = PathParser().parsePathString("m10.8 5 2.111 4.223").toNodes()
 private val candyCanePath1 = PathParser().parsePathString("M17.75 7 15 2.1").toNodes()
-private val candyCanePath2 = PathParser().parsePathString("M10.9 4.8 13 9").toNodes()
-private val candyCanePath3 = PathParser().parsePathString("m7.9 9.7 2 4.4").toNodes()
-private val candyCanePath4 = PathParser().parsePathString("M4.9 14.7 7 18.9").toNodes()
+private val candyCanePath2 = PathParser().parsePathString("m4.874 14.647 2.12 4.24").toNodes()
+private val candyCanePath3 = PathParser().parsePathString("M5.7 21a2 2 0 0 1-3.5-2l8.6-14a6 6 0 0 1 10.4 6 2 2 0 1 1-3.464-2 2 2 0 1 0-3.464-2z").toNodes()
+private val candyCanePath4 = PathParser().parsePathString("m7.906 9.712 2.005 4.411").toNodes()
 
 private fun buildCandyCane(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

@@ -976,6 +976,15 @@ internal object LucideGeneratedMetadataChunk0 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val Astroid = LucideIconMetadata(
+        key = LucideIconKey("astroid"),
+        displayName = "Astroid",
+        tags = setOf("ai", "artificial intelligence", "curve", "four-pointed", "hypocycloid", "math", "shape", "sharp", "star"),
+        categories = setOf(LucideIconCategory.Math, LucideIconCategory.Shapes),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val AtSign = LucideIconMetadata(
         key = LucideIconKey("at-sign"),
         displayName = "At Sign",
@@ -992,16 +1001,6 @@ internal object LucideGeneratedMetadataChunk0 {
         tags = setOf("atomic", "chemistry", "electricity", "element", "energy", "molecule", "nuclear", "particle", "physics"),
         zhDisplayName = "原子",
         categories = setOf(LucideIconCategory.Science),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val AudioLines = LucideIconMetadata(
-        key = LucideIconKey("audio-lines"),
-        displayName = "Audio Lines",
-        tags = setOf("airwaves", "broadcast", "frequency", "graphic equaliser", "hearing", "hertz", "levels", "listen", "music", "noise", "playback", "radio", "sine", "singer", "song", "sound", "synthesiser", "synthesizer", "track", "vibrate", "vocals", "voice", "wavelength"),
-        zhDisplayName = "音频线",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Multimedia),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -1104,8 +1103,8 @@ internal object LucideGeneratedMetadataChunk0 {
         ArrowUp,
         ArrowsUpFromLine,
         Asterisk,
+        Astroid,
         AtSign,
-        Atom,
-        AudioLines
+        Atom
     )
 }

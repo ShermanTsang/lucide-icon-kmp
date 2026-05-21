@@ -6,6 +6,86 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk14 {
+    val SquareChartGantt = LucideIconMetadata(
+        key = LucideIconKey("square-chart-gantt"),
+        displayName = "Square Chart Gantt",
+        tags = setOf("agile", "button", "code", "coding", "date", "deadline", "event", "gantt-chart-square", "intentions", "manage", "overview", "period", "plan", "productivity", "projects", "range", "roadmap", "square-gantt-chart", "timeline", "toolbar", "work"),
+        zhDisplayName = "方形图甘特图",
+        categories = setOf(LucideIconCategory.Charts, LucideIconCategory.Design, LucideIconCategory.Development, LucideIconCategory.Time),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SquareCheckBig = LucideIconMetadata(
+        key = LucideIconKey("square-check-big"),
+        displayName = "Square Check Big",
+        tags = setOf("check-square", "complete", "done", "task", "tick", "todo"),
+        zhDisplayName = "方格大号",
+        categories = setOf(LucideIconCategory.Notifications),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SquareCheck = LucideIconMetadata(
+        key = LucideIconKey("square-check"),
+        displayName = "Square Check",
+        tags = setOf("check-square-2", "complete", "done", "task", "tick", "todo"),
+        zhDisplayName = "方形格子",
+        categories = setOf(LucideIconCategory.Notifications),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SquareChevronDown = LucideIconMetadata(
+        key = LucideIconKey("square-chevron-down"),
+        displayName = "Square Chevron Down",
+        tags = setOf("back", "chevron-down-square", "menu", "panel"),
+        zhDisplayName = "方形 V 形羽绒服",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SquareChevronLeft = LucideIconMetadata(
+        key = LucideIconKey("square-chevron-left"),
+        displayName = "Square Chevron Left",
+        tags = setOf("<", "back", "button", "chevron-left-square", "fewer", "keyboard", "less than", "menu", "panel", "previous"),
+        zhDisplayName = "方形雪佛龙左",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SquareChevronRight = LucideIconMetadata(
+        key = LucideIconKey("square-chevron-right"),
+        displayName = "Square Chevron Right",
+        tags = setOf(">", "chevron-right-square", "code", "coding", "command line", "console", "forward", "greater", "menu", "more than", "next", "panel", "prompt", "shell", "terminal"),
+        zhDisplayName = "方形雪佛龙右",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Development, LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SquareChevronUp = LucideIconMetadata(
+        key = LucideIconKey("square-chevron-up"),
+        displayName = "Square Chevron Up",
+        tags = setOf("^", "ahead", "button", "caret", "chevron-up-square", "control", "ctrl", "exponential", "keyboard", "mac", "menu", "panel", "power", "superscript"),
+        zhDisplayName = "方形 V 形向上",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Math, LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SquareCode = LucideIconMetadata(
+        key = LucideIconKey("square-code"),
+        displayName = "Square Code",
+        tags = setOf("code-square", "coding", "gist", "html", "programming", "source", "xml"),
+        zhDisplayName = "方码",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val SquareDashedBottomCode = LucideIconMetadata(
         key = LucideIconKey("square-dashed-bottom-code"),
         displayName = "Square Dashed Bottom Code",
@@ -586,11 +666,65 @@ internal object LucideGeneratedMetadataChunk14 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val StickyNoteCheck = LucideIconMetadata(
+        key = LucideIconKey("sticky-note-check"),
+        displayName = "Sticky Note Check",
+        tags = setOf("annotation", "brainstorm", "check", "comment", "complete", "document", "done", "idea", "memo", "office", "page", "paper", "post-it", "reaction", "reminder", "sheet", "stationary", "success", "task", "todo", "verified"),
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val StickyNoteMinus = LucideIconMetadata(
+        key = LucideIconKey("sticky-note-minus"),
+        displayName = "Sticky Note Minus",
+        tags = setOf("annotation", "brainstorm", "comment", "delete", "document", "idea", "memo", "minus", "office", "page", "paper", "post-it", "reaction", "reminder", "remove", "sheet", "stationary", "task", "todo"),
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val StickyNoteOff = LucideIconMetadata(
+        key = LucideIconKey("sticky-note-off"),
+        displayName = "Sticky Note Off",
+        tags = setOf("annotation", "brainstorm", "comment", "disabled", "document", "hidden", "idea", "inactive", "memo", "mute", "office", "page", "paper", "post-it", "reaction", "reminder", "sheet", "stationary", "task", "todo"),
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val StickyNotePlus = LucideIconMetadata(
+        key = LucideIconKey("sticky-note-plus"),
+        displayName = "Sticky Note Plus",
+        tags = setOf("add", "annotation", "brainstorm", "comment", "create", "document", "idea", "memo", "new", "office", "page", "paper", "plus", "post-it", "reaction", "reminder", "sheet", "stationary", "task", "todo"),
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val StickyNoteX = LucideIconMetadata(
+        key = LucideIconKey("sticky-note-x"),
+        displayName = "Sticky Note X",
+        tags = setOf("annotation", "brainstorm", "cancel", "close", "comment", "delete", "document", "idea", "memo", "office", "page", "paper", "post-it", "reaction", "reminder", "remove", "sheet", "stationary", "task", "todo"),
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val StickyNote = LucideIconMetadata(
         key = LucideIconKey("sticky-note"),
         displayName = "Sticky Note",
         tags = setOf("annotation", "brainstorm", "comment", "document", "idea", "memo", "office", "page", "paper", "post-it", "reaction", "reminder", "sheet", "stationary", "task", "todo"),
         zhDisplayName = "便利贴",
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val StickyNotes = LucideIconMetadata(
+        key = LucideIconKey("sticky-notes"),
+        displayName = "Sticky Notes",
+        tags = setOf("annotation", "brainstorm", "clone", "collection", "copy", "documents", "duplicate", "group", "ideas", "memo", "multiple", "notes", "post-it", "reminder", "stack", "tasks", "todo"),
         categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
@@ -866,147 +1000,15 @@ internal object LucideGeneratedMetadataChunk14 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val Table = LucideIconMetadata(
-        key = LucideIconKey("table"),
-        displayName = "Table",
-        tags = setOf("grid", "spreadsheet"),
-        zhDisplayName = "表",
-        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val TabletSmartphone = LucideIconMetadata(
-        key = LucideIconKey("tablet-smartphone"),
-        displayName = "Tablet Smartphone",
-        tags = setOf("browser", "mobile", "responsive", "screens", "testing"),
-        zhDisplayName = "平板电脑 智能手机",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Development, LucideIconCategory.Devices, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Tablet = LucideIconMetadata(
-        key = LucideIconKey("tablet"),
-        displayName = "Tablet",
-        tags = setOf("device"),
-        zhDisplayName = "平板电脑",
-        categories = setOf(LucideIconCategory.Devices),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Tablets = LucideIconMetadata(
-        key = LucideIconKey("tablets"),
-        displayName = "Tablets",
-        tags = setOf("drug", "medication", "medicine", "pharmacy", "pills", "prescription"),
-        zhDisplayName = "平板电脑",
-        categories = setOf(LucideIconCategory.Medical),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Tag = LucideIconMetadata(
-        key = LucideIconKey("tag"),
-        displayName = "Tag",
-        tags = setOf("badge", "label", "mark", "ticket"),
-        zhDisplayName = "标签",
-        categories = setOf(LucideIconCategory.Account),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Tags = LucideIconMetadata(
-        key = LucideIconKey("tags"),
-        displayName = "Tags",
-        tags = setOf("badges", "copy", "labels", "marks", "multiple", "tickets"),
-        zhDisplayName = "标签",
-        categories = setOf(LucideIconCategory.Account),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Tally1 = LucideIconMetadata(
-        key = LucideIconKey("tally-1"),
-        displayName = "Tally 1",
-        tags = setOf("1", "bar", "cell", "count", "days", "enumerate", "first", "one", "prison", "score", "sentence"),
-        zhDisplayName = "理货1",
-        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Math),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Tally2 = LucideIconMetadata(
-        key = LucideIconKey("tally-2"),
-        displayName = "Tally 2",
-        tags = setOf("2", "bars", "cell", "count", "days", "double", "enumerate", "prison", "score", "second", "sentence", "two"),
-        zhDisplayName = "理货2",
-        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Math),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Tally3 = LucideIconMetadata(
-        key = LucideIconKey("tally-3"),
-        displayName = "Tally 3",
-        tags = setOf("3", "bars", "cell", "count", "days", "enumerate", "prison", "score", "sentence", "third", "three", "triple"),
-        zhDisplayName = "计数 3",
-        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Math),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Tally4 = LucideIconMetadata(
-        key = LucideIconKey("tally-4"),
-        displayName = "Tally 4",
-        tags = setOf("4", "bars", "cell", "count", "days", "enumerate", "fourth", "prison", "quadruple", "score", "sentence"),
-        zhDisplayName = "计数 4",
-        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Math),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Tally5 = LucideIconMetadata(
-        key = LucideIconKey("tally-5"),
-        displayName = "Tally 5",
-        tags = setOf("/", "5", "bars", "cell", "count", "days", "enumerate", "fifth", "five", "prison", "score", "sentence", "slash"),
-        zhDisplayName = "计数 5",
-        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Math),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Tangent = LucideIconMetadata(
-        key = LucideIconKey("tangent"),
-        displayName = "Tangent",
-        tags = setOf("bezier curve", "circle", "geometry", "shape", "tangential", "trigonometry"),
-        zhDisplayName = "切线",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Math, LucideIconCategory.Shapes, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Target = LucideIconMetadata(
-        key = LucideIconKey("target"),
-        displayName = "Target",
-        tags = setOf("bullseye", "deadline", "logo", "overview", "productivity", "projects", "work"),
-        zhDisplayName = "目标",
-        categories = setOf(LucideIconCategory.Gaming),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Telescope = LucideIconMetadata(
-        key = LucideIconKey("telescope"),
-        displayName = "Telescope",
-        tags = setOf("astronomy", "discovery", "exploration", "explore", "focus", "observe", "perspective", "space", "stargazing", "view", "vision"),
-        zhDisplayName = "望远镜",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Science, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        SquareChartGantt,
+        SquareCheckBig,
+        SquareCheck,
+        SquareChevronDown,
+        SquareChevronLeft,
+        SquareChevronRight,
+        SquareChevronUp,
+        SquareCode,
         SquareDashedBottomCode,
         SquareDashedBottom,
         SquareDashedKanban,
@@ -1065,7 +1067,13 @@ internal object LucideGeneratedMetadataChunk14 {
         StepForward,
         Stethoscope,
         Sticker,
+        StickyNoteCheck,
+        StickyNoteMinus,
+        StickyNoteOff,
+        StickyNotePlus,
+        StickyNoteX,
         StickyNote,
+        StickyNotes,
         Stone,
         Store,
         StretchHorizontal,
@@ -1092,20 +1100,6 @@ internal object LucideGeneratedMetadataChunk14 {
         TableColumnsSplit,
         TableOfContents,
         TableProperties,
-        TableRowsSplit,
-        Table,
-        TabletSmartphone,
-        Tablet,
-        Tablets,
-        Tag,
-        Tags,
-        Tally1,
-        Tally2,
-        Tally3,
-        Tally4,
-        Tally5,
-        Tangent,
-        Target,
-        Telescope
+        TableRowsSplit
     )
 }

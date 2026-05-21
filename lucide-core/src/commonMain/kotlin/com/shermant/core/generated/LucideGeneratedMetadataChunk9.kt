@@ -6,6 +6,76 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk9 {
+    val ListIndentDecrease = LucideIconMetadata(
+        key = LucideIconKey("list-indent-decrease"),
+        displayName = "List Indent Decrease",
+        tags = setOf("indent-decrease", "outdent", "tab", "text"),
+        zhDisplayName = "键盘",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ListIndentIncrease = LucideIconMetadata(
+        key = LucideIconKey("list-indent-increase"),
+        displayName = "List Indent Increase",
+        tags = setOf("indent", "indent-increase", "tab", "text"),
+        zhDisplayName = "灯顶",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ListMinus = LucideIconMetadata(
+        key = LucideIconKey("list-minus"),
+        displayName = "List Minus",
+        tags = setOf("delete", "playlist", "remove", "song", "subtract", "unqueue"),
+        zhDisplayName = "灯台",
+        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ListMusic = LucideIconMetadata(
+        key = LucideIconKey("list-music"),
+        displayName = "List Music",
+        tags = setOf("audio", "music", "playback", "playlist", "queue"),
+        zhDisplayName = "灯底板",
+        categories = setOf(LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ListOrdered = LucideIconMetadata(
+        key = LucideIconKey("list-ordered"),
+        displayName = "List Ordered",
+        tags = setOf("number", "order", "queue"),
+        zhDisplayName = "灯墙倒下",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ListPlus = LucideIconMetadata(
+        key = LucideIconKey("list-plus"),
+        displayName = "List Plus",
+        tags = setOf("add", "new", "playlist", "song", "track"),
+        zhDisplayName = "灯墙向上",
+        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ListRestart = LucideIconMetadata(
+        key = LucideIconKey("list-restart"),
+        displayName = "List Restart",
+        tags = setOf("playlist", "refresh", "reload", "replay", "reset"),
+        zhDisplayName = "灯",
+        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val ListStart = LucideIconMetadata(
         key = LucideIconKey("list-start"),
         displayName = "List Start",
@@ -936,77 +1006,14 @@ internal object LucideGeneratedMetadataChunk9 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val MicOff = LucideIconMetadata(
-        key = LucideIconKey("mic-off"),
-        displayName = "Mic Off",
-        tags = setOf("microphone", "mute", "record", "sound"),
-        zhDisplayName = "麦克风关闭",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val MicVocal = LucideIconMetadata(
-        key = LucideIconKey("mic-vocal"),
-        displayName = "Mic Vocal",
-        tags = setOf("karaoke", "listen", "lyrics", "mic-2", "microphone", "music", "podcast", "radio", "singing", "sound", "voice"),
-        zhDisplayName = "麦克风人声",
-        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Mic = LucideIconMetadata(
-        key = LucideIconKey("mic"),
-        displayName = "Mic",
-        tags = setOf("listen", "microphone", "podcast", "radio", "record", "sound"),
-        zhDisplayName = "麦克风",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Microchip = LucideIconMetadata(
-        key = LucideIconKey("microchip"),
-        displayName = "Microchip",
-        tags = setOf("chip", "computer", "cores", "ghz", "gigahertz", "gpu", "integrated circuit", "memory", "processor", "ram", "specs", "technology"),
-        zhDisplayName = "微芯片",
-        categories = setOf(LucideIconCategory.Devices),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Microscope = LucideIconMetadata(
-        key = LucideIconKey("microscope"),
-        displayName = "Microscope",
-        tags = setOf("education", "imaging", "medical", "research", "science"),
-        zhDisplayName = "显微镜",
-        categories = setOf(LucideIconCategory.Medical, LucideIconCategory.Science),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Microwave = LucideIconMetadata(
-        key = LucideIconKey("microwave"),
-        displayName = "Microwave",
-        tags = setOf("bake", "cooker", "oven", "toaster oven"),
-        zhDisplayName = "微波炉",
-        categories = setOf(LucideIconCategory.FoodBeverage, LucideIconCategory.Home),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Milestone = LucideIconMetadata(
-        key = LucideIconKey("milestone"),
-        displayName = "Milestone",
-        tags = setOf("direction", "east", "forward", "right", "signpost", "version control", "waypoint"),
-        zhDisplayName = "里程碑",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Navigation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        ListIndentDecrease,
+        ListIndentIncrease,
+        ListMinus,
+        ListMusic,
+        ListOrdered,
+        ListPlus,
+        ListRestart,
         ListStart,
         ListTodo,
         ListTree,
@@ -1099,13 +1106,6 @@ internal object LucideGeneratedMetadataChunk9 {
         MessageSquareX,
         MessageSquare,
         MessagesSquare,
-        Metronome,
-        MicOff,
-        MicVocal,
-        Mic,
-        Microchip,
-        Microscope,
-        Microwave,
-        Milestone
+        Metronome
     )
 }

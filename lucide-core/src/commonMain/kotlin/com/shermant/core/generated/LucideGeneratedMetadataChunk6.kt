@@ -6,6 +6,46 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk6 {
+    val FileCode = LucideIconMetadata(
+        key = LucideIconKey("file-code"),
+        displayName = "File Code",
+        tags = setOf("document", "gist", "html", "plist", "property list", "script", "xml"),
+        zhDisplayName = "文件代码",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileCog = LucideIconMetadata(
+        key = LucideIconKey("file-cog"),
+        displayName = "File Cog",
+        tags = setOf("cog", "edit", "executable", "file-cog-2", "gear", "settings"),
+        zhDisplayName = "文件齿轮",
+        categories = setOf(LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileDiff = LucideIconMetadata(
+        key = LucideIconKey("file-diff"),
+        displayName = "File Diff",
+        tags = setOf("diff", "patch"),
+        zhDisplayName = "文件差异",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileDigit = LucideIconMetadata(
+        key = LucideIconKey("file-digit"),
+        displayName = "File Digit",
+        tags = setOf("document", "number"),
+        zhDisplayName = "文件位数",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val FileDown = LucideIconMetadata(
         key = LucideIconKey("file-down"),
         displayName = "File Down",
@@ -656,6 +696,15 @@ internal object LucideGeneratedMetadataChunk6 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val FolderBookmark = LucideIconMetadata(
+        key = LucideIconKey("folder-bookmark"),
+        displayName = "Folder Bookmark",
+        tags = setOf("archive", "bookmark", "directory", "favorite", "file", "folder", "mark", "project", "read later", "save", "storage"),
+        categories = setOf(LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val FolderCheck = LucideIconMetadata(
         key = LucideIconKey("folder-check"),
         displayName = "Folder Check",
@@ -956,57 +1005,11 @@ internal object LucideGeneratedMetadataChunk6 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val Footprints = LucideIconMetadata(
-        key = LucideIconKey("footprints"),
-        displayName = "Footprints",
-        tags = setOf("feet", "foot", "shoe", "steps", "trail", "walking"),
-        zhDisplayName = "足迹",
-        categories = setOf(LucideIconCategory.Navigation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Forklift = LucideIconMetadata(
-        key = LucideIconKey("forklift"),
-        displayName = "Forklift",
-        tags = setOf("equipment", "heavy-duty", "industrial", "lifting", "logistics", "machinery", "moving", "storage", "transport", "vehicle", "warehouse"),
-        zhDisplayName = "叉车",
-        categories = setOf(LucideIconCategory.Transportation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Form = LucideIconMetadata(
-        key = LucideIconKey("form"),
-        displayName = "Form",
-        tags = setOf("components", "design", "document", "file", "formality", "inputs", "layout", "page", "paper", "structure", "stub", "template"),
-        zhDisplayName = "形式",
-        categories = setOf(LucideIconCategory.Development),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Forward = LucideIconMetadata(
-        key = LucideIconKey("forward"),
-        displayName = "Forward",
-        tags = setOf("email", "send", "share"),
-        zhDisplayName = "前进",
-        categories = setOf(LucideIconCategory.Mail),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Frame = LucideIconMetadata(
-        key = LucideIconKey("frame"),
-        displayName = "Frame",
-        tags = setOf("design", "logo", "tool"),
-        zhDisplayName = "框架",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Photography),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        FileCode,
+        FileCog,
+        FileDiff,
+        FileDigit,
         FileDown,
         FileExclamationPoint,
         FileHeadphone,
@@ -1072,6 +1075,7 @@ internal object LucideGeneratedMetadataChunk6 {
         FoldHorizontal,
         FoldVertical,
         FolderArchive,
+        FolderBookmark,
         FolderCheck,
         FolderClock,
         FolderClosed,
@@ -1101,11 +1105,6 @@ internal object LucideGeneratedMetadataChunk6 {
         FolderUp,
         FolderX,
         Folder,
-        Folders,
-        Footprints,
-        Forklift,
-        Form,
-        Forward,
-        Frame
+        Folders
     )
 }

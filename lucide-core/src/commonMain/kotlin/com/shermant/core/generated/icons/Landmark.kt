@@ -16,7 +16,7 @@ val landmarkProvider = ParameterizedIconProvider { parameters ->
 }
 
 private val landmarkPath0 = PathParser().parsePathString("M10 18v-7").toNodes()
-private val landmarkPath1 = PathParser().parsePathString("M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z").toNodes()
+private val landmarkPath1 = PathParser().parsePathString("M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z").toNodes()
 private val landmarkPath2 = PathParser().parsePathString("M14 18v-7").toNodes()
 private val landmarkPath3 = PathParser().parsePathString("M18 18v-7").toNodes()
 private val landmarkPath4 = PathParser().parsePathString("M3 22h18").toNodes()

@@ -16,11 +16,11 @@ val chartNoAxesCombinedProvider = ParameterizedIconProvider { parameters ->
 }
 
 private val chartNoAxesCombinedPath0 = PathParser().parsePathString("M12 16v5").toNodes()
-private val chartNoAxesCombinedPath1 = PathParser().parsePathString("M16 14v7").toNodes()
-private val chartNoAxesCombinedPath2 = PathParser().parsePathString("M20 10v11").toNodes()
+private val chartNoAxesCombinedPath1 = PathParser().parsePathString("M16 14.639V21").toNodes()
+private val chartNoAxesCombinedPath2 = PathParser().parsePathString("M20 10.656V21").toNodes()
 private val chartNoAxesCombinedPath3 = PathParser().parsePathString("m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15").toNodes()
-private val chartNoAxesCombinedPath4 = PathParser().parsePathString("M4 18v3").toNodes()
-private val chartNoAxesCombinedPath5 = PathParser().parsePathString("M8 14v7").toNodes()
+private val chartNoAxesCombinedPath4 = PathParser().parsePathString("M4 18.463V21").toNodes()
+private val chartNoAxesCombinedPath5 = PathParser().parsePathString("M8 14.656V21").toNodes()
 
 private fun buildChartNoAxesCombined(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

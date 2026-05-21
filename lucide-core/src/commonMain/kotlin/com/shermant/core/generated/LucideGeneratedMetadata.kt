@@ -197,12 +197,14 @@ object LucideGeneratedMetadata {
         get() = LucideGeneratedMetadataChunk0.ArrowsUpFromLine
     val Asterisk: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk0.Asterisk
+    val Astroid: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk0.Astroid
     val AtSign: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk0.AtSign
     val Atom: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk0.Atom
     val AudioLines: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk0.AudioLines
+        get() = LucideGeneratedMetadataChunk1.AudioLines
     val AudioWaveform: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk1.AudioWaveform
     val Award: LucideIconMetadata
@@ -311,6 +313,8 @@ object LucideGeneratedMetadata {
         get() = LucideGeneratedMetadataChunk1.BeerOff
     val Beer: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk1.Beer
+    val BellCheck: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk1.BellCheck
     val BellDot: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk1.BellDot
     val BellElectric: LucideIconMetadata
@@ -351,6 +355,8 @@ object LucideGeneratedMetadata {
         get() = LucideGeneratedMetadataChunk1.Bitcoin
     val Blend: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk1.Blend
+    val Blender: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk1.Blender
     val Blinds: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk1.Blinds
     val Blocks: LucideIconMetadata
@@ -398,11 +404,11 @@ object LucideGeneratedMetadata {
     val BookMarked: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk1.BookMarked
     val BookMinus: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk1.BookMinus
+        get() = LucideGeneratedMetadataChunk2.BookMinus
     val BookOpenCheck: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk1.BookOpenCheck
+        get() = LucideGeneratedMetadataChunk2.BookOpenCheck
     val BookOpenText: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk1.BookOpenText
+        get() = LucideGeneratedMetadataChunk2.BookOpenText
     val BookOpen: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk2.BookOpen
     val BookPlus: LucideIconMetadata
@@ -477,6 +483,8 @@ object LucideGeneratedMetadata {
         get() = LucideGeneratedMetadataChunk2.Briefcase
     val BringToFront: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk2.BringToFront
+    val Broccoli: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk2.Broccoli
     val BrushCleaning: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk2.BrushCleaning
     val Brush: LucideIconMetadata
@@ -596,13 +604,13 @@ object LucideGeneratedMetadata {
     val Cat: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk2.Cat
     val CctvOff: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk2.CctvOff
+        get() = LucideGeneratedMetadataChunk3.CctvOff
     val Cctv: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk2.Cctv
+        get() = LucideGeneratedMetadataChunk3.Cctv
     val ChartArea: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk2.ChartArea
+        get() = LucideGeneratedMetadataChunk3.ChartArea
     val ChartBarBig: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk2.ChartBarBig
+        get() = LucideGeneratedMetadataChunk3.ChartBarBig
     val ChartBarDecreasing: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk3.ChartBarDecreasing
     val ChartBarIncreasing: LucideIconMetadata
@@ -796,13 +804,13 @@ object LucideGeneratedMetadata {
     val Circle: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk3.Circle
     val CircuitBoard: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk3.CircuitBoard
+        get() = LucideGeneratedMetadataChunk4.CircuitBoard
     val Citrus: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk3.Citrus
+        get() = LucideGeneratedMetadataChunk4.Citrus
     val Clapperboard: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk3.Clapperboard
+        get() = LucideGeneratedMetadataChunk4.Clapperboard
     val ClipboardCheck: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk3.ClipboardCheck
+        get() = LucideGeneratedMetadataChunk4.ClipboardCheck
     val ClipboardClock: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk4.ClipboardClock
     val ClipboardCopy: LucideIconMetadata
@@ -996,13 +1004,13 @@ object LucideGeneratedMetadata {
     val CreditCard: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk4.CreditCard
     val Croissant: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk4.Croissant
+        get() = LucideGeneratedMetadataChunk5.Croissant
     val Crop: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk4.Crop
+        get() = LucideGeneratedMetadataChunk5.Crop
     val Cross: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk4.Cross
+        get() = LucideGeneratedMetadataChunk5.Cross
     val Crosshair: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk4.Crosshair
+        get() = LucideGeneratedMetadataChunk5.Crosshair
     val Crown: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk5.Crown
     val Cuboid: LucideIconMetadata
@@ -1196,13 +1204,13 @@ object LucideGeneratedMetadata {
     val FileCodeCorner: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk5.FileCodeCorner
     val FileCode: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk5.FileCode
+        get() = LucideGeneratedMetadataChunk6.FileCode
     val FileCog: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk5.FileCog
+        get() = LucideGeneratedMetadataChunk6.FileCog
     val FileDiff: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk5.FileDiff
+        get() = LucideGeneratedMetadataChunk6.FileDiff
     val FileDigit: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk5.FileDigit
+        get() = LucideGeneratedMetadataChunk6.FileDigit
     val FileDown: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk6.FileDown
     val FileExclamationPoint: LucideIconMetadata
@@ -1333,6 +1341,8 @@ object LucideGeneratedMetadata {
         get() = LucideGeneratedMetadataChunk6.FoldVertical
     val FolderArchive: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk6.FolderArchive
+    val FolderBookmark: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk6.FolderBookmark
     val FolderCheck: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk6.FolderCheck
     val FolderClock: LucideIconMetadata
@@ -1394,15 +1404,15 @@ object LucideGeneratedMetadata {
     val Folders: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk6.Folders
     val Footprints: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk6.Footprints
+        get() = LucideGeneratedMetadataChunk7.Footprints
     val Forklift: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk6.Forklift
+        get() = LucideGeneratedMetadataChunk7.Forklift
     val Form: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk6.Form
+        get() = LucideGeneratedMetadataChunk7.Form
     val Forward: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk6.Forward
+        get() = LucideGeneratedMetadataChunk7.Forward
     val Frame: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk6.Frame
+        get() = LucideGeneratedMetadataChunk7.Frame
     val Frown: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk7.Frown
     val Fuel: LucideIconMetadata
@@ -1594,15 +1604,17 @@ object LucideGeneratedMetadata {
     val HeartPlus: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk7.HeartPlus
     val HeartPulse: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk7.HeartPulse
+        get() = LucideGeneratedMetadataChunk8.HeartPulse
+    val HeartX: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk8.HeartX
     val Heart: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk7.Heart
+        get() = LucideGeneratedMetadataChunk8.Heart
     val Heater: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk7.Heater
+        get() = LucideGeneratedMetadataChunk8.Heater
     val Helicopter: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk7.Helicopter
+        get() = LucideGeneratedMetadataChunk8.Helicopter
     val Hexagon: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk7.Hexagon
+        get() = LucideGeneratedMetadataChunk8.Hexagon
     val Highlighter: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk8.Highlighter
     val History: LucideIconMetadata
@@ -1723,6 +1735,8 @@ object LucideGeneratedMetadata {
         get() = LucideGeneratedMetadataChunk8.Laugh
     val Layers2: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk8.Layers2
+    val LayersMinus: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk8.LayersMinus
     val LayersPlus: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk8.LayersPlus
     val Layers: LucideIconMetadata
@@ -1790,19 +1804,19 @@ object LucideGeneratedMetadata {
     val ListFilter: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk8.ListFilter
     val ListIndentDecrease: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk8.ListIndentDecrease
+        get() = LucideGeneratedMetadataChunk9.ListIndentDecrease
     val ListIndentIncrease: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk8.ListIndentIncrease
+        get() = LucideGeneratedMetadataChunk9.ListIndentIncrease
     val ListMinus: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk8.ListMinus
+        get() = LucideGeneratedMetadataChunk9.ListMinus
     val ListMusic: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk8.ListMusic
+        get() = LucideGeneratedMetadataChunk9.ListMusic
     val ListOrdered: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk8.ListOrdered
+        get() = LucideGeneratedMetadataChunk9.ListOrdered
     val ListPlus: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk8.ListPlus
+        get() = LucideGeneratedMetadataChunk9.ListPlus
     val ListRestart: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk8.ListRestart
+        get() = LucideGeneratedMetadataChunk9.ListRestart
     val ListStart: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk9.ListStart
     val ListTodo: LucideIconMetadata
@@ -1990,19 +2004,19 @@ object LucideGeneratedMetadata {
     val Metronome: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk9.Metronome
     val MicOff: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk9.MicOff
+        get() = LucideGeneratedMetadataChunk10.MicOff
     val MicVocal: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk9.MicVocal
+        get() = LucideGeneratedMetadataChunk10.MicVocal
     val Mic: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk9.Mic
+        get() = LucideGeneratedMetadataChunk10.Mic
     val Microchip: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk9.Microchip
+        get() = LucideGeneratedMetadataChunk10.Microchip
     val Microscope: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk9.Microscope
+        get() = LucideGeneratedMetadataChunk10.Microscope
     val Microwave: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk9.Microwave
+        get() = LucideGeneratedMetadataChunk10.Microwave
     val Milestone: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk9.Milestone
+        get() = LucideGeneratedMetadataChunk10.Milestone
     val MilkOff: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk10.MilkOff
     val Milk: LucideIconMetadata
@@ -2190,19 +2204,19 @@ object LucideGeneratedMetadata {
     val PanelBottomClose: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk10.PanelBottomClose
     val PanelBottomDashed: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk10.PanelBottomDashed
+        get() = LucideGeneratedMetadataChunk11.PanelBottomDashed
     val PanelBottomOpen: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk10.PanelBottomOpen
+        get() = LucideGeneratedMetadataChunk11.PanelBottomOpen
     val PanelBottom: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk10.PanelBottom
+        get() = LucideGeneratedMetadataChunk11.PanelBottom
     val PanelLeftClose: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk10.PanelLeftClose
+        get() = LucideGeneratedMetadataChunk11.PanelLeftClose
     val PanelLeftDashed: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk10.PanelLeftDashed
+        get() = LucideGeneratedMetadataChunk11.PanelLeftDashed
     val PanelLeftOpen: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk10.PanelLeftOpen
+        get() = LucideGeneratedMetadataChunk11.PanelLeftOpen
     val PanelLeftRightDashed: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk10.PanelLeftRightDashed
+        get() = LucideGeneratedMetadataChunk11.PanelLeftRightDashed
     val PanelLeft: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk11.PanelLeft
     val PanelRightClose: LucideIconMetadata
@@ -2390,19 +2404,19 @@ object LucideGeneratedMetadata {
     val Ratio: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk11.Ratio
     val ReceiptCent: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk11.ReceiptCent
+        get() = LucideGeneratedMetadataChunk12.ReceiptCent
     val ReceiptEuro: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk11.ReceiptEuro
+        get() = LucideGeneratedMetadataChunk12.ReceiptEuro
     val ReceiptIndianRupee: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk11.ReceiptIndianRupee
+        get() = LucideGeneratedMetadataChunk12.ReceiptIndianRupee
     val ReceiptJapaneseYen: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk11.ReceiptJapaneseYen
+        get() = LucideGeneratedMetadataChunk12.ReceiptJapaneseYen
     val ReceiptPoundSterling: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk11.ReceiptPoundSterling
+        get() = LucideGeneratedMetadataChunk12.ReceiptPoundSterling
     val ReceiptRussianRuble: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk11.ReceiptRussianRuble
+        get() = LucideGeneratedMetadataChunk12.ReceiptRussianRuble
     val ReceiptSwissFranc: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk11.ReceiptSwissFranc
+        get() = LucideGeneratedMetadataChunk12.ReceiptSwissFranc
     val ReceiptText: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk12.ReceiptText
     val ReceiptTurkishLira: LucideIconMetadata
@@ -2445,6 +2459,8 @@ object LucideGeneratedMetadata {
         get() = LucideGeneratedMetadataChunk12.Repeat1
     val Repeat2: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk12.Repeat2
+    val RepeatOff: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk12.RepeatOff
     val Repeat: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk12.Repeat
     val ReplaceAll: LucideIconMetadata
@@ -2588,21 +2604,21 @@ object LucideGeneratedMetadata {
     val ServerCrash: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk12.ServerCrash
     val ServerOff: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk12.ServerOff
+        get() = LucideGeneratedMetadataChunk13.ServerOff
     val Server: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk12.Server
+        get() = LucideGeneratedMetadataChunk13.Server
     val Settings2: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk12.Settings2
+        get() = LucideGeneratedMetadataChunk13.Settings2
     val Settings: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk12.Settings
+        get() = LucideGeneratedMetadataChunk13.Settings
     val Shapes: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk12.Shapes
+        get() = LucideGeneratedMetadataChunk13.Shapes
     val Share2: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk12.Share2
+        get() = LucideGeneratedMetadataChunk13.Share2
     val Share: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk12.Share
+        get() = LucideGeneratedMetadataChunk13.Share
     val Sheet: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk12.Sheet
+        get() = LucideGeneratedMetadataChunk13.Sheet
     val Shell: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk13.Shell
     val ShelvingUnit: LucideIconMetadata
@@ -2788,21 +2804,21 @@ object LucideGeneratedMetadata {
     val SquareCenterlineDashedVertical: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk13.SquareCenterlineDashedVertical
     val SquareChartGantt: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk13.SquareChartGantt
+        get() = LucideGeneratedMetadataChunk14.SquareChartGantt
     val SquareCheckBig: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk13.SquareCheckBig
+        get() = LucideGeneratedMetadataChunk14.SquareCheckBig
     val SquareCheck: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk13.SquareCheck
+        get() = LucideGeneratedMetadataChunk14.SquareCheck
     val SquareChevronDown: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk13.SquareChevronDown
+        get() = LucideGeneratedMetadataChunk14.SquareChevronDown
     val SquareChevronLeft: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk13.SquareChevronLeft
+        get() = LucideGeneratedMetadataChunk14.SquareChevronLeft
     val SquareChevronRight: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk13.SquareChevronRight
+        get() = LucideGeneratedMetadataChunk14.SquareChevronRight
     val SquareChevronUp: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk13.SquareChevronUp
+        get() = LucideGeneratedMetadataChunk14.SquareChevronUp
     val SquareCode: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk13.SquareCode
+        get() = LucideGeneratedMetadataChunk14.SquareCode
     val SquareDashedBottomCode: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk14.SquareDashedBottomCode
     val SquareDashedBottom: LucideIconMetadata
@@ -2919,8 +2935,20 @@ object LucideGeneratedMetadata {
         get() = LucideGeneratedMetadataChunk14.Stethoscope
     val Sticker: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk14.Sticker
+    val StickyNoteCheck: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk14.StickyNoteCheck
+    val StickyNoteMinus: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk14.StickyNoteMinus
+    val StickyNoteOff: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk14.StickyNoteOff
+    val StickyNotePlus: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk14.StickyNotePlus
+    val StickyNoteX: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk14.StickyNoteX
     val StickyNote: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk14.StickyNote
+    val StickyNotes: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk14.StickyNotes
     val Stone: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk14.Stone
     val Store: LucideIconMetadata
@@ -2976,33 +3004,33 @@ object LucideGeneratedMetadata {
     val TableRowsSplit: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk14.TableRowsSplit
     val Table: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Table
+        get() = LucideGeneratedMetadataChunk15.Table
     val TabletSmartphone: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.TabletSmartphone
+        get() = LucideGeneratedMetadataChunk15.TabletSmartphone
     val Tablet: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Tablet
+        get() = LucideGeneratedMetadataChunk15.Tablet
     val Tablets: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Tablets
+        get() = LucideGeneratedMetadataChunk15.Tablets
     val Tag: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Tag
+        get() = LucideGeneratedMetadataChunk15.Tag
     val Tags: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Tags
+        get() = LucideGeneratedMetadataChunk15.Tags
     val Tally1: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Tally1
+        get() = LucideGeneratedMetadataChunk15.Tally1
     val Tally2: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Tally2
+        get() = LucideGeneratedMetadataChunk15.Tally2
     val Tally3: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Tally3
+        get() = LucideGeneratedMetadataChunk15.Tally3
     val Tally4: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Tally4
+        get() = LucideGeneratedMetadataChunk15.Tally4
     val Tally5: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Tally5
+        get() = LucideGeneratedMetadataChunk15.Tally5
     val Tangent: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Tangent
+        get() = LucideGeneratedMetadataChunk15.Tangent
     val Target: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Target
+        get() = LucideGeneratedMetadataChunk15.Target
     val Telescope: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk14.Telescope
+        get() = LucideGeneratedMetadataChunk15.Telescope
     val TentTree: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk15.TentTree
     val Tent: LucideIconMetadata
@@ -3065,6 +3093,8 @@ object LucideGeneratedMetadata {
         get() = LucideGeneratedMetadataChunk15.TicketsPlane
     val Tickets: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk15.Tickets
+    val Timeline: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk15.Timeline
     val TimerOff: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk15.TimerOff
     val TimerReset: LucideIconMetadata
@@ -3174,35 +3204,35 @@ object LucideGeneratedMetadata {
     val UnfoldVertical: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk15.UnfoldVertical
     val Ungroup: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.Ungroup
+        get() = LucideGeneratedMetadataChunk16.Ungroup
     val University: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.University
+        get() = LucideGeneratedMetadataChunk16.University
     val Unlink2: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.Unlink2
+        get() = LucideGeneratedMetadataChunk16.Unlink2
     val Unlink: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.Unlink
+        get() = LucideGeneratedMetadataChunk16.Unlink
     val Unplug: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.Unplug
+        get() = LucideGeneratedMetadataChunk16.Unplug
     val Upload: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.Upload
+        get() = LucideGeneratedMetadataChunk16.Upload
     val Usb: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.Usb
+        get() = LucideGeneratedMetadataChunk16.Usb
     val UserCheck: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.UserCheck
+        get() = LucideGeneratedMetadataChunk16.UserCheck
     val UserCog: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.UserCog
+        get() = LucideGeneratedMetadataChunk16.UserCog
     val UserKey: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.UserKey
+        get() = LucideGeneratedMetadataChunk16.UserKey
     val UserLock: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.UserLock
+        get() = LucideGeneratedMetadataChunk16.UserLock
     val UserMinus: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.UserMinus
+        get() = LucideGeneratedMetadataChunk16.UserMinus
     val UserPen: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.UserPen
+        get() = LucideGeneratedMetadataChunk16.UserPen
     val UserPlus: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.UserPlus
+        get() = LucideGeneratedMetadataChunk16.UserPlus
     val UserRoundCheck: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk15.UserRoundCheck
+        get() = LucideGeneratedMetadataChunk16.UserRoundCheck
     val UserRoundCog: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk16.UserRoundCog
     val UserRoundKey: LucideIconMetadata
@@ -3303,10 +3333,12 @@ object LucideGeneratedMetadata {
         get() = LucideGeneratedMetadataChunk16.WavesArrowDown
     val WavesArrowUp: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk16.WavesArrowUp
+    val WavesHorizontal: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk16.WavesHorizontal
     val WavesLadder: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk16.WavesLadder
-    val Waves: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.Waves
+    val WavesVertical: LucideIconMetadata
+        get() = LucideGeneratedMetadataChunk16.WavesVertical
     val Waypoints: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk16.Waypoints
     val Webcam: LucideIconMetadata
@@ -3372,27 +3404,27 @@ object LucideGeneratedMetadata {
     val ZodiacCapricorn: LucideIconMetadata
         get() = LucideGeneratedMetadataChunk16.ZodiacCapricorn
     val ZodiacGemini: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZodiacGemini
+        get() = LucideGeneratedMetadataChunk17.ZodiacGemini
     val ZodiacLeo: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZodiacLeo
+        get() = LucideGeneratedMetadataChunk17.ZodiacLeo
     val ZodiacLibra: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZodiacLibra
+        get() = LucideGeneratedMetadataChunk17.ZodiacLibra
     val ZodiacOphiuchus: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZodiacOphiuchus
+        get() = LucideGeneratedMetadataChunk17.ZodiacOphiuchus
     val ZodiacPisces: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZodiacPisces
+        get() = LucideGeneratedMetadataChunk17.ZodiacPisces
     val ZodiacSagittarius: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZodiacSagittarius
+        get() = LucideGeneratedMetadataChunk17.ZodiacSagittarius
     val ZodiacScorpio: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZodiacScorpio
+        get() = LucideGeneratedMetadataChunk17.ZodiacScorpio
     val ZodiacTaurus: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZodiacTaurus
+        get() = LucideGeneratedMetadataChunk17.ZodiacTaurus
     val ZodiacVirgo: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZodiacVirgo
+        get() = LucideGeneratedMetadataChunk17.ZodiacVirgo
     val ZoomIn: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZoomIn
+        get() = LucideGeneratedMetadataChunk17.ZoomIn
     val ZoomOut: LucideIconMetadata
-        get() = LucideGeneratedMetadataChunk16.ZoomOut
+        get() = LucideGeneratedMetadataChunk17.ZoomOut
 
     val all: List<LucideIconMetadata> by lazy {
         buildList {
@@ -3413,6 +3445,7 @@ object LucideGeneratedMetadata {
             addAll(LucideGeneratedMetadataChunk14.values)
             addAll(LucideGeneratedMetadataChunk15.values)
             addAll(LucideGeneratedMetadataChunk16.values)
+            addAll(LucideGeneratedMetadataChunk17.values)
         }
     }
 }

@@ -15,11 +15,11 @@ val volleyballProvider = ParameterizedIconProvider { parameters ->
     buildVolleyball(parameters)
 }
 
-private val volleyballPath0 = PathParser().parsePathString("M11.1 7.1a16.55 16.55 0 0 1 10.9 4").toNodes()
-private val volleyballPath1 = PathParser().parsePathString("M12 12a12.6 12.6 0 0 1-8.7 5").toNodes()
-private val volleyballPath2 = PathParser().parsePathString("M16.8 13.6a16.55 16.55 0 0 1-9 7.5").toNodes()
-private val volleyballPath3 = PathParser().parsePathString("M20.7 17a12.8 12.8 0 0 0-8.7-5 13.3 13.3 0 0 1 0-10").toNodes()
-private val volleyballPath4 = PathParser().parsePathString("M6.3 3.8a16.55 16.55 0 0 0 1.9 11.5").toNodes()
+private val volleyballPath0 = PathParser().parsePathString("M11 7a16 16 20 0 1 10.98 4.362").toNodes()
+private val volleyballPath1 = PathParser().parsePathString("M12 12a13 13 0 0 1-8.66 5").toNodes()
+private val volleyballPath2 = PathParser().parsePathString("M16.83 13.634a16 16 0 0 1-9.267 7.328").toNodes()
+private val volleyballPath3 = PathParser().parsePathString("M20.66 17A13 13 0 0 0 12 12a13 13 0 0 1 0-10").toNodes()
+private val volleyballPath4 = PathParser().parsePathString("M8.17 15.366a16 16 0 0 1-1.713-11.69").toNodes()
 private val volleyballPath5 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 
 private fun buildVolleyball(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {

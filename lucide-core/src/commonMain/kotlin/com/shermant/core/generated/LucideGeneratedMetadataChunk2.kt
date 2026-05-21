@@ -6,6 +6,36 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk2 {
+    val BookMinus = LucideIconMetadata(
+        key = LucideIconKey("book-minus"),
+        displayName = "Book Minus",
+        tags = setOf("ban", "cancel", "censor", "code", "coding", "delete", "downgrade", "forbid", "git", "prohibit", "re-educate", "remove", "repository", "uneducated", "unlearn", "version control"),
+        zhDisplayName = "双人床",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val BookOpenCheck = LucideIconMetadata(
+        key = LucideIconKey("book-open-check"),
+        displayName = "Book Open Check",
+        tags = setOf("authored", "blank", "booklet", "completed", "corrected", "documented", "done", "educated", "examined", "finished", "graduated", "homework", "informed", "knowledgeable", "leaflet", "learned", "lesson", "library", "magazine", "marked", "pages", "pamphlet", "passed", "plain language", "published", "read", "researched", "revealed", "schooled", "studied", "task", "tested", "ticked", "todo", "true", "truth", "verified", "written"),
+        zhDisplayName = "单人床",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val BookOpenText = LucideIconMetadata(
+        key = LucideIconKey("book-open-text"),
+        displayName = "Book Open Text",
+        tags = setOf("academy", "author", "booklet", "college", "documentation", "education", "fiction", "high school", "homework", "information", "knowledge", "leaflet", "learning", "library", "magazine", "novel", "pages", "pamphlet", "reading", "research", "revealed", "script", "story", "student", "study", "university", "writer", "writing", "written"),
+        zhDisplayName = "床",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val BookOpen = LucideIconMetadata(
         key = LucideIconKey("book-open"),
         displayName = "Book Open",
@@ -372,6 +402,15 @@ internal object LucideGeneratedMetadataChunk2 {
         tags = setOf("bring", "forward", "front", "layer", "move", "order", "over", "overlap", "send"),
         zhDisplayName = "带到前面",
         categories = setOf(LucideIconCategory.Design, LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Broccoli = LucideIconMetadata(
+        key = LucideIconKey("broccoli"),
+        displayName = "Broccoli",
+        tags = setOf("crisp", "culinary", "diet", "food", "fresh", "green", "healthy", "leafy", "nutrition", "plant", "produce", "vegan", "vegetable", "vegetarian", "vegetation"),
+        categories = setOf(LucideIconCategory.FoodBeverage),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -966,47 +1005,10 @@ internal object LucideGeneratedMetadataChunk2 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val CctvOff = LucideIconMetadata(
-        key = LucideIconKey("cctv-off"),
-        displayName = "Cctv Off",
-        tags = setOf("camera", "crime", "film", "recording", "surveillance", "videotape", "watching"),
-        zhDisplayName = "闭路电视",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Photography, LucideIconCategory.Security),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Cctv = LucideIconMetadata(
-        key = LucideIconKey("cctv"),
-        displayName = "Cctv",
-        tags = setOf("camera", "crime", "film", "recording", "surveillance", "videotape", "watching"),
-        zhDisplayName = "中央电视台",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Photography, LucideIconCategory.Security),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ChartArea = LucideIconMetadata(
-        key = LucideIconKey("chart-area"),
-        displayName = "Chart Area",
-        tags = setOf("analytics", "area", "area-chart", "diagram", "graph", "statistics"),
-        zhDisplayName = "图表区",
-        categories = setOf(LucideIconCategory.Charts),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ChartBarBig = LucideIconMetadata(
-        key = LucideIconKey("chart-bar-big"),
-        displayName = "Chart Bar Big",
-        tags = setOf("analytics", "bar-chart-horizontal-big", "diagram", "graph", "statistics"),
-        zhDisplayName = "图表栏大",
-        categories = setOf(LucideIconCategory.Charts),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        BookMinus,
+        BookOpenCheck,
+        BookOpenText,
         BookOpen,
         BookPlus,
         BookSearch,
@@ -1044,6 +1046,7 @@ internal object LucideGeneratedMetadataChunk2 {
         BriefcaseMedical,
         Briefcase,
         BringToFront,
+        Broccoli,
         BrushCleaning,
         Brush,
         Bubbles,
@@ -1102,10 +1105,6 @@ internal object LucideGeneratedMetadataChunk2 {
         CassetteTape,
         Cast,
         Castle,
-        Cat,
-        CctvOff,
-        Cctv,
-        ChartArea,
-        ChartBarBig
+        Cat
     )
 }

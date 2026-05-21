@@ -6,6 +6,46 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk3 {
+    val CctvOff = LucideIconMetadata(
+        key = LucideIconKey("cctv-off"),
+        displayName = "Cctv Off",
+        tags = setOf("camera", "crime", "film", "recording", "surveillance", "videotape", "watching"),
+        zhDisplayName = "闭路电视",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Photography, LucideIconCategory.Security),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Cctv = LucideIconMetadata(
+        key = LucideIconKey("cctv"),
+        displayName = "Cctv",
+        tags = setOf("camera", "crime", "film", "recording", "surveillance", "videotape", "watching"),
+        zhDisplayName = "中央电视台",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Photography, LucideIconCategory.Security),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ChartArea = LucideIconMetadata(
+        key = LucideIconKey("chart-area"),
+        displayName = "Chart Area",
+        tags = setOf("analytics", "area", "area-chart", "diagram", "graph", "statistics"),
+        zhDisplayName = "图表区",
+        categories = setOf(LucideIconCategory.Charts),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ChartBarBig = LucideIconMetadata(
+        key = LucideIconKey("chart-bar-big"),
+        displayName = "Chart Bar Big",
+        tags = setOf("analytics", "bar-chart-horizontal-big", "diagram", "graph", "statistics"),
+        zhDisplayName = "图表栏大",
+        categories = setOf(LucideIconCategory.Charts),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val ChartBarDecreasing = LucideIconMetadata(
         key = LucideIconKey("chart-bar-decreasing"),
         displayName = "Chart Bar Decreasing",
@@ -966,47 +1006,11 @@ internal object LucideGeneratedMetadataChunk3 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val CircuitBoard = LucideIconMetadata(
-        key = LucideIconKey("circuit-board"),
-        displayName = "Circuit Board",
-        tags = setOf("computing", "electricity", "electronics"),
-        zhDisplayName = "电路板",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Science),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Citrus = LucideIconMetadata(
-        key = LucideIconKey("citrus"),
-        displayName = "Citrus",
-        tags = setOf("fruit", "grapefruit", "lemon", "orange"),
-        zhDisplayName = "柑橘类",
-        categories = setOf(LucideIconCategory.FoodBeverage),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Clapperboard = LucideIconMetadata(
-        key = LucideIconKey("clapperboard"),
-        displayName = "Clapperboard",
-        tags = setOf("action", "camera", "cinema", "cut", "entertainment", "film", "movie", "show", "television", "tv", "video"),
-        zhDisplayName = "场记板",
-        categories = setOf(LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ClipboardCheck = LucideIconMetadata(
-        key = LucideIconKey("clipboard-check"),
-        displayName = "Clipboard Check",
-        tags = setOf("complete", "copied", "done", "pasted", "task", "tick", "todo"),
-        zhDisplayName = "剪贴板检查",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        CctvOff,
+        Cctv,
+        ChartArea,
+        ChartBarBig,
         ChartBarDecreasing,
         ChartBarIncreasing,
         ChartBarStacked,
@@ -1102,10 +1106,6 @@ internal object LucideGeneratedMetadataChunk3 {
         CircleUserRound,
         CircleUser,
         CircleX,
-        Circle,
-        CircuitBoard,
-        Citrus,
-        Clapperboard,
-        ClipboardCheck
+        Circle
     )
 }

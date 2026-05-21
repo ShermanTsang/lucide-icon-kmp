@@ -6,6 +6,46 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk5 {
+    val Croissant = LucideIconMetadata(
+        key = LucideIconKey("croissant"),
+        displayName = "Croissant",
+        tags = setOf("bakery", "cooking", "food", "pastry"),
+        zhDisplayName = "羊角面包",
+        categories = setOf(LucideIconCategory.FoodBeverage),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Crop = LucideIconMetadata(
+        key = LucideIconKey("crop"),
+        displayName = "Crop",
+        tags = setOf("image", "photo"),
+        zhDisplayName = "作物",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Photography),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Cross = LucideIconMetadata(
+        key = LucideIconKey("cross"),
+        displayName = "Cross",
+        tags = setOf("first aid", "healthcare"),
+        zhDisplayName = "克罗斯",
+        categories = setOf(LucideIconCategory.Shapes),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Crosshair = LucideIconMetadata(
+        key = LucideIconKey("crosshair"),
+        displayName = "Crosshair",
+        tags = setOf("aim", "target"),
+        zhDisplayName = "十字线",
+        categories = setOf(LucideIconCategory.Photography),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val Crown = LucideIconMetadata(
         key = LucideIconKey("crown"),
         displayName = "Crown",
@@ -966,47 +1006,11 @@ internal object LucideGeneratedMetadataChunk5 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val FileCode = LucideIconMetadata(
-        key = LucideIconKey("file-code"),
-        displayName = "File Code",
-        tags = setOf("document", "gist", "html", "plist", "property list", "script", "xml"),
-        zhDisplayName = "文件代码",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileCog = LucideIconMetadata(
-        key = LucideIconKey("file-cog"),
-        displayName = "File Cog",
-        tags = setOf("cog", "edit", "executable", "file-cog-2", "gear", "settings"),
-        zhDisplayName = "文件齿轮",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileDiff = LucideIconMetadata(
-        key = LucideIconKey("file-diff"),
-        displayName = "File Diff",
-        tags = setOf("diff", "patch"),
-        zhDisplayName = "文件差异",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileDigit = LucideIconMetadata(
-        key = LucideIconKey("file-digit"),
-        displayName = "File Digit",
-        tags = setOf("document", "number"),
-        zhDisplayName = "文件位数",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        Croissant,
+        Crop,
+        Cross,
+        Crosshair,
         Crown,
         Cuboid,
         CupSoda,
@@ -1102,10 +1106,6 @@ internal object LucideGeneratedMetadataChunk5 {
         FileCheckCorner,
         FileCheck,
         FileClock,
-        FileCodeCorner,
-        FileCode,
-        FileCog,
-        FileDiff,
-        FileDigit
+        FileCodeCorner
     )
 }

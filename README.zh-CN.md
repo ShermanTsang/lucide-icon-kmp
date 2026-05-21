@@ -124,7 +124,7 @@ LucideIcons.registry.registerCustomIcon(
 
 生成后的图标文件应作为仓库内容提交，这样使用者在正常接入库时不需要再次执行生成。
 
-当前固定的 Lucide 快照版本记录在 `lucide-generator/src/main/resources/lucide-icons/VERSION.txt`。
+当前固定的 Lucide 快照版本为 `1.16.0`；准确的 tag、commit 与资源数量记录在 `lucide-generator/src/main/resources/lucide-icons/VERSION.txt`。
 
 ## 本地校验发布流程
 

@@ -11,27 +11,27 @@ import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
 
-val wavesProvider = ParameterizedIconProvider { parameters ->
-    buildWaves(parameters)
+val wavesVerticalProvider = ParameterizedIconProvider { parameters ->
+    buildWavesVertical(parameters)
 }
 
-private val wavesPath0 = PathParser().parsePathString("M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1").toNodes()
-private val wavesPath1 = PathParser().parsePathString("M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1").toNodes()
-private val wavesPath2 = PathParser().parsePathString("M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1").toNodes()
+private val wavesVerticalPath0 = PathParser().parsePathString("M12 2q2 2.5 0 5t0 5 0 5 0 5").toNodes()
+private val wavesVerticalPath1 = PathParser().parsePathString("M19 2q2 2.5 0 5t0 5 0 5 0 5").toNodes()
+private val wavesVerticalPath2 = PathParser().parsePathString("M5 2q2 2.5 0 5t0 5 0 5 0 5").toNodes()
 
-private fun buildWaves(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
+private fun buildWavesVertical(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp
     val strokeWidth = parameters.strokeWidth ?: 2.0f
 
     return ImageVector.Builder(
-        name = "waves",
+        name = "waves-vertical",
         defaultWidth = iconSize,
         defaultHeight = iconSize,
         viewportWidth = 24.0f,
         viewportHeight = 24.0f,
     ).apply {
         addPath(
-            pathData = wavesPath0,
+            pathData = wavesVerticalPath0,
             pathFillType = PathFillType.NonZero,
             fill = null,
             stroke = SolidColor(Color.Black),
@@ -40,7 +40,7 @@ private fun buildWaves(parameters: IconRenderParameters = IconRenderParameters()
             strokeLineJoin = StrokeJoin.Round,
         )
         addPath(
-            pathData = wavesPath1,
+            pathData = wavesVerticalPath1,
             pathFillType = PathFillType.NonZero,
             fill = null,
             stroke = SolidColor(Color.Black),
@@ -49,7 +49,7 @@ private fun buildWaves(parameters: IconRenderParameters = IconRenderParameters()
             strokeLineJoin = StrokeJoin.Round,
         )
         addPath(
-            pathData = wavesPath2,
+            pathData = wavesVerticalPath2,
             pathFillType = PathFillType.NonZero,
             fill = null,
             stroke = SolidColor(Color.Black),

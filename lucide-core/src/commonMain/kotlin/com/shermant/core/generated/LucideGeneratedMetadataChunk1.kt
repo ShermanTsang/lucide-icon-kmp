@@ -6,6 +6,16 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk1 {
+    val AudioLines = LucideIconMetadata(
+        key = LucideIconKey("audio-lines"),
+        displayName = "Audio Lines",
+        tags = setOf("airwaves", "broadcast", "frequency", "graphic equaliser", "hearing", "hertz", "levels", "listen", "music", "noise", "playback", "radio", "sine", "singer", "song", "sound", "synthesiser", "synthesizer", "track", "vibrate", "vocals", "voice", "wavelength"),
+        zhDisplayName = "音频线",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val AudioWaveform = LucideIconMetadata(
         key = LucideIconKey("audio-waveform"),
         displayName = "Audio Waveform",
@@ -546,6 +556,15 @@ internal object LucideGeneratedMetadataChunk1 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val BellCheck = LucideIconMetadata(
+        key = LucideIconKey("bell-check"),
+        displayName = "Bell Check",
+        tags = setOf("alarm", "notification", "reminder", "sound"),
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Notifications),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val BellDot = LucideIconMetadata(
         key = LucideIconKey("bell-dot"),
         displayName = "Bell Dot",
@@ -742,6 +761,15 @@ internal object LucideGeneratedMetadataChunk1 {
         tags = setOf("alpha", "brightness", "colors", "colours", "filters", "hues", "lenses", "mixed", "mode", "multiply", "opacity", "overlap", "overlay", "saturation", "screen", "shades", "tints", "transparency"),
         zhDisplayName = "徽章",
         categories = setOf(LucideIconCategory.Design, LucideIconCategory.Development, LucideIconCategory.Photography, LucideIconCategory.Tools),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Blender = LucideIconMetadata(
+        key = LucideIconKey("blender"),
+        displayName = "Blender",
+        tags = setOf("appliances", "beverage", "blade", "chef", "cocktail", "container", "cooking", "culinary", "drink", "emulsify", "food", "juicer", "kitchen", "liquid", "milkshake", "mix", "mixer", "processor", "recipe", "restaurant", "shredder", "smoothie", "vitamizer"),
+        categories = setOf(LucideIconCategory.FoodBeverage, LucideIconCategory.Home),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -976,37 +1004,8 @@ internal object LucideGeneratedMetadataChunk1 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val BookMinus = LucideIconMetadata(
-        key = LucideIconKey("book-minus"),
-        displayName = "Book Minus",
-        tags = setOf("ban", "cancel", "censor", "code", "coding", "delete", "downgrade", "forbid", "git", "prohibit", "re-educate", "remove", "repository", "uneducated", "unlearn", "version control"),
-        zhDisplayName = "双人床",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val BookOpenCheck = LucideIconMetadata(
-        key = LucideIconKey("book-open-check"),
-        displayName = "Book Open Check",
-        tags = setOf("authored", "blank", "booklet", "completed", "corrected", "documented", "done", "educated", "examined", "finished", "graduated", "homework", "informed", "knowledgeable", "leaflet", "learned", "lesson", "library", "magazine", "marked", "pages", "pamphlet", "passed", "plain language", "published", "read", "researched", "revealed", "schooled", "studied", "task", "tested", "ticked", "todo", "true", "truth", "verified", "written"),
-        zhDisplayName = "单人床",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val BookOpenText = LucideIconMetadata(
-        key = LucideIconKey("book-open-text"),
-        displayName = "Book Open Text",
-        tags = setOf("academy", "author", "booklet", "college", "documentation", "education", "fiction", "high school", "homework", "information", "knowledge", "leaflet", "learning", "library", "magazine", "novel", "pages", "pamphlet", "reading", "research", "revealed", "script", "story", "student", "study", "university", "writer", "writing", "written"),
-        zhDisplayName = "床",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        AudioLines,
         AudioWaveform,
         Award,
         Axe,
@@ -1061,6 +1060,7 @@ internal object LucideGeneratedMetadataChunk1 {
         Beef,
         BeerOff,
         Beer,
+        BellCheck,
         BellDot,
         BellElectric,
         BellMinus,
@@ -1081,6 +1081,7 @@ internal object LucideGeneratedMetadataChunk1 {
         Birdhouse,
         Bitcoin,
         Blend,
+        Blender,
         Blinds,
         Blocks,
         BluetoothConnected,
@@ -1103,9 +1104,6 @@ internal object LucideGeneratedMetadataChunk1 {
         BookImage,
         BookKey,
         BookLock,
-        BookMarked,
-        BookMinus,
-        BookOpenCheck,
-        BookOpenText
+        BookMarked
     )
 }

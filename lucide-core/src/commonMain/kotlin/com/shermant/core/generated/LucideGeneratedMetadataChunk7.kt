@@ -6,6 +6,56 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk7 {
+    val Footprints = LucideIconMetadata(
+        key = LucideIconKey("footprints"),
+        displayName = "Footprints",
+        tags = setOf("feet", "foot", "shoe", "steps", "trail", "walking"),
+        zhDisplayName = "足迹",
+        categories = setOf(LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Forklift = LucideIconMetadata(
+        key = LucideIconKey("forklift"),
+        displayName = "Forklift",
+        tags = setOf("equipment", "heavy-duty", "industrial", "lifting", "logistics", "machinery", "moving", "storage", "transport", "vehicle", "warehouse"),
+        zhDisplayName = "叉车",
+        categories = setOf(LucideIconCategory.Transportation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Form = LucideIconMetadata(
+        key = LucideIconKey("form"),
+        displayName = "Form",
+        tags = setOf("components", "design", "document", "file", "formality", "inputs", "layout", "page", "paper", "structure", "stub", "template"),
+        zhDisplayName = "形式",
+        categories = setOf(LucideIconCategory.Development),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Forward = LucideIconMetadata(
+        key = LucideIconKey("forward"),
+        displayName = "Forward",
+        tags = setOf("email", "send", "share"),
+        zhDisplayName = "前进",
+        categories = setOf(LucideIconCategory.Mail),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Frame = LucideIconMetadata(
+        key = LucideIconKey("frame"),
+        displayName = "Frame",
+        tags = setOf("design", "logo", "tool"),
+        zhDisplayName = "框架",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Photography),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val Frown = LucideIconMetadata(
         key = LucideIconKey("frown"),
         displayName = "Frown",
@@ -956,57 +1006,12 @@ internal object LucideGeneratedMetadataChunk7 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val HeartPulse = LucideIconMetadata(
-        key = LucideIconKey("heart-pulse"),
-        displayName = "Heart Pulse",
-        tags = setOf("blood pressure", "cardiac", "diastole", "health", "heartbeat", "medical", "pulse", "systole"),
-        zhDisplayName = "心脏脉搏",
-        categories = setOf(LucideIconCategory.Medical),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Heart = LucideIconMetadata(
-        key = LucideIconKey("heart"),
-        displayName = "Heart",
-        tags = setOf("cards", "emotion", "like", "love", "playing", "suit"),
-        zhDisplayName = "心",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Gaming, LucideIconCategory.Medical, LucideIconCategory.Multimedia, LucideIconCategory.Shapes, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Heater = LucideIconMetadata(
-        key = LucideIconKey("heater"),
-        displayName = "Heater",
-        tags = setOf("amenities", "comfort", "electric", "electronics", "fire", "heating", "stove", "warmth"),
-        zhDisplayName = "加热器",
-        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Home, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Helicopter = LucideIconMetadata(
-        key = LucideIconKey("helicopter"),
-        displayName = "Helicopter",
-        tags = setOf("aircraft", "aviation", "flyer", "flying", "gear", "helicopter", "helipad", "rotor", "technology", "transport", "vehicle"),
-        zhDisplayName = "直升机",
-        categories = setOf(LucideIconCategory.Transportation, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Hexagon = LucideIconMetadata(
-        key = LucideIconKey("hexagon"),
-        displayName = "Hexagon",
-        tags = setOf("logo", "node.js", "shape"),
-        zhDisplayName = "六边形",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        Footprints,
+        Forklift,
+        Form,
+        Forward,
+        Frame,
         Frown,
         Fuel,
         Fullscreen,
@@ -1101,11 +1106,6 @@ internal object LucideGeneratedMetadataChunk7 {
         HeartHandshake,
         HeartMinus,
         HeartOff,
-        HeartPlus,
-        HeartPulse,
-        Heart,
-        Heater,
-        Helicopter,
-        Hexagon
+        HeartPlus
     )
 }

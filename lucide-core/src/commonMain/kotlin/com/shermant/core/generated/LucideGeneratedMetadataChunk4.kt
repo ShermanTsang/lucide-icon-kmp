@@ -6,6 +6,46 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk4 {
+    val CircuitBoard = LucideIconMetadata(
+        key = LucideIconKey("circuit-board"),
+        displayName = "Circuit Board",
+        tags = setOf("computing", "electricity", "electronics"),
+        zhDisplayName = "电路板",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Science),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Citrus = LucideIconMetadata(
+        key = LucideIconKey("citrus"),
+        displayName = "Citrus",
+        tags = setOf("fruit", "grapefruit", "lemon", "orange"),
+        zhDisplayName = "柑橘类",
+        categories = setOf(LucideIconCategory.FoodBeverage),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Clapperboard = LucideIconMetadata(
+        key = LucideIconKey("clapperboard"),
+        displayName = "Clapperboard",
+        tags = setOf("action", "camera", "cinema", "cut", "entertainment", "film", "movie", "show", "television", "tv", "video"),
+        zhDisplayName = "场记板",
+        categories = setOf(LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ClipboardCheck = LucideIconMetadata(
+        key = LucideIconKey("clipboard-check"),
+        displayName = "Clipboard Check",
+        tags = setOf("complete", "copied", "done", "pasted", "task", "tick", "todo"),
+        zhDisplayName = "剪贴板检查",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val ClipboardClock = LucideIconMetadata(
         key = LucideIconKey("clipboard-clock"),
         displayName = "Clipboard Clock",
@@ -966,47 +1006,11 @@ internal object LucideGeneratedMetadataChunk4 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val Croissant = LucideIconMetadata(
-        key = LucideIconKey("croissant"),
-        displayName = "Croissant",
-        tags = setOf("bakery", "cooking", "food", "pastry"),
-        zhDisplayName = "羊角面包",
-        categories = setOf(LucideIconCategory.FoodBeverage),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Crop = LucideIconMetadata(
-        key = LucideIconKey("crop"),
-        displayName = "Crop",
-        tags = setOf("image", "photo"),
-        zhDisplayName = "作物",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Photography),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Cross = LucideIconMetadata(
-        key = LucideIconKey("cross"),
-        displayName = "Cross",
-        tags = setOf("first aid", "healthcare"),
-        zhDisplayName = "克罗斯",
-        categories = setOf(LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Crosshair = LucideIconMetadata(
-        key = LucideIconKey("crosshair"),
-        displayName = "Crosshair",
-        tags = setOf("aim", "target"),
-        zhDisplayName = "十字线",
-        categories = setOf(LucideIconCategory.Photography),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        CircuitBoard,
+        Citrus,
+        Clapperboard,
+        ClipboardCheck,
         ClipboardClock,
         ClipboardCopy,
         ClipboardList,
@@ -1102,10 +1106,6 @@ internal object LucideGeneratedMetadataChunk4 {
         CornerUpRight,
         Cpu,
         CreativeCommons,
-        CreditCard,
-        Croissant,
-        Crop,
-        Cross,
-        Crosshair
+        CreditCard
     )
 }

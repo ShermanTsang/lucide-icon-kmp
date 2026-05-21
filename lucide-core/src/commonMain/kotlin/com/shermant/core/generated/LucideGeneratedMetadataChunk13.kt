@@ -6,6 +6,86 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk13 {
+    val ServerOff = LucideIconMetadata(
+        key = LucideIconKey("server-off"),
+        displayName = "Server Off",
+        tags = setOf("cloud", "storage"),
+        zhDisplayName = "服务器关闭",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Server = LucideIconMetadata(
+        key = LucideIconKey("server"),
+        displayName = "Server",
+        tags = setOf("cloud", "storage"),
+        zhDisplayName = "服务器",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Settings2 = LucideIconMetadata(
+        key = LucideIconKey("settings-2"),
+        displayName = "Settings 2",
+        tags = setOf("cog", "edit", "gear", "preferences", "slider"),
+        zhDisplayName = "设置2",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Settings = LucideIconMetadata(
+        key = LucideIconKey("settings"),
+        displayName = "Settings",
+        tags = setOf("cog", "edit", "gear", "preferences"),
+        zhDisplayName = "设置",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Shapes = LucideIconMetadata(
+        key = LucideIconKey("shapes"),
+        displayName = "Shapes",
+        tags = setOf("blocks", "circle", "classification", "collection", "different", "equilateral", "learning", "square", "toy", "triangle"),
+        zhDisplayName = "形状",
+        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Shapes),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Share2 = LucideIconMetadata(
+        key = LucideIconKey("share-2"),
+        displayName = "Share 2",
+        tags = setOf("connections", "network"),
+        zhDisplayName = "分享2",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Share = LucideIconMetadata(
+        key = LucideIconKey("share"),
+        displayName = "Share",
+        tags = setOf("connections", "network"),
+        zhDisplayName = "分享",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Sheet = LucideIconMetadata(
+        key = LucideIconKey("sheet"),
+        displayName = "Sheet",
+        tags = setOf("excel", "spreadsheets", "table"),
+        zhDisplayName = "板材",
+        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val Shell = LucideIconMetadata(
         key = LucideIconKey("shell"),
         displayName = "Shell",
@@ -926,87 +1006,15 @@ internal object LucideGeneratedMetadataChunk13 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val SquareChartGantt = LucideIconMetadata(
-        key = LucideIconKey("square-chart-gantt"),
-        displayName = "Square Chart Gantt",
-        tags = setOf("agile", "button", "code", "coding", "date", "deadline", "event", "gantt-chart-square", "intentions", "manage", "overview", "period", "plan", "productivity", "projects", "range", "roadmap", "square-gantt-chart", "timeline", "toolbar", "work"),
-        zhDisplayName = "方形图甘特图",
-        categories = setOf(LucideIconCategory.Charts, LucideIconCategory.Design, LucideIconCategory.Development, LucideIconCategory.Time),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareCheckBig = LucideIconMetadata(
-        key = LucideIconKey("square-check-big"),
-        displayName = "Square Check Big",
-        tags = setOf("check-square", "complete", "done", "task", "tick", "todo"),
-        zhDisplayName = "方格大号",
-        categories = setOf(LucideIconCategory.Notifications),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareCheck = LucideIconMetadata(
-        key = LucideIconKey("square-check"),
-        displayName = "Square Check",
-        tags = setOf("check-square-2", "complete", "done", "task", "tick", "todo"),
-        zhDisplayName = "方形格子",
-        categories = setOf(LucideIconCategory.Notifications),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareChevronDown = LucideIconMetadata(
-        key = LucideIconKey("square-chevron-down"),
-        displayName = "Square Chevron Down",
-        tags = setOf("back", "chevron-down-square", "menu", "panel"),
-        zhDisplayName = "方形 V 形羽绒服",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Navigation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareChevronLeft = LucideIconMetadata(
-        key = LucideIconKey("square-chevron-left"),
-        displayName = "Square Chevron Left",
-        tags = setOf("<", "back", "button", "chevron-left-square", "fewer", "keyboard", "less than", "menu", "panel", "previous"),
-        zhDisplayName = "方形雪佛龙左",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Navigation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareChevronRight = LucideIconMetadata(
-        key = LucideIconKey("square-chevron-right"),
-        displayName = "Square Chevron Right",
-        tags = setOf(">", "chevron-right-square", "code", "coding", "command line", "console", "forward", "greater", "menu", "more than", "next", "panel", "prompt", "shell", "terminal"),
-        zhDisplayName = "方形雪佛龙右",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Development, LucideIconCategory.Navigation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareChevronUp = LucideIconMetadata(
-        key = LucideIconKey("square-chevron-up"),
-        displayName = "Square Chevron Up",
-        tags = setOf("^", "ahead", "button", "caret", "chevron-up-square", "control", "ctrl", "exponential", "keyboard", "mac", "menu", "panel", "power", "superscript"),
-        zhDisplayName = "方形 V 形向上",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Math, LucideIconCategory.Navigation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareCode = LucideIconMetadata(
-        key = LucideIconKey("square-code"),
-        displayName = "Square Code",
-        tags = setOf("code-square", "coding", "gist", "html", "programming", "source", "xml"),
-        zhDisplayName = "方码",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        ServerOff,
+        Server,
+        Settings2,
+        Settings,
+        Shapes,
+        Share2,
+        Share,
+        Sheet,
         Shell,
         ShelvingUnit,
         ShieldAlert,
@@ -1098,14 +1106,6 @@ internal object LucideGeneratedMetadataChunk13 {
         SquareAsterisk,
         SquareBottomDashedScissors,
         SquareCenterlineDashedHorizontal,
-        SquareCenterlineDashedVertical,
-        SquareChartGantt,
-        SquareCheckBig,
-        SquareCheck,
-        SquareChevronDown,
-        SquareChevronLeft,
-        SquareChevronRight,
-        SquareChevronUp,
-        SquareCode
+        SquareCenterlineDashedVertical
     )
 }

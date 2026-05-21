@@ -6,6 +6,65 @@ import com.shermant.core.model.LucideIconKey
 import com.shermant.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk8 {
+    val HeartPulse = LucideIconMetadata(
+        key = LucideIconKey("heart-pulse"),
+        displayName = "Heart Pulse",
+        tags = setOf("blood pressure", "cardiac", "diastole", "health", "heartbeat", "medical", "pulse", "systole"),
+        zhDisplayName = "心脏脉搏",
+        categories = setOf(LucideIconCategory.Medical),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HeartX = LucideIconMetadata(
+        key = LucideIconKey("heart-x"),
+        displayName = "Heart X",
+        tags = setOf("clear", "delete", "dismiss", "reject", "remove", "unfavorite", "unlike"),
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Multimedia, LucideIconCategory.Shapes, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Heart = LucideIconMetadata(
+        key = LucideIconKey("heart"),
+        displayName = "Heart",
+        tags = setOf("cards", "emotion", "like", "love", "playing", "suit"),
+        zhDisplayName = "心",
+        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.Gaming, LucideIconCategory.Medical, LucideIconCategory.Multimedia, LucideIconCategory.Shapes, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Heater = LucideIconMetadata(
+        key = LucideIconKey("heater"),
+        displayName = "Heater",
+        tags = setOf("amenities", "comfort", "electric", "electronics", "fire", "heating", "stove", "warmth"),
+        zhDisplayName = "加热器",
+        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Home, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Helicopter = LucideIconMetadata(
+        key = LucideIconKey("helicopter"),
+        displayName = "Helicopter",
+        tags = setOf("aircraft", "aviation", "flyer", "flying", "gear", "helicopter", "helipad", "rotor", "technology", "transport", "vehicle"),
+        zhDisplayName = "直升机",
+        categories = setOf(LucideIconCategory.Transportation, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Hexagon = LucideIconMetadata(
+        key = LucideIconKey("hexagon"),
+        displayName = "Hexagon",
+        tags = setOf("logo", "node.js", "shape"),
+        zhDisplayName = "六边形",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Shapes),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val Highlighter = LucideIconMetadata(
         key = LucideIconKey("highlighter"),
         displayName = "Highlighter",
@@ -519,7 +578,7 @@ internal object LucideGeneratedMetadataChunk8 {
     val Landmark = LucideIconMetadata(
         key = LucideIconKey("landmark"),
         displayName = "Landmark",
-        tags = setOf("architecture", "art gallery", "bank", "building", "capitol", "classical", "columns", "finance", "government", "hall", "institute", "institution", "money", "museum", "pediment", "pillars", "portico"),
+        tags = setOf("ancient", "architecture", "art gallery", "bank", "building", "capitol", "classical", "columns", "doric", "finance", "government", "hall", "historic", "history", "institute", "institution", "library", "money", "monument", "museum", "pediment", "pillars", "portico", "site", "structure", "temple"),
         zhDisplayName = "历史",
         categories = setOf(LucideIconCategory.Buildings, LucideIconCategory.Finance, LucideIconCategory.Navigation),
         defaultStrokeWidth = 2.0f,
@@ -601,6 +660,15 @@ internal object LucideGeneratedMetadataChunk8 {
         displayName = "Layers 2",
         tags = setOf("copies", "copy", "double", "duplicate", "pages", "paperwork", "pile", "sheets", "shortcuts", "stack"),
         zhDisplayName = "房子加",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val LayersMinus = LucideIconMetadata(
+        key = LucideIconKey("layers-minus"),
+        displayName = "Layers Minus",
+        tags = setOf("copies", "copy", "delete", "layers", "pages", "paperwork", "pile", "remove", "sheets", "stack"),
         categories = setOf(LucideIconCategory.Design, LucideIconCategory.Layout),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
@@ -936,77 +1004,13 @@ internal object LucideGeneratedMetadataChunk8 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val ListIndentDecrease = LucideIconMetadata(
-        key = LucideIconKey("list-indent-decrease"),
-        displayName = "List Indent Decrease",
-        tags = setOf("indent-decrease", "outdent", "tab", "text"),
-        zhDisplayName = "键盘",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListIndentIncrease = LucideIconMetadata(
-        key = LucideIconKey("list-indent-increase"),
-        displayName = "List Indent Increase",
-        tags = setOf("indent", "indent-increase", "tab", "text"),
-        zhDisplayName = "灯顶",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListMinus = LucideIconMetadata(
-        key = LucideIconKey("list-minus"),
-        displayName = "List Minus",
-        tags = setOf("delete", "playlist", "remove", "song", "subtract", "unqueue"),
-        zhDisplayName = "灯台",
-        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListMusic = LucideIconMetadata(
-        key = LucideIconKey("list-music"),
-        displayName = "List Music",
-        tags = setOf("audio", "music", "playback", "playlist", "queue"),
-        zhDisplayName = "灯底板",
-        categories = setOf(LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListOrdered = LucideIconMetadata(
-        key = LucideIconKey("list-ordered"),
-        displayName = "List Ordered",
-        tags = setOf("number", "order", "queue"),
-        zhDisplayName = "灯墙倒下",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListPlus = LucideIconMetadata(
-        key = LucideIconKey("list-plus"),
-        displayName = "List Plus",
-        tags = setOf("add", "new", "playlist", "song", "track"),
-        zhDisplayName = "灯墙向上",
-        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListRestart = LucideIconMetadata(
-        key = LucideIconKey("list-restart"),
-        displayName = "List Restart",
-        tags = setOf("playlist", "refresh", "reload", "replay", "reset"),
-        zhDisplayName = "灯",
-        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        HeartPulse,
+        HeartX,
+        Heart,
+        Heater,
+        Helicopter,
+        Hexagon,
         Highlighter,
         History,
         HopOff,
@@ -1067,6 +1071,7 @@ internal object LucideGeneratedMetadataChunk8 {
         Lasso,
         Laugh,
         Layers2,
+        LayersMinus,
         LayersPlus,
         Layers,
         LayoutDashboard,
@@ -1099,13 +1104,6 @@ internal object LucideGeneratedMetadataChunk8 {
         ListCollapse,
         ListEnd,
         ListFilterPlus,
-        ListFilter,
-        ListIndentDecrease,
-        ListIndentIncrease,
-        ListMinus,
-        ListMusic,
-        ListOrdered,
-        ListPlus,
-        ListRestart
+        ListFilter
     )
 }
