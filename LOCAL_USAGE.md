@@ -111,6 +111,8 @@ fun LocalLucidePickerTest() {
     LucideIconPicker(
         state = pickerState,
         columns = 4,
+        pageSize = 24,
+        searchLimit = 100,
         onIconSelected = { metadata ->
             println(metadata.key.value)
         },
@@ -138,6 +140,9 @@ On Windows PowerShell:
 ```powershell
 .\gradlew.bat build
 ```
+
+When the picker query is blank, it now shows all registered icons and paginates them by `pageSize`.
+When the query is not blank, search results still come from `search()` and respect `searchLimit`.
 
 If the build succeeds and your app can import `com.shermant.*`, the composite build setup is working.
 

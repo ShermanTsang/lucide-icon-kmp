@@ -36,6 +36,7 @@ fun IconPickerDemoScreen(onIconSelected: (String) -> Unit) {
         state = state,
         modifier = Modifier.height(320.dp),
         columns = 3,
+        pageSize = 12,
         iconSize = 24.dp,
         iconColor = Color(0xFF111827),
         style = style,

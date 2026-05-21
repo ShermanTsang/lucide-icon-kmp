@@ -95,6 +95,8 @@ LucideIconPicker(
     state = state,
     locale = LucideLocale.Zh,
     columns = 4,
+    pageSize = 24,
+    searchLimit = 100,
     iconSize = 20.dp,
     onIconSelected = { metadata ->
         println(metadata.key.value)
@@ -125,6 +127,18 @@ LucideIcons.registry.registerCustomIcon(
 生成后的图标文件应作为仓库内容提交，这样使用者在正常接入库时不需要再次执行生成。
 
 当前固定的 Lucide 快照版本为 `1.16.0`；准确的 tag、commit 与资源数量记录在 `lucide-generator/src/main/resources/lucide-icons/VERSION.txt`。
+
+## 搜索与分页行为
+
+- 支持大小写不敏感的精确匹配。
+- 支持前缀匹配。
+- 支持子串匹配。
+- 支持基于标签的匹配。
+- 支持 `en` 和 `zh` 的本地化 Picker 文案。
+- 当 `locale` 对应语言可用时，支持中英文搜索内置图标。
+- 当查询为空时，Picker 会显示全部已注册图标。
+- 通过 `pageSize` 控制每页显示数量。
+- `searchLimit` 仅在查询非空时生效。
 
 ## 发布 SNAPSHOT 到 Central
 

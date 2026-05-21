@@ -95,6 +95,8 @@ LucideIconPicker(
     state = state,
     locale = LucideLocale.Zh,
     columns = 4,
+    pageSize = 24,
+    searchLimit = 100,
     iconSize = 20.dp,
     onIconSelected = { metadata ->
         println(metadata.key.value)
@@ -236,6 +238,9 @@ Desktop, Android, and iOS sample entry points also exist in `sample-compose`, bu
 - Supports tag-based matching.
 - Supports localized picker labels for `en` and `zh`.
 - Supports searching built-in icons in English and Chinese when `locale` is set accordingly.
+- Shows all registered icons when the picker query is blank.
+- Supports page-based pagination through `pageSize`.
+- Applies `searchLimit` only when the picker query is not blank.
 
 ## License
 

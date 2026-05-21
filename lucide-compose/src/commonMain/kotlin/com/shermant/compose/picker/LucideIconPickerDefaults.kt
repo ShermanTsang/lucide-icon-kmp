@@ -62,6 +62,18 @@ object LucideIconPickerDefaults {
                 fontSize = 12.sp,
             ),
         ),
+        pagination: LucideIconPickerPaginationStyle = LucideIconPickerPaginationStyle(
+            horizontalSpacing = 12.dp,
+            previousLabel = previousLabelText(locale),
+            nextLabel = nextLabelText(locale),
+            textStyle = TextStyle(
+                color = Color(0xFF374151),
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Medium,
+            ),
+            contentColor = Color(0xFF111827),
+            disabledContentColor = Color(0xFF9CA3AF),
+        ),
     ): LucideIconPickerStyle = LucideIconPickerStyle(
         containerPadding = containerPadding,
         containerVerticalSpacing = containerVerticalSpacing,
@@ -70,6 +82,7 @@ object LucideIconPickerDefaults {
         searchBar = searchBar,
         categories = categories,
         grid = grid,
+        pagination = pagination,
     )
 
     private fun searchLabelText(locale: LucideLocale): String = when (locale) {
@@ -80,5 +93,15 @@ object LucideIconPickerDefaults {
     private fun allLabelText(locale: LucideLocale): String = when (locale) {
         LucideLocale.En -> "All"
         LucideLocale.Zh -> "全部"
+    }
+
+    private fun previousLabelText(locale: LucideLocale): String = when (locale) {
+        LucideLocale.En -> "Previous"
+        LucideLocale.Zh -> "上一页"
+    }
+
+    private fun nextLabelText(locale: LucideLocale): String = when (locale) {
+        LucideLocale.En -> "Next"
+        LucideLocale.Zh -> "下一页"
     }
 }
