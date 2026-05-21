@@ -28,7 +28,7 @@
 https://central.sonatype.com/repository/maven-snapshots/
 ```
 
-只有在对应 snapshot 制品已经发布到该仓库时，才应在消费端直接使用这个地址。发布工作流仍然通过 `MAVEN_REPOSITORY_URL` 读取仓库地址，因此可以按环境覆盖。
+只有在对应 snapshot 制品已经上传到 Central snapshots 之后，才应在消费端直接使用这个地址。这个地址是消费仓库地址，不是正式版发布的主上传入口。
 
 依赖声明示例：
 
@@ -126,29 +126,89 @@ LucideIcons.registry.registerCustomIcon(
 
 当前固定的 Lucide 快照版本为 `1.16.0`；准确的 tag、commit 与资源数量记录在 `lucide-generator/src/main/resources/lucide-icons/VERSION.txt`。
 
-## 本地校验发布流程
+## 发布 SNAPSHOT 到 Central
 
-该仓库在 GitHub Actions 与本地 `act` 运行中都保持严格的远端发布配置校验。
-真正的全平台发布会在 GitHub Actions 的 `macos-latest` runner 上执行，以包含 Apple variants。
+该仓库现在只面向 Maven Central。
+当 `VERSION_NAME` 以 `-SNAPSHOT` 结尾时，请使用 `publishCentralSnapshot`。
 
-本地执行发布工作流前，请先完成以下准备：
+执行 snapshot 发布前，请通过以下任一方式提供 Central Portal user token：
 
-1. 在本地创建 `.env` 文件。
-2. 在本地创建 `.secrets` 文件。
-3. 在 `.secrets` 中为 `MAVEN_REPOSITORY_URL` 设置一个真实可用的远端 Maven 仓库地址。
-4. 如果仓库需要鉴权，请在 `.secrets` 中填写 `MAVEN_USERNAME` 与 `MAVEN_PASSWORD`。
-5. 如果需要签名，请在 `.secrets` 中提供单行 Base64 编码的 `SIGNING_KEY_BASE64`，并同时提供 `SIGNING_PASSWORD`。
-6. 在 `.env` 中保留 `ACT=true`，这样本地 `act` 运行会在校验后停止。
+- 在 `~/.gradle/gradle.properties` 中设置 `mavenCentralUsername` 和 `mavenCentralPassword`
+- 使用标准 Gradle 环境变量 `ORG_GRADLE_PROJECT_mavenCentralUsername` 和 `ORG_GRADLE_PROJECT_mavenCentralPassword`
+- 使用当前构建额外兼容的简化环境变量 `MAVEN_CENTRAL_USERNAME` 和 `MAVEN_CENTRAL_PASSWORD`
 
-本地运行校验工作流：
+由于这些发布任务会包含 Android publication，请先在本机配置 Android SDK：
+
+- 在仓库根目录的本地 `local.properties` 中添加 `sdk.dir=...`
+- 或在当前 shell 环境中设置 `ANDROID_HOME` / `ANDROID_SDK_ROOT`
+
+Snapshot 发布不强制要求签名。
+如果你希望在本地对 snapshot 也签名，当前构建接受以下任一方式：
+
+- `signingInMemoryKey` / `signingInMemoryKeyPassword`
+- `ORG_GRADLE_PROJECT_signingInMemoryKey` / `ORG_GRADLE_PROJECT_signingInMemoryKeyPassword`
+- `SIGNING_KEY_BASE64` / `SIGNING_PASSWORD`
+
+推荐使用以下命令发布 snapshot：
 
 ```bash
-act
+./gradlew publishCentralSnapshot
 ```
 
-通过 `act` 运行时，工作流会在 `Validate publish configuration` 后结束。
-要产出包含 iOS 制品的完整发布，需要使用 GitHub Actions 的 macOS runner，或在本地 macOS 主机上执行。
-如果缺少必要的发布变量，工作流会在 `Validate publish configuration` 步骤直接失败，Gradle `publish` 不会开始执行。
+在 Windows PowerShell 中可使用：
+
+```powershell
+.\gradlew.bat publishCentralSnapshot
+```
+
+如果版本不是 snapshot，或者缺少 Central token，任务会在进入上传前直接失败。
+
+## 通过 Central Portal 发布正式版
+
+当 `VERSION_NAME` 为正式版且不带 `-SNAPSHOT` 后缀时，请使用 `publishCentralRelease`。
+
+正式版发布要求：
+
+- `com.shermant` 已在 Central Portal 完成 namespace 验证
+- 如果你也要发 snapshot，则对应 namespace 已开启 snapshots
+- 使用的是 Central Portal user token，而不是门户网站登录密码
+- 正式版所有构件都具备签名配置
+
+推荐的凭据来源包括：
+
+- `~/.gradle/gradle.properties`
+- `ORG_GRADLE_PROJECT_mavenCentralUsername` / `ORG_GRADLE_PROJECT_mavenCentralPassword`
+- `MAVEN_CENTRAL_USERNAME` / `MAVEN_CENTRAL_PASSWORD`
+- 继续沿用当前单行 Base64 私钥流程时可使用 `SIGNING_KEY_BASE64` / `SIGNING_PASSWORD`
+
+由于正式版发布同样会解析 Android 相关构件，请先在本机配置 Android SDK：
+
+- 在仓库根目录的本地 `local.properties` 中添加 `sdk.dir=...`
+- 或在当前 shell 环境中设置 `ANDROID_HOME` / `ANDROID_SDK_ROOT`
+
+推荐使用以下命令上传并自动发布正式版：
+
+```bash
+./gradlew publishCentralRelease
+```
+
+在 Windows PowerShell 中可使用：
+
+```powershell
+.\gradlew.bat publishCentralRelease
+```
+
+当前构建会在上传前先校验正式版模式：
+
+- `VERSION_NAME` 不能以 `-SNAPSHOT` 结尾
+- 必须提供 Central token
+- 必须同时提供签名私钥和签名密码
+
+`.secrets` 文件如果继续保留，只能作为你自己的本地凭据文件。
+Gradle 不会自动读取 `.secrets`。
+
+在 Windows 上执行远端发布时，不保证能够产出完整的 Apple variants。
+如果你需要完整的 Apple 制品集合，请在 macOS 主机上执行相同的 Gradle 发布命令。
 
 ## 运行示例
 

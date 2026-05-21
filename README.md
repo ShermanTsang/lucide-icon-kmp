@@ -28,7 +28,7 @@ For the current snapshot publish setup, the local publish environment points to:
 https://central.sonatype.com/repository/maven-snapshots/
 ```
 
-Use that repository only when your snapshot artifacts have been published there. The publish workflow still reads the repository URL from `MAVEN_REPOSITORY_URL`, so it can be changed per environment.
+Use that repository only after your snapshot artifacts have been uploaded to Central snapshots. It is a consumer repository URL, not the primary release upload endpoint.
 
 Example dependency setup:
 
@@ -126,29 +126,89 @@ Generated icon files are intended to be committed so consumers do not need to re
 
 The current pinned Lucide snapshot is `1.16.0`; the exact tag, commit, and resource counts are recorded in `lucide-generator/src/main/resources/lucide-icons/VERSION.txt`.
 
-## Validate Publish Workflow Locally
+## Publish SNAPSHOTs To Central
 
-This repository keeps strict remote publish validation in both GitHub Actions and local `act` runs.
-Actual full-platform publication runs on `macos-latest` in GitHub Actions so Apple variants are included.
+This repository now targets Maven Central only.
+Use `publishCentralSnapshot` when `VERSION_NAME` ends with `-SNAPSHOT`.
 
-Before running the publish workflow locally:
+Before running a snapshot publish, provide your Central Portal user token through either:
 
-1. Create a local `.env` file.
-2. Create a local `.secrets` file.
-3. Set `MAVEN_REPOSITORY_URL` in `.secrets` to a real remote Maven repository.
-4. If authentication is required, fill in `MAVEN_USERNAME` and `MAVEN_PASSWORD` in `.secrets`.
-5. If signing is required, set `SIGNING_KEY_BASE64` in `.secrets` to the Base64-encoded ASCII-armored private key on a single line, then provide `SIGNING_PASSWORD`.
-6. Keep `ACT=true` in `.env` so the workflow stops after validation during local `act` runs.
+- `~/.gradle/gradle.properties` with `mavenCentralUsername` and `mavenCentralPassword`
+- standard Gradle environment variables `ORG_GRADLE_PROJECT_mavenCentralUsername` and `ORG_GRADLE_PROJECT_mavenCentralPassword`
+- the simplified environment variables supported by this build: `MAVEN_CENTRAL_USERNAME` and `MAVEN_CENTRAL_PASSWORD`
 
-Run the validation workflow locally with:
+Because these publish tasks include Android publications, configure a local Android SDK before running them:
+
+- add `sdk.dir=...` to a local root `local.properties` file
+- or set `ANDROID_HOME` / `ANDROID_SDK_ROOT` in your shell environment
+
+Signing is optional for snapshots.
+If you want to sign snapshot artifacts locally, this build accepts:
+
+- `signingInMemoryKey` / `signingInMemoryKeyPassword`
+- `ORG_GRADLE_PROJECT_signingInMemoryKey` / `ORG_GRADLE_PROJECT_signingInMemoryKeyPassword`
+- `SIGNING_KEY_BASE64` / `SIGNING_PASSWORD`
+
+Publish a snapshot with:
 
 ```bash
-act
+./gradlew publishCentralSnapshot
 ```
 
-When running through `act`, the workflow stops after `Validate publish configuration`.
-Full publication, including iOS artifacts, requires the GitHub Actions macOS runner or a local macOS host.
-If any required publish variables are missing, the workflow fails in `Validate publish configuration` before Gradle `publish` starts.
+On Windows PowerShell, use:
+
+```powershell
+.\gradlew.bat publishCentralSnapshot
+```
+
+The task fails early if the version is not a snapshot or if the Central token is missing.
+
+## Publish Releases Through Central Portal
+
+Use `publishCentralRelease` when `VERSION_NAME` is a formal release without the `-SNAPSHOT` suffix.
+
+Formal releases require all of the following:
+
+- a verified Central Portal namespace for `com.shermant`
+- Central snapshots enabled if you also want snapshot uploads
+- a Central Portal user token, not your website login password
+- signing credentials for all release artifacts
+
+Recommended credential sources are:
+
+- `~/.gradle/gradle.properties`
+- `ORG_GRADLE_PROJECT_mavenCentralUsername` / `ORG_GRADLE_PROJECT_mavenCentralPassword`
+- `MAVEN_CENTRAL_USERNAME` / `MAVEN_CENTRAL_PASSWORD`
+- `SIGNING_KEY_BASE64` / `SIGNING_PASSWORD` for the existing single-line Base64 private key workflow
+
+Configure a local Android SDK before running the release task because the publication graph also resolves Android artifacts:
+
+- add `sdk.dir=...` to a local root `local.properties` file
+- or set `ANDROID_HOME` / `ANDROID_SDK_ROOT` in your shell environment
+
+Publish and auto-release through Central Portal with:
+
+```bash
+./gradlew publishCentralRelease
+```
+
+On Windows PowerShell, use:
+
+```powershell
+.\gradlew.bat publishCentralRelease
+```
+
+This build validates the release mode before upload:
+
+- `VERSION_NAME` must not end with `-SNAPSHOT`
+- Central token credentials must be present
+- signing key and signing password must both be present
+
+The tracked `.secrets` filename is only a local convenience if you load it into your shell yourself.
+Gradle does not automatically read `.secrets`.
+
+Remote publishing from Windows does not guarantee complete Apple variants output.
+If you need the full Apple artifact set, run the same publish command on a macOS host.
 
 ## Run Sample Targets
 

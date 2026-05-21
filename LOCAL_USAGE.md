@@ -10,7 +10,7 @@ Why this is recommended:
 
 - This repository is already organized as a standalone multi-module build.
 - `lucide-compose` depends on `lucide-core` internally.
-- The repository currently does not provide a ready-to-use `maven-publish` setup for `mavenLocal()`.
+- The repository now includes Maven Central snapshot and release publishing configuration, but local integration still works best with source-level reuse.
 - Composite build keeps this repository self-contained and lets your consumer project use the latest local source code directly.
 
 ## Modules
@@ -157,11 +157,10 @@ Do not copy `:lucide-core` and `:lucide-compose` directly into your own build un
 
 This repository uses its own Gradle version catalog, so composite build is the safer local testing setup.
 
-### `mavenLocal()` Does Not Work
+### `mavenLocal()` Is Not The Primary Local Workflow
 
-This repository does not currently include a ready-to-use publish configuration, so `publishToMavenLocal` is not the main workflow yet.
-
-If you want that workflow, add `maven-publish`, `group`, and `version` configuration first.
+This repository already includes Maven Central snapshot and release publishing configuration.
+For local development, composite build is still the recommended workflow because it lets your consumer project use current source changes directly without publishing and reinstalling artifacts first.
 
 ## Suggested Workflow During Local Development
 
