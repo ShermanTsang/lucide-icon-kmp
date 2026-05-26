@@ -18,9 +18,12 @@
 当前发布坐标如下：
 
 - `group`：`com.shermant`
-- `version`：`0.1.0-SNAPSHOT`
-- `lucide-core`：`com.shermant:lucide-icon-kmp:0.1.0-SNAPSHOT`
-- `lucide-compose`：`com.shermant:lucide-icon-kmp-compose:0.1.0-SNAPSHOT`
+- `version`：`0.2.0-SNAPSHOT`
+- `lucide-core`：`com.shermant:lucide-icon-kmp:0.2.0-SNAPSHOT`
+- `lucide-compose`：`com.shermant:lucide-icon-kmp-compose:0.2.0-SNAPSHOT`
+
+对外公开的 Maven 坐标以上述 artifact id 为准。
+仓库内部 Gradle 模块名 `:lucide-core` 和 `:lucide-compose` 不是消费端应该直接声明的依赖坐标。
 
 当前本地发布环境中的 snapshot 仓库地址配置为：
 
@@ -40,8 +43,8 @@ repositories {
 }
 
 dependencies {
-    implementation("com.shermant:lucide-icon-kmp:0.1.0-SNAPSHOT")
-    implementation("com.shermant:lucide-icon-kmp-compose:0.1.0-SNAPSHOT")
+    implementation("com.shermant:lucide-icon-kmp:0.2.0-SNAPSHOT")
+    implementation("com.shermant:lucide-icon-kmp-compose:0.2.0-SNAPSHOT")
 }
 ```
 
@@ -173,13 +176,12 @@ Snapshot 发布不强制要求签名。
 ./gradlew publishCentralSnapshot
 ```
 
-在 Windows PowerShell 中可使用：
+包含 Apple variants 的公共 snapshot 必须在 macOS 主机或 macOS CI 上发布。
+不要在 Windows 上发布公共 snapshot，否则可能缺失 `iosArm64` 和 `iosSimulatorArm64` 制品。
 
-```powershell
-.\scripts\publish-central.ps1 -Task publishCentralSnapshot
-```
+仓库现在提供了 `.github/workflows/publish-central.yml` 作为标准的 macOS 公共 snapshot 发布入口。
 
-如果版本不是 snapshot，或者缺少 Central token，任务会在进入上传前直接失败。
+如果版本不是 snapshot、缺少 Central token，或者当前宿主机不是 macOS，任务都会在进入上传前直接失败。
 
 ## 通过 Central Portal 发布正式版
 
@@ -208,23 +210,22 @@ Snapshot 发布不强制要求签名。
 ./gradlew publishCentralRelease
 ```
 
-在 Windows PowerShell 中可使用：
-
-```powershell
-.\scripts\publish-central.ps1 -Task publishCentralRelease
-```
-
 当前构建会在上传前先校验正式版模式：
 
 - `VERSION_NAME` 不能以 `-SNAPSHOT` 结尾
 - 必须提供 Central token
 - 必须同时提供签名私钥和签名密码
 
-对于本地 PowerShell 发布，`scripts/publish-central.ps1` 会读取仓库根目录 `.secrets`，并转成发布插件实际读取的 Gradle 属性。
-只有在你明确需要 CI 或 shell 注入时，才建议直接改用环境变量。
+正式版发布同样必须在 macOS 主机或 macOS CI 上执行，才能保证 Apple variants 完整。
+请优先使用 macOS GitHub Actions 工作流，或在本地 macOS 机器上执行相同命令。
 
-在 Windows 上执行远端发布时，不保证能够产出完整的 Apple variants。
-如果你需要完整的 Apple 制品集合，请在 macOS 主机上执行相同的 Gradle 发布命令。
+`scripts/publish-central.ps1` 仍会把 `.secrets` 桥接为 Gradle 属性，便于在 Windows 上执行校验任务，但它会主动阻止公共 snapshot 和正式版发布。
+
+## Snapshot 解析失败排查
+
+- 如果消费端报错里出现 `lucide-core-iosarm64` 或 `lucide-compose-iosarm64`，先确认依赖里使用的是公开坐标 `lucide-icon-kmp` 和 `lucide-icon-kmp-compose`，而不是内部模块名。
+- 如果依赖坐标已经正确，但 iOS 制品仍然无法解析，通常说明当前公共 snapshot 是在不完整的 Apple 发布环境下产生的。
+- 请在 macOS 主机或 macOS CI 上重新发布该 snapshot，然后在消费端刷新依赖。
 
 ## 运行示例
 

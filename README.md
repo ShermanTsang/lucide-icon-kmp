@@ -18,9 +18,12 @@ This repository is organized as a multi-module Kotlin Multiplatform build:
 Current publish coordinates are:
 
 - `group`: `com.shermant`
-- `version`: `0.1.0-SNAPSHOT`
-- `lucide-core`: `com.shermant:lucide-icon-kmp:0.1.0-SNAPSHOT`
-- `lucide-compose`: `com.shermant:lucide-icon-kmp-compose:0.1.0-SNAPSHOT`
+- `version`: `0.2.0-SNAPSHOT`
+- `lucide-core`: `com.shermant:lucide-icon-kmp:0.2.0-SNAPSHOT`
+- `lucide-compose`: `com.shermant:lucide-icon-kmp-compose:0.2.0-SNAPSHOT`
+
+Public Maven coordinates use the published artifact ids above.
+The internal Gradle module names `:lucide-core` and `:lucide-compose` are not the coordinates you should declare in a consumer project.
 
 For the current snapshot publish setup, the local publish environment points to:
 
@@ -40,8 +43,8 @@ repositories {
 }
 
 dependencies {
-    implementation("com.shermant:lucide-icon-kmp:0.1.0-SNAPSHOT")
-    implementation("com.shermant:lucide-icon-kmp-compose:0.1.0-SNAPSHOT")
+    implementation("com.shermant:lucide-icon-kmp:0.2.0-SNAPSHOT")
+    implementation("com.shermant:lucide-icon-kmp-compose:0.2.0-SNAPSHOT")
 }
 ```
 
@@ -161,13 +164,12 @@ Publish a snapshot with:
 ./gradlew publishCentralSnapshot
 ```
 
-On Windows PowerShell, use:
+Public snapshots that include Apple variants must be published from a macOS host or macOS CI.
+Do not publish public snapshots from Windows because they can miss `iosArm64` and `iosSimulatorArm64` artifacts.
 
-```powershell
-.\scripts\publish-central.ps1 -Task publishCentralSnapshot
-```
+The repository now includes a macOS GitHub Actions workflow at `.github/workflows/publish-central.yml` as the standard public snapshot entry point.
 
-The task fails early if the version is not a snapshot or if the Central token is missing.
+The task fails early if the version is not a snapshot, if the Central token is missing, or if the host is not macOS.
 
 ## Publish Releases Through Central Portal
 
@@ -196,23 +198,22 @@ Publish and auto-release through Central Portal with:
 ./gradlew publishCentralRelease
 ```
 
-On Windows PowerShell, use:
-
-```powershell
-.\scripts\publish-central.ps1 -Task publishCentralRelease
-```
-
 This build validates the release mode before upload:
 
 - `VERSION_NAME` must not end with `-SNAPSHOT`
 - Central token credentials must be present
 - signing key and signing password must both be present
 
-For local PowerShell publishing, `scripts/publish-central.ps1` reads the tracked root `.secrets` file and exports the Gradle properties expected by the publishing plugin.
-Use environment variables directly only when you intentionally need a CI or non-file-based shell setup.
+Release publishing that includes Apple variants must also run on macOS.
+Use the macOS GitHub Actions workflow or a local macOS machine for public release publishing.
 
-Remote publishing from Windows does not guarantee complete Apple variants output.
-If you need the full Apple artifact set, run the same publish command on a macOS host.
+`scripts/publish-central.ps1` still bridges `.secrets` into Gradle properties for validation tasks on Windows, but it intentionally blocks public snapshot and release publishing.
+
+## Troubleshooting Snapshot Resolution
+
+- If your consumer project reports artifacts such as `lucide-core-iosarm64` or `lucide-compose-iosarm64`, first verify that your dependencies use the public coordinates `lucide-icon-kmp` and `lucide-icon-kmp-compose`.
+- If you already use the public coordinates and iOS artifacts still fail to resolve, the current public snapshot was likely published without complete Apple variants.
+- Republish the snapshot from macOS or the macOS CI workflow, then refresh dependencies in the consumer project.
 
 ## Run Sample Targets
 

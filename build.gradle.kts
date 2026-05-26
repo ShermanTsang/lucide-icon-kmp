@@ -1,6 +1,8 @@
 import com.vanniktech.maven.publish.MavenPublishBaseExtension
 import org.gradle.api.GradleException
 import org.gradle.api.Project
+import org.gradle.api.publish.PublishingExtension
+import org.gradle.api.publish.maven.MavenPublication
 import org.gradle.plugins.signing.SigningExtension
 import java.nio.charset.StandardCharsets
 import java.util.Base64
@@ -51,6 +53,7 @@ val publishableLibraryProjects =
         ":lucide-core",
         ":lucide-compose",
     )
+val appleVariantLibraryProjects = publishableLibraryProjects
 val publishedArtifactIds =
     mapOf(
         ":lucide-core" to "lucide-icon-kmp",
@@ -180,6 +183,8 @@ fun Project.bridgeExtraPropertyIfMissing(propertyName: String, propertyValue: St
     extensions.extraProperties[propertyName] = propertyValue
 }
 
+fun currentHostIsMacOs(): Boolean = System.getProperty("os.name").orEmpty().lowercase().contains("mac")
+
 val validateCentralSnapshotConfig =
     tasks.register("validateCentralSnapshotConfig") {
         group = "publishing"
@@ -211,6 +216,66 @@ val validateCentralSnapshotConfig =
                 relatedPropertyName = "signingInMemoryKeyPassword or ORG_GRADLE_PROJECT_signingInMemoryKeyPassword or SIGNING_PASSWORD",
                 relatedPropertyValue = signingInMemoryKeyPassword,
             )
+        }
+    }
+
+val validateApplePublicationHost =
+    tasks.register("validateApplePublicationHost") {
+        group = "publishing"
+        description = "Ensures public publishing that includes Apple variants runs on macOS."
+
+        doLast {
+            if (appleVariantLibraryProjects.isEmpty() || currentHostIsMacOs()) {
+                return@doLast
+            }
+
+            val projectList = appleVariantLibraryProjects.joinToString(", ")
+            throw GradleException(
+                "Public Apple variant publishing must run on macOS. " +
+                    "The current host is '${System.getProperty("os.name")}' and the following projects publish iOS variants: $projectList. " +
+                    "Use a macOS machine or macOS CI to run publishCentralSnapshot / publishCentralRelease.",
+            )
+        }
+    }
+
+val validatePublishedCoordinates =
+    tasks.register("validatePublishedCoordinates") {
+        group = "publishing"
+        description = "Validates published artifact coordinates before uploading to Maven Central."
+
+        doLast {
+            publishableLibraryProjects.forEach { projectPath ->
+                val subproject = project(projectPath)
+                val publishingExtension = subproject.extensions.findByType(PublishingExtension::class.java)
+                    ?: throw GradleException("Publishing extension is missing for $projectPath.")
+                val expectedArtifactId = publishedArtifactIds[projectPath]
+                    ?: throw GradleException("Expected artifactId is not configured for $projectPath.")
+                val internalProjectName = subproject.name
+                val publications = publishingExtension.publications.withType(MavenPublication::class.java)
+
+                if (publications.isEmpty()) {
+                    throw GradleException("No Maven publications were created for $projectPath.")
+                }
+
+                publications.forEach { publication ->
+                    val artifactId = publication.artifactId.trim()
+                    if (artifactId.isBlank()) {
+                        throw GradleException("Publication ${publication.name} in $projectPath has a blank artifactId.")
+                    }
+                    if (!artifactId.startsWith(expectedArtifactId)) {
+                        throw GradleException(
+                            "Publication ${publication.name} in $projectPath uses artifactId '$artifactId', " +
+                                "but public coordinates must start with '$expectedArtifactId'.",
+                        )
+                    }
+                    if (artifactId.startsWith(internalProjectName)) {
+                        throw GradleException(
+                            "Publication ${publication.name} in $projectPath uses internal module prefix '$internalProjectName'. " +
+                                "Public coordinates must use the published artifact base '$expectedArtifactId'.",
+                        )
+                    }
+                }
+            }
         }
     }
 
@@ -254,6 +319,8 @@ val publishCentralSnapshot =
         group = "publishing"
         description = "Publishes all library modules as SNAPSHOT artifacts to Maven Central snapshots."
         dependsOn(validateCentralSnapshotConfig)
+        dependsOn(validateApplePublicationHost)
+        dependsOn(validatePublishedCoordinates)
         dependsOn(publishableLibraryProjects.map { "$it:publishToMavenCentral" })
     }
 
@@ -262,6 +329,8 @@ val publishCentralRelease =
         group = "publishing"
         description = "Publishes and releases all library modules through the Central Portal."
         dependsOn(validateCentralReleaseConfig)
+        dependsOn(validateApplePublicationHost)
+        dependsOn(validatePublishedCoordinates)
         dependsOn(publishableLibraryProjects.map { "$it:publishAndReleaseToMavenCentral" })
     }
 

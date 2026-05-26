@@ -167,6 +167,9 @@ This repository uses its own Gradle version catalog, so composite build is the s
 This repository already includes Maven Central snapshot and release publishing configuration.
 For local development, composite build is still the recommended workflow because it lets your consumer project use current source changes directly without publishing and reinstalling artifacts first.
 
+If the latest public snapshot has not been republished from macOS yet, iOS consumer targets may still fail to resolve Apple artifacts from the snapshot repository.
+In that case, prefer `includeBuild` for local verification instead of depending on an older public snapshot.
+
 ## Suggested Workflow During Local Development
 
 1. Keep this library repository open in one IDE window.

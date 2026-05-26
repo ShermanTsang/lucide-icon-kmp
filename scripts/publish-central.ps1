@@ -9,6 +9,11 @@ $ErrorActionPreference = "Stop"
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $secretsPath = Join-Path $projectRoot ".secrets"
 $gradleWrapperPath = Join-Path $projectRoot "gradlew.bat"
+$publicPublishTasks = @("publishCentralSnapshot", "publishCentralRelease")
+
+if ($Task -in $publicPublishTasks) {
+    throw "Public Apple variants must be published from macOS or macOS CI. Current host is Windows. Use the macOS publish workflow or run the same task on a macOS machine."
+}
 
 if (-not (Test-Path $secretsPath)) {
     throw "Missing local publish config: $secretsPath"
