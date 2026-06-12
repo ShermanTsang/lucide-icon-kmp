@@ -77,6 +77,13 @@ class LucideIconPickerStateTest {
     }
 
     @Test
+    fun hidesGridLabelsByDefault() {
+        val style = LucideIconPickerDefaults.style()
+
+        assertEquals(false, style.grid.showLabel)
+    }
+
+    @Test
     fun resolvesCategoryOverlayColorFromExplicitOverrideFirst() {
         val style = LucideIconPickerDefaults.style().categories.copy(
             edgeOverlayColor = Color(0xFF2563EB),

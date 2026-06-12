@@ -60,6 +60,7 @@ object LucideIconPickerDefaults {
             verticalSpacing = 12.dp,
             itemPadding = PaddingValues(8.dp),
             itemVerticalSpacing = 6.dp,
+            showLabel = false,
             labelTextStyle = TextStyle(
                 color = Color(0xFF374151),
                 fontSize = 12.sp,

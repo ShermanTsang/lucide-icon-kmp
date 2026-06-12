@@ -54,6 +54,7 @@ data class LucideIconPickerGridStyle(
     val verticalSpacing: Dp = 0.dp,
     val itemPadding: PaddingValues = PaddingValues(0.dp),
     val itemVerticalSpacing: Dp = 0.dp,
+    val showLabel: Boolean = false,
     val labelTextStyle: TextStyle = TextStyle.Default,
 )
 

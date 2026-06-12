@@ -48,10 +48,12 @@ internal fun LucideIconGrid(
                     color = iconColor,
                     strokeWidth = strokeWidth,
                 )
-                BasicText(
-                    text = metadata.displayName,
-                    style = style.labelTextStyle,
-                )
+                if (style.showLabel) {
+                    BasicText(
+                        text = metadata.displayName,
+                        style = style.labelTextStyle,
+                    )
+                }
             }
         }
     }
