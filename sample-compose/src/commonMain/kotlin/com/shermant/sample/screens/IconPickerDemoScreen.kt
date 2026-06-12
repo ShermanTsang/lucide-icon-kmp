@@ -20,12 +20,14 @@ fun IconPickerDemoScreen(onIconSelected: (String) -> Unit) {
         containerBackgroundColor = Color(0xFFF9FAFB),
         searchBar = baseStyle.searchBar.copy(
             shape = RoundedCornerShape(16.dp),
-            backgroundColor = Color.White,
+            backgroundColor = Color.Transparent,
             borderColor = Color(0xFFD1D5DB),
         ),
         categories = baseStyle.categories.copy(
-            selectedBackgroundColor = Color(0xFF2563EB),
+            unselectedBackgroundColor = Color.Transparent,
+            selectedBackgroundColor = Color.Transparent,
             selectedBorderColor = Color(0xFF2563EB),
+            selectedContentColor = Color(0xFF2563EB),
         ),
         grid = baseStyle.grid.copy(
             horizontalSpacing = 16.dp,
