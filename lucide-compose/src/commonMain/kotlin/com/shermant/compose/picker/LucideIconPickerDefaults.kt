@@ -2,6 +2,7 @@ package com.shermant.compose.picker
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.text.TextStyle
@@ -11,6 +12,18 @@ import androidx.compose.ui.unit.sp
 import com.shermant.core.model.LucideLocale
 
 object LucideIconPickerDefaults {
+    fun modifiers(
+        searchBar: Modifier = Modifier,
+        categories: Modifier = Modifier,
+        grid: Modifier = Modifier,
+        pagination: Modifier = Modifier,
+    ): LucideIconPickerModifiers = LucideIconPickerModifiers(
+        searchBar = searchBar,
+        categories = categories,
+        grid = grid,
+        pagination = pagination,
+    )
+
     fun style(
         locale: LucideLocale = LucideLocale.En,
         containerPadding: PaddingValues = PaddingValues(16.dp),

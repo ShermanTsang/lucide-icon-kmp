@@ -1,6 +1,9 @@
 package com.shermant.compose.picker
 
+import androidx.compose.foundation.layout.padding
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 import com.shermant.core.model.LucideIconCategory
 import com.shermant.core.model.LucideLocale
 import kotlin.test.Test
@@ -91,6 +94,29 @@ class LucideIconPickerStateTest {
         val style = LucideIconPickerDefaults.style()
 
         assertEquals(false, style.grid.showLabel)
+    }
+
+    @Test
+    fun providesDefaultComponentModifiers() {
+        val modifiers = LucideIconPickerDefaults.modifiers()
+
+        assertEquals(Modifier, modifiers.searchBar)
+        assertEquals(Modifier, modifiers.categories)
+        assertEquals(Modifier, modifiers.grid)
+        assertEquals(Modifier, modifiers.pagination)
+    }
+
+    @Test
+    fun retainsCustomizedComponentModifiers() {
+        val modifiers = LucideIconPickerDefaults.modifiers().copy(
+            searchBar = Modifier.padding(horizontal = 8.dp),
+            grid = Modifier.padding(vertical = 4.dp),
+        )
+
+        assertEquals(Modifier.padding(horizontal = 8.dp), modifiers.searchBar)
+        assertEquals(Modifier, modifiers.categories)
+        assertEquals(Modifier.padding(vertical = 4.dp), modifiers.grid)
+        assertEquals(Modifier, modifiers.pagination)
     }
 
     @Test

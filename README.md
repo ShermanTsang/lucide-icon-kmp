@@ -119,6 +119,12 @@ For example:
 
 ```kotlin
 val state = rememberLucideIconPickerState()
+val pickerModifiers = LucideIconPickerDefaults.modifiers(
+    searchBar = Modifier.padding(horizontal = 8.dp),
+    categories = Modifier.padding(horizontal = 4.dp),
+    grid = Modifier.padding(horizontal = 4.dp),
+    pagination = Modifier.padding(top = 8.dp),
+)
 
 LucideIconPicker(
     state = state,
@@ -127,11 +133,14 @@ LucideIconPicker(
     pageSize = 24,
     searchLimit = 100,
     iconSize = 20.dp,
+    modifiers = pickerModifiers,
     onIconSelected = { metadata ->
         println(metadata.key.value)
     },
 )
 ```
+
+Use `style` for visual tokens such as colors, spacing, shapes, and labels. Use `modifiers` when you need project-specific Compose layout hooks for the picker's main regions: search bar, category tabs, icon grid, and pagination.
 
 ### Register a custom icon
 

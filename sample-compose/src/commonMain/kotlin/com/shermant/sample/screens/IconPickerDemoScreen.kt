@@ -15,6 +15,12 @@ import com.shermant.compose.picker.rememberLucideIconPickerState
 fun IconPickerDemoScreen(onIconSelected: (String) -> Unit) {
     val state = rememberLucideIconPickerState()
     val baseStyle = LucideIconPickerDefaults.style()
+    val modifiers = LucideIconPickerDefaults.modifiers(
+        searchBar = Modifier.padding(horizontal = 4.dp),
+        categories = Modifier.padding(horizontal = 2.dp),
+        grid = Modifier.padding(horizontal = 2.dp),
+        pagination = Modifier.padding(top = 4.dp),
+    )
     val style = baseStyle.copy(
         containerPadding = PaddingValues(20.dp),
         containerBackgroundColor = Color(0xFFF9FAFB),
@@ -41,6 +47,7 @@ fun IconPickerDemoScreen(onIconSelected: (String) -> Unit) {
         pageSize = 12,
         iconSize = 24.dp,
         iconColor = Color(0xFF111827),
+        modifiers = modifiers,
         style = style,
         onIconSelected = { metadata -> onIconSelected(metadata.key.value) },
     )

@@ -36,6 +36,7 @@ fun LucideIconPicker(
     pageSize: Int = 48,
     searchLimit: Int = 100,
     style: LucideIconPickerStyle = LucideIconPickerDefaults.style(),
+    modifiers: LucideIconPickerModifiers = LucideIconPickerDefaults.modifiers(),
     onIconSelected: (LucideIconMetadata) -> Unit,
 ) {
     require(pageSize > 0) { "pageSize must be greater than 0." }
@@ -92,6 +93,7 @@ fun LucideIconPicker(
             LucideIconSearchBar(
                 query = state.query,
                 onQueryChange = state::updateQuery,
+                modifier = modifiers.searchBar,
                 style = style.searchBar,
             )
         }
@@ -102,6 +104,7 @@ fun LucideIconPicker(
                 selectedCategory = state.selectedCategory,
                 onCategorySelected = state::selectCategory,
                 containerBackgroundColor = style.containerBackgroundColor,
+                modifier = modifiers.categories,
                 style = style.categories,
             )
         }
@@ -112,6 +115,7 @@ fun LucideIconPicker(
             iconColor = iconColor,
             strokeWidth = strokeWidth,
             onIconSelected = onIconSelected,
+            modifier = modifiers.grid,
             style = style.grid,
         )
         LucideIconPagination(
@@ -119,6 +123,7 @@ fun LucideIconPicker(
             pageCount = pagination.pageCount,
             totalResults = pagination.totalItems,
             onPageChange = state::goToPage,
+            modifier = modifiers.pagination,
             style = style.pagination,
         )
     }
@@ -135,6 +140,7 @@ fun LucideIconPicker(
     pageSize: Int = 48,
     searchLimit: Int = 100,
     style: LucideIconPickerStyle = LucideIconPickerDefaults.style(locale = locale),
+    modifiers: LucideIconPickerModifiers = LucideIconPickerDefaults.modifiers(),
 ) {
     val state = rememberLucideIconPickerState(initialQuery = query)
     if (state.query != query) {
@@ -147,10 +153,12 @@ fun LucideIconPicker(
         LucideIconSearchBar(
             query = query,
             onQueryChange = onQueryChange,
+            modifier = modifiers.searchBar,
             style = style.searchBar,
         )
         LucideIconPicker(
             state = state,
+            modifiers = modifiers,
             registry = registry,
             locale = locale,
             showSearchBar = false,

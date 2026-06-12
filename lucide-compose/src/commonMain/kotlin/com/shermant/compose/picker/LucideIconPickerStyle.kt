@@ -1,11 +1,19 @@
 package com.shermant.compose.picker
 
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+
+data class LucideIconPickerModifiers(
+    val searchBar: Modifier = Modifier,
+    val categories: Modifier = Modifier,
+    val grid: Modifier = Modifier,
+    val pagination: Modifier = Modifier,
+)
 
 data class LucideIconPickerStyle(
     val containerPadding: PaddingValues = PaddingValues(0.dp),
