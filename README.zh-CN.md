@@ -91,6 +91,14 @@ LucideIcon(
 
 ### 导入单个图标
 
+在需要直接使用图标向量的模块中添加 core 依赖：
+
+```kotlin
+implementation("com.shermant:lucide-icon-kmp:<version>")
+```
+
+生成后的图标会以 PascalCase 的 `ImageVector` 属性暴露在 `com.shermant.core.generated.icons` 包下，名称与文件名一致。
+
 ```kotlin
 import androidx.compose.material3.Icon
 import com.shermant.core.generated.icons.Activity
@@ -100,6 +108,12 @@ Icon(
     contentDescription = "Activity",
 )
 ```
+
+例如：
+
+- `Activity.kt` 导出 `Activity`
+- `AlignHorizontalJustifyCenter.kt` 导出 `AlignHorizontalJustifyCenter`
+- `ArrowUpAZ.kt` 导出 `ArrowUpAZ`
 
 ### 使用图标选择器
 

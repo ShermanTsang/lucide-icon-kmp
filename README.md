@@ -91,6 +91,14 @@ LucideIcon(
 
 ### Import a single icon
 
+Add the core artifact to the module where you want to use direct icon vectors:
+
+```kotlin
+implementation("com.shermant:lucide-icon-kmp:<version>")
+```
+
+Generated icons are exposed from `com.shermant.core.generated.icons` as PascalCase `ImageVector` properties that match the file name.
+
 ```kotlin
 import androidx.compose.material3.Icon
 import com.shermant.core.generated.icons.Activity
@@ -100,6 +108,12 @@ Icon(
     contentDescription = "Activity",
 )
 ```
+
+For example:
+
+- `Activity.kt` exports `Activity`
+- `AlignHorizontalJustifyCenter.kt` exports `AlignHorizontalJustifyCenter`
+- `ArrowUpAZ.kt` exports `ArrowUpAZ`
 
 ### Pick an icon
 
