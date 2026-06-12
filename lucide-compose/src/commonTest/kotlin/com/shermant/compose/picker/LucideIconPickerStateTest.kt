@@ -77,6 +77,16 @@ class LucideIconPickerStateTest {
     }
 
     @Test
+    fun providesTransparentPickerSurfacesByDefault() {
+        val style = LucideIconPickerDefaults.style()
+
+        assertEquals(Color.Transparent, style.searchBar.backgroundColor)
+        assertEquals(Color.Transparent, style.categories.unselectedBackgroundColor)
+        assertEquals(Color.Transparent, style.categories.selectedBackgroundColor)
+        assertEquals(Color(0xFF111827), style.categories.selectedContentColor)
+    }
+
+    @Test
     fun hidesGridLabelsByDefault() {
         val style = LucideIconPickerDefaults.style()
 
