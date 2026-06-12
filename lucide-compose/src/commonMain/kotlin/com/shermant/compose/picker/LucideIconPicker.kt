@@ -101,6 +101,7 @@ fun LucideIconPicker(
                 locale = locale,
                 selectedCategory = state.selectedCategory,
                 onCategorySelected = state::selectCategory,
+                containerBackgroundColor = style.containerBackgroundColor,
                 style = style.categories,
             )
         }

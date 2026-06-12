@@ -1,9 +1,11 @@
 package com.shermant.compose.picker
 
+import androidx.compose.ui.graphics.Color
 import com.shermant.core.model.LucideIconCategory
 import com.shermant.core.model.LucideLocale
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertNull
 
 class LucideIconPickerStateTest {
     @Test
@@ -63,5 +65,58 @@ class LucideIconPickerStateTest {
         assertEquals("全部", chineseStyle.categories.allLabelText)
         assertEquals("上一页", chineseStyle.pagination.previousLabel)
         assertEquals("下一页", chineseStyle.pagination.nextLabel)
+    }
+
+    @Test
+    fun providesDefaultCategoryEdgeOverlaySettings() {
+        val style = LucideIconPickerDefaults.style()
+
+        assertEquals(24, style.categories.edgeOverlayWidth.value.toInt())
+        assertEquals(Color.Unspecified, style.categories.edgeOverlayColor)
+        assertEquals(0.92f, style.categories.edgeOverlayMaxAlpha)
+    }
+
+    @Test
+    fun resolvesCategoryOverlayColorFromExplicitOverrideFirst() {
+        val style = LucideIconPickerDefaults.style().categories.copy(
+            edgeOverlayColor = Color(0xFF2563EB),
+        )
+
+        assertEquals(
+            Color(0xFF2563EB),
+            resolveOverlayColor(
+                style = style,
+                containerBackgroundColor = Color(0xFFF9FAFB),
+            ),
+        )
+    }
+
+    @Test
+    fun resolvesCategoryOverlayColorFromContainerBackground() {
+        val style = LucideIconPickerDefaults.style().categories.copy(
+            edgeOverlayColor = Color.Unspecified,
+        )
+
+        assertEquals(
+            Color(0xFFF9FAFB),
+            resolveOverlayColor(
+                style = style,
+                containerBackgroundColor = Color(0xFFF9FAFB),
+            ),
+        )
+    }
+
+    @Test
+    fun returnsNullWhenNoOverlayColorSourceExists() {
+        val style = LucideIconPickerDefaults.style().categories.copy(
+            edgeOverlayColor = Color.Unspecified,
+        )
+
+        assertNull(
+            resolveOverlayColor(
+                style = style,
+                containerBackgroundColor = Color.Unspecified,
+            ),
+        )
     }
 }

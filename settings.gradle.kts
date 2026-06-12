@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 include(":lucide-core")
 include(":lucide-compose")
 include(":lucide-generator")
-include(":sample-compose")

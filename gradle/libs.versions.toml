@@ -1,11 +1,11 @@
 [versions]
-kotlin = "2.0.21"
-compose-multiplatform = "1.7.0"
-android-gradle-plugin = "8.6.1"
+kotlin = "2.3.21"
+compose-multiplatform = "1.11.0"
+android-gradle-plugin = "9.2.1"
 vanniktech-maven-publish = "0.34.0"
-android-compile-sdk = "35"
+android-compile-sdk = "37"
 android-min-sdk = "24"
-android-target-sdk = "35"
+android-target-sdk = "36"
 junit = "4.13.2"
 
 [libraries]
