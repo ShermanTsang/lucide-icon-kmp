@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareCenterlineDashedHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildSquareCenterlineDashedHorizontal(parameters)
 }
+
+val SquareCenterlineDashedHorizontal: ImageVector
+    get() = squareCenterlineDashedHorizontalProvider.create()
 
 private val squareCenterlineDashedHorizontalPath0 = PathParser().parsePathString("M8 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h3").toNodes()
 private val squareCenterlineDashedHorizontalPath1 = PathParser().parsePathString("M16 3h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-3").toNodes()

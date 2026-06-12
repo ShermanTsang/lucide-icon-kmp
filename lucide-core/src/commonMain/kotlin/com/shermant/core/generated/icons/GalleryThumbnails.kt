@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val galleryThumbnailsProvider = ParameterizedIconProvider { parameters ->
     buildGalleryThumbnails(parameters)
 }
+
+val GalleryThumbnails: ImageVector
+    get() = galleryThumbnailsProvider.create()
 
 private val galleryThumbnailsPath0 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 15 A 2 2 0 0 1 19 17 H 5 A 2 2 0 0 1 3 15 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 private val galleryThumbnailsPath1 = PathParser().parsePathString("M4 21h1").toNodes()

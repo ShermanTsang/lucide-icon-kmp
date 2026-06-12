@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val zodiacOphiuchusProvider = ParameterizedIconProvider { parameters ->
     buildZodiacOphiuchus(parameters)
 }
+
+val ZodiacOphiuchus: ImageVector
+    get() = zodiacOphiuchusProvider.create()
 
 private val zodiacOphiuchusPath0 = PathParser().parsePathString("M3 10A6.06 6.06 0 0 1 12 10 A6.06 6.06 0 0 0 21 10").toNodes()
 private val zodiacOphiuchusPath1 = PathParser().parsePathString("M6 3v12a6 6 0 0 0 12 0V3").toNodes()

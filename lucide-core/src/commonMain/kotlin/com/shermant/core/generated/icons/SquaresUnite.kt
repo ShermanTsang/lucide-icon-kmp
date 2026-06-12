@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squaresUniteProvider = ParameterizedIconProvider { parameters ->
     buildSquaresUnite(parameters)
 }
+
+val SquaresUnite: ImageVector
+    get() = squaresUniteProvider.create()
 
 private val squaresUnitePath0 = PathParser().parsePathString("M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3a1 1 0 0 0 1 1h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-3a1 1 0 0 0-1-1z").toNodes()
 

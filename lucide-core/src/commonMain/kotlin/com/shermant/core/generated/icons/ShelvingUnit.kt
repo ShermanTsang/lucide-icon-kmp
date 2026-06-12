@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shelvingUnitProvider = ParameterizedIconProvider { parameters ->
     buildShelvingUnit(parameters)
 }
+
+val ShelvingUnit: ImageVector
+    get() = shelvingUnitProvider.create()
 
 private val shelvingUnitPath0 = PathParser().parsePathString("M12 12V9a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3").toNodes()
 private val shelvingUnitPath1 = PathParser().parsePathString("M16 20v-3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3").toNodes()

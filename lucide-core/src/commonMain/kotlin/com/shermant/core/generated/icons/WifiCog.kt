@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wifiCogProvider = ParameterizedIconProvider { parameters ->
     buildWifiCog(parameters)
 }
+
+val WifiCog: ImageVector
+    get() = wifiCogProvider.create()
 
 private val wifiCogPath0 = PathParser().parsePathString("m14.305 19.53.923-.382").toNodes()
 private val wifiCogPath1 = PathParser().parsePathString("m15.228 16.852-.923-.383").toNodes()

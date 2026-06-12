@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chevronLeftProvider = ParameterizedIconProvider { parameters ->
     buildChevronLeft(parameters)
 }
+
+val ChevronLeft: ImageVector
+    get() = chevronLeftProvider.create()
 
 private val chevronLeftPath0 = PathParser().parsePathString("m15 18-6-6 6-6").toNodes()
 

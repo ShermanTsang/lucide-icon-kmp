@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mouseRightProvider = ParameterizedIconProvider { parameters ->
     buildMouseRight(parameters)
 }
+
+val MouseRight: ImageVector
+    get() = mouseRightProvider.create()
 
 private val mouseRightPath0 = PathParser().parsePathString("M12 7.318V10").toNodes()
 private val mouseRightPath1 = PathParser().parsePathString("M19 10v5a7 7 0 0 1-14 0V9c0-3.527 2.608-6.515 6-7").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val landmarkProvider = ParameterizedIconProvider { parameters ->
     buildLandmark(parameters)
 }
+
+val Landmark: ImageVector
+    get() = landmarkProvider.create()
 
 private val landmarkPath0 = PathParser().parsePathString("M10 18v-7").toNodes()
 private val landmarkPath1 = PathParser().parsePathString("M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z").toNodes()

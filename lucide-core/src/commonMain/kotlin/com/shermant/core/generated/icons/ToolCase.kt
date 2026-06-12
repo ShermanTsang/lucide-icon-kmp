@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val toolCaseProvider = ParameterizedIconProvider { parameters ->
     buildToolCase(parameters)
 }
+
+val ToolCase: ImageVector
+    get() = toolCaseProvider.create()
 
 private val toolCasePath0 = PathParser().parsePathString("M10 15h4").toNodes()
 private val toolCasePath1 = PathParser().parsePathString("m14.817 10.995-.971-1.45 1.034-1.232a2 2 0 0 0-2.025-3.238l-1.82.364L9.91 3.885a2 2 0 0 0-3.625.748L6.141 6.55l-1.725.426a2 2 0 0 0-.19 3.756l.657.27").toNodes()

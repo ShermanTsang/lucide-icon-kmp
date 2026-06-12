@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val rotateCcwKeyProvider = ParameterizedIconProvider { parameters ->
     buildRotateCcwKey(parameters)
 }
+
+val RotateCcwKey: ImageVector
+    get() = rotateCcwKeyProvider.create()
 
 private val rotateCcwKeyPath0 = PathParser().parsePathString("M12 7v6").toNodes()
 private val rotateCcwKeyPath1 = PathParser().parsePathString("M12 9h2").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ampersandProvider = ParameterizedIconProvider { parameters ->
     buildAmpersand(parameters)
 }
+
+val Ampersand: ImageVector
+    get() = ampersandProvider.create()
 
 private val ampersandPath0 = PathParser().parsePathString("M16 12h3").toNodes()
 private val ampersandPath1 = PathParser().parsePathString("M17.5 12a8 8 0 0 1-8 8A4.5 4.5 0 0 1 5 15.5c0-6 8-4 8-8.5a3 3 0 1 0-6 0c0 3 2.5 8.5 12 13").toNodes()

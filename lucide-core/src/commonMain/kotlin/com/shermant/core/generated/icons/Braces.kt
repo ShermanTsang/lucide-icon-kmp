@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bracesProvider = ParameterizedIconProvider { parameters ->
     buildBraces(parameters)
 }
+
+val Braces: ImageVector
+    get() = bracesProvider.create()
 
 private val bracesPath0 = PathParser().parsePathString("M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1").toNodes()
 private val bracesPath1 = PathParser().parsePathString("M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1").toNodes()

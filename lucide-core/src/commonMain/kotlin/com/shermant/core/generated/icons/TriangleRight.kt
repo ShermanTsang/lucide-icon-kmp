@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val triangleRightProvider = ParameterizedIconProvider { parameters ->
     buildTriangleRight(parameters)
 }
+
+val TriangleRight: ImageVector
+    get() = triangleRightProvider.create()
 
 private val triangleRightPath0 = PathParser().parsePathString("M22 18a2 2 0 0 1-2 2H3c-1.1 0-1.3-.6-.4-1.3L20.4 4.3c.9-.7 1.6-.4 1.6.7Z").toNodes()
 

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val layoutDashboardProvider = ParameterizedIconProvider { parameters ->
     buildLayoutDashboard(parameters)
 }
+
+val LayoutDashboard: ImageVector
+    get() = layoutDashboardProvider.create()
 
 private val layoutDashboardPath0 = PathParser().parsePathString("M 4 3 H 9 A 1 1 0 0 1 10 4 V 11 A 1 1 0 0 1 9 12 H 4 A 1 1 0 0 1 3 11 V 4 A 1 1 0 0 1 4 3 Z").toNodes()
 private val layoutDashboardPath1 = PathParser().parsePathString("M 15 3 H 20 A 1 1 0 0 1 21 4 V 7 A 1 1 0 0 1 20 8 H 15 A 1 1 0 0 1 14 7 V 4 A 1 1 0 0 1 15 3 Z").toNodes()

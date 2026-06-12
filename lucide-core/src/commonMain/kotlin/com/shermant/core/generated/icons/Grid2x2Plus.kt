@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val grid2x2PlusProvider = ParameterizedIconProvider { parameters ->
     buildGrid2x2Plus(parameters)
 }
+
+val Grid2x2Plus: ImageVector
+    get() = grid2x2PlusProvider.create()
 
 private val grid2x2PlusPath0 = PathParser().parsePathString("M12 3v17a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1H3").toNodes()
 private val grid2x2PlusPath1 = PathParser().parsePathString("M16 19h6").toNodes()

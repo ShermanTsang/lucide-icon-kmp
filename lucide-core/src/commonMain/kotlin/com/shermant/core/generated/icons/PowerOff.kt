@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val powerOffProvider = ParameterizedIconProvider { parameters ->
     buildPowerOff(parameters)
 }
+
+val PowerOff: ImageVector
+    get() = powerOffProvider.create()
 
 private val powerOffPath0 = PathParser().parsePathString("M18.36 6.64A9 9 0 0 1 20.77 15").toNodes()
 private val powerOffPath1 = PathParser().parsePathString("M6.16 6.16a9 9 0 1 0 12.68 12.68").toNodes()

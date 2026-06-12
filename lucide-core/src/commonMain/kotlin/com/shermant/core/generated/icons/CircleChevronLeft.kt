@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleChevronLeftProvider = ParameterizedIconProvider { parameters ->
     buildCircleChevronLeft(parameters)
 }
+
+val CircleChevronLeft: ImageVector
+    get() = circleChevronLeftProvider.create()
 
 private val circleChevronLeftPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val circleChevronLeftPath1 = PathParser().parsePathString("m14 16-4-4 4-4").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val microwaveProvider = ParameterizedIconProvider { parameters ->
     buildMicrowave(parameters)
 }
+
+val Microwave: ImageVector
+    get() = microwaveProvider.create()
 
 private val microwavePath0 = PathParser().parsePathString("M 4 4 H 20 A 2 2 0 0 1 22 6 V 17 A 2 2 0 0 1 20 19 H 4 A 2 2 0 0 1 2 17 V 6 A 2 2 0 0 1 4 4 Z").toNodes()
 private val microwavePath1 = PathParser().parsePathString("M 7 8 H 13 A 1 1 0 0 1 14 9 V 14 A 1 1 0 0 1 13 15 H 7 A 1 1 0 0 1 6 14 V 9 A 1 1 0 0 1 7 8 Z").toNodes()

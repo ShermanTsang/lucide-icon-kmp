@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val handGrabProvider = ParameterizedIconProvider { parameters ->
     buildHandGrab(parameters)
 }
+
+val HandGrab: ImageVector
+    get() = handGrabProvider.create()
 
 private val handGrabPath0 = PathParser().parsePathString("M18 11.5V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4").toNodes()
 private val handGrabPath1 = PathParser().parsePathString("M14 10V8a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2").toNodes()

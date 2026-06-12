@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val handMetalProvider = ParameterizedIconProvider { parameters ->
     buildHandMetal(parameters)
 }
+
+val HandMetal: ImageVector
+    get() = handMetalProvider.create()
 
 private val handMetalPath0 = PathParser().parsePathString("M18 12.5V10a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4").toNodes()
 private val handMetalPath1 = PathParser().parsePathString("M14 11V9a2 2 0 1 0-4 0v2").toNodes()

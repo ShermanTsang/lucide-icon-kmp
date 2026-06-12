@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sunSnowProvider = ParameterizedIconProvider { parameters ->
     buildSunSnow(parameters)
 }
+
+val SunSnow: ImageVector
+    get() = sunSnowProvider.create()
 
 private val sunSnowPath0 = PathParser().parsePathString("M10 21v-1").toNodes()
 private val sunSnowPath1 = PathParser().parsePathString("M10 4V3").toNodes()

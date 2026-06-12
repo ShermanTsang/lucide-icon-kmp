@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val archiveProvider = ParameterizedIconProvider { parameters ->
     buildArchive(parameters)
 }
+
+val Archive: ImageVector
+    get() = archiveProvider.create()
 
 private val archivePath0 = PathParser().parsePathString("M 3 3 H 21 A 1 1 0 0 1 22 4 V 7 A 1 1 0 0 1 21 8 H 3 A 1 1 0 0 1 2 7 V 4 A 1 1 0 0 1 3 3 Z").toNodes()
 private val archivePath1 = PathParser().parsePathString("M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val nonBinaryProvider = ParameterizedIconProvider { parameters ->
     buildNonBinary(parameters)
 }
+
+val NonBinary: ImageVector
+    get() = nonBinaryProvider.create()
 
 private val nonBinaryPath0 = PathParser().parsePathString("M12 2v10").toNodes()
 private val nonBinaryPath1 = PathParser().parsePathString("m8.5 4 7 4").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bookOpenTextProvider = ParameterizedIconProvider { parameters ->
     buildBookOpenText(parameters)
 }
+
+val BookOpenText: ImageVector
+    get() = bookOpenTextProvider.create()
 
 private val bookOpenTextPath0 = PathParser().parsePathString("M12 7v14").toNodes()
 private val bookOpenTextPath1 = PathParser().parsePathString("M16 12h2").toNodes()

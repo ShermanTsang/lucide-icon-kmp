@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val arrowBigLeftDashProvider = ParameterizedIconProvider { parameters ->
     buildArrowBigLeftDash(parameters)
 }
+
+val ArrowBigLeftDash: ImageVector
+    get() = arrowBigLeftDashProvider.create()
 
 private val arrowBigLeftDashPath0 = PathParser().parsePathString("M13 9a1 1 0 0 1-1-1V4.707a.707.707 0 0 0-1.207-.5l-6.94 6.94a1.207 1.207 0 0 0 0 1.707l6.94 6.94a.707.707 0 0 0 1.207-.5V16a1 1 0 0 1 1-1h2a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1z").toNodes()
 private val arrowBigLeftDashPath1 = PathParser().parsePathString("M20 9v6").toNodes()

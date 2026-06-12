@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val weightProvider = ParameterizedIconProvider { parameters ->
     buildWeight(parameters)
 }
+
+val Weight: ImageVector
+    get() = weightProvider.create()
 
 private val weightPath0 = PathParser().parsePathString("M 15 5 A 3 3 0 1 0 9 5 A 3 3 0 1 0 15 5 Z").toNodes()
 private val weightPath1 = PathParser().parsePathString("M6.5 8a2 2 0 0 0-1.905 1.46L2.1 18.5A2 2 0 0 0 4 21h16a2 2 0 0 0 1.925-2.54L19.4 9.5A2 2 0 0 0 17.48 8Z").toNodes()

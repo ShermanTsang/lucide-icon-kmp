@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shuffleProvider = ParameterizedIconProvider { parameters ->
     buildShuffle(parameters)
 }
+
+val Shuffle: ImageVector
+    get() = shuffleProvider.create()
 
 private val shufflePath0 = PathParser().parsePathString("m18 14 4 4-4 4").toNodes()
 private val shufflePath1 = PathParser().parsePathString("m18 2 4 4-4 4").toNodes()

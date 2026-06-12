@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val japaneseYenProvider = ParameterizedIconProvider { parameters ->
     buildJapaneseYen(parameters)
 }
+
+val JapaneseYen: ImageVector
+    get() = japaneseYenProvider.create()
 
 private val japaneseYenPath0 = PathParser().parsePathString("M12 9.5V21m0-11.5L6 3m6 6.5L18 3").toNodes()
 private val japaneseYenPath1 = PathParser().parsePathString("M6 15h12").toNodes()

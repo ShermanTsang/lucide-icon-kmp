@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val listFilterProvider = ParameterizedIconProvider { parameters ->
     buildListFilter(parameters)
 }
+
+val ListFilter: ImageVector
+    get() = listFilterProvider.create()
 
 private val listFilterPath0 = PathParser().parsePathString("M2 5h20").toNodes()
 private val listFilterPath1 = PathParser().parsePathString("M6 12h12").toNodes()

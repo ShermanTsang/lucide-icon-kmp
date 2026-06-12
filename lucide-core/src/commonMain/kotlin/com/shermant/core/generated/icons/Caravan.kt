@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val caravanProvider = ParameterizedIconProvider { parameters ->
     buildCaravan(parameters)
 }
+
+val Caravan: ImageVector
+    get() = caravanProvider.create()
 
 private val caravanPath0 = PathParser().parsePathString("M18 19V9a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v8a2 2 0 0 0 2 2h2").toNodes()
 private val caravanPath1 = PathParser().parsePathString("M2 9h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val poundSterlingProvider = ParameterizedIconProvider { parameters ->
     buildPoundSterling(parameters)
 }
+
+val PoundSterling: ImageVector
+    get() = poundSterlingProvider.create()
 
 private val poundSterlingPath0 = PathParser().parsePathString("M18 7c0-5.333-8-5.333-8 0").toNodes()
 private val poundSterlingPath1 = PathParser().parsePathString("M10 7v14").toNodes()

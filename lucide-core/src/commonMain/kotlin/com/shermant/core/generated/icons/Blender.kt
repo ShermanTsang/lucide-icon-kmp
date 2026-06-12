@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val blenderProvider = ParameterizedIconProvider { parameters ->
     buildBlender(parameters)
 }
+
+val Blender: ImageVector
+    get() = blenderProvider.create()
 
 private val blenderPath0 = PathParser().parsePathString("M8 14a2 2 0 0 0-1.963 1.615l-1.018 5.193A1 1 0 0 0 6 22h12a1 1 0 0 0 .981-1.192l-1.018-5.193A2 2 0 0 0 16 14z").toNodes()
 private val blenderPath1 = PathParser().parsePathString("m17 2-1 12").toNodes()

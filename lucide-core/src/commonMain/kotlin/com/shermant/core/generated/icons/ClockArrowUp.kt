@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val clockArrowUpProvider = ParameterizedIconProvider { parameters ->
     buildClockArrowUp(parameters)
 }
+
+val ClockArrowUp: ImageVector
+    get() = clockArrowUpProvider.create()
 
 private val clockArrowUpPath0 = PathParser().parsePathString("M12 6v6l1.56.78").toNodes()
 private val clockArrowUpPath1 = PathParser().parsePathString("M13.227 21.925a10 10 0 1 1 8.767-9.588").toNodes()

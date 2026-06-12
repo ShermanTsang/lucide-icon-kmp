@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wholeWordProvider = ParameterizedIconProvider { parameters ->
     buildWholeWord(parameters)
 }
+
+val WholeWord: ImageVector
+    get() = wholeWordProvider.create()
 
 private val wholeWordPath0 = PathParser().parsePathString("M 10 12 A 3 3 0 1 0 4 12 A 3 3 0 1 0 10 12 Z").toNodes()
 private val wholeWordPath1 = PathParser().parsePathString("M10 9v6").toNodes()

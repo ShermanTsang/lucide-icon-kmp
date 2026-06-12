@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val rectangleVerticalProvider = ParameterizedIconProvider { parameters ->
     buildRectangleVertical(parameters)
 }
+
+val RectangleVertical: ImageVector
+    get() = rectangleVerticalProvider.create()
 
 private val rectangleVerticalPath0 = PathParser().parsePathString("M 8 2 H 16 A 2 2 0 0 1 18 4 V 20 A 2 2 0 0 1 16 22 H 8 A 2 2 0 0 1 6 20 V 4 A 2 2 0 0 1 8 2 Z").toNodes()
 

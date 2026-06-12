@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val galleryHorizontalEndProvider = ParameterizedIconProvider { parameters ->
     buildGalleryHorizontalEnd(parameters)
 }
+
+val GalleryHorizontalEnd: ImageVector
+    get() = galleryHorizontalEndProvider.create()
 
 private val galleryHorizontalEndPath0 = PathParser().parsePathString("M2 7v10").toNodes()
 private val galleryHorizontalEndPath1 = PathParser().parsePathString("M6 5v14").toNodes()

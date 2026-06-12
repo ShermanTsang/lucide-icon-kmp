@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chartCandlestickProvider = ParameterizedIconProvider { parameters ->
     buildChartCandlestick(parameters)
 }
+
+val ChartCandlestick: ImageVector
+    get() = chartCandlestickProvider.create()
 
 private val chartCandlestickPath0 = PathParser().parsePathString("M9 5v4").toNodes()
 private val chartCandlestickPath1 = PathParser().parsePathString("M 8 9 H 10 A 1 1 0 0 1 11 10 V 14 A 1 1 0 0 1 10 15 H 8 A 1 1 0 0 1 7 14 V 10 A 1 1 0 0 1 8 9 Z").toNodes()

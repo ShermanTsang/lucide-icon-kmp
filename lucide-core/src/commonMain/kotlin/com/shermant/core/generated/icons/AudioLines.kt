@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val audioLinesProvider = ParameterizedIconProvider { parameters ->
     buildAudioLines(parameters)
 }
+
+val AudioLines: ImageVector
+    get() = audioLinesProvider.create()
 
 private val audioLinesPath0 = PathParser().parsePathString("M2 10v3").toNodes()
 private val audioLinesPath1 = PathParser().parsePathString("M6 6v11").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val highlighterProvider = ParameterizedIconProvider { parameters ->
     buildHighlighter(parameters)
 }
+
+val Highlighter: ImageVector
+    get() = highlighterProvider.create()
 
 private val highlighterPath0 = PathParser().parsePathString("m9 11-6 6v3h9l3-3").toNodes()
 private val highlighterPath1 = PathParser().parsePathString("m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val moveUpRightProvider = ParameterizedIconProvider { parameters ->
     buildMoveUpRight(parameters)
 }
+
+val MoveUpRight: ImageVector
+    get() = moveUpRightProvider.create()
 
 private val moveUpRightPath0 = PathParser().parsePathString("M13 5H19V11").toNodes()
 private val moveUpRightPath1 = PathParser().parsePathString("M19 5L5 19").toNodes()

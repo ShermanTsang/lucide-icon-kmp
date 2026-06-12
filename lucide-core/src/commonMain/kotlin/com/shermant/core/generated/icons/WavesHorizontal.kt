@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wavesHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildWavesHorizontal(parameters)
 }
+
+val WavesHorizontal: ImageVector
+    get() = wavesHorizontalProvider.create()
 
 private val wavesHorizontalPath0 = PathParser().parsePathString("M2 12q2.5 2 5 0t5 0 5 0 5 0").toNodes()
 private val wavesHorizontalPath1 = PathParser().parsePathString("M2 19q2.5 2 5 0t5 0 5 0 5 0").toNodes()

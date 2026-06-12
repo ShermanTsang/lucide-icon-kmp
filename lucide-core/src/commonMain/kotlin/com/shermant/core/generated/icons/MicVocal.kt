@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val micVocalProvider = ParameterizedIconProvider { parameters ->
     buildMicVocal(parameters)
 }
+
+val MicVocal: ImageVector
+    get() = micVocalProvider.create()
 
 private val micVocalPath0 = PathParser().parsePathString("m11 7.601-5.994 8.19a1 1 0 0 0 .1 1.298l.817.818a1 1 0 0 0 1.314.087L15.09 12").toNodes()
 private val micVocalPath1 = PathParser().parsePathString("M16.5 21.174C15.5 20.5 14.372 20 13 20c-2.058 0-3.928 2.356-6 2-2.072-.356-2.775-3.369-1.5-4.5").toNodes()

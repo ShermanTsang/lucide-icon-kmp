@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ambulanceProvider = ParameterizedIconProvider { parameters ->
     buildAmbulance(parameters)
 }
+
+val Ambulance: ImageVector
+    get() = ambulanceProvider.create()
 
 private val ambulancePath0 = PathParser().parsePathString("M10 10H6").toNodes()
 private val ambulancePath1 = PathParser().parsePathString("M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2").toNodes()

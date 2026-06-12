@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val typeProvider = ParameterizedIconProvider { parameters ->
     buildType(parameters)
 }
+
+val Type: ImageVector
+    get() = typeProvider.create()
 
 private val typePath0 = PathParser().parsePathString("M12 4v16").toNodes()
 private val typePath1 = PathParser().parsePathString("M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2").toNodes()

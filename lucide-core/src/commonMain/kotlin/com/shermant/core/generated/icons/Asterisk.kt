@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val asteriskProvider = ParameterizedIconProvider { parameters ->
     buildAsterisk(parameters)
 }
+
+val Asterisk: ImageVector
+    get() = asteriskProvider.create()
 
 private val asteriskPath0 = PathParser().parsePathString("M12 6v12").toNodes()
 private val asteriskPath1 = PathParser().parsePathString("M17.196 9 6.804 15").toNodes()

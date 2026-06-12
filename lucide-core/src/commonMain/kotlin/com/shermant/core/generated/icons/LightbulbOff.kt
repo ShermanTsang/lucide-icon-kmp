@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lightbulbOffProvider = ParameterizedIconProvider { parameters ->
     buildLightbulbOff(parameters)
 }
+
+val LightbulbOff: ImageVector
+    get() = lightbulbOffProvider.create()
 
 private val lightbulbOffPath0 = PathParser().parsePathString("M16.8 11.2c.8-.9 1.2-2 1.2-3.2a6 6 0 0 0-9.3-5").toNodes()
 private val lightbulbOffPath1 = PathParser().parsePathString("m2 2 20 20").toNodes()

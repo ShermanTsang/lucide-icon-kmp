@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val idCardLanyardProvider = ParameterizedIconProvider { parameters ->
     buildIdCardLanyard(parameters)
 }
+
+val IdCardLanyard: ImageVector
+    get() = idCardLanyardProvider.create()
 
 private val idCardLanyardPath0 = PathParser().parsePathString("M13.5 8h-3").toNodes()
 private val idCardLanyardPath1 = PathParser().parsePathString("m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3").toNodes()

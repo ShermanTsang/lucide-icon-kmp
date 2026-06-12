@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val removeFormattingProvider = ParameterizedIconProvider { parameters ->
     buildRemoveFormatting(parameters)
 }
+
+val RemoveFormatting: ImageVector
+    get() = removeFormattingProvider.create()
 
 private val removeFormattingPath0 = PathParser().parsePathString("M4 7V4h16v3").toNodes()
 private val removeFormattingPath1 = PathParser().parsePathString("M5 20h6").toNodes()

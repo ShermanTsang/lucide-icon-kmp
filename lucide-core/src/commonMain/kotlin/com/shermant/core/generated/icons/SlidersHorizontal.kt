@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val slidersHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildSlidersHorizontal(parameters)
 }
+
+val SlidersHorizontal: ImageVector
+    get() = slidersHorizontalProvider.create()
 
 private val slidersHorizontalPath0 = PathParser().parsePathString("M10 5H3").toNodes()
 private val slidersHorizontalPath1 = PathParser().parsePathString("M12 19H3").toNodes()

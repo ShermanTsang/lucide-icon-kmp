@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val coneProvider = ParameterizedIconProvider { parameters ->
     buildCone(parameters)
 }
+
+val Cone: ImageVector
+    get() = coneProvider.create()
 
 private val conePath0 = PathParser().parsePathString("m20.9 18.55-8-15.98a1 1 0 0 0-1.8 0l-8 15.98").toNodes()
 private val conePath1 = PathParser().parsePathString("M 21 19 A 9 3 0 1 0 3 19 A 9 3 0 1 0 21 19 Z").toNodes()

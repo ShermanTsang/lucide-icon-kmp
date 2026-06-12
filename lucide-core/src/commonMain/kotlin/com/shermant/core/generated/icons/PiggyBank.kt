@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val piggyBankProvider = ParameterizedIconProvider { parameters ->
     buildPiggyBank(parameters)
 }
+
+val PiggyBank: ImageVector
+    get() = piggyBankProvider.create()
 
 private val piggyBankPath0 = PathParser().parsePathString("M11 17h3v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a3.16 3.16 0 0 0 2-2h1a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-1a5 5 0 0 0-2-4V3a4 4 0 0 0-3.2 1.6l-.3.4H11a6 6 0 0 0-6 6v1a5 5 0 0 0 2 4v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1z").toNodes()
 private val piggyBankPath1 = PathParser().parsePathString("M16 10h.01").toNodes()

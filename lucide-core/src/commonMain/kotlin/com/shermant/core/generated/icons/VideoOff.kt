@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val videoOffProvider = ParameterizedIconProvider { parameters ->
     buildVideoOff(parameters)
 }
+
+val VideoOff: ImageVector
+    get() = videoOffProvider.create()
 
 private val videoOffPath0 = PathParser().parsePathString("M10.66 6H14a2 2 0 0 1 2 2v2.5l5.248-3.062A.5.5 0 0 1 22 7.87v8.196").toNodes()
 private val videoOffPath1 = PathParser().parsePathString("M16 16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val metronomeProvider = ParameterizedIconProvider { parameters ->
     buildMetronome(parameters)
 }
+
+val Metronome: ImageVector
+    get() = metronomeProvider.create()
 
 private val metronomePath0 = PathParser().parsePathString("M12 11.4V9.1").toNodes()
 private val metronomePath1 = PathParser().parsePathString("m12 17 6.59-6.59").toNodes()

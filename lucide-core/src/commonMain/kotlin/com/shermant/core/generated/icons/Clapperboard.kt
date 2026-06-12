@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val clapperboardProvider = ParameterizedIconProvider { parameters ->
     buildClapperboard(parameters)
 }
+
+val Clapperboard: ImageVector
+    get() = clapperboardProvider.create()
 
 private val clapperboardPath0 = PathParser().parsePathString("m12.296 3.464 3.02 3.956").toNodes()
 private val clapperboardPath1 = PathParser().parsePathString("M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3z").toNodes()

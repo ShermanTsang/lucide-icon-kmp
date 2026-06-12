@@ -89,6 +89,18 @@ LucideIcon(
 )
 ```
 
+### Import a single icon
+
+```kotlin
+import androidx.compose.material3.Icon
+import com.shermant.core.generated.icons.Activity
+
+Icon(
+    imageVector = Activity,
+    contentDescription = "Activity",
+)
+```
+
 ### Pick an icon
 
 ```kotlin

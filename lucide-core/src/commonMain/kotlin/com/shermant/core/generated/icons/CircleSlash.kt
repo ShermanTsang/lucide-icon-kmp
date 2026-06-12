@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleSlashProvider = ParameterizedIconProvider { parameters ->
     buildCircleSlash(parameters)
 }
+
+val CircleSlash: ImageVector
+    get() = circleSlashProvider.create()
 
 private val circleSlashPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val circleSlashPath1 = PathParser().parsePathString("M 9 15 L 15 9").toNodes()

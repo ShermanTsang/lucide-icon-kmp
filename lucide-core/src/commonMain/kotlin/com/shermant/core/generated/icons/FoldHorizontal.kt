@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val foldHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildFoldHorizontal(parameters)
 }
+
+val FoldHorizontal: ImageVector
+    get() = foldHorizontalProvider.create()
 
 private val foldHorizontalPath0 = PathParser().parsePathString("M2 12h6").toNodes()
 private val foldHorizontalPath1 = PathParser().parsePathString("M22 12h-6").toNodes()

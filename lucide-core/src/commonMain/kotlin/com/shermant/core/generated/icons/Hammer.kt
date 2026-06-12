@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val hammerProvider = ParameterizedIconProvider { parameters ->
     buildHammer(parameters)
 }
+
+val Hammer: ImageVector
+    get() = hammerProvider.create()
 
 private val hammerPath0 = PathParser().parsePathString("m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9").toNodes()
 private val hammerPath1 = PathParser().parsePathString("m18 15 4-4").toNodes()

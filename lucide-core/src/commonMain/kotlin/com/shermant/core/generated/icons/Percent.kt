@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val percentProvider = ParameterizedIconProvider { parameters ->
     buildPercent(parameters)
 }
+
+val Percent: ImageVector
+    get() = percentProvider.create()
 
 private val percentPath0 = PathParser().parsePathString("M 19 5 L 5 19").toNodes()
 private val percentPath1 = PathParser().parsePathString("M 9 6.5 A 2.5 2.5 0 1 0 4 6.5 A 2.5 2.5 0 1 0 9 6.5 Z").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ethernetPortProvider = ParameterizedIconProvider { parameters ->
     buildEthernetPort(parameters)
 }
+
+val EthernetPort: ImageVector
+    get() = ethernetPortProvider.create()
 
 private val ethernetPortPath0 = PathParser().parsePathString("m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z").toNodes()
 private val ethernetPortPath1 = PathParser().parsePathString("M6 8v1").toNodes()

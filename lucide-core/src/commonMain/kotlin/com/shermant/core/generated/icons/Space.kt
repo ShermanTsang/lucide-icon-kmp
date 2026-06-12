@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val spaceProvider = ParameterizedIconProvider { parameters ->
     buildSpace(parameters)
 }
+
+val Space: ImageVector
+    get() = spaceProvider.create()
 
 private val spacePath0 = PathParser().parsePathString("M22 17v1c0 .5-.5 1-1 1H3c-.5 0-1-.5-1-1v-1").toNodes()
 

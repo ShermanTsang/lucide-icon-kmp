@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val boomBoxProvider = ParameterizedIconProvider { parameters ->
     buildBoomBox(parameters)
 }
+
+val BoomBox: ImageVector
+    get() = boomBoxProvider.create()
 
 private val boomBoxPath0 = PathParser().parsePathString("M4 9V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4").toNodes()
 private val boomBoxPath1 = PathParser().parsePathString("M8 8v1").toNodes()

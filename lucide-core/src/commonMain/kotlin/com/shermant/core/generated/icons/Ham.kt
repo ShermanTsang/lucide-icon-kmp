@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val hamProvider = ParameterizedIconProvider { parameters ->
     buildHam(parameters)
 }
+
+val Ham: ImageVector
+    get() = hamProvider.create()
 
 private val hamPath0 = PathParser().parsePathString("M13.144 21.144A7.274 10.445 45 1 0 2.856 10.856").toNodes()
 private val hamPath1 = PathParser().parsePathString("M13.144 21.144A7.274 4.365 45 0 0 2.856 10.856a7.274 4.365 45 0 0 10.288 10.288").toNodes()

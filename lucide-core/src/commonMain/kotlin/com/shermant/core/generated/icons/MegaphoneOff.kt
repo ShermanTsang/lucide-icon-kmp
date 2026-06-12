@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val megaphoneOffProvider = ParameterizedIconProvider { parameters ->
     buildMegaphoneOff(parameters)
 }
+
+val MegaphoneOff: ImageVector
+    get() = megaphoneOffProvider.create()
 
 private val megaphoneOffPath0 = PathParser().parsePathString("M11.636 6A13 13 0 0 0 19.4 3.2 1 1 0 0 1 21 4v11.344").toNodes()
 private val megaphoneOffPath1 = PathParser().parsePathString("M14.378 14.357A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h1").toNodes()

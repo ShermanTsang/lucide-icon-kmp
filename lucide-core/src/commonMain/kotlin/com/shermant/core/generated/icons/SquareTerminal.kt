@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareTerminalProvider = ParameterizedIconProvider { parameters ->
     buildSquareTerminal(parameters)
 }
+
+val SquareTerminal: ImageVector
+    get() = squareTerminalProvider.create()
 
 private val squareTerminalPath0 = PathParser().parsePathString("m7 11 2-2-2-2").toNodes()
 private val squareTerminalPath1 = PathParser().parsePathString("M11 13h4").toNodes()

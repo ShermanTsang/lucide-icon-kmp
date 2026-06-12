@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val dollarSignProvider = ParameterizedIconProvider { parameters ->
     buildDollarSign(parameters)
 }
+
+val DollarSign: ImageVector
+    get() = dollarSignProvider.create()
 
 private val dollarSignPath0 = PathParser().parsePathString("M 12 2 L 12 22").toNodes()
 private val dollarSignPath1 = PathParser().parsePathString("M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6").toNodes()

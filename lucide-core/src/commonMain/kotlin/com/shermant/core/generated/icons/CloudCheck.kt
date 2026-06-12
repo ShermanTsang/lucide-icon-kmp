@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cloudCheckProvider = ParameterizedIconProvider { parameters ->
     buildCloudCheck(parameters)
 }
+
+val CloudCheck: ImageVector
+    get() = cloudCheckProvider.create()
 
 private val cloudCheckPath0 = PathParser().parsePathString("m17 15-5.5 5.5L9 18").toNodes()
 private val cloudCheckPath1 = PathParser().parsePathString("M5.516 16.07A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 3.501 7.327").toNodes()

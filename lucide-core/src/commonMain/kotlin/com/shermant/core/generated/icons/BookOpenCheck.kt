@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bookOpenCheckProvider = ParameterizedIconProvider { parameters ->
     buildBookOpenCheck(parameters)
 }
+
+val BookOpenCheck: ImageVector
+    get() = bookOpenCheckProvider.create()
 
 private val bookOpenCheckPath0 = PathParser().parsePathString("M12 21V7").toNodes()
 private val bookOpenCheckPath1 = PathParser().parsePathString("m16 12 2 2 4-4").toNodes()

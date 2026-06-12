@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shieldOffProvider = ParameterizedIconProvider { parameters ->
     buildShieldOff(parameters)
 }
+
+val ShieldOff: ImageVector
+    get() = shieldOffProvider.create()
 
 private val shieldOffPath0 = PathParser().parsePathString("m2 2 20 20").toNodes()
 private val shieldOffPath1 = PathParser().parsePathString("M5 5a1 1 0 0 0-1 1v7c0 5 3.5 7.5 7.67 8.94a1 1 0 0 0 .67.01c2.35-.82 4.48-1.97 5.9-3.71").toNodes()

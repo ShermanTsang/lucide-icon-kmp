@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val listCollapseProvider = ParameterizedIconProvider { parameters ->
     buildListCollapse(parameters)
 }
+
+val ListCollapse: ImageVector
+    get() = listCollapseProvider.create()
 
 private val listCollapsePath0 = PathParser().parsePathString("M10 5h11").toNodes()
 private val listCollapsePath1 = PathParser().parsePathString("M10 12h11").toNodes()

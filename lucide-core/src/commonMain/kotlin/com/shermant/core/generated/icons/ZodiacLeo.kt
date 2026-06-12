@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val zodiacLeoProvider = ParameterizedIconProvider { parameters ->
     buildZodiacLeo(parameters)
 }
+
+val ZodiacLeo: ImageVector
+    get() = zodiacLeoProvider.create()
 
 private val zodiacLeoPath0 = PathParser().parsePathString("M10 16c0-4-3-4.5-3-8a5 5 0 0 1 10 0c0 3.466-3 6.196-3 10a3 3 0 0 0 6 0").toNodes()
 private val zodiacLeoPath1 = PathParser().parsePathString("M 10 16 A 3 3 0 1 0 4 16 A 3 3 0 1 0 10 16 Z").toNodes()

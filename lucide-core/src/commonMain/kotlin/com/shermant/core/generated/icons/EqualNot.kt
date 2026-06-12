@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val equalNotProvider = ParameterizedIconProvider { parameters ->
     buildEqualNot(parameters)
 }
+
+val EqualNot: ImageVector
+    get() = equalNotProvider.create()
 
 private val equalNotPath0 = PathParser().parsePathString("M 5 9 L 19 9").toNodes()
 private val equalNotPath1 = PathParser().parsePathString("M 5 15 L 19 15").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val utilityPoleProvider = ParameterizedIconProvider { parameters ->
     buildUtilityPole(parameters)
 }
+
+val UtilityPole: ImageVector
+    get() = utilityPoleProvider.create()
 
 private val utilityPolePath0 = PathParser().parsePathString("M12 2v20").toNodes()
 private val utilityPolePath1 = PathParser().parsePathString("M2 5h20").toNodes()

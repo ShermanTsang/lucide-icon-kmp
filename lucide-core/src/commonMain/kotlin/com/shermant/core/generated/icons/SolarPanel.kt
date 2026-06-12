@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val solarPanelProvider = ParameterizedIconProvider { parameters ->
     buildSolarPanel(parameters)
 }
+
+val SolarPanel: ImageVector
+    get() = solarPanelProvider.create()
 
 private val solarPanelPath0 = PathParser().parsePathString("M11 2h2").toNodes()
 private val solarPanelPath1 = PathParser().parsePathString("m14.28 14-4.56 8").toNodes()

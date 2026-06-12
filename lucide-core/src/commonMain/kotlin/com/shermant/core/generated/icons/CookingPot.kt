@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cookingPotProvider = ParameterizedIconProvider { parameters ->
     buildCookingPot(parameters)
 }
+
+val CookingPot: ImageVector
+    get() = cookingPotProvider.create()
 
 private val cookingPotPath0 = PathParser().parsePathString("M2 12h20").toNodes()
 private val cookingPotPath1 = PathParser().parsePathString("M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8").toNodes()

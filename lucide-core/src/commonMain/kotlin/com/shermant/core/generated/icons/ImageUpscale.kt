@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val imageUpscaleProvider = ParameterizedIconProvider { parameters ->
     buildImageUpscale(parameters)
 }
+
+val ImageUpscale: ImageVector
+    get() = imageUpscaleProvider.create()
 
 private val imageUpscalePath0 = PathParser().parsePathString("M16 3h5v5").toNodes()
 private val imageUpscalePath1 = PathParser().parsePathString("M17 21h2a2 2 0 0 0 2-2").toNodes()

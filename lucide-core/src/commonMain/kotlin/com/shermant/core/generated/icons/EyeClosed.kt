@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val eyeClosedProvider = ParameterizedIconProvider { parameters ->
     buildEyeClosed(parameters)
 }
+
+val EyeClosed: ImageVector
+    get() = eyeClosedProvider.create()
 
 private val eyeClosedPath0 = PathParser().parsePathString("m15 18-.722-3.25").toNodes()
 private val eyeClosedPath1 = PathParser().parsePathString("M2 8a10.645 10.645 0 0 0 20 0").toNodes()

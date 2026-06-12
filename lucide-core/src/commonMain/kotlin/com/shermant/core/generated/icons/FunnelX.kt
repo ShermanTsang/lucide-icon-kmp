@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val funnelXProvider = ParameterizedIconProvider { parameters ->
     buildFunnelX(parameters)
 }
+
+val FunnelX: ImageVector
+    get() = funnelXProvider.create()
 
 private val funnelXPath0 = PathParser().parsePathString("M12.531 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14v6a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341l.427-.473").toNodes()
 private val funnelXPath1 = PathParser().parsePathString("m16.5 3.5 5 5").toNodes()

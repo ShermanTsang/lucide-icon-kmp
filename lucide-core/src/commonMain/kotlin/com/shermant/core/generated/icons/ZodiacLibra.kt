@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val zodiacLibraProvider = ParameterizedIconProvider { parameters ->
     buildZodiacLibra(parameters)
 }
+
+val ZodiacLibra: ImageVector
+    get() = zodiacLibraProvider.create()
 
 private val zodiacLibraPath0 = PathParser().parsePathString("M3 16h6.857c.162-.012.19-.323.038-.38a6 6 0 1 1 4.212 0c-.153.057-.125.368.038.38H21").toNodes()
 private val zodiacLibraPath1 = PathParser().parsePathString("M3 20h18").toNodes()

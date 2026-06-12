@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val terminalProvider = ParameterizedIconProvider { parameters ->
     buildTerminal(parameters)
 }
+
+val Terminal: ImageVector
+    get() = terminalProvider.create()
 
 private val terminalPath0 = PathParser().parsePathString("M12 19h8").toNodes()
 private val terminalPath1 = PathParser().parsePathString("m4 17 6-6-6-6").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val idCardProvider = ParameterizedIconProvider { parameters ->
     buildIdCard(parameters)
 }
+
+val IdCard: ImageVector
+    get() = idCardProvider.create()
 
 private val idCardPath0 = PathParser().parsePathString("M16 10h2").toNodes()
 private val idCardPath1 = PathParser().parsePathString("M16 14h2").toNodes()

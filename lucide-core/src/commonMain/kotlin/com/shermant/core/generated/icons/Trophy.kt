@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val trophyProvider = ParameterizedIconProvider { parameters ->
     buildTrophy(parameters)
 }
+
+val Trophy: ImageVector
+    get() = trophyProvider.create()
 
 private val trophyPath0 = PathParser().parsePathString("M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978").toNodes()
 private val trophyPath1 = PathParser().parsePathString("M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978").toNodes()

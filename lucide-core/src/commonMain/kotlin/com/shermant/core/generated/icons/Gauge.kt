@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val gaugeProvider = ParameterizedIconProvider { parameters ->
     buildGauge(parameters)
 }
+
+val Gauge: ImageVector
+    get() = gaugeProvider.create()
 
 private val gaugePath0 = PathParser().parsePathString("m12 14 4-4").toNodes()
 private val gaugePath1 = PathParser().parsePathString("M3.34 19a10 10 0 1 1 17.32 0").toNodes()

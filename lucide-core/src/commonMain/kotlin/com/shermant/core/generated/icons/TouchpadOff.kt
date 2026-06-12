@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val touchpadOffProvider = ParameterizedIconProvider { parameters ->
     buildTouchpadOff(parameters)
 }
+
+val TouchpadOff: ImageVector
+    get() = touchpadOffProvider.create()
 
 private val touchpadOffPath0 = PathParser().parsePathString("M12 20v-6").toNodes()
 private val touchpadOffPath1 = PathParser().parsePathString("M19.656 14H22").toNodes()

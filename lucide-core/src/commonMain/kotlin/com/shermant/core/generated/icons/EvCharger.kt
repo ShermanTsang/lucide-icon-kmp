@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val evChargerProvider = ParameterizedIconProvider { parameters ->
     buildEvCharger(parameters)
 }
+
+val EvCharger: ImageVector
+    get() = evChargerProvider.create()
 
 private val evChargerPath0 = PathParser().parsePathString("M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0v-6.998a2 2 0 0 0-.59-1.42L18 5").toNodes()
 private val evChargerPath1 = PathParser().parsePathString("M14 21V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16").toNodes()

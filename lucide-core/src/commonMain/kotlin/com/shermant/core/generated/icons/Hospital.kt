@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val hospitalProvider = ParameterizedIconProvider { parameters ->
     buildHospital(parameters)
 }
+
+val Hospital: ImageVector
+    get() = hospitalProvider.create()
 
 private val hospitalPath0 = PathParser().parsePathString("M12 7v4").toNodes()
 private val hospitalPath1 = PathParser().parsePathString("M14 21v-3a2 2 0 0 0-4 0v3").toNodes()

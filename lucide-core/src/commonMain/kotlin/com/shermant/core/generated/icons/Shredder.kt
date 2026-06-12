@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shredderProvider = ParameterizedIconProvider { parameters ->
     buildShredder(parameters)
 }
+
+val Shredder: ImageVector
+    get() = shredderProvider.create()
 
 private val shredderPath0 = PathParser().parsePathString("M4 13V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v5").toNodes()
 private val shredderPath1 = PathParser().parsePathString("M14 2v5a1 1 0 0 0 1 1h5").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squaresSubtractProvider = ParameterizedIconProvider { parameters ->
     buildSquaresSubtract(parameters)
 }
+
+val SquaresSubtract: ImageVector
+    get() = squaresSubtractProvider.create()
 
 private val squaresSubtractPath0 = PathParser().parsePathString("M10 22a2 2 0 0 1-2-2").toNodes()
 private val squaresSubtractPath1 = PathParser().parsePathString("M16 22h-2").toNodes()

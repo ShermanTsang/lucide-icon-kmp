@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mirrorRectangularProvider = ParameterizedIconProvider { parameters ->
     buildMirrorRectangular(parameters)
 }
+
+val MirrorRectangular: ImageVector
+    get() = mirrorRectangularProvider.create()
 
 private val mirrorRectangularPath0 = PathParser().parsePathString("M11 6 8 9").toNodes()
 private val mirrorRectangularPath1 = PathParser().parsePathString("m16 7-8 8").toNodes()

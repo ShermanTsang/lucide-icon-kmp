@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val receiptSwissFrancProvider = ParameterizedIconProvider { parameters ->
     buildReceiptSwissFranc(parameters)
 }
+
+val ReceiptSwissFranc: ImageVector
+    get() = receiptSwissFrancProvider.create()
 
 private val receiptSwissFrancPath0 = PathParser().parsePathString("M10 11h4").toNodes()
 private val receiptSwissFrancPath1 = PathParser().parsePathString("M10 17V7h5").toNodes()

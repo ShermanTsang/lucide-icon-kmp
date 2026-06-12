@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val microscopeProvider = ParameterizedIconProvider { parameters ->
     buildMicroscope(parameters)
 }
+
+val Microscope: ImageVector
+    get() = microscopeProvider.create()
 
 private val microscopePath0 = PathParser().parsePathString("M6 18h8").toNodes()
 private val microscopePath1 = PathParser().parsePathString("M3 22h18").toNodes()

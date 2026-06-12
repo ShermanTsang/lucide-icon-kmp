@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cloudAlertProvider = ParameterizedIconProvider { parameters ->
     buildCloudAlert(parameters)
 }
+
+val CloudAlert: ImageVector
+    get() = cloudAlertProvider.create()
 
 private val cloudAlertPath0 = PathParser().parsePathString("M12 12v4").toNodes()
 private val cloudAlertPath1 = PathParser().parsePathString("M12 20h.01").toNodes()

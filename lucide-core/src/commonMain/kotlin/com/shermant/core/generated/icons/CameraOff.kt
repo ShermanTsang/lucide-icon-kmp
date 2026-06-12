@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cameraOffProvider = ParameterizedIconProvider { parameters ->
     buildCameraOff(parameters)
 }
+
+val CameraOff: ImageVector
+    get() = cameraOffProvider.create()
 
 private val cameraOffPath0 = PathParser().parsePathString("M14.564 14.558a3 3 0 1 1-4.122-4.121").toNodes()
 private val cameraOffPath1 = PathParser().parsePathString("m2 2 20 20").toNodes()

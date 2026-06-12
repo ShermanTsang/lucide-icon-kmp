@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val repeat2Provider = ParameterizedIconProvider { parameters ->
     buildRepeat2(parameters)
 }
+
+val Repeat2: ImageVector
+    get() = repeat2Provider.create()
 
 private val repeat2Path0 = PathParser().parsePathString("m2 9 3-3 3 3").toNodes()
 private val repeat2Path1 = PathParser().parsePathString("M13 18H7a2 2 0 0 1-2-2V6").toNodes()

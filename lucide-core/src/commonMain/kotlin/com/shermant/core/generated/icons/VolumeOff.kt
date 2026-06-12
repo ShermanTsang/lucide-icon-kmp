@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val volumeOffProvider = ParameterizedIconProvider { parameters ->
     buildVolumeOff(parameters)
 }
+
+val VolumeOff: ImageVector
+    get() = volumeOffProvider.create()
 
 private val volumeOffPath0 = PathParser().parsePathString("M16 9a5 5 0 0 1 .95 2.293").toNodes()
 private val volumeOffPath1 = PathParser().parsePathString("M19.364 5.636a9 9 0 0 1 1.889 9.96").toNodes()

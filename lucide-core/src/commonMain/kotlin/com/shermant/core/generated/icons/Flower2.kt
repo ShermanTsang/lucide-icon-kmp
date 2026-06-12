@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val flower2Provider = ParameterizedIconProvider { parameters ->
     buildFlower2(parameters)
 }
+
+val Flower2: ImageVector
+    get() = flower2Provider.create()
 
 private val flower2Path0 = PathParser().parsePathString("M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1").toNodes()
 private val flower2Path1 = PathParser().parsePathString("M 14 8 A 2 2 0 1 0 10 8 A 2 2 0 1 0 14 8 Z").toNodes()

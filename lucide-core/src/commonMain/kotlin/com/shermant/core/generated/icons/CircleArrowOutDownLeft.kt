@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleArrowOutDownLeftProvider = ParameterizedIconProvider { parameters ->
     buildCircleArrowOutDownLeft(parameters)
 }
+
+val CircleArrowOutDownLeft: ImageVector
+    get() = circleArrowOutDownLeftProvider.create()
 
 private val circleArrowOutDownLeftPath0 = PathParser().parsePathString("M2 12a10 10 0 1 1 10 10").toNodes()
 private val circleArrowOutDownLeftPath1 = PathParser().parsePathString("m2 22 10-10").toNodes()

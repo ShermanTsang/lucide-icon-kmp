@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val hotelProvider = ParameterizedIconProvider { parameters ->
     buildHotel(parameters)
 }
+
+val Hotel: ImageVector
+    get() = hotelProvider.create()
 
 private val hotelPath0 = PathParser().parsePathString("M10 22v-6.57").toNodes()
 private val hotelPath1 = PathParser().parsePathString("M12 11h.01").toNodes()

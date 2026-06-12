@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bellElectricProvider = ParameterizedIconProvider { parameters ->
     buildBellElectric(parameters)
 }
+
+val BellElectric: ImageVector
+    get() = bellElectricProvider.create()
 
 private val bellElectricPath0 = PathParser().parsePathString("M18.518 17.347A7 7 0 0 1 14 19").toNodes()
 private val bellElectricPath1 = PathParser().parsePathString("M18.8 4A11 11 0 0 1 20 9").toNodes()

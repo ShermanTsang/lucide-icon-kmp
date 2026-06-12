@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val gripHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildGripHorizontal(parameters)
 }
+
+val GripHorizontal: ImageVector
+    get() = gripHorizontalProvider.create()
 
 private val gripHorizontalPath0 = PathParser().parsePathString("M 13 9 A 1 1 0 1 0 11 9 A 1 1 0 1 0 13 9 Z").toNodes()
 private val gripHorizontalPath1 = PathParser().parsePathString("M 20 9 A 1 1 0 1 0 18 9 A 1 1 0 1 0 20 9 Z").toNodes()

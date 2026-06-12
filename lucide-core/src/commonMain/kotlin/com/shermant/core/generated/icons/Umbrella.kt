@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val umbrellaProvider = ParameterizedIconProvider { parameters ->
     buildUmbrella(parameters)
 }
+
+val Umbrella: ImageVector
+    get() = umbrellaProvider.create()
 
 private val umbrellaPath0 = PathParser().parsePathString("M12 13v7a2 2 0 0 0 4 0").toNodes()
 private val umbrellaPath1 = PathParser().parsePathString("M12 2v2").toNodes()

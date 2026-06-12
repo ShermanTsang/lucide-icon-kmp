@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val panelTopBottomDashedProvider = ParameterizedIconProvider { parameters ->
     buildPanelTopBottomDashed(parameters)
 }
+
+val PanelTopBottomDashed: ImageVector
+    get() = panelTopBottomDashedProvider.create()
 
 private val panelTopBottomDashedPath0 = PathParser().parsePathString("M14 15h1").toNodes()
 private val panelTopBottomDashedPath1 = PathParser().parsePathString("M14 9h1").toNodes()

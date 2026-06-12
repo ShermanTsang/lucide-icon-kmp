@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val paletteProvider = ParameterizedIconProvider { parameters ->
     buildPalette(parameters)
 }
+
+val Palette: ImageVector
+    get() = paletteProvider.create()
 
 private val palettePath0 = PathParser().parsePathString("M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z").toNodes()
 private val palettePath1 = PathParser().parsePathString("M 14 6.5 A 0.5 0.5 0 1 0 13 6.5 A 0.5 0.5 0 1 0 14 6.5 Z").toNodes()

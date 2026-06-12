@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val alignVerticalJustifyCenterProvider = ParameterizedIconProvider { parameters ->
     buildAlignVerticalJustifyCenter(parameters)
 }
+
+val AlignVerticalJustifyCenter: ImageVector
+    get() = alignVerticalJustifyCenterProvider.create()
 
 private val alignVerticalJustifyCenterPath0 = PathParser().parsePathString("M 7 16 H 17 A 2 2 0 0 1 19 18 V 20 A 2 2 0 0 1 17 22 H 7 A 2 2 0 0 1 5 20 V 18 A 2 2 0 0 1 7 16 Z").toNodes()
 private val alignVerticalJustifyCenterPath1 = PathParser().parsePathString("M 9 2 H 15 A 2 2 0 0 1 17 4 V 6 A 2 2 0 0 1 15 8 H 9 A 2 2 0 0 1 7 6 V 4 A 2 2 0 0 1 9 2 Z").toNodes()

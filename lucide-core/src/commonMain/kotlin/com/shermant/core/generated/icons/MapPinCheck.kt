@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mapPinCheckProvider = ParameterizedIconProvider { parameters ->
     buildMapPinCheck(parameters)
 }
+
+val MapPinCheck: ImageVector
+    get() = mapPinCheckProvider.create()
 
 private val mapPinCheckPath0 = PathParser().parsePathString("M19.43 12.935c.357-.967.57-1.955.57-2.935a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 1.202 0 32.197 32.197 0 0 0 .813-.728").toNodes()
 private val mapPinCheckPath1 = PathParser().parsePathString("M 15 10 A 3 3 0 1 0 9 10 A 3 3 0 1 0 15 10 Z").toNodes()

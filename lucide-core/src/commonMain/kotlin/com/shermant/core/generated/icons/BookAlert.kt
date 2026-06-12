@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bookAlertProvider = ParameterizedIconProvider { parameters ->
     buildBookAlert(parameters)
 }
+
+val BookAlert: ImageVector
+    get() = bookAlertProvider.create()
 
 private val bookAlertPath0 = PathParser().parsePathString("M12 13h.01").toNodes()
 private val bookAlertPath1 = PathParser().parsePathString("M12 6v3").toNodes()

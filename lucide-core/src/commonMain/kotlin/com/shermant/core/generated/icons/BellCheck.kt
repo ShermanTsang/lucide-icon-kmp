@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bellCheckProvider = ParameterizedIconProvider { parameters ->
     buildBellCheck(parameters)
 }
+
+val BellCheck: ImageVector
+    get() = bellCheckProvider.create()
 
 private val bellCheckPath0 = PathParser().parsePathString("M10.268 21a2 2 0 0 0 3.464 0").toNodes()
 private val bellCheckPath1 = PathParser().parsePathString("m15 8 2 2 4-4").toNodes()

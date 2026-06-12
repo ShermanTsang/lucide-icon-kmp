@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val triangleAlertProvider = ParameterizedIconProvider { parameters ->
     buildTriangleAlert(parameters)
 }
+
+val TriangleAlert: ImageVector
+    get() = triangleAlertProvider.create()
 
 private val triangleAlertPath0 = PathParser().parsePathString("m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3").toNodes()
 private val triangleAlertPath1 = PathParser().parsePathString("M12 9v4").toNodes()

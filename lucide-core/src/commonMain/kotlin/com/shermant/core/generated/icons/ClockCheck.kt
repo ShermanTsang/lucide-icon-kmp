@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val clockCheckProvider = ParameterizedIconProvider { parameters ->
     buildClockCheck(parameters)
 }
+
+val ClockCheck: ImageVector
+    get() = clockCheckProvider.create()
 
 private val clockCheckPath0 = PathParser().parsePathString("M12 6v6l4 2").toNodes()
 private val clockCheckPath1 = PathParser().parsePathString("M22 12a10 10 0 1 0-11 9.95").toNodes()

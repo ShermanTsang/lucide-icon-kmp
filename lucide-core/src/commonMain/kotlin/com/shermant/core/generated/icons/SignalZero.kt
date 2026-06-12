@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val signalZeroProvider = ParameterizedIconProvider { parameters ->
     buildSignalZero(parameters)
 }
+
+val SignalZero: ImageVector
+    get() = signalZeroProvider.create()
 
 private val signalZeroPath0 = PathParser().parsePathString("M2 20h.01").toNodes()
 

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val glassesProvider = ParameterizedIconProvider { parameters ->
     buildGlasses(parameters)
 }
+
+val Glasses: ImageVector
+    get() = glassesProvider.create()
 
 private val glassesPath0 = PathParser().parsePathString("M 10 15 A 4 4 0 1 0 2 15 A 4 4 0 1 0 10 15 Z").toNodes()
 private val glassesPath1 = PathParser().parsePathString("M 22 15 A 4 4 0 1 0 14 15 A 4 4 0 1 0 22 15 Z").toNodes()

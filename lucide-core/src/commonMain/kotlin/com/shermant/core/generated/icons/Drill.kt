@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val drillProvider = ParameterizedIconProvider { parameters ->
     buildDrill(parameters)
 }
+
+val Drill: ImageVector
+    get() = drillProvider.create()
 
 private val drillPath0 = PathParser().parsePathString("M10 18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a3 3 0 0 1-3-3 1 1 0 0 1 1-1z").toNodes()
 private val drillPath1 = PathParser().parsePathString("M13 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1l-.81 3.242a1 1 0 0 1-.97.758H8").toNodes()

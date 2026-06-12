@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val rollerCoasterProvider = ParameterizedIconProvider { parameters ->
     buildRollerCoaster(parameters)
 }
+
+val RollerCoaster: ImageVector
+    get() = rollerCoasterProvider.create()
 
 private val rollerCoasterPath0 = PathParser().parsePathString("M6 19V5").toNodes()
 private val rollerCoasterPath1 = PathParser().parsePathString("M10 19V6.8").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val truckProvider = ParameterizedIconProvider { parameters ->
     buildTruck(parameters)
 }
+
+val Truck: ImageVector
+    get() = truckProvider.create()
 
 private val truckPath0 = PathParser().parsePathString("M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2").toNodes()
 private val truckPath1 = PathParser().parsePathString("M15 18H9").toNodes()

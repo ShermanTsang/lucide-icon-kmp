@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val scrollProvider = ParameterizedIconProvider { parameters ->
     buildScroll(parameters)
 }
+
+val Scroll: ImageVector
+    get() = scrollProvider.create()
 
 private val scrollPath0 = PathParser().parsePathString("M19 17V5a2 2 0 0 0-2-2H4").toNodes()
 private val scrollPath1 = PathParser().parsePathString("M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3").toNodes()

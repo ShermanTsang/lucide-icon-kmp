@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val fileCogProvider = ParameterizedIconProvider { parameters ->
     buildFileCog(parameters)
 }
+
+val FileCog: ImageVector
+    get() = fileCogProvider.create()
 
 private val fileCogPath0 = PathParser().parsePathString("M15 8a1 1 0 0 1-1-1V2a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8z").toNodes()
 private val fileCogPath1 = PathParser().parsePathString("M20 8v12a2 2 0 0 1-2 2h-4.182").toNodes()

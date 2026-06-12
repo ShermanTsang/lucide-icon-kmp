@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val rotateCwProvider = ParameterizedIconProvider { parameters ->
     buildRotateCw(parameters)
 }
+
+val RotateCw: ImageVector
+    get() = rotateCwProvider.create()
 
 private val rotateCwPath0 = PathParser().parsePathString("M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8").toNodes()
 private val rotateCwPath1 = PathParser().parsePathString("M21 3v5h-5").toNodes()

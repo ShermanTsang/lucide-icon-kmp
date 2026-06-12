@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val focusProvider = ParameterizedIconProvider { parameters ->
     buildFocus(parameters)
 }
+
+val Focus: ImageVector
+    get() = focusProvider.create()
 
 private val focusPath0 = PathParser().parsePathString("M 15 12 A 3 3 0 1 0 9 12 A 3 3 0 1 0 15 12 Z").toNodes()
 private val focusPath1 = PathParser().parsePathString("M3 7V5a2 2 0 0 1 2-2h2").toNodes()

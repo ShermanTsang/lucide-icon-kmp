@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val batteryWarningProvider = ParameterizedIconProvider { parameters ->
     buildBatteryWarning(parameters)
 }
+
+val BatteryWarning: ImageVector
+    get() = batteryWarningProvider.create()
 
 private val batteryWarningPath0 = PathParser().parsePathString("M10 17h.01").toNodes()
 private val batteryWarningPath1 = PathParser().parsePathString("M10 7v6").toNodes()

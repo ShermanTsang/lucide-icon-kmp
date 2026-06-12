@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val swordProvider = ParameterizedIconProvider { parameters ->
     buildSword(parameters)
 }
+
+val Sword: ImageVector
+    get() = swordProvider.create()
 
 private val swordPath0 = PathParser().parsePathString("m11 19-6-6").toNodes()
 private val swordPath1 = PathParser().parsePathString("m5 21-2-2").toNodes()

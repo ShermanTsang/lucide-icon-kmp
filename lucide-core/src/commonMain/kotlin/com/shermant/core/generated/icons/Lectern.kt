@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lecternProvider = ParameterizedIconProvider { parameters ->
     buildLectern(parameters)
 }
+
+val Lectern: ImageVector
+    get() = lecternProvider.create()
 
 private val lecternPath0 = PathParser().parsePathString("M16 12h3a2 2 0 0 0 1.902-1.38l1.056-3.333A1 1 0 0 0 21 6H3a1 1 0 0 0-.958 1.287l1.056 3.334A2 2 0 0 0 5 12h3").toNodes()
 private val lecternPath1 = PathParser().parsePathString("M18 6V3a1 1 0 0 0-1-1h-3").toNodes()

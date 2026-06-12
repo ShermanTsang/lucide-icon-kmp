@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cakeProvider = ParameterizedIconProvider { parameters ->
     buildCake(parameters)
 }
+
+val Cake: ImageVector
+    get() = cakeProvider.create()
 
 private val cakePath0 = PathParser().parsePathString("M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8").toNodes()
 private val cakePath1 = PathParser().parsePathString("M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1").toNodes()

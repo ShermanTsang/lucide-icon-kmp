@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val alignVerticalDistributeCenterProvider = ParameterizedIconProvider { parameters ->
     buildAlignVerticalDistributeCenter(parameters)
 }
+
+val AlignVerticalDistributeCenter: ImageVector
+    get() = alignVerticalDistributeCenterProvider.create()
 
 private val alignVerticalDistributeCenterPath0 = PathParser().parsePathString("M22 17h-3").toNodes()
 private val alignVerticalDistributeCenterPath1 = PathParser().parsePathString("M22 7h-5").toNodes()

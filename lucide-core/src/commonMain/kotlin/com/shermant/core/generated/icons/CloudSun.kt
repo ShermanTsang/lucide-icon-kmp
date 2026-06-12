@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cloudSunProvider = ParameterizedIconProvider { parameters ->
     buildCloudSun(parameters)
 }
+
+val CloudSun: ImageVector
+    get() = cloudSunProvider.create()
 
 private val cloudSunPath0 = PathParser().parsePathString("M12 2v2").toNodes()
 private val cloudSunPath1 = PathParser().parsePathString("m4.93 4.93 1.41 1.41").toNodes()

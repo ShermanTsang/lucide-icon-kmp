@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val fireExtinguisherProvider = ParameterizedIconProvider { parameters ->
     buildFireExtinguisher(parameters)
 }
+
+val FireExtinguisher: ImageVector
+    get() = fireExtinguisherProvider.create()
 
 private val fireExtinguisherPath0 = PathParser().parsePathString("M15 6.5V3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3.5").toNodes()
 private val fireExtinguisherPath1 = PathParser().parsePathString("M9 18h8").toNodes()

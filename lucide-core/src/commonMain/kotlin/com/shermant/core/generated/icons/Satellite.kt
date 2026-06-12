@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val satelliteProvider = ParameterizedIconProvider { parameters ->
     buildSatellite(parameters)
 }
+
+val Satellite: ImageVector
+    get() = satelliteProvider.create()
 
 private val satellitePath0 = PathParser().parsePathString("m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5").toNodes()
 private val satellitePath1 = PathParser().parsePathString("M16.5 7.5 19 5").toNodes()

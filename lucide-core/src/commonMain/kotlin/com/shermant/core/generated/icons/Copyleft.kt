@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val copyleftProvider = ParameterizedIconProvider { parameters ->
     buildCopyleft(parameters)
 }
+
+val Copyleft: ImageVector
+    get() = copyleftProvider.create()
 
 private val copyleftPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val copyleftPath1 = PathParser().parsePathString("M9.17 14.83a4 4 0 1 0 0-5.66").toNodes()

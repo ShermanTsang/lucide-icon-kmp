@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ticketCheckProvider = ParameterizedIconProvider { parameters ->
     buildTicketCheck(parameters)
 }
+
+val TicketCheck: ImageVector
+    get() = ticketCheckProvider.create()
 
 private val ticketCheckPath0 = PathParser().parsePathString("M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z").toNodes()
 private val ticketCheckPath1 = PathParser().parsePathString("m9 12 2 2 4-4").toNodes()

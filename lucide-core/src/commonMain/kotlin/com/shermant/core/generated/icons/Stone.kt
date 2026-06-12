@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val stoneProvider = ParameterizedIconProvider { parameters ->
     buildStone(parameters)
 }
+
+val Stone: ImageVector
+    get() = stoneProvider.create()
 
 private val stonePath0 = PathParser().parsePathString("M11.264 2.205A4 4 0 0 0 6.42 4.211l-4 8a4 4 0 0 0 1.359 5.117l6 4a4 4 0 0 0 4.438 0l6-4a4 4 0 0 0 1.576-4.592l-2-6a4 4 0 0 0-2.53-2.53z").toNodes()
 private val stonePath1 = PathParser().parsePathString("M11.99 22 14 12l7.822 3.184").toNodes()

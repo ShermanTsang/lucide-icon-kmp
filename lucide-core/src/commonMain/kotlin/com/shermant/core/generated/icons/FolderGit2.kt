@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val folderGit2Provider = ParameterizedIconProvider { parameters ->
     buildFolderGit2(parameters)
 }
+
+val FolderGit2: ImageVector
+    get() = folderGit2Provider.create()
 
 private val folderGit2Path0 = PathParser().parsePathString("M18 19a5 5 0 0 1-5-5v8").toNodes()
 private val folderGit2Path1 = PathParser().parsePathString("M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5").toNodes()

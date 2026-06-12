@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleParkingOffProvider = ParameterizedIconProvider { parameters ->
     buildCircleParkingOff(parameters)
 }
+
+val CircleParkingOff: ImageVector
+    get() = circleParkingOffProvider.create()
 
 private val circleParkingOffPath0 = PathParser().parsePathString("M12.656 7H13a3 3 0 0 1 2.984 3.307").toNodes()
 private val circleParkingOffPath1 = PathParser().parsePathString("M13 13H9").toNodes()

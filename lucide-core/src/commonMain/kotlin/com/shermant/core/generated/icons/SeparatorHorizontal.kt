@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val separatorHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildSeparatorHorizontal(parameters)
 }
+
+val SeparatorHorizontal: ImageVector
+    get() = separatorHorizontalProvider.create()
 
 private val separatorHorizontalPath0 = PathParser().parsePathString("m16 16-4 4-4-4").toNodes()
 private val separatorHorizontalPath1 = PathParser().parsePathString("M3 12h18").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val tableOfContentsProvider = ParameterizedIconProvider { parameters ->
     buildTableOfContents(parameters)
 }
+
+val TableOfContents: ImageVector
+    get() = tableOfContentsProvider.create()
 
 private val tableOfContentsPath0 = PathParser().parsePathString("M16 5H3").toNodes()
 private val tableOfContentsPath1 = PathParser().parsePathString("M16 12H3").toNodes()

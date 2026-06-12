@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val textInitialProvider = ParameterizedIconProvider { parameters ->
     buildTextInitial(parameters)
 }
+
+val TextInitial: ImageVector
+    get() = textInitialProvider.create()
 
 private val textInitialPath0 = PathParser().parsePathString("M15 5h6").toNodes()
 private val textInitialPath1 = PathParser().parsePathString("M15 12h6").toNodes()

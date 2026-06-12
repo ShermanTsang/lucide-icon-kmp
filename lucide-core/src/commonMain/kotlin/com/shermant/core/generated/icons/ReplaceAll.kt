@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val replaceAllProvider = ParameterizedIconProvider { parameters ->
     buildReplaceAll(parameters)
 }
+
+val ReplaceAll: ImageVector
+    get() = replaceAllProvider.create()
 
 private val replaceAllPath0 = PathParser().parsePathString("M14 14a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1").toNodes()
 private val replaceAllPath1 = PathParser().parsePathString("M14 4a1 1 0 0 1 1-1").toNodes()

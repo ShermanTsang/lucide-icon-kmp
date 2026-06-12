@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val grapeProvider = ParameterizedIconProvider { parameters ->
     buildGrape(parameters)
 }
+
+val Grape: ImageVector
+    get() = grapeProvider.create()
 
 private val grapePath0 = PathParser().parsePathString("M22 5V2l-5.89 5.89").toNodes()
 private val grapePath1 = PathParser().parsePathString("M 19.6 15.89 A 3 3 0 1 0 13.6 15.89 A 3 3 0 1 0 19.6 15.89 Z").toNodes()

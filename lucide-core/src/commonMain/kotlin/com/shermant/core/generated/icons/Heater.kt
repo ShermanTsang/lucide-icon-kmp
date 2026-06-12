@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val heaterProvider = ParameterizedIconProvider { parameters ->
     buildHeater(parameters)
 }
+
+val Heater: ImageVector
+    get() = heaterProvider.create()
 
 private val heaterPath0 = PathParser().parsePathString("M11 8c2-3-2-3 0-6").toNodes()
 private val heaterPath1 = PathParser().parsePathString("M15.5 8c2-3-2-3 0-6").toNodes()

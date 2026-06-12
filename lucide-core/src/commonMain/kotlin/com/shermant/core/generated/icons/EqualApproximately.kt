@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val equalApproximatelyProvider = ParameterizedIconProvider { parameters ->
     buildEqualApproximately(parameters)
 }
+
+val EqualApproximately: ImageVector
+    get() = equalApproximatelyProvider.create()
 
 private val equalApproximatelyPath0 = PathParser().parsePathString("M5 15a6.5 6.5 0 0 1 7 0 6.5 6.5 0 0 0 7 0").toNodes()
 private val equalApproximatelyPath1 = PathParser().parsePathString("M5 9a6.5 6.5 0 0 1 7 0 6.5 6.5 0 0 0 7 0").toNodes()

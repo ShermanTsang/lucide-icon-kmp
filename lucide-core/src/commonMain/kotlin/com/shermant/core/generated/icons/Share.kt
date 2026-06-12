@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shareProvider = ParameterizedIconProvider { parameters ->
     buildShare(parameters)
 }
+
+val Share: ImageVector
+    get() = shareProvider.create()
 
 private val sharePath0 = PathParser().parsePathString("M12 2v13").toNodes()
 private val sharePath1 = PathParser().parsePathString("m16 6-4-4-4 4").toNodes()

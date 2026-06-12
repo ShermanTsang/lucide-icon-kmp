@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sendHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildSendHorizontal(parameters)
 }
+
+val SendHorizontal: ImageVector
+    get() = sendHorizontalProvider.create()
 
 private val sendHorizontalPath0 = PathParser().parsePathString("M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z").toNodes()
 private val sendHorizontalPath1 = PathParser().parsePathString("M6 12h16").toNodes()

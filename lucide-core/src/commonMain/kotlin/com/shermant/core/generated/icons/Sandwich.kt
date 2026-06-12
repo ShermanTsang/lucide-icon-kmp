@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sandwichProvider = ParameterizedIconProvider { parameters ->
     buildSandwich(parameters)
 }
+
+val Sandwich: ImageVector
+    get() = sandwichProvider.create()
 
 private val sandwichPath0 = PathParser().parsePathString("m2.37 11.223 8.372-6.777a2 2 0 0 1 2.516 0l8.371 6.777").toNodes()
 private val sandwichPath1 = PathParser().parsePathString("M21 15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-5.25").toNodes()

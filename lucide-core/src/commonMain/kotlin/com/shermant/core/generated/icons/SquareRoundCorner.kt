@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareRoundCornerProvider = ParameterizedIconProvider { parameters ->
     buildSquareRoundCorner(parameters)
 }
+
+val SquareRoundCorner: ImageVector
+    get() = squareRoundCornerProvider.create()
 
 private val squareRoundCornerPath0 = PathParser().parsePathString("M21 11a8 8 0 0 0-8-8").toNodes()
 private val squareRoundCornerPath1 = PathParser().parsePathString("M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4").toNodes()

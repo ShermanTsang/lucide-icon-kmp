@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val gamepadProvider = ParameterizedIconProvider { parameters ->
     buildGamepad(parameters)
 }
+
+val Gamepad: ImageVector
+    get() = gamepadProvider.create()
 
 private val gamepadPath0 = PathParser().parsePathString("M 6 12 L 10 12").toNodes()
 private val gamepadPath1 = PathParser().parsePathString("M 8 10 L 8 14").toNodes()

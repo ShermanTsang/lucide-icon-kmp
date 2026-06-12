@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val paintBucketProvider = ParameterizedIconProvider { parameters ->
     buildPaintBucket(parameters)
 }
+
+val PaintBucket: ImageVector
+    get() = paintBucketProvider.create()
 
 private val paintBucketPath0 = PathParser().parsePathString("M11 7 6 2").toNodes()
 private val paintBucketPath1 = PathParser().parsePathString("M18.992 12H2.041").toNodes()

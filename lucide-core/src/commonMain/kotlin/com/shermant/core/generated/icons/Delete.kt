@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val deleteProvider = ParameterizedIconProvider { parameters ->
     buildDelete(parameters)
 }
+
+val Delete: ImageVector
+    get() = deleteProvider.create()
 
 private val deletePath0 = PathParser().parsePathString("M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z").toNodes()
 private val deletePath1 = PathParser().parsePathString("m12 9 6 6").toNodes()

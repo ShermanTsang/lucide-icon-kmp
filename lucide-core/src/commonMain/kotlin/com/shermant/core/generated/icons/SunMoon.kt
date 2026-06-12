@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sunMoonProvider = ParameterizedIconProvider { parameters ->
     buildSunMoon(parameters)
 }
+
+val SunMoon: ImageVector
+    get() = sunMoonProvider.create()
 
 private val sunMoonPath0 = PathParser().parsePathString("M12 2v2").toNodes()
 private val sunMoonPath1 = PathParser().parsePathString("M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val balloonProvider = ParameterizedIconProvider { parameters ->
     buildBalloon(parameters)
 }
+
+val Balloon: ImageVector
+    get() = balloonProvider.create()
 
 private val balloonPath0 = PathParser().parsePathString("M12 16v1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v1").toNodes()
 private val balloonPath1 = PathParser().parsePathString("M12 6a2 2 0 0 1 2 2").toNodes()

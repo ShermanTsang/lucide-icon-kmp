@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val vanProvider = ParameterizedIconProvider { parameters ->
     buildVan(parameters)
 }
+
+val Van: ImageVector
+    get() = vanProvider.create()
 
 private val vanPath0 = PathParser().parsePathString("M13 6v5a1 1 0 0 0 1 1h6.102a1 1 0 0 1 .712.298l.898.91a1 1 0 0 1 .288.702V17a1 1 0 0 1-1 1h-3").toNodes()
 private val vanPath1 = PathParser().parsePathString("M5 18H3a1 1 0 0 1-1-1V8a2 2 0 0 1 2-2h12c1.1 0 2.1.8 2.4 1.8l1.176 4.2").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val discProvider = ParameterizedIconProvider { parameters ->
     buildDisc(parameters)
 }
+
+val Disc: ImageVector
+    get() = discProvider.create()
 
 private val discPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val discPath1 = PathParser().parsePathString("M 14 12 A 2 2 0 1 0 10 12 A 2 2 0 1 0 14 12 Z").toNodes()

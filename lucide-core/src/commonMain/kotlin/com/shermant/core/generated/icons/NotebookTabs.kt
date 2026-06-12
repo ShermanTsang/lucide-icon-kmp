@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val notebookTabsProvider = ParameterizedIconProvider { parameters ->
     buildNotebookTabs(parameters)
 }
+
+val NotebookTabs: ImageVector
+    get() = notebookTabsProvider.create()
 
 private val notebookTabsPath0 = PathParser().parsePathString("M2 6h4").toNodes()
 private val notebookTabsPath1 = PathParser().parsePathString("M2 10h4").toNodes()

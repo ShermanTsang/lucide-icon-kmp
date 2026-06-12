@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val betweenVerticalEndProvider = ParameterizedIconProvider { parameters ->
     buildBetweenVerticalEnd(parameters)
 }
+
+val BetweenVerticalEnd: ImageVector
+    get() = betweenVerticalEndProvider.create()
 
 private val betweenVerticalEndPath0 = PathParser().parsePathString("M 4 3 H 9 A 1 1 0 0 1 10 4 V 15 A 1 1 0 0 1 9 16 H 4 A 1 1 0 0 1 3 15 V 4 A 1 1 0 0 1 4 3 Z").toNodes()
 private val betweenVerticalEndPath1 = PathParser().parsePathString("m9 22 3-3 3 3").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lineDotRightHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildLineDotRightHorizontal(parameters)
 }
+
+val LineDotRightHorizontal: ImageVector
+    get() = lineDotRightHorizontalProvider.create()
 
 private val lineDotRightHorizontalPath0 = PathParser().parsePathString("M 3 12 L 15 12").toNodes()
 private val lineDotRightHorizontalPath1 = PathParser().parsePathString("M 21 12 A 3 3 0 1 0 15 12 A 3 3 0 1 0 21 12 Z").toNodes()

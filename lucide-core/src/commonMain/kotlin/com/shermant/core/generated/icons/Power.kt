@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val powerProvider = ParameterizedIconProvider { parameters ->
     buildPower(parameters)
 }
+
+val Power: ImageVector
+    get() = powerProvider.create()
 
 private val powerPath0 = PathParser().parsePathString("M12 2v10").toNodes()
 private val powerPath1 = PathParser().parsePathString("M18.4 6.6a9 9 0 1 1-12.77.04").toNodes()

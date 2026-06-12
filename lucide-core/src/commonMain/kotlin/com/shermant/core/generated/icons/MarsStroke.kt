@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val marsStrokeProvider = ParameterizedIconProvider { parameters ->
     buildMarsStroke(parameters)
 }
+
+val MarsStroke: ImageVector
+    get() = marsStrokeProvider.create()
 
 private val marsStrokePath0 = PathParser().parsePathString("m14 6 4 4").toNodes()
 private val marsStrokePath1 = PathParser().parsePathString("M17 3h4v4").toNodes()

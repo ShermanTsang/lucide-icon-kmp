@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val monitorCheckProvider = ParameterizedIconProvider { parameters ->
     buildMonitorCheck(parameters)
 }
+
+val MonitorCheck: ImageVector
+    get() = monitorCheckProvider.create()
 
 private val monitorCheckPath0 = PathParser().parsePathString("m9 10 2 2 4-4").toNodes()
 private val monitorCheckPath1 = PathParser().parsePathString("M 4 3 H 20 A 2 2 0 0 1 22 5 V 15 A 2 2 0 0 1 20 17 H 4 A 2 2 0 0 1 2 15 V 5 A 2 2 0 0 1 4 3 Z").toNodes()

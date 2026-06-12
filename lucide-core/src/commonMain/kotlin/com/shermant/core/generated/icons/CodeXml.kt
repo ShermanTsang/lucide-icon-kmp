@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val codeXmlProvider = ParameterizedIconProvider { parameters ->
     buildCodeXml(parameters)
 }
+
+val CodeXml: ImageVector
+    get() = codeXmlProvider.create()
 
 private val codeXmlPath0 = PathParser().parsePathString("m18 16 4-4-4-4").toNodes()
 private val codeXmlPath1 = PathParser().parsePathString("m6 8-4 4 4 4").toNodes()

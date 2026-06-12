@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val hardHatProvider = ParameterizedIconProvider { parameters ->
     buildHardHat(parameters)
 }
+
+val HardHat: ImageVector
+    get() = hardHatProvider.create()
 
 private val hardHatPath0 = PathParser().parsePathString("M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5").toNodes()
 private val hardHatPath1 = PathParser().parsePathString("M14 6a6 6 0 0 1 6 6v3").toNodes()

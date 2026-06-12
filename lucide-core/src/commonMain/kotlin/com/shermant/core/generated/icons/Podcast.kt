@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val podcastProvider = ParameterizedIconProvider { parameters ->
     buildPodcast(parameters)
 }
+
+val Podcast: ImageVector
+    get() = podcastProvider.create()
 
 private val podcastPath0 = PathParser().parsePathString("M13 17a1 1 0 1 0-2 0l.5 4.5a0.5 0.5 0 0 0 1 0z").toNodes()
 private val podcastPath1 = PathParser().parsePathString("M16.85 18.58a9 9 0 1 0-9.7 0").toNodes()

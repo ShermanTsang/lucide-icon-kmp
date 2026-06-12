@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val draftingCompassProvider = ParameterizedIconProvider { parameters ->
     buildDraftingCompass(parameters)
 }
+
+val DraftingCompass: ImageVector
+    get() = draftingCompassProvider.create()
 
 private val draftingCompassPath0 = PathParser().parsePathString("m12.99 6.74 1.93 3.44").toNodes()
 private val draftingCompassPath1 = PathParser().parsePathString("M19.136 12a10 10 0 0 1-14.271 0").toNodes()

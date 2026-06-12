@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bellRingProvider = ParameterizedIconProvider { parameters ->
     buildBellRing(parameters)
 }
+
+val BellRing: ImageVector
+    get() = bellRingProvider.create()
 
 private val bellRingPath0 = PathParser().parsePathString("M10.268 21a2 2 0 0 0 3.464 0").toNodes()
 private val bellRingPath1 = PathParser().parsePathString("M22 8c0-2.3-.8-4.3-2-6").toNodes()

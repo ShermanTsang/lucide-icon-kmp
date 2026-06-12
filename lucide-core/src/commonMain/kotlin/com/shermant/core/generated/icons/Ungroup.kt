@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ungroupProvider = ParameterizedIconProvider { parameters ->
     buildUngroup(parameters)
 }
+
+val Ungroup: ImageVector
+    get() = ungroupProvider.create()
 
 private val ungroupPath0 = PathParser().parsePathString("M 6 4 H 12 A 1 1 0 0 1 13 5 V 9 A 1 1 0 0 1 12 10 H 6 A 1 1 0 0 1 5 9 V 5 A 1 1 0 0 1 6 4 Z").toNodes()
 private val ungroupPath1 = PathParser().parsePathString("M 12 14 H 18 A 1 1 0 0 1 19 15 V 19 A 1 1 0 0 1 18 20 H 12 A 1 1 0 0 1 11 19 V 15 A 1 1 0 0 1 12 14 Z").toNodes()

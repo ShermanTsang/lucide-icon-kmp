@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val tangentProvider = ParameterizedIconProvider { parameters ->
     buildTangent(parameters)
 }
+
+val Tangent: ImageVector
+    get() = tangentProvider.create()
 
 private val tangentPath0 = PathParser().parsePathString("M 19 4 A 2 2 0 1 0 15 4 A 2 2 0 1 0 19 4 Z").toNodes()
 private val tangentPath1 = PathParser().parsePathString("M15.59 5.41 5.41 15.59").toNodes()

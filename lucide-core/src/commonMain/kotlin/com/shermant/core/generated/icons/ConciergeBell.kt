@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val conciergeBellProvider = ParameterizedIconProvider { parameters ->
     buildConciergeBell(parameters)
 }
+
+val ConciergeBell: ImageVector
+    get() = conciergeBellProvider.create()
 
 private val conciergeBellPath0 = PathParser().parsePathString("M3 20a1 1 0 0 1-1-1v-1a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1Z").toNodes()
 private val conciergeBellPath1 = PathParser().parsePathString("M20 16a8 8 0 1 0-16 0").toNodes()

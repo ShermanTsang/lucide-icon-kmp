@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val diffProvider = ParameterizedIconProvider { parameters ->
     buildDiff(parameters)
 }
+
+val Diff: ImageVector
+    get() = diffProvider.create()
 
 private val diffPath0 = PathParser().parsePathString("M12 3v14").toNodes()
 private val diffPath1 = PathParser().parsePathString("M5 10h14").toNodes()

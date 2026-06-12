@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val signalHighProvider = ParameterizedIconProvider { parameters ->
     buildSignalHigh(parameters)
 }
+
+val SignalHigh: ImageVector
+    get() = signalHighProvider.create()
 
 private val signalHighPath0 = PathParser().parsePathString("M2 20h.01").toNodes()
 private val signalHighPath1 = PathParser().parsePathString("M7 20v-4").toNodes()

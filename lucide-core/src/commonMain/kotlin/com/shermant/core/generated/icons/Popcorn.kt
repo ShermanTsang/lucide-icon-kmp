@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val popcornProvider = ParameterizedIconProvider { parameters ->
     buildPopcorn(parameters)
 }
+
+val Popcorn: ImageVector
+    get() = popcornProvider.create()
 
 private val popcornPath0 = PathParser().parsePathString("M18 8a2 2 0 0 0 0-4 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0 0 4").toNodes()
 private val popcornPath1 = PathParser().parsePathString("M10 22 9 8").toNodes()

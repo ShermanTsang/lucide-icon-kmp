@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val washingMachineProvider = ParameterizedIconProvider { parameters ->
     buildWashingMachine(parameters)
 }
+
+val WashingMachine: ImageVector
+    get() = washingMachineProvider.create()
 
 private val washingMachinePath0 = PathParser().parsePathString("M3 6h3").toNodes()
 private val washingMachinePath1 = PathParser().parsePathString("M17 6h.01").toNodes()

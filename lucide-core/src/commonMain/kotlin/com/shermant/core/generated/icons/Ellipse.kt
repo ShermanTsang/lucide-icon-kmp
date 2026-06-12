@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ellipseProvider = ParameterizedIconProvider { parameters ->
     buildEllipse(parameters)
 }
+
+val Ellipse: ImageVector
+    get() = ellipseProvider.create()
 
 private val ellipsePath0 = PathParser().parsePathString("M 22 12 A 10 6 0 1 0 2 12 A 10 6 0 1 0 22 12 Z").toNodes()
 

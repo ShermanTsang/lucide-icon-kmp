@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val timerOffProvider = ParameterizedIconProvider { parameters ->
     buildTimerOff(parameters)
 }
+
+val TimerOff: ImageVector
+    get() = timerOffProvider.create()
 
 private val timerOffPath0 = PathParser().parsePathString("M10 2h4").toNodes()
 private val timerOffPath1 = PathParser().parsePathString("M4.6 11a8 8 0 0 0 1.7 8.7 8 8 0 0 0 8.7 1.7").toNodes()

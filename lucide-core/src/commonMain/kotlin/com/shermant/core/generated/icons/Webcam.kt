@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val webcamProvider = ParameterizedIconProvider { parameters ->
     buildWebcam(parameters)
 }
+
+val Webcam: ImageVector
+    get() = webcamProvider.create()
 
 private val webcamPath0 = PathParser().parsePathString("M 20 10 A 8 8 0 1 0 4 10 A 8 8 0 1 0 20 10 Z").toNodes()
 private val webcamPath1 = PathParser().parsePathString("M 15 10 A 3 3 0 1 0 9 10 A 3 3 0 1 0 15 10 Z").toNodes()

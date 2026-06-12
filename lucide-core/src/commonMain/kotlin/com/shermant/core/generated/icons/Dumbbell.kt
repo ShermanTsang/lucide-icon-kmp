@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val dumbbellProvider = ParameterizedIconProvider { parameters ->
     buildDumbbell(parameters)
 }
+
+val Dumbbell: ImageVector
+    get() = dumbbellProvider.create()
 
 private val dumbbellPath0 = PathParser().parsePathString("M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z").toNodes()
 private val dumbbellPath1 = PathParser().parsePathString("m2.5 21.5 1.4-1.4").toNodes()

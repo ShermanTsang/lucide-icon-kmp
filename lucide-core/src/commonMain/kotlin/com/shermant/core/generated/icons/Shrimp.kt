@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shrimpProvider = ParameterizedIconProvider { parameters ->
     buildShrimp(parameters)
 }
+
+val Shrimp: ImageVector
+    get() = shrimpProvider.create()
 
 private val shrimpPath0 = PathParser().parsePathString("M11 12h.01").toNodes()
 private val shrimpPath1 = PathParser().parsePathString("M13 22c.5-.5 1.12-1 2.5-1-1.38 0-2-.5-2.5-1").toNodes()

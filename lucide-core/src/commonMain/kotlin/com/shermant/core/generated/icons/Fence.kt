@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val fenceProvider = ParameterizedIconProvider { parameters ->
     buildFence(parameters)
 }
+
+val Fence: ImageVector
+    get() = fenceProvider.create()
 
 private val fencePath0 = PathParser().parsePathString("M4 3 2 5v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z").toNodes()
 private val fencePath1 = PathParser().parsePathString("M6 8h4").toNodes()

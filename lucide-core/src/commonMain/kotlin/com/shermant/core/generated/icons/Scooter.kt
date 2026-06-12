@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val scooterProvider = ParameterizedIconProvider { parameters ->
     buildScooter(parameters)
 }
+
+val Scooter: ImageVector
+    get() = scooterProvider.create()
 
 private val scooterPath0 = PathParser().parsePathString("M21 4h-3.5l2 11.05").toNodes()
 private val scooterPath1 = PathParser().parsePathString("M6.95 17h5.142c.523 0 .95-.406 1.063-.916a6.5 6.5 0 0 1 5.345-5.009").toNodes()

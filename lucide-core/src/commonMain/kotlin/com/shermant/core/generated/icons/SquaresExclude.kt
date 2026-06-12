@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squaresExcludeProvider = ParameterizedIconProvider { parameters ->
     buildSquaresExclude(parameters)
 }
+
+val SquaresExclude: ImageVector
+    get() = squaresExcludeProvider.create()
 
 private val squaresExcludePath0 = PathParser().parsePathString("M16 12v2a2 2 0 0 1-2 2H9a1 1 0 0 0-1 1v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h0").toNodes()
 private val squaresExcludePath1 = PathParser().parsePathString("M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3a1 1 0 0 1-1 1h-5a2 2 0 0 0-2 2v2").toNodes()

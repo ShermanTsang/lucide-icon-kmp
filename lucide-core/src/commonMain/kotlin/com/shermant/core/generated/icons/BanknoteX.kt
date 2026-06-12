@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val banknoteXProvider = ParameterizedIconProvider { parameters ->
     buildBanknoteX(parameters)
 }
+
+val BanknoteX: ImageVector
+    get() = banknoteXProvider.create()
 
 private val banknoteXPath0 = PathParser().parsePathString("M13 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5").toNodes()
 private val banknoteXPath1 = PathParser().parsePathString("m17 17 5 5").toNodes()

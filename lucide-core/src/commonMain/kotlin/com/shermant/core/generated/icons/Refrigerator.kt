@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val refrigeratorProvider = ParameterizedIconProvider { parameters ->
     buildRefrigerator(parameters)
 }
+
+val Refrigerator: ImageVector
+    get() = refrigeratorProvider.create()
 
 private val refrigeratorPath0 = PathParser().parsePathString("M5 6a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6Z").toNodes()
 private val refrigeratorPath1 = PathParser().parsePathString("M5 10h14").toNodes()

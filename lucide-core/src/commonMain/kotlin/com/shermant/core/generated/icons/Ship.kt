@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shipProvider = ParameterizedIconProvider { parameters ->
     buildShip(parameters)
 }
+
+val Ship: ImageVector
+    get() = shipProvider.create()
 
 private val shipPath0 = PathParser().parsePathString("M12 10.189V14").toNodes()
 private val shipPath1 = PathParser().parsePathString("M12 2v3").toNodes()

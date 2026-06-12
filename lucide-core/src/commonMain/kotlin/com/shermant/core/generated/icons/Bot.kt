@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val botProvider = ParameterizedIconProvider { parameters ->
     buildBot(parameters)
 }
+
+val Bot: ImageVector
+    get() = botProvider.create()
 
 private val botPath0 = PathParser().parsePathString("M12 8V4H8").toNodes()
 private val botPath1 = PathParser().parsePathString("M 6 8 H 18 A 2 2 0 0 1 20 10 V 18 A 2 2 0 0 1 18 20 H 6 A 2 2 0 0 1 4 18 V 10 A 2 2 0 0 1 6 8 Z").toNodes()

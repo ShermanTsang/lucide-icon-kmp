@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val vectorSquareProvider = ParameterizedIconProvider { parameters ->
     buildVectorSquare(parameters)
 }
+
+val VectorSquare: ImageVector
+    get() = vectorSquareProvider.create()
 
 private val vectorSquarePath0 = PathParser().parsePathString("M19.5 7a24 24 0 0 1 0 10").toNodes()
 private val vectorSquarePath1 = PathParser().parsePathString("M4.5 7a24 24 0 0 0 0 10").toNodes()

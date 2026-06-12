@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shrinkProvider = ParameterizedIconProvider { parameters ->
     buildShrink(parameters)
 }
+
+val Shrink: ImageVector
+    get() = shrinkProvider.create()
 
 private val shrinkPath0 = PathParser().parsePathString("m15 15 6 6m-6-6v4.8m0-4.8h4.8").toNodes()
 private val shrinkPath1 = PathParser().parsePathString("M9 19.8V15m0 0H4.2M9 15l-6 6").toNodes()

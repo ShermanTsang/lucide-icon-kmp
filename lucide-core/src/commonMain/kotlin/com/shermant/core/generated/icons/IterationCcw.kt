@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val iterationCcwProvider = ParameterizedIconProvider { parameters ->
     buildIterationCcw(parameters)
 }
+
+val IterationCcw: ImageVector
+    get() = iterationCcwProvider.create()
 
 private val iterationCcwPath0 = PathParser().parsePathString("m16 14 4 4-4 4").toNodes()
 private val iterationCcwPath1 = PathParser().parsePathString("M20 10a8 8 0 1 0-8 8h8").toNodes()

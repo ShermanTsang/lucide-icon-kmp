@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val xLineTopProvider = ParameterizedIconProvider { parameters ->
     buildXLineTop(parameters)
 }
+
+val XLineTop: ImageVector
+    get() = xLineTopProvider.create()
 
 private val xLineTopPath0 = PathParser().parsePathString("M18 4H6").toNodes()
 private val xLineTopPath1 = PathParser().parsePathString("M18 8 6 20").toNodes()

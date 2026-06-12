@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val beerProvider = ParameterizedIconProvider { parameters ->
     buildBeer(parameters)
 }
+
+val Beer: ImageVector
+    get() = beerProvider.create()
 
 private val beerPath0 = PathParser().parsePathString("M17 11h1a3 3 0 0 1 0 6h-1").toNodes()
 private val beerPath1 = PathParser().parsePathString("M9 12v6").toNodes()

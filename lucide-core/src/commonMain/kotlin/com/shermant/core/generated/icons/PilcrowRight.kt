@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val pilcrowRightProvider = ParameterizedIconProvider { parameters ->
     buildPilcrowRight(parameters)
 }
+
+val PilcrowRight: ImageVector
+    get() = pilcrowRightProvider.create()
 
 private val pilcrowRightPath0 = PathParser().parsePathString("M10 3v11").toNodes()
 private val pilcrowRightPath1 = PathParser().parsePathString("M10 9H7a1 1 0 0 1 0-6h8").toNodes()

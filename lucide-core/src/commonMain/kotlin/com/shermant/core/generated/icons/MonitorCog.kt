@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val monitorCogProvider = ParameterizedIconProvider { parameters ->
     buildMonitorCog(parameters)
 }
+
+val MonitorCog: ImageVector
+    get() = monitorCogProvider.create()
 
 private val monitorCogPath0 = PathParser().parsePathString("M12 17v4").toNodes()
 private val monitorCogPath1 = PathParser().parsePathString("m14.305 7.53.923-.382").toNodes()

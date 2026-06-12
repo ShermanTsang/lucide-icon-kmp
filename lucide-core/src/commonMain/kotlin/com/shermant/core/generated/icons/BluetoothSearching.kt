@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bluetoothSearchingProvider = ParameterizedIconProvider { parameters ->
     buildBluetoothSearching(parameters)
 }
+
+val BluetoothSearching: ImageVector
+    get() = bluetoothSearchingProvider.create()
 
 private val bluetoothSearchingPath0 = PathParser().parsePathString("m7 7 10 10-5 5V2l5 5L7 17").toNodes()
 private val bluetoothSearchingPath1 = PathParser().parsePathString("M20.83 14.83a4 4 0 0 0 0-5.66").toNodes()

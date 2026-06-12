@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val link2OffProvider = ParameterizedIconProvider { parameters ->
     buildLink2Off(parameters)
 }
+
+val Link2Off: ImageVector
+    get() = link2OffProvider.create()
 
 private val link2OffPath0 = PathParser().parsePathString("M9 17H7A5 5 0 0 1 7 7").toNodes()
 private val link2OffPath1 = PathParser().parsePathString("M15 7h2a5 5 0 0 1 4 8").toNodes()

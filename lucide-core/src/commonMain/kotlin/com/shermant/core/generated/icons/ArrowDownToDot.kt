@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val arrowDownToDotProvider = ParameterizedIconProvider { parameters ->
     buildArrowDownToDot(parameters)
 }
+
+val ArrowDownToDot: ImageVector
+    get() = arrowDownToDotProvider.create()
 
 private val arrowDownToDotPath0 = PathParser().parsePathString("M12 2v14").toNodes()
 private val arrowDownToDotPath1 = PathParser().parsePathString("m19 9-7 7-7-7").toNodes()

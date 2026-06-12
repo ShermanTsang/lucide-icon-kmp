@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val beefOffProvider = ParameterizedIconProvider { parameters ->
     buildBeefOff(parameters)
 }
+
+val BeefOff: ImageVector
+    get() = beefOffProvider.create()
 
 private val beefOffPath0 = PathParser().parsePathString("M11.771 6.109a2.5 2.5 0 0 1 3.12 3.12").toNodes()
 private val beefOffPath1 = PathParser().parsePathString("M17.852 12.185a6.5 6.5 0 0 0-9.035-9.04").toNodes()

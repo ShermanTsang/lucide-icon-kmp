@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val monitorDownProvider = ParameterizedIconProvider { parameters ->
     buildMonitorDown(parameters)
 }
+
+val MonitorDown: ImageVector
+    get() = monitorDownProvider.create()
 
 private val monitorDownPath0 = PathParser().parsePathString("M12 13V7").toNodes()
 private val monitorDownPath1 = PathParser().parsePathString("m15 10-3 3-3-3").toNodes()

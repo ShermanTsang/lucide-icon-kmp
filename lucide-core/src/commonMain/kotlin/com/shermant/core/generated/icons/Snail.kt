@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val snailProvider = ParameterizedIconProvider { parameters ->
     buildSnail(parameters)
 }
+
+val Snail: ImageVector
+    get() = snailProvider.create()
 
 private val snailPath0 = PathParser().parsePathString("M2 13a6 6 0 1 0 12 0 4 4 0 1 0-8 0 2 2 0 0 0 4 0").toNodes()
 private val snailPath1 = PathParser().parsePathString("M 18 13 A 8 8 0 1 0 2 13 A 8 8 0 1 0 18 13 Z").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val dessertProvider = ParameterizedIconProvider { parameters ->
     buildDessert(parameters)
 }
+
+val Dessert: ImageVector
+    get() = dessertProvider.create()
 
 private val dessertPath0 = PathParser().parsePathString("M10.162 3.167A10 10 0 0 0 2 13a2 2 0 0 0 4 0v-1a2 2 0 0 1 4 0v4a2 2 0 0 0 4 0v-4a2 2 0 0 1 4 0v1a2 2 0 0 0 4-.006 10 10 0 0 0-8.161-9.826").toNodes()
 private val dessertPath1 = PathParser().parsePathString("M20.804 14.869a9 9 0 0 1-17.608 0").toNodes()

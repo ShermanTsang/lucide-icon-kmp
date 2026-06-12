@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val qrCodeProvider = ParameterizedIconProvider { parameters ->
     buildQrCode(parameters)
 }
+
+val QrCode: ImageVector
+    get() = qrCodeProvider.create()
 
 private val qrCodePath0 = PathParser().parsePathString("M 4 3 H 7 A 1 1 0 0 1 8 4 V 7 A 1 1 0 0 1 7 8 H 4 A 1 1 0 0 1 3 7 V 4 A 1 1 0 0 1 4 3 Z").toNodes()
 private val qrCodePath1 = PathParser().parsePathString("M 17 3 H 20 A 1 1 0 0 1 21 4 V 7 A 1 1 0 0 1 20 8 H 17 A 1 1 0 0 1 16 7 V 4 A 1 1 0 0 1 17 3 Z").toNodes()

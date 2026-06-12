@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cpuProvider = ParameterizedIconProvider { parameters ->
     buildCpu(parameters)
 }
+
+val Cpu: ImageVector
+    get() = cpuProvider.create()
 
 private val cpuPath0 = PathParser().parsePathString("M12 20v2").toNodes()
 private val cpuPath1 = PathParser().parsePathString("M12 2v2").toNodes()

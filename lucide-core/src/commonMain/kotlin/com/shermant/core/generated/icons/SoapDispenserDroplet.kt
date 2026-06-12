@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val soapDispenserDropletProvider = ParameterizedIconProvider { parameters ->
     buildSoapDispenserDroplet(parameters)
 }
+
+val SoapDispenserDroplet: ImageVector
+    get() = soapDispenserDropletProvider.create()
 
 private val soapDispenserDropletPath0 = PathParser().parsePathString("M10.5 2v4").toNodes()
 private val soapDispenserDropletPath1 = PathParser().parsePathString("M14 2H7a2 2 0 0 0-2 2").toNodes()

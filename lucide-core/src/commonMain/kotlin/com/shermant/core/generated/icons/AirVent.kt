@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val airVentProvider = ParameterizedIconProvider { parameters ->
     buildAirVent(parameters)
 }
+
+val AirVent: ImageVector
+    get() = airVentProvider.create()
 
 private val airVentPath0 = PathParser().parsePathString("M18 17.5a2.5 2.5 0 1 1-4 2.03V12").toNodes()
 private val airVentPath1 = PathParser().parsePathString("M6 12H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2").toNodes()

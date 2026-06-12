@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val spoolProvider = ParameterizedIconProvider { parameters ->
     buildSpool(parameters)
 }
+
+val Spool: ImageVector
+    get() = spoolProvider.create()
 
 private val spoolPath0 = PathParser().parsePathString("M17 13.44 4.442 17.082A2 2 0 0 0 4.982 21H19a2 2 0 0 0 .558-3.921l-1.115-.32A2 2 0 0 1 17 14.837V7.66").toNodes()
 private val spoolPath1 = PathParser().parsePathString("m7 10.56 12.558-3.642A2 2 0 0 0 19.018 3H5a2 2 0 0 0-.558 3.921l1.115.32A2 2 0 0 1 7 9.163v7.178").toNodes()

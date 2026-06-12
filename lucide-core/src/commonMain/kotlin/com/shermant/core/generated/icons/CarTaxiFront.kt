@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val carTaxiFrontProvider = ParameterizedIconProvider { parameters ->
     buildCarTaxiFront(parameters)
 }
+
+val CarTaxiFront: ImageVector
+    get() = carTaxiFrontProvider.create()
 
 private val carTaxiFrontPath0 = PathParser().parsePathString("M10 2h4").toNodes()
 private val carTaxiFrontPath1 = PathParser().parsePathString("m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8").toNodes()

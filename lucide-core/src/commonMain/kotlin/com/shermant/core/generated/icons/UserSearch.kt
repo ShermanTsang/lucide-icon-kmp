@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val userSearchProvider = ParameterizedIconProvider { parameters ->
     buildUserSearch(parameters)
 }
+
+val UserSearch: ImageVector
+    get() = userSearchProvider.create()
 
 private val userSearchPath0 = PathParser().parsePathString("M 14 7 A 4 4 0 1 0 6 7 A 4 4 0 1 0 14 7 Z").toNodes()
 private val userSearchPath1 = PathParser().parsePathString("M10.3 15H7a4 4 0 0 0-4 4v2").toNodes()

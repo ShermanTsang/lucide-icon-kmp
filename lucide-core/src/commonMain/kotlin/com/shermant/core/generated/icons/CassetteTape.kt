@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cassetteTapeProvider = ParameterizedIconProvider { parameters ->
     buildCassetteTape(parameters)
 }
+
+val CassetteTape: ImageVector
+    get() = cassetteTapeProvider.create()
 
 private val cassetteTapePath0 = PathParser().parsePathString("M 4 4 H 20 A 2 2 0 0 1 22 6 V 18 A 2 2 0 0 1 20 20 H 4 A 2 2 0 0 1 2 18 V 6 A 2 2 0 0 1 4 4 Z").toNodes()
 private val cassetteTapePath1 = PathParser().parsePathString("M 10 10 A 2 2 0 1 0 6 10 A 2 2 0 1 0 10 10 Z").toNodes()

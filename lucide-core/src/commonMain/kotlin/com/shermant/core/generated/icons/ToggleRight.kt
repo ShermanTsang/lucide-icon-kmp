@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val toggleRightProvider = ParameterizedIconProvider { parameters ->
     buildToggleRight(parameters)
 }
+
+val ToggleRight: ImageVector
+    get() = toggleRightProvider.create()
 
 private val toggleRightPath0 = PathParser().parsePathString("M 18 12 A 3 3 0 1 0 12 12 A 3 3 0 1 0 18 12 Z").toNodes()
 private val toggleRightPath1 = PathParser().parsePathString("M 9 5 H 15 A 7 7 0 0 1 22 12 V 12 A 7 7 0 0 1 15 19 H 9 A 7 7 0 0 1 2 12 V 12 A 7 7 0 0 1 9 5 Z").toNodes()

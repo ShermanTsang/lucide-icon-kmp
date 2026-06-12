@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cardSimProvider = ParameterizedIconProvider { parameters ->
     buildCardSim(parameters)
 }
+
+val CardSim: ImageVector
+    get() = cardSimProvider.create()
 
 private val cardSimPath0 = PathParser().parsePathString("M12 14v4").toNodes()
 private val cardSimPath1 = PathParser().parsePathString("M14.172 2a2 2 0 0 1 1.414.586l3.828 3.828A2 2 0 0 1 20 7.828V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z").toNodes()

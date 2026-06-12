@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val undo2Provider = ParameterizedIconProvider { parameters ->
     buildUndo2(parameters)
 }
+
+val Undo2: ImageVector
+    get() = undo2Provider.create()
 
 private val undo2Path0 = PathParser().parsePathString("M9 14 4 9l5-5").toNodes()
 private val undo2Path1 = PathParser().parsePathString("M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11").toNodes()

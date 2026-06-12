@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val micProvider = ParameterizedIconProvider { parameters ->
     buildMic(parameters)
 }
+
+val Mic: ImageVector
+    get() = micProvider.create()
 
 private val micPath0 = PathParser().parsePathString("M12 19v3").toNodes()
 private val micPath1 = PathParser().parsePathString("M19 10v2a7 7 0 0 1-14 0v-2").toNodes()

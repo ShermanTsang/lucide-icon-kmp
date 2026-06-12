@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val broccoliProvider = ParameterizedIconProvider { parameters ->
     buildBroccoli(parameters)
 }
+
+val Broccoli: ImageVector
+    get() = broccoliProvider.create()
 
 private val broccoliPath0 = PathParser().parsePathString("M10 13a3 3 0 0 1-2.121-5.121").toNodes()
 private val broccoliPath1 = PathParser().parsePathString("M15.606 14.204c-3.5 1.5-5.899 4.503-8.899 7.503A1 1 0 0 1 6 22c-2 0-4-2-4-4a1 1 0 0 1 .293-.707c1.911-1.911 3.823-3.578 5.347-5.441").toNodes()

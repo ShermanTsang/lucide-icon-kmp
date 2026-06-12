@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shieldCogProvider = ParameterizedIconProvider { parameters ->
     buildShieldCog(parameters)
 }
+
+val ShieldCog: ImageVector
+    get() = shieldCogProvider.create()
 
 private val shieldCogPath0 = PathParser().parsePathString("m10.929 14.467-.383.924").toNodes()
 private val shieldCogPath1 = PathParser().parsePathString("M10.929 8.923 10.546 8").toNodes()

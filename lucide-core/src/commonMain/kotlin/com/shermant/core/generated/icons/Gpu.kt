@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val gpuProvider = ParameterizedIconProvider { parameters ->
     buildGpu(parameters)
 }
+
+val Gpu: ImageVector
+    get() = gpuProvider.create()
 
 private val gpuPath0 = PathParser().parsePathString("M2 17h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H2").toNodes()
 private val gpuPath1 = PathParser().parsePathString("M2 21V3").toNodes()

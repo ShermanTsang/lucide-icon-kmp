@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chevronFirstProvider = ParameterizedIconProvider { parameters ->
     buildChevronFirst(parameters)
 }
+
+val ChevronFirst: ImageVector
+    get() = chevronFirstProvider.create()
 
 private val chevronFirstPath0 = PathParser().parsePathString("m17 18-6-6 6-6").toNodes()
 private val chevronFirstPath1 = PathParser().parsePathString("M7 6v12").toNodes()

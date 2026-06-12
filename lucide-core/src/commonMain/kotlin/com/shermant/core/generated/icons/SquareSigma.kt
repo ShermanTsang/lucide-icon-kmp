@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareSigmaProvider = ParameterizedIconProvider { parameters ->
     buildSquareSigma(parameters)
 }
+
+val SquareSigma: ImageVector
+    get() = squareSigmaProvider.create()
 
 private val squareSigmaPath0 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 private val squareSigmaPath1 = PathParser().parsePathString("M16 8.9V7H8l4 5-4 5h8v-1.9").toNodes()

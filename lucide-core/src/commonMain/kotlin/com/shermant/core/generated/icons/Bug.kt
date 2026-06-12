@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bugProvider = ParameterizedIconProvider { parameters ->
     buildBug(parameters)
 }
+
+val Bug: ImageVector
+    get() = bugProvider.create()
 
 private val bugPath0 = PathParser().parsePathString("M12 20v-9").toNodes()
 private val bugPath1 = PathParser().parsePathString("M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z").toNodes()

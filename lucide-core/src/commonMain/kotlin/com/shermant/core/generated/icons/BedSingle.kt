@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bedSingleProvider = ParameterizedIconProvider { parameters ->
     buildBedSingle(parameters)
 }
+
+val BedSingle: ImageVector
+    get() = bedSingleProvider.create()
 
 private val bedSinglePath0 = PathParser().parsePathString("M3 20v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8").toNodes()
 private val bedSinglePath1 = PathParser().parsePathString("M5 10V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4").toNodes()

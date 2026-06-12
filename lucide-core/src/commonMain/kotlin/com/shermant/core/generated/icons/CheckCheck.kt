@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val checkCheckProvider = ParameterizedIconProvider { parameters ->
     buildCheckCheck(parameters)
 }
+
+val CheckCheck: ImageVector
+    get() = checkCheckProvider.create()
 
 private val checkCheckPath0 = PathParser().parsePathString("M18 6 7 17l-5-5").toNodes()
 private val checkCheckPath1 = PathParser().parsePathString("m22 10-7.5 7.5L13 16").toNodes()

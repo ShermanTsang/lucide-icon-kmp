@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val octagonPauseProvider = ParameterizedIconProvider { parameters ->
     buildOctagonPause(parameters)
 }
+
+val OctagonPause: ImageVector
+    get() = octagonPauseProvider.create()
 
 private val octagonPausePath0 = PathParser().parsePathString("M10 15V9").toNodes()
 private val octagonPausePath1 = PathParser().parsePathString("M14 15V9").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mapPinOffProvider = ParameterizedIconProvider { parameters ->
     buildMapPinOff(parameters)
 }
+
+val MapPinOff: ImageVector
+    get() = mapPinOffProvider.create()
 
 private val mapPinOffPath0 = PathParser().parsePathString("M12.75 7.09a3 3 0 0 1 2.16 2.16").toNodes()
 private val mapPinOffPath1 = PathParser().parsePathString("M17.072 17.072c-1.634 2.17-3.527 3.912-4.471 4.727a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 1.432-4.568").toNodes()

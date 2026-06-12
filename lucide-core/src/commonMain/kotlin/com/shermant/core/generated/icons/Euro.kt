@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val euroProvider = ParameterizedIconProvider { parameters ->
     buildEuro(parameters)
 }
+
+val Euro: ImageVector
+    get() = euroProvider.create()
 
 private val euroPath0 = PathParser().parsePathString("M4 10h12").toNodes()
 private val euroPath1 = PathParser().parsePathString("M4 14h9").toNodes()

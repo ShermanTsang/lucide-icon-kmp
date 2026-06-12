@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bookLockProvider = ParameterizedIconProvider { parameters ->
     buildBookLock(parameters)
 }
+
+val BookLock: ImageVector
+    get() = bookLockProvider.create()
 
 private val bookLockPath0 = PathParser().parsePathString("M18 6V4a2 2 0 1 0-4 0v2").toNodes()
 private val bookLockPath1 = PathParser().parsePathString("M20 15v6a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20").toNodes()

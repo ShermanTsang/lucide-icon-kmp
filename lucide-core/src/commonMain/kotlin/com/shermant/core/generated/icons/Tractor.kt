@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val tractorProvider = ParameterizedIconProvider { parameters ->
     buildTractor(parameters)
 }
+
+val Tractor: ImageVector
+    get() = tractorProvider.create()
 
 private val tractorPath0 = PathParser().parsePathString("m10 11 11 .9a1 1 0 0 1 .8 1.1l-.665 4.158a1 1 0 0 1-.988.842H20").toNodes()
 private val tractorPath1 = PathParser().parsePathString("M16 18h-5").toNodes()

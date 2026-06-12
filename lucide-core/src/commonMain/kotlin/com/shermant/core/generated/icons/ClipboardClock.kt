@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val clipboardClockProvider = ParameterizedIconProvider { parameters ->
     buildClipboardClock(parameters)
 }
+
+val ClipboardClock: ImageVector
+    get() = clipboardClockProvider.create()
 
 private val clipboardClockPath0 = PathParser().parsePathString("M16 14v2.2l1.6 1").toNodes()
 private val clipboardClockPath1 = PathParser().parsePathString("M16 4h2a2 2 0 0 1 2 2v.832").toNodes()

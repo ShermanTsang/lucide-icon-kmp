@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val radiationProvider = ParameterizedIconProvider { parameters ->
     buildRadiation(parameters)
 }
+
+val Radiation: ImageVector
+    get() = radiationProvider.create()
 
 private val radiationPath0 = PathParser().parsePathString("M12 12h.01").toNodes()
 private val radiationPath1 = PathParser().parsePathString("M14 15.4641a4 4 0 0 1-4 0L7.52786 19.74597 A 1 1 0 0 0 7.99303 21.16211 10 10 0 0 0 16.00697 21.16211 1 1 0 0 0 16.47214 19.74597z").toNodes()

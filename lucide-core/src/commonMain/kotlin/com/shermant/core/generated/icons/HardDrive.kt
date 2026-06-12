@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val hardDriveProvider = ParameterizedIconProvider { parameters ->
     buildHardDrive(parameters)
 }
+
+val HardDrive: ImageVector
+    get() = hardDriveProvider.create()
 
 private val hardDrivePath0 = PathParser().parsePathString("M10 16h.01").toNodes()
 private val hardDrivePath1 = PathParser().parsePathString("M2.212 11.577a2 2 0 0 0-.212.896V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5.527a2 2 0 0 0-.212-.896L18.55 5.11A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z").toNodes()

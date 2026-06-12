@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bookmarkPlusProvider = ParameterizedIconProvider { parameters ->
     buildBookmarkPlus(parameters)
 }
+
+val BookmarkPlus: ImageVector
+    get() = bookmarkPlusProvider.create()
 
 private val bookmarkPlusPath0 = PathParser().parsePathString("M12 7v6").toNodes()
 private val bookmarkPlusPath1 = PathParser().parsePathString("M15 10H9").toNodes()

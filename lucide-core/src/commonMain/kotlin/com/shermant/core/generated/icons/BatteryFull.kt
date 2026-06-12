@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val batteryFullProvider = ParameterizedIconProvider { parameters ->
     buildBatteryFull(parameters)
 }
+
+val BatteryFull: ImageVector
+    get() = batteryFullProvider.create()
 
 private val batteryFullPath0 = PathParser().parsePathString("M10 10v4").toNodes()
 private val batteryFullPath1 = PathParser().parsePathString("M14 10v4").toNodes()

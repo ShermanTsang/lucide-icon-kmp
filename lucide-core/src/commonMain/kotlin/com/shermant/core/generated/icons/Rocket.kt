@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val rocketProvider = ParameterizedIconProvider { parameters ->
     buildRocket(parameters)
 }
+
+val Rocket: ImageVector
+    get() = rocketProvider.create()
 
 private val rocketPath0 = PathParser().parsePathString("M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5").toNodes()
 private val rocketPath1 = PathParser().parsePathString("M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09").toNodes()

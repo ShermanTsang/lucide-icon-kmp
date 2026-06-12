@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ghostProvider = ParameterizedIconProvider { parameters ->
     buildGhost(parameters)
 }
+
+val Ghost: ImageVector
+    get() = ghostProvider.create()
 
 private val ghostPath0 = PathParser().parsePathString("M9 10h.01").toNodes()
 private val ghostPath1 = PathParser().parsePathString("M15 10h.01").toNodes()

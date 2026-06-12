@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cloverProvider = ParameterizedIconProvider { parameters ->
     buildClover(parameters)
 }
+
+val Clover: ImageVector
+    get() = cloverProvider.create()
 
 private val cloverPath0 = PathParser().parsePathString("M16.17 7.83 2 22").toNodes()
 private val cloverPath1 = PathParser().parsePathString("M4.02 12a2.827 2.827 0 1 1 3.81-4.17A2.827 2.827 0 1 1 12 4.02a2.827 2.827 0 1 1 4.17 3.81A2.827 2.827 0 1 1 19.98 12a2.827 2.827 0 1 1-3.81 4.17A2.827 2.827 0 1 1 12 19.98a2.827 2.827 0 1 1-4.17-3.81A1 1 0 1 1 4 12").toNodes()

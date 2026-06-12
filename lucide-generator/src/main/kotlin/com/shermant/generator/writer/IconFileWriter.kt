@@ -33,10 +33,14 @@ class IconFileWriter {
             appendLine("import androidx.compose.ui.unit.dp")
             appendLine("import com.shermant.core.registry.IconRenderParameters")
             appendLine("import com.shermant.core.registry.ParameterizedIconProvider")
+            appendLine("import com.shermant.core.registry.create")
             appendLine()
             appendLine("val ${icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)}Provider = ParameterizedIconProvider { parameters ->")
             appendLine("    build$iconIdentifier(parameters)")
             appendLine("}")
+            appendLine()
+            appendLine("val $iconIdentifier: ImageVector")
+            appendLine("    get() = ${icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)}Provider.create()")
             appendLine()
             icon.paths.forEachIndexed { index, path ->
                 appendLine(

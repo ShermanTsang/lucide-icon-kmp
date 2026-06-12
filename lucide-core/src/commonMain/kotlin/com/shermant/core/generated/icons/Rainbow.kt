@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val rainbowProvider = ParameterizedIconProvider { parameters ->
     buildRainbow(parameters)
 }
+
+val Rainbow: ImageVector
+    get() = rainbowProvider.create()
 
 private val rainbowPath0 = PathParser().parsePathString("M22 17a10 10 0 0 0-20 0").toNodes()
 private val rainbowPath1 = PathParser().parsePathString("M6 17a6 6 0 0 1 12 0").toNodes()

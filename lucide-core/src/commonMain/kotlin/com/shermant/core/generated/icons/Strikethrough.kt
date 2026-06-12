@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val strikethroughProvider = ParameterizedIconProvider { parameters ->
     buildStrikethrough(parameters)
 }
+
+val Strikethrough: ImageVector
+    get() = strikethroughProvider.create()
 
 private val strikethroughPath0 = PathParser().parsePathString("M16 4H9a3 3 0 0 0-2.83 4").toNodes()
 private val strikethroughPath1 = PathParser().parsePathString("M14 12a4 4 0 0 1 0 8H6").toNodes()

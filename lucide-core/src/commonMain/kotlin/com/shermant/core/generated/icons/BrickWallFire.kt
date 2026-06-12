@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val brickWallFireProvider = ParameterizedIconProvider { parameters ->
     buildBrickWallFire(parameters)
 }
+
+val BrickWallFire: ImageVector
+    get() = brickWallFireProvider.create()
 
 private val brickWallFirePath0 = PathParser().parsePathString("M16 3v2.107").toNodes()
 private val brickWallFirePath1 = PathParser().parsePathString("M17 9c1 3 2.5 3.5 3.5 4.5A5 5 0 0 1 22 17a5 5 0 0 1-10 0c0-.3 0-.6.1-.9a2 2 0 1 0 3.3-2C13 11.5 16 9 17 9").toNodes()

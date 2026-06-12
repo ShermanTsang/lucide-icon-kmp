@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val move3dProvider = ParameterizedIconProvider { parameters ->
     buildMove3d(parameters)
 }
+
+val Move3d: ImageVector
+    get() = move3dProvider.create()
 
 private val move3dPath0 = PathParser().parsePathString("M5 3v16h16").toNodes()
 private val move3dPath1 = PathParser().parsePathString("m5 19 6-6").toNodes()

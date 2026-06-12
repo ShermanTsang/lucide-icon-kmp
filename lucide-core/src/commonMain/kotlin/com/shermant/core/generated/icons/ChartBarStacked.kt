@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chartBarStackedProvider = ParameterizedIconProvider { parameters ->
     buildChartBarStacked(parameters)
 }
+
+val ChartBarStacked: ImageVector
+    get() = chartBarStackedProvider.create()
 
 private val chartBarStackedPath0 = PathParser().parsePathString("M11 13v4").toNodes()
 private val chartBarStackedPath1 = PathParser().parsePathString("M15 5v4").toNodes()

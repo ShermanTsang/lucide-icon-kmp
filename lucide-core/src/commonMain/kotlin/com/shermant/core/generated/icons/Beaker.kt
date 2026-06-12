@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val beakerProvider = ParameterizedIconProvider { parameters ->
     buildBeaker(parameters)
 }
+
+val Beaker: ImageVector
+    get() = beakerProvider.create()
 
 private val beakerPath0 = PathParser().parsePathString("M4.5 3h15").toNodes()
 private val beakerPath1 = PathParser().parsePathString("M6 3v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3").toNodes()

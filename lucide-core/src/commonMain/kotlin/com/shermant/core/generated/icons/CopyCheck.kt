@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val copyCheckProvider = ParameterizedIconProvider { parameters ->
     buildCopyCheck(parameters)
 }
+
+val CopyCheck: ImageVector
+    get() = copyCheckProvider.create()
 
 private val copyCheckPath0 = PathParser().parsePathString("m12 15 2 2 4-4").toNodes()
 private val copyCheckPath1 = PathParser().parsePathString("M 10 8 H 20 A 2 2 0 0 1 22 10 V 20 A 2 2 0 0 1 20 22 H 10 A 2 2 0 0 1 8 20 V 10 A 2 2 0 0 1 10 8 Z").toNodes()

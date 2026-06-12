@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareMenuProvider = ParameterizedIconProvider { parameters ->
     buildSquareMenu(parameters)
 }
+
+val SquareMenu: ImageVector
+    get() = squareMenuProvider.create()
 
 private val squareMenuPath0 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 private val squareMenuPath1 = PathParser().parsePathString("M7 8h10").toNodes()

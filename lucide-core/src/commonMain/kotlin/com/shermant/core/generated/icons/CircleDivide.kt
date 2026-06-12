@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleDivideProvider = ParameterizedIconProvider { parameters ->
     buildCircleDivide(parameters)
 }
+
+val CircleDivide: ImageVector
+    get() = circleDivideProvider.create()
 
 private val circleDividePath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val circleDividePath1 = PathParser().parsePathString("M 8 12 L 16 12").toNodes()

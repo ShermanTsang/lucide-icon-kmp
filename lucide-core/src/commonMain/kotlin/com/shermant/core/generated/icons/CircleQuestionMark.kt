@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleQuestionMarkProvider = ParameterizedIconProvider { parameters ->
     buildCircleQuestionMark(parameters)
 }
+
+val CircleQuestionMark: ImageVector
+    get() = circleQuestionMarkProvider.create()
 
 private val circleQuestionMarkPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val circleQuestionMarkPath1 = PathParser().parsePathString("M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3").toNodes()

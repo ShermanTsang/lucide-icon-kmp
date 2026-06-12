@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val dramaProvider = ParameterizedIconProvider { parameters ->
     buildDrama(parameters)
 }
+
+val Drama: ImageVector
+    get() = dramaProvider.create()
 
 private val dramaPath0 = PathParser().parsePathString("M10 11h.01").toNodes()
 private val dramaPath1 = PathParser().parsePathString("M14 6h.01").toNodes()

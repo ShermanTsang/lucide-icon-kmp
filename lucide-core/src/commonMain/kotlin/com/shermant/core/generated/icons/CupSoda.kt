@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cupSodaProvider = ParameterizedIconProvider { parameters ->
     buildCupSoda(parameters)
 }
+
+val CupSoda: ImageVector
+    get() = cupSodaProvider.create()
 
 private val cupSodaPath0 = PathParser().parsePathString("m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8").toNodes()
 private val cupSodaPath1 = PathParser().parsePathString("M5 8h14").toNodes()

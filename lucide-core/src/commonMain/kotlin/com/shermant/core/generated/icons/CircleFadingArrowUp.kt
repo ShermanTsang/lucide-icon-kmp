@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleFadingArrowUpProvider = ParameterizedIconProvider { parameters ->
     buildCircleFadingArrowUp(parameters)
 }
+
+val CircleFadingArrowUp: ImageVector
+    get() = circleFadingArrowUpProvider.create()
 
 private val circleFadingArrowUpPath0 = PathParser().parsePathString("M12 2a10 10 0 0 1 7.38 16.75").toNodes()
 private val circleFadingArrowUpPath1 = PathParser().parsePathString("m16 12-4-4-4 4").toNodes()

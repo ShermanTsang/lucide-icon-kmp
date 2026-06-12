@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val utensilsCrossedProvider = ParameterizedIconProvider { parameters ->
     buildUtensilsCrossed(parameters)
 }
+
+val UtensilsCrossed: ImageVector
+    get() = utensilsCrossedProvider.create()
 
 private val utensilsCrossedPath0 = PathParser().parsePathString("m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8").toNodes()
 private val utensilsCrossedPath1 = PathParser().parsePathString("M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7").toNodes()

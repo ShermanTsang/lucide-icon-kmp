@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val layoutTemplateProvider = ParameterizedIconProvider { parameters ->
     buildLayoutTemplate(parameters)
 }
+
+val LayoutTemplate: ImageVector
+    get() = layoutTemplateProvider.create()
 
 private val layoutTemplatePath0 = PathParser().parsePathString("M 4 3 H 20 A 1 1 0 0 1 21 4 V 9 A 1 1 0 0 1 20 10 H 4 A 1 1 0 0 1 3 9 V 4 A 1 1 0 0 1 4 3 Z").toNodes()
 private val layoutTemplatePath1 = PathParser().parsePathString("M 4 14 H 11 A 1 1 0 0 1 12 15 V 20 A 1 1 0 0 1 11 21 H 4 A 1 1 0 0 1 3 20 V 15 A 1 1 0 0 1 4 14 Z").toNodes()

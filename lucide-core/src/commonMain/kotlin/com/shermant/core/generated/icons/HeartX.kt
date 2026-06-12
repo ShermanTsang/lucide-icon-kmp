@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val heartXProvider = ParameterizedIconProvider { parameters ->
     buildHeartX(parameters)
 }
+
+val HeartX: ImageVector
+    get() = heartXProvider.create()
 
 private val heartXPath0 = PathParser().parsePathString("m15.5 12.5 5 5").toNodes()
 private val heartXPath1 = PathParser().parsePathString("m20.5 12.5-5 5").toNodes()

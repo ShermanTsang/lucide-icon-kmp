@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val barrelProvider = ParameterizedIconProvider { parameters ->
     buildBarrel(parameters)
 }
+
+val Barrel: ImageVector
+    get() = barrelProvider.create()
 
 private val barrelPath0 = PathParser().parsePathString("M10 3a41 41 0 0 0 0 18").toNodes()
 private val barrelPath1 = PathParser().parsePathString("M14 3a41 41 0 0 1 0 18").toNodes()

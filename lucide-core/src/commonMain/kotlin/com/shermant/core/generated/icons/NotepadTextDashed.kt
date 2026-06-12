@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val notepadTextDashedProvider = ParameterizedIconProvider { parameters ->
     buildNotepadTextDashed(parameters)
 }
+
+val NotepadTextDashed: ImageVector
+    get() = notepadTextDashedProvider.create()
 
 private val notepadTextDashedPath0 = PathParser().parsePathString("M8 2v4").toNodes()
 private val notepadTextDashedPath1 = PathParser().parsePathString("M12 2v4").toNodes()

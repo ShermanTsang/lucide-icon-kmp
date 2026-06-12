@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val brainProvider = ParameterizedIconProvider { parameters ->
     buildBrain(parameters)
 }
+
+val Brain: ImageVector
+    get() = brainProvider.create()
 
 private val brainPath0 = PathParser().parsePathString("M12 18V5").toNodes()
 private val brainPath1 = PathParser().parsePathString("M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4").toNodes()

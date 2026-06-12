@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val userRoundSearchProvider = ParameterizedIconProvider { parameters ->
     buildUserRoundSearch(parameters)
 }
+
+val UserRoundSearch: ImageVector
+    get() = userRoundSearchProvider.create()
 
 private val userRoundSearchPath0 = PathParser().parsePathString("M 15 8 A 5 5 0 1 0 5 8 A 5 5 0 1 0 15 8 Z").toNodes()
 private val userRoundSearchPath1 = PathParser().parsePathString("M2 21a8 8 0 0 1 10.434-7.62").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val moveVerticalProvider = ParameterizedIconProvider { parameters ->
     buildMoveVertical(parameters)
 }
+
+val MoveVertical: ImageVector
+    get() = moveVerticalProvider.create()
 
 private val moveVerticalPath0 = PathParser().parsePathString("M12 2v20").toNodes()
 private val moveVerticalPath1 = PathParser().parsePathString("m8 18 4 4 4-4").toNodes()

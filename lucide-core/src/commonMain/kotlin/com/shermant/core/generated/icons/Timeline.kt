@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val timelineProvider = ParameterizedIconProvider { parameters ->
     buildTimeline(parameters)
 }
+
+val Timeline: ImageVector
+    get() = timelineProvider.create()
 
 private val timelinePath0 = PathParser().parsePathString("M4 12h.01").toNodes()
 private val timelinePath1 = PathParser().parsePathString("M4 16h.01").toNodes()

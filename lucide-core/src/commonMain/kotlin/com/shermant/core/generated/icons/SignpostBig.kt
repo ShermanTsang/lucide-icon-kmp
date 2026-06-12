@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val signpostBigProvider = ParameterizedIconProvider { parameters ->
     buildSignpostBig(parameters)
 }
+
+val SignpostBig: ImageVector
+    get() = signpostBigProvider.create()
 
 private val signpostBigPath0 = PathParser().parsePathString("M10 9H4L2 7l2-2h6").toNodes()
 private val signpostBigPath1 = PathParser().parsePathString("M14 5h6l2 2-2 2h-6").toNodes()

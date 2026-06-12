@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val workflowProvider = ParameterizedIconProvider { parameters ->
     buildWorkflow(parameters)
 }
+
+val Workflow: ImageVector
+    get() = workflowProvider.create()
 
 private val workflowPath0 = PathParser().parsePathString("M 5 3 H 9 A 2 2 0 0 1 11 5 V 9 A 2 2 0 0 1 9 11 H 5 A 2 2 0 0 1 3 9 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 private val workflowPath1 = PathParser().parsePathString("M7 11v4a2 2 0 0 0 2 2h4").toNodes()

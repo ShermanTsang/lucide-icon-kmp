@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val navigationProvider = ParameterizedIconProvider { parameters ->
     buildNavigation(parameters)
 }
+
+val Navigation: ImageVector
+    get() = navigationProvider.create()
 
 private val navigationPath0 = PathParser().parsePathString("M 3 11 L 22 2 L 13 21 L 11 13 L 3 11 Z").toNodes()
 

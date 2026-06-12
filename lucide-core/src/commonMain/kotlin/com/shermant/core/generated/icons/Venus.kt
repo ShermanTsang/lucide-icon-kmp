@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val venusProvider = ParameterizedIconProvider { parameters ->
     buildVenus(parameters)
 }
+
+val Venus: ImageVector
+    get() = venusProvider.create()
 
 private val venusPath0 = PathParser().parsePathString("M12 15v7").toNodes()
 private val venusPath1 = PathParser().parsePathString("M9 19h6").toNodes()

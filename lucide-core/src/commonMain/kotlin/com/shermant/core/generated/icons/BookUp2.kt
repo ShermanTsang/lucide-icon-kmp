@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bookUp2Provider = ParameterizedIconProvider { parameters ->
     buildBookUp2(parameters)
 }
+
+val BookUp2: ImageVector
+    get() = bookUp2Provider.create()
 
 private val bookUp2Path0 = PathParser().parsePathString("M12 13V7").toNodes()
 private val bookUp2Path1 = PathParser().parsePathString("M18 2h1a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20").toNodes()

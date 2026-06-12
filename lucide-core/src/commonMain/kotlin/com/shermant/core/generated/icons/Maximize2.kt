@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val maximize2Provider = ParameterizedIconProvider { parameters ->
     buildMaximize2(parameters)
 }
+
+val Maximize2: ImageVector
+    get() = maximize2Provider.create()
 
 private val maximize2Path0 = PathParser().parsePathString("M15 3h6v6").toNodes()
 private val maximize2Path1 = PathParser().parsePathString("m21 3-7 7").toNodes()

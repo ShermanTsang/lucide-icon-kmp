@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val flaskRoundProvider = ParameterizedIconProvider { parameters ->
     buildFlaskRound(parameters)
 }
+
+val FlaskRound: ImageVector
+    get() = flaskRoundProvider.create()
 
 private val flaskRoundPath0 = PathParser().parsePathString("M10 2v6.292a7 7 0 1 0 4 0V2").toNodes()
 private val flaskRoundPath1 = PathParser().parsePathString("M5 15h14").toNodes()

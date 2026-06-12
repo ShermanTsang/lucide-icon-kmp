@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val monitorSpeakerProvider = ParameterizedIconProvider { parameters ->
     buildMonitorSpeaker(parameters)
 }
+
+val MonitorSpeaker: ImageVector
+    get() = monitorSpeakerProvider.create()
 
 private val monitorSpeakerPath0 = PathParser().parsePathString("M5.5 20H8").toNodes()
 private val monitorSpeakerPath1 = PathParser().parsePathString("M17 9h.01").toNodes()

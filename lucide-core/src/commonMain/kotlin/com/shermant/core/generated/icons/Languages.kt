@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val languagesProvider = ParameterizedIconProvider { parameters ->
     buildLanguages(parameters)
 }
+
+val Languages: ImageVector
+    get() = languagesProvider.create()
 
 private val languagesPath0 = PathParser().parsePathString("m5 8 6 6").toNodes()
 private val languagesPath1 = PathParser().parsePathString("m4 14 6-6 2-3").toNodes()

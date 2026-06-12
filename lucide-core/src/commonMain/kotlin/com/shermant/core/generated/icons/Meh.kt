@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mehProvider = ParameterizedIconProvider { parameters ->
     buildMeh(parameters)
 }
+
+val Meh: ImageVector
+    get() = mehProvider.create()
 
 private val mehPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val mehPath1 = PathParser().parsePathString("M 8 15 L 16 15").toNodes()

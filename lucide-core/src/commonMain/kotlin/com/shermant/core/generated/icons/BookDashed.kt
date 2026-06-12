@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bookDashedProvider = ParameterizedIconProvider { parameters ->
     buildBookDashed(parameters)
 }
+
+val BookDashed: ImageVector
+    get() = bookDashedProvider.create()
 
 private val bookDashedPath0 = PathParser().parsePathString("M12 17h1.5").toNodes()
 private val bookDashedPath1 = PathParser().parsePathString("M12 22h1.5").toNodes()

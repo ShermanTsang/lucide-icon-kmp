@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sunMediumProvider = ParameterizedIconProvider { parameters ->
     buildSunMedium(parameters)
 }
+
+val SunMedium: ImageVector
+    get() = sunMediumProvider.create()
 
 private val sunMediumPath0 = PathParser().parsePathString("M 16 12 A 4 4 0 1 0 8 12 A 4 4 0 1 0 16 12 Z").toNodes()
 private val sunMediumPath1 = PathParser().parsePathString("M12 3v1").toNodes()

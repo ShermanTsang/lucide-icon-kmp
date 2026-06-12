@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lockKeyholeOpenProvider = ParameterizedIconProvider { parameters ->
     buildLockKeyholeOpen(parameters)
 }
+
+val LockKeyholeOpen: ImageVector
+    get() = lockKeyholeOpenProvider.create()
 
 private val lockKeyholeOpenPath0 = PathParser().parsePathString("M 13 16 A 1 1 0 1 0 11 16 A 1 1 0 1 0 13 16 Z").toNodes()
 private val lockKeyholeOpenPath1 = PathParser().parsePathString("M 5 10 H 19 A 2 2 0 0 1 21 12 V 20 A 2 2 0 0 1 19 22 H 5 A 2 2 0 0 1 3 20 V 12 A 2 2 0 0 1 5 10 Z").toNodes()

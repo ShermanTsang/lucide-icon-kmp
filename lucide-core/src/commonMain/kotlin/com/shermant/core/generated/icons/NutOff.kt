@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val nutOffProvider = ParameterizedIconProvider { parameters ->
     buildNutOff(parameters)
 }
+
+val NutOff: ImageVector
+    get() = nutOffProvider.create()
 
 private val nutOffPath0 = PathParser().parsePathString("M12 4V2").toNodes()
 private val nutOffPath1 = PathParser().parsePathString("M5 10v4a7.004 7.004 0 0 0 5.277 6.787c.412.104.802.292 1.102.592L12 22l.621-.621c.3-.3.69-.488 1.102-.592a7.01 7.01 0 0 0 4.125-2.939").toNodes()

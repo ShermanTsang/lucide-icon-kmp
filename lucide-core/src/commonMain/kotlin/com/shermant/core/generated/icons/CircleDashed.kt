@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleDashedProvider = ParameterizedIconProvider { parameters ->
     buildCircleDashed(parameters)
 }
+
+val CircleDashed: ImageVector
+    get() = circleDashedProvider.create()
 
 private val circleDashedPath0 = PathParser().parsePathString("M10.1 2.182a10 10 0 0 1 3.8 0").toNodes()
 private val circleDashedPath1 = PathParser().parsePathString("M13.9 21.818a10 10 0 0 1-3.8 0").toNodes()

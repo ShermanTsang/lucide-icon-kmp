@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val flashlightOffProvider = ParameterizedIconProvider { parameters ->
     buildFlashlightOff(parameters)
 }
+
+val FlashlightOff: ImageVector
+    get() = flashlightOffProvider.create()
 
 private val flashlightOffPath0 = PathParser().parsePathString("M11.652 6H18").toNodes()
 private val flashlightOffPath1 = PathParser().parsePathString("M12 13v1").toNodes()

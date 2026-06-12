@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val paintbrushVerticalProvider = ParameterizedIconProvider { parameters ->
     buildPaintbrushVertical(parameters)
 }
+
+val PaintbrushVertical: ImageVector
+    get() = paintbrushVerticalProvider.create()
 
 private val paintbrushVerticalPath0 = PathParser().parsePathString("M10 2v2").toNodes()
 private val paintbrushVerticalPath1 = PathParser().parsePathString("M14 2v4").toNodes()

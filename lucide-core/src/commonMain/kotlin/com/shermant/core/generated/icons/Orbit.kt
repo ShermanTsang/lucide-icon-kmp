@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val orbitProvider = ParameterizedIconProvider { parameters ->
     buildOrbit(parameters)
 }
+
+val Orbit: ImageVector
+    get() = orbitProvider.create()
 
 private val orbitPath0 = PathParser().parsePathString("M20.341 6.484A10 10 0 0 1 10.266 21.85").toNodes()
 private val orbitPath1 = PathParser().parsePathString("M3.659 17.516A10 10 0 0 1 13.74 2.152").toNodes()

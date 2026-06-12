@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val gitPullRequestCreateProvider = ParameterizedIconProvider { parameters ->
     buildGitPullRequestCreate(parameters)
 }
+
+val GitPullRequestCreate: ImageVector
+    get() = gitPullRequestCreateProvider.create()
 
 private val gitPullRequestCreatePath0 = PathParser().parsePathString("M 9 6 A 3 3 0 1 0 3 6 A 3 3 0 1 0 9 6 Z").toNodes()
 private val gitPullRequestCreatePath1 = PathParser().parsePathString("M6 9v12").toNodes()

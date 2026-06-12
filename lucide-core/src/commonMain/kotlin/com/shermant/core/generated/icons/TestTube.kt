@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val testTubeProvider = ParameterizedIconProvider { parameters ->
     buildTestTube(parameters)
 }
+
+val TestTube: ImageVector
+    get() = testTubeProvider.create()
 
 private val testTubePath0 = PathParser().parsePathString("M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5V2").toNodes()
 private val testTubePath1 = PathParser().parsePathString("M8.5 2h7").toNodes()

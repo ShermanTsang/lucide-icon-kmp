@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val accessibilityProvider = ParameterizedIconProvider { parameters ->
     buildAccessibility(parameters)
 }
+
+val Accessibility: ImageVector
+    get() = accessibilityProvider.create()
 
 private val accessibilityPath0 = PathParser().parsePathString("M 17 4 A 1 1 0 1 0 15 4 A 1 1 0 1 0 17 4 Z").toNodes()
 private val accessibilityPath1 = PathParser().parsePathString("m18 19 1-7-6 1").toNodes()

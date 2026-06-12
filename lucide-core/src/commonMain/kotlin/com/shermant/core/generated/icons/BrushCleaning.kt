@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val brushCleaningProvider = ParameterizedIconProvider { parameters ->
     buildBrushCleaning(parameters)
 }
+
+val BrushCleaning: ImageVector
+    get() = brushCleaningProvider.create()
 
 private val brushCleaningPath0 = PathParser().parsePathString("m16 22-1-4").toNodes()
 private val brushCleaningPath1 = PathParser().parsePathString("M19 14a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v1a1 1 0 0 0 1 1").toNodes()

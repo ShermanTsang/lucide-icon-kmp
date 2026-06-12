@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val userCogProvider = ParameterizedIconProvider { parameters ->
     buildUserCog(parameters)
 }
+
+val UserCog: ImageVector
+    get() = userCogProvider.create()
 
 private val userCogPath0 = PathParser().parsePathString("M10 15H6a4 4 0 0 0-4 4v2").toNodes()
 private val userCogPath1 = PathParser().parsePathString("m14.305 16.53.923-.382").toNodes()

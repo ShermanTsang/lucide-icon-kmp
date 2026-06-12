@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val swatchBookProvider = ParameterizedIconProvider { parameters ->
     buildSwatchBook(parameters)
 }
+
+val SwatchBook: ImageVector
+    get() = swatchBookProvider.create()
 
 private val swatchBookPath0 = PathParser().parsePathString("M11 17a4 4 0 0 1-8 0V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2Z").toNodes()
 private val swatchBookPath1 = PathParser().parsePathString("M16.7 13H19a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H7").toNodes()

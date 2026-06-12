@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val spellCheck2Provider = ParameterizedIconProvider { parameters ->
     buildSpellCheck2(parameters)
 }
+
+val SpellCheck2: ImageVector
+    get() = spellCheck2Provider.create()
 
 private val spellCheck2Path0 = PathParser().parsePathString("m6 16 6-12 6 12").toNodes()
 private val spellCheck2Path1 = PathParser().parsePathString("M8 12h8").toNodes()

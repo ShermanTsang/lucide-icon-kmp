@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleSmallProvider = ParameterizedIconProvider { parameters ->
     buildCircleSmall(parameters)
 }
+
+val CircleSmall: ImageVector
+    get() = circleSmallProvider.create()
 
 private val circleSmallPath0 = PathParser().parsePathString("M 18 12 A 6 6 0 1 0 6 12 A 6 6 0 1 0 18 12 Z").toNodes()
 

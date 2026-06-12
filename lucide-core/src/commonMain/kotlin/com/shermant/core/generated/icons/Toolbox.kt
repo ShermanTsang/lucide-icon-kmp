@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val toolboxProvider = ParameterizedIconProvider { parameters ->
     buildToolbox(parameters)
 }
+
+val Toolbox: ImageVector
+    get() = toolboxProvider.create()
 
 private val toolboxPath0 = PathParser().parsePathString("M16 12v4").toNodes()
 private val toolboxPath1 = PathParser().parsePathString("M16 6a2 2 0 0 1 1.414.586l4 4A2 2 0 0 1 22 12v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 .586-1.414l4-4A2 2 0 0 1 8 6z").toNodes()

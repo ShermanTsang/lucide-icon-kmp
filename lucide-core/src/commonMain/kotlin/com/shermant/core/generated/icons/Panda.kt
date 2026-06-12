@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val pandaProvider = ParameterizedIconProvider { parameters ->
     buildPanda(parameters)
 }
+
+val Panda: ImageVector
+    get() = pandaProvider.create()
 
 private val pandaPath0 = PathParser().parsePathString("M11.25 17.25h1.5L12 18z").toNodes()
 private val pandaPath1 = PathParser().parsePathString("m15 12 2 2").toNodes()

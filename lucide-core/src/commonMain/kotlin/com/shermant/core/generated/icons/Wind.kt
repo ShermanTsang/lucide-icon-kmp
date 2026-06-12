@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val windProvider = ParameterizedIconProvider { parameters ->
     buildWind(parameters)
 }
+
+val Wind: ImageVector
+    get() = windProvider.create()
 
 private val windPath0 = PathParser().parsePathString("M12.8 19.6A2 2 0 1 0 14 16H2").toNodes()
 private val windPath1 = PathParser().parsePathString("M17.5 8a2.5 2.5 0 1 1 2 4H2").toNodes()

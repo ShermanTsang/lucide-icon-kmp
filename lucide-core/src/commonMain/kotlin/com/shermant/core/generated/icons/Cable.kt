@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cableProvider = ParameterizedIconProvider { parameters ->
     buildCable(parameters)
 }
+
+val Cable: ImageVector
+    get() = cableProvider.create()
 
 private val cablePath0 = PathParser().parsePathString("M17 19a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1z").toNodes()
 private val cablePath1 = PathParser().parsePathString("M17 21v-2").toNodes()

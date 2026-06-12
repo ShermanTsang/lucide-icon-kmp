@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val listVideoProvider = ParameterizedIconProvider { parameters ->
     buildListVideo(parameters)
 }
+
+val ListVideo: ImageVector
+    get() = listVideoProvider.create()
 
 private val listVideoPath0 = PathParser().parsePathString("M21 5H3").toNodes()
 private val listVideoPath1 = PathParser().parsePathString("M10 12H3").toNodes()

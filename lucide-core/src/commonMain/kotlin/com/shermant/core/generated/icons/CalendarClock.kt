@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val calendarClockProvider = ParameterizedIconProvider { parameters ->
     buildCalendarClock(parameters)
 }
+
+val CalendarClock: ImageVector
+    get() = calendarClockProvider.create()
 
 private val calendarClockPath0 = PathParser().parsePathString("M16 14v2.2l1.6 1").toNodes()
 private val calendarClockPath1 = PathParser().parsePathString("M16 2v4").toNodes()

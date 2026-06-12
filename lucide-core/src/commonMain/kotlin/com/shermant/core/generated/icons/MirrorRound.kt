@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mirrorRoundProvider = ParameterizedIconProvider { parameters ->
     buildMirrorRound(parameters)
 }
+
+val MirrorRound: ImageVector
+    get() = mirrorRoundProvider.create()
 
 private val mirrorRoundPath0 = PathParser().parsePathString("M10 6.6 8.6 8").toNodes()
 private val mirrorRoundPath1 = PathParser().parsePathString("M12 18v4").toNodes()

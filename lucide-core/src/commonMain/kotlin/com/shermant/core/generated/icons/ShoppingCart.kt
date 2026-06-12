@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shoppingCartProvider = ParameterizedIconProvider { parameters ->
     buildShoppingCart(parameters)
 }
+
+val ShoppingCart: ImageVector
+    get() = shoppingCartProvider.create()
 
 private val shoppingCartPath0 = PathParser().parsePathString("M 9 21 A 1 1 0 1 0 7 21 A 1 1 0 1 0 9 21 Z").toNodes()
 private val shoppingCartPath1 = PathParser().parsePathString("M 20 21 A 1 1 0 1 0 18 21 A 1 1 0 1 0 20 21 Z").toNodes()

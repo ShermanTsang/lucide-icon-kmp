@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val flipHorizontal2Provider = ParameterizedIconProvider { parameters ->
     buildFlipHorizontal2(parameters)
 }
+
+val FlipHorizontal2: ImageVector
+    get() = flipHorizontal2Provider.create()
 
 private val flipHorizontal2Path0 = PathParser().parsePathString("m3 7 5 5-5 5V7").toNodes()
 private val flipHorizontal2Path1 = PathParser().parsePathString("m21 7-5 5 5 5V7").toNodes()

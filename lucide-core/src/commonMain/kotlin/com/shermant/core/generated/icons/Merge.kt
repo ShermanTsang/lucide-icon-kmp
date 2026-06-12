@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mergeProvider = ParameterizedIconProvider { parameters ->
     buildMerge(parameters)
 }
+
+val Merge: ImageVector
+    get() = mergeProvider.create()
 
 private val mergePath0 = PathParser().parsePathString("m8 6 4-4 4 4").toNodes()
 private val mergePath1 = PathParser().parsePathString("M12 2v10.3a4 4 0 0 1-1.172 2.872L4 22").toNodes()

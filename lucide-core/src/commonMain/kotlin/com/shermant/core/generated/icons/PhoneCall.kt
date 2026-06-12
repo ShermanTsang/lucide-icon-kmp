@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val phoneCallProvider = ParameterizedIconProvider { parameters ->
     buildPhoneCall(parameters)
 }
+
+val PhoneCall: ImageVector
+    get() = phoneCallProvider.create()
 
 private val phoneCallPath0 = PathParser().parsePathString("M13 2a9 9 0 0 1 9 9").toNodes()
 private val phoneCallPath1 = PathParser().parsePathString("M13 6a5 5 0 0 1 5 5").toNodes()

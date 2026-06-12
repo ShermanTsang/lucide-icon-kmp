@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val gitBranchProvider = ParameterizedIconProvider { parameters ->
     buildGitBranch(parameters)
 }
+
+val GitBranch: ImageVector
+    get() = gitBranchProvider.create()
 
 private val gitBranchPath0 = PathParser().parsePathString("M15 6a9 9 0 0 0-9 9V3").toNodes()
 private val gitBranchPath1 = PathParser().parsePathString("M 21 6 A 3 3 0 1 0 15 6 A 3 3 0 1 0 21 6 Z").toNodes()

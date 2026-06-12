@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val music4Provider = ParameterizedIconProvider { parameters ->
     buildMusic4(parameters)
 }
+
+val Music4: ImageVector
+    get() = music4Provider.create()
 
 private val music4Path0 = PathParser().parsePathString("M9 18V5l12-2v13").toNodes()
 private val music4Path1 = PathParser().parsePathString("m9 9 12-2").toNodes()

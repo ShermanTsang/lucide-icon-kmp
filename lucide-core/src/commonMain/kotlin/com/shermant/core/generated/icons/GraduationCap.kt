@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val graduationCapProvider = ParameterizedIconProvider { parameters ->
     buildGraduationCap(parameters)
 }
+
+val GraduationCap: ImageVector
+    get() = graduationCapProvider.create()
 
 private val graduationCapPath0 = PathParser().parsePathString("M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z").toNodes()
 private val graduationCapPath1 = PathParser().parsePathString("M22 10v6").toNodes()

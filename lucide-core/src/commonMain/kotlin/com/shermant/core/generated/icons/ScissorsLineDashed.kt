@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val scissorsLineDashedProvider = ParameterizedIconProvider { parameters ->
     buildScissorsLineDashed(parameters)
 }
+
+val ScissorsLineDashed: ImageVector
+    get() = scissorsLineDashedProvider.create()
 
 private val scissorsLineDashedPath0 = PathParser().parsePathString("M5.42 9.42 8 12").toNodes()
 private val scissorsLineDashedPath1 = PathParser().parsePathString("M 6 8 A 2 2 0 1 0 2 8 A 2 2 0 1 0 6 8 Z").toNodes()

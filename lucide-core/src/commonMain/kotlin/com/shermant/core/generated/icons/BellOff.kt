@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bellOffProvider = ParameterizedIconProvider { parameters ->
     buildBellOff(parameters)
 }
+
+val BellOff: ImageVector
+    get() = bellOffProvider.create()
 
 private val bellOffPath0 = PathParser().parsePathString("M10.268 21a2 2 0 0 0 3.464 0").toNodes()
 private val bellOffPath1 = PathParser().parsePathString("M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742").toNodes()

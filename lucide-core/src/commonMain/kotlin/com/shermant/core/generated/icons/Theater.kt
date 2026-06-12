@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val theaterProvider = ParameterizedIconProvider { parameters ->
     buildTheater(parameters)
 }
+
+val Theater: ImageVector
+    get() = theaterProvider.create()
 
 private val theaterPath0 = PathParser().parsePathString("M2 10s3-3 3-8").toNodes()
 private val theaterPath1 = PathParser().parsePathString("M22 10s-3-3-3-8").toNodes()

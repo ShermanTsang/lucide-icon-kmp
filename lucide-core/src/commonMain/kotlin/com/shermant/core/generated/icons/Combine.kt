@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val combineProvider = ParameterizedIconProvider { parameters ->
     buildCombine(parameters)
 }
+
+val Combine: ImageVector
+    get() = combineProvider.create()
 
 private val combinePath0 = PathParser().parsePathString("M14 3a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1").toNodes()
 private val combinePath1 = PathParser().parsePathString("M19 3a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1").toNodes()

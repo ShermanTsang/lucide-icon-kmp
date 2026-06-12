@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val biohazardProvider = ParameterizedIconProvider { parameters ->
     buildBiohazard(parameters)
 }
+
+val Biohazard: ImageVector
+    get() = biohazardProvider.create()
 
 private val biohazardPath0 = PathParser().parsePathString("M 14 11.9 A 2 2 0 1 0 10 11.9 A 2 2 0 1 0 14 11.9 Z").toNodes()
 private val biohazardPath1 = PathParser().parsePathString("M6.7 3.4c-.9 2.5 0 5.2 2.2 6.7C6.5 9 3.7 9.6 2 11.6").toNodes()

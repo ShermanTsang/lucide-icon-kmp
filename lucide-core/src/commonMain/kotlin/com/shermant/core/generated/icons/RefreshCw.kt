@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val refreshCwProvider = ParameterizedIconProvider { parameters ->
     buildRefreshCw(parameters)
 }
+
+val RefreshCw: ImageVector
+    get() = refreshCwProvider.create()
 
 private val refreshCwPath0 = PathParser().parsePathString("M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8").toNodes()
 private val refreshCwPath1 = PathParser().parsePathString("M21 3v5h-5").toNodes()

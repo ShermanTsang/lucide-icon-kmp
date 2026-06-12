@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val menuProvider = ParameterizedIconProvider { parameters ->
     buildMenu(parameters)
 }
+
+val Menu: ImageVector
+    get() = menuProvider.create()
 
 private val menuPath0 = PathParser().parsePathString("M4 5h16").toNodes()
 private val menuPath1 = PathParser().parsePathString("M4 12h16").toNodes()

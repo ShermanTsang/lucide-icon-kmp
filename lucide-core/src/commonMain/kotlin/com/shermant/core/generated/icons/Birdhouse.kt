@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val birdhouseProvider = ParameterizedIconProvider { parameters ->
     buildBirdhouse(parameters)
 }
+
+val Birdhouse: ImageVector
+    get() = birdhouseProvider.create()
 
 private val birdhousePath0 = PathParser().parsePathString("M12 18v4").toNodes()
 private val birdhousePath1 = PathParser().parsePathString("m17 18 1.956-11.468").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val dockProvider = ParameterizedIconProvider { parameters ->
     buildDock(parameters)
 }
+
+val Dock: ImageVector
+    get() = dockProvider.create()
 
 private val dockPath0 = PathParser().parsePathString("M2 8h20").toNodes()
 private val dockPath1 = PathParser().parsePathString("M 4 4 H 20 A 2 2 0 0 1 22 6 V 18 A 2 2 0 0 1 20 20 H 4 A 2 2 0 0 1 2 18 V 6 A 2 2 0 0 1 4 4 Z").toNodes()

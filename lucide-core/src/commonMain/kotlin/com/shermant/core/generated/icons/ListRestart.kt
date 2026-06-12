@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val listRestartProvider = ParameterizedIconProvider { parameters ->
     buildListRestart(parameters)
 }
+
+val ListRestart: ImageVector
+    get() = listRestartProvider.create()
 
 private val listRestartPath0 = PathParser().parsePathString("M21 5H3").toNodes()
 private val listRestartPath1 = PathParser().parsePathString("M7 12H3").toNodes()

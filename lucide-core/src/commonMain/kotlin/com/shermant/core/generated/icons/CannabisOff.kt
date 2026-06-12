@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cannabisOffProvider = ParameterizedIconProvider { parameters ->
     buildCannabisOff(parameters)
 }
+
+val CannabisOff: ImageVector
+    get() = cannabisOffProvider.create()
 
 private val cannabisOffPath0 = PathParser().parsePathString("M12 22v-4c1.5 1.5 3.5 3 6 3 0-1.5-.5-3.5-2-5").toNodes()
 private val cannabisOffPath1 = PathParser().parsePathString("M13.988 8.327C13.902 6.054 13.365 3.82 12 2a9.3 9.3 0 0 0-1.445 2.9").toNodes()

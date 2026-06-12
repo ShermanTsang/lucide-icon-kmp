@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val listIndentDecreaseProvider = ParameterizedIconProvider { parameters ->
     buildListIndentDecrease(parameters)
 }
+
+val ListIndentDecrease: ImageVector
+    get() = listIndentDecreaseProvider.create()
 
 private val listIndentDecreasePath0 = PathParser().parsePathString("M21 5H11").toNodes()
 private val listIndentDecreasePath1 = PathParser().parsePathString("M21 12H11").toNodes()

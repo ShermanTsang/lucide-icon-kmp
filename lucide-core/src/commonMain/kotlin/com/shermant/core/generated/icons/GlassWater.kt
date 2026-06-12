@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val glassWaterProvider = ParameterizedIconProvider { parameters ->
     buildGlassWater(parameters)
 }
+
+val GlassWater: ImageVector
+    get() = glassWaterProvider.create()
 
 private val glassWaterPath0 = PathParser().parsePathString("M5.116 4.104A1 1 0 0 1 6.11 3h11.78a1 1 0 0 1 .994 1.105L17.19 20.21A2 2 0 0 1 15.2 22H8.8a2 2 0 0 1-2-1.79z").toNodes()
 private val glassWaterPath1 = PathParser().parsePathString("M6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0").toNodes()

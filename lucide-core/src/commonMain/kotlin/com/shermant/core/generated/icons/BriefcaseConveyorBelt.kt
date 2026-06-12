@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val briefcaseConveyorBeltProvider = ParameterizedIconProvider { parameters ->
     buildBriefcaseConveyorBelt(parameters)
 }
+
+val BriefcaseConveyorBelt: ImageVector
+    get() = briefcaseConveyorBeltProvider.create()
 
 private val briefcaseConveyorBeltPath0 = PathParser().parsePathString("M10 20v2").toNodes()
 private val briefcaseConveyorBeltPath1 = PathParser().parsePathString("M14 20v2").toNodes()

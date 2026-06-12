@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val clipboardProvider = ParameterizedIconProvider { parameters ->
     buildClipboard(parameters)
 }
+
+val Clipboard: ImageVector
+    get() = clipboardProvider.create()
 
 private val clipboardPath0 = PathParser().parsePathString("M 9 2 H 15 A 1 1 0 0 1 16 3 V 5 A 1 1 0 0 1 15 6 H 9 A 1 1 0 0 1 8 5 V 3 A 1 1 0 0 1 9 2 Z").toNodes()
 private val clipboardPath1 = PathParser().parsePathString("M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val binocularsProvider = ParameterizedIconProvider { parameters ->
     buildBinoculars(parameters)
 }
+
+val Binoculars: ImageVector
+    get() = binocularsProvider.create()
 
 private val binocularsPath0 = PathParser().parsePathString("M10 10h4").toNodes()
 private val binocularsPath1 = PathParser().parsePathString("M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3").toNodes()

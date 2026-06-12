@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val folderSearchProvider = ParameterizedIconProvider { parameters ->
     buildFolderSearch(parameters)
 }
+
+val FolderSearch: ImageVector
+    get() = folderSearchProvider.create()
 
 private val folderSearchPath0 = PathParser().parsePathString("M10.7 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v4.1").toNodes()
 private val folderSearchPath1 = PathParser().parsePathString("m21 21-1.9-1.9").toNodes()

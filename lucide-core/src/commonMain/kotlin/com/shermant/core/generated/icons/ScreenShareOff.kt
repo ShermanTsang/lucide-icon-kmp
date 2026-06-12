@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val screenShareOffProvider = ParameterizedIconProvider { parameters ->
     buildScreenShareOff(parameters)
 }
+
+val ScreenShareOff: ImageVector
+    get() = screenShareOffProvider.create()
 
 private val screenShareOffPath0 = PathParser().parsePathString("M13 3H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-3").toNodes()
 private val screenShareOffPath1 = PathParser().parsePathString("M8 21h8").toNodes()

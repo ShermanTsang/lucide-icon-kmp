@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chartColumnDecreasingProvider = ParameterizedIconProvider { parameters ->
     buildChartColumnDecreasing(parameters)
 }
+
+val ChartColumnDecreasing: ImageVector
+    get() = chartColumnDecreasingProvider.create()
 
 private val chartColumnDecreasingPath0 = PathParser().parsePathString("M13 17V9").toNodes()
 private val chartColumnDecreasingPath1 = PathParser().parsePathString("M18 17v-3").toNodes()

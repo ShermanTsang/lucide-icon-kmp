@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val redoProvider = ParameterizedIconProvider { parameters ->
     buildRedo(parameters)
 }
+
+val Redo: ImageVector
+    get() = redoProvider.create()
 
 private val redoPath0 = PathParser().parsePathString("M21 7v6h-6").toNodes()
 private val redoPath1 = PathParser().parsePathString("M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3l3 2.7").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mountainSnowProvider = ParameterizedIconProvider { parameters ->
     buildMountainSnow(parameters)
 }
+
+val MountainSnow: ImageVector
+    get() = mountainSnowProvider.create()
 
 private val mountainSnowPath0 = PathParser().parsePathString("m8 3 4 8 5-5 5 15H2L8 3z").toNodes()
 private val mountainSnowPath1 = PathParser().parsePathString("M4.14 15.08c2.62-1.57 5.24-1.43 7.86.42 2.74 1.94 5.49 2 8.23.19").toNodes()

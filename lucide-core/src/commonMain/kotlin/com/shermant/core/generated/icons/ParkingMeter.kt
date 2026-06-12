@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val parkingMeterProvider = ParameterizedIconProvider { parameters ->
     buildParkingMeter(parameters)
 }
+
+val ParkingMeter: ImageVector
+    get() = parkingMeterProvider.create()
 
 private val parkingMeterPath0 = PathParser().parsePathString("M11 15h2").toNodes()
 private val parkingMeterPath1 = PathParser().parsePathString("M12 12v3").toNodes()

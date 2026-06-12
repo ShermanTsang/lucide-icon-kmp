@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val unlinkProvider = ParameterizedIconProvider { parameters ->
     buildUnlink(parameters)
 }
+
+val Unlink: ImageVector
+    get() = unlinkProvider.create()
 
 private val unlinkPath0 = PathParser().parsePathString("m18.84 12.25 1.72-1.71h-.02a5.004 5.004 0 0 0-.12-7.07 5.006 5.006 0 0 0-6.95 0l-1.72 1.71").toNodes()
 private val unlinkPath1 = PathParser().parsePathString("m5.17 11.75-1.71 1.71a5.004 5.004 0 0 0 .12 7.07 5.006 5.006 0 0 0 6.95 0l1.71-1.71").toNodes()

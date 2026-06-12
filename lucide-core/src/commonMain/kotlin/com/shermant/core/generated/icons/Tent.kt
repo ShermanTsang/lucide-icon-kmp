@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val tentProvider = ParameterizedIconProvider { parameters ->
     buildTent(parameters)
 }
+
+val Tent: ImageVector
+    get() = tentProvider.create()
 
 private val tentPath0 = PathParser().parsePathString("M3.5 21 14 3").toNodes()
 private val tentPath1 = PathParser().parsePathString("M20.5 21 10 3").toNodes()

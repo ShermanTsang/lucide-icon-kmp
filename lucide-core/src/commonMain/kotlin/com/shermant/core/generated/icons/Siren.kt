@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sirenProvider = ParameterizedIconProvider { parameters ->
     buildSiren(parameters)
 }
+
+val Siren: ImageVector
+    get() = sirenProvider.create()
 
 private val sirenPath0 = PathParser().parsePathString("M7 18v-6a5 5 0 1 1 10 0v6").toNodes()
 private val sirenPath1 = PathParser().parsePathString("M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z").toNodes()

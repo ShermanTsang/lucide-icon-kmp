@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val brickWallShieldProvider = ParameterizedIconProvider { parameters ->
     buildBrickWallShield(parameters)
 }
+
+val BrickWallShield: ImageVector
+    get() = brickWallShieldProvider.create()
 
 private val brickWallShieldPath0 = PathParser().parsePathString("M12 9v1.258").toNodes()
 private val brickWallShieldPath1 = PathParser().parsePathString("M16 3v5.46").toNodes()

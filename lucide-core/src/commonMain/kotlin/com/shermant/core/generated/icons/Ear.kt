@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val earProvider = ParameterizedIconProvider { parameters ->
     buildEar(parameters)
 }
+
+val Ear: ImageVector
+    get() = earProvider.create()
 
 private val earPath0 = PathParser().parsePathString("M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0").toNodes()
 private val earPath1 = PathParser().parsePathString("M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4").toNodes()

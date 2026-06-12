@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val gemProvider = ParameterizedIconProvider { parameters ->
     buildGem(parameters)
 }
+
+val Gem: ImageVector
+    get() = gemProvider.create()
 
 private val gemPath0 = PathParser().parsePathString("M10.5 3 8 9l4 13 4-13-2.5-6").toNodes()
 private val gemPath1 = PathParser().parsePathString("M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z").toNodes()

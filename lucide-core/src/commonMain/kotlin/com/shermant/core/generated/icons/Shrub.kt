@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shrubProvider = ParameterizedIconProvider { parameters ->
     buildShrub(parameters)
 }
+
+val Shrub: ImageVector
+    get() = shrubProvider.create()
 
 private val shrubPath0 = PathParser().parsePathString("M12 22v-5.172a2 2 0 0 0-.586-1.414L9.5 13.5").toNodes()
 private val shrubPath1 = PathParser().parsePathString("M14.5 14.5 12 17").toNodes()

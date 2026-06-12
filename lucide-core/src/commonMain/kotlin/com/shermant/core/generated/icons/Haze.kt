@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val hazeProvider = ParameterizedIconProvider { parameters ->
     buildHaze(parameters)
 }
+
+val Haze: ImageVector
+    get() = hazeProvider.create()
 
 private val hazePath0 = PathParser().parsePathString("m5.2 6.2 1.4 1.4").toNodes()
 private val hazePath1 = PathParser().parsePathString("M2 13h2").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val caseUpperProvider = ParameterizedIconProvider { parameters ->
     buildCaseUpper(parameters)
 }
+
+val CaseUpper: ImageVector
+    get() = caseUpperProvider.create()
 
 private val caseUpperPath0 = PathParser().parsePathString("M15 11h4.5a1 1 0 0 1 0 5h-4a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h3a1 1 0 0 1 0 5").toNodes()
 private val caseUpperPath1 = PathParser().parsePathString("m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16").toNodes()

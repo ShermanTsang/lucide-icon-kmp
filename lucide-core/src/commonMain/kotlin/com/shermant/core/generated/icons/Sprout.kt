@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sproutProvider = ParameterizedIconProvider { parameters ->
     buildSprout(parameters)
 }
+
+val Sprout: ImageVector
+    get() = sproutProvider.create()
 
 private val sproutPath0 = PathParser().parsePathString("M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3").toNodes()
 private val sproutPath1 = PathParser().parsePathString("M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val skipForwardProvider = ParameterizedIconProvider { parameters ->
     buildSkipForward(parameters)
 }
+
+val SkipForward: ImageVector
+    get() = skipForwardProvider.create()
 
 private val skipForwardPath0 = PathParser().parsePathString("M21 4v16").toNodes()
 private val skipForwardPath1 = PathParser().parsePathString("M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z").toNodes()

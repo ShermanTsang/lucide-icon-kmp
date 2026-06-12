@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val spotlightProvider = ParameterizedIconProvider { parameters ->
     buildSpotlight(parameters)
 }
+
+val Spotlight: ImageVector
+    get() = spotlightProvider.create()
 
 private val spotlightPath0 = PathParser().parsePathString("M15.295 19.562 16 22").toNodes()
 private val spotlightPath1 = PathParser().parsePathString("m17 16 3.758 2.098").toNodes()

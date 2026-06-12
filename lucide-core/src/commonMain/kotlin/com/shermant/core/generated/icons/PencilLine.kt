@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val pencilLineProvider = ParameterizedIconProvider { parameters ->
     buildPencilLine(parameters)
 }
+
+val PencilLine: ImageVector
+    get() = pencilLineProvider.create()
 
 private val pencilLinePath0 = PathParser().parsePathString("M13 21h8").toNodes()
 private val pencilLinePath1 = PathParser().parsePathString("m15 5 4 4").toNodes()

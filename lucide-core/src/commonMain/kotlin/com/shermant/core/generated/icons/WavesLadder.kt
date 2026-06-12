@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wavesLadderProvider = ParameterizedIconProvider { parameters ->
     buildWavesLadder(parameters)
 }
+
+val WavesLadder: ImageVector
+    get() = wavesLadderProvider.create()
 
 private val wavesLadderPath0 = PathParser().parsePathString("M19 5a2 2 0 0 0-2 2v11").toNodes()
 private val wavesLadderPath1 = PathParser().parsePathString("M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1").toNodes()

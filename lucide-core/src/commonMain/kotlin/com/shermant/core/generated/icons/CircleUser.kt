@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleUserProvider = ParameterizedIconProvider { parameters ->
     buildCircleUser(parameters)
 }
+
+val CircleUser: ImageVector
+    get() = circleUserProvider.create()
 
 private val circleUserPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val circleUserPath1 = PathParser().parsePathString("M 15 10 A 3 3 0 1 0 9 10 A 3 3 0 1 0 15 10 Z").toNodes()

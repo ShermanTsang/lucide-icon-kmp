@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val hardDriveUploadProvider = ParameterizedIconProvider { parameters ->
     buildHardDriveUpload(parameters)
 }
+
+val HardDriveUpload: ImageVector
+    get() = hardDriveUploadProvider.create()
 
 private val hardDriveUploadPath0 = PathParser().parsePathString("m16 6-4-4-4 4").toNodes()
 private val hardDriveUploadPath1 = PathParser().parsePathString("M12 2v8").toNodes()

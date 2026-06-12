@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val indianRupeeProvider = ParameterizedIconProvider { parameters ->
     buildIndianRupee(parameters)
 }
+
+val IndianRupee: ImageVector
+    get() = indianRupeeProvider.create()
 
 private val indianRupeePath0 = PathParser().parsePathString("M6 3h12").toNodes()
 private val indianRupeePath1 = PathParser().parsePathString("M6 8h12").toNodes()

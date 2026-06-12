@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val radarProvider = ParameterizedIconProvider { parameters ->
     buildRadar(parameters)
 }
+
+val Radar: ImageVector
+    get() = radarProvider.create()
 
 private val radarPath0 = PathParser().parsePathString("M19.07 4.93A10 10 0 0 0 6.99 3.34").toNodes()
 private val radarPath1 = PathParser().parsePathString("M4 6h.01").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wifiZeroProvider = ParameterizedIconProvider { parameters ->
     buildWifiZero(parameters)
 }
+
+val WifiZero: ImageVector
+    get() = wifiZeroProvider.create()
 
 private val wifiZeroPath0 = PathParser().parsePathString("M12 20h.01").toNodes()
 

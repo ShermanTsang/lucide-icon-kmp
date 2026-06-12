@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wandSparklesProvider = ParameterizedIconProvider { parameters ->
     buildWandSparkles(parameters)
 }
+
+val WandSparkles: ImageVector
+    get() = wandSparklesProvider.create()
 
 private val wandSparklesPath0 = PathParser().parsePathString("m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72").toNodes()
 private val wandSparklesPath1 = PathParser().parsePathString("m14 7 3 3").toNodes()

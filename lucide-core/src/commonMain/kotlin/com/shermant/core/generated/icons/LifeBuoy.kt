@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lifeBuoyProvider = ParameterizedIconProvider { parameters ->
     buildLifeBuoy(parameters)
 }
+
+val LifeBuoy: ImageVector
+    get() = lifeBuoyProvider.create()
 
 private val lifeBuoyPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val lifeBuoyPath1 = PathParser().parsePathString("m4.93 4.93 4.24 4.24").toNodes()

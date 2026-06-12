@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val hatGlassesProvider = ParameterizedIconProvider { parameters ->
     buildHatGlasses(parameters)
 }
+
+val HatGlasses: ImageVector
+    get() = hatGlassesProvider.create()
 
 private val hatGlassesPath0 = PathParser().parsePathString("M14 18a2 2 0 0 0-4 0").toNodes()
 private val hatGlassesPath1 = PathParser().parsePathString("m19 11-2.11-6.657a2 2 0 0 0-2.752-1.148l-1.276.61A2 2 0 0 1 12 4H8.5a2 2 0 0 0-1.925 1.456L5 11").toNodes()

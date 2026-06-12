@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val flagTriangleLeftProvider = ParameterizedIconProvider { parameters ->
     buildFlagTriangleLeft(parameters)
 }
+
+val FlagTriangleLeft: ImageVector
+    get() = flagTriangleLeftProvider.create()
 
 private val flagTriangleLeftPath0 = PathParser().parsePathString("M18 22V2.8a.8.8 0 0 0-1.17-.71L5.45 7.78a.8.8 0 0 0 0 1.44L18 15.5").toNodes()
 

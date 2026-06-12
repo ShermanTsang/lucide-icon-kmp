@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bathProvider = ParameterizedIconProvider { parameters ->
     buildBath(parameters)
 }
+
+val Bath: ImageVector
+    get() = bathProvider.create()
 
 private val bathPath0 = PathParser().parsePathString("M10 4 8 6").toNodes()
 private val bathPath1 = PathParser().parsePathString("M17 19v2").toNodes()

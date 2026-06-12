@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wavesArrowDownProvider = ParameterizedIconProvider { parameters ->
     buildWavesArrowDown(parameters)
 }
+
+val WavesArrowDown: ImageVector
+    get() = wavesArrowDownProvider.create()
 
 private val wavesArrowDownPath0 = PathParser().parsePathString("M12 10L12 2").toNodes()
 private val wavesArrowDownPath1 = PathParser().parsePathString("M16 6L12 10L8 6").toNodes()

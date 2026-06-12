@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lensConvexProvider = ParameterizedIconProvider { parameters ->
     buildLensConvex(parameters)
 }
+
+val LensConvex: ImageVector
+    get() = lensConvexProvider.create()
 
 private val lensConvexPath0 = PathParser().parsePathString("M13.433 2a1 1 0 0 1 .824.448 18 18 0 0 1 0 19.104 1 1 0 0 1-.824.448h-2.866a1 1 0 0 1-.824-.448 18 18 0 0 1 0-19.104A1 1 0 0 1 10.567 2z").toNodes()
 

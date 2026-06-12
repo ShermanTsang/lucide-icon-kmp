@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val underlineProvider = ParameterizedIconProvider { parameters ->
     buildUnderline(parameters)
 }
+
+val Underline: ImageVector
+    get() = underlineProvider.create()
 
 private val underlinePath0 = PathParser().parsePathString("M6 4v6a6 6 0 0 0 12 0V4").toNodes()
 private val underlinePath1 = PathParser().parsePathString("M 4 20 L 20 20").toNodes()

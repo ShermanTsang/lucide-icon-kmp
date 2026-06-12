@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lineSquiggleProvider = ParameterizedIconProvider { parameters ->
     buildLineSquiggle(parameters)
 }
+
+val LineSquiggle: ImageVector
+    get() = lineSquiggleProvider.create()
 
 private val lineSquigglePath0 = PathParser().parsePathString("M7 3.5c5-2 7 2.5 3 4C1.5 10 2 15 5 16c5 2 9-10 14-7s.5 13.5-4 12c-5-2.5.5-11 6-2").toNodes()
 

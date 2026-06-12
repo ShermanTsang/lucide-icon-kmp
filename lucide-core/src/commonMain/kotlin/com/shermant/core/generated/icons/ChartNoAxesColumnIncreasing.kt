@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chartNoAxesColumnIncreasingProvider = ParameterizedIconProvider { parameters ->
     buildChartNoAxesColumnIncreasing(parameters)
 }
+
+val ChartNoAxesColumnIncreasing: ImageVector
+    get() = chartNoAxesColumnIncreasingProvider.create()
 
 private val chartNoAxesColumnIncreasingPath0 = PathParser().parsePathString("M5 21v-6").toNodes()
 private val chartNoAxesColumnIncreasingPath1 = PathParser().parsePathString("M12 21V9").toNodes()

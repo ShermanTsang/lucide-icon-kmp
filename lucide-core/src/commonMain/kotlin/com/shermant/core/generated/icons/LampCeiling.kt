@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lampCeilingProvider = ParameterizedIconProvider { parameters ->
     buildLampCeiling(parameters)
 }
+
+val LampCeiling: ImageVector
+    get() = lampCeilingProvider.create()
 
 private val lampCeilingPath0 = PathParser().parsePathString("M12 2v5").toNodes()
 private val lampCeilingPath1 = PathParser().parsePathString("M14.829 15.998a3 3 0 1 1-5.658 0").toNodes()

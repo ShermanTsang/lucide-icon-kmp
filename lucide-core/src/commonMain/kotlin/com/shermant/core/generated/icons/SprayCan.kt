@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sprayCanProvider = ParameterizedIconProvider { parameters ->
     buildSprayCan(parameters)
 }
+
+val SprayCan: ImageVector
+    get() = sprayCanProvider.create()
 
 private val sprayCanPath0 = PathParser().parsePathString("M3 3h.01").toNodes()
 private val sprayCanPath1 = PathParser().parsePathString("M7 5h.01").toNodes()

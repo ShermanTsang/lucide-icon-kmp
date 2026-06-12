@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val tally1Provider = ParameterizedIconProvider { parameters ->
     buildTally1(parameters)
 }
+
+val Tally1: ImageVector
+    get() = tally1Provider.create()
 
 private val tally1Path0 = PathParser().parsePathString("M4 4v16").toNodes()
 

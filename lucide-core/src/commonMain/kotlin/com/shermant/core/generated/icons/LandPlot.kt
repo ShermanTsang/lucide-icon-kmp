@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val landPlotProvider = ParameterizedIconProvider { parameters ->
     buildLandPlot(parameters)
 }
+
+val LandPlot: ImageVector
+    get() = landPlotProvider.create()
 
 private val landPlotPath0 = PathParser().parsePathString("m12 8 6-3-6-3v10").toNodes()
 private val landPlotPath1 = PathParser().parsePathString("m8 11.99-5.5 3.14a1 1 0 0 0 0 1.74l8.5 4.86a2 2 0 0 0 2 0l8.5-4.86a1 1 0 0 0 0-1.74L16 12").toNodes()

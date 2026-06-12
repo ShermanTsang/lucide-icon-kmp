@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val newspaperProvider = ParameterizedIconProvider { parameters ->
     buildNewspaper(parameters)
 }
+
+val Newspaper: ImageVector
+    get() = newspaperProvider.create()
 
 private val newspaperPath0 = PathParser().parsePathString("M15 18h-5").toNodes()
 private val newspaperPath1 = PathParser().parsePathString("M18 14h-8").toNodes()

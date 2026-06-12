@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val messageCircleCodeProvider = ParameterizedIconProvider { parameters ->
     buildMessageCircleCode(parameters)
 }
+
+val MessageCircleCode: ImageVector
+    get() = messageCircleCodeProvider.create()
 
 private val messageCircleCodePath0 = PathParser().parsePathString("m10 9-3 3 3 3").toNodes()
 private val messageCircleCodePath1 = PathParser().parsePathString("m14 15 3-3-3-3").toNodes()

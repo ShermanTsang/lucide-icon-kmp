@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareDashedKanbanProvider = ParameterizedIconProvider { parameters ->
     buildSquareDashedKanban(parameters)
 }
+
+val SquareDashedKanban: ImageVector
+    get() = squareDashedKanbanProvider.create()
 
 private val squareDashedKanbanPath0 = PathParser().parsePathString("M8 7v7").toNodes()
 private val squareDashedKanbanPath1 = PathParser().parsePathString("M12 7v4").toNodes()

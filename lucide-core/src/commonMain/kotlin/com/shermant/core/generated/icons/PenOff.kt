@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val penOffProvider = ParameterizedIconProvider { parameters ->
     buildPenOff(parameters)
 }
+
+val PenOff: ImageVector
+    get() = penOffProvider.create()
 
 private val penOffPath0 = PathParser().parsePathString("m10 10-6.157 6.162a2 2 0 0 0-.5.833l-1.322 4.36a.5.5 0 0 0 .622.624l4.358-1.323a2 2 0 0 0 .83-.5L14 13.982").toNodes()
 private val penOffPath1 = PathParser().parsePathString("m12.829 7.172 4.359-4.346a1 1 0 1 1 3.986 3.986l-4.353 4.353").toNodes()

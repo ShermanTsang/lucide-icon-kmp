@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleAlertProvider = ParameterizedIconProvider { parameters ->
     buildCircleAlert(parameters)
 }
+
+val CircleAlert: ImageVector
+    get() = circleAlertProvider.create()
 
 private val circleAlertPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val circleAlertPath1 = PathParser().parsePathString("M 12 8 L 12 12").toNodes()

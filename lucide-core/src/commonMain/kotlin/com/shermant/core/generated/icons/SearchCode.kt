@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val searchCodeProvider = ParameterizedIconProvider { parameters ->
     buildSearchCode(parameters)
 }
+
+val SearchCode: ImageVector
+    get() = searchCodeProvider.create()
 
 private val searchCodePath0 = PathParser().parsePathString("m13 13.5 2-2.5-2-2.5").toNodes()
 private val searchCodePath1 = PathParser().parsePathString("m21 21-4.3-4.3").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val fileStackProvider = ParameterizedIconProvider { parameters ->
     buildFileStack(parameters)
 }
+
+val FileStack: ImageVector
+    get() = fileStackProvider.create()
 
 private val fileStackPath0 = PathParser().parsePathString("M11 21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1").toNodes()
 private val fileStackPath1 = PathParser().parsePathString("M16 16a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1").toNodes()

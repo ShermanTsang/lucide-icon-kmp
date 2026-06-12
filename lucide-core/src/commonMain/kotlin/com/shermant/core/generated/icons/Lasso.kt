@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lassoProvider = ParameterizedIconProvider { parameters ->
     buildLasso(parameters)
 }
+
+val Lasso: ImageVector
+    get() = lassoProvider.create()
 
 private val lassoPath0 = PathParser().parsePathString("M3.704 14.467a10 8 0 1 1 3.115 2.375").toNodes()
 private val lassoPath1 = PathParser().parsePathString("M7 22a5 5 0 0 1-2-3.994").toNodes()

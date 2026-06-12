@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val printerXProvider = ParameterizedIconProvider { parameters ->
     buildPrinterX(parameters)
 }
+
+val PrinterX: ImageVector
+    get() = printerXProvider.create()
 
 private val printerXPath0 = PathParser().parsePathString("M12.531 22H7a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6.377").toNodes()
 private val printerXPath1 = PathParser().parsePathString("m16.5 16.5 5 5").toNodes()

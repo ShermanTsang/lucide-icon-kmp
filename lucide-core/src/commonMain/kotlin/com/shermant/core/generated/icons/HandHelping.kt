@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val handHelpingProvider = ParameterizedIconProvider { parameters ->
     buildHandHelping(parameters)
 }
+
+val HandHelping: ImageVector
+    get() = handHelpingProvider.create()
 
 private val handHelpingPath0 = PathParser().parsePathString("M11 12h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 14").toNodes()
 private val handHelpingPath1 = PathParser().parsePathString("m7 18 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val tabletSmartphoneProvider = ParameterizedIconProvider { parameters ->
     buildTabletSmartphone(parameters)
 }
+
+val TabletSmartphone: ImageVector
+    get() = tabletSmartphoneProvider.create()
 
 private val tabletSmartphonePath0 = PathParser().parsePathString("M 5 8 H 11 A 2 2 0 0 1 13 10 V 20 A 2 2 0 0 1 11 22 H 5 A 2 2 0 0 1 3 20 V 10 A 2 2 0 0 1 5 8 Z").toNodes()
 private val tabletSmartphonePath1 = PathParser().parsePathString("M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4").toNodes()

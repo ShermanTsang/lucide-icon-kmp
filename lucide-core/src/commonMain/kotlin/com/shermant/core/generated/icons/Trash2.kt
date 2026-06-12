@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val trash2Provider = ParameterizedIconProvider { parameters ->
     buildTrash2(parameters)
 }
+
+val Trash2: ImageVector
+    get() = trash2Provider.create()
 
 private val trash2Path0 = PathParser().parsePathString("M10 11v6").toNodes()
 private val trash2Path1 = PathParser().parsePathString("M14 11v6").toNodes()

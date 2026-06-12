@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val repeatOffProvider = ParameterizedIconProvider { parameters ->
     buildRepeatOff(parameters)
 }
+
+val RepeatOff: ImageVector
+    get() = repeatOffProvider.create()
 
 private val repeatOffPath0 = PathParser().parsePathString("M11.656 6H21l-4-4").toNodes()
 private val repeatOffPath1 = PathParser().parsePathString("M17.898 17.898A4 4 0 0 1 17 18H3l4-4").toNodes()

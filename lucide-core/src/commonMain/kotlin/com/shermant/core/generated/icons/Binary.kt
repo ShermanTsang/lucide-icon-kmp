@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val binaryProvider = ParameterizedIconProvider { parameters ->
     buildBinary(parameters)
 }
+
+val Binary: ImageVector
+    get() = binaryProvider.create()
 
 private val binaryPath0 = PathParser().parsePathString("M 16 14 H 16 A 2 2 0 0 1 18 16 V 18 A 2 2 0 0 1 16 20 H 16 A 2 2 0 0 1 14 18 V 16 A 2 2 0 0 1 16 14 Z").toNodes()
 private val binaryPath1 = PathParser().parsePathString("M 8 4 H 8 A 2 2 0 0 1 10 6 V 8 A 2 2 0 0 1 8 10 H 8 A 2 2 0 0 1 6 8 V 6 A 2 2 0 0 1 8 4 Z").toNodes()

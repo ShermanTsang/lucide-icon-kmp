@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val textWrapProvider = ParameterizedIconProvider { parameters ->
     buildTextWrap(parameters)
 }
+
+val TextWrap: ImageVector
+    get() = textWrapProvider.create()
 
 private val textWrapPath0 = PathParser().parsePathString("m16 16-3 3 3 3").toNodes()
 private val textWrapPath1 = PathParser().parsePathString("M3 12h14.5a1 1 0 0 1 0 7H13").toNodes()

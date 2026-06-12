@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sunsetProvider = ParameterizedIconProvider { parameters ->
     buildSunset(parameters)
 }
+
+val Sunset: ImageVector
+    get() = sunsetProvider.create()
 
 private val sunsetPath0 = PathParser().parsePathString("M12 10V2").toNodes()
 private val sunsetPath1 = PathParser().parsePathString("m4.93 10.93 1.41 1.41").toNodes()

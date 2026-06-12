@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cloudMoonRainProvider = ParameterizedIconProvider { parameters ->
     buildCloudMoonRain(parameters)
 }
+
+val CloudMoonRain: ImageVector
+    get() = cloudMoonRainProvider.create()
 
 private val cloudMoonRainPath0 = PathParser().parsePathString("M11 20v2").toNodes()
 private val cloudMoonRainPath1 = PathParser().parsePathString("M18.376 14.512a6 6 0 0 0 3.461-4.127c.148-.625-.659-.97-1.248-.714a4 4 0 0 1-5.259-5.26c.255-.589-.09-1.395-.716-1.248a6 6 0 0 0-4.594 5.36").toNodes()

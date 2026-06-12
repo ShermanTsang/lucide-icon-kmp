@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val kanbanProvider = ParameterizedIconProvider { parameters ->
     buildKanban(parameters)
 }
+
+val Kanban: ImageVector
+    get() = kanbanProvider.create()
 
 private val kanbanPath0 = PathParser().parsePathString("M5 3v14").toNodes()
 private val kanbanPath1 = PathParser().parsePathString("M12 3v8").toNodes()

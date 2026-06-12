@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val parenthesesProvider = ParameterizedIconProvider { parameters ->
     buildParentheses(parameters)
 }
+
+val Parentheses: ImageVector
+    get() = parenthesesProvider.create()
 
 private val parenthesesPath0 = PathParser().parsePathString("M8 21s-4-3-4-9 4-9 4-9").toNodes()
 private val parenthesesPath1 = PathParser().parsePathString("M16 3s4 3 4 9-4 9-4 9").toNodes()

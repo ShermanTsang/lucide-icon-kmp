@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val keyboardOffProvider = ParameterizedIconProvider { parameters ->
     buildKeyboardOff(parameters)
 }
+
+val KeyboardOff: ImageVector
+    get() = keyboardOffProvider.create()
 
 private val keyboardOffPath0 = PathParser().parsePathString("M 20 4 A2 2 0 0 1 22 6").toNodes()
 private val keyboardOffPath1 = PathParser().parsePathString("M 22 6 L 22 16.41").toNodes()

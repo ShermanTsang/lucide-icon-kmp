@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squaresIntersectProvider = ParameterizedIconProvider { parameters ->
     buildSquaresIntersect(parameters)
 }
+
+val SquaresIntersect: ImageVector
+    get() = squaresIntersectProvider.create()
 
 private val squaresIntersectPath0 = PathParser().parsePathString("M10 22a2 2 0 0 1-2-2").toNodes()
 private val squaresIntersectPath1 = PathParser().parsePathString("M14 2a2 2 0 0 1 2 2").toNodes()

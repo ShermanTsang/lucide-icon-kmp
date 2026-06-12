@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val gavelProvider = ParameterizedIconProvider { parameters ->
     buildGavel(parameters)
 }
+
+val Gavel: ImageVector
+    get() = gavelProvider.create()
 
 private val gavelPath0 = PathParser().parsePathString("m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381").toNodes()
 private val gavelPath1 = PathParser().parsePathString("m16 16 6-6").toNodes()

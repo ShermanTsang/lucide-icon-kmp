@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val separatorVerticalProvider = ParameterizedIconProvider { parameters ->
     buildSeparatorVertical(parameters)
 }
+
+val SeparatorVertical: ImageVector
+    get() = separatorVerticalProvider.create()
 
 private val separatorVerticalPath0 = PathParser().parsePathString("M12 3v18").toNodes()
 private val separatorVerticalPath1 = PathParser().parsePathString("m16 16 4-4-4-4").toNodes()

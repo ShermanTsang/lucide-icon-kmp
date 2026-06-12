@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val diameterProvider = ParameterizedIconProvider { parameters ->
     buildDiameter(parameters)
 }
+
+val Diameter: ImageVector
+    get() = diameterProvider.create()
 
 private val diameterPath0 = PathParser().parsePathString("M 21 19 A 2 2 0 1 0 17 19 A 2 2 0 1 0 21 19 Z").toNodes()
 private val diameterPath1 = PathParser().parsePathString("M 7 5 A 2 2 0 1 0 3 5 A 2 2 0 1 0 7 5 Z").toNodes()

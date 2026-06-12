@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val joystickProvider = ParameterizedIconProvider { parameters ->
     buildJoystick(parameters)
 }
+
+val Joystick: ImageVector
+    get() = joystickProvider.create()
 
 private val joystickPath0 = PathParser().parsePathString("M21 17a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2Z").toNodes()
 private val joystickPath1 = PathParser().parsePathString("M6 15v-2").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val slashProvider = ParameterizedIconProvider { parameters ->
     buildSlash(parameters)
 }
+
+val Slash: ImageVector
+    get() = slashProvider.create()
 
 private val slashPath0 = PathParser().parsePathString("M22 2 2 22").toNodes()
 

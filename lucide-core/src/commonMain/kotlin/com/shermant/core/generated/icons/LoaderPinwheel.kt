@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val loaderPinwheelProvider = ParameterizedIconProvider { parameters ->
     buildLoaderPinwheel(parameters)
 }
+
+val LoaderPinwheel: ImageVector
+    get() = loaderPinwheelProvider.create()
 
 private val loaderPinwheelPath0 = PathParser().parsePathString("M22 12a1 1 0 0 1-10 0 1 1 0 0 0-10 0").toNodes()
 private val loaderPinwheelPath1 = PathParser().parsePathString("M7 20.7a1 1 0 1 1 5-8.7 1 1 0 1 0 5-8.6").toNodes()

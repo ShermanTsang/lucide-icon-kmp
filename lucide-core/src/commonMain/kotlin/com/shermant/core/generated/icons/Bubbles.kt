@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bubblesProvider = ParameterizedIconProvider { parameters ->
     buildBubbles(parameters)
 }
+
+val Bubbles: ImageVector
+    get() = bubblesProvider.create()
 
 private val bubblesPath0 = PathParser().parsePathString("M7.001 15.085A1.5 1.5 0 0 1 9 16.5").toNodes()
 private val bubblesPath1 = PathParser().parsePathString("M 22 8.5 A 3.5 3.5 0 1 0 15 8.5 A 3.5 3.5 0 1 0 22 8.5 Z").toNodes()

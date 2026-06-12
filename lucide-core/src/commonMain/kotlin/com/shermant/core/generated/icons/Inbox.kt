@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val inboxProvider = ParameterizedIconProvider { parameters ->
     buildInbox(parameters)
 }
+
+val Inbox: ImageVector
+    get() = inboxProvider.create()
 
 private val inboxPath0 = PathParser().parsePathString("M 22 12 L 16 12 L 14 15 L 10 15 L 8 12 L 2 12").toNodes()
 private val inboxPath1 = PathParser().parsePathString("M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z").toNodes()

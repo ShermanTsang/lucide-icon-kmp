@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val clockAlertProvider = ParameterizedIconProvider { parameters ->
     buildClockAlert(parameters)
 }
+
+val ClockAlert: ImageVector
+    get() = clockAlertProvider.create()
 
 private val clockAlertPath0 = PathParser().parsePathString("M12 6v6l4 2").toNodes()
 private val clockAlertPath1 = PathParser().parsePathString("M20 12v5").toNodes()

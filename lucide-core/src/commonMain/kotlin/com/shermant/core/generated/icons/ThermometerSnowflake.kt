@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val thermometerSnowflakeProvider = ParameterizedIconProvider { parameters ->
     buildThermometerSnowflake(parameters)
 }
+
+val ThermometerSnowflake: ImageVector
+    get() = thermometerSnowflakeProvider.create()
 
 private val thermometerSnowflakePath0 = PathParser().parsePathString("m10 20-1.25-2.5L6 18").toNodes()
 private val thermometerSnowflakePath1 = PathParser().parsePathString("M10 4 8.75 6.5 6 6").toNodes()

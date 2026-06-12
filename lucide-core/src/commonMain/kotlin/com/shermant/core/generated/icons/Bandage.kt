@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bandageProvider = ParameterizedIconProvider { parameters ->
     buildBandage(parameters)
 }
+
+val Bandage: ImageVector
+    get() = bandageProvider.create()
 
 private val bandagePath0 = PathParser().parsePathString("M10 10.01h.01").toNodes()
 private val bandagePath1 = PathParser().parsePathString("M10 14.01h.01").toNodes()

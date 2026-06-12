@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val showerHeadProvider = ParameterizedIconProvider { parameters ->
     buildShowerHead(parameters)
 }
+
+val ShowerHead: ImageVector
+    get() = showerHeadProvider.create()
 
 private val showerHeadPath0 = PathParser().parsePathString("m4 4 2.5 2.5").toNodes()
 private val showerHeadPath1 = PathParser().parsePathString("M13.5 6.5a4.95 4.95 0 0 0-7 7").toNodes()

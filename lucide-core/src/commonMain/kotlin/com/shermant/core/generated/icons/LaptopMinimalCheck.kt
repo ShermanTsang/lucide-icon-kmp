@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val laptopMinimalCheckProvider = ParameterizedIconProvider { parameters ->
     buildLaptopMinimalCheck(parameters)
 }
+
+val LaptopMinimalCheck: ImageVector
+    get() = laptopMinimalCheckProvider.create()
 
 private val laptopMinimalCheckPath0 = PathParser().parsePathString("M2 20h20").toNodes()
 private val laptopMinimalCheckPath1 = PathParser().parsePathString("m9 10 2 2 4-4").toNodes()

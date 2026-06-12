@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val russianRubleProvider = ParameterizedIconProvider { parameters ->
     buildRussianRuble(parameters)
 }
+
+val RussianRuble: ImageVector
+    get() = russianRubleProvider.create()
 
 private val russianRublePath0 = PathParser().parsePathString("M6 11h8a4 4 0 0 0 0-8H9v18").toNodes()
 private val russianRublePath1 = PathParser().parsePathString("M6 15h8").toNodes()

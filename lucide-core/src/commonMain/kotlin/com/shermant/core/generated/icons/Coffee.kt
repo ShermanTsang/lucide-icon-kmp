@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val coffeeProvider = ParameterizedIconProvider { parameters ->
     buildCoffee(parameters)
 }
+
+val Coffee: ImageVector
+    get() = coffeeProvider.create()
 
 private val coffeePath0 = PathParser().parsePathString("M10 2v2").toNodes()
 private val coffeePath1 = PathParser().parsePathString("M14 2v2").toNodes()

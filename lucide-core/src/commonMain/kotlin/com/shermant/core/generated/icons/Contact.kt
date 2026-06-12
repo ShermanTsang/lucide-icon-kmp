@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val contactProvider = ParameterizedIconProvider { parameters ->
     buildContact(parameters)
 }
+
+val Contact: ImageVector
+    get() = contactProvider.create()
 
 private val contactPath0 = PathParser().parsePathString("M16 2v2").toNodes()
 private val contactPath1 = PathParser().parsePathString("M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2").toNodes()

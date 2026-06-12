@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cornerRightDownProvider = ParameterizedIconProvider { parameters ->
     buildCornerRightDown(parameters)
 }
+
+val CornerRightDown: ImageVector
+    get() = cornerRightDownProvider.create()
 
 private val cornerRightDownPath0 = PathParser().parsePathString("m10 15 5 5 5-5").toNodes()
 private val cornerRightDownPath1 = PathParser().parsePathString("M4 4h7a4 4 0 0 1 4 4v12").toNodes()

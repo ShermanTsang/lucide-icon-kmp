@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squarePowerProvider = ParameterizedIconProvider { parameters ->
     buildSquarePower(parameters)
 }
+
+val SquarePower: ImageVector
+    get() = squarePowerProvider.create()
 
 private val squarePowerPath0 = PathParser().parsePathString("M12 7v4").toNodes()
 private val squarePowerPath1 = PathParser().parsePathString("M7.998 9.003a5 5 0 1 0 8-.005").toNodes()

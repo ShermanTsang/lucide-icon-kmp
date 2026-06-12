@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val messageSquareCodeProvider = ParameterizedIconProvider { parameters ->
     buildMessageSquareCode(parameters)
 }
+
+val MessageSquareCode: ImageVector
+    get() = messageSquareCodeProvider.create()
 
 private val messageSquareCodePath0 = PathParser().parsePathString("M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z").toNodes()
 private val messageSquareCodePath1 = PathParser().parsePathString("m10 8-3 3 3 3").toNodes()

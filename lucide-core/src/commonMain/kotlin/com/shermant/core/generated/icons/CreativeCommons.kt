@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val creativeCommonsProvider = ParameterizedIconProvider { parameters ->
     buildCreativeCommons(parameters)
 }
+
+val CreativeCommons: ImageVector
+    get() = creativeCommonsProvider.create()
 
 private val creativeCommonsPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val creativeCommonsPath1 = PathParser().parsePathString("M10 9.3a2.8 2.8 0 0 0-3.5 1 3.1 3.1 0 0 0 0 3.4 2.7 2.7 0 0 0 3.5 1").toNodes()

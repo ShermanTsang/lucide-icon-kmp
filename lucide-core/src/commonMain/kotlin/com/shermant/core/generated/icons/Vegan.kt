@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val veganProvider = ParameterizedIconProvider { parameters ->
     buildVegan(parameters)
 }
+
+val Vegan: ImageVector
+    get() = veganProvider.create()
 
 private val veganPath0 = PathParser().parsePathString("M16 8q6 0 6-6-6 0-6 6").toNodes()
 private val veganPath1 = PathParser().parsePathString("M17.41 3.59a10 10 0 1 0 3 3").toNodes()

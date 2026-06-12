@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val stethoscopeProvider = ParameterizedIconProvider { parameters ->
     buildStethoscope(parameters)
 }
+
+val Stethoscope: ImageVector
+    get() = stethoscopeProvider.create()
 
 private val stethoscopePath0 = PathParser().parsePathString("M11 2v2").toNodes()
 private val stethoscopePath1 = PathParser().parsePathString("M5 2v2").toNodes()

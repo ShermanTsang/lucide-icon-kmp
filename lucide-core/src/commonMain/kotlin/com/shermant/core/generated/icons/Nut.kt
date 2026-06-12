@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val nutProvider = ParameterizedIconProvider { parameters ->
     buildNut(parameters)
 }
+
+val Nut: ImageVector
+    get() = nutProvider.create()
 
 private val nutPath0 = PathParser().parsePathString("M12 4V2").toNodes()
 private val nutPath1 = PathParser().parsePathString("M5 10v4a7.004 7.004 0 0 0 5.277 6.787c.412.104.802.292 1.102.592L12 22l.621-.621c.3-.3.69-.488 1.102-.592A7.003 7.003 0 0 0 19 14v-4").toNodes()

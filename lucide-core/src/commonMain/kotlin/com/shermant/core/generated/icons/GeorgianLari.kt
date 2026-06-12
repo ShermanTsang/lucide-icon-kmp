@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val georgianLariProvider = ParameterizedIconProvider { parameters ->
     buildGeorgianLari(parameters)
 }
+
+val GeorgianLari: ImageVector
+    get() = georgianLariProvider.create()
 
 private val georgianLariPath0 = PathParser().parsePathString("M11.5 21a7.5 7.5 0 1 1 7.35-9").toNodes()
 private val georgianLariPath1 = PathParser().parsePathString("M13 12V3").toNodes()

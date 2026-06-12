@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val smilePlusProvider = ParameterizedIconProvider { parameters ->
     buildSmilePlus(parameters)
 }
+
+val SmilePlus: ImageVector
+    get() = smilePlusProvider.create()
 
 private val smilePlusPath0 = PathParser().parsePathString("M22 11v1a10 10 0 1 1-9-10").toNodes()
 private val smilePlusPath1 = PathParser().parsePathString("M8 14s1.5 2 4 2 4-2 4-2").toNodes()

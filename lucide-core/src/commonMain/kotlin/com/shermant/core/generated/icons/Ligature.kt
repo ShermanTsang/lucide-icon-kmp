@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ligatureProvider = ParameterizedIconProvider { parameters ->
     buildLigature(parameters)
 }
+
+val Ligature: ImageVector
+    get() = ligatureProvider.create()
 
 private val ligaturePath0 = PathParser().parsePathString("M14 12h2v8").toNodes()
 private val ligaturePath1 = PathParser().parsePathString("M14 20h4").toNodes()

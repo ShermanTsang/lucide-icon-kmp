@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val hamburgerProvider = ParameterizedIconProvider { parameters ->
     buildHamburger(parameters)
 }
+
+val Hamburger: ImageVector
+    get() = hamburgerProvider.create()
 
 private val hamburgerPath0 = PathParser().parsePathString("M12 16H4a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4h-4.25").toNodes()
 private val hamburgerPath1 = PathParser().parsePathString("M5 12a2 2 0 0 1-2-2 9 7 0 0 1 18 0 2 2 0 0 1-2 2").toNodes()

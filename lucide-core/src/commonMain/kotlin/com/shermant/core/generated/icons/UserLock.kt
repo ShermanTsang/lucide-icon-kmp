@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val userLockProvider = ParameterizedIconProvider { parameters ->
     buildUserLock(parameters)
 }
+
+val UserLock: ImageVector
+    get() = userLockProvider.create()
 
 private val userLockPath0 = PathParser().parsePathString("M19 16v-2a2 2 0 0 0-4 0v2").toNodes()
 private val userLockPath1 = PathParser().parsePathString("M9.5 15H7a4 4 0 0 0-4 4v2").toNodes()

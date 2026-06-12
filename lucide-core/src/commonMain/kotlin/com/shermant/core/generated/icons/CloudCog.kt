@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cloudCogProvider = ParameterizedIconProvider { parameters ->
     buildCloudCog(parameters)
 }
+
+val CloudCog: ImageVector
+    get() = cloudCogProvider.create()
 
 private val cloudCogPath0 = PathParser().parsePathString("m10.852 19.772-.383.924").toNodes()
 private val cloudCogPath1 = PathParser().parsePathString("m13.148 14.228.383-.923").toNodes()

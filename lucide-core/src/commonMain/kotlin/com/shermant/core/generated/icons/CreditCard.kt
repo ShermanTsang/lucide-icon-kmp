@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val creditCardProvider = ParameterizedIconProvider { parameters ->
     buildCreditCard(parameters)
 }
+
+val CreditCard: ImageVector
+    get() = creditCardProvider.create()
 
 private val creditCardPath0 = PathParser().parsePathString("M 4 5 H 20 A 2 2 0 0 1 22 7 V 17 A 2 2 0 0 1 20 19 H 4 A 2 2 0 0 1 2 17 V 7 A 2 2 0 0 1 4 5 Z").toNodes()
 private val creditCardPath1 = PathParser().parsePathString("M 2 10 L 22 10").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val dnaProvider = ParameterizedIconProvider { parameters ->
     buildDna(parameters)
 }
+
+val Dna: ImageVector
+    get() = dnaProvider.create()
 
 private val dnaPath0 = PathParser().parsePathString("m10 16 1.5 1.5").toNodes()
 private val dnaPath1 = PathParser().parsePathString("m14 8-1.5-1.5").toNodes()

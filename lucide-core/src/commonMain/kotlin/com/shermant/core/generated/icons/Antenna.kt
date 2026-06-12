@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val antennaProvider = ParameterizedIconProvider { parameters ->
     buildAntenna(parameters)
 }
+
+val Antenna: ImageVector
+    get() = antennaProvider.create()
 
 private val antennaPath0 = PathParser().parsePathString("M2 12 7 2").toNodes()
 private val antennaPath1 = PathParser().parsePathString("m7 12 5-10").toNodes()

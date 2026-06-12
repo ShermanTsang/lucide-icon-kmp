@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val coinsProvider = ParameterizedIconProvider { parameters ->
     buildCoins(parameters)
 }
+
+val Coins: ImageVector
+    get() = coinsProvider.create()
 
 private val coinsPath0 = PathParser().parsePathString("M13.744 17.736a6 6 0 1 1-7.48-7.48").toNodes()
 private val coinsPath1 = PathParser().parsePathString("M15 6h1v4").toNodes()

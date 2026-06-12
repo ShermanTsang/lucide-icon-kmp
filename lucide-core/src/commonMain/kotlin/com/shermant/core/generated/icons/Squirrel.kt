@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squirrelProvider = ParameterizedIconProvider { parameters ->
     buildSquirrel(parameters)
 }
+
+val Squirrel: ImageVector
+    get() = squirrelProvider.create()
 
 private val squirrelPath0 = PathParser().parsePathString("M15.236 22a3 3 0 0 0-2.2-5").toNodes()
 private val squirrelPath1 = PathParser().parsePathString("M16 20a3 3 0 0 1 3-3h1a2 2 0 0 0 2-2v-2a4 4 0 0 0-4-4V4").toNodes()

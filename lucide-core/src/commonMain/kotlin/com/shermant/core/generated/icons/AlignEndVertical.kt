@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val alignEndVerticalProvider = ParameterizedIconProvider { parameters ->
     buildAlignEndVertical(parameters)
 }
+
+val AlignEndVertical: ImageVector
+    get() = alignEndVerticalProvider.create()
 
 private val alignEndVerticalPath0 = PathParser().parsePathString("M 4 4 H 16 A 2 2 0 0 1 18 6 V 8 A 2 2 0 0 1 16 10 H 4 A 2 2 0 0 1 2 8 V 6 A 2 2 0 0 1 4 4 Z").toNodes()
 private val alignEndVerticalPath1 = PathParser().parsePathString("M 11 14 H 16 A 2 2 0 0 1 18 16 V 18 A 2 2 0 0 1 16 20 H 11 A 2 2 0 0 1 9 18 V 16 A 2 2 0 0 1 11 14 Z").toNodes()

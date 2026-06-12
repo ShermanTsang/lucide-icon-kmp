@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sofaProvider = ParameterizedIconProvider { parameters ->
     buildSofa(parameters)
 }
+
+val Sofa: ImageVector
+    get() = sofaProvider.create()
 
 private val sofaPath0 = PathParser().parsePathString("M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3").toNodes()
 private val sofaPath1 = PathParser().parsePathString("M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z").toNodes()

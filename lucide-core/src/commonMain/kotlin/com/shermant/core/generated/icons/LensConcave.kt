@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lensConcaveProvider = ParameterizedIconProvider { parameters ->
     buildLensConcave(parameters)
 }
+
+val LensConcave: ImageVector
+    get() = lensConcaveProvider.create()
 
 private val lensConcavePath0 = PathParser().parsePathString("M7 2a1 1 0 0 0-.8 1.6 14 14 0 0 1 0 16.8A1 1 0 0 0 7 22h10a1 1 0 0 0 .8-1.6 14 14 0 0 1 0-16.8A1 1 0 0 0 17 2z").toNodes()
 

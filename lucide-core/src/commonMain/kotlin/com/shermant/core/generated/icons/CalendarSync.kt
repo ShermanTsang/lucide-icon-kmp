@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val calendarSyncProvider = ParameterizedIconProvider { parameters ->
     buildCalendarSync(parameters)
 }
+
+val CalendarSync: ImageVector
+    get() = calendarSyncProvider.create()
 
 private val calendarSyncPath0 = PathParser().parsePathString("M11 10v4h4").toNodes()
 private val calendarSyncPath1 = PathParser().parsePathString("m11 14 1.535-1.605a5 5 0 0 1 8 1.5").toNodes()

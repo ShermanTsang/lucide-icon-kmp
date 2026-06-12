@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val listChevronsUpDownProvider = ParameterizedIconProvider { parameters ->
     buildListChevronsUpDown(parameters)
 }
+
+val ListChevronsUpDown: ImageVector
+    get() = listChevronsUpDownProvider.create()
 
 private val listChevronsUpDownPath0 = PathParser().parsePathString("M3 5h8").toNodes()
 private val listChevronsUpDownPath1 = PathParser().parsePathString("M3 12h8").toNodes()

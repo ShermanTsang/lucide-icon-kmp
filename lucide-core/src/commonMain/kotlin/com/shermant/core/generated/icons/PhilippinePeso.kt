@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val philippinePesoProvider = ParameterizedIconProvider { parameters ->
     buildPhilippinePeso(parameters)
 }
+
+val PhilippinePeso: ImageVector
+    get() = philippinePesoProvider.create()
 
 private val philippinePesoPath0 = PathParser().parsePathString("M20 11H4").toNodes()
 private val philippinePesoPath1 = PathParser().parsePathString("M20 7H4").toNodes()

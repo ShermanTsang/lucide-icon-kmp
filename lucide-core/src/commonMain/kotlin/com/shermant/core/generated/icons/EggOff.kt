@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val eggOffProvider = ParameterizedIconProvider { parameters ->
     buildEggOff(parameters)
 }
+
+val EggOff: ImageVector
+    get() = eggOffProvider.create()
 
 private val eggOffPath0 = PathParser().parsePathString("m2 2 20 20").toNodes()
 private val eggOffPath1 = PathParser().parsePathString("M20 14.347V14c0-6-4-12-8-12-1.078 0-2.157.436-3.157 1.19").toNodes()

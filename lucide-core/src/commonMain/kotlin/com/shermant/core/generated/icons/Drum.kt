@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val drumProvider = ParameterizedIconProvider { parameters ->
     buildDrum(parameters)
 }
+
+val Drum: ImageVector
+    get() = drumProvider.create()
 
 private val drumPath0 = PathParser().parsePathString("m2 2 8 8").toNodes()
 private val drumPath1 = PathParser().parsePathString("m22 2-8 8").toNodes()

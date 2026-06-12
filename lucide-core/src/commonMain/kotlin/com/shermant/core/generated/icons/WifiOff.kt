@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wifiOffProvider = ParameterizedIconProvider { parameters ->
     buildWifiOff(parameters)
 }
+
+val WifiOff: ImageVector
+    get() = wifiOffProvider.create()
 
 private val wifiOffPath0 = PathParser().parsePathString("M12 20h.01").toNodes()
 private val wifiOffPath1 = PathParser().parsePathString("M8.5 16.429a5 5 0 0 1 7 0").toNodes()

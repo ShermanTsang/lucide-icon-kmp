@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cuboidProvider = ParameterizedIconProvider { parameters ->
     buildCuboid(parameters)
 }
+
+val Cuboid: ImageVector
+    get() = cuboidProvider.create()
 
 private val cuboidPath0 = PathParser().parsePathString("M10 22v-8").toNodes()
 private val cuboidPath1 = PathParser().parsePathString("M2.336 8.89 10 14l11.715-7.029").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val moveDiagonal2Provider = ParameterizedIconProvider { parameters ->
     buildMoveDiagonal2(parameters)
 }
+
+val MoveDiagonal2: ImageVector
+    get() = moveDiagonal2Provider.create()
 
 private val moveDiagonal2Path0 = PathParser().parsePathString("M19 13v6h-6").toNodes()
 private val moveDiagonal2Path1 = PathParser().parsePathString("M5 11V5h6").toNodes()

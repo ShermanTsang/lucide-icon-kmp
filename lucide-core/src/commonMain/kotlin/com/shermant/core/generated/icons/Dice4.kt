@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val dice4Provider = ParameterizedIconProvider { parameters ->
     buildDice4(parameters)
 }
+
+val Dice4: ImageVector
+    get() = dice4Provider.create()
 
 private val dice4Path0 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 private val dice4Path1 = PathParser().parsePathString("M16 8h.01").toNodes()

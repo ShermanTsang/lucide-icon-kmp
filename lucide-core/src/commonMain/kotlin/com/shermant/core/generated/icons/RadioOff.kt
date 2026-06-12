@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val radioOffProvider = ParameterizedIconProvider { parameters ->
     buildRadioOff(parameters)
 }
+
+val RadioOff: ImageVector
+    get() = radioOffProvider.create()
 
 private val radioOffPath0 = PathParser().parsePathString("M13.414 13.414a2 2 0 1 1-2.828-2.828").toNodes()
 private val radioOffPath1 = PathParser().parsePathString("M16.247 7.761a6 6 0 0 1 1.744 4.572").toNodes()

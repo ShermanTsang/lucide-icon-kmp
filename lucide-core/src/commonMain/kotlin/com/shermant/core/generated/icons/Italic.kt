@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val italicProvider = ParameterizedIconProvider { parameters ->
     buildItalic(parameters)
 }
+
+val Italic: ImageVector
+    get() = italicProvider.create()
 
 private val italicPath0 = PathParser().parsePathString("M 19 4 L 10 4").toNodes()
 private val italicPath1 = PathParser().parsePathString("M 14 20 L 5 20").toNodes()

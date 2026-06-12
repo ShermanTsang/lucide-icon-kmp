@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val timerResetProvider = ParameterizedIconProvider { parameters ->
     buildTimerReset(parameters)
 }
+
+val TimerReset: ImageVector
+    get() = timerResetProvider.create()
 
 private val timerResetPath0 = PathParser().parsePathString("M10 2h4").toNodes()
 private val timerResetPath1 = PathParser().parsePathString("M12 14v-4").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val radiusProvider = ParameterizedIconProvider { parameters ->
     buildRadius(parameters)
 }
+
+val Radius: ImageVector
+    get() = radiusProvider.create()
 
 private val radiusPath0 = PathParser().parsePathString("M20.34 17.52a10 10 0 1 0-2.82 2.82").toNodes()
 private val radiusPath1 = PathParser().parsePathString("M 21 19 A 2 2 0 1 0 17 19 A 2 2 0 1 0 21 19 Z").toNodes()

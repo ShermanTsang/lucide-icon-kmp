@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val backpackProvider = ParameterizedIconProvider { parameters ->
     buildBackpack(parameters)
 }
+
+val Backpack: ImageVector
+    get() = backpackProvider.create()
 
 private val backpackPath0 = PathParser().parsePathString("M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z").toNodes()
 private val backpackPath1 = PathParser().parsePathString("M8 10h8").toNodes()

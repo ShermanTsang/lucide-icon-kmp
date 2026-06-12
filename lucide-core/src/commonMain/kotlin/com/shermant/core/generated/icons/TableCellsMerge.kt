@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val tableCellsMergeProvider = ParameterizedIconProvider { parameters ->
     buildTableCellsMerge(parameters)
 }
+
+val TableCellsMerge: ImageVector
+    get() = tableCellsMergeProvider.create()
 
 private val tableCellsMergePath0 = PathParser().parsePathString("M12 21v-6").toNodes()
 private val tableCellsMergePath1 = PathParser().parsePathString("M12 9V3").toNodes()

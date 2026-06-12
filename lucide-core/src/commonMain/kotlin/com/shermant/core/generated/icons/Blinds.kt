@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val blindsProvider = ParameterizedIconProvider { parameters ->
     buildBlinds(parameters)
 }
+
+val Blinds: ImageVector
+    get() = blindsProvider.create()
 
 private val blindsPath0 = PathParser().parsePathString("M3 3h18").toNodes()
 private val blindsPath1 = PathParser().parsePathString("M20 7H8").toNodes()

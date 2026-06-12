@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val churchProvider = ParameterizedIconProvider { parameters ->
     buildChurch(parameters)
 }
+
+val Church: ImageVector
+    get() = churchProvider.create()
 
 private val churchPath0 = PathParser().parsePathString("M10 9h4").toNodes()
 private val churchPath1 = PathParser().parsePathString("M12 7v5").toNodes()

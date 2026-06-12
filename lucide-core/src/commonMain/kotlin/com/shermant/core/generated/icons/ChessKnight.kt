@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chessKnightProvider = ParameterizedIconProvider { parameters ->
     buildChessKnight(parameters)
 }
+
+val ChessKnight: ImageVector
+    get() = chessKnightProvider.create()
 
 private val chessKnightPath0 = PathParser().parsePathString("M5 20a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z").toNodes()
 private val chessKnightPath1 = PathParser().parsePathString("M16.5 18c1-2 2.5-5 2.5-9a7 7 0 0 0-7-7H6.635a1 1 0 0 0-.768 1.64L7 5l-2.32 5.802a2 2 0 0 0 .95 2.526l2.87 1.456").toNodes()

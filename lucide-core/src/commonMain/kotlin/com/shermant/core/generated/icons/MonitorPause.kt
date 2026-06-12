@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val monitorPauseProvider = ParameterizedIconProvider { parameters ->
     buildMonitorPause(parameters)
 }
+
+val MonitorPause: ImageVector
+    get() = monitorPauseProvider.create()
 
 private val monitorPausePath0 = PathParser().parsePathString("M10 13V7").toNodes()
 private val monitorPausePath1 = PathParser().parsePathString("M14 13V7").toNodes()

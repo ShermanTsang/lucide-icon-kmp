@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lineStyleProvider = ParameterizedIconProvider { parameters ->
     buildLineStyle(parameters)
 }
+
+val LineStyle: ImageVector
+    get() = lineStyleProvider.create()
 
 private val lineStylePath0 = PathParser().parsePathString("M11 5h2").toNodes()
 private val lineStylePath1 = PathParser().parsePathString("M15 12h6").toNodes()

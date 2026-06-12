@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cloudBackupProvider = ParameterizedIconProvider { parameters ->
     buildCloudBackup(parameters)
 }
+
+val CloudBackup: ImageVector
+    get() = cloudBackupProvider.create()
 
 private val cloudBackupPath0 = PathParser().parsePathString("M21 15.251A4.5 4.5 0 0 0 17.5 8h-1.79A7 7 0 1 0 3 13.607").toNodes()
 private val cloudBackupPath1 = PathParser().parsePathString("M7 11v4h4").toNodes()

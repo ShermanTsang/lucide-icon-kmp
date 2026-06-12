@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val plugZapProvider = ParameterizedIconProvider { parameters ->
     buildPlugZap(parameters)
 }
+
+val PlugZap: ImageVector
+    get() = plugZapProvider.create()
 
 private val plugZapPath0 = PathParser().parsePathString("M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z").toNodes()
 private val plugZapPath1 = PathParser().parsePathString("m2 22 3-3").toNodes()

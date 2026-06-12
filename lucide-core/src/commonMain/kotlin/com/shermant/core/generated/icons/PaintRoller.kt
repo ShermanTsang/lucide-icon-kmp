@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val paintRollerProvider = ParameterizedIconProvider { parameters ->
     buildPaintRoller(parameters)
 }
+
+val PaintRoller: ImageVector
+    get() = paintRollerProvider.create()
 
 private val paintRollerPath0 = PathParser().parsePathString("M 4 2 H 16 A 2 2 0 0 1 18 4 V 6 A 2 2 0 0 1 16 8 H 4 A 2 2 0 0 1 2 6 V 4 A 2 2 0 0 1 4 2 Z").toNodes()
 private val paintRollerPath1 = PathParser().parsePathString("M10 16v-2a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2").toNodes()

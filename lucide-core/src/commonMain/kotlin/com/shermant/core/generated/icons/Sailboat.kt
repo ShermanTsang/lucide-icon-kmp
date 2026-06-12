@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sailboatProvider = ParameterizedIconProvider { parameters ->
     buildSailboat(parameters)
 }
+
+val Sailboat: ImageVector
+    get() = sailboatProvider.create()
 
 private val sailboatPath0 = PathParser().parsePathString("M10 2v15").toNodes()
 private val sailboatPath1 = PathParser().parsePathString("M7 22a4 4 0 0 1-4-4 1 1 0 0 1 1-1h16a1 1 0 0 1 1 1 4 4 0 0 1-4 4z").toNodes()

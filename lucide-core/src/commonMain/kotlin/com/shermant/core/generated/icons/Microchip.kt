@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val microchipProvider = ParameterizedIconProvider { parameters ->
     buildMicrochip(parameters)
 }
+
+val Microchip: ImageVector
+    get() = microchipProvider.create()
 
 private val microchipPath0 = PathParser().parsePathString("M10 12h4").toNodes()
 private val microchipPath1 = PathParser().parsePathString("M10 17h4").toNodes()

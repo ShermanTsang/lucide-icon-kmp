@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val projectorProvider = ParameterizedIconProvider { parameters ->
     buildProjector(parameters)
 }
+
+val Projector: ImageVector
+    get() = projectorProvider.create()
 
 private val projectorPath0 = PathParser().parsePathString("M5 7 3 5").toNodes()
 private val projectorPath1 = PathParser().parsePathString("M9 6V3").toNodes()

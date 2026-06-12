@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val donutProvider = ParameterizedIconProvider { parameters ->
     buildDonut(parameters)
 }
+
+val Donut: ImageVector
+    get() = donutProvider.create()
 
 private val donutPath0 = PathParser().parsePathString("M20.5 10a2.5 2.5 0 0 1-2.4-3H18a2.95 2.95 0 0 1-2.6-4.4 10 10 0 1 0 6.3 7.1c-.3.2-.8.3-1.2.3").toNodes()
 private val donutPath1 = PathParser().parsePathString("M 15 12 A 3 3 0 1 0 9 12 A 3 3 0 1 0 15 12 Z").toNodes()

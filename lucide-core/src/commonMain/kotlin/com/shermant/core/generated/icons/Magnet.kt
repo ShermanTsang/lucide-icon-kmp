@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val magnetProvider = ParameterizedIconProvider { parameters ->
     buildMagnet(parameters)
 }
+
+val Magnet: ImageVector
+    get() = magnetProvider.create()
 
 private val magnetPath0 = PathParser().parsePathString("m12 15 4 4").toNodes()
 private val magnetPath1 = PathParser().parsePathString("M2.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l6.029-6.029a1 1 0 1 1 3 3l-6.029 6.029a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l6.365-6.367A1 1 0 0 0 8.716 4.282z").toNodes()

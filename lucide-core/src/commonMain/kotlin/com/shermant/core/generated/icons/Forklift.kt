@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val forkliftProvider = ParameterizedIconProvider { parameters ->
     buildForklift(parameters)
 }
+
+val Forklift: ImageVector
+    get() = forkliftProvider.create()
 
 private val forkliftPath0 = PathParser().parsePathString("M12 12H5a2 2 0 0 0-2 2v5").toNodes()
 private val forkliftPath1 = PathParser().parsePathString("M15 19h7").toNodes()

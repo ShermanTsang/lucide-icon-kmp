@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareRadicalProvider = ParameterizedIconProvider { parameters ->
     buildSquareRadical(parameters)
 }
+
+val SquareRadical: ImageVector
+    get() = squareRadicalProvider.create()
 
 private val squareRadicalPath0 = PathParser().parsePathString("M7 12h2l2 5 2-10h4").toNodes()
 private val squareRadicalPath1 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()

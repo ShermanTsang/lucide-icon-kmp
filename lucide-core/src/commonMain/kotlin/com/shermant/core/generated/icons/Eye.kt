@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val eyeProvider = ParameterizedIconProvider { parameters ->
     buildEye(parameters)
 }
+
+val Eye: ImageVector
+    get() = eyeProvider.create()
 
 private val eyePath0 = PathParser().parsePathString("M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0").toNodes()
 private val eyePath1 = PathParser().parsePathString("M 15 12 A 3 3 0 1 0 9 12 A 3 3 0 1 0 15 12 Z").toNodes()

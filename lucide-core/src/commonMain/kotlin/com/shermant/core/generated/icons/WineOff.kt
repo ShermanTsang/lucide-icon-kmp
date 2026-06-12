@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wineOffProvider = ParameterizedIconProvider { parameters ->
     buildWineOff(parameters)
 }
+
+val WineOff: ImageVector
+    get() = wineOffProvider.create()
 
 private val wineOffPath0 = PathParser().parsePathString("M8 22h8").toNodes()
 private val wineOffPath1 = PathParser().parsePathString("M7 10h3m7 0h-1.343").toNodes()

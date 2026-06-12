@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val octagonAlertProvider = ParameterizedIconProvider { parameters ->
     buildOctagonAlert(parameters)
 }
+
+val OctagonAlert: ImageVector
+    get() = octagonAlertProvider.create()
 
 private val octagonAlertPath0 = PathParser().parsePathString("M12 16h.01").toNodes()
 private val octagonAlertPath1 = PathParser().parsePathString("M12 8v4").toNodes()

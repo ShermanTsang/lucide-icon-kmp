@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mapPinHouseProvider = ParameterizedIconProvider { parameters ->
     buildMapPinHouse(parameters)
 }
+
+val MapPinHouse: ImageVector
+    get() = mapPinHouseProvider.create()
 
 private val mapPinHousePath0 = PathParser().parsePathString("M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z").toNodes()
 private val mapPinHousePath1 = PathParser().parsePathString("M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2").toNodes()

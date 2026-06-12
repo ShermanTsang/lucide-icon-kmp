@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val anvilProvider = ParameterizedIconProvider { parameters ->
     buildAnvil(parameters)
 }
+
+val Anvil: ImageVector
+    get() = anvilProvider.create()
 
 private val anvilPath0 = PathParser().parsePathString("M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4").toNodes()
 private val anvilPath1 = PathParser().parsePathString("M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z").toNodes()

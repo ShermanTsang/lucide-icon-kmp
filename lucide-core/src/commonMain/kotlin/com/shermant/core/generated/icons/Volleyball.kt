@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val volleyballProvider = ParameterizedIconProvider { parameters ->
     buildVolleyball(parameters)
 }
+
+val Volleyball: ImageVector
+    get() = volleyballProvider.create()
 
 private val volleyballPath0 = PathParser().parsePathString("M11 7a16 16 20 0 1 10.98 4.362").toNodes()
 private val volleyballPath1 = PathParser().parsePathString("M12 12a13 13 0 0 1-8.66 5").toNodes()

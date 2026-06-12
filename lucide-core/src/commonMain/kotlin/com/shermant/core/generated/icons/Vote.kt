@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val voteProvider = ParameterizedIconProvider { parameters ->
     buildVote(parameters)
 }
+
+val Vote: ImageVector
+    get() = voteProvider.create()
 
 private val votePath0 = PathParser().parsePathString("m9 12 2 2 4-4").toNodes()
 private val votePath1 = PathParser().parsePathString("M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z").toNodes()

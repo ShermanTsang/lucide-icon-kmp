@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val earOffProvider = ParameterizedIconProvider { parameters ->
     buildEarOff(parameters)
 }
+
+val EarOff: ImageVector
+    get() = earOffProvider.create()
 
 private val earOffPath0 = PathParser().parsePathString("M6 18.5a3.5 3.5 0 1 0 7 0c0-1.57.92-2.52 2.04-3.46").toNodes()
 private val earOffPath1 = PathParser().parsePathString("M6 8.5c0-.75.13-1.47.36-2.14").toNodes()

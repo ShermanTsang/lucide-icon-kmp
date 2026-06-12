@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val trafficConeProvider = ParameterizedIconProvider { parameters ->
     buildTrafficCone(parameters)
 }
+
+val TrafficCone: ImageVector
+    get() = trafficConeProvider.create()
 
 private val trafficConePath0 = PathParser().parsePathString("M16.05 10.966a5 2.5 0 0 1-8.1 0").toNodes()
 private val trafficConePath1 = PathParser().parsePathString("m16.923 14.049 4.48 2.04a1 1 0 0 1 .001 1.831l-8.574 3.9a2 2 0 0 1-1.66 0l-8.574-3.91a1 1 0 0 1 0-1.83l4.484-2.04").toNodes()

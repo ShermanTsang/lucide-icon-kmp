@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val earthLockProvider = ParameterizedIconProvider { parameters ->
     buildEarthLock(parameters)
 }
+
+val EarthLock: ImageVector
+    get() = earthLockProvider.create()
 
 private val earthLockPath0 = PathParser().parsePathString("M7 3.34V5a3 3 0 0 0 3 3").toNodes()
 private val earthLockPath1 = PathParser().parsePathString("M11 21.95V18a2 2 0 0 0-2-2 2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05").toNodes()

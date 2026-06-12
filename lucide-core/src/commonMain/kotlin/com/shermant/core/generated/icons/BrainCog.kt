@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val brainCogProvider = ParameterizedIconProvider { parameters ->
     buildBrainCog(parameters)
 }
+
+val BrainCog: ImageVector
+    get() = brainCogProvider.create()
 
 private val brainCogPath0 = PathParser().parsePathString("m10.852 14.772-.383.923").toNodes()
 private val brainCogPath1 = PathParser().parsePathString("m10.852 9.228-.383-.923").toNodes()

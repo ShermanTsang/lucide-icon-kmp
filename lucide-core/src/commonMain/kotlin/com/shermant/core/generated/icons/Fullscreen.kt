@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val fullscreenProvider = ParameterizedIconProvider { parameters ->
     buildFullscreen(parameters)
 }
+
+val Fullscreen: ImageVector
+    get() = fullscreenProvider.create()
 
 private val fullscreenPath0 = PathParser().parsePathString("M3 7V5a2 2 0 0 1 2-2h2").toNodes()
 private val fullscreenPath1 = PathParser().parsePathString("M17 3h2a2 2 0 0 1 2 2v2").toNodes()

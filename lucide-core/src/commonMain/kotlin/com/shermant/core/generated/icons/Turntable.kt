@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val turntableProvider = ParameterizedIconProvider { parameters ->
     buildTurntable(parameters)
 }
+
+val Turntable: ImageVector
+    get() = turntableProvider.create()
 
 private val turntablePath0 = PathParser().parsePathString("M10 12.01h.01").toNodes()
 private val turntablePath1 = PathParser().parsePathString("M18 8v4a8 8 0 0 1-1.07 4").toNodes()

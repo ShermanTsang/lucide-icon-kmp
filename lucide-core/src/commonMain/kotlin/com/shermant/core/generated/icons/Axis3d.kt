@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val axis3dProvider = ParameterizedIconProvider { parameters ->
     buildAxis3d(parameters)
 }
+
+val Axis3d: ImageVector
+    get() = axis3dProvider.create()
 
 private val axis3dPath0 = PathParser().parsePathString("M13.5 10.5 15 9").toNodes()
 private val axis3dPath1 = PathParser().parsePathString("M4 4v15a1 1 0 0 0 1 1h15").toNodes()

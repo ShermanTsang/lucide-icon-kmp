@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val scale3dProvider = ParameterizedIconProvider { parameters ->
     buildScale3d(parameters)
 }
+
+val Scale3d: ImageVector
+    get() = scale3dProvider.create()
 
 private val scale3dPath0 = PathParser().parsePathString("M5 7v11a1 1 0 0 0 1 1h11").toNodes()
 private val scale3dPath1 = PathParser().parsePathString("M5.293 18.707 11 13").toNodes()

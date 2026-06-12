@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val zoomOutProvider = ParameterizedIconProvider { parameters ->
     buildZoomOut(parameters)
 }
+
+val ZoomOut: ImageVector
+    get() = zoomOutProvider.create()
 
 private val zoomOutPath0 = PathParser().parsePathString("M 19 11 A 8 8 0 1 0 3 11 A 8 8 0 1 0 19 11 Z").toNodes()
 private val zoomOutPath1 = PathParser().parsePathString("M 21 21 L 16.65 16.65").toNodes()

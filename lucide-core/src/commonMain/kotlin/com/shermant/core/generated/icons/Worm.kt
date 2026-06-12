@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wormProvider = ParameterizedIconProvider { parameters ->
     buildWorm(parameters)
 }
+
+val Worm: ImageVector
+    get() = wormProvider.create()
 
 private val wormPath0 = PathParser().parsePathString("m19 12-1.5 3").toNodes()
 private val wormPath1 = PathParser().parsePathString("M19.63 18.81 22 20").toNodes()

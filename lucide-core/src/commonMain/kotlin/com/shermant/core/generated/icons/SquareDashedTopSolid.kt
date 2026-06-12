@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareDashedTopSolidProvider = ParameterizedIconProvider { parameters ->
     buildSquareDashedTopSolid(parameters)
 }
+
+val SquareDashedTopSolid: ImageVector
+    get() = squareDashedTopSolidProvider.create()
 
 private val squareDashedTopSolidPath0 = PathParser().parsePathString("M14 21h1").toNodes()
 private val squareDashedTopSolidPath1 = PathParser().parsePathString("M21 14v1").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val downloadProvider = ParameterizedIconProvider { parameters ->
     buildDownload(parameters)
 }
+
+val Download: ImageVector
+    get() = downloadProvider.create()
 
 private val downloadPath0 = PathParser().parsePathString("M12 15V3").toNodes()
 private val downloadPath1 = PathParser().parsePathString("M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4").toNodes()

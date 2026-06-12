@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val userRoundKeyProvider = ParameterizedIconProvider { parameters ->
     buildUserRoundKey(parameters)
 }
+
+val UserRoundKey: ImageVector
+    get() = userRoundKeyProvider.create()
 
 private val userRoundKeyPath0 = PathParser().parsePathString("M19 11v6").toNodes()
 private val userRoundKeyPath1 = PathParser().parsePathString("M19 13h2").toNodes()

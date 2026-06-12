@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareSplitHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildSquareSplitHorizontal(parameters)
 }
+
+val SquareSplitHorizontal: ImageVector
+    get() = squareSplitHorizontalProvider.create()
 
 private val squareSplitHorizontalPath0 = PathParser().parsePathString("M8 19H5c-1 0-2-1-2-2V7c0-1 1-2 2-2h3").toNodes()
 private val squareSplitHorizontalPath1 = PathParser().parsePathString("M16 5h3c1 0 2 1 2 2v10c0 1-1 2-2 2h-3").toNodes()

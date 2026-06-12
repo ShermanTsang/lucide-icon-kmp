@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val milestoneProvider = ParameterizedIconProvider { parameters ->
     buildMilestone(parameters)
 }
+
+val Milestone: ImageVector
+    get() = milestoneProvider.create()
 
 private val milestonePath0 = PathParser().parsePathString("M12 13v8").toNodes()
 private val milestonePath1 = PathParser().parsePathString("M12 3v3").toNodes()

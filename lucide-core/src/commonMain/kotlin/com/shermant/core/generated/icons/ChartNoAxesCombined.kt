@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chartNoAxesCombinedProvider = ParameterizedIconProvider { parameters ->
     buildChartNoAxesCombined(parameters)
 }
+
+val ChartNoAxesCombined: ImageVector
+    get() = chartNoAxesCombinedProvider.create()
 
 private val chartNoAxesCombinedPath0 = PathParser().parsePathString("M12 16v5").toNodes()
 private val chartNoAxesCombinedPath1 = PathParser().parsePathString("M16 14.639V21").toNodes()

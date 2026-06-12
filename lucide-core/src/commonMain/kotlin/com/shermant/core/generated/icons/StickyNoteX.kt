@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val stickyNoteXProvider = ParameterizedIconProvider { parameters ->
     buildStickyNoteX(parameters)
 }
+
+val StickyNoteX: ImageVector
+    get() = stickyNoteXProvider.create()
 
 private val stickyNoteXPath0 = PathParser().parsePathString("M15 3v5a1 1 0 0 0 1 1h5").toNodes()
 private val stickyNoteXPath1 = PathParser().parsePathString("m16 16 5 5").toNodes()

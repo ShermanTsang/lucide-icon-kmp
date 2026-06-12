@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val foldVerticalProvider = ParameterizedIconProvider { parameters ->
     buildFoldVertical(parameters)
 }
+
+val FoldVertical: ImageVector
+    get() = foldVerticalProvider.create()
 
 private val foldVerticalPath0 = PathParser().parsePathString("M12 22v-6").toNodes()
 private val foldVerticalPath1 = PathParser().parsePathString("M12 8V2").toNodes()

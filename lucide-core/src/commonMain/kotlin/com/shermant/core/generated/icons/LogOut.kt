@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val logOutProvider = ParameterizedIconProvider { parameters ->
     buildLogOut(parameters)
 }
+
+val LogOut: ImageVector
+    get() = logOutProvider.create()
 
 private val logOutPath0 = PathParser().parsePathString("m16 17 5-5-5-5").toNodes()
 private val logOutPath1 = PathParser().parsePathString("M21 12H9").toNodes()

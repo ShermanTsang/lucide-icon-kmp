@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val fishingRodProvider = ParameterizedIconProvider { parameters ->
     buildFishingRod(parameters)
 }
+
+val FishingRod: ImageVector
+    get() = fishingRodProvider.create()
 
 private val fishingRodPath0 = PathParser().parsePathString("M4 11h1").toNodes()
 private val fishingRodPath1 = PathParser().parsePathString("M8 15a2 2 0 0 1-4 0V3a1 1 0 0 1 1-1h.5C14 2 20 9 20 18v4").toNodes()

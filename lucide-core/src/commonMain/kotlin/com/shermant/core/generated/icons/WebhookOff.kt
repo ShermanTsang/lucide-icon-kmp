@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val webhookOffProvider = ParameterizedIconProvider { parameters ->
     buildWebhookOff(parameters)
 }
+
+val WebhookOff: ImageVector
+    get() = webhookOffProvider.create()
 
 private val webhookOffPath0 = PathParser().parsePathString("M17 17h-5c-1.09-.02-1.94.92-2.5 1.9A3 3 0 1 1 2.57 15").toNodes()
 private val webhookOffPath1 = PathParser().parsePathString("M9 3.4a4 4 0 0 1 6.52.66").toNodes()

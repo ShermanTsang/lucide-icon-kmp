@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cctvOffProvider = ParameterizedIconProvider { parameters ->
     buildCctvOff(parameters)
 }
+
+val CctvOff: ImageVector
+    get() = cctvOffProvider.create()
 
 private val cctvOffPath0 = PathParser().parsePathString("m12.309 6.652 4.797 2.401a1 1 0 0 1 .447 1.341l-.501 1.001.605.605h2.725a1 1 0 0 1 .894 1.447l-.724 1.448").toNodes()
 private val cctvOffPath1 = PathParser().parsePathString("m15.166 15.166-.719 1.439a1 1 0 0 1-1.342.447L3.61 12.3a2.92 2.92 0 0 1-1.3-3.91L3.69 5.6a2.9 2.9 0 0 1 .873-1.037").toNodes()

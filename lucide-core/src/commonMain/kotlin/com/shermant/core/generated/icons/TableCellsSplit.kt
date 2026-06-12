@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val tableCellsSplitProvider = ParameterizedIconProvider { parameters ->
     buildTableCellsSplit(parameters)
 }
+
+val TableCellsSplit: ImageVector
+    get() = tableCellsSplitProvider.create()
 
 private val tableCellsSplitPath0 = PathParser().parsePathString("M12 15V9").toNodes()
 private val tableCellsSplitPath1 = PathParser().parsePathString("M3 15h18").toNodes()

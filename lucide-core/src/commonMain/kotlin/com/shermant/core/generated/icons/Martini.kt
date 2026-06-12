@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val martiniProvider = ParameterizedIconProvider { parameters ->
     buildMartini(parameters)
 }
+
+val Martini: ImageVector
+    get() = martiniProvider.create()
 
 private val martiniPath0 = PathParser().parsePathString("M8 22h8").toNodes()
 private val martiniPath1 = PathParser().parsePathString("M12 11v11").toNodes()

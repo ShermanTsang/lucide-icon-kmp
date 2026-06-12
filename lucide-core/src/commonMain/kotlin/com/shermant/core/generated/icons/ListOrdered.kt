@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val listOrderedProvider = ParameterizedIconProvider { parameters ->
     buildListOrdered(parameters)
 }
+
+val ListOrdered: ImageVector
+    get() = listOrderedProvider.create()
 
 private val listOrderedPath0 = PathParser().parsePathString("M11 5h10").toNodes()
 private val listOrderedPath1 = PathParser().parsePathString("M11 12h10").toNodes()

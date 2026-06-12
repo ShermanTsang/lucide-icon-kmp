@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mousePointerClickProvider = ParameterizedIconProvider { parameters ->
     buildMousePointerClick(parameters)
 }
+
+val MousePointerClick: ImageVector
+    get() = mousePointerClickProvider.create()
 
 private val mousePointerClickPath0 = PathParser().parsePathString("M14 4.1 12 6").toNodes()
 private val mousePointerClickPath1 = PathParser().parsePathString("m5.1 8-2.9-.8").toNodes()

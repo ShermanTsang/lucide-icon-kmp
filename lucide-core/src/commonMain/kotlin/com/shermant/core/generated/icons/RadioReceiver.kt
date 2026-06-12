@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val radioReceiverProvider = ParameterizedIconProvider { parameters ->
     buildRadioReceiver(parameters)
 }
+
+val RadioReceiver: ImageVector
+    get() = radioReceiverProvider.create()
 
 private val radioReceiverPath0 = PathParser().parsePathString("M5 16v2").toNodes()
 private val radioReceiverPath1 = PathParser().parsePathString("M19 16v2").toNodes()

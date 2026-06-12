@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val filePenLineProvider = ParameterizedIconProvider { parameters ->
     buildFilePenLine(parameters)
 }
+
+val FilePenLine: ImageVector
+    get() = filePenLineProvider.create()
 
 private val filePenLinePath0 = PathParser().parsePathString("M14.364 13.634a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506l4.013-4.009a1 1 0 0 0-3.004-3.004z").toNodes()
 private val filePenLinePath1 = PathParser().parsePathString("M14.487 7.858A1 1 0 0 1 14 7V2").toNodes()

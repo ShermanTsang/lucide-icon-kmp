@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sportShoeProvider = ParameterizedIconProvider { parameters ->
     buildSportShoe(parameters)
 }
+
+val SportShoe: ImageVector
+    get() = sportShoeProvider.create()
 
 private val sportShoePath0 = PathParser().parsePathString("m15 10.42 4.8-5.07").toNodes()
 private val sportShoePath1 = PathParser().parsePathString("M19 18h3").toNodes()

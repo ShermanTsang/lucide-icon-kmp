@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ellipsisProvider = ParameterizedIconProvider { parameters ->
     buildEllipsis(parameters)
 }
+
+val Ellipsis: ImageVector
+    get() = ellipsisProvider.create()
 
 private val ellipsisPath0 = PathParser().parsePathString("M 13 12 A 1 1 0 1 0 11 12 A 1 1 0 1 0 13 12 Z").toNodes()
 private val ellipsisPath1 = PathParser().parsePathString("M 20 12 A 1 1 0 1 0 18 12 A 1 1 0 1 0 20 12 Z").toNodes()

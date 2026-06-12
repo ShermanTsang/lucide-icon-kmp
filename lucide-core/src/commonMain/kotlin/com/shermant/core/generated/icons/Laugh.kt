@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val laughProvider = ParameterizedIconProvider { parameters ->
     buildLaugh(parameters)
 }
+
+val Laugh: ImageVector
+    get() = laughProvider.create()
 
 private val laughPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val laughPath1 = PathParser().parsePathString("M18 13a6 6 0 0 1-6 5 6 6 0 0 1-6-5h12Z").toNodes()

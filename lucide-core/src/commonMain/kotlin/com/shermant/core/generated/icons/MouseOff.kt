@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mouseOffProvider = ParameterizedIconProvider { parameters ->
     buildMouseOff(parameters)
 }
+
+val MouseOff: ImageVector
+    get() = mouseOffProvider.create()
 
 private val mouseOffPath0 = PathParser().parsePathString("M12 6v.343").toNodes()
 private val mouseOffPath1 = PathParser().parsePathString("M18.218 18.218A7 7 0 0 1 5 15V9a7 7 0 0 1 .782-3.218").toNodes()

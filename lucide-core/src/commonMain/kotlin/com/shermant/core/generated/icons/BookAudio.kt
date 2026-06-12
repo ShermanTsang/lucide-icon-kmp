@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bookAudioProvider = ParameterizedIconProvider { parameters ->
     buildBookAudio(parameters)
 }
+
+val BookAudio: ImageVector
+    get() = bookAudioProvider.create()
 
 private val bookAudioPath0 = PathParser().parsePathString("M12 6v7").toNodes()
 private val bookAudioPath1 = PathParser().parsePathString("M16 8v3").toNodes()

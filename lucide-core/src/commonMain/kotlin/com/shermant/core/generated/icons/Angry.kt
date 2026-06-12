@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val angryProvider = ParameterizedIconProvider { parameters ->
     buildAngry(parameters)
 }
+
+val Angry: ImageVector
+    get() = angryProvider.create()
 
 private val angryPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val angryPath1 = PathParser().parsePathString("M16 16s-1.5-2-4-2-4 2-4 2").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val venetianMaskProvider = ParameterizedIconProvider { parameters ->
     buildVenetianMask(parameters)
 }
+
+val VenetianMask: ImageVector
+    get() = venetianMaskProvider.create()
 
 private val venetianMaskPath0 = PathParser().parsePathString("M18 11c-1.5 0-2.5.5-3 2").toNodes()
 private val venetianMaskPath1 = PathParser().parsePathString("M4 6a2 2 0 0 0-2 2v4a5 5 0 0 0 5 5 8 8 0 0 1 5 2 8 8 0 0 1 5-2 5 5 0 0 0 5-5V8a2 2 0 0 0-2-2h-3a8 8 0 0 0-5 2 8 8 0 0 0-5-2z").toNodes()

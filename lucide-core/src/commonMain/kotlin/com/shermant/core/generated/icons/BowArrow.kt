@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bowArrowProvider = ParameterizedIconProvider { parameters ->
     buildBowArrow(parameters)
 }
+
+val BowArrow: ImageVector
+    get() = bowArrowProvider.create()
 
 private val bowArrowPath0 = PathParser().parsePathString("M17 3h4v4").toNodes()
 private val bowArrowPath1 = PathParser().parsePathString("M18.575 11.082a13 13 0 0 1 1.048 9.027 1.17 1.17 0 0 1-1.914.597L14 17").toNodes()

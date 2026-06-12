@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cigaretteProvider = ParameterizedIconProvider { parameters ->
     buildCigarette(parameters)
 }
+
+val Cigarette: ImageVector
+    get() = cigaretteProvider.create()
 
 private val cigarettePath0 = PathParser().parsePathString("M17 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14").toNodes()
 private val cigarettePath1 = PathParser().parsePathString("M18 8c0-2.5-2-2.5-2-5").toNodes()

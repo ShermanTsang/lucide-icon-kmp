@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ferrisWheelProvider = ParameterizedIconProvider { parameters ->
     buildFerrisWheel(parameters)
 }
+
+val FerrisWheel: ImageVector
+    get() = ferrisWheelProvider.create()
 
 private val ferrisWheelPath0 = PathParser().parsePathString("M 14 12 A 2 2 0 1 0 10 12 A 2 2 0 1 0 14 12 Z").toNodes()
 private val ferrisWheelPath1 = PathParser().parsePathString("M12 2v4").toNodes()

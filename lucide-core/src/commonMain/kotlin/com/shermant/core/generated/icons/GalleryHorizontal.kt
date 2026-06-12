@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val galleryHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildGalleryHorizontal(parameters)
 }
+
+val GalleryHorizontal: ImageVector
+    get() = galleryHorizontalProvider.create()
 
 private val galleryHorizontalPath0 = PathParser().parsePathString("M2 3v18").toNodes()
 private val galleryHorizontalPath1 = PathParser().parsePathString("M 8 3 H 16 A 2 2 0 0 1 18 5 V 19 A 2 2 0 0 1 16 21 H 8 A 2 2 0 0 1 6 19 V 5 A 2 2 0 0 1 8 3 Z").toNodes()

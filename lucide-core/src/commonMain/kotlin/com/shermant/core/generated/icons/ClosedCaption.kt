@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val closedCaptionProvider = ParameterizedIconProvider { parameters ->
     buildClosedCaption(parameters)
 }
+
+val ClosedCaption: ImageVector
+    get() = closedCaptionProvider.create()
 
 private val closedCaptionPath0 = PathParser().parsePathString("M10 9.17a3 3 0 1 0 0 5.66").toNodes()
 private val closedCaptionPath1 = PathParser().parsePathString("M17 9.17a3 3 0 1 0 0 5.66").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mailsProvider = ParameterizedIconProvider { parameters ->
     buildMails(parameters)
 }
+
+val Mails: ImageVector
+    get() = mailsProvider.create()
 
 private val mailsPath0 = PathParser().parsePathString("M17 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 1-1.732").toNodes()
 private val mailsPath1 = PathParser().parsePathString("m22 5.5-6.419 4.179a2 2 0 0 1-2.162 0L7 5.5").toNodes()

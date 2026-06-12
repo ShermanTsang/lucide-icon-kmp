@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleGaugeProvider = ParameterizedIconProvider { parameters ->
     buildCircleGauge(parameters)
 }
+
+val CircleGauge: ImageVector
+    get() = circleGaugeProvider.create()
 
 private val circleGaugePath0 = PathParser().parsePathString("M15.6 2.7a10 10 0 1 0 5.7 5.7").toNodes()
 private val circleGaugePath1 = PathParser().parsePathString("M 14 12 A 2 2 0 1 0 10 12 A 2 2 0 1 0 14 12 Z").toNodes()

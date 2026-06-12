@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val betweenHorizontalStartProvider = ParameterizedIconProvider { parameters ->
     buildBetweenHorizontalStart(parameters)
 }
+
+val BetweenHorizontalStart: ImageVector
+    get() = betweenHorizontalStartProvider.create()
 
 private val betweenHorizontalStartPath0 = PathParser().parsePathString("M 9 3 H 20 A 1 1 0 0 1 21 4 V 9 A 1 1 0 0 1 20 10 H 9 A 1 1 0 0 1 8 9 V 4 A 1 1 0 0 1 9 3 Z").toNodes()
 private val betweenHorizontalStartPath1 = PathParser().parsePathString("m2 9 3 3-3 3").toNodes()

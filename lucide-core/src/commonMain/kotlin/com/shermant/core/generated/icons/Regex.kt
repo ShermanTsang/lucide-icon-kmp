@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val regexProvider = ParameterizedIconProvider { parameters ->
     buildRegex(parameters)
 }
+
+val Regex: ImageVector
+    get() = regexProvider.create()
 
 private val regexPath0 = PathParser().parsePathString("M17 3v10").toNodes()
 private val regexPath1 = PathParser().parsePathString("m12.67 5.5 8.66 5").toNodes()

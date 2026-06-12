@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val saudiRiyalProvider = ParameterizedIconProvider { parameters ->
     buildSaudiRiyal(parameters)
 }
+
+val SaudiRiyal: ImageVector
+    get() = saudiRiyalProvider.create()
 
 private val saudiRiyalPath0 = PathParser().parsePathString("m20 19.5-5.5 1.2").toNodes()
 private val saudiRiyalPath1 = PathParser().parsePathString("M14.5 4v11.22a1 1 0 0 0 1.242.97L20 15.2").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val alignHorizontalSpaceBetweenProvider = ParameterizedIconProvider { parameters ->
     buildAlignHorizontalSpaceBetween(parameters)
 }
+
+val AlignHorizontalSpaceBetween: ImageVector
+    get() = alignHorizontalSpaceBetweenProvider.create()
 
 private val alignHorizontalSpaceBetweenPath0 = PathParser().parsePathString("M 5 5 H 7 A 2 2 0 0 1 9 7 V 17 A 2 2 0 0 1 7 19 H 5 A 2 2 0 0 1 3 17 V 7 A 2 2 0 0 1 5 5 Z").toNodes()
 private val alignHorizontalSpaceBetweenPath1 = PathParser().parsePathString("M 17 7 H 19 A 2 2 0 0 1 21 9 V 15 A 2 2 0 0 1 19 17 H 17 A 2 2 0 0 1 15 15 V 9 A 2 2 0 0 1 17 7 Z").toNodes()

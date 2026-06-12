@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val iceCreamConeProvider = ParameterizedIconProvider { parameters ->
     buildIceCreamCone(parameters)
 }
+
+val IceCreamCone: ImageVector
+    get() = iceCreamConeProvider.create()
 
 private val iceCreamConePath0 = PathParser().parsePathString("m7 11 4.08 10.35a1 1 0 0 0 1.84 0L17 11").toNodes()
 private val iceCreamConePath1 = PathParser().parsePathString("M17 7A5 5 0 0 0 7 7").toNodes()

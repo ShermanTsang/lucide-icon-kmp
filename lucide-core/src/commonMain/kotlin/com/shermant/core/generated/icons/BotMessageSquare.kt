@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val botMessageSquareProvider = ParameterizedIconProvider { parameters ->
     buildBotMessageSquare(parameters)
 }
+
+val BotMessageSquare: ImageVector
+    get() = botMessageSquareProvider.create()
 
 private val botMessageSquarePath0 = PathParser().parsePathString("M12 6V2H8").toNodes()
 private val botMessageSquarePath1 = PathParser().parsePathString("M15 11v2").toNodes()

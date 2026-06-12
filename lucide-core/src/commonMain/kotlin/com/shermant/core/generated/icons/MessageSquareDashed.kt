@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val messageSquareDashedProvider = ParameterizedIconProvider { parameters ->
     buildMessageSquareDashed(parameters)
 }
+
+val MessageSquareDashed: ImageVector
+    get() = messageSquareDashedProvider.create()
 
 private val messageSquareDashedPath0 = PathParser().parsePathString("M14 3h2").toNodes()
 private val messageSquareDashedPath1 = PathParser().parsePathString("M16 19h-2").toNodes()

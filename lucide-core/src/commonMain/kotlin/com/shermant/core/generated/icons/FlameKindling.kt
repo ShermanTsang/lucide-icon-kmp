@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val flameKindlingProvider = ParameterizedIconProvider { parameters ->
     buildFlameKindling(parameters)
 }
+
+val FlameKindling: ImageVector
+    get() = flameKindlingProvider.create()
 
 private val flameKindlingPath0 = PathParser().parsePathString("M12 2c1 3 2.5 3.5 3.5 4.5A5 5 0 0 1 17 10a5 5 0 1 1-10 0c0-.3 0-.6.1-.9a2 2 0 1 0 3.3-2C8 4.5 11 2 12 2Z").toNodes()
 private val flameKindlingPath1 = PathParser().parsePathString("m5 22 14-4").toNodes()

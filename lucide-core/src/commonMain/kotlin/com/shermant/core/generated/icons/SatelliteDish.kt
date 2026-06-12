@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val satelliteDishProvider = ParameterizedIconProvider { parameters ->
     buildSatelliteDish(parameters)
 }
+
+val SatelliteDish: ImageVector
+    get() = satelliteDishProvider.create()
 
 private val satelliteDishPath0 = PathParser().parsePathString("M4 10a7.31 7.31 0 0 0 10 10Z").toNodes()
 private val satelliteDishPath1 = PathParser().parsePathString("m9 15 3-3").toNodes()

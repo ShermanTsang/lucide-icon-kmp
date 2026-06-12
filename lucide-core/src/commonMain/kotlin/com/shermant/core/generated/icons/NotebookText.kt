@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val notebookTextProvider = ParameterizedIconProvider { parameters ->
     buildNotebookText(parameters)
 }
+
+val NotebookText: ImageVector
+    get() = notebookTextProvider.create()
 
 private val notebookTextPath0 = PathParser().parsePathString("M2 6h4").toNodes()
 private val notebookTextPath1 = PathParser().parsePathString("M2 10h4").toNodes()

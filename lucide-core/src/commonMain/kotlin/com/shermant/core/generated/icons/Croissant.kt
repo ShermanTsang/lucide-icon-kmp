@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val croissantProvider = ParameterizedIconProvider { parameters ->
     buildCroissant(parameters)
 }
+
+val Croissant: ImageVector
+    get() = croissantProvider.create()
 
 private val croissantPath0 = PathParser().parsePathString("M10.2 18H4.774a1.5 1.5 0 0 1-1.352-.97 11 11 0 0 1 .132-6.487").toNodes()
 private val croissantPath1 = PathParser().parsePathString("M18 10.2V4.774a1.5 1.5 0 0 0-.97-1.352 11 11 0 0 0-6.486.132").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val vaultProvider = ParameterizedIconProvider { parameters ->
     buildVault(parameters)
 }
+
+val Vault: ImageVector
+    get() = vaultProvider.create()
 
 private val vaultPath0 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 private val vaultPath1 = PathParser().parsePathString("M 8 7.5 A 0.5 0.5 0 1 0 7 7.5 A 0.5 0.5 0 1 0 8 7.5 Z").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bluetoothOffProvider = ParameterizedIconProvider { parameters ->
     buildBluetoothOff(parameters)
 }
+
+val BluetoothOff: ImageVector
+    get() = bluetoothOffProvider.create()
 
 private val bluetoothOffPath0 = PathParser().parsePathString("m17 17-5 5V12l-5 5").toNodes()
 private val bluetoothOffPath1 = PathParser().parsePathString("m2 2 20 20").toNodes()

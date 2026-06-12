@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val superscriptProvider = ParameterizedIconProvider { parameters ->
     buildSuperscript(parameters)
 }
+
+val Superscript: ImageVector
+    get() = superscriptProvider.create()
 
 private val superscriptPath0 = PathParser().parsePathString("m4 19 8-8").toNodes()
 private val superscriptPath1 = PathParser().parsePathString("m12 19-8-8").toNodes()

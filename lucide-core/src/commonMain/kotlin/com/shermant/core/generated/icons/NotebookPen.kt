@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val notebookPenProvider = ParameterizedIconProvider { parameters ->
     buildNotebookPen(parameters)
 }
+
+val NotebookPen: ImageVector
+    get() = notebookPenProvider.create()
 
 private val notebookPenPath0 = PathParser().parsePathString("M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4").toNodes()
 private val notebookPenPath1 = PathParser().parsePathString("M2 6h4").toNodes()

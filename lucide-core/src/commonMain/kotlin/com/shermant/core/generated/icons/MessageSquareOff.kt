@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val messageSquareOffProvider = ParameterizedIconProvider { parameters ->
     buildMessageSquareOff(parameters)
 }
+
+val MessageSquareOff: ImageVector
+    get() = messageSquareOffProvider.create()
 
 private val messageSquareOffPath0 = PathParser().parsePathString("M19 19H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.7.7 0 0 1 2 21.286V5a2 2 0 0 1 1.184-1.826").toNodes()
 private val messageSquareOffPath1 = PathParser().parsePathString("m2 2 20 20").toNodes()

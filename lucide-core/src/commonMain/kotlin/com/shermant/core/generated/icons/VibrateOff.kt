@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val vibrateOffProvider = ParameterizedIconProvider { parameters ->
     buildVibrateOff(parameters)
 }
+
+val VibrateOff: ImageVector
+    get() = vibrateOffProvider.create()
 
 private val vibrateOffPath0 = PathParser().parsePathString("m2 8 2 2-2 2 2 2-2 2").toNodes()
 private val vibrateOffPath1 = PathParser().parsePathString("m22 8-2 2 2 2-2 2 2 2").toNodes()

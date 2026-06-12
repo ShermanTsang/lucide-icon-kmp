@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareFunctionProvider = ParameterizedIconProvider { parameters ->
     buildSquareFunction(parameters)
 }
+
+val SquareFunction: ImageVector
+    get() = squareFunctionProvider.create()
 
 private val squareFunctionPath0 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 private val squareFunctionPath1 = PathParser().parsePathString("M9 17c2 0 2.8-1 2.8-2.8V10c0-2 1-3.3 3.2-3").toNodes()

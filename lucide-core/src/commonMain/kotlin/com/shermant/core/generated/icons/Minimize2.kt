@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val minimize2Provider = ParameterizedIconProvider { parameters ->
     buildMinimize2(parameters)
 }
+
+val Minimize2: ImageVector
+    get() = minimize2Provider.create()
 
 private val minimize2Path0 = PathParser().parsePathString("m14 10 7-7").toNodes()
 private val minimize2Path1 = PathParser().parsePathString("M20 10h-6V4").toNodes()

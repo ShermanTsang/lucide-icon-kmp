@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val infinityProvider = ParameterizedIconProvider { parameters ->
     buildInfinity(parameters)
 }
+
+val Infinity: ImageVector
+    get() = infinityProvider.create()
 
 private val infinityPath0 = PathParser().parsePathString("M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8").toNodes()
 

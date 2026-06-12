@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shieldCogCornerProvider = ParameterizedIconProvider { parameters ->
     buildShieldCogCorner(parameters)
 }
+
+val ShieldCogCorner: ImageVector
+    get() = shieldCogCornerProvider.create()
 
 private val shieldCogCornerPath0 = PathParser().parsePathString("M11 22c-3.806-1.45-7-3.966-7-9V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v4").toNodes()
 private val shieldCogCornerPath1 = PathParser().parsePathString("M14.923 16.547 14 16.164").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val dogProvider = ParameterizedIconProvider { parameters ->
     buildDog(parameters)
 }
+
+val Dog: ImageVector
+    get() = dogProvider.create()
 
 private val dogPath0 = PathParser().parsePathString("M11.25 16.25h1.5L12 17z").toNodes()
 private val dogPath1 = PathParser().parsePathString("M16 14v.5").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val squareParkingOffProvider = ParameterizedIconProvider { parameters ->
     buildSquareParkingOff(parameters)
 }
+
+val SquareParkingOff: ImageVector
+    get() = squareParkingOffProvider.create()
 
 private val squareParkingOffPath0 = PathParser().parsePathString("M3.6 3.6A2 2 0 0 1 5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-.59 1.41").toNodes()
 private val squareParkingOffPath1 = PathParser().parsePathString("M3 8.7V19a2 2 0 0 0 2 2h10.3").toNodes()

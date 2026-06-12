@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val ticketsProvider = ParameterizedIconProvider { parameters ->
     buildTickets(parameters)
 }
+
+val Tickets: ImageVector
+    get() = ticketsProvider.create()
 
 private val ticketsPath0 = PathParser().parsePathString("m3.173 8.18 11-5a2 2 0 0 1 2.647.993L18.56 8").toNodes()
 private val ticketsPath1 = PathParser().parsePathString("M6 10V8").toNodes()

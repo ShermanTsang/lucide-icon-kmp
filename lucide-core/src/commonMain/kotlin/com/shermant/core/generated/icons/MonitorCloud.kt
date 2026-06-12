@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val monitorCloudProvider = ParameterizedIconProvider { parameters ->
     buildMonitorCloud(parameters)
 }
+
+val MonitorCloud: ImageVector
+    get() = monitorCloudProvider.create()
 
 private val monitorCloudPath0 = PathParser().parsePathString("M11 13a3 3 0 1 1 2.83-4H14a2 2 0 0 1 0 4z").toNodes()
 private val monitorCloudPath1 = PathParser().parsePathString("M12 17v4").toNodes()

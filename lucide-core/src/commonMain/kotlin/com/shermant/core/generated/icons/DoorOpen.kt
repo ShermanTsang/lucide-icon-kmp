@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val doorOpenProvider = ParameterizedIconProvider { parameters ->
     buildDoorOpen(parameters)
 }
+
+val DoorOpen: ImageVector
+    get() = doorOpenProvider.create()
 
 private val doorOpenPath0 = PathParser().parsePathString("M11 20H2").toNodes()
 private val doorOpenPath1 = PathParser().parsePathString("M11 4.562v16.157a1 1 0 0 0 1.242.97L19 20V5.562a2 2 0 0 0-1.515-1.94l-4-1A2 2 0 0 0 11 4.561z").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circlePoundSterlingProvider = ParameterizedIconProvider { parameters ->
     buildCirclePoundSterling(parameters)
 }
+
+val CirclePoundSterling: ImageVector
+    get() = circlePoundSterlingProvider.create()
 
 private val circlePoundSterlingPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val circlePoundSterlingPath1 = PathParser().parsePathString("M10 16V9.5a1 1 0 0 1 5 0").toNodes()

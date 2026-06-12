@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val nfcProvider = ParameterizedIconProvider { parameters ->
     buildNfc(parameters)
 }
+
+val Nfc: ImageVector
+    get() = nfcProvider.create()
 
 private val nfcPath0 = PathParser().parsePathString("M6 8.32a7.43 7.43 0 0 1 0 7.36").toNodes()
 private val nfcPath1 = PathParser().parsePathString("M9.46 6.21a11.76 11.76 0 0 1 0 11.58").toNodes()

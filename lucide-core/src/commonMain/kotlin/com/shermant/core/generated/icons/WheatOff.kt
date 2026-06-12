@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wheatOffProvider = ParameterizedIconProvider { parameters ->
     buildWheatOff(parameters)
 }
+
+val WheatOff: ImageVector
+    get() = wheatOffProvider.create()
 
 private val wheatOffPath0 = PathParser().parsePathString("m2 22 10-10").toNodes()
 private val wheatOffPath1 = PathParser().parsePathString("m16 8-1.17 1.17").toNodes()

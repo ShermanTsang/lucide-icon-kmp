@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val rockingChairProvider = ParameterizedIconProvider { parameters ->
     buildRockingChair(parameters)
 }
+
+val RockingChair: ImageVector
+    get() = rockingChairProvider.create()
 
 private val rockingChairPath0 = PathParser().parsePathString("m15 13 3.708 7.416").toNodes()
 private val rockingChairPath1 = PathParser().parsePathString("M3 19a15 15 0 0 0 18 0").toNodes()

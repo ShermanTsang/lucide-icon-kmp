@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleStopProvider = ParameterizedIconProvider { parameters ->
     buildCircleStop(parameters)
 }
+
+val CircleStop: ImageVector
+    get() = circleStopProvider.create()
 
 private val circleStopPath0 = PathParser().parsePathString("M 22 12 A 10 10 0 1 0 2 12 A 10 10 0 1 0 22 12 Z").toNodes()
 private val circleStopPath1 = PathParser().parsePathString("M 10 9 H 14 A 1 1 0 0 1 15 10 V 14 A 1 1 0 0 1 14 15 H 10 A 1 1 0 0 1 9 14 V 10 A 1 1 0 0 1 10 9 Z").toNodes()

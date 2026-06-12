@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val alignStartHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildAlignStartHorizontal(parameters)
 }
+
+val AlignStartHorizontal: ImageVector
+    get() = alignStartHorizontalProvider.create()
 
 private val alignStartHorizontalPath0 = PathParser().parsePathString("M 6 6 H 8 A 2 2 0 0 1 10 8 V 20 A 2 2 0 0 1 8 22 H 6 A 2 2 0 0 1 4 20 V 8 A 2 2 0 0 1 6 6 Z").toNodes()
 private val alignStartHorizontalPath1 = PathParser().parsePathString("M 16 6 H 18 A 2 2 0 0 1 20 8 V 13 A 2 2 0 0 1 18 15 H 16 A 2 2 0 0 1 14 13 V 8 A 2 2 0 0 1 16 6 Z").toNodes()

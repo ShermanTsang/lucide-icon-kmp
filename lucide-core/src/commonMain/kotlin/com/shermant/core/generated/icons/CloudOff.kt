@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cloudOffProvider = ParameterizedIconProvider { parameters ->
     buildCloudOff(parameters)
 }
+
+val CloudOff: ImageVector
+    get() = cloudOffProvider.create()
 
 private val cloudOffPath0 = PathParser().parsePathString("M10.94 5.274A7 7 0 0 1 15.71 10h1.79a4.5 4.5 0 0 1 4.222 6.057").toNodes()
 private val cloudOffPath1 = PathParser().parsePathString("M18.796 18.81A4.5 4.5 0 0 1 17.5 19H9A7 7 0 0 1 5.79 5.78").toNodes()

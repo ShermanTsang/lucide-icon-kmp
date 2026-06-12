@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val columns3CogProvider = ParameterizedIconProvider { parameters ->
     buildColumns3Cog(parameters)
 }
+
+val Columns3Cog: ImageVector
+    get() = columns3CogProvider.create()
 
 private val columns3CogPath0 = PathParser().parsePathString("M10.5 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.5").toNodes()
 private val columns3CogPath1 = PathParser().parsePathString("m14.3 19.6 1-.4").toNodes()

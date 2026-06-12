@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val towelRackProvider = ParameterizedIconProvider { parameters ->
     buildTowelRack(parameters)
 }
+
+val TowelRack: ImageVector
+    get() = towelRackProvider.create()
 
 private val towelRackPath0 = PathParser().parsePathString("M22 7h-2").toNodes()
 private val towelRackPath1 = PathParser().parsePathString("M6.5 3h11A2.5 2.5 0 0 1 20 5.5V20a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1V5.5a1 1 0 0 0-5 0V17a1 1 0 0 0 1 1h4").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chartLineProvider = ParameterizedIconProvider { parameters ->
     buildChartLine(parameters)
 }
+
+val ChartLine: ImageVector
+    get() = chartLineProvider.create()
 
 private val chartLinePath0 = PathParser().parsePathString("M3 3v16a2 2 0 0 0 2 2h16").toNodes()
 private val chartLinePath1 = PathParser().parsePathString("m19 9-5 5-4-4-3 3").toNodes()

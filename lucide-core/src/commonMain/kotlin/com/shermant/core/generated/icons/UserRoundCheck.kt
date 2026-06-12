@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val userRoundCheckProvider = ParameterizedIconProvider { parameters ->
     buildUserRoundCheck(parameters)
 }
+
+val UserRoundCheck: ImageVector
+    get() = userRoundCheckProvider.create()
 
 private val userRoundCheckPath0 = PathParser().parsePathString("M2 21a8 8 0 0 1 13.292-6").toNodes()
 private val userRoundCheckPath1 = PathParser().parsePathString("M 15 8 A 5 5 0 1 0 5 8 A 5 5 0 1 0 15 8 Z").toNodes()

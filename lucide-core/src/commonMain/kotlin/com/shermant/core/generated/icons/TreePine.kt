@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val treePineProvider = ParameterizedIconProvider { parameters ->
     buildTreePine(parameters)
 }
+
+val TreePine: ImageVector
+    get() = treePineProvider.create()
 
 private val treePinePath0 = PathParser().parsePathString("m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z").toNodes()
 private val treePinePath1 = PathParser().parsePathString("M12 22v-3").toNodes()

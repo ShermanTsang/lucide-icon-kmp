@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chessRookProvider = ParameterizedIconProvider { parameters ->
     buildChessRook(parameters)
 }
+
+val ChessRook: ImageVector
+    get() = chessRookProvider.create()
 
 private val chessRookPath0 = PathParser().parsePathString("M5 20a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z").toNodes()
 private val chessRookPath1 = PathParser().parsePathString("M10 2v2").toNodes()

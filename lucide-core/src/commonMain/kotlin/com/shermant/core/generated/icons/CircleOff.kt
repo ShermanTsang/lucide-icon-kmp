@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val circleOffProvider = ParameterizedIconProvider { parameters ->
     buildCircleOff(parameters)
 }
+
+val CircleOff: ImageVector
+    get() = circleOffProvider.create()
 
 private val circleOffPath0 = PathParser().parsePathString("m2 2 20 20").toNodes()
 private val circleOffPath1 = PathParser().parsePathString("M8.35 2.69A10 10 0 0 1 21.3 15.65").toNodes()

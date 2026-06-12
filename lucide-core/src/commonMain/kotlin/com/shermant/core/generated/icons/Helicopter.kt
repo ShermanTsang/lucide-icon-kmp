@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val helicopterProvider = ParameterizedIconProvider { parameters ->
     buildHelicopter(parameters)
 }
+
+val Helicopter: ImageVector
+    get() = helicopterProvider.create()
 
 private val helicopterPath0 = PathParser().parsePathString("M11 17v4").toNodes()
 private val helicopterPath1 = PathParser().parsePathString("M14 3v8a2 2 0 0 0 2 2h5.865").toNodes()

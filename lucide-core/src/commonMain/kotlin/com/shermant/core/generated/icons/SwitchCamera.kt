@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val switchCameraProvider = ParameterizedIconProvider { parameters ->
     buildSwitchCamera(parameters)
 }
+
+val SwitchCamera: ImageVector
+    get() = switchCameraProvider.create()
 
 private val switchCameraPath0 = PathParser().parsePathString("M11 19H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5").toNodes()
 private val switchCameraPath1 = PathParser().parsePathString("M13 5h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-5").toNodes()

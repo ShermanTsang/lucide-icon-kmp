@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val banknoteArrowDownProvider = ParameterizedIconProvider { parameters ->
     buildBanknoteArrowDown(parameters)
 }
+
+val BanknoteArrowDown: ImageVector
+    get() = banknoteArrowDownProvider.create()
 
 private val banknoteArrowDownPath0 = PathParser().parsePathString("M12 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5").toNodes()
 private val banknoteArrowDownPath1 = PathParser().parsePathString("m16 19 3 3 3-3").toNodes()

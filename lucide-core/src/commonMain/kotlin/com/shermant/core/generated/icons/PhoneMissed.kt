@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val phoneMissedProvider = ParameterizedIconProvider { parameters ->
     buildPhoneMissed(parameters)
 }
+
+val PhoneMissed: ImageVector
+    get() = phoneMissedProvider.create()
 
 private val phoneMissedPath0 = PathParser().parsePathString("m16 2 6 6").toNodes()
 private val phoneMissedPath1 = PathParser().parsePathString("m22 2-6 6").toNodes()

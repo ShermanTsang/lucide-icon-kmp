@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val receiptCentProvider = ParameterizedIconProvider { parameters ->
     buildReceiptCent(parameters)
 }
+
+val ReceiptCent: ImageVector
+    get() = receiptCentProvider.create()
 
 private val receiptCentPath0 = PathParser().parsePathString("M12 7v10").toNodes()
 private val receiptCentPath1 = PathParser().parsePathString("M14.828 14.829a4 4 0 0 1-5.656 0 4 4 0 0 1 0-5.657 4 4 0 0 1 5.656 0").toNodes()

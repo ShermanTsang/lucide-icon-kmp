@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val shipWheelProvider = ParameterizedIconProvider { parameters ->
     buildShipWheel(parameters)
 }
+
+val ShipWheel: ImageVector
+    get() = shipWheelProvider.create()
 
 private val shipWheelPath0 = PathParser().parsePathString("M 20 12 A 8 8 0 1 0 4 12 A 8 8 0 1 0 20 12 Z").toNodes()
 private val shipWheelPath1 = PathParser().parsePathString("M12 2v7.5").toNodes()

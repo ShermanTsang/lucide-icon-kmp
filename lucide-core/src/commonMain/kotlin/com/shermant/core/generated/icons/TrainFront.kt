@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val trainFrontProvider = ParameterizedIconProvider { parameters ->
     buildTrainFront(parameters)
 }
+
+val TrainFront: ImageVector
+    get() = trainFrontProvider.create()
 
 private val trainFrontPath0 = PathParser().parsePathString("M8 3.1V7a4 4 0 0 0 8 0V3.1").toNodes()
 private val trainFrontPath1 = PathParser().parsePathString("m9 15-1-1").toNodes()

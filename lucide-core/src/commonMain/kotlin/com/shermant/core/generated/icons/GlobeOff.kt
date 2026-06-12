@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val globeOffProvider = ParameterizedIconProvider { parameters ->
     buildGlobeOff(parameters)
 }
+
+val GlobeOff: ImageVector
+    get() = globeOffProvider.create()
 
 private val globeOffPath0 = PathParser().parsePathString("M10.114 4.462A14.5 14.5 0 0 1 12 2a10 10 0 0 1 9.313 13.643").toNodes()
 private val globeOffPath1 = PathParser().parsePathString("M15.557 15.556A14.5 14.5 0 0 1 12 22 10 10 0 0 1 4.929 4.929").toNodes()

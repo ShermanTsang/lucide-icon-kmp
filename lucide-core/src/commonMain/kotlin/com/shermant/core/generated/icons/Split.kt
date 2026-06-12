@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val splitProvider = ParameterizedIconProvider { parameters ->
     buildSplit(parameters)
 }
+
+val Split: ImageVector
+    get() = splitProvider.create()
 
 private val splitPath0 = PathParser().parsePathString("M16 3h5v5").toNodes()
 private val splitPath1 = PathParser().parsePathString("M8 3H3v5").toNodes()

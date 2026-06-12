@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val zodiacTaurusProvider = ParameterizedIconProvider { parameters ->
     buildZodiacTaurus(parameters)
 }
+
+val ZodiacTaurus: ImageVector
+    get() = zodiacTaurusProvider.create()
 
 private val zodiacTaurusPath0 = PathParser().parsePathString("M 18 15 A 6 6 0 1 0 6 15 A 6 6 0 1 0 18 15 Z").toNodes()
 private val zodiacTaurusPath1 = PathParser().parsePathString("M18 3A6 6 0 0 1 6 3").toNodes()

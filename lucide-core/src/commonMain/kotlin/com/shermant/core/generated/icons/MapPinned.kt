@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val mapPinnedProvider = ParameterizedIconProvider { parameters ->
     buildMapPinned(parameters)
 }
+
+val MapPinned: ImageVector
+    get() = mapPinnedProvider.create()
 
 private val mapPinnedPath0 = PathParser().parsePathString("M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0").toNodes()
 private val mapPinnedPath1 = PathParser().parsePathString("M 14 8 A 2 2 0 1 0 10 8 A 2 2 0 1 0 14 8 Z").toNodes()

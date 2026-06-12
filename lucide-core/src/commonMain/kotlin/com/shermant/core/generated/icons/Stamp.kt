@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val stampProvider = ParameterizedIconProvider { parameters ->
     buildStamp(parameters)
 }
+
+val Stamp: ImageVector
+    get() = stampProvider.create()
 
 private val stampPath0 = PathParser().parsePathString("M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-6 0c0 2 1 2 1 3.5V13").toNodes()
 private val stampPath1 = PathParser().parsePathString("M20 15.5a2.5 2.5 0 0 0-2.5-2.5h-11A2.5 2.5 0 0 0 4 15.5V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1z").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val tableColumnsSplitProvider = ParameterizedIconProvider { parameters ->
     buildTableColumnsSplit(parameters)
 }
+
+val TableColumnsSplit: ImageVector
+    get() = tableColumnsSplitProvider.create()
 
 private val tableColumnsSplitPath0 = PathParser().parsePathString("M14 14v2").toNodes()
 private val tableColumnsSplitPath1 = PathParser().parsePathString("M14 20v2").toNodes()

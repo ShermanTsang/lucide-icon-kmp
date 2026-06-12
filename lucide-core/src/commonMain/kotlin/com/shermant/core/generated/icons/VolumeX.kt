@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val volumeXProvider = ParameterizedIconProvider { parameters ->
     buildVolumeX(parameters)
 }
+
+val VolumeX: ImageVector
+    get() = volumeXProvider.create()
 
 private val volumeXPath0 = PathParser().parsePathString("M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z").toNodes()
 private val volumeXPath1 = PathParser().parsePathString("M 22 9 L 16 15").toNodes()

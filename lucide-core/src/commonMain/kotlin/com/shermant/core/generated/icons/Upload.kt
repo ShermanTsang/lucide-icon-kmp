@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val uploadProvider = ParameterizedIconProvider { parameters ->
     buildUpload(parameters)
 }
+
+val Upload: ImageVector
+    get() = uploadProvider.create()
 
 private val uploadPath0 = PathParser().parsePathString("M12 3v12").toNodes()
 private val uploadPath1 = PathParser().parsePathString("m17 8-5-5-5 5").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val copyMinusProvider = ParameterizedIconProvider { parameters ->
     buildCopyMinus(parameters)
 }
+
+val CopyMinus: ImageVector
+    get() = copyMinusProvider.create()
 
 private val copyMinusPath0 = PathParser().parsePathString("M 12 15 L 18 15").toNodes()
 private val copyMinusPath1 = PathParser().parsePathString("M 10 8 H 20 A 2 2 0 0 1 22 10 V 20 A 2 2 0 0 1 20 22 H 10 A 2 2 0 0 1 8 20 V 10 A 2 2 0 0 1 10 8 Z").toNodes()

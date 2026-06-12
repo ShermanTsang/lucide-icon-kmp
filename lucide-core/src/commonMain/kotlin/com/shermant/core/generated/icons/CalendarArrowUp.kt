@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val calendarArrowUpProvider = ParameterizedIconProvider { parameters ->
     buildCalendarArrowUp(parameters)
 }
+
+val CalendarArrowUp: ImageVector
+    get() = calendarArrowUpProvider.create()
 
 private val calendarArrowUpPath0 = PathParser().parsePathString("m14 18 4-4 4 4").toNodes()
 private val calendarArrowUpPath1 = PathParser().parsePathString("M16 2v4").toNodes()

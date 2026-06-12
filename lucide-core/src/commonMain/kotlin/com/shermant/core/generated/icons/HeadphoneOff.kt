@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val headphoneOffProvider = ParameterizedIconProvider { parameters ->
     buildHeadphoneOff(parameters)
 }
+
+val HeadphoneOff: ImageVector
+    get() = headphoneOffProvider.create()
 
 private val headphoneOffPath0 = PathParser().parsePathString("M21 14h-1.343").toNodes()
 private val headphoneOffPath1 = PathParser().parsePathString("M9.128 3.47A9 9 0 0 1 21 12v3.343").toNodes()

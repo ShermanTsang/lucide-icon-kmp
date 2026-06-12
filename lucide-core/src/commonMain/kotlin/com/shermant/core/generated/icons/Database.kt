@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val databaseProvider = ParameterizedIconProvider { parameters ->
     buildDatabase(parameters)
 }
+
+val Database: ImageVector
+    get() = databaseProvider.create()
 
 private val databasePath0 = PathParser().parsePathString("M 21 5 A 9 3 0 1 0 3 5 A 9 3 0 1 0 21 5 Z").toNodes()
 private val databasePath1 = PathParser().parsePathString("M3 5V19A9 3 0 0 0 21 19V5").toNodes()

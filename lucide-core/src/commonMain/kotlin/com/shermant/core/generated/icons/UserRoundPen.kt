@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val userRoundPenProvider = ParameterizedIconProvider { parameters ->
     buildUserRoundPen(parameters)
 }
+
+val UserRoundPen: ImageVector
+    get() = userRoundPenProvider.create()
 
 private val userRoundPenPath0 = PathParser().parsePathString("M2 21a8 8 0 0 1 10.821-7.487").toNodes()
 private val userRoundPenPath1 = PathParser().parsePathString("M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z").toNodes()

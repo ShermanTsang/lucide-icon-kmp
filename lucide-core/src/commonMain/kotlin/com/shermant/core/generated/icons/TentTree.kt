@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val tentTreeProvider = ParameterizedIconProvider { parameters ->
     buildTentTree(parameters)
 }
+
+val TentTree: ImageVector
+    get() = tentTreeProvider.create()
 
 private val tentTreePath0 = PathParser().parsePathString("M 6 4 A 2 2 0 1 0 2 4 A 2 2 0 1 0 6 4 Z").toNodes()
 private val tentTreePath1 = PathParser().parsePathString("m14 5 3-3 3 3").toNodes()

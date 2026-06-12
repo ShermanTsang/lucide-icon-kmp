@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val waypointsProvider = ParameterizedIconProvider { parameters ->
     buildWaypoints(parameters)
 }
+
+val Waypoints: ImageVector
+    get() = waypointsProvider.create()
 
 private val waypointsPath0 = PathParser().parsePathString("m10.586 5.414-5.172 5.172").toNodes()
 private val waypointsPath1 = PathParser().parsePathString("m18.586 13.414-5.172 5.172").toNodes()

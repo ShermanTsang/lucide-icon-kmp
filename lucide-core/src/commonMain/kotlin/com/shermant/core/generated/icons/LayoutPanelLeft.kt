@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val layoutPanelLeftProvider = ParameterizedIconProvider { parameters ->
     buildLayoutPanelLeft(parameters)
 }
+
+val LayoutPanelLeft: ImageVector
+    get() = layoutPanelLeftProvider.create()
 
 private val layoutPanelLeftPath0 = PathParser().parsePathString("M 4 3 H 9 A 1 1 0 0 1 10 4 V 20 A 1 1 0 0 1 9 21 H 4 A 1 1 0 0 1 3 20 V 4 A 1 1 0 0 1 4 3 Z").toNodes()
 private val layoutPanelLeftPath1 = PathParser().parsePathString("M 15 3 H 20 A 1 1 0 0 1 21 4 V 9 A 1 1 0 0 1 20 10 H 15 A 1 1 0 0 1 14 9 V 4 A 1 1 0 0 1 15 3 Z").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val luggageProvider = ParameterizedIconProvider { parameters ->
     buildLuggage(parameters)
 }
+
+val Luggage: ImageVector
+    get() = luggageProvider.create()
 
 private val luggagePath0 = PathParser().parsePathString("M6 20a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2").toNodes()
 private val luggagePath1 = PathParser().parsePathString("M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14").toNodes()

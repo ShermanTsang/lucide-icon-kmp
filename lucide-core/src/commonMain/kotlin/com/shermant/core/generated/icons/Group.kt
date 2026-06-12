@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val groupProvider = ParameterizedIconProvider { parameters ->
     buildGroup(parameters)
 }
+
+val Group: ImageVector
+    get() = groupProvider.create()
 
 private val groupPath0 = PathParser().parsePathString("M3 7V5c0-1.1.9-2 2-2h2").toNodes()
 private val groupPath1 = PathParser().parsePathString("M17 3h2c1.1 0 2 .9 2 2v2").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val searchAlertProvider = ParameterizedIconProvider { parameters ->
     buildSearchAlert(parameters)
 }
+
+val SearchAlert: ImageVector
+    get() = searchAlertProvider.create()
 
 private val searchAlertPath0 = PathParser().parsePathString("M 19 11 A 8 8 0 1 0 3 11 A 8 8 0 1 0 19 11 Z").toNodes()
 private val searchAlertPath1 = PathParser().parsePathString("m21 21-4.3-4.3").toNodes()

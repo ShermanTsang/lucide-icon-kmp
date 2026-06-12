@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val folderRootProvider = ParameterizedIconProvider { parameters ->
     buildFolderRoot(parameters)
 }
+
+val FolderRoot: ImageVector
+    get() = folderRootProvider.create()
 
 private val folderRootPath0 = PathParser().parsePathString("M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z").toNodes()
 private val folderRootPath1 = PathParser().parsePathString("M 14 13 A 2 2 0 1 0 10 13 A 2 2 0 1 0 14 13 Z").toNodes()

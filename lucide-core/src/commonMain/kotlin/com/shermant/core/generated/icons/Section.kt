@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val sectionProvider = ParameterizedIconProvider { parameters ->
     buildSection(parameters)
 }
+
+val Section: ImageVector
+    get() = sectionProvider.create()
 
 private val sectionPath0 = PathParser().parsePathString("M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0").toNodes()
 private val sectionPath1 = PathParser().parsePathString("M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0").toNodes()

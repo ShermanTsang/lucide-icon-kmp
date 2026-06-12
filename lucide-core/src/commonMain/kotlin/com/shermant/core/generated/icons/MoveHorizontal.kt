@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val moveHorizontalProvider = ParameterizedIconProvider { parameters ->
     buildMoveHorizontal(parameters)
 }
+
+val MoveHorizontal: ImageVector
+    get() = moveHorizontalProvider.create()
 
 private val moveHorizontalPath0 = PathParser().parsePathString("m18 8 4 4-4 4").toNodes()
 private val moveHorizontalPath1 = PathParser().parsePathString("M2 12h20").toNodes()

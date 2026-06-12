@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val triangleDashedProvider = ParameterizedIconProvider { parameters ->
     buildTriangleDashed(parameters)
 }
+
+val TriangleDashed: ImageVector
+    get() = triangleDashedProvider.create()
 
 private val triangleDashedPath0 = PathParser().parsePathString("M10.17 4.193a2 2 0 0 1 3.666.013").toNodes()
 private val triangleDashedPath1 = PathParser().parsePathString("M14 21h2").toNodes()

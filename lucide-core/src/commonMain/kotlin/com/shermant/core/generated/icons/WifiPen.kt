@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wifiPenProvider = ParameterizedIconProvider { parameters ->
     buildWifiPen(parameters)
 }
+
+val WifiPen: ImageVector
+    get() = wifiPenProvider.create()
 
 private val wifiPenPath0 = PathParser().parsePathString("M2 8.82a15 15 0 0 1 20 0").toNodes()
 private val wifiPenPath1 = PathParser().parsePathString("M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val fingerprintPatternProvider = ParameterizedIconProvider { parameters ->
     buildFingerprintPattern(parameters)
 }
+
+val FingerprintPattern: ImageVector
+    get() = fingerprintPatternProvider.create()
 
 private val fingerprintPatternPath0 = PathParser().parsePathString("M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4").toNodes()
 private val fingerprintPatternPath1 = PathParser().parsePathString("M14 13.12c0 2.38 0 6.38-1 8.88").toNodes()

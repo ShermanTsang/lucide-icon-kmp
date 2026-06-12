@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val briefcaseProvider = ParameterizedIconProvider { parameters ->
     buildBriefcase(parameters)
 }
+
+val Briefcase: ImageVector
+    get() = briefcaseProvider.create()
 
 private val briefcasePath0 = PathParser().parsePathString("M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16").toNodes()
 private val briefcasePath1 = PathParser().parsePathString("M 4 6 H 20 A 2 2 0 0 1 22 8 V 18 A 2 2 0 0 1 20 20 H 4 A 2 2 0 0 1 2 18 V 8 A 2 2 0 0 1 4 6 Z").toNodes()

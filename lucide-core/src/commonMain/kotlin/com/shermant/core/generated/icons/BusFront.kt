@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val busFrontProvider = ParameterizedIconProvider { parameters ->
     buildBusFront(parameters)
 }
+
+val BusFront: ImageVector
+    get() = busFrontProvider.create()
 
 private val busFrontPath0 = PathParser().parsePathString("M4 6 2 7").toNodes()
 private val busFrontPath1 = PathParser().parsePathString("M10 6h4").toNodes()

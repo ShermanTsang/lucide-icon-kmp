@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val pentagonProvider = ParameterizedIconProvider { parameters ->
     buildPentagon(parameters)
 }
+
+val Pentagon: ImageVector
+    get() = pentagonProvider.create()
 
 private val pentagonPath0 = PathParser().parsePathString("M10.83 2.38a2 2 0 0 1 2.34 0l8 5.74a2 2 0 0 1 .73 2.25l-3.04 9.26a2 2 0 0 1-1.9 1.37H7.04a2 2 0 0 1-1.9-1.37L2.1 10.37a2 2 0 0 1 .73-2.25z").toNodes()
 

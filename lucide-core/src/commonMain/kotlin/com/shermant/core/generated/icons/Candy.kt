@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val candyProvider = ParameterizedIconProvider { parameters ->
     buildCandy(parameters)
 }
+
+val Candy: ImageVector
+    get() = candyProvider.create()
 
 private val candyPath0 = PathParser().parsePathString("M10 7v10.9").toNodes()
 private val candyPath1 = PathParser().parsePathString("M14 6.1V17").toNodes()

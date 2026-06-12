@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val externalLinkProvider = ParameterizedIconProvider { parameters ->
     buildExternalLink(parameters)
 }
+
+val ExternalLink: ImageVector
+    get() = externalLinkProvider.create()
 
 private val externalLinkPath0 = PathParser().parsePathString("M15 3h6v6").toNodes()
 private val externalLinkPath1 = PathParser().parsePathString("M10 14 21 3").toNodes()

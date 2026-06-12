@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val scanLineProvider = ParameterizedIconProvider { parameters ->
     buildScanLine(parameters)
 }
+
+val ScanLine: ImageVector
+    get() = scanLineProvider.create()
 
 private val scanLinePath0 = PathParser().parsePathString("M3 7V5a2 2 0 0 1 2-2h2").toNodes()
 private val scanLinePath1 = PathParser().parsePathString("M17 3h2a2 2 0 0 1 2 2v2").toNodes()

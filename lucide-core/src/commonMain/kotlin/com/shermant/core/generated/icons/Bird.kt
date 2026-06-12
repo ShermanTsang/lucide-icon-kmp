@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val birdProvider = ParameterizedIconProvider { parameters ->
     buildBird(parameters)
 }
+
+val Bird: ImageVector
+    get() = birdProvider.create()
 
 private val birdPath0 = PathParser().parsePathString("M16 7h.01").toNodes()
 private val birdPath1 = PathParser().parsePathString("M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20").toNodes()

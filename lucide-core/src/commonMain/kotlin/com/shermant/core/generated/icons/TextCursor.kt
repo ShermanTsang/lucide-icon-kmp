@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val textCursorProvider = ParameterizedIconProvider { parameters ->
     buildTextCursor(parameters)
 }
+
+val TextCursor: ImageVector
+    get() = textCursorProvider.create()
 
 private val textCursorPath0 = PathParser().parsePathString("M17 22h-1a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h1").toNodes()
 private val textCursorPath1 = PathParser().parsePathString("M7 22h1a4 4 0 0 0 4-4").toNodes()

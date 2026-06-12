@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val roseProvider = ParameterizedIconProvider { parameters ->
     buildRose(parameters)
 }
+
+val Rose: ImageVector
+    get() = roseProvider.create()
 
 private val rosePath0 = PathParser().parsePathString("M17 10h-1a4 4 0 1 1 4-4v.534").toNodes()
 private val rosePath1 = PathParser().parsePathString("M17 6h1a4 4 0 0 1 1.42 7.74l-2.29.87a6 6 0 0 1-5.339-10.68l2.069-1.31").toNodes()

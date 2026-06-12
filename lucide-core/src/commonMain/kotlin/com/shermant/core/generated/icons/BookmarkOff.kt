@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bookmarkOffProvider = ParameterizedIconProvider { parameters ->
     buildBookmarkOff(parameters)
 }
+
+val BookmarkOff: ImageVector
+    get() = bookmarkOffProvider.create()
 
 private val bookmarkOffPath0 = PathParser().parsePathString("M19 19v1a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5").toNodes()
 private val bookmarkOffPath1 = PathParser().parsePathString("m2 2 20 20").toNodes()

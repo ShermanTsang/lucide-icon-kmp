@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val rotate3dProvider = ParameterizedIconProvider { parameters ->
     buildRotate3d(parameters)
 }
+
+val Rotate3d: ImageVector
+    get() = rotate3dProvider.create()
 
 private val rotate3dPath0 = PathParser().parsePathString("m15.194 13.707 3.814 1.86-1.86 3.814").toNodes()
 private val rotate3dPath1 = PathParser().parsePathString("M16.47214 7.52786 A 5 10 0 1 0 13 21.79796").toNodes()

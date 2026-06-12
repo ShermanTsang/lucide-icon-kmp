@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val kayakProvider = ParameterizedIconProvider { parameters ->
     buildKayak(parameters)
 }
+
+val Kayak: ImageVector
+    get() = kayakProvider.create()
 
 private val kayakPath0 = PathParser().parsePathString("M18 17a1 1 0 0 0-1 1v1a2 2 0 1 0 2-2z").toNodes()
 private val kayakPath1 = PathParser().parsePathString("M20.97 3.61a.45.45 0 0 0-.58-.58C10.2 6.6 6.6 10.2 3.03 20.39a.45.45 0 0 0 .58.58C13.8 17.4 17.4 13.8 20.97 3.61").toNodes()

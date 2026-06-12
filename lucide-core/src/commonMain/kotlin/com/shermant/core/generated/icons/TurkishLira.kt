@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val turkishLiraProvider = ParameterizedIconProvider { parameters ->
     buildTurkishLira(parameters)
 }
+
+val TurkishLira: ImageVector
+    get() = turkishLiraProvider.create()
 
 private val turkishLiraPath0 = PathParser().parsePathString("M15 4 5 9").toNodes()
 private val turkishLiraPath1 = PathParser().parsePathString("m15 8.5-10 5").toNodes()

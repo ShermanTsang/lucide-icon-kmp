@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val bottleWineProvider = ParameterizedIconProvider { parameters ->
     buildBottleWine(parameters)
 }
+
+val BottleWine: ImageVector
+    get() = bottleWineProvider.create()
 
 private val bottleWinePath0 = PathParser().parsePathString("M10 3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a6 6 0 0 0 1.2 3.6l.6.8A6 6 0 0 1 17 13v8a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-8a6 6 0 0 1 1.2-3.6l.6-.8A6 6 0 0 0 10 5z").toNodes()
 private val bottleWinePath1 = PathParser().parsePathString("M17 13h-4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h4").toNodes()

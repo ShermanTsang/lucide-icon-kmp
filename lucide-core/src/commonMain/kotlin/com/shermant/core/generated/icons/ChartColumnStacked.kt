@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val chartColumnStackedProvider = ParameterizedIconProvider { parameters ->
     buildChartColumnStacked(parameters)
 }
+
+val ChartColumnStacked: ImageVector
+    get() = chartColumnStackedProvider.create()
 
 private val chartColumnStackedPath0 = PathParser().parsePathString("M11 13H7").toNodes()
 private val chartColumnStackedPath1 = PathParser().parsePathString("M19 9h-4").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val monitorPlayProvider = ParameterizedIconProvider { parameters ->
     buildMonitorPlay(parameters)
 }
+
+val MonitorPlay: ImageVector
+    get() = monitorPlayProvider.create()
 
 private val monitorPlayPath0 = PathParser().parsePathString("M15.033 9.44a.647.647 0 0 1 0 1.12l-4.065 2.352a.645.645 0 0 1-.968-.56V7.648a.645.645 0 0 1 .967-.56z").toNodes()
 private val monitorPlayPath1 = PathParser().parsePathString("M12 17v4").toNodes()

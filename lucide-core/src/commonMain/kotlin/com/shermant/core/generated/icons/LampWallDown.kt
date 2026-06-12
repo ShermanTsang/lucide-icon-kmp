@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val lampWallDownProvider = ParameterizedIconProvider { parameters ->
     buildLampWallDown(parameters)
 }
+
+val LampWallDown: ImageVector
+    get() = lampWallDownProvider.create()
 
 private val lampWallDownPath0 = PathParser().parsePathString("M19.929 18.629A1 1 0 0 1 19 20H9a1 1 0 0 1-.928-1.371l2-5A1 1 0 0 1 11 13h6a1 1 0 0 1 .928.629z").toNodes()
 private val lampWallDownPath1 = PathParser().parsePathString("M6 3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z").toNodes()

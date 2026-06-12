@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val wandProvider = ParameterizedIconProvider { parameters ->
     buildWand(parameters)
 }
+
+val Wand: ImageVector
+    get() = wandProvider.create()
 
 private val wandPath0 = PathParser().parsePathString("M15 4V2").toNodes()
 private val wandPath1 = PathParser().parsePathString("M15 16v-2").toNodes()

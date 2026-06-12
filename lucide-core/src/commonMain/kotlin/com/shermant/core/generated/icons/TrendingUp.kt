@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val trendingUpProvider = ParameterizedIconProvider { parameters ->
     buildTrendingUp(parameters)
 }
+
+val TrendingUp: ImageVector
+    get() = trendingUpProvider.create()
 
 private val trendingUpPath0 = PathParser().parsePathString("M16 7h6v6").toNodes()
 private val trendingUpPath1 = PathParser().parsePathString("m22 7-8.5 8.5-5-5L2 17").toNodes()

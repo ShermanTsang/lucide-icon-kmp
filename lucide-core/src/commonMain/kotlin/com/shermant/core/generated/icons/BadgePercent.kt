@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val badgePercentProvider = ParameterizedIconProvider { parameters ->
     buildBadgePercent(parameters)
 }
+
+val BadgePercent: ImageVector
+    get() = badgePercentProvider.create()
 
 private val badgePercentPath0 = PathParser().parsePathString("M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z").toNodes()
 private val badgePercentPath1 = PathParser().parsePathString("m15 9-6 6").toNodes()

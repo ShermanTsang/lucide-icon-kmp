@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val briefcaseMedicalProvider = ParameterizedIconProvider { parameters ->
     buildBriefcaseMedical(parameters)
 }
+
+val BriefcaseMedical: ImageVector
+    get() = briefcaseMedicalProvider.create()
 
 private val briefcaseMedicalPath0 = PathParser().parsePathString("M12 11v4").toNodes()
 private val briefcaseMedicalPath1 = PathParser().parsePathString("M14 13h-4").toNodes()

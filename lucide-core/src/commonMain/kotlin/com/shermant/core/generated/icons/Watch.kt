@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val watchProvider = ParameterizedIconProvider { parameters ->
     buildWatch(parameters)
 }
+
+val Watch: ImageVector
+    get() = watchProvider.create()
 
 private val watchPath0 = PathParser().parsePathString("M12 10v2.2l1.6 1").toNodes()
 private val watchPath1 = PathParser().parsePathString("m16.13 7.66-.81-4.05a2 2 0 0 0-2-1.61h-2.68a2 2 0 0 0-2 1.61l-.78 4.05").toNodes()

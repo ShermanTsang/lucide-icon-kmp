@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val arrowUpProvider = ParameterizedIconProvider { parameters ->
     buildArrowUp(parameters)
 }
+
+val ArrowUp: ImageVector
+    get() = arrowUpProvider.create()
 
 private val arrowUpPath0 = PathParser().parsePathString("m5 12 7-7 7 7").toNodes()
 private val arrowUpPath1 = PathParser().parsePathString("M12 19V5").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val moonStarProvider = ParameterizedIconProvider { parameters ->
     buildMoonStar(parameters)
 }
+
+val MoonStar: ImageVector
+    get() = moonStarProvider.create()
 
 private val moonStarPath0 = PathParser().parsePathString("M18 5h4").toNodes()
 private val moonStarPath1 = PathParser().parsePathString("M20 3v4").toNodes()

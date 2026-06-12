@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val fishSymbolProvider = ParameterizedIconProvider { parameters ->
     buildFishSymbol(parameters)
 }
+
+val FishSymbol: ImageVector
+    get() = fishSymbolProvider.create()
 
 private val fishSymbolPath0 = PathParser().parsePathString("M2 16s9-15 20-4C11 23 2 8 2 8").toNodes()
 

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val cloudDownloadProvider = ParameterizedIconProvider { parameters ->
     buildCloudDownload(parameters)
 }
+
+val CloudDownload: ImageVector
+    get() = cloudDownloadProvider.create()
 
 private val cloudDownloadPath0 = PathParser().parsePathString("M12 13v8l-4-4").toNodes()
 private val cloudDownloadPath1 = PathParser().parsePathString("m12 21 4-4").toNodes()

@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val rabbitProvider = ParameterizedIconProvider { parameters ->
     buildRabbit(parameters)
 }
+
+val Rabbit: ImageVector
+    get() = rabbitProvider.create()
 
 private val rabbitPath0 = PathParser().parsePathString("M13 16a3 3 0 0 1 2.24 5").toNodes()
 private val rabbitPath1 = PathParser().parsePathString("M18 12h.01").toNodes()

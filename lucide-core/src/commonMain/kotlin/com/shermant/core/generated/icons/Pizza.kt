@@ -10,10 +10,14 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.core.registry.IconRenderParameters
 import com.shermant.core.registry.ParameterizedIconProvider
+import com.shermant.core.registry.create
 
 val pizzaProvider = ParameterizedIconProvider { parameters ->
     buildPizza(parameters)
 }
+
+val Pizza: ImageVector
+    get() = pizzaProvider.create()
 
 private val pizzaPath0 = PathParser().parsePathString("m12 14-1 1").toNodes()
 private val pizzaPath1 = PathParser().parsePathString("m13.75 18.25-1.25 1.42").toNodes()
