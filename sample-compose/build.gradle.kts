@@ -38,11 +38,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.shermant.sample"
+    namespace = "com.shermant.lucideiconkmp.sample"
     compileSdk = libs.versions.android.compile.sdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.shermant.sample"
+        applicationId = "com.shermant.lucideiconkmp.sample"
         minSdk = libs.versions.android.min.sdk.get().toInt()
         targetSdk = libs.versions.android.target.sdk.get().toInt()
         versionCode = 1
@@ -52,6 +52,6 @@ android {
 
 compose.desktop {
     application {
-        mainClass = "com.shermant.sample.MainKt"
+        mainClass = "com.shermant.lucideiconkmp.sample.MainKt"
     }
 }

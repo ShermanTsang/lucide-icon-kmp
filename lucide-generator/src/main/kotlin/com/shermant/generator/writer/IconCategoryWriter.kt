@@ -24,7 +24,7 @@ class IconCategoryWriter {
     private fun buildMainFile(icons: List<ParsedIcon>, chunkCount: Int, packageName: String): String = buildString {
         appendLine("package $packageName")
         appendLine()
-        appendLine("import com.shermant.core.model.LucideIconMetadata")
+        appendLine("import com.shermant.lucideiconkmp.core.model.LucideIconMetadata")
         appendLine()
         appendLine("object LucideGeneratedMetadata {")
         icons.forEach { icon ->
@@ -46,10 +46,10 @@ class IconCategoryWriter {
     private fun buildChunkFile(icons: List<ParsedIcon>, packageName: String, chunkIndex: Int): String = buildString {
         appendLine("package $packageName")
         appendLine()
-        appendLine("import com.shermant.core.model.IconSourceSet")
-        appendLine("import com.shermant.core.model.LucideIconCategory")
-        appendLine("import com.shermant.core.model.LucideIconKey")
-        appendLine("import com.shermant.core.model.LucideIconMetadata")
+        appendLine("import com.shermant.lucideiconkmp.core.model.IconSourceSet")
+        appendLine("import com.shermant.lucideiconkmp.core.model.LucideIconCategory")
+        appendLine("import com.shermant.lucideiconkmp.core.model.LucideIconKey")
+        appendLine("import com.shermant.lucideiconkmp.core.model.LucideIconMetadata")
         appendLine()
         appendLine("internal object LucideGeneratedMetadataChunk$chunkIndex {")
         icons.forEach { icon ->

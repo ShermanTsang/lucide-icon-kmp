@@ -20,9 +20,9 @@ class IconRegistryWriter {
         icons.forEach { icon ->
             appendLine("import $packageName.icons.${icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)}Provider")
         }
-        appendLine("import com.shermant.core.registry.LucideIconCreator")
-        appendLine("import com.shermant.core.registry.MutableIconRegistry")
-        appendLine("import com.shermant.core.registry.create")
+        appendLine("import com.shermant.lucideiconkmp.core.registry.LucideIconCreator")
+        appendLine("import com.shermant.lucideiconkmp.core.registry.MutableIconRegistry")
+        appendLine("import com.shermant.lucideiconkmp.core.registry.create")
         appendLine()
         appendLine("internal fun registerGeneratedIcons(registry: MutableIconRegistry) {")
         icons.forEach { icon ->

@@ -33,7 +33,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.shermant.core"
+    namespace = "com.shermant.lucideiconkmp.core"
     compileSdk = libs.versions.android.compile.sdk.get().toInt()
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17

@@ -97,11 +97,12 @@ LucideIcon(
 implementation("com.shermant:lucide-icon-kmp:<version>")
 ```
 
-生成后的图标会以 PascalCase 的 `ImageVector` 属性暴露在 `com.shermant.core.generated.icons` 包下，名称与文件名一致。
+生成后的图标会以 PascalCase 的 `ImageVector` 属性暴露在 `com.shermant.lucideiconkmp.core.generated.icons` 包下，名称与文件名一致。
+Maven 坐标保持不变，这次调整只修改源码包名前缀。
 
 ```kotlin
 import androidx.compose.material3.Icon
-import com.shermant.core.generated.icons.Activity
+import com.shermant.lucideiconkmp.core.generated.icons.Activity
 
 Icon(
     imageVector = Activity,

@@ -1,0 +1,45 @@
+package com.shermant.lucideiconkmp.core.generated.icons
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.PathParser
+import androidx.compose.ui.unit.dp
+import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
+import com.shermant.lucideiconkmp.core.registry.create
+
+val eggProvider = ParameterizedIconProvider { parameters ->
+    buildEgg(parameters)
+}
+
+val Egg: ImageVector
+    get() = eggProvider.create()
+
+private val eggPath0 = PathParser().parsePathString("M12 2C8 2 4 8 4 14a8 8 0 0 0 16 0c0-6-4-12-8-12").toNodes()
+
+private fun buildEgg(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
+    val iconSize = (parameters.size ?: 24.0f).dp
+    val strokeWidth = parameters.strokeWidth ?: 2.0f
+
+    return ImageVector.Builder(
+        name = "egg",
+        defaultWidth = iconSize,
+        defaultHeight = iconSize,
+        viewportWidth = 24.0f,
+        viewportHeight = 24.0f,
+    ).apply {
+        addPath(
+            pathData = eggPath0,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+    }.build()
+}

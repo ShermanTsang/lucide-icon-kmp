@@ -80,7 +80,7 @@ After Gradle sync, add a simple composable in your consumer project:
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.shermant.compose.LucideIcon
+import com.shermant.lucideiconkmp.compose.LucideIcon
 
 @Composable
 fun LocalLucideSmokeTest() {
@@ -101,8 +101,8 @@ You can also test the picker component:
 
 ```kotlin
 import androidx.compose.runtime.Composable
-import com.shermant.compose.picker.LucideIconPicker
-import com.shermant.compose.picker.rememberLucideIconPickerState
+import com.shermant.lucideiconkmp.compose.picker.LucideIconPicker
+import com.shermant.lucideiconkmp.compose.picker.rememberLucideIconPickerState
 
 @Composable
 fun LocalLucidePickerTest() {

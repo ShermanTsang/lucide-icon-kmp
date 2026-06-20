@@ -1,0 +1,55 @@
+package com.shermant.lucideiconkmp.core.model
+
+enum class LucideIconCategory(
+    val displayName: String,
+    val zhDisplayName: String,
+) {
+    Accessibility("Accessibility", "无障碍"),
+    Account("Account", "账户"),
+    Animals("Animals", "动物"),
+    Arrows("Arrows", "箭头"),
+    Buildings("Buildings", "建筑"),
+    Charts("Charts", "图表"),
+    Communication("Communication", "沟通"),
+    Connectivity("Connectivity", "连接"),
+    Cursors("Cursors", "光标"),
+    Design("Design", "设计"),
+    Development("Development", "开发"),
+    Devices("Devices", "设备"),
+    Emoji("Emoji", "表情"),
+    Files("Files", "文件"),
+    Finance("Finance", "金融"),
+    FoodBeverage("Food Beverage", "餐饮"),
+    Gaming("Gaming", "游戏"),
+    Home("Home", "家居"),
+    Layout("Layout", "布局"),
+    Mail("Mail", "邮件"),
+    Math("Math", "数学"),
+    Medical("Medical", "医疗"),
+    Multimedia("Multimedia", "多媒体"),
+    Nature("Nature", "自然"),
+    Navigation("Navigation", "导航"),
+    Notifications("Notifications", "通知"),
+    People("People", "人物"),
+    Photography("Photography", "摄影"),
+    Science("Science", "科学"),
+    Seasons("Seasons", "季节"),
+    Security("Security", "安全"),
+    Shapes("Shapes", "形状"),
+    Shopping("Shopping", "购物"),
+    Social("Social", "社交"),
+    Sports("Sports", "运动"),
+    Sustainability("Sustainability", "可持续"),
+    Text("Text", "文本"),
+    Time("Time", "时间"),
+    Tools("Tools", "工具"),
+    Transportation("Transportation", "交通"),
+    Travel("Travel", "旅行"),
+    Weather("Weather", "天气"),
+    Custom("Custom", "自定义"),
+}
+
+fun LucideIconCategory.displayName(locale: LucideLocale): String = when (locale) {
+    LucideLocale.En -> displayName
+    LucideLocale.Zh -> zhDisplayName
+}

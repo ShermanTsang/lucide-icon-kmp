@@ -97,11 +97,12 @@ Add the core artifact to the module where you want to use direct icon vectors:
 implementation("com.shermant:lucide-icon-kmp:<version>")
 ```
 
-Generated icons are exposed from `com.shermant.core.generated.icons` as PascalCase `ImageVector` properties that match the file name.
+Generated icons are exposed from `com.shermant.lucideiconkmp.core.generated.icons` as PascalCase `ImageVector` properties that match the file name.
+The Maven coordinates remain unchanged; only the source package root changed.
 
 ```kotlin
 import androidx.compose.material3.Icon
-import com.shermant.core.generated.icons.Activity
+import com.shermant.lucideiconkmp.core.generated.icons.Activity
 
 Icon(
     imageVector = Activity,

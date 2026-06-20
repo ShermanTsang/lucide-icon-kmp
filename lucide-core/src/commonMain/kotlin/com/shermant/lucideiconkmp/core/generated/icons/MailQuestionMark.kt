@@ -1,0 +1,75 @@
+package com.shermant.lucideiconkmp.core.generated.icons
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.PathParser
+import androidx.compose.ui.unit.dp
+import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
+import com.shermant.lucideiconkmp.core.registry.create
+
+val mailQuestionMarkProvider = ParameterizedIconProvider { parameters ->
+    buildMailQuestionMark(parameters)
+}
+
+val MailQuestionMark: ImageVector
+    get() = mailQuestionMarkProvider.create()
+
+private val mailQuestionMarkPath0 = PathParser().parsePathString("M22 10.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12.5").toNodes()
+private val mailQuestionMarkPath1 = PathParser().parsePathString("m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7").toNodes()
+private val mailQuestionMarkPath2 = PathParser().parsePathString("M18 15.28c.2-.4.5-.8.9-1a2.1 2.1 0 0 1 2.6.4c.3.4.5.8.5 1.3 0 1.3-2 2-2 2").toNodes()
+private val mailQuestionMarkPath3 = PathParser().parsePathString("M20 22v.01").toNodes()
+
+private fun buildMailQuestionMark(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
+    val iconSize = (parameters.size ?: 24.0f).dp
+    val strokeWidth = parameters.strokeWidth ?: 2.0f
+
+    return ImageVector.Builder(
+        name = "mail-question-mark",
+        defaultWidth = iconSize,
+        defaultHeight = iconSize,
+        viewportWidth = 24.0f,
+        viewportHeight = 24.0f,
+    ).apply {
+        addPath(
+            pathData = mailQuestionMarkPath0,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = mailQuestionMarkPath1,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = mailQuestionMarkPath2,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = mailQuestionMarkPath3,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+    }.build()
+}
