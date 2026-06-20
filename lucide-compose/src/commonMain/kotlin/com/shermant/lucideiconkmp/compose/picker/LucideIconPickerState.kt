@@ -1,11 +1,11 @@
 package com.shermant.lucideiconkmp.compose.picker
 
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Stable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.runtime.Composable
 import com.shermant.lucideiconkmp.core.model.LucideIconCategory
 
 @Stable

@@ -1,8 +1,8 @@
 package com.shermant.generator
 
-import com.shermant.generator.model.RawLucideIcon
-import com.shermant.generator.model.RawLucideMetadata
-import com.shermant.generator.parser.SvgIconParser
+import com.shermant.lucideiconkmp.generator.model.RawLucideIcon
+import com.shermant.lucideiconkmp.generator.model.RawLucideMetadata
+import com.shermant.lucideiconkmp.generator.parser.SvgIconParser
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue

@@ -1,6 +1,6 @@
 package com.shermant.generator
 
-import com.shermant.generator.source.LucideSvgSource
+import com.shermant.lucideiconkmp.generator.source.LucideSvgSource
 import java.nio.file.Files
 import kotlin.io.path.writeText
 import kotlin.test.Test

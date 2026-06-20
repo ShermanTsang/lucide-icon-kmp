@@ -1,11 +1,11 @@
 package com.shermant.generator
 
-import com.shermant.generator.config.GeneratorConfig
-import com.shermant.generator.parser.SvgIconParser
-import com.shermant.generator.source.LucideSvgSource
-import com.shermant.generator.writer.IconCategoryWriter
-import com.shermant.generator.writer.IconFileWriter
-import com.shermant.generator.writer.IconRegistryWriter
+import com.shermant.lucideiconkmp.generator.config.GeneratorConfig
+import com.shermant.lucideiconkmp.generator.parser.SvgIconParser
+import com.shermant.lucideiconkmp.generator.source.LucideSvgSource
+import com.shermant.lucideiconkmp.generator.writer.IconCategoryWriter
+import com.shermant.lucideiconkmp.generator.writer.IconFileWriter
+import com.shermant.lucideiconkmp.generator.writer.IconRegistryWriter
 import java.nio.file.Path
 
 fun main(args: Array<String>) {

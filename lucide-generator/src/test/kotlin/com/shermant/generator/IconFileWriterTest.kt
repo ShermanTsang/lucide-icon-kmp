@@ -1,11 +1,11 @@
 package com.shermant.generator
 
-import com.shermant.generator.model.PaintToken
-import com.shermant.generator.model.ParsedIcon
-import com.shermant.generator.model.ParsedVectorPath
-import com.shermant.generator.model.StrokeCapToken
-import com.shermant.generator.model.StrokeJoinToken
-import com.shermant.generator.writer.IconFileWriter
+import com.shermant.lucideiconkmp.generator.model.PaintToken
+import com.shermant.lucideiconkmp.generator.model.ParsedIcon
+import com.shermant.lucideiconkmp.generator.model.ParsedVectorPath
+import com.shermant.lucideiconkmp.generator.model.StrokeCapToken
+import com.shermant.lucideiconkmp.generator.model.StrokeJoinToken
+import com.shermant.lucideiconkmp.generator.writer.IconFileWriter
 import java.nio.file.Files
 import kotlin.test.Test
 import kotlin.test.assertTrue

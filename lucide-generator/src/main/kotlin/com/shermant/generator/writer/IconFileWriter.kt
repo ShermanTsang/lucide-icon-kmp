@@ -1,10 +1,10 @@
 package com.shermant.generator.writer
 
-import com.shermant.generator.toPascalCaseIdentifier
-import com.shermant.generator.model.PaintToken
-import com.shermant.generator.model.ParsedIcon
-import com.shermant.generator.model.StrokeCapToken
-import com.shermant.generator.model.StrokeJoinToken
+import com.shermant.lucideiconkmp.generator.model.PaintToken
+import com.shermant.lucideiconkmp.generator.model.ParsedIcon
+import com.shermant.lucideiconkmp.generator.model.StrokeCapToken
+import com.shermant.lucideiconkmp.generator.model.StrokeJoinToken
+import com.shermant.lucideiconkmp.generator.toPascalCaseIdentifier
 import java.nio.file.Path
 import kotlin.io.path.createDirectories
 import kotlin.io.path.writeText
@@ -35,17 +35,27 @@ class IconFileWriter {
             appendLine("import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider")
             appendLine("import com.shermant.lucideiconkmp.core.registry.create")
             appendLine()
-            appendLine("val ${icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)}Provider = ParameterizedIconProvider { parameters ->")
+            appendLine(
+                "val ${
+                    icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)
+                }Provider = ParameterizedIconProvider { parameters ->"
+            )
             appendLine("    build$iconIdentifier(parameters)")
             appendLine("}")
             appendLine()
             appendLine("val $iconIdentifier: ImageVector")
-            appendLine("    get() = ${icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)}Provider.create()")
+            appendLine(
+                "    get() = ${
+                    icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)
+                }Provider.create()"
+            )
             appendLine()
             icon.paths.forEachIndexed { index, path ->
                 appendLine(
-                    "private val ${icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)}Path$index = " +
-                        "PathParser().parsePathString(${path.pathData.asKotlinStringLiteral()}).toNodes()",
+                    "private val ${
+                        icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)
+                    }Path$index = " +
+                            "PathParser().parsePathString(${path.pathData.asKotlinStringLiteral()}).toNodes()",
                 )
             }
             appendLine()
@@ -62,7 +72,11 @@ class IconFileWriter {
             appendLine("    ).apply {")
             icon.paths.forEachIndexed { index, path ->
                 appendLine("        addPath(")
-                appendLine("            pathData = ${icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)}Path$index,")
+                appendLine(
+                    "            pathData = ${
+                        icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)
+                    }Path$index,"
+                )
                 appendLine("            pathFillType = PathFillType.NonZero,")
                 appendLine("            fill = ${path.fill.toBrushExpression()},")
                 appendLine("            stroke = ${path.stroke.toBrushExpression()},")

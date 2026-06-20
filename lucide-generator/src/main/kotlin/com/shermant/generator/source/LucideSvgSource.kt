@@ -1,15 +1,15 @@
 package com.shermant.generator.source
 
-import com.shermant.generator.model.RawLucideIcon
-import com.shermant.generator.model.RawLucideMetadata
-import java.nio.file.Files
-import java.nio.file.Path
+import com.shermant.lucideiconkmp.generator.model.RawLucideIcon
+import com.shermant.lucideiconkmp.generator.model.RawLucideMetadata
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.contentOrNull
 import kotlinx.serialization.json.jsonArray
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
+import java.nio.file.Files
+import java.nio.file.Path
 import kotlin.io.path.extension
 import kotlin.io.path.isDirectory
 import kotlin.io.path.nameWithoutExtension
@@ -18,7 +18,8 @@ class LucideSvgSource {
     fun load(directory: Path): List<RawLucideIcon> {
         require(Files.exists(directory)) { "Input directory does not exist: $directory" }
         require(directory.isDirectory()) { "Input directory is not a directory: $directory" }
-        val localizedZhMetadata = readLocalizedZhMetadata(directory.parent.resolve("localized-icons.zh-CN.json"))
+        val localizedZhMetadata =
+            readLocalizedZhMetadata(directory.parent.resolve("localized-icons.zh-CN.json"))
 
         val svgFiles = Files.list(directory).use { stream ->
             stream
@@ -45,7 +46,10 @@ class LucideSvgSource {
         }
     }
 
-    private fun readMetadata(file: Path, localizedZhMetadata: LocalizedIconText?): RawLucideMetadata {
+    private fun readMetadata(
+        file: Path,
+        localizedZhMetadata: LocalizedIconText?
+    ): RawLucideMetadata {
         val root = json.parseToJsonElement(Files.readString(file)).jsonObject
         return RawLucideMetadata(
             tags = root.stringArray("tags").toSortedSet(),

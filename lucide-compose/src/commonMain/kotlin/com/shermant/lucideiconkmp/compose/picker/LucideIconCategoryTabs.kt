@@ -11,8 +11,8 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.runtime.Composable
 import androidx.compose.foundation.text.BasicText
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -41,13 +41,13 @@ internal fun LucideIconCategoryTabs(
     )
     val overlayAlpha = style.edgeOverlayMaxAlpha.coerceIn(0f, 1f)
     val showLeftOverlay = overlayColor != null &&
-        style.edgeOverlayWidth > Dp.Hairline &&
-        overlayAlpha > 0f &&
-        scrollState.value > 0
+            style.edgeOverlayWidth > Dp.Hairline &&
+            overlayAlpha > 0f &&
+            scrollState.value > 0
     val showRightOverlay = overlayColor != null &&
-        style.edgeOverlayWidth > Dp.Hairline &&
-        overlayAlpha > 0f &&
-        scrollState.value < scrollState.maxValue
+            style.edgeOverlayWidth > Dp.Hairline &&
+            overlayAlpha > 0f &&
+            scrollState.value < scrollState.maxValue
 
     Box(modifier = modifier) {
         Row(

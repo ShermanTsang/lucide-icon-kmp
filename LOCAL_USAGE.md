@@ -1,17 +1,21 @@
 # Local Usage Guide
 
-This document explains how to use this library from another **local Kotlin Multiplatform project** for development and testing.
+This document explains how to use this library from another **local Kotlin Multiplatform project**
+for development and testing.
 
 ## Recommended Approach
 
-For local integration, the recommended approach is to use a **Gradle composite build** with `includeBuild`.
+For local integration, the recommended approach is to use a **Gradle composite build** with
+`includeBuild`.
 
 Why this is recommended:
 
 - This repository is already organized as a standalone multi-module build.
 - `lucide-compose` depends on `lucide-core` internally.
-- The repository now includes Maven Central snapshot and release publishing configuration, but local integration still works best with source-level reuse.
-- Composite build keeps this repository self-contained and lets your consumer project use the latest local source code directly.
+- The repository now includes Maven Central snapshot and release publishing configuration, but local
+  integration still works best with source-level reuse.
+- Composite build keeps this repository self-contained and lets your consumer project use the latest
+  local source code directly.
 
 ## Modules
 
@@ -70,7 +74,8 @@ kotlin {
 }
 ```
 
-`lucide-compose` already depends on `lucide-core`, so you do not need to declare both unless your own code directly imports `lucide-core` APIs.
+`lucide-compose` already depends on `lucide-core`, so you do not need to declare both unless your
+own code directly imports `lucide-core` APIs.
 
 ## Step 3: Add A Quick Smoke Test
 
@@ -144,7 +149,8 @@ On Windows PowerShell:
 When the picker query is blank, it now shows all registered icons and paginates them by `pageSize`.
 When the query is not blank, search results still come from `search()` and respect `searchLimit`.
 
-If the build succeeds and your app can import `com.shermant.*`, the composite build setup is working.
+If the build succeeds and your app can import `com.shermant.*`, the composite build setup is
+working.
 
 ## Common Issues
 
@@ -158,17 +164,23 @@ If Gradle cannot find `local.test:lucide-compose` or `local.test:lucide-core`:
 
 ### Build Script Alias Problems
 
-Do not copy `:lucide-core` and `:lucide-compose` directly into your own build unless you also plan to merge this repository's version catalog and plugin setup.
+Do not copy `:lucide-core` and `:lucide-compose` directly into your own build unless you also plan
+to merge this repository's version catalog and plugin setup.
 
-This repository uses its own Gradle version catalog, so composite build is the safer local testing setup.
+This repository uses its own Gradle version catalog, so composite build is the safer local testing
+setup.
 
 ### `mavenLocal()` Is Not The Primary Local Workflow
 
 This repository already includes Maven Central snapshot and release publishing configuration.
-For local development, composite build is still the recommended workflow because it lets your consumer project use current source changes directly without publishing and reinstalling artifacts first.
+For local development, composite build is still the recommended workflow because it lets your
+consumer project use current source changes directly without publishing and reinstalling artifacts
+first.
 
-If the latest public snapshot has not been republished from macOS yet, iOS consumer targets may still fail to resolve Apple artifacts from the snapshot repository.
-In that case, prefer `includeBuild` for local verification instead of depending on an older public snapshot.
+If the latest public snapshot has not been republished from macOS yet, iOS consumer targets may
+still fail to resolve Apple artifacts from the snapshot repository.
+In that case, prefer `includeBuild` for local verification instead of depending on an older public
+snapshot.
 
 ## Suggested Workflow During Local Development
 

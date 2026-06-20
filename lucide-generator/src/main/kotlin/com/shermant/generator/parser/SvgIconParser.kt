@@ -1,20 +1,21 @@
 package com.shermant.generator.parser
 
-import com.shermant.generator.toDisplayName
-import com.shermant.generator.model.PaintToken
-import com.shermant.generator.model.ParsedIcon
-import com.shermant.generator.model.ParsedVectorPath
-import com.shermant.generator.model.RawLucideIcon
-import com.shermant.generator.model.StrokeCapToken
-import com.shermant.generator.model.StrokeJoinToken
-import java.io.StringReader
-import javax.xml.parsers.DocumentBuilderFactory
+import com.shermant.lucideiconkmp.generator.model.PaintToken
+import com.shermant.lucideiconkmp.generator.model.ParsedIcon
+import com.shermant.lucideiconkmp.generator.model.ParsedVectorPath
+import com.shermant.lucideiconkmp.generator.model.RawLucideIcon
+import com.shermant.lucideiconkmp.generator.model.StrokeCapToken
+import com.shermant.lucideiconkmp.generator.model.StrokeJoinToken
+import com.shermant.lucideiconkmp.generator.toDisplayName
 import org.w3c.dom.Element
 import org.xml.sax.InputSource
+import java.io.StringReader
+import javax.xml.parsers.DocumentBuilderFactory
 
 class SvgIconParser {
     fun parse(icon: RawLucideIcon): ParsedIcon {
-        val document = documentBuilderFactory.newDocumentBuilder().parse(InputSource(StringReader(icon.svgContent)))
+        val document = documentBuilderFactory.newDocumentBuilder()
+            .parse(InputSource(StringReader(icon.svgContent)))
         val svg = document.documentElement
         require(svg.tagName == "svg") { "SVG '${icon.name}' has an unexpected root element: ${svg.tagName}" }
 
@@ -69,7 +70,11 @@ class SvgIconParser {
         )
     }
 
-    private fun extractViewportDimension(svg: Element, dimensionAttribute: String, viewBoxIndex: Int): Float {
+    private fun extractViewportDimension(
+        svg: Element,
+        dimensionAttribute: String,
+        viewBoxIndex: Int
+    ): Float {
         val attributeValue = svg.getAttribute(dimensionAttribute).trim()
         attributeValue.toFloatOrNull()?.let { return it }
 
@@ -141,23 +146,60 @@ class SvgIconParser {
         return buildString {
             append("M ${formatNumber(x + radiusX)} ${formatNumber(y)}")
             append(" H ${formatNumber(x + width - radiusX)}")
-            append(" A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 0 1 ${formatNumber(x + width)} ${formatNumber(y + radiusY)}")
+            append(
+                " A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 0 1 ${formatNumber(x + width)} ${
+                    formatNumber(
+                        y + radiusY
+                    )
+                }"
+            )
             append(" V ${formatNumber(y + height - radiusY)}")
-            append(" A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 0 1 ${formatNumber(x + width - radiusX)} ${formatNumber(y + height)}")
+            append(
+                " A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 0 1 ${formatNumber(x + width - radiusX)} ${
+                    formatNumber(
+                        y + height
+                    )
+                }"
+            )
             append(" H ${formatNumber(x + radiusX)}")
-            append(" A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 0 1 ${formatNumber(x)} ${formatNumber(y + height - radiusY)}")
+            append(
+                " A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 0 1 ${formatNumber(x)} ${
+                    formatNumber(
+                        y + height - radiusY
+                    )
+                }"
+            )
             append(" V ${formatNumber(y + radiusY)}")
-            append(" A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 0 1 ${formatNumber(x + radiusX)} ${formatNumber(y)}")
+            append(
+                " A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 0 1 ${formatNumber(x + radiusX)} ${
+                    formatNumber(
+                        y
+                    )
+                }"
+            )
             append(" Z")
         }
     }
 
-    private fun buildEllipseArcPath(cx: Float, cy: Float, radiusX: Float, radiusY: Float): String = buildString {
-        append("M ${formatNumber(cx + radiusX)} ${formatNumber(cy)}")
-        append(" A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 1 0 ${formatNumber(cx - radiusX)} ${formatNumber(cy)}")
-        append(" A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 1 0 ${formatNumber(cx + radiusX)} ${formatNumber(cy)}")
-        append(" Z")
-    }
+    private fun buildEllipseArcPath(cx: Float, cy: Float, radiusX: Float, radiusY: Float): String =
+        buildString {
+            append("M ${formatNumber(cx + radiusX)} ${formatNumber(cy)}")
+            append(
+                " A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 1 0 ${formatNumber(cx - radiusX)} ${
+                    formatNumber(
+                        cy
+                    )
+                }"
+            )
+            append(
+                " A ${formatNumber(radiusX)} ${formatNumber(radiusY)} 0 1 0 ${formatNumber(cx + radiusX)} ${
+                    formatNumber(
+                        cy
+                    )
+                }"
+            )
+            append(" Z")
+        }
 
     private fun parsePoints(pointsAttribute: String): List<Pair<Float, Float>> {
         val normalized = pointsAttribute
@@ -188,7 +230,10 @@ class SvgIconParser {
     private fun Element.floatAttributeOrNull(attributeName: String): Float? =
         getAttribute(attributeName).trim().takeIf { it.isNotBlank() }?.toFloatOrNull()
 
-    private fun Element.floatAttributeOrDefault(attributeName: String, defaultValue: Float = 0f): Float =
+    private fun Element.floatAttributeOrDefault(
+        attributeName: String,
+        defaultValue: Float = 0f
+    ): Float =
         floatAttributeOrNull(attributeName) ?: defaultValue
 
     private object SvgAttributeSupport {
@@ -247,7 +292,8 @@ class SvgIconParser {
         fun merge(element: Element): SvgStyle = SvgStyle(
             fill = SvgAttributeSupport.paintAttributeOrNull(element, "fill") ?: fill,
             stroke = SvgAttributeSupport.paintAttributeOrNull(element, "stroke") ?: stroke,
-            strokeWidth = SvgAttributeSupport.floatAttributeOrNull(element, "stroke-width") ?: strokeWidth,
+            strokeWidth = SvgAttributeSupport.floatAttributeOrNull(element, "stroke-width")
+                ?: strokeWidth,
             strokeLineCap = SvgAttributeSupport.strokeCapOrNull(element) ?: strokeLineCap,
             strokeLineJoin = SvgAttributeSupport.strokeJoinOrNull(element) ?: strokeLineJoin,
         )
@@ -255,10 +301,14 @@ class SvgIconParser {
         companion object {
             fun fromElement(element: Element): SvgStyle = SvgStyle(
                 fill = SvgAttributeSupport.paintAttributeOrNull(element, "fill") ?: PaintToken.None,
-                stroke = SvgAttributeSupport.paintAttributeOrNull(element, "stroke") ?: PaintToken.CurrentColor,
-                strokeWidth = SvgAttributeSupport.floatAttributeOrNull(element, "stroke-width") ?: 2f,
-                strokeLineCap = SvgAttributeSupport.strokeCapOrNull(element) ?: StrokeCapToken.Round,
-                strokeLineJoin = SvgAttributeSupport.strokeJoinOrNull(element) ?: StrokeJoinToken.Round,
+                stroke = SvgAttributeSupport.paintAttributeOrNull(element, "stroke")
+                    ?: PaintToken.CurrentColor,
+                strokeWidth = SvgAttributeSupport.floatAttributeOrNull(element, "stroke-width")
+                    ?: 2f,
+                strokeLineCap = SvgAttributeSupport.strokeCapOrNull(element)
+                    ?: StrokeCapToken.Round,
+                strokeLineJoin = SvgAttributeSupport.strokeJoinOrNull(element)
+                    ?: StrokeJoinToken.Round,
             )
         }
     }
@@ -305,11 +355,12 @@ class SvgIconParser {
     }
 
     private companion object {
-        val documentBuilderFactory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance().apply {
-            isNamespaceAware = false
-            setFeature("http://apache.org/xml/features/disallow-doctype-decl", true)
-            setFeature("http://xml.org/sax/features/external-general-entities", false)
-            setFeature("http://xml.org/sax/features/external-parameter-entities", false)
-        }
+        val documentBuilderFactory: DocumentBuilderFactory =
+            DocumentBuilderFactory.newInstance().apply {
+                isNamespaceAware = false
+                setFeature("http://apache.org/xml/features/disallow-doctype-decl", true)
+                setFeature("http://xml.org/sax/features/external-general-entities", false)
+                setFeature("http://xml.org/sax/features/external-parameter-entities", false)
+            }
     }
 }

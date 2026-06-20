@@ -17,7 +17,6 @@ import com.shermant.lucideiconkmp.compose.LucideIconDefaults
 import com.shermant.lucideiconkmp.core.model.LucideIconCategory
 import com.shermant.lucideiconkmp.core.model.LucideIconMetadata
 import com.shermant.lucideiconkmp.core.model.LucideLocale
-import com.shermant.lucideiconkmp.core.model.displayName
 import com.shermant.lucideiconkmp.core.registry.IconRegistry
 import com.shermant.lucideiconkmp.core.registry.LucideIcons
 

@@ -1,7 +1,7 @@
 package com.shermant.generator.writer
 
-import com.shermant.generator.toPascalCaseIdentifier
-import com.shermant.generator.model.ParsedIcon
+import com.shermant.lucideiconkmp.generator.model.ParsedIcon
+import com.shermant.lucideiconkmp.generator.toPascalCaseIdentifier
 import java.nio.file.Files
 import java.nio.file.Path
 import kotlin.io.path.createDirectories
@@ -21,7 +21,11 @@ class IconCategoryWriter {
         return target
     }
 
-    private fun buildMainFile(icons: List<ParsedIcon>, chunkCount: Int, packageName: String): String = buildString {
+    private fun buildMainFile(
+        icons: List<ParsedIcon>,
+        chunkCount: Int,
+        packageName: String
+    ): String = buildString {
         appendLine("package $packageName")
         appendLine()
         appendLine("import com.shermant.lucideiconkmp.core.model.LucideIconMetadata")
@@ -43,7 +47,11 @@ class IconCategoryWriter {
         appendLine("}")
     }
 
-    private fun buildChunkFile(icons: List<ParsedIcon>, packageName: String, chunkIndex: Int): String = buildString {
+    private fun buildChunkFile(
+        icons: List<ParsedIcon>,
+        packageName: String,
+        chunkIndex: Int
+    ): String = buildString {
         appendLine("package $packageName")
         appendLine()
         appendLine("import com.shermant.lucideiconkmp.core.model.IconSourceSet")
@@ -82,7 +90,10 @@ class IconCategoryWriter {
     private fun deleteOldChunks(outputDirectory: Path) {
         Files.list(outputDirectory).use { stream ->
             stream
-                .filter { path -> path.fileName.toString().matches(Regex("""LucideGeneratedMetadataChunk\d+\.kt""")) }
+                .filter { path ->
+                    path.fileName.toString()
+                        .matches(Regex("""LucideGeneratedMetadataChunk\d+\.kt"""))
+                }
                 .forEach { path -> Files.deleteIfExists(path) }
         }
     }

@@ -1,7 +1,7 @@
 package com.shermant.generator.writer
 
-import com.shermant.generator.toPascalCaseIdentifier
-import com.shermant.generator.model.ParsedIcon
+import com.shermant.lucideiconkmp.generator.model.ParsedIcon
+import com.shermant.lucideiconkmp.generator.toPascalCaseIdentifier
 import java.nio.file.Path
 import kotlin.io.path.createDirectories
 import kotlin.io.path.writeText
@@ -18,7 +18,11 @@ class IconRegistryWriter {
         appendLine("package $packageName")
         appendLine()
         icons.forEach { icon ->
-            appendLine("import $packageName.icons.${icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)}Provider")
+            appendLine(
+                "import $packageName.icons.${
+                    icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)
+                }Provider"
+            )
         }
         appendLine("import com.shermant.lucideiconkmp.core.registry.LucideIconCreator")
         appendLine("import com.shermant.lucideiconkmp.core.registry.MutableIconRegistry")
@@ -27,7 +31,8 @@ class IconRegistryWriter {
         appendLine("internal fun registerGeneratedIcons(registry: MutableIconRegistry) {")
         icons.forEach { icon ->
             val identifier = icon.name.toPascalCaseIdentifier()
-            val providerName = icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)
+            val providerName =
+                icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)
             appendLine("    registry.register(")
             appendLine("        metadata = LucideGeneratedMetadata.$identifier,")
             appendLine("        creator = LucideIconCreator { ${providerName}Provider.create() },")
