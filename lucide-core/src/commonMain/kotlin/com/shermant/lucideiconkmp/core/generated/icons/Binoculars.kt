@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val binocularsProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Binoculars: ImageVector
+    get() = binocularsProvider.create()
+
+val LucideIcons.Binoculars: ImageVector
     get() = binocularsProvider.create()
 
 private val binocularsPath0 = PathParser().parsePathString("M10 10h4").toNodes()

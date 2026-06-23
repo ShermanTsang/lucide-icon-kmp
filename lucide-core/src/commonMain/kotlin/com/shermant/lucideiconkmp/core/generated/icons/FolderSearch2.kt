@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val folderSearch2Provider = ParameterizedIconProvider { parameters ->
 }
 
 val FolderSearch2: ImageVector
+    get() = folderSearch2Provider.create()
+
+val LucideIcons.FolderSearch2: ImageVector
     get() = folderSearch2Provider.create()
 
 private val folderSearch2Path0 = PathParser().parsePathString("M 14 12.5 A 2.5 2.5 0 1 0 9 12.5 A 2.5 2.5 0 1 0 14 12.5 Z").toNodes()

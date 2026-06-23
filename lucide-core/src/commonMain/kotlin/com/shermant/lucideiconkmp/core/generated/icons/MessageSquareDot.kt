@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val messageSquareDotProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MessageSquareDot: ImageVector
+    get() = messageSquareDotProvider.create()
+
+val LucideIcons.MessageSquareDot: ImageVector
     get() = messageSquareDotProvider.create()
 
 private val messageSquareDotPath0 = PathParser().parsePathString("M12.7 3H4a2 2 0 0 0-2 2v16.286a.71.71 0 0 0 1.212.502l2.202-2.202A2 2 0 0 1 6.828 19H20a2 2 0 0 0 2-2v-4.7").toNodes()

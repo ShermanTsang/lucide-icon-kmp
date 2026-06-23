@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val scale3dProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Scale3d: ImageVector
+    get() = scale3dProvider.create()
+
+val LucideIcons.Scale3d: ImageVector
     get() = scale3dProvider.create()
 
 private val scale3dPath0 = PathParser().parsePathString("M5 7v11a1 1 0 0 0 1 1h11").toNodes()

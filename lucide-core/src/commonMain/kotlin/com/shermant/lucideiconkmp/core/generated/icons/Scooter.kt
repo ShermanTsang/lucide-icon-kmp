@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val scooterProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Scooter: ImageVector
+    get() = scooterProvider.create()
+
+val LucideIcons.Scooter: ImageVector
     get() = scooterProvider.create()
 
 private val scooterPath0 = PathParser().parsePathString("M21 4h-3.5l2 11.05").toNodes()

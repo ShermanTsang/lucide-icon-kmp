@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val mapPinOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MapPinOff: ImageVector
+    get() = mapPinOffProvider.create()
+
+val LucideIcons.MapPinOff: ImageVector
     get() = mapPinOffProvider.create()
 
 private val mapPinOffPath0 = PathParser().parsePathString("M12.75 7.09a3 3 0 0 1 2.16 2.16").toNodes()

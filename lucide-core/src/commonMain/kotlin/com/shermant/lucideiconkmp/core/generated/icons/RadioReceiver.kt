@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val radioReceiverProvider = ParameterizedIconProvider { parameters ->
 }
 
 val RadioReceiver: ImageVector
+    get() = radioReceiverProvider.create()
+
+val LucideIcons.RadioReceiver: ImageVector
     get() = radioReceiverProvider.create()
 
 private val radioReceiverPath0 = PathParser().parsePathString("M5 16v2").toNodes()

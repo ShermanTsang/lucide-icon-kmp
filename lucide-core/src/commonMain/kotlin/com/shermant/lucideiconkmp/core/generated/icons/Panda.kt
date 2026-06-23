@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val pandaProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Panda: ImageVector
+    get() = pandaProvider.create()
+
+val LucideIcons.Panda: ImageVector
     get() = pandaProvider.create()
 
 private val pandaPath0 = PathParser().parsePathString("M11.25 17.25h1.5L12 18z").toNodes()

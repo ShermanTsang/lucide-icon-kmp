@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val strikethroughProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Strikethrough: ImageVector
+    get() = strikethroughProvider.create()
+
+val LucideIcons.Strikethrough: ImageVector
     get() = strikethroughProvider.create()
 
 private val strikethroughPath0 = PathParser().parsePathString("M16 4H9a3 3 0 0 0-2.83 4").toNodes()

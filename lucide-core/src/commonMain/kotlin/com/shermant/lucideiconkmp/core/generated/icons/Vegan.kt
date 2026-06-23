@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val veganProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Vegan: ImageVector
+    get() = veganProvider.create()
+
+val LucideIcons.Vegan: ImageVector
     get() = veganProvider.create()
 
 private val veganPath0 = PathParser().parsePathString("M16 8q6 0 6-6-6 0-6 6").toNodes()

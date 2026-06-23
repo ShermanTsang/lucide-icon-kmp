@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cloudDrizzleProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CloudDrizzle: ImageVector
+    get() = cloudDrizzleProvider.create()
+
+val LucideIcons.CloudDrizzle: ImageVector
     get() = cloudDrizzleProvider.create()
 
 private val cloudDrizzlePath0 = PathParser().parsePathString("M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242").toNodes()

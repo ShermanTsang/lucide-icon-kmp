@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val arrowRightLeftProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ArrowRightLeft: ImageVector
+    get() = arrowRightLeftProvider.create()
+
+val LucideIcons.ArrowRightLeft: ImageVector
     get() = arrowRightLeftProvider.create()
 
 private val arrowRightLeftPath0 = PathParser().parsePathString("m16 3 4 4-4 4").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val radarProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Radar: ImageVector
+    get() = radarProvider.create()
+
+val LucideIcons.Radar: ImageVector
     get() = radarProvider.create()
 
 private val radarPath0 = PathParser().parsePathString("M19.07 4.93A10 10 0 0 0 6.99 3.34").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val swatchBookProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SwatchBook: ImageVector
+    get() = swatchBookProvider.create()
+
+val LucideIcons.SwatchBook: ImageVector
     get() = swatchBookProvider.create()
 
 private val swatchBookPath0 = PathParser().parsePathString("M11 17a4 4 0 0 1-8 0V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2Z").toNodes()

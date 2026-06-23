@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val percentProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Percent: ImageVector
+    get() = percentProvider.create()
+
+val LucideIcons.Percent: ImageVector
     get() = percentProvider.create()
 
 private val percentPath0 = PathParser().parsePathString("M 19 5 L 5 19").toNodes()

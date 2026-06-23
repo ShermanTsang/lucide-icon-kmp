@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val moveUpLeftProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MoveUpLeft: ImageVector
+    get() = moveUpLeftProvider.create()
+
+val LucideIcons.MoveUpLeft: ImageVector
     get() = moveUpLeftProvider.create()
 
 private val moveUpLeftPath0 = PathParser().parsePathString("M5 11V5H11").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val tractorProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Tractor: ImageVector
+    get() = tractorProvider.create()
+
+val LucideIcons.Tractor: ImageVector
     get() = tractorProvider.create()
 
 private val tractorPath0 = PathParser().parsePathString("m10 11 11 .9a1 1 0 0 1 .8 1.1l-.665 4.158a1 1 0 0 1-.988.842H20").toNodes()

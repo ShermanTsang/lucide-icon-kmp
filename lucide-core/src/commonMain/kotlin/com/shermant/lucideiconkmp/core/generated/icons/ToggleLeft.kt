@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val toggleLeftProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ToggleLeft: ImageVector
+    get() = toggleLeftProvider.create()
+
+val LucideIcons.ToggleLeft: ImageVector
     get() = toggleLeftProvider.create()
 
 private val toggleLeftPath0 = PathParser().parsePathString("M 12 12 A 3 3 0 1 0 6 12 A 3 3 0 1 0 12 12 Z").toNodes()

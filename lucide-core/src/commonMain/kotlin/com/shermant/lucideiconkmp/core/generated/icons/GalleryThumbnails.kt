@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val galleryThumbnailsProvider = ParameterizedIconProvider { parameters ->
 }
 
 val GalleryThumbnails: ImageVector
+    get() = galleryThumbnailsProvider.create()
+
+val LucideIcons.GalleryThumbnails: ImageVector
     get() = galleryThumbnailsProvider.create()
 
 private val galleryThumbnailsPath0 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 15 A 2 2 0 0 1 19 17 H 5 A 2 2 0 0 1 3 15 V 5 A 2 2 0 0 1 5 3 Z").toNodes()

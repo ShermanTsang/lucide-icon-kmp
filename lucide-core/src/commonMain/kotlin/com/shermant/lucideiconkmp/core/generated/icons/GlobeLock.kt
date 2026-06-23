@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val globeLockProvider = ParameterizedIconProvider { parameters ->
 }
 
 val GlobeLock: ImageVector
+    get() = globeLockProvider.create()
+
+val LucideIcons.GlobeLock: ImageVector
     get() = globeLockProvider.create()
 
 private val globeLockPath0 = PathParser().parsePathString("M15.686 15A14.5 14.5 0 0 1 12 22a14.5 14.5 0 0 1 0-20 10 10 0 1 0 9.542 13").toNodes()

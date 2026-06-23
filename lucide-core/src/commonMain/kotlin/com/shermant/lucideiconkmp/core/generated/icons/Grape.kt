@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val grapeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Grape: ImageVector
+    get() = grapeProvider.create()
+
+val LucideIcons.Grape: ImageVector
     get() = grapeProvider.create()
 
 private val grapePath0 = PathParser().parsePathString("M22 5V2l-5.89 5.89").toNodes()

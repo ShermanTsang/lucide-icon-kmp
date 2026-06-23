@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val pizzaProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Pizza: ImageVector
+    get() = pizzaProvider.create()
+
+val LucideIcons.Pizza: ImageVector
     get() = pizzaProvider.create()
 
 private val pizzaPath0 = PathParser().parsePathString("m12 14-1 1").toNodes()

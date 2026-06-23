@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cableCarProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CableCar: ImageVector
+    get() = cableCarProvider.create()
+
+val LucideIcons.CableCar: ImageVector
     get() = cableCarProvider.create()
 
 private val cableCarPath0 = PathParser().parsePathString("M10 3h.01").toNodes()

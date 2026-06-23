@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val caravanProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Caravan: ImageVector
+    get() = caravanProvider.create()
+
+val LucideIcons.Caravan: ImageVector
     get() = caravanProvider.create()
 
 private val caravanPath0 = PathParser().parsePathString("M18 19V9a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v8a2 2 0 0 0 2 2h2").toNodes()

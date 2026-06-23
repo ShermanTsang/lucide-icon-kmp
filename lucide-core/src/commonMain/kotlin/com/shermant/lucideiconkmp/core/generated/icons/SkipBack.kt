@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val skipBackProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SkipBack: ImageVector
+    get() = skipBackProvider.create()
+
+val LucideIcons.SkipBack: ImageVector
     get() = skipBackProvider.create()
 
 private val skipBackPath0 = PathParser().parsePathString("M17.971 4.285A2 2 0 0 1 21 6v12a2 2 0 0 1-3.029 1.715l-9.997-5.998a2 2 0 0 1-.003-3.432z").toNodes()

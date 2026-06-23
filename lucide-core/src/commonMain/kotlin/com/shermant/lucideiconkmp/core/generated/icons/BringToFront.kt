@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val bringToFrontProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BringToFront: ImageVector
+    get() = bringToFrontProvider.create()
+
+val LucideIcons.BringToFront: ImageVector
     get() = bringToFrontProvider.create()
 
 private val bringToFrontPath0 = PathParser().parsePathString("M 10 8 H 14 A 2 2 0 0 1 16 10 V 14 A 2 2 0 0 1 14 16 H 10 A 2 2 0 0 1 8 14 V 10 A 2 2 0 0 1 10 8 Z").toNodes()

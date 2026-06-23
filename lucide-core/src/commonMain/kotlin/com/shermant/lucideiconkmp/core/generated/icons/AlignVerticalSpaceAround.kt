@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val alignVerticalSpaceAroundProvider = ParameterizedIconProvider { parameters ->
 }
 
 val AlignVerticalSpaceAround: ImageVector
+    get() = alignVerticalSpaceAroundProvider.create()
+
+val LucideIcons.AlignVerticalSpaceAround: ImageVector
     get() = alignVerticalSpaceAroundProvider.create()
 
 private val alignVerticalSpaceAroundPath0 = PathParser().parsePathString("M 9 9 H 15 A 2 2 0 0 1 17 11 V 13 A 2 2 0 0 1 15 15 H 9 A 2 2 0 0 1 7 13 V 11 A 2 2 0 0 1 9 9 Z").toNodes()

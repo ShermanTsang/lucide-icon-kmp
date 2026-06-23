@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val squareDashedMousePointerProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SquareDashedMousePointer: ImageVector
+    get() = squareDashedMousePointerProvider.create()
+
+val LucideIcons.SquareDashedMousePointer: ImageVector
     get() = squareDashedMousePointerProvider.create()
 
 private val squareDashedMousePointerPath0 = PathParser().parsePathString("M12.034 12.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.943l-3.444 1.068a1 1 0 0 0-.66.66l-1.067 3.443a.5.5 0 0 1-.943.033z").toNodes()

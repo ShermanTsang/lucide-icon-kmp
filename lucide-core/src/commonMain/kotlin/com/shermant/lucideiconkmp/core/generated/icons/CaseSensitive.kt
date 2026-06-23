@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val caseSensitiveProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CaseSensitive: ImageVector
+    get() = caseSensitiveProvider.create()
+
+val LucideIcons.CaseSensitive: ImageVector
     get() = caseSensitiveProvider.create()
 
 private val caseSensitivePath0 = PathParser().parsePathString("m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16").toNodes()

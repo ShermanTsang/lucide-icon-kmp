@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val rewindProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Rewind: ImageVector
+    get() = rewindProvider.create()
+
+val LucideIcons.Rewind: ImageVector
     get() = rewindProvider.create()
 
 private val rewindPath0 = PathParser().parsePathString("M12 6a2 2 0 0 0-3.414-1.414l-6 6a2 2 0 0 0 0 2.828l6 6A2 2 0 0 0 12 18z").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val skullProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Skull: ImageVector
+    get() = skullProvider.create()
+
+val LucideIcons.Skull: ImageVector
     get() = skullProvider.create()
 
 private val skullPath0 = PathParser().parsePathString("m12.5 17-.5-1-.5 1h1z").toNodes()

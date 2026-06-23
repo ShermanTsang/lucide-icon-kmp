@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val banknoteXProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BanknoteX: ImageVector
+    get() = banknoteXProvider.create()
+
+val LucideIcons.BanknoteX: ImageVector
     get() = banknoteXProvider.create()
 
 private val banknoteXPath0 = PathParser().parsePathString("M13 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5").toNodes()

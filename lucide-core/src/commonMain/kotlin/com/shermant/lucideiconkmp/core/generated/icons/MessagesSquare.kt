@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val messagesSquareProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MessagesSquare: ImageVector
+    get() = messagesSquareProvider.create()
+
+val LucideIcons.MessagesSquare: ImageVector
     get() = messagesSquareProvider.create()
 
 private val messagesSquarePath0 = PathParser().parsePathString("M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z").toNodes()

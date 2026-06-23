@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val shipWheelProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ShipWheel: ImageVector
+    get() = shipWheelProvider.create()
+
+val LucideIcons.ShipWheel: ImageVector
     get() = shipWheelProvider.create()
 
 private val shipWheelPath0 = PathParser().parsePathString("M 20 12 A 8 8 0 1 0 4 12 A 8 8 0 1 0 20 12 Z").toNodes()

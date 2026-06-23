@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val handCoinsProvider = ParameterizedIconProvider { parameters ->
 }
 
 val HandCoins: ImageVector
+    get() = handCoinsProvider.create()
+
+val LucideIcons.HandCoins: ImageVector
     get() = handCoinsProvider.create()
 
 private val handCoinsPath0 = PathParser().parsePathString("M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val ribbonProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Ribbon: ImageVector
+    get() = ribbonProvider.create()
+
+val LucideIcons.Ribbon: ImageVector
     get() = ribbonProvider.create()
 
 private val ribbonPath0 = PathParser().parsePathString("M12 11.22C11 9.997 10 9 10 8a2 2 0 0 1 4 0c0 1-.998 2.002-2.01 3.22").toNodes()

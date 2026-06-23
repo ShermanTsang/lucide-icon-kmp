@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val lassoProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Lasso: ImageVector
+    get() = lassoProvider.create()
+
+val LucideIcons.Lasso: ImageVector
     get() = lassoProvider.create()
 
 private val lassoPath0 = PathParser().parsePathString("M3.704 14.467a10 8 0 1 1 3.115 2.375").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val eyeOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val EyeOff: ImageVector
+    get() = eyeOffProvider.create()
+
+val LucideIcons.EyeOff: ImageVector
     get() = eyeOffProvider.create()
 
 private val eyeOffPath0 = PathParser().parsePathString("M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val rocketProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Rocket: ImageVector
+    get() = rocketProvider.create()
+
+val LucideIcons.Rocket: ImageVector
     get() = rocketProvider.create()
 
 private val rocketPath0 = PathParser().parsePathString("M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5").toNodes()

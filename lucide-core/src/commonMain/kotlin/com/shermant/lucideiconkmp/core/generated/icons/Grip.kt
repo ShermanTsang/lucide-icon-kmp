@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val gripProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Grip: ImageVector
+    get() = gripProvider.create()
+
+val LucideIcons.Grip: ImageVector
     get() = gripProvider.create()
 
 private val gripPath0 = PathParser().parsePathString("M 13 5 A 1 1 0 1 0 11 5 A 1 1 0 1 0 13 5 Z").toNodes()

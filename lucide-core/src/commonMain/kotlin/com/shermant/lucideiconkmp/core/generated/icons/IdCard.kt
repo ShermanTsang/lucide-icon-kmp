@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val idCardProvider = ParameterizedIconProvider { parameters ->
 }
 
 val IdCard: ImageVector
+    get() = idCardProvider.create()
+
+val LucideIcons.IdCard: ImageVector
     get() = idCardProvider.create()
 
 private val idCardPath0 = PathParser().parsePathString("M16 10h2").toNodes()

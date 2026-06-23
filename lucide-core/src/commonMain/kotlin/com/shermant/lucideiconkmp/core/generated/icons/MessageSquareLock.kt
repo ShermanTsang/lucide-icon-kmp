@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val messageSquareLockProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MessageSquareLock: ImageVector
+    get() = messageSquareLockProvider.create()
+
+val LucideIcons.MessageSquareLock: ImageVector
     get() = messageSquareLockProvider.create()
 
 private val messageSquareLockPath0 = PathParser().parsePathString("M22 8.5V5a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16.286a.71.71 0 0 0 1.212.502l2.202-2.202A2 2 0 0 1 6.828 19H10").toNodes()

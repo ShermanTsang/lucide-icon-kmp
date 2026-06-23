@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val micVocalProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MicVocal: ImageVector
+    get() = micVocalProvider.create()
+
+val LucideIcons.MicVocal: ImageVector
     get() = micVocalProvider.create()
 
 private val micVocalPath0 = PathParser().parsePathString("m11 7.601-5.994 8.19a1 1 0 0 0 .1 1.298l.817.818a1 1 0 0 0 1.314.087L15.09 12").toNodes()

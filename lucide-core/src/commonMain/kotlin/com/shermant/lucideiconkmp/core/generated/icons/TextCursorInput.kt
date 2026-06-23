@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val textCursorInputProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TextCursorInput: ImageVector
+    get() = textCursorInputProvider.create()
+
+val LucideIcons.TextCursorInput: ImageVector
     get() = textCursorInputProvider.create()
 
 private val textCursorInputPath0 = PathParser().parsePathString("M12 20h-1a2 2 0 0 1-2-2 2 2 0 0 1-2 2H6").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val messageCircleCodeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MessageCircleCode: ImageVector
+    get() = messageCircleCodeProvider.create()
+
+val LucideIcons.MessageCircleCode: ImageVector
     get() = messageCircleCodeProvider.create()
 
 private val messageCircleCodePath0 = PathParser().parsePathString("m10 9-3 3 3 3").toNodes()

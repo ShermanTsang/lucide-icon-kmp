@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val circleArrowOutUpLeftProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CircleArrowOutUpLeft: ImageVector
+    get() = circleArrowOutUpLeftProvider.create()
+
+val LucideIcons.CircleArrowOutUpLeft: ImageVector
     get() = circleArrowOutUpLeftProvider.create()
 
 private val circleArrowOutUpLeftPath0 = PathParser().parsePathString("M2 8V2h6").toNodes()

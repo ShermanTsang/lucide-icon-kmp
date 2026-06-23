@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val heartOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val HeartOff: ImageVector
+    get() = heartOffProvider.create()
+
+val LucideIcons.HeartOff: ImageVector
     get() = heartOffProvider.create()
 
 private val heartOffPath0 = PathParser().parsePathString("M10.5 4.893a5.5 5.5 0 0 1 1.091.931.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 1.872-1.002 3.356-2.187 4.655").toNodes()

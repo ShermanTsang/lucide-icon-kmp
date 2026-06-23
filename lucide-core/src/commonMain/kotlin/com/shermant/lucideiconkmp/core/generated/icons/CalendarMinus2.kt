@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val calendarMinus2Provider = ParameterizedIconProvider { parameters ->
 }
 
 val CalendarMinus2: ImageVector
+    get() = calendarMinus2Provider.create()
+
+val LucideIcons.CalendarMinus2: ImageVector
     get() = calendarMinus2Provider.create()
 
 private val calendarMinus2Path0 = PathParser().parsePathString("M8 2v4").toNodes()

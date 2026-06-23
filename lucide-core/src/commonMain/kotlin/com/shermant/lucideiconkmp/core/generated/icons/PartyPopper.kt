@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val partyPopperProvider = ParameterizedIconProvider { parameters ->
 }
 
 val PartyPopper: ImageVector
+    get() = partyPopperProvider.create()
+
+val LucideIcons.PartyPopper: ImageVector
     get() = partyPopperProvider.create()
 
 private val partyPopperPath0 = PathParser().parsePathString("M5.8 11.3 2 22l10.7-3.79").toNodes()

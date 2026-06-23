@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val tramFrontProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TramFront: ImageVector
+    get() = tramFrontProvider.create()
+
+val LucideIcons.TramFront: ImageVector
     get() = tramFrontProvider.create()
 
 private val tramFrontPath0 = PathParser().parsePathString("M 6 3 H 18 A 2 2 0 0 1 20 5 V 17 A 2 2 0 0 1 18 19 H 6 A 2 2 0 0 1 4 17 V 5 A 2 2 0 0 1 6 3 Z").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val candyCaneProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CandyCane: ImageVector
+    get() = candyCaneProvider.create()
+
+val LucideIcons.CandyCane: ImageVector
     get() = candyCaneProvider.create()
 
 private val candyCanePath0 = PathParser().parsePathString("m10.8 5 2.111 4.223").toNodes()

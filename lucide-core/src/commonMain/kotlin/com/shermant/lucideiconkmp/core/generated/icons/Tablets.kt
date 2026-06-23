@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val tabletsProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Tablets: ImageVector
+    get() = tabletsProvider.create()
+
+val LucideIcons.Tablets: ImageVector
     get() = tabletsProvider.create()
 
 private val tabletsPath0 = PathParser().parsePathString("M 12 7 A 5 5 0 1 0 2 7 A 5 5 0 1 0 12 7 Z").toNodes()

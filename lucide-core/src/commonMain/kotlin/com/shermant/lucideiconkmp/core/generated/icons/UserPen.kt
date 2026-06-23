@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val userPenProvider = ParameterizedIconProvider { parameters ->
 }
 
 val UserPen: ImageVector
+    get() = userPenProvider.create()
+
+val LucideIcons.UserPen: ImageVector
     get() = userPenProvider.create()
 
 private val userPenPath0 = PathParser().parsePathString("M11.5 15H7a4 4 0 0 0-4 4v2").toNodes()

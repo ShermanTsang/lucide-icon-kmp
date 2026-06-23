@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val weightTildeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val WeightTilde: ImageVector
+    get() = weightTildeProvider.create()
+
+val LucideIcons.WeightTilde: ImageVector
     get() = weightTildeProvider.create()
 
 private val weightTildePath0 = PathParser().parsePathString("M6.5 8a2 2 0 0 0-1.906 1.46L2.1 18.5A2 2 0 0 0 4 21h16a2 2 0 0 0 1.925-2.54L19.4 9.5A2 2 0 0 0 17.48 8z").toNodes()

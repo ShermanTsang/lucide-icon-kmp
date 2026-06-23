@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val folderLockProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FolderLock: ImageVector
+    get() = folderLockProvider.create()
+
+val LucideIcons.FolderLock: ImageVector
     get() = folderLockProvider.create()
 
 private val folderLockPath0 = PathParser().parsePathString("M 15 17 H 21 A 1 1 0 0 1 22 18 V 21 A 1 1 0 0 1 21 22 H 15 A 1 1 0 0 1 14 21 V 18 A 1 1 0 0 1 15 17 Z").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val fastForwardProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FastForward: ImageVector
+    get() = fastForwardProvider.create()
+
+val LucideIcons.FastForward: ImageVector
     get() = fastForwardProvider.create()
 
 private val fastForwardPath0 = PathParser().parsePathString("M12 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 12 18z").toNodes()

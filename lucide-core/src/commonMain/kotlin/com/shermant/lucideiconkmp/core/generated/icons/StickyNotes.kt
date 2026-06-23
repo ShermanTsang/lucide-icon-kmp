@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val stickyNotesProvider = ParameterizedIconProvider { parameters ->
 }
 
 val StickyNotes: ImageVector
+    get() = stickyNotesProvider.create()
+
+val LucideIcons.StickyNotes: ImageVector
     get() = stickyNotesProvider.create()
 
 private val stickyNotesPath0 = PathParser().parsePathString("M10 8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 16 14v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val highlighterProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Highlighter: ImageVector
+    get() = highlighterProvider.create()
+
+val LucideIcons.Highlighter: ImageVector
     get() = highlighterProvider.create()
 
 private val highlighterPath0 = PathParser().parsePathString("m9 11-6 6v3h9l3-3").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val testTubeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TestTube: ImageVector
+    get() = testTubeProvider.create()
+
+val LucideIcons.TestTube: ImageVector
     get() = testTubeProvider.create()
 
 private val testTubePath0 = PathParser().parsePathString("M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5V2").toNodes()

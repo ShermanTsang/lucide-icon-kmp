@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val orbitProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Orbit: ImageVector
+    get() = orbitProvider.create()
+
+val LucideIcons.Orbit: ImageVector
     get() = orbitProvider.create()
 
 private val orbitPath0 = PathParser().parsePathString("M20.341 6.484A10 10 0 0 1 10.266 21.85").toNodes()

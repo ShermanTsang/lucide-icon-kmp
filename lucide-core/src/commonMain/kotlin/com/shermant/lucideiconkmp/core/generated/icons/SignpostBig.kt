@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val signpostBigProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SignpostBig: ImageVector
+    get() = signpostBigProvider.create()
+
+val LucideIcons.SignpostBig: ImageVector
     get() = signpostBigProvider.create()
 
 private val signpostBigPath0 = PathParser().parsePathString("M10 9H4L2 7l2-2h6").toNodes()

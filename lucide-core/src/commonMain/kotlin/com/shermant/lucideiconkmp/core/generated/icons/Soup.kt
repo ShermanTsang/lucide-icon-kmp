@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val soupProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Soup: ImageVector
+    get() = soupProvider.create()
+
+val LucideIcons.Soup: ImageVector
     get() = soupProvider.create()
 
 private val soupPath0 = PathParser().parsePathString("M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z").toNodes()

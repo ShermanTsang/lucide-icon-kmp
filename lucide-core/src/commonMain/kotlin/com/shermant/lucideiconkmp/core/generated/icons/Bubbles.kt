@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val bubblesProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Bubbles: ImageVector
+    get() = bubblesProvider.create()
+
+val LucideIcons.Bubbles: ImageVector
     get() = bubblesProvider.create()
 
 private val bubblesPath0 = PathParser().parsePathString("M7.001 15.085A1.5 1.5 0 0 1 9 16.5").toNodes()

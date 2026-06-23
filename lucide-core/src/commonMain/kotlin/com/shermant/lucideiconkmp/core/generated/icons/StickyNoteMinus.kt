@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val stickyNoteMinusProvider = ParameterizedIconProvider { parameters ->
 }
 
 val StickyNoteMinus: ImageVector
+    get() = stickyNoteMinusProvider.create()
+
+val LucideIcons.StickyNoteMinus: ImageVector
     get() = stickyNoteMinusProvider.create()
 
 private val stickyNoteMinusPath0 = PathParser().parsePathString("M15 3v5a1 1 0 0 0 1 1h5").toNodes()

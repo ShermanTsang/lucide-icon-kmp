@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val rotateCcwSquareProvider = ParameterizedIconProvider { parameters ->
 }
 
 val RotateCcwSquare: ImageVector
+    get() = rotateCcwSquareProvider.create()
+
+val LucideIcons.RotateCcwSquare: ImageVector
     get() = rotateCcwSquareProvider.create()
 
 private val rotateCcwSquarePath0 = PathParser().parsePathString("M20 9V7a2 2 0 0 0-2-2h-6").toNodes()

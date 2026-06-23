@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val chartBarDecreasingProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ChartBarDecreasing: ImageVector
+    get() = chartBarDecreasingProvider.create()
+
+val LucideIcons.ChartBarDecreasing: ImageVector
     get() = chartBarDecreasingProvider.create()
 
 private val chartBarDecreasingPath0 = PathParser().parsePathString("M3 3v16a2 2 0 0 0 2 2h16").toNodes()

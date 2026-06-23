@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val qrCodeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val QrCode: ImageVector
+    get() = qrCodeProvider.create()
+
+val LucideIcons.QrCode: ImageVector
     get() = qrCodeProvider.create()
 
 private val qrCodePath0 = PathParser().parsePathString("M 4 3 H 7 A 1 1 0 0 1 8 4 V 7 A 1 1 0 0 1 7 8 H 4 A 1 1 0 0 1 3 7 V 4 A 1 1 0 0 1 4 3 Z").toNodes()

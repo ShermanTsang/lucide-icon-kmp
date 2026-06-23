@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val metronomeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Metronome: ImageVector
+    get() = metronomeProvider.create()
+
+val LucideIcons.Metronome: ImageVector
     get() = metronomeProvider.create()
 
 private val metronomePath0 = PathParser().parsePathString("M12 11.4V9.1").toNodes()

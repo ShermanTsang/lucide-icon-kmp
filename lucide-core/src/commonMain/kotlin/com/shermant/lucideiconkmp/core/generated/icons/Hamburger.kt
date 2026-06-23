@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val hamburgerProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Hamburger: ImageVector
+    get() = hamburgerProvider.create()
+
+val LucideIcons.Hamburger: ImageVector
     get() = hamburgerProvider.create()
 
 private val hamburgerPath0 = PathParser().parsePathString("M12 16H4a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4h-4.25").toNodes()

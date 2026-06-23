@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val triangleProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Triangle: ImageVector
+    get() = triangleProvider.create()
+
+val LucideIcons.Triangle: ImageVector
     get() = triangleProvider.create()
 
 private val trianglePath0 = PathParser().parsePathString("M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z").toNodes()

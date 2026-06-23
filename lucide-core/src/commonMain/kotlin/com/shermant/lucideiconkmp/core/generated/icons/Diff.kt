@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val diffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Diff: ImageVector
+    get() = diffProvider.create()
+
+val LucideIcons.Diff: ImageVector
     get() = diffProvider.create()
 
 private val diffPath0 = PathParser().parsePathString("M12 3v14").toNodes()

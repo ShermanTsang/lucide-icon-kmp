@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val barcodeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Barcode: ImageVector
+    get() = barcodeProvider.create()
+
+val LucideIcons.Barcode: ImageVector
     get() = barcodeProvider.create()
 
 private val barcodePath0 = PathParser().parsePathString("M3 5v14").toNodes()

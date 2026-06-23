@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val shieldCogProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ShieldCog: ImageVector
+    get() = shieldCogProvider.create()
+
+val LucideIcons.ShieldCog: ImageVector
     get() = shieldCogProvider.create()
 
 private val shieldCogPath0 = PathParser().parsePathString("m10.929 14.467-.383.924").toNodes()

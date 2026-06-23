@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val flaskRoundProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FlaskRound: ImageVector
+    get() = flaskRoundProvider.create()
+
+val LucideIcons.FlaskRound: ImageVector
     get() = flaskRoundProvider.create()
 
 private val flaskRoundPath0 = PathParser().parsePathString("M10 2v6.292a7 7 0 1 0 4 0V2").toNodes()

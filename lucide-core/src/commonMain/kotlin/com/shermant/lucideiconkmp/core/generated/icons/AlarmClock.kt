@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val alarmClockProvider = ParameterizedIconProvider { parameters ->
 }
 
 val AlarmClock: ImageVector
+    get() = alarmClockProvider.create()
+
+val LucideIcons.AlarmClock: ImageVector
     get() = alarmClockProvider.create()
 
 private val alarmClockPath0 = PathParser().parsePathString("M 20 13 A 8 8 0 1 0 4 13 A 8 8 0 1 0 20 13 Z").toNodes()

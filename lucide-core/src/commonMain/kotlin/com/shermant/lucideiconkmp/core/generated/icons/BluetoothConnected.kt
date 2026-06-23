@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val bluetoothConnectedProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BluetoothConnected: ImageVector
+    get() = bluetoothConnectedProvider.create()
+
+val LucideIcons.BluetoothConnected: ImageVector
     get() = bluetoothConnectedProvider.create()
 
 private val bluetoothConnectedPath0 = PathParser().parsePathString("m7 7 10 10-5 5V2l5 5L7 17").toNodes()

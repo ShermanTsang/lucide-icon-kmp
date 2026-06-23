@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val trendingUpDownProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TrendingUpDown: ImageVector
+    get() = trendingUpDownProvider.create()
+
+val LucideIcons.TrendingUpDown: ImageVector
     get() = trendingUpDownProvider.create()
 
 private val trendingUpDownPath0 = PathParser().parsePathString("M14.828 14.828 21 21").toNodes()

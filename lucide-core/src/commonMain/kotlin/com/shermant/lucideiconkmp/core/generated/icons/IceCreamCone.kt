@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val iceCreamConeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val IceCreamCone: ImageVector
+    get() = iceCreamConeProvider.create()
+
+val LucideIcons.IceCreamCone: ImageVector
     get() = iceCreamConeProvider.create()
 
 private val iceCreamConePath0 = PathParser().parsePathString("m7 11 4.08 10.35a1 1 0 0 0 1.84 0L17 11").toNodes()

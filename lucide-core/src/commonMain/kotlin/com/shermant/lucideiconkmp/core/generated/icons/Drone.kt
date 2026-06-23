@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val droneProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Drone: ImageVector
+    get() = droneProvider.create()
+
+val LucideIcons.Drone: ImageVector
     get() = droneProvider.create()
 
 private val dronePath0 = PathParser().parsePathString("M10 10 7 7").toNodes()

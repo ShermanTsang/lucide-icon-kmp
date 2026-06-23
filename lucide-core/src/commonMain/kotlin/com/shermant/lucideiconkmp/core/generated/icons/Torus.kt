@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val torusProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Torus: ImageVector
+    get() = torusProvider.create()
+
+val LucideIcons.Torus: ImageVector
     get() = torusProvider.create()
 
 private val torusPath0 = PathParser().parsePathString("M 15 11 A 3 2 0 1 0 9 11 A 3 2 0 1 0 15 11 Z").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val rectangleGogglesProvider = ParameterizedIconProvider { parameters ->
 }
 
 val RectangleGoggles: ImageVector
+    get() = rectangleGogglesProvider.create()
+
+val LucideIcons.RectangleGoggles: ImageVector
     get() = rectangleGogglesProvider.create()
 
 private val rectangleGogglesPath0 = PathParser().parsePathString("M20 6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4a2 2 0 0 1-1.6-.8l-1.6-2.13a1 1 0 0 0-1.6 0L9.6 17.2A2 2 0 0 1 8 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z").toNodes()

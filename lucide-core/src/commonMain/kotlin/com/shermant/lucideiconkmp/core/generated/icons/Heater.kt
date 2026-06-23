@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val heaterProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Heater: ImageVector
+    get() = heaterProvider.create()
+
+val LucideIcons.Heater: ImageVector
     get() = heaterProvider.create()
 
 private val heaterPath0 = PathParser().parsePathString("M11 8c2-3-2-3 0-6").toNodes()

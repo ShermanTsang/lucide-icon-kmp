@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cloverProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Clover: ImageVector
+    get() = cloverProvider.create()
+
+val LucideIcons.Clover: ImageVector
     get() = cloverProvider.create()
 
 private val cloverPath0 = PathParser().parsePathString("M16.17 7.83 2 22").toNodes()

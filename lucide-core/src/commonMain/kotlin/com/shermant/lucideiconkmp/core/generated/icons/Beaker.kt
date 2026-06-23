@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val beakerProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Beaker: ImageVector
+    get() = beakerProvider.create()
+
+val LucideIcons.Beaker: ImageVector
     get() = beakerProvider.create()
 
 private val beakerPath0 = PathParser().parsePathString("M4.5 3h15").toNodes()

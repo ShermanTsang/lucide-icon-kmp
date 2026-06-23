@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val folderBookmarkProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FolderBookmark: ImageVector
+    get() = folderBookmarkProvider.create()
+
+val LucideIcons.FolderBookmark: ImageVector
     get() = folderBookmarkProvider.create()
 
 private val folderBookmarkPath0 = PathParser().parsePathString("M12 6v8l3-3 3 3V6").toNodes()

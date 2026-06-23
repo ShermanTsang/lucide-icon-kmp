@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val bracketsProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Brackets: ImageVector
+    get() = bracketsProvider.create()
+
+val LucideIcons.Brackets: ImageVector
     get() = bracketsProvider.create()
 
 private val bracketsPath0 = PathParser().parsePathString("M16 3h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3").toNodes()

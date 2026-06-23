@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val sunSnowProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SunSnow: ImageVector
+    get() = sunSnowProvider.create()
+
+val LucideIcons.SunSnow: ImageVector
     get() = sunSnowProvider.create()
 
 private val sunSnowPath0 = PathParser().parsePathString("M10 21v-1").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val bookCopyProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BookCopy: ImageVector
+    get() = bookCopyProvider.create()
+
+val LucideIcons.BookCopy: ImageVector
     get() = bookCopyProvider.create()
 
 private val bookCopyPath0 = PathParser().parsePathString("M5 7a2 2 0 0 0-2 2v11").toNodes()

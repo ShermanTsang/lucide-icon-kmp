@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val umbrellaOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val UmbrellaOff: ImageVector
+    get() = umbrellaOffProvider.create()
+
+val LucideIcons.UmbrellaOff: ImageVector
     get() = umbrellaOffProvider.create()
 
 private val umbrellaOffPath0 = PathParser().parsePathString("M12 13v7a2 2 0 0 0 4 0").toNodes()

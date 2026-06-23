@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val italicProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Italic: ImageVector
+    get() = italicProvider.create()
+
+val LucideIcons.Italic: ImageVector
     get() = italicProvider.create()
 
 private val italicPath0 = PathParser().parsePathString("M 19 4 L 10 4").toNodes()

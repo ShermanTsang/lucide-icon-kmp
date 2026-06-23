@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val tvMinimalPlayProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TvMinimalPlay: ImageVector
+    get() = tvMinimalPlayProvider.create()
+
+val LucideIcons.TvMinimalPlay: ImageVector
     get() = tvMinimalPlayProvider.create()
 
 private val tvMinimalPlayPath0 = PathParser().parsePathString("M15.033 9.44a.647.647 0 0 1 0 1.12l-4.065 2.352a.645.645 0 0 1-.968-.56V7.648a.645.645 0 0 1 .967-.56z").toNodes()

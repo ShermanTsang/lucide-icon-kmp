@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val houseWifiProvider = ParameterizedIconProvider { parameters ->
 }
 
 val HouseWifi: ImageVector
+    get() = houseWifiProvider.create()
+
+val LucideIcons.HouseWifi: ImageVector
     get() = houseWifiProvider.create()
 
 private val houseWifiPath0 = PathParser().parsePathString("M9.5 13.866a4 4 0 0 1 5 .01").toNodes()

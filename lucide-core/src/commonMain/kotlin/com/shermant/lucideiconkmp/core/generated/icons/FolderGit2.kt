@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val folderGit2Provider = ParameterizedIconProvider { parameters ->
 }
 
 val FolderGit2: ImageVector
+    get() = folderGit2Provider.create()
+
+val LucideIcons.FolderGit2: ImageVector
     get() = folderGit2Provider.create()
 
 private val folderGit2Path0 = PathParser().parsePathString("M18 19a5 5 0 0 1-5-5v8").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val drumProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Drum: ImageVector
+    get() = drumProvider.create()
+
+val LucideIcons.Drum: ImageVector
     get() = drumProvider.create()
 
 private val drumPath0 = PathParser().parsePathString("m2 2 8 8").toNodes()

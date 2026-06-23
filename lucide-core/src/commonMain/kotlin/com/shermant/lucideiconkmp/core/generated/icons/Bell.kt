@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val bellProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Bell: ImageVector
+    get() = bellProvider.create()
+
+val LucideIcons.Bell: ImageVector
     get() = bellProvider.create()
 
 private val bellPath0 = PathParser().parsePathString("M10.268 21a2 2 0 0 0 3.464 0").toNodes()

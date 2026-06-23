@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val scissorsLineDashedProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ScissorsLineDashed: ImageVector
+    get() = scissorsLineDashedProvider.create()
+
+val LucideIcons.ScissorsLineDashed: ImageVector
     get() = scissorsLineDashedProvider.create()
 
 private val scissorsLineDashedPath0 = PathParser().parsePathString("M5.42 9.42 8 12").toNodes()

@@ -110,6 +110,26 @@ Icon(
 )
 ```
 
+如果你更喜欢命名空间风格，也可以使用 `LucideIcons.Activity`：
+
+```kotlin
+import androidx.compose.material3.Icon
+import com.shermant.lucideiconkmp.core.generated.icons.*
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
+
+Icon(
+    imageVector = LucideIcons.Activity,
+    contentDescription = "Activity",
+)
+```
+
+两种 API 会同时保留：
+
+- `Activity`
+- `LucideIcons.Activity`
+
+注意：这两种直接图标访问方式都要求显式添加 core 依赖，而不是只依赖 compose artifact。
+
 例如：
 
 - `Activity.kt` 导出 `Activity`

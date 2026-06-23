@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val userRoundCheckProvider = ParameterizedIconProvider { parameters ->
 }
 
 val UserRoundCheck: ImageVector
+    get() = userRoundCheckProvider.create()
+
+val LucideIcons.UserRoundCheck: ImageVector
     get() = userRoundCheckProvider.create()
 
 private val userRoundCheckPath0 = PathParser().parsePathString("M2 21a8 8 0 0 1 13.292-6").toNodes()

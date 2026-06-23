@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val planeTakeoffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val PlaneTakeoff: ImageVector
+    get() = planeTakeoffProvider.create()
+
+val LucideIcons.PlaneTakeoff: ImageVector
     get() = planeTakeoffProvider.create()
 
 private val planeTakeoffPath0 = PathParser().parsePathString("M2 22h20").toNodes()

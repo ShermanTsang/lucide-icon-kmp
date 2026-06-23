@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val messageCircleDashedProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MessageCircleDashed: ImageVector
+    get() = messageCircleDashedProvider.create()
+
+val LucideIcons.MessageCircleDashed: ImageVector
     get() = messageCircleDashedProvider.create()
 
 private val messageCircleDashedPath0 = PathParser().parsePathString("M10.1 2.182a10 10 0 0 1 3.8 0").toNodes()

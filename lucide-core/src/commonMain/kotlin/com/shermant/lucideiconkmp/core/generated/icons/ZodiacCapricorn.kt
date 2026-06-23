@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val zodiacCapricornProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ZodiacCapricorn: ImageVector
+    get() = zodiacCapricornProvider.create()
+
+val LucideIcons.ZodiacCapricorn: ImageVector
     get() = zodiacCapricornProvider.create()
 
 private val zodiacCapricornPath0 = PathParser().parsePathString("M11 21a3 3 0 0 0 3-3V6.5a1 1 0 0 0-7 0").toNodes()

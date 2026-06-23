@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val origamiProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Origami: ImageVector
+    get() = origamiProvider.create()
+
+val LucideIcons.Origami: ImageVector
     get() = origamiProvider.create()
 
 private val origamiPath0 = PathParser().parsePathString("M12 12V4a1 1 0 0 1 1-1h6.297a1 1 0 0 1 .651 1.759l-4.696 4.025").toNodes()

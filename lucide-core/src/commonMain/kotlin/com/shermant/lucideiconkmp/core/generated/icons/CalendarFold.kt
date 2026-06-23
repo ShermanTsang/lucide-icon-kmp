@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val calendarFoldProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CalendarFold: ImageVector
+    get() = calendarFoldProvider.create()
+
+val LucideIcons.CalendarFold: ImageVector
     get() = calendarFoldProvider.create()
 
 private val calendarFoldPath0 = PathParser().parsePathString("M3 20a2 2 0 0 0 2 2h10a2.4 2.4 0 0 0 1.706-.706l3.588-3.588A2.4 2.4 0 0 0 21 16V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z").toNodes()

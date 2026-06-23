@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val handshakeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Handshake: ImageVector
+    get() = handshakeProvider.create()
+
+val LucideIcons.Handshake: ImageVector
     get() = handshakeProvider.create()
 
 private val handshakePath0 = PathParser().parsePathString("m11 17 2 2a1 1 0 1 0 3-3").toNodes()

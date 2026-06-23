@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val hospitalProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Hospital: ImageVector
+    get() = hospitalProvider.create()
+
+val LucideIcons.Hospital: ImageVector
     get() = hospitalProvider.create()
 
 private val hospitalPath0 = PathParser().parsePathString("M12 7v4").toNodes()

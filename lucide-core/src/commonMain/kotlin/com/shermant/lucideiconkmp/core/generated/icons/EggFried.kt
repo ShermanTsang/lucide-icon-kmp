@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val eggFriedProvider = ParameterizedIconProvider { parameters ->
 }
 
 val EggFried: ImageVector
+    get() = eggFriedProvider.create()
+
+val LucideIcons.EggFried: ImageVector
     get() = eggFriedProvider.create()
 
 private val eggFriedPath0 = PathParser().parsePathString("M 15 12.5 A 3.5 3.5 0 1 0 8 12.5 A 3.5 3.5 0 1 0 15 12.5 Z").toNodes()

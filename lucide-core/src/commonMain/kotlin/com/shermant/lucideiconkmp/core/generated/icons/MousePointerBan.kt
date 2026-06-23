@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val mousePointerBanProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MousePointerBan: ImageVector
+    get() = mousePointerBanProvider.create()
+
+val LucideIcons.MousePointerBan: ImageVector
     get() = mousePointerBanProvider.create()
 
 private val mousePointerBanPath0 = PathParser().parsePathString("M2.034 2.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.944L8.204 7.545a1 1 0 0 0-.66.66l-1.066 3.443a.5.5 0 0 1-.944.033z").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val japaneseYenProvider = ParameterizedIconProvider { parameters ->
 }
 
 val JapaneseYen: ImageVector
+    get() = japaneseYenProvider.create()
+
+val LucideIcons.JapaneseYen: ImageVector
     get() = japaneseYenProvider.create()
 
 private val japaneseYenPath0 = PathParser().parsePathString("M12 9.5V21m0-11.5L6 3m6 6.5L18 3").toNodes()

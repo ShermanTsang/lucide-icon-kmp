@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val sportShoeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SportShoe: ImageVector
+    get() = sportShoeProvider.create()
+
+val LucideIcons.SportShoe: ImageVector
     get() = sportShoeProvider.create()
 
 private val sportShoePath0 = PathParser().parsePathString("m15 10.42 4.8-5.07").toNodes()

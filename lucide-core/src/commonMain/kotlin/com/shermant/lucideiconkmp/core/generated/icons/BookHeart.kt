@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val bookHeartProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BookHeart: ImageVector
+    get() = bookHeartProvider.create()
+
+val LucideIcons.BookHeart: ImageVector
     get() = bookHeartProvider.create()
 
 private val bookHeartPath0 = PathParser().parsePathString("M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20").toNodes()

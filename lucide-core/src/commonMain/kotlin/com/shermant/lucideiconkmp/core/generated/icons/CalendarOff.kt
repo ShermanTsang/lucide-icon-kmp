@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val calendarOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CalendarOff: ImageVector
+    get() = calendarOffProvider.create()
+
+val LucideIcons.CalendarOff: ImageVector
     get() = calendarOffProvider.create()
 
 private val calendarOffPath0 = PathParser().parsePathString("M4.2 4.2A2 2 0 0 0 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 1.82-1.18").toNodes()

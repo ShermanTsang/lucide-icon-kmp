@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val trophyProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Trophy: ImageVector
+    get() = trophyProvider.create()
+
+val LucideIcons.Trophy: ImageVector
     get() = trophyProvider.create()
 
 private val trophyPath0 = PathParser().parsePathString("M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978").toNodes()

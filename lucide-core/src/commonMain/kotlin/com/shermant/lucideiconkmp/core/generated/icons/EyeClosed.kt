@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val eyeClosedProvider = ParameterizedIconProvider { parameters ->
 }
 
 val EyeClosed: ImageVector
+    get() = eyeClosedProvider.create()
+
+val LucideIcons.EyeClosed: ImageVector
     get() = eyeClosedProvider.create()
 
 private val eyeClosedPath0 = PathParser().parsePathString("m15 18-.722-3.25").toNodes()

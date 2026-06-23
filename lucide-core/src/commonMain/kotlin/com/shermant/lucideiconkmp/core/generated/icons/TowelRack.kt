@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val towelRackProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TowelRack: ImageVector
+    get() = towelRackProvider.create()
+
+val LucideIcons.TowelRack: ImageVector
     get() = towelRackProvider.create()
 
 private val towelRackPath0 = PathParser().parsePathString("M22 7h-2").toNodes()

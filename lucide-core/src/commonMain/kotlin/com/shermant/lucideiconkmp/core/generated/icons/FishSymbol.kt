@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val fishSymbolProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FishSymbol: ImageVector
+    get() = fishSymbolProvider.create()
+
+val LucideIcons.FishSymbol: ImageVector
     get() = fishSymbolProvider.create()
 
 private val fishSymbolPath0 = PathParser().parsePathString("M2 16s9-15 20-4C11 23 2 8 2 8").toNodes()

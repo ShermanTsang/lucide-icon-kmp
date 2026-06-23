@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val hatGlassesProvider = ParameterizedIconProvider { parameters ->
 }
 
 val HatGlasses: ImageVector
+    get() = hatGlassesProvider.create()
+
+val LucideIcons.HatGlasses: ImageVector
     get() = hatGlassesProvider.create()
 
 private val hatGlassesPath0 = PathParser().parsePathString("M14 18a2 2 0 0 0-4 0").toNodes()

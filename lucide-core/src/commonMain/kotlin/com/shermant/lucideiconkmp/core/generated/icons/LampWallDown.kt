@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val lampWallDownProvider = ParameterizedIconProvider { parameters ->
 }
 
 val LampWallDown: ImageVector
+    get() = lampWallDownProvider.create()
+
+val LucideIcons.LampWallDown: ImageVector
     get() = lampWallDownProvider.create()
 
 private val lampWallDownPath0 = PathParser().parsePathString("M19.929 18.629A1 1 0 0 1 19 20H9a1 1 0 0 1-.928-1.371l2-5A1 1 0 0 1 11 13h6a1 1 0 0 1 .928.629z").toNodes()

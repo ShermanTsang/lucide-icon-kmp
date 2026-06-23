@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val dockProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Dock: ImageVector
+    get() = dockProvider.create()
+
+val LucideIcons.Dock: ImageVector
     get() = dockProvider.create()
 
 private val dockPath0 = PathParser().parsePathString("M2 8h20").toNodes()

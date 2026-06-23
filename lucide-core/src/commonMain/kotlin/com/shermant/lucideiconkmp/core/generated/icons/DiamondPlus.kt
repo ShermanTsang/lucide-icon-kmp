@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val diamondPlusProvider = ParameterizedIconProvider { parameters ->
 }
 
 val DiamondPlus: ImageVector
+    get() = diamondPlusProvider.create()
+
+val LucideIcons.DiamondPlus: ImageVector
     get() = diamondPlusProvider.create()
 
 private val diamondPlusPath0 = PathParser().parsePathString("M12 8v8").toNodes()

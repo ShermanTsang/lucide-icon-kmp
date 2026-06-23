@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val clockCheckProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ClockCheck: ImageVector
+    get() = clockCheckProvider.create()
+
+val LucideIcons.ClockCheck: ImageVector
     get() = clockCheckProvider.create()
 
 private val clockCheckPath0 = PathParser().parsePathString("M12 6v6l4 2").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val gitCommitVerticalProvider = ParameterizedIconProvider { parameters ->
 }
 
 val GitCommitVertical: ImageVector
+    get() = gitCommitVerticalProvider.create()
+
+val LucideIcons.GitCommitVertical: ImageVector
     get() = gitCommitVerticalProvider.create()
 
 private val gitCommitVerticalPath0 = PathParser().parsePathString("M12 3v6").toNodes()

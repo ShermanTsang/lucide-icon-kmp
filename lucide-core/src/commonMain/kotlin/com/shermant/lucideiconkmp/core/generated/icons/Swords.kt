@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val swordsProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Swords: ImageVector
+    get() = swordsProvider.create()
+
+val LucideIcons.Swords: ImageVector
     get() = swordsProvider.create()
 
 private val swordsPath0 = PathParser().parsePathString("M 14.5 17.5 L 3 6 L 3 3 L 6 3 L 17.5 14.5").toNodes()

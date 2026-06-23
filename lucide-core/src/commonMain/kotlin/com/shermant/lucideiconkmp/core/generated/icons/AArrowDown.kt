@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val aArrowDownProvider = ParameterizedIconProvider { parameters ->
 }
 
 val AArrowDown: ImageVector
+    get() = aArrowDownProvider.create()
+
+val LucideIcons.AArrowDown: ImageVector
     get() = aArrowDownProvider.create()
 
 private val aArrowDownPath0 = PathParser().parsePathString("m14 12 4 4 4-4").toNodes()

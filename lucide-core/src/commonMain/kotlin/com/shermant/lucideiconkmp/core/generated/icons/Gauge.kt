@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val gaugeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Gauge: ImageVector
+    get() = gaugeProvider.create()
+
+val LucideIcons.Gauge: ImageVector
     get() = gaugeProvider.create()
 
 private val gaugePath0 = PathParser().parsePathString("m12 14 4-4").toNodes()

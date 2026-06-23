@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val spellCheckProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SpellCheck: ImageVector
+    get() = spellCheckProvider.create()
+
+val LucideIcons.SpellCheck: ImageVector
     get() = spellCheckProvider.create()
 
 private val spellCheckPath0 = PathParser().parsePathString("m6 16 6-12 6 12").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val undoDotProvider = ParameterizedIconProvider { parameters ->
 }
 
 val UndoDot: ImageVector
+    get() = undoDotProvider.create()
+
+val LucideIcons.UndoDot: ImageVector
     get() = undoDotProvider.create()
 
 private val undoDotPath0 = PathParser().parsePathString("M21 17a9 9 0 0 0-15-6.7L3 13").toNodes()

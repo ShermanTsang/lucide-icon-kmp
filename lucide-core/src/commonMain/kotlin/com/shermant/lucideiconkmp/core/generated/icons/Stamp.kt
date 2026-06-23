@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val stampProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Stamp: ImageVector
+    get() = stampProvider.create()
+
+val LucideIcons.Stamp: ImageVector
     get() = stampProvider.create()
 
 private val stampPath0 = PathParser().parsePathString("M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-6 0c0 2 1 2 1 3.5V13").toNodes()

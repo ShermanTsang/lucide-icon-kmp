@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val shoppingBasketProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ShoppingBasket: ImageVector
+    get() = shoppingBasketProvider.create()
+
+val LucideIcons.ShoppingBasket: ImageVector
     get() = shoppingBasketProvider.create()
 
 private val shoppingBasketPath0 = PathParser().parsePathString("m15 11-1 9").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val monitorPauseProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MonitorPause: ImageVector
+    get() = monitorPauseProvider.create()
+
+val LucideIcons.MonitorPause: ImageVector
     get() = monitorPauseProvider.create()
 
 private val monitorPausePath0 = PathParser().parsePathString("M10 13V7").toNodes()

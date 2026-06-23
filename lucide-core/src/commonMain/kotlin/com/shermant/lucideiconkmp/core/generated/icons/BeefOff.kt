@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val beefOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BeefOff: ImageVector
+    get() = beefOffProvider.create()
+
+val LucideIcons.BeefOff: ImageVector
     get() = beefOffProvider.create()
 
 private val beefOffPath0 = PathParser().parsePathString("M11.771 6.109a2.5 2.5 0 0 1 3.12 3.12").toNodes()

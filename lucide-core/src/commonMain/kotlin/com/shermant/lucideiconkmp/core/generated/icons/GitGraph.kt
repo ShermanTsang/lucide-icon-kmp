@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val gitGraphProvider = ParameterizedIconProvider { parameters ->
 }
 
 val GitGraph: ImageVector
+    get() = gitGraphProvider.create()
+
+val LucideIcons.GitGraph: ImageVector
     get() = gitGraphProvider.create()
 
 private val gitGraphPath0 = PathParser().parsePathString("M 8 6 A 3 3 0 1 0 2 6 A 3 3 0 1 0 8 6 Z").toNodes()

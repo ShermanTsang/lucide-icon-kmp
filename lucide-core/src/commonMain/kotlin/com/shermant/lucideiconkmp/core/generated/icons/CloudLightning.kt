@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cloudLightningProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CloudLightning: ImageVector
+    get() = cloudLightningProvider.create()
+
+val LucideIcons.CloudLightning: ImageVector
     get() = cloudLightningProvider.create()
 
 private val cloudLightningPath0 = PathParser().parsePathString("M6 16.326A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 .5 8.973").toNodes()

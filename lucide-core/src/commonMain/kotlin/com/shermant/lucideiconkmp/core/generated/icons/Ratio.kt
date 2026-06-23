@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val ratioProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Ratio: ImageVector
+    get() = ratioProvider.create()
+
+val LucideIcons.Ratio: ImageVector
     get() = ratioProvider.create()
 
 private val ratioPath0 = PathParser().parsePathString("M 8 2 H 16 A 2 2 0 0 1 18 4 V 20 A 2 2 0 0 1 16 22 H 8 A 2 2 0 0 1 6 20 V 4 A 2 2 0 0 1 8 2 Z").toNodes()

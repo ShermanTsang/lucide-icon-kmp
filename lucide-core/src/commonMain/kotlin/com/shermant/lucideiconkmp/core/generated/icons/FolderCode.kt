@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val folderCodeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FolderCode: ImageVector
+    get() = folderCodeProvider.create()
+
+val LucideIcons.FolderCode: ImageVector
     get() = folderCodeProvider.create()
 
 private val folderCodePath0 = PathParser().parsePathString("M10 10.5 8 13l2 2.5").toNodes()

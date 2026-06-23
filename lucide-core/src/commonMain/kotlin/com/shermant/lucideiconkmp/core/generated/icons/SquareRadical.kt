@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val squareRadicalProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SquareRadical: ImageVector
+    get() = squareRadicalProvider.create()
+
+val LucideIcons.SquareRadical: ImageVector
     get() = squareRadicalProvider.create()
 
 private val squareRadicalPath0 = PathParser().parsePathString("M7 12h2l2 5 2-10h4").toNodes()

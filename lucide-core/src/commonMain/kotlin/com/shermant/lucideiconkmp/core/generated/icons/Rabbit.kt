@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val rabbitProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Rabbit: ImageVector
+    get() = rabbitProvider.create()
+
+val LucideIcons.Rabbit: ImageVector
     get() = rabbitProvider.create()
 
 private val rabbitPath0 = PathParser().parsePathString("M13 16a3 3 0 0 1 2.24 5").toNodes()

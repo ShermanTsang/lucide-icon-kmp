@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val unfoldHorizontalProvider = ParameterizedIconProvider { parameters ->
 }
 
 val UnfoldHorizontal: ImageVector
+    get() = unfoldHorizontalProvider.create()
+
+val LucideIcons.UnfoldHorizontal: ImageVector
     get() = unfoldHorizontalProvider.create()
 
 private val unfoldHorizontalPath0 = PathParser().parsePathString("M16 12h6").toNodes()

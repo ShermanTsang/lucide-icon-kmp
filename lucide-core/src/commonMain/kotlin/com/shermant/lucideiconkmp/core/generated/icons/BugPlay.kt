@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val bugPlayProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BugPlay: ImageVector
+    get() = bugPlayProvider.create()
+
+val LucideIcons.BugPlay: ImageVector
     get() = bugPlayProvider.create()
 
 private val bugPlayPath0 = PathParser().parsePathString("M10 19.655A6 6 0 0 1 6 14v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 3.97").toNodes()

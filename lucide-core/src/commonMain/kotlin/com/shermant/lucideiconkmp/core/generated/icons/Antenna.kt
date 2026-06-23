@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val antennaProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Antenna: ImageVector
+    get() = antennaProvider.create()
+
+val LucideIcons.Antenna: ImageVector
     get() = antennaProvider.create()
 
 private val antennaPath0 = PathParser().parsePathString("M2 12 7 2").toNodes()

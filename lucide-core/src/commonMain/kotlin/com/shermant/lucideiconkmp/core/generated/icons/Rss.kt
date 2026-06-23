@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val rssProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Rss: ImageVector
+    get() = rssProvider.create()
+
+val LucideIcons.Rss: ImageVector
     get() = rssProvider.create()
 
 private val rssPath0 = PathParser().parsePathString("M4 11a9 9 0 0 1 9 9").toNodes()

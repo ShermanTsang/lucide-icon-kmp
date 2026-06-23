@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val scanFaceProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ScanFace: ImageVector
+    get() = scanFaceProvider.create()
+
+val LucideIcons.ScanFace: ImageVector
     get() = scanFaceProvider.create()
 
 private val scanFacePath0 = PathParser().parsePathString("M3 7V5a2 2 0 0 1 2-2h2").toNodes()

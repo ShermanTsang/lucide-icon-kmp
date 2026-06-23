@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val searchAlertProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SearchAlert: ImageVector
+    get() = searchAlertProvider.create()
+
+val LucideIcons.SearchAlert: ImageVector
     get() = searchAlertProvider.create()
 
 private val searchAlertPath0 = PathParser().parsePathString("M 19 11 A 8 8 0 1 0 3 11 A 8 8 0 1 0 19 11 Z").toNodes()

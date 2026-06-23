@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val webhookProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Webhook: ImageVector
+    get() = webhookProvider.create()
+
+val LucideIcons.Webhook: ImageVector
     get() = webhookProvider.create()
 
 private val webhookPath0 = PathParser().parsePathString("M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val globeOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val GlobeOff: ImageVector
+    get() = globeOffProvider.create()
+
+val LucideIcons.GlobeOff: ImageVector
     get() = globeOffProvider.create()
 
 private val globeOffPath0 = PathParser().parsePathString("M10.114 4.462A14.5 14.5 0 0 1 12 2a10 10 0 0 1 9.313 13.643").toNodes()

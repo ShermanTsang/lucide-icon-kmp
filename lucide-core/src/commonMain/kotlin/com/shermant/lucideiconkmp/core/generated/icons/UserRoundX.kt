@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val userRoundXProvider = ParameterizedIconProvider { parameters ->
 }
 
 val UserRoundX: ImageVector
+    get() = userRoundXProvider.create()
+
+val LucideIcons.UserRoundX: ImageVector
     get() = userRoundXProvider.create()
 
 private val userRoundXPath0 = PathParser().parsePathString("M2 21a8 8 0 0 1 11.873-7").toNodes()

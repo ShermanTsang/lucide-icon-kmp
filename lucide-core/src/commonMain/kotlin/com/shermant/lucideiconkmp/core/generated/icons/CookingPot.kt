@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cookingPotProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CookingPot: ImageVector
+    get() = cookingPotProvider.create()
+
+val LucideIcons.CookingPot: ImageVector
     get() = cookingPotProvider.create()
 
 private val cookingPotPath0 = PathParser().parsePathString("M2 12h20").toNodes()

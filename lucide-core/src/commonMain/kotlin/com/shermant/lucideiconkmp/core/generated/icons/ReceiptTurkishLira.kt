@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val receiptTurkishLiraProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ReceiptTurkishLira: ImageVector
+    get() = receiptTurkishLiraProvider.create()
+
+val LucideIcons.ReceiptTurkishLira: ImageVector
     get() = receiptTurkishLiraProvider.create()
 
 private val receiptTurkishLiraPath0 = PathParser().parsePathString("M10 7v10a5 5 0 0 0 5-5").toNodes()

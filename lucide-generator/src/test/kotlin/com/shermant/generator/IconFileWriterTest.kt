@@ -43,8 +43,10 @@ class IconFileWriterTest {
 
         val content = Files.readString(target)
         assertTrue(content.contains("val activityProvider"))
+        assertTrue(content.contains("import com.shermant.lucideiconkmp.core.registry.LucideIcons"))
         assertTrue(content.contains("import com.shermant.lucideiconkmp.core.registry.create"))
         assertTrue(content.contains("val Activity: ImageVector"))
+        assertTrue(content.contains("val LucideIcons.Activity: ImageVector"))
         assertTrue(content.contains("get() = activityProvider.create()"))
         assertTrue(content.contains("M22 12H18L15 21L9 3L6 12H2"))
         assertTrue(content.contains("PathParser().parsePathString"))

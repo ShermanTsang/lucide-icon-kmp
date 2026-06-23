@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val printerCheckProvider = ParameterizedIconProvider { parameters ->
 }
 
 val PrinterCheck: ImageVector
+    get() = printerCheckProvider.create()
+
+val LucideIcons.PrinterCheck: ImageVector
     get() = printerCheckProvider.create()
 
 private val printerCheckPath0 = PathParser().parsePathString("M13.5 22H7a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v.5").toNodes()

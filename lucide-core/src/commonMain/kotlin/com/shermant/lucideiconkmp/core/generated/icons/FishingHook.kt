@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val fishingHookProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FishingHook: ImageVector
+    get() = fishingHookProvider.create()
+
+val LucideIcons.FishingHook: ImageVector
     get() = fishingHookProvider.create()
 
 private val fishingHookPath0 = PathParser().parsePathString("m17.586 11.414-5.93 5.93a1 1 0 0 1-8-8l3.137-3.137a.707.707 0 0 1 1.207.5V10").toNodes()

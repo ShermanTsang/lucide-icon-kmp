@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val carFrontProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CarFront: ImageVector
+    get() = carFrontProvider.create()
+
+val LucideIcons.CarFront: ImageVector
     get() = carFrontProvider.create()
 
 private val carFrontPath0 = PathParser().parsePathString("m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8").toNodes()

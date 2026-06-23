@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val octagonXProvider = ParameterizedIconProvider { parameters ->
 }
 
 val OctagonX: ImageVector
+    get() = octagonXProvider.create()
+
+val LucideIcons.OctagonX: ImageVector
     get() = octagonXProvider.create()
 
 private val octagonXPath0 = PathParser().parsePathString("m15 9-6 6").toNodes()

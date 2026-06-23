@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val slidersVerticalProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SlidersVertical: ImageVector
+    get() = slidersVerticalProvider.create()
+
+val LucideIcons.SlidersVertical: ImageVector
     get() = slidersVerticalProvider.create()
 
 private val slidersVerticalPath0 = PathParser().parsePathString("M10 8h4").toNodes()

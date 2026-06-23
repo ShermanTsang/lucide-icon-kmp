@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val libraryBigProvider = ParameterizedIconProvider { parameters ->
 }
 
 val LibraryBig: ImageVector
+    get() = libraryBigProvider.create()
+
+val LucideIcons.LibraryBig: ImageVector
     get() = libraryBigProvider.create()
 
 private val libraryBigPath0 = PathParser().parsePathString("M 4 3 H 10 A 1 1 0 0 1 11 4 V 20 A 1 1 0 0 1 10 21 H 4 A 1 1 0 0 1 3 20 V 4 A 1 1 0 0 1 4 3 Z").toNodes()

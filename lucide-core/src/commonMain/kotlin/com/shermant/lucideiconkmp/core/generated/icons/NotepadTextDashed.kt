@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val notepadTextDashedProvider = ParameterizedIconProvider { parameters ->
 }
 
 val NotepadTextDashed: ImageVector
+    get() = notepadTextDashedProvider.create()
+
+val LucideIcons.NotepadTextDashed: ImageVector
     get() = notepadTextDashedProvider.create()
 
 private val notepadTextDashedPath0 = PathParser().parsePathString("M8 2v4").toNodes()

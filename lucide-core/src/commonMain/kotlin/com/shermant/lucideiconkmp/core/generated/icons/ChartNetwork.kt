@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val chartNetworkProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ChartNetwork: ImageVector
+    get() = chartNetworkProvider.create()
+
+val LucideIcons.ChartNetwork: ImageVector
     get() = chartNetworkProvider.create()
 
 private val chartNetworkPath0 = PathParser().parsePathString("m13.11 7.664 1.78 2.672").toNodes()

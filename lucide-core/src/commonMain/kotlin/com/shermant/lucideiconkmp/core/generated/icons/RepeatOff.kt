@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val repeatOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val RepeatOff: ImageVector
+    get() = repeatOffProvider.create()
+
+val LucideIcons.RepeatOff: ImageVector
     get() = repeatOffProvider.create()
 
 private val repeatOffPath0 = PathParser().parsePathString("M11.656 6H21l-4-4").toNodes()

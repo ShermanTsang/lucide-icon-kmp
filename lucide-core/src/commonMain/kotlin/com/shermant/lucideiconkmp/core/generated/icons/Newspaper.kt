@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val newspaperProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Newspaper: ImageVector
+    get() = newspaperProvider.create()
+
+val LucideIcons.Newspaper: ImageVector
     get() = newspaperProvider.create()
 
 private val newspaperPath0 = PathParser().parsePathString("M15 18h-5").toNodes()

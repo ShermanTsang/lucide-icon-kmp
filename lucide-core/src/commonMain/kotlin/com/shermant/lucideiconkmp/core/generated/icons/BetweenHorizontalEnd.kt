@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val betweenHorizontalEndProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BetweenHorizontalEnd: ImageVector
+    get() = betweenHorizontalEndProvider.create()
+
+val LucideIcons.BetweenHorizontalEnd: ImageVector
     get() = betweenHorizontalEndProvider.create()
 
 private val betweenHorizontalEndPath0 = PathParser().parsePathString("M 4 3 H 15 A 1 1 0 0 1 16 4 V 9 A 1 1 0 0 1 15 10 H 4 A 1 1 0 0 1 3 9 V 4 A 1 1 0 0 1 4 3 Z").toNodes()

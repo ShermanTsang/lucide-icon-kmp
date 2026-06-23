@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val headphoneOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val HeadphoneOff: ImageVector
+    get() = headphoneOffProvider.create()
+
+val LucideIcons.HeadphoneOff: ImageVector
     get() = headphoneOffProvider.create()
 
 private val headphoneOffPath0 = PathParser().parsePathString("M21 14h-1.343").toNodes()

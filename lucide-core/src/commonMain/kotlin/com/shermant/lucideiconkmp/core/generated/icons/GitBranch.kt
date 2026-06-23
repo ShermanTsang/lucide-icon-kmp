@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val gitBranchProvider = ParameterizedIconProvider { parameters ->
 }
 
 val GitBranch: ImageVector
+    get() = gitBranchProvider.create()
+
+val LucideIcons.GitBranch: ImageVector
     get() = gitBranchProvider.create()
 
 private val gitBranchPath0 = PathParser().parsePathString("M15 6a9 9 0 0 0-9 9V3").toNodes()

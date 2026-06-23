@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val chartColumnIncreasingProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ChartColumnIncreasing: ImageVector
+    get() = chartColumnIncreasingProvider.create()
+
+val LucideIcons.ChartColumnIncreasing: ImageVector
     get() = chartColumnIncreasingProvider.create()
 
 private val chartColumnIncreasingPath0 = PathParser().parsePathString("M13 17V9").toNodes()

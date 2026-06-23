@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val brainCircuitProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BrainCircuit: ImageVector
+    get() = brainCircuitProvider.create()
+
+val LucideIcons.BrainCircuit: ImageVector
     get() = brainCircuitProvider.create()
 
 private val brainCircuitPath0 = PathParser().parsePathString("M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z").toNodes()

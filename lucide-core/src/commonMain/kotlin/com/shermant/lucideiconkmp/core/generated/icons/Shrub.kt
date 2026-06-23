@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val shrubProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Shrub: ImageVector
+    get() = shrubProvider.create()
+
+val LucideIcons.Shrub: ImageVector
     get() = shrubProvider.create()
 
 private val shrubPath0 = PathParser().parsePathString("M12 22v-5.172a2 2 0 0 0-.586-1.414L9.5 13.5").toNodes()

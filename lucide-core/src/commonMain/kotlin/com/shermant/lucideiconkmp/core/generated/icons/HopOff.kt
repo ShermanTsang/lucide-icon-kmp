@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val hopOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val HopOff: ImageVector
+    get() = hopOffProvider.create()
+
+val LucideIcons.HopOff: ImageVector
     get() = hopOffProvider.create()
 
 private val hopOffPath0 = PathParser().parsePathString("M10.82 16.12c1.69.6 3.91.79 5.18.85.28.01.53-.09.7-.27").toNodes()

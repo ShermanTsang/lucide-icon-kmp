@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val pickaxeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Pickaxe: ImageVector
+    get() = pickaxeProvider.create()
+
+val LucideIcons.Pickaxe: ImageVector
     get() = pickaxeProvider.create()
 
 private val pickaxePath0 = PathParser().parsePathString("m14 13-8.381 8.38a1 1 0 0 1-3.001-3L11 9.999").toNodes()

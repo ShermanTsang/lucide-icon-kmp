@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val batteryChargingProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BatteryCharging: ImageVector
+    get() = batteryChargingProvider.create()
+
+val LucideIcons.BatteryCharging: ImageVector
     get() = batteryChargingProvider.create()
 
 private val batteryChargingPath0 = PathParser().parsePathString("m11 7-3 5h4l-3 5").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val rockingChairProvider = ParameterizedIconProvider { parameters ->
 }
 
 val RockingChair: ImageVector
+    get() = rockingChairProvider.create()
+
+val LucideIcons.RockingChair: ImageVector
     get() = rockingChairProvider.create()
 
 private val rockingChairPath0 = PathParser().parsePathString("m15 13 3.708 7.416").toNodes()

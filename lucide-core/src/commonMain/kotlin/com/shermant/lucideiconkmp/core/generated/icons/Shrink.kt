@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val shrinkProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Shrink: ImageVector
+    get() = shrinkProvider.create()
+
+val LucideIcons.Shrink: ImageVector
     get() = shrinkProvider.create()
 
 private val shrinkPath0 = PathParser().parsePathString("m15 15 6 6m-6-6v4.8m0-4.8h4.8").toNodes()

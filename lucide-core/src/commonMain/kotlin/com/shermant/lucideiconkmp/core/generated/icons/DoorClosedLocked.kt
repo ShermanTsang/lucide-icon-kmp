@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val doorClosedLockedProvider = ParameterizedIconProvider { parameters ->
 }
 
 val DoorClosedLocked: ImageVector
+    get() = doorClosedLockedProvider.create()
+
+val LucideIcons.DoorClosedLocked: ImageVector
     get() = doorClosedLockedProvider.create()
 
 private val doorClosedLockedPath0 = PathParser().parsePathString("M10 12h.01").toNodes()

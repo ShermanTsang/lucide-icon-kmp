@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val smartphoneNfcProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SmartphoneNfc: ImageVector
+    get() = smartphoneNfcProvider.create()
+
+val LucideIcons.SmartphoneNfc: ImageVector
     get() = smartphoneNfcProvider.create()
 
 private val smartphoneNfcPath0 = PathParser().parsePathString("M 3 6 H 8 A 1 1 0 0 1 9 7 V 17 A 1 1 0 0 1 8 18 H 3 A 1 1 0 0 1 2 17 V 7 A 1 1 0 0 1 3 6 Z").toNodes()

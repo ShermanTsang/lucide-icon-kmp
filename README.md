@@ -119,6 +119,26 @@ Icon(
 )
 ```
 
+If you prefer a namespaced style, you can also use `LucideIcons.Activity`:
+
+```kotlin
+import androidx.compose.material3.Icon
+import com.shermant.lucideiconkmp.core.generated.icons.*
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
+
+Icon(
+    imageVector = LucideIcons.Activity,
+    contentDescription = "Activity",
+)
+```
+
+Both APIs remain available:
+
+- `Activity`
+- `LucideIcons.Activity`
+
+Note: both direct icon access styles still require the core artifact, not just the compose artifact.
+
 For example:
 
 - `Activity.kt` exports `Activity`

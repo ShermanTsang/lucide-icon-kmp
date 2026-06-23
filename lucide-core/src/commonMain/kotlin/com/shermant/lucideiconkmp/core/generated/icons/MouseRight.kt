@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val mouseRightProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MouseRight: ImageVector
+    get() = mouseRightProvider.create()
+
+val LucideIcons.MouseRight: ImageVector
     get() = mouseRightProvider.create()
 
 private val mouseRightPath0 = PathParser().parsePathString("M12 7.318V10").toNodes()

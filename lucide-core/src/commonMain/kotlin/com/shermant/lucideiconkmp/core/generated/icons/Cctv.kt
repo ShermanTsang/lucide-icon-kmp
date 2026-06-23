@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cctvProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Cctv: ImageVector
+    get() = cctvProvider.create()
+
+val LucideIcons.Cctv: ImageVector
     get() = cctvProvider.create()
 
 private val cctvPath0 = PathParser().parsePathString("M16.75 12h3.632a1 1 0 0 1 .894 1.447l-2.034 4.069a1 1 0 0 1-1.708.134l-2.124-2.97").toNodes()

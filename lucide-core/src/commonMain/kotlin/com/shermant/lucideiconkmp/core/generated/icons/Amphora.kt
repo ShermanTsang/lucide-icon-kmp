@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val amphoraProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Amphora: ImageVector
+    get() = amphoraProvider.create()
+
+val LucideIcons.Amphora: ImageVector
     get() = amphoraProvider.create()
 
 private val amphoraPath0 = PathParser().parsePathString("M10 2v5.632c0 .424-.272.795-.653.982A6 6 0 0 0 6 14c.006 4 3 7 5 8").toNodes()

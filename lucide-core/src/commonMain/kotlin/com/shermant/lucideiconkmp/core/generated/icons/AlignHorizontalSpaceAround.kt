@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val alignHorizontalSpaceAroundProvider = ParameterizedIconProvider { parameters 
 }
 
 val AlignHorizontalSpaceAround: ImageVector
+    get() = alignHorizontalSpaceAroundProvider.create()
+
+val LucideIcons.AlignHorizontalSpaceAround: ImageVector
     get() = alignHorizontalSpaceAroundProvider.create()
 
 private val alignHorizontalSpaceAroundPath0 = PathParser().parsePathString("M 11 7 H 13 A 2 2 0 0 1 15 9 V 15 A 2 2 0 0 1 13 17 H 11 A 2 2 0 0 1 9 15 V 9 A 2 2 0 0 1 11 7 Z").toNodes()

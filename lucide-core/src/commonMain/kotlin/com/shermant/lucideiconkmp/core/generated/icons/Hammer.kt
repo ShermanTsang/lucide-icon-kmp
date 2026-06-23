@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val hammerProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Hammer: ImageVector
+    get() = hammerProvider.create()
+
+val LucideIcons.Hammer: ImageVector
     get() = hammerProvider.create()
 
 private val hammerPath0 = PathParser().parsePathString("m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9").toNodes()

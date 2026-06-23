@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val beanOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BeanOff: ImageVector
+    get() = beanOffProvider.create()
+
+val LucideIcons.BeanOff: ImageVector
     get() = beanOffProvider.create()
 
 private val beanOffPath0 = PathParser().parsePathString("M9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22a13.96 13.96 0 0 0 9.9-4.1").toNodes()

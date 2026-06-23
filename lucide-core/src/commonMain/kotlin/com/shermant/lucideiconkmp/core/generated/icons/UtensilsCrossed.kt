@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val utensilsCrossedProvider = ParameterizedIconProvider { parameters ->
 }
 
 val UtensilsCrossed: ImageVector
+    get() = utensilsCrossedProvider.create()
+
+val LucideIcons.UtensilsCrossed: ImageVector
     get() = utensilsCrossedProvider.create()
 
 private val utensilsCrossedPath0 = PathParser().parsePathString("m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8").toNodes()

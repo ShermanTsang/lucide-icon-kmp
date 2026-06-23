@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val radioTowerProvider = ParameterizedIconProvider { parameters ->
 }
 
 val RadioTower: ImageVector
+    get() = radioTowerProvider.create()
+
+val LucideIcons.RadioTower: ImageVector
     get() = radioTowerProvider.create()
 
 private val radioTowerPath0 = PathParser().parsePathString("M4.9 16.1C1 12.2 1 5.8 4.9 1.9").toNodes()

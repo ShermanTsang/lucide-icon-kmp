@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val chartCandlestickProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ChartCandlestick: ImageVector
+    get() = chartCandlestickProvider.create()
+
+val LucideIcons.ChartCandlestick: ImageVector
     get() = chartCandlestickProvider.create()
 
 private val chartCandlestickPath0 = PathParser().parsePathString("M9 5v4").toNodes()

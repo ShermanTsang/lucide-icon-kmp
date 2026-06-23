@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val earthLockProvider = ParameterizedIconProvider { parameters ->
 }
 
 val EarthLock: ImageVector
+    get() = earthLockProvider.create()
+
+val LucideIcons.EarthLock: ImageVector
     get() = earthLockProvider.create()
 
 private val earthLockPath0 = PathParser().parsePathString("M7 3.34V5a3 3 0 0 0 3 3").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val squareDashedBottomProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SquareDashedBottom: ImageVector
+    get() = squareDashedBottomProvider.create()
+
+val LucideIcons.SquareDashedBottom: ImageVector
     get() = squareDashedBottomProvider.create()
 
 private val squareDashedBottomPath0 = PathParser().parsePathString("M5 21a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2").toNodes()

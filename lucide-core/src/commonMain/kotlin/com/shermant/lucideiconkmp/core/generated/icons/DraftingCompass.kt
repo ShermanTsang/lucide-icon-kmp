@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val draftingCompassProvider = ParameterizedIconProvider { parameters ->
 }
 
 val DraftingCompass: ImageVector
+    get() = draftingCompassProvider.create()
+
+val LucideIcons.DraftingCompass: ImageVector
     get() = draftingCompassProvider.create()
 
 private val draftingCompassPath0 = PathParser().parsePathString("m12.99 6.74 1.93 3.44").toNodes()

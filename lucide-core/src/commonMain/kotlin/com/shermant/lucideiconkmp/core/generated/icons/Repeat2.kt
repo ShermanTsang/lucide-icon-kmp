@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val repeat2Provider = ParameterizedIconProvider { parameters ->
 }
 
 val Repeat2: ImageVector
+    get() = repeat2Provider.create()
+
+val LucideIcons.Repeat2: ImageVector
     get() = repeat2Provider.create()
 
 private val repeat2Path0 = PathParser().parsePathString("m2 9 3-3 3 3").toNodes()

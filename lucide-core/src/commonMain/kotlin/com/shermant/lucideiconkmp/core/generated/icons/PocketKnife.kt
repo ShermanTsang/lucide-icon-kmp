@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val pocketKnifeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val PocketKnife: ImageVector
+    get() = pocketKnifeProvider.create()
+
+val LucideIcons.PocketKnife: ImageVector
     get() = pocketKnifeProvider.create()
 
 private val pocketKnifePath0 = PathParser().parsePathString("M3 2v1c0 1 2 1 2 2S3 6 3 7s2 1 2 2-2 1-2 2 2 1 2 2").toNodes()

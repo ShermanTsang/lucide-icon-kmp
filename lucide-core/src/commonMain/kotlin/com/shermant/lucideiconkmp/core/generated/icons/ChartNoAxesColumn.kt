@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val chartNoAxesColumnProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ChartNoAxesColumn: ImageVector
+    get() = chartNoAxesColumnProvider.create()
+
+val LucideIcons.ChartNoAxesColumn: ImageVector
     get() = chartNoAxesColumnProvider.create()
 
 private val chartNoAxesColumnPath0 = PathParser().parsePathString("M5 21v-6").toNodes()

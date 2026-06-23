@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val recycleProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Recycle: ImageVector
+    get() = recycleProvider.create()
+
+val LucideIcons.Recycle: ImageVector
     get() = recycleProvider.create()
 
 private val recyclePath0 = PathParser().parsePathString("M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5").toNodes()

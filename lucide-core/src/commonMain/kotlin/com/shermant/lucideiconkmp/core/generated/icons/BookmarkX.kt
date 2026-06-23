@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val bookmarkXProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BookmarkX: ImageVector
+    get() = bookmarkXProvider.create()
+
+val LucideIcons.BookmarkX: ImageVector
     get() = bookmarkXProvider.create()
 
 private val bookmarkXPath0 = PathParser().parsePathString("m14.5 7.5-5 5").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val trainFrontTunnelProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TrainFrontTunnel: ImageVector
+    get() = trainFrontTunnelProvider.create()
+
+val LucideIcons.TrainFrontTunnel: ImageVector
     get() = trainFrontTunnelProvider.create()
 
 private val trainFrontTunnelPath0 = PathParser().parsePathString("M2 22V12a10 10 0 1 1 20 0v10").toNodes()

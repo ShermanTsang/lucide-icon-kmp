@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val brushCleaningProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BrushCleaning: ImageVector
+    get() = brushCleaningProvider.create()
+
+val LucideIcons.BrushCleaning: ImageVector
     get() = brushCleaningProvider.create()
 
 private val brushCleaningPath0 = PathParser().parsePathString("m16 22-1-4").toNodes()

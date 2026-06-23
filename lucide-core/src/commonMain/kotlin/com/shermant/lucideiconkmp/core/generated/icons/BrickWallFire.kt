@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val brickWallFireProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BrickWallFire: ImageVector
+    get() = brickWallFireProvider.create()
+
+val LucideIcons.BrickWallFire: ImageVector
     get() = brickWallFireProvider.create()
 
 private val brickWallFirePath0 = PathParser().parsePathString("M16 3v2.107").toNodes()

@@ -32,6 +32,7 @@ class IconFileWriter {
             appendLine("import androidx.compose.ui.graphics.vector.PathParser")
             appendLine("import androidx.compose.ui.unit.dp")
             appendLine("import com.shermant.lucideiconkmp.core.registry.IconRenderParameters")
+            appendLine("import com.shermant.lucideiconkmp.core.registry.LucideIcons")
             appendLine("import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider")
             appendLine("import com.shermant.lucideiconkmp.core.registry.create")
             appendLine()
@@ -44,6 +45,13 @@ class IconFileWriter {
             appendLine("}")
             appendLine()
             appendLine("val $iconIdentifier: ImageVector")
+            appendLine(
+                "    get() = ${
+                    icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)
+                }Provider.create()"
+            )
+            appendLine()
+            appendLine("val LucideIcons.$iconIdentifier: ImageVector")
             appendLine(
                 "    get() = ${
                     icon.name.toPascalCaseIdentifier().replaceFirstChar(Char::lowercaseChar)

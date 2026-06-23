@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val userRoundKeyProvider = ParameterizedIconProvider { parameters ->
 }
 
 val UserRoundKey: ImageVector
+    get() = userRoundKeyProvider.create()
+
+val LucideIcons.UserRoundKey: ImageVector
     get() = userRoundKeyProvider.create()
 
 private val userRoundKeyPath0 = PathParser().parsePathString("M19 11v6").toNodes()

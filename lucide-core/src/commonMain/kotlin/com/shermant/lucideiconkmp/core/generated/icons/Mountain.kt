@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val mountainProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Mountain: ImageVector
+    get() = mountainProvider.create()
+
+val LucideIcons.Mountain: ImageVector
     get() = mountainProvider.create()
 
 private val mountainPath0 = PathParser().parsePathString("m8 3 4 8 5-5 5 15H2L8 3z").toNodes()

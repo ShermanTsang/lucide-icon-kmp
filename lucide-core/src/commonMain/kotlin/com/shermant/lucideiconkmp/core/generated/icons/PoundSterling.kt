@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val poundSterlingProvider = ParameterizedIconProvider { parameters ->
 }
 
 val PoundSterling: ImageVector
+    get() = poundSterlingProvider.create()
+
+val LucideIcons.PoundSterling: ImageVector
     get() = poundSterlingProvider.create()
 
 private val poundSterlingPath0 = PathParser().parsePathString("M18 7c0-5.333-8-5.333-8 0").toNodes()

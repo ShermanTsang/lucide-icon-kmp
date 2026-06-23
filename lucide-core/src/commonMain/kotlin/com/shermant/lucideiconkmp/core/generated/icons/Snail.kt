@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val snailProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Snail: ImageVector
+    get() = snailProvider.create()
+
+val LucideIcons.Snail: ImageVector
     get() = snailProvider.create()
 
 private val snailPath0 = PathParser().parsePathString("M2 13a6 6 0 1 0 12 0 4 4 0 1 0-8 0 2 2 0 0 0 4 0").toNodes()

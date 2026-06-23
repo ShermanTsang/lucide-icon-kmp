@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val zodiacGeminiProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ZodiacGemini: ImageVector
+    get() = zodiacGeminiProvider.create()
+
+val LucideIcons.ZodiacGemini: ImageVector
     get() = zodiacGeminiProvider.create()
 
 private val zodiacGeminiPath0 = PathParser().parsePathString("M16 4.525v14.948").toNodes()

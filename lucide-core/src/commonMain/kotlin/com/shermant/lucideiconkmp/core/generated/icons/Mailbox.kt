@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val mailboxProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Mailbox: ImageVector
+    get() = mailboxProvider.create()
+
+val LucideIcons.Mailbox: ImageVector
     get() = mailboxProvider.create()
 
 private val mailboxPath0 = PathParser().parsePathString("M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z").toNodes()

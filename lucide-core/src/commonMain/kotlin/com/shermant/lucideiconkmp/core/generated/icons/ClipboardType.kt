@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val clipboardTypeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ClipboardType: ImageVector
+    get() = clipboardTypeProvider.create()
+
+val LucideIcons.ClipboardType: ImageVector
     get() = clipboardTypeProvider.create()
 
 private val clipboardTypePath0 = PathParser().parsePathString("M 9 2 H 15 A 1 1 0 0 1 16 3 V 5 A 1 1 0 0 1 15 6 H 9 A 1 1 0 0 1 8 5 V 3 A 1 1 0 0 1 9 2 Z").toNodes()

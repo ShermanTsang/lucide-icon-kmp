@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cigaretteOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CigaretteOff: ImageVector
+    get() = cigaretteOffProvider.create()
+
+val LucideIcons.CigaretteOff: ImageVector
     get() = cigaretteOffProvider.create()
 
 private val cigaretteOffPath0 = PathParser().parsePathString("M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13").toNodes()

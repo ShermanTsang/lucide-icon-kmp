@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val croissantProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Croissant: ImageVector
+    get() = croissantProvider.create()
+
+val LucideIcons.Croissant: ImageVector
     get() = croissantProvider.create()
 
 private val croissantPath0 = PathParser().parsePathString("M10.2 18H4.774a1.5 1.5 0 0 1-1.352-.97 11 11 0 0 1 .132-6.487").toNodes()

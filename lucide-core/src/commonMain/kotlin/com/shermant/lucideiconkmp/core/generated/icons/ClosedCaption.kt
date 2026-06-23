@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val closedCaptionProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ClosedCaption: ImageVector
+    get() = closedCaptionProvider.create()
+
+val LucideIcons.ClosedCaption: ImageVector
     get() = closedCaptionProvider.create()
 
 private val closedCaptionPath0 = PathParser().parsePathString("M10 9.17a3 3 0 1 0 0 5.66").toNodes()

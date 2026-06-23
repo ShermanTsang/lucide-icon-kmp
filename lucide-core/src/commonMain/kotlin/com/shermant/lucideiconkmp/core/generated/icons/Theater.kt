@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val theaterProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Theater: ImageVector
+    get() = theaterProvider.create()
+
+val LucideIcons.Theater: ImageVector
     get() = theaterProvider.create()
 
 private val theaterPath0 = PathParser().parsePathString("M2 10s3-3 3-8").toNodes()

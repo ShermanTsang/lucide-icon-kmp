@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val rulerDimensionLineProvider = ParameterizedIconProvider { parameters ->
 }
 
 val RulerDimensionLine: ImageVector
+    get() = rulerDimensionLineProvider.create()
+
+val LucideIcons.RulerDimensionLine: ImageVector
     get() = rulerDimensionLineProvider.create()
 
 private val rulerDimensionLinePath0 = PathParser().parsePathString("M10 15v-3").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val circleFadingArrowUpProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CircleFadingArrowUp: ImageVector
+    get() = circleFadingArrowUpProvider.create()
+
+val LucideIcons.CircleFadingArrowUp: ImageVector
     get() = circleFadingArrowUpProvider.create()
 
 private val circleFadingArrowUpPath0 = PathParser().parsePathString("M12 2a10 10 0 0 1 7.38 16.75").toNodes()

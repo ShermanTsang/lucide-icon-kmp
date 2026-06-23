@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val moonStarProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MoonStar: ImageVector
+    get() = moonStarProvider.create()
+
+val LucideIcons.MoonStar: ImageVector
     get() = moonStarProvider.create()
 
 private val moonStarPath0 = PathParser().parsePathString("M18 5h4").toNodes()

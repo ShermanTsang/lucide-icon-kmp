@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val fishingRodProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FishingRod: ImageVector
+    get() = fishingRodProvider.create()
+
+val LucideIcons.FishingRod: ImageVector
     get() = fishingRodProvider.create()
 
 private val fishingRodPath0 = PathParser().parsePathString("M4 11h1").toNodes()

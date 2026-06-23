@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val flipVertical2Provider = ParameterizedIconProvider { parameters ->
 }
 
 val FlipVertical2: ImageVector
+    get() = flipVertical2Provider.create()
+
+val LucideIcons.FlipVertical2: ImageVector
     get() = flipVertical2Provider.create()
 
 private val flipVertical2Path0 = PathParser().parsePathString("m17 3-5 5-5-5h10").toNodes()

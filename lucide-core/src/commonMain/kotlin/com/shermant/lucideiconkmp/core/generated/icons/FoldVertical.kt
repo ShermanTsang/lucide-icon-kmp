@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val foldVerticalProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FoldVertical: ImageVector
+    get() = foldVerticalProvider.create()
+
+val LucideIcons.FoldVertical: ImageVector
     get() = foldVerticalProvider.create()
 
 private val foldVerticalPath0 = PathParser().parsePathString("M12 22v-6").toNodes()

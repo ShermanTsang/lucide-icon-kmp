@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val ratProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Rat: ImageVector
+    get() = ratProvider.create()
+
+val LucideIcons.Rat: ImageVector
     get() = ratProvider.create()
 
 private val ratPath0 = PathParser().parsePathString("M13 22H4a2 2 0 0 1 0-4h12").toNodes()

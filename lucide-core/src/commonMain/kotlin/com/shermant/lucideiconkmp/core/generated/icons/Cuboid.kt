@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cuboidProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Cuboid: ImageVector
+    get() = cuboidProvider.create()
+
+val LucideIcons.Cuboid: ImageVector
     get() = cuboidProvider.create()
 
 private val cuboidPath0 = PathParser().parsePathString("M10 22v-8").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val wifiPenProvider = ParameterizedIconProvider { parameters ->
 }
 
 val WifiPen: ImageVector
+    get() = wifiPenProvider.create()
+
+val LucideIcons.WifiPen: ImageVector
     get() = wifiPenProvider.create()
 
 private val wifiPenPath0 = PathParser().parsePathString("M2 8.82a15 15 0 0 1 20 0").toNodes()

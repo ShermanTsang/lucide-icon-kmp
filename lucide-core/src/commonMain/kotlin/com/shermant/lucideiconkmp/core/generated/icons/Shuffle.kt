@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val shuffleProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Shuffle: ImageVector
+    get() = shuffleProvider.create()
+
+val LucideIcons.Shuffle: ImageVector
     get() = shuffleProvider.create()
 
 private val shufflePath0 = PathParser().parsePathString("m18 14 4 4-4 4").toNodes()

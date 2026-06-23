@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cherryProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Cherry: ImageVector
+    get() = cherryProvider.create()
+
+val LucideIcons.Cherry: ImageVector
     get() = cherryProvider.create()
 
 private val cherryPath0 = PathParser().parsePathString("M2 17a5 5 0 0 0 10 0c0-2.76-2.5-5-5-3-2.5-2-5 .24-5 3Z").toNodes()

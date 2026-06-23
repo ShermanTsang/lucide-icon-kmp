@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val sandwichProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Sandwich: ImageVector
+    get() = sandwichProvider.create()
+
+val LucideIcons.Sandwich: ImageVector
     get() = sandwichProvider.create()
 
 private val sandwichPath0 = PathParser().parsePathString("m2.37 11.223 8.372-6.777a2 2 0 0 1 2.516 0l8.371 6.777").toNodes()

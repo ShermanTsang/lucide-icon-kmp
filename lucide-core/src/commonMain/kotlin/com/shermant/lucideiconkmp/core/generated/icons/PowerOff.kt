@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val powerOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val PowerOff: ImageVector
+    get() = powerOffProvider.create()
+
+val LucideIcons.PowerOff: ImageVector
     get() = powerOffProvider.create()
 
 private val powerOffPath0 = PathParser().parsePathString("M18.36 6.64A9 9 0 0 1 20.77 15").toNodes()

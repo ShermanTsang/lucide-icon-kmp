@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val ligatureProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Ligature: ImageVector
+    get() = ligatureProvider.create()
+
+val LucideIcons.Ligature: ImageVector
     get() = ligatureProvider.create()
 
 private val ligaturePath0 = PathParser().parsePathString("M14 12h2v8").toNodes()

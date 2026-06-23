@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val music3Provider = ParameterizedIconProvider { parameters ->
 }
 
 val Music3: ImageVector
+    get() = music3Provider.create()
+
+val LucideIcons.Music3: ImageVector
     get() = music3Provider.create()
 
 private val music3Path0 = PathParser().parsePathString("M 16 18 A 4 4 0 1 0 8 18 A 4 4 0 1 0 16 18 Z").toNodes()

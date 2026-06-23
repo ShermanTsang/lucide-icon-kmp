@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val receiptCentProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ReceiptCent: ImageVector
+    get() = receiptCentProvider.create()
+
+val LucideIcons.ReceiptCent: ImageVector
     get() = receiptCentProvider.create()
 
 private val receiptCentPath0 = PathParser().parsePathString("M12 7v10").toNodes()

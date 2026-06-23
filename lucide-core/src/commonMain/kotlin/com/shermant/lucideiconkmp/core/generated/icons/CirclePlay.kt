@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val circlePlayProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CirclePlay: ImageVector
+    get() = circlePlayProvider.create()
+
+val LucideIcons.CirclePlay: ImageVector
     get() = circlePlayProvider.create()
 
 private val circlePlayPath0 = PathParser().parsePathString("M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z").toNodes()

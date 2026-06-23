@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val shieldOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ShieldOff: ImageVector
+    get() = shieldOffProvider.create()
+
+val LucideIcons.ShieldOff: ImageVector
     get() = shieldOffProvider.create()
 
 private val shieldOffPath0 = PathParser().parsePathString("m2 2 20 20").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val circleCheckBigProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CircleCheckBig: ImageVector
+    get() = circleCheckBigProvider.create()
+
+val LucideIcons.CircleCheckBig: ImageVector
     get() = circleCheckBigProvider.create()
 
 private val circleCheckBigPath0 = PathParser().parsePathString("M21.801 10A10 10 0 1 1 17 3.335").toNodes()

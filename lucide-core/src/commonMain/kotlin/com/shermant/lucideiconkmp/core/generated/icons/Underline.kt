@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val underlineProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Underline: ImageVector
+    get() = underlineProvider.create()
+
+val LucideIcons.Underline: ImageVector
     get() = underlineProvider.create()
 
 private val underlinePath0 = PathParser().parsePathString("M6 4v6a6 6 0 0 0 12 0V4").toNodes()

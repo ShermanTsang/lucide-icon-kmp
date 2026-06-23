@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val sirenProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Siren: ImageVector
+    get() = sirenProvider.create()
+
+val LucideIcons.Siren: ImageVector
     get() = sirenProvider.create()
 
 private val sirenPath0 = PathParser().parsePathString("M7 18v-6a5 5 0 1 1 10 0v6").toNodes()

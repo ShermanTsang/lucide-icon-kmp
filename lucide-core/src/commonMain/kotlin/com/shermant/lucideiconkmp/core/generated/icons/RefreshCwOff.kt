@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val refreshCwOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val RefreshCwOff: ImageVector
+    get() = refreshCwOffProvider.create()
+
+val LucideIcons.RefreshCwOff: ImageVector
     get() = refreshCwOffProvider.create()
 
 private val refreshCwOffPath0 = PathParser().parsePathString("M21 8L18.74 5.74A9.75 9.75 0 0 0 12 3C11 3 10.03 3.16 9.13 3.47").toNodes()

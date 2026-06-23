@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val fileBracesCornerProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FileBracesCorner: ImageVector
+    get() = fileBracesCornerProvider.create()
+
+val LucideIcons.FileBracesCorner: ImageVector
     get() = fileBracesCornerProvider.create()
 
 private val fileBracesCornerPath0 = PathParser().parsePathString("M14 22h4a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v6").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val mapPinHouseProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MapPinHouse: ImageVector
+    get() = mapPinHouseProvider.create()
+
+val LucideIcons.MapPinHouse: ImageVector
     get() = mapPinHouseProvider.create()
 
 private val mapPinHousePath0 = PathParser().parsePathString("M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z").toNodes()

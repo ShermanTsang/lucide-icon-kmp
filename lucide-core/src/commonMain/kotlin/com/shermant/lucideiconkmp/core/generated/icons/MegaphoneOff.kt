@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val megaphoneOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val MegaphoneOff: ImageVector
+    get() = megaphoneOffProvider.create()
+
+val LucideIcons.MegaphoneOff: ImageVector
     get() = megaphoneOffProvider.create()
 
 private val megaphoneOffPath0 = PathParser().parsePathString("M11.636 6A13 13 0 0 0 19.4 3.2 1 1 0 0 1 21 4v11.344").toNodes()

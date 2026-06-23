@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val circleOffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CircleOff: ImageVector
+    get() = circleOffProvider.create()
+
+val LucideIcons.CircleOff: ImageVector
     get() = circleOffProvider.create()
 
 private val circleOffPath0 = PathParser().parsePathString("m2 2 20 20").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val trash2Provider = ParameterizedIconProvider { parameters ->
 }
 
 val Trash2: ImageVector
+    get() = trash2Provider.create()
+
+val LucideIcons.Trash2: ImageVector
     get() = trash2Provider.create()
 
 private val trash2Path0 = PathParser().parsePathString("M10 11v6").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val drumstickProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Drumstick: ImageVector
+    get() = drumstickProvider.create()
+
+val LucideIcons.Drumstick: ImageVector
     get() = drumstickProvider.create()
 
 private val drumstickPath0 = PathParser().parsePathString("M15.4 15.63a7.875 6 135 1 1 6.23-6.23 4.5 3.43 135 0 0-6.23 6.23").toNodes()

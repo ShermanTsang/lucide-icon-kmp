@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val towerControlProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TowerControl: ImageVector
+    get() = towerControlProvider.create()
+
+val LucideIcons.TowerControl: ImageVector
     get() = towerControlProvider.create()
 
 private val towerControlPath0 = PathParser().parsePathString("M18.2 12.27 20 6H4l1.8 6.27a1 1 0 0 0 .95.73h10.5a1 1 0 0 0 .96-.73Z").toNodes()

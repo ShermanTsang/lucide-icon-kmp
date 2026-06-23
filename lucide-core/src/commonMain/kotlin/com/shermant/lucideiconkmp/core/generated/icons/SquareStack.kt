@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val squareStackProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SquareStack: ImageVector
+    get() = squareStackProvider.create()
+
+val LucideIcons.SquareStack: ImageVector
     get() = squareStackProvider.create()
 
 private val squareStackPath0 = PathParser().parsePathString("M4 10c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2").toNodes()

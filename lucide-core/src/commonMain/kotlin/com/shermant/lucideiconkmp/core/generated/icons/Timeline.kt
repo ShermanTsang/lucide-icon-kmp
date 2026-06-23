@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val timelineProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Timeline: ImageVector
+    get() = timelineProvider.create()
+
+val LucideIcons.Timeline: ImageVector
     get() = timelineProvider.create()
 
 private val timelinePath0 = PathParser().parsePathString("M4 12h.01").toNodes()

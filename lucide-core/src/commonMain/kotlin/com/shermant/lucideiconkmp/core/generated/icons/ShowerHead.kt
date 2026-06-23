@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val showerHeadProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ShowerHead: ImageVector
+    get() = showerHeadProvider.create()
+
+val LucideIcons.ShowerHead: ImageVector
     get() = showerHeadProvider.create()
 
 private val showerHeadPath0 = PathParser().parsePathString("m4 4 2.5 2.5").toNodes()

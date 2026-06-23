@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val logsProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Logs: ImageVector
+    get() = logsProvider.create()
+
+val LucideIcons.Logs: ImageVector
     get() = logsProvider.create()
 
 private val logsPath0 = PathParser().parsePathString("M3 5h1").toNodes()

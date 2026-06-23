@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val superscriptProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Superscript: ImageVector
+    get() = superscriptProvider.create()
+
+val LucideIcons.Superscript: ImageVector
     get() = superscriptProvider.create()
 
 private val superscriptPath0 = PathParser().parsePathString("m4 19 8-8").toNodes()

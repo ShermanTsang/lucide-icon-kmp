@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val fenceProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Fence: ImageVector
+    get() = fenceProvider.create()
+
+val LucideIcons.Fence: ImageVector
     get() = fenceProvider.create()
 
 private val fencePath0 = PathParser().parsePathString("M4 3 2 5v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val folderClockProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FolderClock: ImageVector
+    get() = folderClockProvider.create()
+
+val LucideIcons.FolderClock: ImageVector
     get() = folderClockProvider.create()
 
 private val folderClockPath0 = PathParser().parsePathString("M16 14v2.2l1.6 1").toNodes()

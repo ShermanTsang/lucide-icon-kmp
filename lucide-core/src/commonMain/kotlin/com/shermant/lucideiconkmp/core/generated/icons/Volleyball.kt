@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val volleyballProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Volleyball: ImageVector
+    get() = volleyballProvider.create()
+
+val LucideIcons.Volleyball: ImageVector
     get() = volleyballProvider.create()
 
 private val volleyballPath0 = PathParser().parsePathString("M11 7a16 16 20 0 1 10.98 4.362").toNodes()

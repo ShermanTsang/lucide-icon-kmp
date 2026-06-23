@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val pencilRulerProvider = ParameterizedIconProvider { parameters ->
 }
 
 val PencilRuler: ImageVector
+    get() = pencilRulerProvider.create()
+
+val LucideIcons.PencilRuler: ImageVector
     get() = pencilRulerProvider.create()
 
 private val pencilRulerPath0 = PathParser().parsePathString("M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13").toNodes()

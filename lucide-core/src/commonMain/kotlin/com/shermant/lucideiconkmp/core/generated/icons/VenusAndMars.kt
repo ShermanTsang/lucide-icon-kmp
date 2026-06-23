@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val venusAndMarsProvider = ParameterizedIconProvider { parameters ->
 }
 
 val VenusAndMars: ImageVector
+    get() = venusAndMarsProvider.create()
+
+val LucideIcons.VenusAndMars: ImageVector
     get() = venusAndMarsProvider.create()
 
 private val venusAndMarsPath0 = PathParser().parsePathString("M10 20h4").toNodes()

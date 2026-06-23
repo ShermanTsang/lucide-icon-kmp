@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val eggProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Egg: ImageVector
+    get() = eggProvider.create()
+
+val LucideIcons.Egg: ImageVector
     get() = eggProvider.create()
 
 private val eggPath0 = PathParser().parsePathString("M12 2C8 2 4 8 4 14a8 8 0 0 0 16 0c0-6-4-12-8-12").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val navigation2OffProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Navigation2Off: ImageVector
+    get() = navigation2OffProvider.create()
+
+val LucideIcons.Navigation2Off: ImageVector
     get() = navigation2OffProvider.create()
 
 private val navigation2OffPath0 = PathParser().parsePathString("M9.31 9.31 5 21l7-4 7 4-1.17-3.17").toNodes()

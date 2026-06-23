@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val podcastProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Podcast: ImageVector
+    get() = podcastProvider.create()
+
+val LucideIcons.Podcast: ImageVector
     get() = podcastProvider.create()
 
 private val podcastPath0 = PathParser().parsePathString("M13 17a1 1 0 1 0-2 0l.5 4.5a0.5 0.5 0 0 0 1 0z").toNodes()

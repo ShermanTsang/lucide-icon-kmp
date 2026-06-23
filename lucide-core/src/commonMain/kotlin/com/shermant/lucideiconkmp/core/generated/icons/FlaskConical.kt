@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val flaskConicalProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FlaskConical: ImageVector
+    get() = flaskConicalProvider.create()
+
+val LucideIcons.FlaskConical: ImageVector
     get() = flaskConicalProvider.create()
 
 private val flaskConicalPath0 = PathParser().parsePathString("M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2").toNodes()

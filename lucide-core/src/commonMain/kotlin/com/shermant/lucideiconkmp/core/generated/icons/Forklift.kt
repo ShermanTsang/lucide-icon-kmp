@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val forkliftProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Forklift: ImageVector
+    get() = forkliftProvider.create()
+
+val LucideIcons.Forklift: ImageVector
     get() = forkliftProvider.create()
 
 private val forkliftPath0 = PathParser().parsePathString("M12 12H5a2 2 0 0 0-2 2v5").toNodes()

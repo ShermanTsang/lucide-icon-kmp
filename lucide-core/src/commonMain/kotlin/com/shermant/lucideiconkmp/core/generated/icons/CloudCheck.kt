@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cloudCheckProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CloudCheck: ImageVector
+    get() = cloudCheckProvider.create()
+
+val LucideIcons.CloudCheck: ImageVector
     get() = cloudCheckProvider.create()
 
 private val cloudCheckPath0 = PathParser().parsePathString("m17 15-5.5 5.5L9 18").toNodes()

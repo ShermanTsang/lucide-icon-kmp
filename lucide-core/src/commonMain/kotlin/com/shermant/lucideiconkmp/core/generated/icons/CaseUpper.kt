@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val caseUpperProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CaseUpper: ImageVector
+    get() = caseUpperProvider.create()
+
+val LucideIcons.CaseUpper: ImageVector
     get() = caseUpperProvider.create()
 
 private val caseUpperPath0 = PathParser().parsePathString("M15 11h4.5a1 1 0 0 1 0 5h-4a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h3a1 1 0 0 1 0 5").toNodes()

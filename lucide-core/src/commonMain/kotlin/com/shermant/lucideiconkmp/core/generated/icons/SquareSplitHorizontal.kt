@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val squareSplitHorizontalProvider = ParameterizedIconProvider { parameters ->
 }
 
 val SquareSplitHorizontal: ImageVector
+    get() = squareSplitHorizontalProvider.create()
+
+val LucideIcons.SquareSplitHorizontal: ImageVector
     get() = squareSplitHorizontalProvider.create()
 
 private val squareSplitHorizontalPath0 = PathParser().parsePathString("M8 19H5c-1 0-2-1-2-2V7c0-1 1-2 2-2h3").toNodes()

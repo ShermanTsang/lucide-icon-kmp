@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val dicesProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Dices: ImageVector
+    get() = dicesProvider.create()
+
+val LucideIcons.Dices: ImageVector
     get() = dicesProvider.create()
 
 private val dicesPath0 = PathParser().parsePathString("M 4 10 H 12 A 2 2 0 0 1 14 12 V 20 A 2 2 0 0 1 12 22 H 4 A 2 2 0 0 1 2 20 V 12 A 2 2 0 0 1 4 10 Z").toNodes()

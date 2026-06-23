@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val microchipProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Microchip: ImageVector
+    get() = microchipProvider.create()
+
+val LucideIcons.Microchip: ImageVector
     get() = microchipProvider.create()
 
 private val microchipPath0 = PathParser().parsePathString("M10 12h4").toNodes()

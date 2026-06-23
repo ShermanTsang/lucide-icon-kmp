@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val lockKeyholeOpenProvider = ParameterizedIconProvider { parameters ->
 }
 
 val LockKeyholeOpen: ImageVector
+    get() = lockKeyholeOpenProvider.create()
+
+val LucideIcons.LockKeyholeOpen: ImageVector
     get() = lockKeyholeOpenProvider.create()
 
 private val lockKeyholeOpenPath0 = PathParser().parsePathString("M 13 16 A 1 1 0 1 0 11 16 A 1 1 0 1 0 13 16 Z").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val satelliteProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Satellite: ImageVector
+    get() = satelliteProvider.create()
+
+val LucideIcons.Satellite: ImageVector
     get() = satelliteProvider.create()
 
 private val satellitePath0 = PathParser().parsePathString("m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5").toNodes()

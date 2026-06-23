@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val chessRookProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ChessRook: ImageVector
+    get() = chessRookProvider.create()
+
+val LucideIcons.ChessRook: ImageVector
     get() = chessRookProvider.create()
 
 private val chessRookPath0 = PathParser().parsePathString("M5 20a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z").toNodes()

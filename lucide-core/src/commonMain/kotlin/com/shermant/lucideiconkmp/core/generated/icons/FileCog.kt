@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val fileCogProvider = ParameterizedIconProvider { parameters ->
 }
 
 val FileCog: ImageVector
+    get() = fileCogProvider.create()
+
+val LucideIcons.FileCog: ImageVector
     get() = fileCogProvider.create()
 
 private val fileCogPath0 = PathParser().parsePathString("M15 8a1 1 0 0 1-1-1V2a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8z").toNodes()

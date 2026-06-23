@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val hdmiPortProvider = ParameterizedIconProvider { parameters ->
 }
 
 val HdmiPort: ImageVector
+    get() = hdmiPortProvider.create()
+
+val LucideIcons.HdmiPort: ImageVector
     get() = hdmiPortProvider.create()
 
 private val hdmiPortPath0 = PathParser().parsePathString("M22 9a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h1l2 2h12l2-2h1a1 1 0 0 0 1-1Z").toNodes()

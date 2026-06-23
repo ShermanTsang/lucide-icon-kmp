@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val paintRollerProvider = ParameterizedIconProvider { parameters ->
 }
 
 val PaintRoller: ImageVector
+    get() = paintRollerProvider.create()
+
+val LucideIcons.PaintRoller: ImageVector
     get() = paintRollerProvider.create()
 
 private val paintRollerPath0 = PathParser().parsePathString("M 4 2 H 16 A 2 2 0 0 1 18 4 V 6 A 2 2 0 0 1 16 8 H 4 A 2 2 0 0 1 2 6 V 4 A 2 2 0 0 1 4 2 Z").toNodes()

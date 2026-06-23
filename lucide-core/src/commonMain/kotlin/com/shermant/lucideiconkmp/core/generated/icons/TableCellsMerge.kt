@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val tableCellsMergeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TableCellsMerge: ImageVector
+    get() = tableCellsMergeProvider.create()
+
+val LucideIcons.TableCellsMerge: ImageVector
     get() = tableCellsMergeProvider.create()
 
 private val tableCellsMergePath0 = PathParser().parsePathString("M12 21v-6").toNodes()

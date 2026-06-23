@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val roseProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Rose: ImageVector
+    get() = roseProvider.create()
+
+val LucideIcons.Rose: ImageVector
     get() = roseProvider.create()
 
 private val rosePath0 = PathParser().parsePathString("M17 10h-1a4 4 0 1 1 4-4v.534").toNodes()

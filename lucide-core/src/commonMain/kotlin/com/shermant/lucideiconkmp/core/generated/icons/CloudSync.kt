@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val cloudSyncProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CloudSync: ImageVector
+    get() = cloudSyncProvider.create()
+
+val LucideIcons.CloudSync: ImageVector
     get() = cloudSyncProvider.create()
 
 private val cloudSyncPath0 = PathParser().parsePathString("m17 18-1.535 1.605a5 5 0 0 1-8-1.5").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val tornadoProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Tornado: ImageVector
+    get() = tornadoProvider.create()
+
+val LucideIcons.Tornado: ImageVector
     get() = tornadoProvider.create()
 
 private val tornadoPath0 = PathParser().parsePathString("M21 4H3").toNodes()

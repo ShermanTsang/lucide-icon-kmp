@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val ticketSlashProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TicketSlash: ImageVector
+    get() = ticketSlashProvider.create()
+
+val LucideIcons.TicketSlash: ImageVector
     get() = ticketSlashProvider.create()
 
 private val ticketSlashPath0 = PathParser().parsePathString("M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z").toNodes()

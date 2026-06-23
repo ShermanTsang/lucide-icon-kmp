@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val circleGaugeProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CircleGauge: ImageVector
+    get() = circleGaugeProvider.create()
+
+val LucideIcons.CircleGauge: ImageVector
     get() = circleGaugeProvider.create()
 
 private val circleGaugePath0 = PathParser().parsePathString("M15.6 2.7a10 10 0 1 0 5.7 5.7").toNodes()

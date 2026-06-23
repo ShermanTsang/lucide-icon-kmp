@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val treePalmProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TreePalm: ImageVector
+    get() = treePalmProvider.create()
+
+val LucideIcons.TreePalm: ImageVector
     get() = treePalmProvider.create()
 
 private val treePalmPath0 = PathParser().parsePathString("M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val rotate3dProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Rotate3d: ImageVector
+    get() = rotate3dProvider.create()
+
+val LucideIcons.Rotate3d: ImageVector
     get() = rotate3dProvider.create()
 
 private val rotate3dPath0 = PathParser().parsePathString("m15.194 13.707 3.814 1.86-1.86 3.814").toNodes()

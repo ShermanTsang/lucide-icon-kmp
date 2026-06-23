@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val chevronFirstProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ChevronFirst: ImageVector
+    get() = chevronFirstProvider.create()
+
+val LucideIcons.ChevronFirst: ImageVector
     get() = chevronFirstProvider.create()
 
 private val chevronFirstPath0 = PathParser().parsePathString("m17 18-6-6 6-6").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val copyPlusProvider = ParameterizedIconProvider { parameters ->
 }
 
 val CopyPlus: ImageVector
+    get() = copyPlusProvider.create()
+
+val LucideIcons.CopyPlus: ImageVector
     get() = copyPlusProvider.create()
 
 private val copyPlusPath0 = PathParser().parsePathString("M 15 12 L 15 18").toNodes()

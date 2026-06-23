@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val gamepadProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Gamepad: ImageVector
+    get() = gamepadProvider.create()
+
+val LucideIcons.Gamepad: ImageVector
     get() = gamepadProvider.create()
 
 private val gamepadPath0 = PathParser().parsePathString("M 6 12 L 10 12").toNodes()

@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val wormProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Worm: ImageVector
+    get() = wormProvider.create()
+
+val LucideIcons.Worm: ImageVector
     get() = wormProvider.create()
 
 private val wormPath0 = PathParser().parsePathString("m19 12-1.5 3").toNodes()

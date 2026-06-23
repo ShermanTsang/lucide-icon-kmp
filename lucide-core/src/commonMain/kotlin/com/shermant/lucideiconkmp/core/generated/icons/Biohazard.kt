@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val biohazardProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Biohazard: ImageVector
+    get() = biohazardProvider.create()
+
+val LucideIcons.Biohazard: ImageVector
     get() = biohazardProvider.create()
 
 private val biohazardPath0 = PathParser().parsePathString("M 14 11.9 A 2 2 0 1 0 10 11.9 A 2 2 0 1 0 14 11.9 Z").toNodes()

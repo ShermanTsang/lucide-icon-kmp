@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val truckElectricProvider = ParameterizedIconProvider { parameters ->
 }
 
 val TruckElectric: ImageVector
+    get() = truckElectricProvider.create()
+
+val LucideIcons.TruckElectric: ImageVector
     get() = truckElectricProvider.create()
 
 private val truckElectricPath0 = PathParser().parsePathString("M14 19V7a2 2 0 0 0-2-2H9").toNodes()

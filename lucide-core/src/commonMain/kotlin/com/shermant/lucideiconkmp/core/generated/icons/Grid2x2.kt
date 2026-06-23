@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val grid2x2Provider = ParameterizedIconProvider { parameters ->
 }
 
 val Grid2x2: ImageVector
+    get() = grid2x2Provider.create()
+
+val LucideIcons.Grid2x2: ImageVector
     get() = grid2x2Provider.create()
 
 private val grid2x2Path0 = PathParser().parsePathString("M12 3v18").toNodes()

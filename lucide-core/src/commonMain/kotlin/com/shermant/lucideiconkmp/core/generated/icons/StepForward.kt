@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val stepForwardProvider = ParameterizedIconProvider { parameters ->
 }
 
 val StepForward: ImageVector
+    get() = stepForwardProvider.create()
+
+val LucideIcons.StepForward: ImageVector
     get() = stepForwardProvider.create()
 
 private val stepForwardPath0 = PathParser().parsePathString("M10.029 4.285A2 2 0 0 0 7 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z").toNodes()

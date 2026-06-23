@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val chartPieProvider = ParameterizedIconProvider { parameters ->
 }
 
 val ChartPie: ImageVector
+    get() = chartPieProvider.create()
+
+val LucideIcons.ChartPie: ImageVector
     get() = chartPieProvider.create()
 
 private val chartPiePath0 = PathParser().parsePathString("M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z").toNodes()

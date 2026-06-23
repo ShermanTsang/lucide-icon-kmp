@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val bedDoubleProvider = ParameterizedIconProvider { parameters ->
 }
 
 val BedDouble: ImageVector
+    get() = bedDoubleProvider.create()
+
+val LucideIcons.BedDouble: ImageVector
     get() = bedDoubleProvider.create()
 
 private val bedDoublePath0 = PathParser().parsePathString("M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8").toNodes()

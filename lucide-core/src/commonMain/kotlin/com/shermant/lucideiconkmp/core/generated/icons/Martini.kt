@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val martiniProvider = ParameterizedIconProvider { parameters ->
 }
 
 val Martini: ImageVector
+    get() = martiniProvider.create()
+
+val LucideIcons.Martini: ImageVector
     get() = martiniProvider.create()
 
 private val martiniPath0 = PathParser().parsePathString("M8 22h8").toNodes()

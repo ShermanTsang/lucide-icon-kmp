@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.core.registry.IconRenderParameters
+import com.shermant.lucideiconkmp.core.registry.LucideIcons
 import com.shermant.lucideiconkmp.core.registry.ParameterizedIconProvider
 import com.shermant.lucideiconkmp.core.registry.create
 
@@ -17,6 +18,9 @@ val squareCenterlineDashedVerticalProvider = ParameterizedIconProvider { paramet
 }
 
 val SquareCenterlineDashedVertical: ImageVector
+    get() = squareCenterlineDashedVerticalProvider.create()
+
+val LucideIcons.SquareCenterlineDashedVertical: ImageVector
     get() = squareCenterlineDashedVerticalProvider.create()
 
 private val squareCenterlineDashedVerticalPath0 = PathParser().parsePathString("M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3").toNodes()
