@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.foundation.text.BasicText
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -48,12 +47,6 @@ internal fun LucideIconGrid(
                     color = iconColor,
                     strokeWidth = strokeWidth,
                 )
-                if (style.showLabel) {
-                    BasicText(
-                        text = metadata.displayName,
-                        style = style.labelTextStyle,
-                    )
-                }
             }
         }
     }

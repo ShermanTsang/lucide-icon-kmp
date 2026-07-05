@@ -19,6 +19,9 @@ data class LucideIconPickerStyle(
     val containerPadding: PaddingValues = PaddingValues(0.dp),
     val containerVerticalSpacing: Dp = 0.dp,
     val containerBackgroundColor: Color = Color.Unspecified,
+    val sharedCornerRadius: Dp? = null,
+    val sharedBorderColorLight: Color = Color.Unspecified,
+    val sharedBorderColorDark: Color = Color.Unspecified,
     val containerShape: Shape,
     val searchBar: LucideIconPickerSearchBarStyle,
     val categories: LucideIconPickerCategoryTabsStyle,
@@ -62,8 +65,6 @@ data class LucideIconPickerGridStyle(
     val verticalSpacing: Dp = 0.dp,
     val itemPadding: PaddingValues = PaddingValues(0.dp),
     val itemVerticalSpacing: Dp = 0.dp,
-    val showLabel: Boolean = false,
-    val labelTextStyle: TextStyle = TextStyle.Default,
 )
 
 data class LucideIconPickerPaginationStyle(

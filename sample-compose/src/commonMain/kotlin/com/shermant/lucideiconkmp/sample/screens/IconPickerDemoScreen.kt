@@ -1,7 +1,6 @@
 package com.shermant.lucideiconkmp.sample.screens
 
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -24,10 +23,11 @@ fun IconPickerDemoScreen(onIconSelected: (String) -> Unit) {
     val style = baseStyle.copy(
         containerPadding = PaddingValues(20.dp),
         containerBackgroundColor = Color(0xFFF9FAFB),
+        sharedCornerRadius = 16.dp,
+        sharedBorderColorLight = Color(0xFFD1D5DB),
+        sharedBorderColorDark = Color(0xFF94A3B8),
         searchBar = baseStyle.searchBar.copy(
-            shape = RoundedCornerShape(16.dp),
             backgroundColor = Color.Transparent,
-            borderColor = Color(0xFFD1D5DB),
         ),
         categories = baseStyle.categories.copy(
             unselectedBackgroundColor = Color.Transparent,

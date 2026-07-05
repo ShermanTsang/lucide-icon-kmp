@@ -1,6 +1,7 @@
 package com.shermant.lucideiconkmp.compose.picker
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -8,9 +9,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.shermant.lucideiconkmp.compose.LucideIconDefaults
@@ -41,6 +44,7 @@ fun LucideIconPicker(
     require(pageSize > 0) { "pageSize must be greater than 0." }
     require(searchLimit > 0) { "searchLimit must be greater than 0." }
 
+    val resolvedStyle = resolvePickerStyle(style)
     val categories = remember(registry) { LucideIconCategory.entries }
     val allIcons = remember(registry, locale) {
         registry.keys()
@@ -79,21 +83,21 @@ fun LucideIconPicker(
             .then(
                 if (style.containerBackgroundColor != Color.Unspecified) {
                     Modifier
-                        .clip(style.containerShape)
-                        .background(style.containerBackgroundColor)
+                        .clip(resolvedStyle.containerShape)
+                        .background(resolvedStyle.containerBackgroundColor)
                 } else {
                     Modifier
                 },
             )
-            .padding(style.containerPadding),
-        verticalArrangement = Arrangement.spacedBy(style.containerVerticalSpacing),
+            .padding(resolvedStyle.containerPadding),
+        verticalArrangement = Arrangement.spacedBy(resolvedStyle.containerVerticalSpacing),
     ) {
         if (showSearchBar) {
             LucideIconSearchBar(
                 query = state.query,
                 onQueryChange = state::updateQuery,
                 modifier = modifiers.searchBar,
-                style = style.searchBar,
+                style = resolvedStyle.searchBar,
             )
         }
         if (showCategories) {
@@ -102,9 +106,9 @@ fun LucideIconPicker(
                 locale = locale,
                 selectedCategory = state.selectedCategory,
                 onCategorySelected = state::selectCategory,
-                containerBackgroundColor = style.containerBackgroundColor,
+                containerBackgroundColor = resolvedStyle.containerBackgroundColor,
                 modifier = modifiers.categories,
-                style = style.categories,
+                style = resolvedStyle.categories,
             )
         }
         LucideIconGrid(
@@ -115,7 +119,7 @@ fun LucideIconPicker(
             strokeWidth = strokeWidth,
             onIconSelected = onIconSelected,
             modifier = modifiers.grid,
-            style = style.grid,
+            style = resolvedStyle.grid,
         )
         LucideIconPagination(
             currentPage = pagination.currentPage,
@@ -123,7 +127,7 @@ fun LucideIconPicker(
             totalResults = pagination.totalItems,
             onPageChange = state::goToPage,
             modifier = modifiers.pagination,
-            style = style.pagination,
+            style = resolvedStyle.pagination,
         )
     }
 }
@@ -142,18 +146,19 @@ fun LucideIconPicker(
     modifiers: LucideIconPickerModifiers = LucideIconPickerDefaults.modifiers(),
 ) {
     val state = rememberLucideIconPickerState(initialQuery = query)
+    val resolvedStyle = resolvePickerStyle(style)
     if (state.query != query) {
         state.updateQuery(query)
     }
     Column(
         modifier = modifier,
-        verticalArrangement = Arrangement.spacedBy(style.containerVerticalSpacing),
+        verticalArrangement = Arrangement.spacedBy(resolvedStyle.containerVerticalSpacing),
     ) {
         LucideIconSearchBar(
             query = query,
             onQueryChange = onQueryChange,
             modifier = modifiers.searchBar,
-            style = style.searchBar,
+            style = resolvedStyle.searchBar,
         )
         LucideIconPicker(
             state = state,
@@ -163,10 +168,75 @@ fun LucideIconPicker(
             showSearchBar = false,
             pageSize = pageSize,
             searchLimit = searchLimit,
-            style = style,
+            style = resolvedStyle,
             onIconSelected = { onIconSelected(it.key.value) },
         )
     }
+}
+
+@Composable
+private fun resolvePickerStyle(style: LucideIconPickerStyle): LucideIconPickerStyle {
+    val isDark = isSystemInDarkTheme()
+    val sharedBorderColor = resolveSharedBorderColor(style, isDark)
+    val sharedShape = style.sharedCornerRadius?.let(::RoundedCornerShape)
+
+    return style.copy(
+        searchBar = style.searchBar.copy(
+            shape = sharedShape ?: style.searchBar.shape,
+            borderColor = style.searchBar.borderColor.orElse(sharedBorderColor),
+            labelTextStyle = style.searchBar.labelTextStyle.withFallbackColor(
+                if (isDark) Color(0xFFCBD5E1) else Color(0xFF6B7280),
+            ),
+            textStyle = style.searchBar.textStyle.withFallbackColor(
+                if (isDark) Color(0xFFF9FAFB) else Color(0xFF111827),
+            ),
+            cursorColor = style.searchBar.cursorColor.orElse(
+                if (isDark) Color(0xFFF9FAFB) else Color(0xFF111827),
+            ),
+        ),
+        categories = style.categories.copy(
+            chipShape = sharedShape ?: style.categories.chipShape,
+            unselectedBorderColor = style.categories.unselectedBorderColor.orElse(sharedBorderColor),
+            selectedBorderColor = style.categories.selectedBorderColor.orElse(sharedBorderColor),
+            unselectedContentColor = style.categories.unselectedContentColor.orElse(
+                if (isDark) Color(0xFFE5E7EB) else Color(0xFF374151),
+            ),
+            selectedContentColor = style.categories.selectedContentColor.orElse(
+                if (isDark) Color(0xFFF9FAFB) else Color(0xFF111827),
+            ),
+            textStyle = style.categories.textStyle.withFallbackColor(
+                if (isDark) Color(0xFFE5E7EB) else Color(0xFF374151),
+            ),
+        ),
+        pagination = style.pagination.copy(
+            textStyle = style.pagination.textStyle.withFallbackColor(
+                if (isDark) Color(0xFFE5E7EB) else Color(0xFF374151),
+            ),
+            contentColor = style.pagination.contentColor.orElse(
+                if (isDark) Color(0xFFF9FAFB) else Color(0xFF111827),
+            ),
+            disabledContentColor = style.pagination.disabledContentColor.orElse(
+                if (isDark) Color(0xFF9CA3AF) else Color(0xFF9CA3AF),
+            ),
+        ),
+    )
+}
+
+private fun resolveSharedBorderColor(
+    style: LucideIconPickerStyle,
+    isDark: Boolean,
+): Color {
+    val preferred = if (isDark) style.sharedBorderColorDark else style.sharedBorderColorLight
+    val fallback = if (isDark) style.sharedBorderColorLight else style.sharedBorderColorDark
+    return preferred.orElse(fallback)
+}
+
+private fun Color.orElse(fallback: Color): Color {
+    return if (this != Color.Unspecified) this else fallback
+}
+
+private fun TextStyle.withFallbackColor(color: Color): TextStyle {
+    return if (this.color != Color.Unspecified) this else copy(color = color)
 }
 
 internal data class LucideIconPage<T>(

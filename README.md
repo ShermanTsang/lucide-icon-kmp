@@ -155,6 +155,13 @@ val pickerModifiers = LucideIconPickerDefaults.modifiers(
     grid = Modifier.padding(horizontal = 4.dp),
     pagination = Modifier.padding(top = 8.dp),
 )
+val pickerStyle = LucideIconPickerDefaults.style(
+    locale = LucideLocale.Zh,
+).copy(
+    sharedCornerRadius = 16.dp,
+    sharedBorderColorLight = Color(0xFFD1D5DB),
+    sharedBorderColorDark = Color(0xFF94A3B8),
+)
 
 LucideIconPicker(
     state = state,
@@ -163,6 +170,7 @@ LucideIconPicker(
     pageSize = 24,
     searchLimit = 100,
     iconSize = 20.dp,
+    style = pickerStyle,
     modifiers = pickerModifiers,
     onIconSelected = { metadata ->
         println(metadata.key.value)
@@ -170,7 +178,8 @@ LucideIconPicker(
 )
 ```
 
-Use `style` for visual tokens such as colors, spacing, shapes, and labels. Use `modifiers` when you
+Icon labels are hidden by design. Use `style` for visual tokens such as colors, spacing, and the
+shared corner radius / light-dark border colors used by the search bar and category chips. Use `modifiers` when you
 need project-specific Compose layout hooks for the picker's main regions: search bar, category tabs,
 icon grid, and pagination.
 

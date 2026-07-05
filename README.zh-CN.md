@@ -146,6 +146,13 @@ val pickerModifiers = LucideIconPickerDefaults.modifiers(
     grid = Modifier.padding(horizontal = 4.dp),
     pagination = Modifier.padding(top = 8.dp),
 )
+val pickerStyle = LucideIconPickerDefaults.style(
+    locale = LucideLocale.Zh,
+).copy(
+    sharedCornerRadius = 16.dp,
+    sharedBorderColorLight = Color(0xFFD1D5DB),
+    sharedBorderColorDark = Color(0xFF94A3B8),
+)
 
 LucideIconPicker(
     state = state,
@@ -154,6 +161,7 @@ LucideIconPicker(
     pageSize = 24,
     searchLimit = 100,
     iconSize = 20.dp,
+    style = pickerStyle,
     modifiers = pickerModifiers,
     onIconSelected = { metadata ->
         println(metadata.key.value)
@@ -161,7 +169,7 @@ LucideIconPicker(
 )
 ```
 
-`style` 继续负责颜色、间距、形状、文案等视觉 token；当你需要把项目自己的 Compose 布局能力挂到搜索栏、分类栏、图标网格、分页这几个一级区域时，使用 `modifiers`。
+图标名称现在固定不显示。`style` 继续负责颜色、间距等视觉 token，也用于统一设置搜索框和分类项共享的圆角、浅色/深色边框色；当你需要把项目自己的 Compose 布局能力挂到搜索栏、分类栏、图标网格、分页这几个一级区域时，使用 `modifiers`。
 
 ### 注册自定义图标
 

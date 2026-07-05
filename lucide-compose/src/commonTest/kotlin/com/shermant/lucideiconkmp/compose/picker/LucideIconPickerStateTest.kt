@@ -86,14 +86,18 @@ class LucideIconPickerStateTest {
         assertEquals(Color.Transparent, style.searchBar.backgroundColor)
         assertEquals(Color.Transparent, style.categories.unselectedBackgroundColor)
         assertEquals(Color.Transparent, style.categories.selectedBackgroundColor)
-        assertEquals(Color(0xFF111827), style.categories.selectedContentColor)
+        assertEquals(Color.Unspecified, style.categories.selectedContentColor)
     }
 
     @Test
-    fun hidesGridLabelsByDefault() {
+    fun providesSharedShapeAndBorderTokensByDefault() {
         val style = LucideIconPickerDefaults.style()
 
-        assertEquals(false, style.grid.showLabel)
+        assertEquals(12.dp, style.sharedCornerRadius)
+        assertEquals(Color(0xFFD1D5DB), style.sharedBorderColorLight)
+        assertEquals(Color(0xFF9CA3AF), style.sharedBorderColorDark)
+        assertEquals(Color.Unspecified, style.searchBar.borderColor)
+        assertEquals(Color.Unspecified, style.categories.unselectedBorderColor)
     }
 
     @Test

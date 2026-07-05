@@ -6,18 +6,24 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.BasicText
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.Dp
 import com.shermant.lucideiconkmp.core.model.LucideIconCategory
@@ -35,11 +41,13 @@ internal fun LucideIconCategoryTabs(
     style: LucideIconPickerCategoryTabsStyle,
 ) {
     val scrollState = rememberScrollState()
+    var allChipWidthPx by remember { mutableIntStateOf(0) }
     val overlayColor = resolveOverlayColor(
         style = style,
         containerBackgroundColor = containerBackgroundColor,
     )
     val overlayAlpha = style.edgeOverlayMaxAlpha.coerceIn(0f, 1f)
+    val leadingPadding = pixelsToDp(allChipWidthPx) + style.chipSpacing
     val showLeftOverlay = overlayColor != null &&
             style.edgeOverlayWidth > Dp.Hairline &&
             overlayAlpha > 0f &&
@@ -49,50 +57,60 @@ internal fun LucideIconCategoryTabs(
             overlayAlpha > 0f &&
             scrollState.value < scrollState.maxValue
 
-    Box(modifier = modifier) {
-        Row(
-            modifier = Modifier.horizontalScroll(scrollState),
-            horizontalArrangement = Arrangement.spacedBy(style.chipSpacing),
+    Box(modifier = modifier.fillMaxWidth()) {
+        CategoryChip(
+            label = style.allLabelText,
+            selected = selectedCategory == null,
+            onClick = { onCategorySelected(null) },
+            modifier = Modifier
+                .align(Alignment.CenterStart)
+                .onSizeChanged { allChipWidthPx = it.width },
+            style = style,
+        )
+
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = leadingPadding),
         ) {
-            CategoryChip(
-                label = style.allLabelText,
-                selected = selectedCategory == null,
-                onClick = { onCategorySelected(null) },
-                style = style,
-            )
-            categories.forEach { category ->
-                CategoryChip(
-                    label = category.displayName(locale),
-                    selected = selectedCategory == category,
-                    onClick = { onCategorySelected(category) },
-                    style = style,
+            androidx.compose.foundation.layout.Row(
+                modifier = Modifier.horizontalScroll(scrollState),
+                horizontalArrangement = Arrangement.spacedBy(style.chipSpacing),
+            ) {
+                categories.forEach { category ->
+                    CategoryChip(
+                        label = category.displayName(locale),
+                        selected = selectedCategory == category,
+                        onClick = { onCategorySelected(category) },
+                        style = style,
+                    )
+                }
+            }
+
+            if (showLeftOverlay) {
+                EdgeOverlay(
+                    modifier = Modifier.align(Alignment.CenterStart),
+                    width = style.edgeOverlayWidth,
+                    brush = Brush.horizontalGradient(
+                        colors = listOf(
+                            overlayColor.copy(alpha = overlayAlpha),
+                            overlayColor.copy(alpha = 0f),
+                        ),
+                    ),
                 )
             }
-        }
-
-        if (showLeftOverlay) {
-            EdgeOverlay(
-                modifier = Modifier.align(Alignment.CenterStart),
-                width = style.edgeOverlayWidth,
-                brush = Brush.horizontalGradient(
-                    colors = listOf(
-                        overlayColor.copy(alpha = overlayAlpha),
-                        overlayColor.copy(alpha = 0f),
+            if (showRightOverlay) {
+                EdgeOverlay(
+                    modifier = Modifier.align(Alignment.CenterEnd),
+                    width = style.edgeOverlayWidth,
+                    brush = Brush.horizontalGradient(
+                        colors = listOf(
+                            overlayColor.copy(alpha = 0f),
+                            overlayColor.copy(alpha = overlayAlpha),
+                        ),
                     ),
-                ),
-            )
-        }
-        if (showRightOverlay) {
-            EdgeOverlay(
-                modifier = Modifier.align(Alignment.CenterEnd),
-                width = style.edgeOverlayWidth,
-                brush = Brush.horizontalGradient(
-                    colors = listOf(
-                        overlayColor.copy(alpha = 0f),
-                        overlayColor.copy(alpha = overlayAlpha),
-                    ),
-                ),
-            )
+                )
+            }
         }
     }
 }
@@ -116,6 +134,7 @@ private fun CategoryChip(
     label: String,
     selected: Boolean,
     onClick: () -> Unit,
+    modifier: Modifier = Modifier,
     style: LucideIconPickerCategoryTabsStyle,
 ) {
     val backgroundColor = if (selected) {
@@ -135,7 +154,7 @@ private fun CategoryChip(
     }
 
     Box(
-        modifier = Modifier
+        modifier = modifier
             .clip(style.chipShape)
             .background(backgroundColor)
             .border(style.chipBorderWidth, borderColor, style.chipShape)
@@ -147,6 +166,12 @@ private fun CategoryChip(
             style = style.textStyle.withColor(textColor),
         )
     }
+}
+
+@Composable
+private fun pixelsToDp(value: Int): Dp {
+    val density = LocalDensity.current
+    return with(density) { value.toDp() }
 }
 
 private fun TextStyle.withColor(color: Color): TextStyle {
