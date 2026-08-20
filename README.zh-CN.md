@@ -18,9 +18,9 @@
 当前发布坐标如下：
 
 - `group`：`com.shermant`
-- `version`：`0.2.0-SNAPSHOT`
-- `lucide-core`：`com.shermant:lucide-icon-kmp:0.2.0-SNAPSHOT`
-- `lucide-compose`：`com.shermant:lucide-icon-kmp-compose:0.2.0-SNAPSHOT`
+- `version`：`0.3.0-SNAPSHOT`
+- `lucide-core`：`com.shermant:lucide-icon-kmp:0.3.0-SNAPSHOT`
+- `lucide-compose`：`com.shermant:lucide-icon-kmp-compose:0.3.0-SNAPSHOT`
 
 对外公开的 Maven 坐标以上述 artifact id 为准。
 仓库内部 Gradle 模块名 `:lucide-core` 和 `:lucide-compose` 不是消费端应该直接声明的依赖坐标。
@@ -43,8 +43,8 @@ repositories {
 }
 
 dependencies {
-    implementation("com.shermant:lucide-icon-kmp:0.2.0-SNAPSHOT")
-    implementation("com.shermant:lucide-icon-kmp-compose:0.2.0-SNAPSHOT")
+    implementation("com.shermant:lucide-icon-kmp:0.3.0-SNAPSHOT")
+    implementation("com.shermant:lucide-icon-kmp-compose:0.3.0-SNAPSHOT")
 }
 ```
 

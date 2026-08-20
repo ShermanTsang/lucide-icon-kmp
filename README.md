@@ -22,9 +22,9 @@ This repository is organized as a multi-module Kotlin Multiplatform build:
 Current publish coordinates are:
 
 - `group`: `com.shermant`
-- `version`: `0.2.0-SNAPSHOT`
-- `lucide-core`: `com.shermant:lucide-icon-kmp:0.2.0-SNAPSHOT`
-- `lucide-compose`: `com.shermant:lucide-icon-kmp-compose:0.2.0-SNAPSHOT`
+- `version`: `0.3.0-SNAPSHOT`
+- `lucide-core`: `com.shermant:lucide-icon-kmp:0.3.0-SNAPSHOT`
+- `lucide-compose`: `com.shermant:lucide-icon-kmp-compose:0.3.0-SNAPSHOT`
 
 Public Maven coordinates use the published artifact ids above.
 The internal Gradle module names `:lucide-core` and `:lucide-compose` are not the coordinates you
@@ -49,8 +49,8 @@ repositories {
 }
 
 dependencies {
-    implementation("com.shermant:lucide-icon-kmp:0.2.0-SNAPSHOT")
-    implementation("com.shermant:lucide-icon-kmp-compose:0.2.0-SNAPSHOT")
+    implementation("com.shermant:lucide-icon-kmp:0.3.0-SNAPSHOT")
+    implementation("com.shermant:lucide-icon-kmp-compose:0.3.0-SNAPSHOT")
 }
 ```
 
