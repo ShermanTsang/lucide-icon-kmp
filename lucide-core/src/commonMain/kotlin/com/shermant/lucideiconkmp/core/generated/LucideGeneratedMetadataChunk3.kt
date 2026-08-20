@@ -6,6 +6,76 @@ import com.shermant.lucideiconkmp.core.model.LucideIconKey
 import com.shermant.lucideiconkmp.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk3 {
+    val CaseLower = LucideIconMetadata(
+        key = LucideIconKey("case-lower"),
+        displayName = "Case Lower",
+        tags = setOf("characters", "font", "letters", "text", "typography"),
+        zhDisplayName = "下壳",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CaseSensitive = LucideIconMetadata(
+        key = LucideIconKey("case-sensitive"),
+        displayName = "Case Sensitive",
+        tags = setOf("characters", "font", "letters", "text", "typography"),
+        zhDisplayName = "区分大小写",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CaseUpper = LucideIconMetadata(
+        key = LucideIconKey("case-upper"),
+        displayName = "Case Upper",
+        tags = setOf("characters", "font", "letters", "text", "typography"),
+        zhDisplayName = "外壳上部",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CassetteTape = LucideIconMetadata(
+        key = LucideIconKey("cassette-tape"),
+        displayName = "Cassette Tape",
+        tags = setOf("audio", "music", "play", "recording"),
+        zhDisplayName = "盒式磁带",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Files, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Cast = LucideIconMetadata(
+        key = LucideIconKey("cast"),
+        displayName = "Cast",
+        tags = setOf("broadcast", "display", "media", "media streaming", "receiver", "remote display", "screen", "screen sharing", "stream", "streaming", "transmit", "wireless"),
+        zhDisplayName = "演员阵容",
+        categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Castle = LucideIconMetadata(
+        key = LucideIconKey("castle"),
+        displayName = "Castle",
+        tags = setOf("building", "chateau", "fortress", "palace", "stronghold"),
+        zhDisplayName = "城堡",
+        categories = setOf(LucideIconCategory.Buildings, LucideIconCategory.Gaming, LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Cat = LucideIconMetadata(
+        key = LucideIconKey("cat"),
+        displayName = "Cat",
+        tags = setOf("animal", "feline", "kitten", "pet"),
+        zhDisplayName = "猫",
+        categories = setOf(LucideIconCategory.Animals),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val CctvOff = LucideIconMetadata(
         key = LucideIconKey("cctv-off"),
         displayName = "Cctv Off",
@@ -766,6 +836,16 @@ internal object LucideGeneratedMetadataChunk3 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val CircleEuro = LucideIconMetadata(
+        key = LucideIconKey("circle-euro"),
+        displayName = "Circle Euro",
+        tags = setOf("banking", "coin", "currency", "economy", "euro", "europe", "exchange", "finance", "financial", "money", "payment", "symbol", "€"),
+        zhDisplayName = "圆欧元",
+        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Shopping),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val CircleFadingArrowUp = LucideIconMetadata(
         key = LucideIconKey("circle-fading-arrow-up"),
         displayName = "Circle Fading Arrow Up",
@@ -779,7 +859,7 @@ internal object LucideGeneratedMetadataChunk3 {
     val CircleFadingPlus = LucideIconMetadata(
         key = LucideIconKey("circle-fading-plus"),
         displayName = "Circle Fading Plus",
-        tags = setOf("content", "facebook", "instagram", "meta", "sharing", "snapchat", "social media", "stories"),
+        tags = setOf("content", "sharing", "social media", "stories"),
         zhDisplayName = "圆淡入加",
         categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Social),
         defaultStrokeWidth = 2.0f,
@@ -926,87 +1006,14 @@ internal object LucideGeneratedMetadataChunk3 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val CircleSlash = LucideIconMetadata(
-        key = LucideIconKey("circle-slash"),
-        displayName = "Circle Slash",
-        tags = setOf("/", "ban", "cancel", "diameter", "divide", "division", "error", "failure", "forbidden", "incorrect", "mistake", "no", "nothing", "null", "or", "prohibited", "stop", "void", "wrong", "zero", "Ø"),
-        zhDisplayName = "圆斜线",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Math),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CircleSmall = LucideIconMetadata(
-        key = LucideIconKey("circle-small"),
-        displayName = "Circle Small",
-        tags = setOf("bullet", "gender", "genderless", "shape"),
-        zhDisplayName = "小圆圈",
-        categories = setOf(LucideIconCategory.Medical, LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CircleStar = LucideIconMetadata(
-        key = LucideIconKey("circle-star"),
-        displayName = "Circle Star",
-        tags = setOf("badge", "bronze", "decoration", "gold", "honour", "insignia", "laurel", "medal", "medallion", "order", "pin", "silver", "trophy"),
-        zhDisplayName = "圆星",
-        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Sports),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CircleStop = LucideIconMetadata(
-        key = LucideIconKey("circle-stop"),
-        displayName = "Circle Stop",
-        tags = setOf("media", "music", "stop-circle"),
-        zhDisplayName = "圆圈停止",
-        categories = setOf(LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CircleUserRound = LucideIconMetadata(
-        key = LucideIconKey("circle-user-round"),
-        displayName = "Circle User Round",
-        tags = setOf("account", "contact", "person", "user-circle-2"),
-        zhDisplayName = "圈用户回合",
-        categories = setOf(LucideIconCategory.Account),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CircleUser = LucideIconMetadata(
-        key = LucideIconKey("circle-user"),
-        displayName = "Circle User",
-        tags = setOf("account", "contact", "person", "user-circle"),
-        zhDisplayName = "圈子用户",
-        categories = setOf(LucideIconCategory.Account),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CircleX = LucideIconMetadata(
-        key = LucideIconKey("circle-x"),
-        displayName = "Circle X",
-        tags = setOf("cancel", "clear", "close", "delete", "error", "failure", "incorrect", "linter", "mistake", "multiplication", "multiply", "remove", "times", "wrong", "x-circle"),
-        zhDisplayName = "圆X",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Math),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Circle = LucideIconMetadata(
-        key = LucideIconKey("circle"),
-        displayName = "Circle",
-        tags = setOf("off", "record", "shape", "zero"),
-        zhDisplayName = "圆",
-        categories = setOf(LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        CaseLower,
+        CaseSensitive,
+        CaseUpper,
+        CassetteTape,
+        Cast,
+        Castle,
+        Cat,
         CctvOff,
         Cctv,
         ChartArea,
@@ -1083,6 +1090,7 @@ internal object LucideGeneratedMetadataChunk3 {
         CircleDot,
         CircleEllipsis,
         CircleEqual,
+        CircleEuro,
         CircleFadingArrowUp,
         CircleFadingPlus,
         CircleGauge,
@@ -1098,14 +1106,6 @@ internal object LucideGeneratedMetadataChunk3 {
         CirclePoundSterling,
         CirclePower,
         CircleQuestionMark,
-        CircleSlash2,
-        CircleSlash,
-        CircleSmall,
-        CircleStar,
-        CircleStop,
-        CircleUserRound,
-        CircleUser,
-        CircleX,
-        Circle
+        CircleSlash2
     )
 }

@@ -23,12 +23,12 @@ val Trophy: ImageVector
 val LucideIcons.Trophy: ImageVector
     get() = trophyProvider.create()
 
-private val trophyPath0 = PathParser().parsePathString("M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978").toNodes()
-private val trophyPath1 = PathParser().parsePathString("M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978").toNodes()
-private val trophyPath2 = PathParser().parsePathString("M18 9h1.5a1 1 0 0 0 0-5H18").toNodes()
+private val trophyPath0 = PathParser().parsePathString("M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2").toNodes()
+private val trophyPath1 = PathParser().parsePathString("M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2").toNodes()
+private val trophyPath2 = PathParser().parsePathString("M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3").toNodes()
 private val trophyPath3 = PathParser().parsePathString("M4 22h16").toNodes()
 private val trophyPath4 = PathParser().parsePathString("M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z").toNodes()
-private val trophyPath5 = PathParser().parsePathString("M6 9H4.5a1 1 0 0 1 0-5H6").toNodes()
+private val trophyPath5 = PathParser().parsePathString("M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3").toNodes()
 
 private fun buildTrophy(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

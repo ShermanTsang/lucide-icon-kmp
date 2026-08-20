@@ -23,11 +23,10 @@ val CalendarFold: ImageVector
 val LucideIcons.CalendarFold: ImageVector
     get() = calendarFoldProvider.create()
 
-private val calendarFoldPath0 = PathParser().parsePathString("M3 20a2 2 0 0 0 2 2h10a2.4 2.4 0 0 0 1.706-.706l3.588-3.588A2.4 2.4 0 0 0 21 16V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z").toNodes()
-private val calendarFoldPath1 = PathParser().parsePathString("M15 22v-5a1 1 0 0 1 1-1h5").toNodes()
-private val calendarFoldPath2 = PathParser().parsePathString("M8 2v4").toNodes()
-private val calendarFoldPath3 = PathParser().parsePathString("M16 2v4").toNodes()
-private val calendarFoldPath4 = PathParser().parsePathString("M3 10h18").toNodes()
+private val calendarFoldPath0 = PathParser().parsePathString("M16 2v3").toNodes()
+private val calendarFoldPath1 = PathParser().parsePathString("M21 15V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h10v-5a1 1 0 011-1za2.4 2.4 0 01-.706 1.706l-3.588 3.588A2.4 2.4 0 0115 21").toNodes()
+private val calendarFoldPath2 = PathParser().parsePathString("M3 9h18").toNodes()
+private val calendarFoldPath3 = PathParser().parsePathString("M8 2v3").toNodes()
 
 private fun buildCalendarFold(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp
@@ -69,15 +68,6 @@ private fun buildCalendarFold(parameters: IconRenderParameters = IconRenderParam
         )
         addPath(
             pathData = calendarFoldPath3,
-            pathFillType = PathFillType.NonZero,
-            fill = null,
-            stroke = SolidColor(Color.Black),
-            strokeLineWidth = strokeWidth,
-            strokeLineCap = StrokeCap.Round,
-            strokeLineJoin = StrokeJoin.Round,
-        )
-        addPath(
-            pathData = calendarFoldPath4,
             pathFillType = PathFillType.NonZero,
             fill = null,
             stroke = SolidColor(Color.Black),

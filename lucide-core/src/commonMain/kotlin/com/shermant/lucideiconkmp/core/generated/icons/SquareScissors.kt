@@ -23,12 +23,12 @@ val SquareScissors: ImageVector
 val LucideIcons.SquareScissors: ImageVector
     get() = squareScissorsProvider.create()
 
-private val squareScissorsPath0 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
-private val squareScissorsPath1 = PathParser().parsePathString("M 10 8.5 A 1.5 1.5 0 1 0 7 8.5 A 1.5 1.5 0 1 0 10 8.5 Z").toNodes()
-private val squareScissorsPath2 = PathParser().parsePathString("M 9.56066 9.56066 L 12 12").toNodes()
-private val squareScissorsPath3 = PathParser().parsePathString("M 17 17 L 14.82 14.82").toNodes()
-private val squareScissorsPath4 = PathParser().parsePathString("M 10 15.5 A 1.5 1.5 0 1 0 7 15.5 A 1.5 1.5 0 1 0 10 15.5 Z").toNodes()
-private val squareScissorsPath5 = PathParser().parsePathString("M 9.56066 14.43934 L 17 7").toNodes()
+private val squareScissorsPath0 = PathParser().parsePathString("m17 17-2.18-2.18").toNodes()
+private val squareScissorsPath1 = PathParser().parsePathString("M9.56 14.44 17 7").toNodes()
+private val squareScissorsPath2 = PathParser().parsePathString("M9.56 9.56 12 12").toNodes()
+private val squareScissorsPath3 = PathParser().parsePathString("M 10 15.5 A 1.5 1.5 0 1 0 7 15.5 A 1.5 1.5 0 1 0 10 15.5 Z").toNodes()
+private val squareScissorsPath4 = PathParser().parsePathString("M 10 8.5 A 1.5 1.5 0 1 0 7 8.5 A 1.5 1.5 0 1 0 10 8.5 Z").toNodes()
+private val squareScissorsPath5 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 
 private fun buildSquareScissors(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

@@ -23,10 +23,10 @@ val ZapOff: ImageVector
 val LucideIcons.ZapOff: ImageVector
     get() = zapOffProvider.create()
 
-private val zapOffPath0 = PathParser().parsePathString("M10.513 4.856 13.12 2.17a.5.5 0 0 1 .86.46l-1.377 4.317").toNodes()
-private val zapOffPath1 = PathParser().parsePathString("M15.656 10H20a1 1 0 0 1 .78 1.63l-1.72 1.773").toNodes()
-private val zapOffPath2 = PathParser().parsePathString("M16.273 16.273 10.88 21.83a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14H4a1 1 0 0 1-.78-1.63l4.507-4.643").toNodes()
-private val zapOffPath3 = PathParser().parsePathString("m2 2 20 20").toNodes()
+private val zapOffPath0 = PathParser().parsePathString("M10.768 5.111 13.44 2.44a1.5 1.5 0 012.474 1.561l-1.633 4.625").toNodes()
+private val zapOffPath1 = PathParser().parsePathString("m18.889 13.232.672-.672A1.5 1.5 0 0018.5 10h-2.844").toNodes()
+private val zapOffPath2 = PathParser().parsePathString("m2 2 20 20").toNodes()
+private val zapOffPath3 = PathParser().parsePathString("m7.94 7.94-3.5 3.499A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l5.5-5.5").toNodes()
 
 private fun buildZapOff(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

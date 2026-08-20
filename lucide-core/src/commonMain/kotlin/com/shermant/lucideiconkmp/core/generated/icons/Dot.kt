@@ -23,7 +23,7 @@ val Dot: ImageVector
 val LucideIcons.Dot: ImageVector
     get() = dotProvider.create()
 
-private val dotPath0 = PathParser().parsePathString("M 13.1 12.1 A 1 1 0 1 0 11.1 12.1 A 1 1 0 1 0 13.1 12.1 Z").toNodes()
+private val dotPath0 = PathParser().parsePathString("M 13 12 A 1 1 0 1 0 11 12 A 1 1 0 1 0 13 12 Z").toNodes()
 
 private fun buildDot(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

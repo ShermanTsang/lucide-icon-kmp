@@ -1,7 +1,7 @@
 package com.shermant.generator.writer
 
-import com.shermant.lucideiconkmp.generator.model.ParsedIcon
-import com.shermant.lucideiconkmp.generator.toPascalCaseIdentifier
+import com.shermant.generator.model.ParsedIcon
+import com.shermant.generator.toPascalCaseIdentifier
 import java.nio.file.Files
 import java.nio.file.Path
 import kotlin.io.path.createDirectories

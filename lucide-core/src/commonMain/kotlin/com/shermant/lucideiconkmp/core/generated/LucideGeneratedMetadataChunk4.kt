@@ -6,6 +6,86 @@ import com.shermant.lucideiconkmp.core.model.LucideIconKey
 import com.shermant.lucideiconkmp.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk4 {
+    val CircleSlash = LucideIconMetadata(
+        key = LucideIconKey("circle-slash"),
+        displayName = "Circle Slash",
+        tags = setOf("/", "ban", "cancel", "diameter", "divide", "division", "error", "failure", "forbidden", "incorrect", "mistake", "no", "nothing", "null", "or", "prohibited", "stop", "void", "wrong", "zero", "Ø"),
+        zhDisplayName = "圆斜线",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Math),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CircleSmall = LucideIconMetadata(
+        key = LucideIconKey("circle-small"),
+        displayName = "Circle Small",
+        tags = setOf("bullet", "gender", "genderless", "shape"),
+        zhDisplayName = "小圆圈",
+        categories = setOf(LucideIconCategory.Medical, LucideIconCategory.Shapes),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CircleStar = LucideIconMetadata(
+        key = LucideIconKey("circle-star"),
+        displayName = "Circle Star",
+        tags = setOf("badge", "bronze", "decoration", "gold", "honour", "insignia", "laurel", "medal", "medallion", "order", "pin", "silver", "trophy"),
+        zhDisplayName = "圆星",
+        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Sports),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CircleStop = LucideIconMetadata(
+        key = LucideIconKey("circle-stop"),
+        displayName = "Circle Stop",
+        tags = setOf("media", "music", "stop-circle"),
+        zhDisplayName = "圆圈停止",
+        categories = setOf(LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CircleUserRound = LucideIconMetadata(
+        key = LucideIconKey("circle-user-round"),
+        displayName = "Circle User Round",
+        tags = setOf("account", "contact", "person", "user-circle-2"),
+        zhDisplayName = "圈用户回合",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CircleUser = LucideIconMetadata(
+        key = LucideIconKey("circle-user"),
+        displayName = "Circle User",
+        tags = setOf("account", "contact", "person", "user-circle"),
+        zhDisplayName = "圈子用户",
+        categories = setOf(LucideIconCategory.Account),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CircleX = LucideIconMetadata(
+        key = LucideIconKey("circle-x"),
+        displayName = "Circle X",
+        tags = setOf("cancel", "clear", "close", "delete", "error", "failure", "incorrect", "linter", "mistake", "multiplication", "multiply", "remove", "times", "wrong", "x-circle"),
+        zhDisplayName = "圆X",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Math),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Circle = LucideIconMetadata(
+        key = LucideIconKey("circle"),
+        displayName = "Circle",
+        tags = setOf("off", "record", "shape", "zero"),
+        zhDisplayName = "圆",
+        categories = setOf(LucideIconCategory.Shapes),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val CircuitBoard = LucideIconMetadata(
         key = LucideIconKey("circuit-board"),
         displayName = "Circuit Board",
@@ -292,6 +372,26 @@ internal object LucideGeneratedMetadataChunk4 {
         tags = setOf("alarm", "ascending", "decreasing", "descending", "falling", "increasing", "order", "rising", "sort", "time", "watch"),
         zhDisplayName = "时钟箭头向下",
         categories = setOf(LucideIconCategory.Time),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ClockArrowLeft = LucideIconMetadata(
+        key = LucideIconKey("clock-arrow-left"),
+        displayName = "Clock Arrow Left",
+        tags = setOf("alarm", "assign", "range", "time", "watch"),
+        zhDisplayName = "时钟左箭头",
+        categories = setOf(LucideIconCategory.Time),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ClockArrowRight = LucideIconMetadata(
+        key = LucideIconKey("clock-arrow-right"),
+        displayName = "Clock Arrow Right",
+        tags = setOf("alarm", "range", "time", "unassign", "watch"),
+        zhDisplayName = "时钟右箭头",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.People, LucideIconCategory.Time),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -699,7 +799,7 @@ internal object LucideGeneratedMetadataChunk4 {
     val Compass = LucideIconMetadata(
         key = LucideIconKey("compass"),
         displayName = "Compass",
-        tags = setOf("browser", "direction", "east", "north", "safari", "south", "west"),
+        tags = setOf("browser", "direction", "east", "north", "south", "west"),
         zhDisplayName = "指南针",
         categories = setOf(LucideIconCategory.Navigation, LucideIconCategory.Travel),
         defaultStrokeWidth = 2.0f,
@@ -719,7 +819,7 @@ internal object LucideGeneratedMetadataChunk4 {
     val Computer = LucideIconMetadata(
         key = LucideIconKey("computer"),
         displayName = "Computer",
-        tags = setOf("chassis", "codespaces", "github", "pc"),
+        tags = setOf("chassis", "codespaces", "pc"),
         zhDisplayName = "电脑",
         categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices, LucideIconCategory.Gaming),
         defaultStrokeWidth = 2.0f,
@@ -779,7 +879,7 @@ internal object LucideGeneratedMetadataChunk4 {
     val Container = LucideIconMetadata(
         key = LucideIconKey("container"),
         displayName = "Container",
-        tags = setOf("code", "coding", "devops", "docker", "environment", "freight", "shipping", "storage", "supply chain"),
+        tags = setOf("code", "coding", "devops", "environment", "freight", "shipping", "storage", "supply chain"),
         zhDisplayName = "集装箱",
         categories = setOf(LucideIconCategory.Development, LucideIconCategory.Mail, LucideIconCategory.Transportation),
         defaultStrokeWidth = 2.0f,
@@ -906,107 +1006,15 @@ internal object LucideGeneratedMetadataChunk4 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val CornerDownRight = LucideIconMetadata(
-        key = LucideIconKey("corner-down-right"),
-        displayName = "Corner Down Right",
-        tags = setOf("arrow", "indent", "tab"),
-        zhDisplayName = "右下角",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Development, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CornerLeftDown = LucideIconMetadata(
-        key = LucideIconKey("corner-left-down"),
-        displayName = "Corner Left Down",
-        tags = setOf("arrow"),
-        zhDisplayName = "左下角",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CornerLeftUp = LucideIconMetadata(
-        key = LucideIconKey("corner-left-up"),
-        displayName = "Corner Left Up",
-        tags = setOf("arrow"),
-        zhDisplayName = "角向左向上",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CornerRightDown = LucideIconMetadata(
-        key = LucideIconKey("corner-right-down"),
-        displayName = "Corner Right Down",
-        tags = setOf("arrow"),
-        zhDisplayName = "右下角",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CornerRightUp = LucideIconMetadata(
-        key = LucideIconKey("corner-right-up"),
-        displayName = "Corner Right Up",
-        tags = setOf("arrow"),
-        zhDisplayName = "右角向上",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CornerUpLeft = LucideIconMetadata(
-        key = LucideIconKey("corner-up-left"),
-        displayName = "Corner Up Left",
-        tags = setOf("arrow"),
-        zhDisplayName = "左上角",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CornerUpRight = LucideIconMetadata(
-        key = LucideIconKey("corner-up-right"),
-        displayName = "Corner Up Right",
-        tags = setOf("arrow"),
-        zhDisplayName = "右上角",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Cpu = LucideIconMetadata(
-        key = LucideIconKey("cpu"),
-        displayName = "Cpu",
-        tags = setOf("chip", "circuit", "computer", "cores", "ghz", "gigahertz", "memory", "processor", "ram", "specs", "technology"),
-        zhDisplayName = "中央处理器",
-        categories = setOf(LucideIconCategory.Devices),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CreativeCommons = LucideIconMetadata(
-        key = LucideIconKey("creative-commons"),
-        displayName = "Creative Commons",
-        tags = setOf("licence", "license"),
-        zhDisplayName = "知识共享",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CreditCard = LucideIconMetadata(
-        key = LucideIconKey("credit-card"),
-        displayName = "Credit Card",
-        tags = setOf("bank", "cc", "payment", "purchase"),
-        zhDisplayName = "信用卡",
-        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Finance),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        CircleSlash,
+        CircleSmall,
+        CircleStar,
+        CircleStop,
+        CircleUserRound,
+        CircleUser,
+        CircleX,
+        Circle,
         CircuitBoard,
         Citrus,
         Clapperboard,
@@ -1036,6 +1044,8 @@ internal object LucideGeneratedMetadataChunk4 {
         Clock9,
         ClockAlert,
         ClockArrowDown,
+        ClockArrowLeft,
+        ClockArrowRight,
         ClockArrowUp,
         ClockCheck,
         ClockFading,
@@ -1096,16 +1106,6 @@ internal object LucideGeneratedMetadataChunk4 {
         Copy,
         Copyleft,
         Copyright,
-        CornerDownLeft,
-        CornerDownRight,
-        CornerLeftDown,
-        CornerLeftUp,
-        CornerRightDown,
-        CornerRightUp,
-        CornerUpLeft,
-        CornerUpRight,
-        Cpu,
-        CreativeCommons,
-        CreditCard
+        CornerDownLeft
     )
 }

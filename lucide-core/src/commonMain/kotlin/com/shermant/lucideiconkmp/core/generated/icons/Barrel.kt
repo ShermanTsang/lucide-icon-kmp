@@ -23,11 +23,11 @@ val Barrel: ImageVector
 val LucideIcons.Barrel: ImageVector
     get() = barrelProvider.create()
 
-private val barrelPath0 = PathParser().parsePathString("M10 3a41 41 0 0 0 0 18").toNodes()
-private val barrelPath1 = PathParser().parsePathString("M14 3a41 41 0 0 1 0 18").toNodes()
-private val barrelPath2 = PathParser().parsePathString("M17 3a2 2 0 0 1 1.68.92 15.25 15.25 0 0 1 0 16.16A2 2 0 0 1 17 21H7a2 2 0 0 1-1.68-.92 15.25 15.25 0 0 1 0-16.16A2 2 0 0 1 7 3z").toNodes()
-private val barrelPath3 = PathParser().parsePathString("M3.84 17h16.32").toNodes()
-private val barrelPath4 = PathParser().parsePathString("M3.84 7h16.32").toNodes()
+private val barrelPath0 = PathParser().parsePathString("M10 3a41 41 0 000 18").toNodes()
+private val barrelPath1 = PathParser().parsePathString("M14 3a41 41 0 010 18").toNodes()
+private val barrelPath2 = PathParser().parsePathString("M16.997 21a2 2 0 001.68-.92 15.25 15.25 0 000-16.16 2 2 0 00-1.68-.92h-10a2 2 0 00-1.681.92 15.25 15.25 0 000 16.16 2 2 0 001.681.92z").toNodes()
+private val barrelPath3 = PathParser().parsePathString("M3.54 16h16.914").toNodes()
+private val barrelPath4 = PathParser().parsePathString("M3.54 8h16.914").toNodes()
 
 private fun buildBarrel(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

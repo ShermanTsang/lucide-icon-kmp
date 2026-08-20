@@ -23,12 +23,12 @@ val BookOpenText: ImageVector
 val LucideIcons.BookOpenText: ImageVector
     get() = bookOpenTextProvider.create()
 
-private val bookOpenTextPath0 = PathParser().parsePathString("M12 7v14").toNodes()
-private val bookOpenTextPath1 = PathParser().parsePathString("M16 12h2").toNodes()
-private val bookOpenTextPath2 = PathParser().parsePathString("M16 8h2").toNodes()
-private val bookOpenTextPath3 = PathParser().parsePathString("M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z").toNodes()
-private val bookOpenTextPath4 = PathParser().parsePathString("M6 12h2").toNodes()
-private val bookOpenTextPath5 = PathParser().parsePathString("M6 8h2").toNodes()
+private val bookOpenTextPath0 = PathParser().parsePathString("M12 5v16").toNodes()
+private val bookOpenTextPath1 = PathParser().parsePathString("M16 13h2").toNodes()
+private val bookOpenTextPath2 = PathParser().parsePathString("M16 9h2").toNodes()
+private val bookOpenTextPath3 = PathParser().parsePathString("M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z").toNodes()
+private val bookOpenTextPath4 = PathParser().parsePathString("M6 13h2").toNodes()
+private val bookOpenTextPath5 = PathParser().parsePathString("M6 9h2").toNodes()
 
 private fun buildBookOpenText(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

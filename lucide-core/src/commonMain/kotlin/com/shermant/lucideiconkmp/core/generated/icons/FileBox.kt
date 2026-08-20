@@ -23,11 +23,11 @@ val FileBox: ImageVector
 val LucideIcons.FileBox: ImageVector
     get() = fileBoxProvider.create()
 
-private val fileBoxPath0 = PathParser().parsePathString("M14.5 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v3.8").toNodes()
-private val fileBoxPath1 = PathParser().parsePathString("M14 2v5a1 1 0 0 0 1 1h5").toNodes()
-private val fileBoxPath2 = PathParser().parsePathString("M11.7 14.2 7 17l-4.7-2.8").toNodes()
-private val fileBoxPath3 = PathParser().parsePathString("M3 13.1a2 2 0 0 0-.999 1.76v3.24a2 2 0 0 0 .969 1.78L6 21.7a2 2 0 0 0 2.03.01L11 19.9a2 2 0 0 0 1-1.76V14.9a2 2 0 0 0-.97-1.78L8 11.3a2 2 0 0 0-2.03-.01z").toNodes()
-private val fileBoxPath4 = PathParser().parsePathString("M7 17v5").toNodes()
+private val fileBoxPath0 = PathParser().parsePathString("M14 2v5a1 1 0 001 1h5").toNodes()
+private val fileBoxPath1 = PathParser().parsePathString("M14.692 22H18a2 2 0 002-2V8a2.4 2.4 0 00-.706-1.706l-3.588-3.588A2.4 2.4 0 0014 2H6a2 2 0 00-2 2v3.804").toNodes()
+private val fileBoxPath2 = PathParser().parsePathString("M2.264 13.752 7 16.5l4.737-2.748").toNodes()
+private val fileBoxPath3 = PathParser().parsePathString("M2.995 13.014A2 2 0 002 14.744v3.516a2 2 0 00.996 1.73l3 1.74a2 2 0 002.008 0l3-1.74A2 2 0 0012 18.26v-3.517a2 2 0 00-.995-1.73l-3-1.742a2 2 0 00-1.892-.064z").toNodes()
+private val fileBoxPath4 = PathParser().parsePathString("M7 16.5V22").toNodes()
 
 private fun buildFileBox(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

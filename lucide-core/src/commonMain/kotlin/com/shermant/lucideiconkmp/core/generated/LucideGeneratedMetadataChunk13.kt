@@ -6,11 +6,511 @@ import com.shermant.lucideiconkmp.core.model.LucideIconKey
 import com.shermant.lucideiconkmp.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk13 {
+    val RussianRuble = LucideIconMetadata(
+        key = LucideIconKey("russian-ruble"),
+        displayName = "Russian Ruble",
+        tags = setOf("currency", "money", "payment"),
+        zhDisplayName = "俄罗斯卢布",
+        categories = setOf(LucideIconCategory.Finance),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Sailboat = LucideIconMetadata(
+        key = LucideIconKey("sailboat"),
+        displayName = "Sailboat",
+        tags = setOf("boat", "dock", "harbor", "harbour", "ship"),
+        zhDisplayName = "帆船",
+        categories = setOf(LucideIconCategory.Transportation, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Salad = LucideIconMetadata(
+        key = LucideIconKey("salad"),
+        displayName = "Salad",
+        tags = setOf("course", "dish", "food", "health", "meal", "restaurant", "side", "vegetables", "vegetarian"),
+        zhDisplayName = "沙拉",
+        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.FoodBeverage),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Sandwich = LucideIconMetadata(
+        key = LucideIconKey("sandwich"),
+        displayName = "Sandwich",
+        tags = setOf("dish", "food", "lunch", "meal", "restaurant", "snack"),
+        zhDisplayName = "三明治",
+        categories = setOf(LucideIconCategory.FoodBeverage),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SatelliteDish = LucideIconMetadata(
+        key = LucideIconKey("satellite-dish"),
+        displayName = "Satellite Dish",
+        tags = setOf("antenna", "dish aerial", "receiver", "saucer"),
+        zhDisplayName = "卫星天线",
+        categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Satellite = LucideIconMetadata(
+        key = LucideIconKey("satellite"),
+        displayName = "Satellite",
+        tags = setOf("orbit", "space station", "transmitter"),
+        zhDisplayName = "卫星",
+        categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Science),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SaudiRiyal = LucideIconMetadata(
+        key = LucideIconKey("saudi-riyal"),
+        displayName = "Saudi Riyal",
+        tags = setOf("currency", "money", "payment"),
+        zhDisplayName = "沙特里亚尔",
+        categories = setOf(LucideIconCategory.Finance),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SaveAll = LucideIconMetadata(
+        key = LucideIconKey("save-all"),
+        displayName = "Save All",
+        tags = setOf("copy", "floppy disks"),
+        zhDisplayName = "全部保存",
+        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SaveCheck = LucideIconMetadata(
+        key = LucideIconKey("save-check"),
+        displayName = "Save Check",
+        tags = setOf("check", "floppy-disk", "save", "save-check", "save-success", "saved"),
+        zhDisplayName = "保存对勾",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SaveOff = LucideIconMetadata(
+        key = LucideIconKey("save-off"),
+        displayName = "Save Off",
+        tags = setOf("floppy disk", "unsalvageable"),
+        zhDisplayName = "保存关闭",
+        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SavePen = LucideIconMetadata(
+        key = LucideIconKey("save-pen"),
+        displayName = "Save Pen",
+        tags = setOf("directory", "floppy disk", "rename"),
+        zhDisplayName = "保存钢笔",
+        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SavePlus = LucideIconMetadata(
+        key = LucideIconKey("save-plus"),
+        displayName = "Save Plus",
+        tags = setOf("add", "create", "floppy disk", "plus", "save", "update"),
+        zhDisplayName = "保存加号",
+        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Save = LucideIconMetadata(
+        key = LucideIconKey("save"),
+        displayName = "Save",
+        tags = setOf("floppy disk"),
+        zhDisplayName = "保存",
+        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Scale3d = LucideIconMetadata(
+        key = LucideIconKey("scale-3d"),
+        displayName = "Scale 3d",
+        tags = setOf("axis", "gizmo", "scale-3-d", "size", "transform"),
+        zhDisplayName = "缩放 3d",
+        categories = setOf(LucideIconCategory.Design),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Scale = LucideIconMetadata(
+        key = LucideIconKey("scale"),
+        displayName = "Scale",
+        tags = setOf("balance", "compare", "decision", "ethics", "fair", "judge", "justice", "law", "legal", "license", "measure", "right", "rule", "weight"),
+        zhDisplayName = "规模",
+        categories = setOf(LucideIconCategory.Finance, LucideIconCategory.Navigation, LucideIconCategory.Science),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Scaling = LucideIconMetadata(
+        key = LucideIconKey("scaling"),
+        displayName = "Scaling",
+        tags = setOf("design", "resize", "scale"),
+        zhDisplayName = "缩放",
+        categories = setOf(LucideIconCategory.Design),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScanBarcode = LucideIconMetadata(
+        key = LucideIconKey("scan-barcode"),
+        displayName = "Scan Barcode",
+        tags = setOf("buy", "cart", "checkout", "consumer", "packaging", "product", "purchase", "retail", "till", "transaction"),
+        zhDisplayName = "扫描条码",
+        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Shopping),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScanBox = LucideIconMetadata(
+        key = LucideIconKey("scan-box"),
+        displayName = "Scan Box",
+        tags = setOf("3d", "ar", "augmented reality", "boundary", "bounding box", "camera", "capture", "cube", "depth", "frame", "lidar", "mapping", "object detection", "object recognition", "placement", "scanning", "shape", "spatial computing", "tracking"),
+        zhDisplayName = "扫描框",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Devices, LucideIconCategory.Gaming, LucideIconCategory.Shopping),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScanEye = LucideIconMetadata(
+        key = LucideIconKey("scan-eye"),
+        displayName = "Scan Eye",
+        tags = setOf("access", "authentication", "biometric", "camera", "expand", "focus", "fullscreen", "gallery", "identification", "image", "lens", "login", "preview", "retina", "surveillance", "watch", "zoom"),
+        zhDisplayName = "扫描眼",
+        categories = setOf(LucideIconCategory.Accessibility, LucideIconCategory.Account, LucideIconCategory.Devices, LucideIconCategory.Multimedia, LucideIconCategory.Photography, LucideIconCategory.Security),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScanFace = LucideIconMetadata(
+        key = LucideIconKey("scan-face"),
+        displayName = "Scan Face",
+        tags = setOf("2fa", "access", "authentication", "biometric", "dashed", "face", "identification", "login"),
+        zhDisplayName = "扫描脸部",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Devices, LucideIconCategory.Security, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScanHeart = LucideIconMetadata(
+        key = LucideIconKey("scan-heart"),
+        displayName = "Scan Heart",
+        tags = setOf("dashed", "health", "healthiness", "heart rate", "monitoring", "pulse", "screening"),
+        zhDisplayName = "扫描心脏",
+        categories = setOf(LucideIconCategory.Medical),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScanLine = LucideIconMetadata(
+        key = LucideIconKey("scan-line"),
+        displayName = "Scan Line",
+        tags = setOf("buy", "cart", "checkout", "consumer", "dashed", "packaging", "product", "purchase", "qr-code", "retail", "till", "transaction"),
+        zhDisplayName = "扫描线",
+        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Shopping),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScanQrCode = LucideIconMetadata(
+        key = LucideIconKey("scan-qr-code"),
+        displayName = "Scan Qr Code",
+        tags = setOf("barcode", "digital", "information", "qrcode", "scan", "scanner", "url"),
+        zhDisplayName = "扫描二维码",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Devices, LucideIconCategory.Security, LucideIconCategory.Shopping),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScanSearch = LucideIconMetadata(
+        key = LucideIconKey("scan-search"),
+        displayName = "Scan Search",
+        tags = setOf("expand", "focus", "fullscreen", "gallery", "image", "lens", "preview", "zoom"),
+        zhDisplayName = "扫描搜索",
+        categories = setOf(LucideIconCategory.Accessibility, LucideIconCategory.Multimedia, LucideIconCategory.Photography),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScanSquare = LucideIconMetadata(
+        key = LucideIconKey("scan-square"),
+        displayName = "Scan Square",
+        tags = setOf("boundary", "camera", "capture", "crop", "detect", "focus", "frame", "marker", "object", "overlay", "recognition", "scan", "scanner", "select", "shape", "square", "viewfinder"),
+        zhDisplayName = "扫描方形",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Development, LucideIconCategory.Photography),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScanText = LucideIconMetadata(
+        key = LucideIconKey("scan-text"),
+        displayName = "Scan Text",
+        tags = setOf("copy", "lines", "read", "recognition", "translate"),
+        zhDisplayName = "扫描文本",
+        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Scan = LucideIconMetadata(
+        key = LucideIconKey("scan"),
+        displayName = "Scan",
+        tags = setOf("ar", "area", "augmented reality", "barcode", "boundary", "bounds", "box", "camera", "checkout", "dashed", "focus", "frame", "lens", "qr-code", "select", "square", "surveillance", "target"),
+        zhDisplayName = "扫描",
+        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Gaming, LucideIconCategory.Security, LucideIconCategory.Shopping, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val School = LucideIconMetadata(
+        key = LucideIconKey("school"),
+        displayName = "School",
+        tags = setOf("academia", "assignment", "building", "campus", "childhood", "classroom", "course", "degree", "diploma", "education", "exam", "graduation", "homework", "knowledge", "learning", "lecture", "professor", "research", "scholar", "student", "study", "tutorial", "university"),
+        zhDisplayName = "学校",
+        categories = setOf(LucideIconCategory.Buildings, LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScissorsLineDashed = LucideIconMetadata(
+        key = LucideIconKey("scissors-line-dashed"),
+        displayName = "Scissors Line Dashed",
+        tags = setOf("along", "chop", "crafts", "cut here", "diagram", "instructions", "snip", "stationery"),
+        zhDisplayName = "剪刀线虚线",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Tools),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Scissors = LucideIconMetadata(
+        key = LucideIconKey("scissors"),
+        displayName = "Scissors",
+        tags = setOf("chop", "crafts", "cut", "snip", "stationery"),
+        zhDisplayName = "剪刀",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Text, LucideIconCategory.Tools),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Scooter = LucideIconMetadata(
+        key = LucideIconKey("scooter"),
+        displayName = "Scooter",
+        tags = setOf("commute", "drive", "electric", "journey", "ride", "speed", "transport", "trip", "urban", "vehicle"),
+        zhDisplayName = "踏板车",
+        categories = setOf(LucideIconCategory.Transportation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScreenShareOff = LucideIconMetadata(
+        key = LucideIconKey("screen-share-off"),
+        displayName = "Screen Share Off",
+        tags = setOf("desktop", "disconnect", "monitor"),
+        zhDisplayName = "屏幕共享关闭",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScreenShare = LucideIconMetadata(
+        key = LucideIconKey("screen-share"),
+        displayName = "Screen Share",
+        tags = setOf("desktop", "host", "monitor"),
+        zhDisplayName = "屏幕共享",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ScrollText = LucideIconMetadata(
+        key = LucideIconKey("scroll-text"),
+        displayName = "Scroll Text",
+        tags = setOf("code", "coding", "document", "list", "log", "long", "notes", "paper", "parchment", "script", "scripture", "story"),
+        zhDisplayName = "滚动文字",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Scroll = LucideIconMetadata(
+        key = LucideIconKey("scroll"),
+        displayName = "Scroll",
+        tags = setOf("code", "coding", "document", "list", "log", "long", "notes", "paper", "parchment", "script", "scripture", "story"),
+        zhDisplayName = "滚动",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SearchAlert = LucideIconMetadata(
+        key = LucideIconKey("search-alert"),
+        displayName = "Search Alert",
+        tags = setOf("alert", "anomaly", "discover", "enlarge", "error", "explore", "find", "lens", "locate", "magnifier", "magnifying glass", "scan", "stop", "warning", "zoom"),
+        zhDisplayName = "搜索警报",
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SearchCheck = LucideIconMetadata(
+        key = LucideIconKey("search-check"),
+        displayName = "Search Check",
+        tags = setOf("complete", "correct", "discover", "enlarge", "explore", "find", "found", "lens", "locate", "magnifier", "magnifying glass", "scan", "tick", "zoom"),
+        zhDisplayName = "搜索检查",
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SearchCode = LucideIconMetadata(
+        key = LucideIconKey("search-code"),
+        displayName = "Search Code",
+        tags = setOf("<>", "chevrons", "discover", "enlarge", "explore", "find", "grep", "lens", "locate", "magnifier", "magnifying glass", "scan", "zoom"),
+        zhDisplayName = "搜寻码",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SearchSlash = LucideIconMetadata(
+        key = LucideIconKey("search-slash"),
+        displayName = "Search Slash",
+        tags = setOf("/", "abort", "cancel", "clear", "discover", "enlarge", "explore", "find", "lens", "locate", "magnifier", "magnifying glass", "scan", "stop", "zoom"),
+        zhDisplayName = "搜索斜线",
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SearchX = LucideIconMetadata(
+        key = LucideIconKey("search-x"),
+        displayName = "Search X",
+        tags = setOf("abort", "cancel", "clear", "discover", "enlarge", "explore", "find", "lens", "locate", "magnifier", "magnifying glass", "scan", "stop", "zoom"),
+        zhDisplayName = "搜索X",
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Search = LucideIconMetadata(
+        key = LucideIconKey("search"),
+        displayName = "Search",
+        tags = setOf("discover", "enlarge", "explore", "find", "lens", "locate", "magnifier", "magnifying glass", "scan", "zoom"),
+        zhDisplayName = "搜索",
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Section = LucideIconMetadata(
+        key = LucideIconKey("section"),
+        displayName = "Section",
+        tags = setOf("legal", "mark", "prose", "punctuation", "symbol", "text", "type", "typography"),
+        zhDisplayName = "部分",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SendHorizontal = LucideIconMetadata(
+        key = LucideIconKey("send-horizontal"),
+        displayName = "Send Horizontal",
+        tags = setOf("email", "mail", "message", "paper aeroplane", "paper airplane", "send-horizonal", "submit"),
+        zhDisplayName = "发送水平",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Mail),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SendToBack = LucideIconMetadata(
+        key = LucideIconKey("send-to-back"),
+        displayName = "Send To Back",
+        tags = setOf("back", "backwards", "bring", "layer", "move", "order", "overlap", "send", "under"),
+        zhDisplayName = "发送到后面",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Send = LucideIconMetadata(
+        key = LucideIconKey("send"),
+        displayName = "Send",
+        tags = setOf("email", "mail", "message", "paper aeroplane", "paper airplane", "submit"),
+        zhDisplayName = "发送",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Mail),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SeparatorHorizontal = LucideIconMetadata(
+        key = LucideIconKey("separator-horizontal"),
+        displayName = "Separator Horizontal",
+        tags = setOf("move", "split"),
+        zhDisplayName = "卧式分离器",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val SeparatorVertical = LucideIconMetadata(
+        key = LucideIconKey("separator-vertical"),
+        displayName = "Separator Vertical",
+        tags = setOf("move", "split"),
+        zhDisplayName = "垂直分离器",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ServerCog = LucideIconMetadata(
+        key = LucideIconKey("server-cog"),
+        displayName = "Server Cog",
+        tags = setOf("cloud", "cog", "computing", "gear", "storage"),
+        zhDisplayName = "服务器齿轮",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ServerCrash = LucideIconMetadata(
+        key = LucideIconKey("server-crash"),
+        displayName = "Server Crash",
+        tags = setOf("cloud", "error", "problem", "storage"),
+        zhDisplayName = "服务器崩溃",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val ServerOff = LucideIconMetadata(
         key = LucideIconKey("server-off"),
         displayName = "Server Off",
         tags = setOf("cloud", "storage"),
         zhDisplayName = "服务器关闭",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ServerPlus = LucideIconMetadata(
+        key = LucideIconKey("server-plus"),
+        displayName = "Server Plus",
+        tags = setOf("add", "cloud", "computing", "create", "new", "storage"),
+        zhDisplayName = "服务器加号",
         categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
@@ -172,6 +672,26 @@ internal object LucideGeneratedMetadataChunk13 {
         tags = setOf("academy", "admin", "antivirus", "armored", "armoured", "army", "audit", "battle", "block", "bravery", "cadet", "college", "crest", "cybersecurity", "defence", "defender", "defense", "detection", "education", "faction", "flag", "foot soldier", "fraternity", "guardian", "infantry", "invincibility", "invincible", "invulnerable", "knight", "logo", "military", "pawn", "prevention", "protection", "ranking", "safety", "scan", "school", "scout", "secure", "sigil", "strength", "strong", "team", "threat", "tough", "trooper", "undamaged", "uniform", "university", "verification", "vigilance", "vigilant", "war"),
         zhDisplayName = "盾牌一半",
         categories = setOf(LucideIconCategory.Account, LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Security),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ShieldKeyhole = LucideIconMetadata(
+        key = LucideIconKey("shield-keyhole"),
+        displayName = "Shield Keyhole",
+        tags = setOf("admin", "antivirus", "audit", "block", "bravery", "crest", "cybersecurity", "defence", "defender", "defense", "detection", "find", "invincibility", "invincible", "invulnerable", "pawn", "prevention", "protection", "safety", "scan", "secure", "strength", "strong", "threat", "tough", "trooper", "undamaged", "verification", "vigilance", "vigilant"),
+        zhDisplayName = "盾牌钥匙孔",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Development, LucideIconCategory.Files, LucideIconCategory.Security),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val ShieldLock = LucideIconMetadata(
+        key = LucideIconKey("shield-lock"),
+        displayName = "Shield Lock",
+        tags = setOf("antivirus", "authentication", "authorization", "credentials", "cybersecurity", "data protection", "defense", "encryption", "guard", "login", "password", "privacy", "safeguard", "ssl", "tls", "two-factor authentication", "verification", "vpn"),
+        zhDisplayName = "盾牌锁",
+        categories = setOf(LucideIconCategory.Security),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -486,528 +1006,58 @@ internal object LucideGeneratedMetadataChunk13 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val SkipForward = LucideIconMetadata(
-        key = LucideIconKey("skip-forward"),
-        displayName = "Skip Forward",
-        tags = setOf("arrow", "music", "next", "skip"),
-        zhDisplayName = "向前跳",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Skull = LucideIconMetadata(
-        key = LucideIconKey("skull"),
-        displayName = "Skull",
-        tags = setOf("bone", "danger", "death"),
-        zhDisplayName = "头骨",
-        categories = setOf(LucideIconCategory.Gaming),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Slash = LucideIconMetadata(
-        key = LucideIconKey("slash"),
-        displayName = "Slash",
-        tags = setOf("/", "divide", "division", "or"),
-        zhDisplayName = "斜线",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Math),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Slice = LucideIconMetadata(
-        key = LucideIconKey("slice"),
-        displayName = "Slice",
-        tags = setOf("cutter", "knife", "scalpel"),
-        zhDisplayName = "切片",
-        categories = setOf(LucideIconCategory.Design),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SlidersHorizontal = LucideIconMetadata(
-        key = LucideIconKey("sliders-horizontal"),
-        displayName = "Sliders Horizontal",
-        tags = setOf("controls", "filters", "settings"),
-        zhDisplayName = "水平滑块",
-        categories = setOf(LucideIconCategory.Account),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SlidersVertical = LucideIconMetadata(
-        key = LucideIconKey("sliders-vertical"),
-        displayName = "Sliders Vertical",
-        tags = setOf("controls", "settings", "sliders"),
-        zhDisplayName = "垂直滑块",
-        categories = setOf(LucideIconCategory.Account),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SmartphoneCharging = LucideIconMetadata(
-        key = LucideIconKey("smartphone-charging"),
-        displayName = "Smartphone Charging",
-        tags = setOf("cellphone", "device", "phone", "power", "screen"),
-        zhDisplayName = "智能手机充电",
-        categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Devices),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SmartphoneNfc = LucideIconMetadata(
-        key = LucideIconKey("smartphone-nfc"),
-        displayName = "Smartphone Nfc",
-        tags = setOf("contactless", "near-field communication", "payment", "screen"),
-        zhDisplayName = "智能手机 NFC",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Devices, LucideIconCategory.Finance),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Smartphone = LucideIconMetadata(
-        key = LucideIconKey("smartphone"),
-        displayName = "Smartphone",
-        tags = setOf("cellphone", "device", "phone", "screen"),
-        zhDisplayName = "智能手机",
-        categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Devices),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SmilePlus = LucideIconMetadata(
-        key = LucideIconKey("smile-plus"),
-        displayName = "Smile Plus",
-        tags = setOf("add", "emoji", "emotion", "face", "good", "happy", "react", "reaction"),
-        zhDisplayName = "微笑加",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Emoji, LucideIconCategory.Notifications, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Smile = LucideIconMetadata(
-        key = LucideIconKey("smile"),
-        displayName = "Smile",
-        tags = setOf("emoji", "emotion", "face", "good", "happy"),
-        zhDisplayName = "微笑",
-        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Emoji),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Snail = LucideIconMetadata(
-        key = LucideIconKey("snail"),
-        displayName = "Snail",
-        tags = setOf("animal", "delicacy", "insect", "slow", "speed", "spiral"),
-        zhDisplayName = "蜗牛",
-        categories = setOf(LucideIconCategory.Animals, LucideIconCategory.FoodBeverage),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Snowflake = LucideIconMetadata(
-        key = LucideIconKey("snowflake"),
-        displayName = "Snowflake",
-        tags = setOf("cold", "freeze", "snow", "weather", "winter"),
-        zhDisplayName = "雪花",
-        categories = setOf(LucideIconCategory.Seasons, LucideIconCategory.Weather),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SoapDispenserDroplet = LucideIconMetadata(
-        key = LucideIconKey("soap-dispenser-droplet"),
-        displayName = "Soap Dispenser Droplet",
-        tags = setOf("bath", "bead", "damp", "fluid", "globule", "liquid", "moisture", "wash", "water", "wet"),
-        zhDisplayName = "皂液器水滴",
-        categories = setOf(LucideIconCategory.Home, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Sofa = LucideIconMetadata(
-        key = LucideIconKey("sofa"),
-        displayName = "Sofa",
-        tags = setOf("armchair", "couch", "furniture", "leisure", "lounge", "loveseat"),
-        zhDisplayName = "沙发",
-        categories = setOf(LucideIconCategory.Home),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SolarPanel = LucideIconMetadata(
-        key = LucideIconKey("solar-panel"),
-        displayName = "Solar Panel",
-        tags = setOf("electricity", "energy", "light", "panel", "solar", "solar panel", "sun"),
-        zhDisplayName = "太阳能电池板",
-        categories = setOf(LucideIconCategory.Home, LucideIconCategory.Science, LucideIconCategory.Sustainability, LucideIconCategory.Weather),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Soup = LucideIconMetadata(
-        key = LucideIconKey("soup"),
-        displayName = "Soup",
-        tags = setOf("bowl", "course", "dish", "food", "meal", "restaurant", "starter"),
-        zhDisplayName = "汤",
-        categories = setOf(LucideIconCategory.FoodBeverage),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Space = LucideIconMetadata(
-        key = LucideIconKey("space"),
-        displayName = "Space",
-        tags = setOf("characters", "font", "letters", "selection", "text", "typography"),
-        zhDisplayName = "空间",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Spade = LucideIconMetadata(
-        key = LucideIconKey("spade"),
-        displayName = "Spade",
-        tags = setOf("cards", "playing", "shape", "suit"),
-        zhDisplayName = "黑桃",
-        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Sparkle = LucideIconMetadata(
-        key = LucideIconKey("sparkle"),
-        displayName = "Sparkle",
-        tags = setOf("celebration", "effect", "filter", "glitter", "magic", "night", "shiny", "star", "twinkle"),
-        zhDisplayName = "闪闪发光",
-        categories = setOf(LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Sparkles = LucideIconMetadata(
-        key = LucideIconKey("sparkles"),
-        displayName = "Sparkles",
-        tags = setOf("effect", "filter", "magic", "night", "stars"),
-        zhDisplayName = "闪闪发光",
-        categories = setOf(LucideIconCategory.Cursors, LucideIconCategory.Gaming, LucideIconCategory.Multimedia, LucideIconCategory.Weather),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Speaker = LucideIconMetadata(
-        key = LucideIconKey("speaker"),
-        displayName = "Speaker",
-        tags = setOf("audio", "bass", "dj", "music", "producer", "production", "sound", "subwoofer", "tweeter"),
-        zhDisplayName = "扬声器",
-        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Speech = LucideIconMetadata(
-        key = LucideIconKey("speech"),
-        displayName = "Speech",
-        tags = setOf("accessibility", "dda", "disability", "disabled", "human", "people", "sound"),
-        zhDisplayName = "演讲",
-        categories = setOf(LucideIconCategory.Accessibility, LucideIconCategory.Communication),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SpellCheck2 = LucideIconMetadata(
-        key = LucideIconKey("spell-check-2"),
-        displayName = "Spell Check 2",
-        tags = setOf("a", "code", "correction", "error", "linter", "mistake", "oversight", "spelling", "typo"),
-        zhDisplayName = "拼写检查 2",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SpellCheck = LucideIconMetadata(
-        key = LucideIconKey("spell-check"),
-        displayName = "Spell Check",
-        tags = setOf("a", "code", "correction", "error", "linter", "mistake", "oversight", "spelling", "typo"),
-        zhDisplayName = "拼写检查",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SplinePointer = LucideIconMetadata(
-        key = LucideIconKey("spline-pointer"),
-        displayName = "Spline Pointer",
-        tags = setOf("click", "curve", "node", "path", "pointer", "target", "tool", "vector"),
-        zhDisplayName = "样条指针",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Cursors, LucideIconCategory.Design, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Spline = LucideIconMetadata(
-        key = LucideIconKey("spline"),
-        displayName = "Spline",
-        tags = setOf("curve", "draw", "path", "pen", "shape", "tool"),
-        zhDisplayName = "样条线",
-        categories = setOf(LucideIconCategory.Design),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Split = LucideIconMetadata(
-        key = LucideIconKey("split"),
-        displayName = "Split",
-        tags = setOf("branch", "break", "disband", "disunite", "divide", "separate"),
-        zhDisplayName = "斯普利特",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Development),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Spool = LucideIconMetadata(
-        key = LucideIconKey("spool"),
-        displayName = "Spool",
-        tags = setOf("bobbin", "needlework", "sewing", "spindle", "string", "thread", "yarn"),
-        zhDisplayName = "线轴",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Social, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SportShoe = LucideIconMetadata(
-        key = LucideIconKey("sport-shoe"),
-        displayName = "Sport Shoe",
-        tags = setOf("athletic", "exercise", "fitness", "footwear", "running", "shoe", "sneaker", "sports", "training"),
-        zhDisplayName = "运动鞋",
-        categories = setOf(LucideIconCategory.Sports),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Spotlight = LucideIconMetadata(
-        key = LucideIconKey("spotlight"),
-        displayName = "Spotlight",
-        tags = setOf("actor", "actress", "beam", "best", "concert", "drama", "entertainment", "focus", "followspot", "highlight", "leaderboard", "lens", "light", "performance", "play", "podium", "show", "singer", "soapbox", "stage", "theatre", "winner"),
-        zhDisplayName = "聚光灯",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Devices, LucideIconCategory.Multimedia, LucideIconCategory.Photography),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SprayCan = LucideIconMetadata(
-        key = LucideIconKey("spray-can"),
-        displayName = "Spray Can",
-        tags = setOf("aerosol", "air freshener", "color", "decoration", "deodorant", "graffiti", "paint", "shaving foam"),
-        zhDisplayName = "喷雾罐",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Sprout = LucideIconMetadata(
-        key = LucideIconKey("sprout"),
-        displayName = "Sprout",
-        tags = setOf("eco", "green", "growth", "leaf", "nature", "plant", "seed", "spring", "sustainability"),
-        zhDisplayName = "发芽",
-        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Nature, LucideIconCategory.Sustainability),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareActivity = LucideIconMetadata(
-        key = LucideIconKey("square-activity"),
-        displayName = "Square Activity",
-        tags = setOf("action", "activity-square", "aftershock", "audio", "defibrillator", "earthquake", "emergency room", "er", "exercise", "fitness", "healthcare", "heart rate monitor", "hospital", "intensive care", "magnitude", "motion", "movement", "music", "pulse", "richter scale", "shockwave", "siesmic", "synthesiser", "synthesizer", "tremor", "vital signs", "vitals", "waveform"),
-        zhDisplayName = "广场活动",
-        categories = setOf(LucideIconCategory.Medical, LucideIconCategory.Multimedia, LucideIconCategory.Science, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowDownLeft = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-down-left"),
-        displayName = "Square Arrow Down Left",
-        tags = setOf("arrow-down-left-square", "button", "diagonal", "direction", "keyboard", "sign", "south-west", "turn"),
-        zhDisplayName = "左下方形箭头",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Gaming),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowDownRight = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-down-right"),
-        displayName = "Square Arrow Down Right",
-        tags = setOf("arrow-down-right-square", "button", "diagonal", "direction", "keyboard", "sign", "south-east", "turn"),
-        zhDisplayName = "右下方形箭头",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Gaming),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowDown = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-down"),
-        displayName = "Square Arrow Down",
-        tags = setOf("arrow-down-square", "backwards", "button", "direction", "keyboard", "reverse", "sign", "south"),
-        zhDisplayName = "向下方形箭头",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Gaming),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowLeft = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-left"),
-        displayName = "Square Arrow Left",
-        tags = setOf("<-", "arrow-left-square", "back", "button", "direction", "keyboard", "previous", "sign", "west"),
-        zhDisplayName = "向左方箭头",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowOutDownLeft = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-out-down-left"),
-        displayName = "Square Arrow Out Down Left",
-        tags = setOf("arrow-down-left-from-square", "diagonal", "direction", "outwards", "south-west"),
-        zhDisplayName = "左下方箭头",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowOutDownRight = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-out-down-right"),
-        displayName = "Square Arrow Out Down Right",
-        tags = setOf("arrow-down-right-from-square", "diagonal", "direction", "outwards", "south-east"),
-        zhDisplayName = "右下方箭头",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowOutUpLeft = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-out-up-left"),
-        displayName = "Square Arrow Out Up Left",
-        tags = setOf("arrow-up-left-from-square", "diagonal", "direction", "north-west", "outwards"),
-        zhDisplayName = "左上方箭头",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowOutUpRight = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-out-up-right"),
-        displayName = "Square Arrow Out Up Right",
-        tags = setOf("arrow-up-right-from-square", "diagonal", "direction", "external", "link", "north-east", "open", "outwards", "share"),
-        zhDisplayName = "向右上方的方形箭头",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowRightEnter = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-right-enter"),
-        displayName = "Square Arrow Right Enter",
-        tags = setOf("->", "import", "in", "input", "insert", "inside", "left", "place", "source"),
-        zhDisplayName = "方形箭头右输入",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout, LucideIconCategory.Multimedia, LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowRightExit = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-right-exit"),
-        displayName = "Square Arrow Right Exit",
-        tags = setOf("->", "export", "out", "output", "outside"),
-        zhDisplayName = "方形箭头右出口",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout, LucideIconCategory.Multimedia, LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowRight = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-right"),
-        displayName = "Square Arrow Right",
-        tags = setOf("->", "arrow-right-square", "button", "direction", "forward", "keyboard", "next", "sign", "west"),
-        zhDisplayName = "向右方箭头",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowUpLeft = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-up-left"),
-        displayName = "Square Arrow Up Left",
-        tags = setOf("arrow-up-left-square", "button", "diagonal", "direction", "keyboard", "north-west", "sign"),
-        zhDisplayName = "左上方形箭头",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowUpRight = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-up-right"),
-        displayName = "Square Arrow Up Right",
-        tags = setOf("arrow-up-right-square", "button", "diagonal", "direction", "keyboard", "north-east", "share", "sign"),
-        zhDisplayName = "右上方形箭头",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareArrowUp = LucideIconMetadata(
-        key = LucideIconKey("square-arrow-up"),
-        displayName = "Square Arrow Up",
-        tags = setOf("arrow-up-square", "button", "direction", "forward", "keyboard", "north", "sign"),
-        zhDisplayName = "向上方形箭头",
-        categories = setOf(LucideIconCategory.Arrows),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareAsterisk = LucideIconMetadata(
-        key = LucideIconKey("square-asterisk"),
-        displayName = "Square Asterisk",
-        tags = setOf("*", "access", "asterisk-square", "glob pattern", "key", "multiplication", "multiply", "password", "secret", "wildcard"),
-        zhDisplayName = "方形星号",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Math, LucideIconCategory.Security, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareBottomDashedScissors = LucideIconMetadata(
-        key = LucideIconKey("square-bottom-dashed-scissors"),
-        displayName = "Square Bottom Dashed Scissors",
-        tags = setOf("chop", "crafts", "cut", "scissors-square-dashed-bottom", "snippet", "stationery"),
-        zhDisplayName = "方底虚线剪刀",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Development, LucideIconCategory.Files, LucideIconCategory.Text, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareCenterlineDashedHorizontal = LucideIconMetadata(
-        key = LucideIconKey("square-centerline-dashed-horizontal"),
-        displayName = "Square Centerline Dashed Horizontal",
-        tags = setOf("alignment", "dashed", "flip-horizontal", "mirror", "reflect"),
-        zhDisplayName = "方形中心线水平虚线",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Photography),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val SquareCenterlineDashedVertical = LucideIconMetadata(
-        key = LucideIconKey("square-centerline-dashed-vertical"),
-        displayName = "Square Centerline Dashed Vertical",
-        tags = setOf("alignment", "dashed", "flip-vertical", "mirror", "reflect"),
-        zhDisplayName = "方形中心线垂直虚线",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Photography),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        RussianRuble,
+        Sailboat,
+        Salad,
+        Sandwich,
+        SatelliteDish,
+        Satellite,
+        SaudiRiyal,
+        SaveAll,
+        SaveCheck,
+        SaveOff,
+        SavePen,
+        SavePlus,
+        Save,
+        Scale3d,
+        Scale,
+        Scaling,
+        ScanBarcode,
+        ScanBox,
+        ScanEye,
+        ScanFace,
+        ScanHeart,
+        ScanLine,
+        ScanQrCode,
+        ScanSearch,
+        ScanSquare,
+        ScanText,
+        Scan,
+        School,
+        ScissorsLineDashed,
+        Scissors,
+        Scooter,
+        ScreenShareOff,
+        ScreenShare,
+        ScrollText,
+        Scroll,
+        SearchAlert,
+        SearchCheck,
+        SearchCode,
+        SearchSlash,
+        SearchX,
+        Search,
+        Section,
+        SendHorizontal,
+        SendToBack,
+        Send,
+        SeparatorHorizontal,
+        SeparatorVertical,
+        ServerCog,
+        ServerCrash,
         ServerOff,
+        ServerPlus,
         Server,
         Settings2,
         Settings,
@@ -1024,6 +1074,8 @@ internal object LucideGeneratedMetadataChunk13 {
         ShieldCog,
         ShieldEllipsis,
         ShieldHalf,
+        ShieldKeyhole,
+        ShieldLock,
         ShieldMinus,
         ShieldOff,
         ShieldPlus,
@@ -1054,58 +1106,6 @@ internal object LucideGeneratedMetadataChunk13 {
         SignpostBig,
         Signpost,
         Siren,
-        SkipBack,
-        SkipForward,
-        Skull,
-        Slash,
-        Slice,
-        SlidersHorizontal,
-        SlidersVertical,
-        SmartphoneCharging,
-        SmartphoneNfc,
-        Smartphone,
-        SmilePlus,
-        Smile,
-        Snail,
-        Snowflake,
-        SoapDispenserDroplet,
-        Sofa,
-        SolarPanel,
-        Soup,
-        Space,
-        Spade,
-        Sparkle,
-        Sparkles,
-        Speaker,
-        Speech,
-        SpellCheck2,
-        SpellCheck,
-        SplinePointer,
-        Spline,
-        Split,
-        Spool,
-        SportShoe,
-        Spotlight,
-        SprayCan,
-        Sprout,
-        SquareActivity,
-        SquareArrowDownLeft,
-        SquareArrowDownRight,
-        SquareArrowDown,
-        SquareArrowLeft,
-        SquareArrowOutDownLeft,
-        SquareArrowOutDownRight,
-        SquareArrowOutUpLeft,
-        SquareArrowOutUpRight,
-        SquareArrowRightEnter,
-        SquareArrowRightExit,
-        SquareArrowRight,
-        SquareArrowUpLeft,
-        SquareArrowUpRight,
-        SquareArrowUp,
-        SquareAsterisk,
-        SquareBottomDashedScissors,
-        SquareCenterlineDashedHorizontal,
-        SquareCenterlineDashedVertical
+        SkipBack
     )
 }

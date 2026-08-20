@@ -24,10 +24,10 @@ val LucideIcons.CalendarClock: ImageVector
     get() = calendarClockProvider.create()
 
 private val calendarClockPath0 = PathParser().parsePathString("M16 14v2.2l1.6 1").toNodes()
-private val calendarClockPath1 = PathParser().parsePathString("M16 2v4").toNodes()
-private val calendarClockPath2 = PathParser().parsePathString("M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5").toNodes()
-private val calendarClockPath3 = PathParser().parsePathString("M3 10h5").toNodes()
-private val calendarClockPath4 = PathParser().parsePathString("M8 2v4").toNodes()
+private val calendarClockPath1 = PathParser().parsePathString("M16 2v3").toNodes()
+private val calendarClockPath2 = PathParser().parsePathString("M21 7.338V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2.338").toNodes()
+private val calendarClockPath3 = PathParser().parsePathString("M3 9h5.859").toNodes()
+private val calendarClockPath4 = PathParser().parsePathString("M8 2v3").toNodes()
 private val calendarClockPath5 = PathParser().parsePathString("M 22 16 A 6 6 0 1 0 10 16 A 6 6 0 1 0 22 16 Z").toNodes()
 
 private fun buildCalendarClock(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {

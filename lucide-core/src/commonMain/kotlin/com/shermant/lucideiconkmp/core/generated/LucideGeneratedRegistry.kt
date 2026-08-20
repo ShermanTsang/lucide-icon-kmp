@@ -5,6 +5,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.aArrowUpProvider
 import com.shermant.lucideiconkmp.core.generated.icons.aLargeSmallProvider
 import com.shermant.lucideiconkmp.core.generated.icons.accessibilityProvider
 import com.shermant.lucideiconkmp.core.generated.icons.activityProvider
+import com.shermant.lucideiconkmp.core.generated.icons.adProvider
 import com.shermant.lucideiconkmp.core.generated.icons.airVentProvider
 import com.shermant.lucideiconkmp.core.generated.icons.airplayProvider
 import com.shermant.lucideiconkmp.core.generated.icons.alarmClockCheckProvider
@@ -41,8 +42,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.ampersandProvider
 import com.shermant.lucideiconkmp.core.generated.icons.ampersandsProvider
 import com.shermant.lucideiconkmp.core.generated.icons.amphoraProvider
 import com.shermant.lucideiconkmp.core.generated.icons.anchorProvider
-import com.shermant.lucideiconkmp.core.generated.icons.angryProvider
-import com.shermant.lucideiconkmp.core.generated.icons.annoyedProvider
+import com.shermant.lucideiconkmp.core.generated.icons.angleProvider
 import com.shermant.lucideiconkmp.core.generated.icons.antennaProvider
 import com.shermant.lucideiconkmp.core.generated.icons.anvilProvider
 import com.shermant.lucideiconkmp.core.generated.icons.apertureProvider
@@ -100,6 +100,8 @@ import com.shermant.lucideiconkmp.core.generated.icons.asteriskProvider
 import com.shermant.lucideiconkmp.core.generated.icons.astroidProvider
 import com.shermant.lucideiconkmp.core.generated.icons.atSignProvider
 import com.shermant.lucideiconkmp.core.generated.icons.atomProvider
+import com.shermant.lucideiconkmp.core.generated.icons.audioLinesOffProvider
+import com.shermant.lucideiconkmp.core.generated.icons.audioLinesXProvider
 import com.shermant.lucideiconkmp.core.generated.icons.audioLinesProvider
 import com.shermant.lucideiconkmp.core.generated.icons.audioWaveformProvider
 import com.shermant.lucideiconkmp.core.generated.icons.awardProvider
@@ -132,6 +134,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.bananaProvider
 import com.shermant.lucideiconkmp.core.generated.icons.bandageProvider
 import com.shermant.lucideiconkmp.core.generated.icons.banknoteArrowDownProvider
 import com.shermant.lucideiconkmp.core.generated.icons.banknoteArrowUpProvider
+import com.shermant.lucideiconkmp.core.generated.icons.banknoteCheckProvider
 import com.shermant.lucideiconkmp.core.generated.icons.banknoteXProvider
 import com.shermant.lucideiconkmp.core.generated.icons.banknoteProvider
 import com.shermant.lucideiconkmp.core.generated.icons.barcodeProvider
@@ -186,6 +189,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.bluetoothProvider
 import com.shermant.lucideiconkmp.core.generated.icons.boldProvider
 import com.shermant.lucideiconkmp.core.generated.icons.boltProvider
 import com.shermant.lucideiconkmp.core.generated.icons.bombProvider
+import com.shermant.lucideiconkmp.core.generated.icons.boneFractureProvider
 import com.shermant.lucideiconkmp.core.generated.icons.boneProvider
 import com.shermant.lucideiconkmp.core.generated.icons.bookAProvider
 import com.shermant.lucideiconkmp.core.generated.icons.bookAlertProvider
@@ -241,6 +245,8 @@ import com.shermant.lucideiconkmp.core.generated.icons.briefcaseMedicalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.briefcaseProvider
 import com.shermant.lucideiconkmp.core.generated.icons.bringToFrontProvider
 import com.shermant.lucideiconkmp.core.generated.icons.broccoliProvider
+import com.shermant.lucideiconkmp.core.generated.icons.broomSparklesProvider
+import com.shermant.lucideiconkmp.core.generated.icons.broomProvider
 import com.shermant.lucideiconkmp.core.generated.icons.brushCleaningProvider
 import com.shermant.lucideiconkmp.core.generated.icons.brushProvider
 import com.shermant.lucideiconkmp.core.generated.icons.bubblesProvider
@@ -287,6 +293,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.cannabisOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.cannabisProvider
 import com.shermant.lucideiconkmp.core.generated.icons.captionsOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.captionsProvider
+import com.shermant.lucideiconkmp.core.generated.icons.carBatteryProvider
 import com.shermant.lucideiconkmp.core.generated.icons.carFrontProvider
 import com.shermant.lucideiconkmp.core.generated.icons.carTaxiFrontProvider
 import com.shermant.lucideiconkmp.core.generated.icons.carProvider
@@ -376,6 +383,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.circleDotDashedProvider
 import com.shermant.lucideiconkmp.core.generated.icons.circleDotProvider
 import com.shermant.lucideiconkmp.core.generated.icons.circleEllipsisProvider
 import com.shermant.lucideiconkmp.core.generated.icons.circleEqualProvider
+import com.shermant.lucideiconkmp.core.generated.icons.circleEuroProvider
 import com.shermant.lucideiconkmp.core.generated.icons.circleFadingArrowUpProvider
 import com.shermant.lucideiconkmp.core.generated.icons.circleFadingPlusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.circleGaugeProvider
@@ -429,6 +437,8 @@ import com.shermant.lucideiconkmp.core.generated.icons.clock8Provider
 import com.shermant.lucideiconkmp.core.generated.icons.clock9Provider
 import com.shermant.lucideiconkmp.core.generated.icons.clockAlertProvider
 import com.shermant.lucideiconkmp.core.generated.icons.clockArrowDownProvider
+import com.shermant.lucideiconkmp.core.generated.icons.clockArrowLeftProvider
+import com.shermant.lucideiconkmp.core.generated.icons.clockArrowRightProvider
 import com.shermant.lucideiconkmp.core.generated.icons.clockArrowUpProvider
 import com.shermant.lucideiconkmp.core.generated.icons.clockCheckProvider
 import com.shermant.lucideiconkmp.core.generated.icons.clockFadingProvider
@@ -510,8 +520,14 @@ import com.shermant.lucideiconkmp.core.generated.icons.cupSodaProvider
 import com.shermant.lucideiconkmp.core.generated.icons.currencyProvider
 import com.shermant.lucideiconkmp.core.generated.icons.cylinderProvider
 import com.shermant.lucideiconkmp.core.generated.icons.damProvider
+import com.shermant.lucideiconkmp.core.generated.icons.databaseArrowDownProvider
+import com.shermant.lucideiconkmp.core.generated.icons.databaseArrowUpProvider
 import com.shermant.lucideiconkmp.core.generated.icons.databaseBackupProvider
+import com.shermant.lucideiconkmp.core.generated.icons.databaseCheckProvider
+import com.shermant.lucideiconkmp.core.generated.icons.databaseMinusProvider
+import com.shermant.lucideiconkmp.core.generated.icons.databasePlusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.databaseSearchProvider
+import com.shermant.lucideiconkmp.core.generated.icons.databaseXProvider
 import com.shermant.lucideiconkmp.core.generated.icons.databaseZapProvider
 import com.shermant.lucideiconkmp.core.generated.icons.databaseProvider
 import com.shermant.lucideiconkmp.core.generated.icons.decimalsArrowLeftProvider
@@ -565,6 +581,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.eclipseProvider
 import com.shermant.lucideiconkmp.core.generated.icons.eggFriedProvider
 import com.shermant.lucideiconkmp.core.generated.icons.eggOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.eggProvider
+import com.shermant.lucideiconkmp.core.generated.icons.ejectProvider
 import com.shermant.lucideiconkmp.core.generated.icons.ellipseProvider
 import com.shermant.lucideiconkmp.core.generated.icons.ellipsisVerticalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.ellipsisProvider
@@ -578,8 +595,16 @@ import com.shermant.lucideiconkmp.core.generated.icons.evChargerProvider
 import com.shermant.lucideiconkmp.core.generated.icons.expandProvider
 import com.shermant.lucideiconkmp.core.generated.icons.externalLinkProvider
 import com.shermant.lucideiconkmp.core.generated.icons.eyeClosedProvider
+import com.shermant.lucideiconkmp.core.generated.icons.eyeDashedProvider
 import com.shermant.lucideiconkmp.core.generated.icons.eyeOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.eyeProvider
+import com.shermant.lucideiconkmp.core.generated.icons.faceAngryProvider
+import com.shermant.lucideiconkmp.core.generated.icons.faceExpressionlessProvider
+import com.shermant.lucideiconkmp.core.generated.icons.faceGrinningProvider
+import com.shermant.lucideiconkmp.core.generated.icons.faceNeutralProvider
+import com.shermant.lucideiconkmp.core.generated.icons.faceSlightlyFrowningProvider
+import com.shermant.lucideiconkmp.core.generated.icons.faceSlightlySmilingPlusProvider
+import com.shermant.lucideiconkmp.core.generated.icons.faceSlightlySmilingProvider
 import com.shermant.lucideiconkmp.core.generated.icons.factoryProvider
 import com.shermant.lucideiconkmp.core.generated.icons.fanProvider
 import com.shermant.lucideiconkmp.core.generated.icons.fastForwardProvider
@@ -705,7 +730,6 @@ import com.shermant.lucideiconkmp.core.generated.icons.forkliftProvider
 import com.shermant.lucideiconkmp.core.generated.icons.formProvider
 import com.shermant.lucideiconkmp.core.generated.icons.forwardProvider
 import com.shermant.lucideiconkmp.core.generated.icons.frameProvider
-import com.shermant.lucideiconkmp.core.generated.icons.frownProvider
 import com.shermant.lucideiconkmp.core.generated.icons.fuelProvider
 import com.shermant.lucideiconkmp.core.generated.icons.fullscreenProvider
 import com.shermant.lucideiconkmp.core.generated.icons.funnelPlusProvider
@@ -744,6 +768,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.gitPullRequestDraftProvid
 import com.shermant.lucideiconkmp.core.generated.icons.gitPullRequestProvider
 import com.shermant.lucideiconkmp.core.generated.icons.glassWaterProvider
 import com.shermant.lucideiconkmp.core.generated.icons.glassesProvider
+import com.shermant.lucideiconkmp.core.generated.icons.globeCheckProvider
 import com.shermant.lucideiconkmp.core.generated.icons.globeLockProvider
 import com.shermant.lucideiconkmp.core.generated.icons.globeOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.globeXProvider
@@ -807,7 +832,6 @@ import com.shermant.lucideiconkmp.core.generated.icons.heaterProvider
 import com.shermant.lucideiconkmp.core.generated.icons.helicopterProvider
 import com.shermant.lucideiconkmp.core.generated.icons.hexagonProvider
 import com.shermant.lucideiconkmp.core.generated.icons.highlighterProvider
-import com.shermant.lucideiconkmp.core.generated.icons.historyProvider
 import com.shermant.lucideiconkmp.core.generated.icons.hopOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.hopProvider
 import com.shermant.lucideiconkmp.core.generated.icons.hospitalProvider
@@ -864,12 +888,16 @@ import com.shermant.lucideiconkmp.core.generated.icons.laptopMinimalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.laptopProvider
 import com.shermant.lucideiconkmp.core.generated.icons.lassoSelectProvider
 import com.shermant.lucideiconkmp.core.generated.icons.lassoProvider
-import com.shermant.lucideiconkmp.core.generated.icons.laughProvider
+import com.shermant.lucideiconkmp.core.generated.icons.layerArrowDownProvider
+import com.shermant.lucideiconkmp.core.generated.icons.layerArrowUpProvider
 import com.shermant.lucideiconkmp.core.generated.icons.layers2Provider
+import com.shermant.lucideiconkmp.core.generated.icons.layersArrowDownProvider
+import com.shermant.lucideiconkmp.core.generated.icons.layersArrowUpProvider
 import com.shermant.lucideiconkmp.core.generated.icons.layersMinusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.layersPlusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.layersProvider
 import com.shermant.lucideiconkmp.core.generated.icons.layoutDashboardProvider
+import com.shermant.lucideiconkmp.core.generated.icons.layoutFreeformProvider
 import com.shermant.lucideiconkmp.core.generated.icons.layoutGridProvider
 import com.shermant.lucideiconkmp.core.generated.icons.layoutListProvider
 import com.shermant.lucideiconkmp.core.generated.icons.layoutPanelLeftProvider
@@ -896,6 +924,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.listCheckProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listChecksProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listChevronsDownUpProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listChevronsUpDownProvider
+import com.shermant.lucideiconkmp.core.generated.icons.listClockProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listCollapseProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listEndProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listFilterPlusProvider
@@ -907,6 +936,8 @@ import com.shermant.lucideiconkmp.core.generated.icons.listMusicProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listOrderedProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listPlusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listRestartProvider
+import com.shermant.lucideiconkmp.core.generated.icons.listSortAscendingProvider
+import com.shermant.lucideiconkmp.core.generated.icons.listSortDescendingProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listStartProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listTodoProvider
 import com.shermant.lucideiconkmp.core.generated.icons.listTreeProvider
@@ -929,6 +960,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.logsProvider
 import com.shermant.lucideiconkmp.core.generated.icons.lollipopProvider
 import com.shermant.lucideiconkmp.core.generated.icons.luggageProvider
 import com.shermant.lucideiconkmp.core.generated.icons.magnetProvider
+import com.shermant.lucideiconkmp.core.generated.icons.mailBadgeProvider
 import com.shermant.lucideiconkmp.core.generated.icons.mailCheckProvider
 import com.shermant.lucideiconkmp.core.generated.icons.mailMinusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.mailOpenProvider
@@ -965,7 +997,6 @@ import com.shermant.lucideiconkmp.core.generated.icons.maximizeProvider
 import com.shermant.lucideiconkmp.core.generated.icons.medalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.megaphoneOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.megaphoneProvider
-import com.shermant.lucideiconkmp.core.generated.icons.mehProvider
 import com.shermant.lucideiconkmp.core.generated.icons.memoryStickProvider
 import com.shermant.lucideiconkmp.core.generated.icons.menuProvider
 import com.shermant.lucideiconkmp.core.generated.icons.mergeProvider
@@ -1000,12 +1031,15 @@ import com.shermant.lucideiconkmp.core.generated.icons.messageSquareXProvider
 import com.shermant.lucideiconkmp.core.generated.icons.messageSquareProvider
 import com.shermant.lucideiconkmp.core.generated.icons.messagesSquareProvider
 import com.shermant.lucideiconkmp.core.generated.icons.metronomeProvider
+import com.shermant.lucideiconkmp.core.generated.icons.micAudioLinesProvider
 import com.shermant.lucideiconkmp.core.generated.icons.micOffProvider
+import com.shermant.lucideiconkmp.core.generated.icons.micSignalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.micVocalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.micProvider
 import com.shermant.lucideiconkmp.core.generated.icons.microchipProvider
 import com.shermant.lucideiconkmp.core.generated.icons.microscopeProvider
 import com.shermant.lucideiconkmp.core.generated.icons.microwaveProvider
+import com.shermant.lucideiconkmp.core.generated.icons.midiPortProvider
 import com.shermant.lucideiconkmp.core.generated.icons.milestoneProvider
 import com.shermant.lucideiconkmp.core.generated.icons.milkOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.milkProvider
@@ -1030,6 +1064,9 @@ import com.shermant.lucideiconkmp.core.generated.icons.monitorXProvider
 import com.shermant.lucideiconkmp.core.generated.icons.monitorProvider
 import com.shermant.lucideiconkmp.core.generated.icons.moonStarProvider
 import com.shermant.lucideiconkmp.core.generated.icons.moonProvider
+import com.shermant.lucideiconkmp.core.generated.icons.mopSparklesProvider
+import com.shermant.lucideiconkmp.core.generated.icons.mopProvider
+import com.shermant.lucideiconkmp.core.generated.icons.mosqueProvider
 import com.shermant.lucideiconkmp.core.generated.icons.motorbikeProvider
 import com.shermant.lucideiconkmp.core.generated.icons.mountainSnowProvider
 import com.shermant.lucideiconkmp.core.generated.icons.mountainProvider
@@ -1120,7 +1157,9 @@ import com.shermant.lucideiconkmp.core.generated.icons.panelTopProvider
 import com.shermant.lucideiconkmp.core.generated.icons.panelsLeftBottomProvider
 import com.shermant.lucideiconkmp.core.generated.icons.panelsRightBottomProvider
 import com.shermant.lucideiconkmp.core.generated.icons.panelsTopLeftProvider
+import com.shermant.lucideiconkmp.core.generated.icons.paperBagProvider
 import com.shermant.lucideiconkmp.core.generated.icons.paperclipProvider
+import com.shermant.lucideiconkmp.core.generated.icons.parasolProvider
 import com.shermant.lucideiconkmp.core.generated.icons.parenthesesProvider
 import com.shermant.lucideiconkmp.core.generated.icons.parkingMeterProvider
 import com.shermant.lucideiconkmp.core.generated.icons.partyPopperProvider
@@ -1134,10 +1173,12 @@ import com.shermant.lucideiconkmp.core.generated.icons.penProvider
 import com.shermant.lucideiconkmp.core.generated.icons.pencilLineProvider
 import com.shermant.lucideiconkmp.core.generated.icons.pencilOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.pencilRulerProvider
+import com.shermant.lucideiconkmp.core.generated.icons.pencilSparklesProvider
 import com.shermant.lucideiconkmp.core.generated.icons.pencilProvider
 import com.shermant.lucideiconkmp.core.generated.icons.pentagonProvider
 import com.shermant.lucideiconkmp.core.generated.icons.percentProvider
 import com.shermant.lucideiconkmp.core.generated.icons.personStandingProvider
+import com.shermant.lucideiconkmp.core.generated.icons.phiProvider
 import com.shermant.lucideiconkmp.core.generated.icons.philippinePesoProvider
 import com.shermant.lucideiconkmp.core.generated.icons.phoneCallProvider
 import com.shermant.lucideiconkmp.core.generated.icons.phoneForwardedProvider
@@ -1164,13 +1205,14 @@ import com.shermant.lucideiconkmp.core.generated.icons.pizzaProvider
 import com.shermant.lucideiconkmp.core.generated.icons.planeLandingProvider
 import com.shermant.lucideiconkmp.core.generated.icons.planeTakeoffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.planeProvider
+import com.shermant.lucideiconkmp.core.generated.icons.playOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.playProvider
 import com.shermant.lucideiconkmp.core.generated.icons.plug2Provider
 import com.shermant.lucideiconkmp.core.generated.icons.plugZapProvider
 import com.shermant.lucideiconkmp.core.generated.icons.plugProvider
 import com.shermant.lucideiconkmp.core.generated.icons.plusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.pocketKnifeProvider
-import com.shermant.lucideiconkmp.core.generated.icons.podcastProvider
+import com.shermant.lucideiconkmp.core.generated.icons.podiumProvider
 import com.shermant.lucideiconkmp.core.generated.icons.pointerOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.pointerProvider
 import com.shermant.lucideiconkmp.core.generated.icons.popcornProvider
@@ -1242,9 +1284,11 @@ import com.shermant.lucideiconkmp.core.generated.icons.rockingChairProvider
 import com.shermant.lucideiconkmp.core.generated.icons.rollerCoasterProvider
 import com.shermant.lucideiconkmp.core.generated.icons.roseProvider
 import com.shermant.lucideiconkmp.core.generated.icons.rotate3dProvider
+import com.shermant.lucideiconkmp.core.generated.icons.rotateCcwClockProvider
 import com.shermant.lucideiconkmp.core.generated.icons.rotateCcwKeyProvider
 import com.shermant.lucideiconkmp.core.generated.icons.rotateCcwSquareProvider
 import com.shermant.lucideiconkmp.core.generated.icons.rotateCcwProvider
+import com.shermant.lucideiconkmp.core.generated.icons.rotateCwFadingClockProvider
 import com.shermant.lucideiconkmp.core.generated.icons.rotateCwSquareProvider
 import com.shermant.lucideiconkmp.core.generated.icons.rotateCwProvider
 import com.shermant.lucideiconkmp.core.generated.icons.routeOffProvider
@@ -1264,18 +1308,23 @@ import com.shermant.lucideiconkmp.core.generated.icons.satelliteDishProvider
 import com.shermant.lucideiconkmp.core.generated.icons.satelliteProvider
 import com.shermant.lucideiconkmp.core.generated.icons.saudiRiyalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.saveAllProvider
+import com.shermant.lucideiconkmp.core.generated.icons.saveCheckProvider
 import com.shermant.lucideiconkmp.core.generated.icons.saveOffProvider
+import com.shermant.lucideiconkmp.core.generated.icons.savePenProvider
+import com.shermant.lucideiconkmp.core.generated.icons.savePlusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.saveProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scale3dProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scaleProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scalingProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scanBarcodeProvider
+import com.shermant.lucideiconkmp.core.generated.icons.scanBoxProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scanEyeProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scanFaceProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scanHeartProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scanLineProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scanQrCodeProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scanSearchProvider
+import com.shermant.lucideiconkmp.core.generated.icons.scanSquareProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scanTextProvider
 import com.shermant.lucideiconkmp.core.generated.icons.scanProvider
 import com.shermant.lucideiconkmp.core.generated.icons.schoolProvider
@@ -1301,6 +1350,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.separatorVerticalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.serverCogProvider
 import com.shermant.lucideiconkmp.core.generated.icons.serverCrashProvider
 import com.shermant.lucideiconkmp.core.generated.icons.serverOffProvider
+import com.shermant.lucideiconkmp.core.generated.icons.serverPlusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.serverProvider
 import com.shermant.lucideiconkmp.core.generated.icons.settings2Provider
 import com.shermant.lucideiconkmp.core.generated.icons.settingsProvider
@@ -1317,6 +1367,8 @@ import com.shermant.lucideiconkmp.core.generated.icons.shieldCogCornerProvider
 import com.shermant.lucideiconkmp.core.generated.icons.shieldCogProvider
 import com.shermant.lucideiconkmp.core.generated.icons.shieldEllipsisProvider
 import com.shermant.lucideiconkmp.core.generated.icons.shieldHalfProvider
+import com.shermant.lucideiconkmp.core.generated.icons.shieldKeyholeProvider
+import com.shermant.lucideiconkmp.core.generated.icons.shieldLockProvider
 import com.shermant.lucideiconkmp.core.generated.icons.shieldMinusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.shieldOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.shieldPlusProvider
@@ -1357,8 +1409,6 @@ import com.shermant.lucideiconkmp.core.generated.icons.slidersVerticalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.smartphoneChargingProvider
 import com.shermant.lucideiconkmp.core.generated.icons.smartphoneNfcProvider
 import com.shermant.lucideiconkmp.core.generated.icons.smartphoneProvider
-import com.shermant.lucideiconkmp.core.generated.icons.smilePlusProvider
-import com.shermant.lucideiconkmp.core.generated.icons.smileProvider
 import com.shermant.lucideiconkmp.core.generated.icons.snailProvider
 import com.shermant.lucideiconkmp.core.generated.icons.snowflakeProvider
 import com.shermant.lucideiconkmp.core.generated.icons.soapDispenserDropletProvider
@@ -1415,6 +1465,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.squareDashedMousePointerP
 import com.shermant.lucideiconkmp.core.generated.icons.squareDashedTextProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareDashedTopSolidProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareDashedProvider
+import com.shermant.lucideiconkmp.core.generated.icons.squareDimensionsProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareDivideProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareDotProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareEqualProvider
@@ -1425,6 +1476,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.squareMProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareMenuProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareMinusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareMousePointerProvider
+import com.shermant.lucideiconkmp.core.generated.icons.squareOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareParkingOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareParkingProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squarePauseProvider
@@ -1447,6 +1499,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.squareStackProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareStarProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareStopProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareTerminalProvider
+import com.shermant.lucideiconkmp.core.generated.icons.squareTextProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareUserRoundProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareUserProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squareXProvider
@@ -1459,8 +1512,12 @@ import com.shermant.lucideiconkmp.core.generated.icons.squircleDashedProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squircleProvider
 import com.shermant.lucideiconkmp.core.generated.icons.squirrelProvider
 import com.shermant.lucideiconkmp.core.generated.icons.stampProvider
+import com.shermant.lucideiconkmp.core.generated.icons.starCheckProvider
 import com.shermant.lucideiconkmp.core.generated.icons.starHalfProvider
+import com.shermant.lucideiconkmp.core.generated.icons.starMinusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.starOffProvider
+import com.shermant.lucideiconkmp.core.generated.icons.starPlusProvider
+import com.shermant.lucideiconkmp.core.generated.icons.starXProvider
 import com.shermant.lucideiconkmp.core.generated.icons.starProvider
 import com.shermant.lucideiconkmp.core.generated.icons.stepBackProvider
 import com.shermant.lucideiconkmp.core.generated.icons.stepForwardProvider
@@ -1479,6 +1536,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.stretchHorizontalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.stretchVerticalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.strikethroughProvider
 import com.shermant.lucideiconkmp.core.generated.icons.subscriptProvider
+import com.shermant.lucideiconkmp.core.generated.icons.summaryProvider
 import com.shermant.lucideiconkmp.core.generated.icons.sunDimProvider
 import com.shermant.lucideiconkmp.core.generated.icons.sunMediumProvider
 import com.shermant.lucideiconkmp.core.generated.icons.sunMoonProvider
@@ -1504,6 +1562,8 @@ import com.shermant.lucideiconkmp.core.generated.icons.tableProvider
 import com.shermant.lucideiconkmp.core.generated.icons.tabletSmartphoneProvider
 import com.shermant.lucideiconkmp.core.generated.icons.tabletProvider
 import com.shermant.lucideiconkmp.core.generated.icons.tabletsProvider
+import com.shermant.lucideiconkmp.core.generated.icons.tagPlusProvider
+import com.shermant.lucideiconkmp.core.generated.icons.tagXProvider
 import com.shermant.lucideiconkmp.core.generated.icons.tagProvider
 import com.shermant.lucideiconkmp.core.generated.icons.tagsProvider
 import com.shermant.lucideiconkmp.core.generated.icons.tally1Provider
@@ -1606,6 +1666,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.unlink2Provider
 import com.shermant.lucideiconkmp.core.generated.icons.unlinkProvider
 import com.shermant.lucideiconkmp.core.generated.icons.unplugProvider
 import com.shermant.lucideiconkmp.core.generated.icons.uploadProvider
+import com.shermant.lucideiconkmp.core.generated.icons.usbCPortProvider
 import com.shermant.lucideiconkmp.core.generated.icons.usbProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userCheckProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userCogProvider
@@ -1614,6 +1675,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.userLockProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userMinusProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userPenProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userPlusProvider
+import com.shermant.lucideiconkmp.core.generated.icons.userRoundArrowLeftProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userRoundCheckProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userRoundCogProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userRoundKeyProvider
@@ -1624,6 +1686,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.userRoundSearchProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userRoundXProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userRoundProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userSearchProvider
+import com.shermant.lucideiconkmp.core.generated.icons.userShieldProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userStarProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userXProvider
 import com.shermant.lucideiconkmp.core.generated.icons.userProvider
@@ -1669,6 +1732,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.wavesHorizontalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.wavesLadderProvider
 import com.shermant.lucideiconkmp.core.generated.icons.wavesVerticalProvider
 import com.shermant.lucideiconkmp.core.generated.icons.waypointsProvider
+import com.shermant.lucideiconkmp.core.generated.icons.webcamOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.webcamProvider
 import com.shermant.lucideiconkmp.core.generated.icons.webhookOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.webhookProvider
@@ -1691,6 +1755,7 @@ import com.shermant.lucideiconkmp.core.generated.icons.wineOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.wineProvider
 import com.shermant.lucideiconkmp.core.generated.icons.workflowProvider
 import com.shermant.lucideiconkmp.core.generated.icons.wormProvider
+import com.shermant.lucideiconkmp.core.generated.icons.wrenchOffProvider
 import com.shermant.lucideiconkmp.core.generated.icons.wrenchProvider
 import com.shermant.lucideiconkmp.core.generated.icons.xLineTopProvider
 import com.shermant.lucideiconkmp.core.generated.icons.xProvider
@@ -1740,6 +1805,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Activity,
         creator = LucideIconCreator { activityProvider.create() },
         parameterizedProvider = activityProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.Ad,
+        creator = LucideIconCreator { adProvider.create() },
+        parameterizedProvider = adProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.AirVent,
@@ -1922,14 +1992,9 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = anchorProvider,
     )
     registry.register(
-        metadata = LucideGeneratedMetadata.Angry,
-        creator = LucideIconCreator { angryProvider.create() },
-        parameterizedProvider = angryProvider,
-    )
-    registry.register(
-        metadata = LucideGeneratedMetadata.Annoyed,
-        creator = LucideIconCreator { annoyedProvider.create() },
-        parameterizedProvider = annoyedProvider,
+        metadata = LucideGeneratedMetadata.Angle,
+        creator = LucideIconCreator { angleProvider.create() },
+        parameterizedProvider = angleProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Antenna,
@@ -2217,6 +2282,16 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = atomProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.AudioLinesOff,
+        creator = LucideIconCreator { audioLinesOffProvider.create() },
+        parameterizedProvider = audioLinesOffProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.AudioLinesX,
+        creator = LucideIconCreator { audioLinesXProvider.create() },
+        parameterizedProvider = audioLinesXProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.AudioLines,
         creator = LucideIconCreator { audioLinesProvider.create() },
         parameterizedProvider = audioLinesProvider,
@@ -2375,6 +2450,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.BanknoteArrowUp,
         creator = LucideIconCreator { banknoteArrowUpProvider.create() },
         parameterizedProvider = banknoteArrowUpProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.BanknoteCheck,
+        creator = LucideIconCreator { banknoteCheckProvider.create() },
+        parameterizedProvider = banknoteCheckProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.BanknoteX,
@@ -2645,6 +2725,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Bomb,
         creator = LucideIconCreator { bombProvider.create() },
         parameterizedProvider = bombProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.BoneFracture,
+        creator = LucideIconCreator { boneFractureProvider.create() },
+        parameterizedProvider = boneFractureProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Bone,
@@ -2922,6 +3007,16 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = broccoliProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.BroomSparkles,
+        creator = LucideIconCreator { broomSparklesProvider.create() },
+        parameterizedProvider = broomSparklesProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.Broom,
+        creator = LucideIconCreator { broomProvider.create() },
+        parameterizedProvider = broomProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.BrushCleaning,
         creator = LucideIconCreator { brushCleaningProvider.create() },
         parameterizedProvider = brushCleaningProvider,
@@ -3150,6 +3245,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Captions,
         creator = LucideIconCreator { captionsProvider.create() },
         parameterizedProvider = captionsProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.CarBattery,
+        creator = LucideIconCreator { carBatteryProvider.create() },
+        parameterizedProvider = carBatteryProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.CarFront,
@@ -3597,6 +3697,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = circleEqualProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.CircleEuro,
+        creator = LucideIconCreator { circleEuroProvider.create() },
+        parameterizedProvider = circleEuroProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.CircleFadingArrowUp,
         creator = LucideIconCreator { circleFadingArrowUpProvider.create() },
         parameterizedProvider = circleFadingArrowUpProvider,
@@ -3860,6 +3965,16 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.ClockArrowDown,
         creator = LucideIconCreator { clockArrowDownProvider.create() },
         parameterizedProvider = clockArrowDownProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.ClockArrowLeft,
+        creator = LucideIconCreator { clockArrowLeftProvider.create() },
+        parameterizedProvider = clockArrowLeftProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.ClockArrowRight,
+        creator = LucideIconCreator { clockArrowRightProvider.create() },
+        parameterizedProvider = clockArrowRightProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.ClockArrowUp,
@@ -4267,14 +4382,44 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = damProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.DatabaseArrowDown,
+        creator = LucideIconCreator { databaseArrowDownProvider.create() },
+        parameterizedProvider = databaseArrowDownProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.DatabaseArrowUp,
+        creator = LucideIconCreator { databaseArrowUpProvider.create() },
+        parameterizedProvider = databaseArrowUpProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.DatabaseBackup,
         creator = LucideIconCreator { databaseBackupProvider.create() },
         parameterizedProvider = databaseBackupProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.DatabaseCheck,
+        creator = LucideIconCreator { databaseCheckProvider.create() },
+        parameterizedProvider = databaseCheckProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.DatabaseMinus,
+        creator = LucideIconCreator { databaseMinusProvider.create() },
+        parameterizedProvider = databaseMinusProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.DatabasePlus,
+        creator = LucideIconCreator { databasePlusProvider.create() },
+        parameterizedProvider = databasePlusProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.DatabaseSearch,
         creator = LucideIconCreator { databaseSearchProvider.create() },
         parameterizedProvider = databaseSearchProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.DatabaseX,
+        creator = LucideIconCreator { databaseXProvider.create() },
+        parameterizedProvider = databaseXProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.DatabaseZap,
@@ -4542,6 +4687,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = eggProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.Eject,
+        creator = LucideIconCreator { ejectProvider.create() },
+        parameterizedProvider = ejectProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.Ellipse,
         creator = LucideIconCreator { ellipseProvider.create() },
         parameterizedProvider = ellipseProvider,
@@ -4607,6 +4757,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = eyeClosedProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.EyeDashed,
+        creator = LucideIconCreator { eyeDashedProvider.create() },
+        parameterizedProvider = eyeDashedProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.EyeOff,
         creator = LucideIconCreator { eyeOffProvider.create() },
         parameterizedProvider = eyeOffProvider,
@@ -4615,6 +4770,41 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Eye,
         creator = LucideIconCreator { eyeProvider.create() },
         parameterizedProvider = eyeProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.FaceAngry,
+        creator = LucideIconCreator { faceAngryProvider.create() },
+        parameterizedProvider = faceAngryProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.FaceExpressionless,
+        creator = LucideIconCreator { faceExpressionlessProvider.create() },
+        parameterizedProvider = faceExpressionlessProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.FaceGrinning,
+        creator = LucideIconCreator { faceGrinningProvider.create() },
+        parameterizedProvider = faceGrinningProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.FaceNeutral,
+        creator = LucideIconCreator { faceNeutralProvider.create() },
+        parameterizedProvider = faceNeutralProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.FaceSlightlyFrowning,
+        creator = LucideIconCreator { faceSlightlyFrowningProvider.create() },
+        parameterizedProvider = faceSlightlyFrowningProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.FaceSlightlySmilingPlus,
+        creator = LucideIconCreator { faceSlightlySmilingPlusProvider.create() },
+        parameterizedProvider = faceSlightlySmilingPlusProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.FaceSlightlySmiling,
+        creator = LucideIconCreator { faceSlightlySmilingProvider.create() },
+        parameterizedProvider = faceSlightlySmilingProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Factory,
@@ -5242,11 +5432,6 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = frameProvider,
     )
     registry.register(
-        metadata = LucideGeneratedMetadata.Frown,
-        creator = LucideIconCreator { frownProvider.create() },
-        parameterizedProvider = frownProvider,
-    )
-    registry.register(
         metadata = LucideGeneratedMetadata.Fuel,
         creator = LucideIconCreator { fuelProvider.create() },
         parameterizedProvider = fuelProvider,
@@ -5435,6 +5620,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Glasses,
         creator = LucideIconCreator { glassesProvider.create() },
         parameterizedProvider = glassesProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.GlobeCheck,
+        creator = LucideIconCreator { globeCheckProvider.create() },
+        parameterizedProvider = globeCheckProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.GlobeLock,
@@ -5752,11 +5942,6 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = highlighterProvider,
     )
     registry.register(
-        metadata = LucideGeneratedMetadata.History,
-        creator = LucideIconCreator { historyProvider.create() },
-        parameterizedProvider = historyProvider,
-    )
-    registry.register(
         metadata = LucideGeneratedMetadata.HopOff,
         creator = LucideIconCreator { hopOffProvider.create() },
         parameterizedProvider = hopOffProvider,
@@ -6037,14 +6222,29 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = lassoProvider,
     )
     registry.register(
-        metadata = LucideGeneratedMetadata.Laugh,
-        creator = LucideIconCreator { laughProvider.create() },
-        parameterizedProvider = laughProvider,
+        metadata = LucideGeneratedMetadata.LayerArrowDown,
+        creator = LucideIconCreator { layerArrowDownProvider.create() },
+        parameterizedProvider = layerArrowDownProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.LayerArrowUp,
+        creator = LucideIconCreator { layerArrowUpProvider.create() },
+        parameterizedProvider = layerArrowUpProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Layers2,
         creator = LucideIconCreator { layers2Provider.create() },
         parameterizedProvider = layers2Provider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.LayersArrowDown,
+        creator = LucideIconCreator { layersArrowDownProvider.create() },
+        parameterizedProvider = layersArrowDownProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.LayersArrowUp,
+        creator = LucideIconCreator { layersArrowUpProvider.create() },
+        parameterizedProvider = layersArrowUpProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.LayersMinus,
@@ -6065,6 +6265,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.LayoutDashboard,
         creator = LucideIconCreator { layoutDashboardProvider.create() },
         parameterizedProvider = layoutDashboardProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.LayoutFreeform,
+        creator = LucideIconCreator { layoutFreeformProvider.create() },
+        parameterizedProvider = layoutFreeformProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.LayoutGrid,
@@ -6197,6 +6402,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = listChevronsUpDownProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.ListClock,
+        creator = LucideIconCreator { listClockProvider.create() },
+        parameterizedProvider = listClockProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.ListCollapse,
         creator = LucideIconCreator { listCollapseProvider.create() },
         parameterizedProvider = listCollapseProvider,
@@ -6250,6 +6460,16 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.ListRestart,
         creator = LucideIconCreator { listRestartProvider.create() },
         parameterizedProvider = listRestartProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.ListSortAscending,
+        creator = LucideIconCreator { listSortAscendingProvider.create() },
+        parameterizedProvider = listSortAscendingProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.ListSortDescending,
+        creator = LucideIconCreator { listSortDescendingProvider.create() },
+        parameterizedProvider = listSortDescendingProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.ListStart,
@@ -6360,6 +6580,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Magnet,
         creator = LucideIconCreator { magnetProvider.create() },
         parameterizedProvider = magnetProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.MailBadge,
+        creator = LucideIconCreator { mailBadgeProvider.create() },
+        parameterizedProvider = mailBadgeProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.MailCheck,
@@ -6542,11 +6767,6 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = megaphoneProvider,
     )
     registry.register(
-        metadata = LucideGeneratedMetadata.Meh,
-        creator = LucideIconCreator { mehProvider.create() },
-        parameterizedProvider = mehProvider,
-    )
-    registry.register(
         metadata = LucideGeneratedMetadata.MemoryStick,
         creator = LucideIconCreator { memoryStickProvider.create() },
         parameterizedProvider = memoryStickProvider,
@@ -6717,9 +6937,19 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = metronomeProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.MicAudioLines,
+        creator = LucideIconCreator { micAudioLinesProvider.create() },
+        parameterizedProvider = micAudioLinesProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.MicOff,
         creator = LucideIconCreator { micOffProvider.create() },
         parameterizedProvider = micOffProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.MicSignal,
+        creator = LucideIconCreator { micSignalProvider.create() },
+        parameterizedProvider = micSignalProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.MicVocal,
@@ -6745,6 +6975,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Microwave,
         creator = LucideIconCreator { microwaveProvider.create() },
         parameterizedProvider = microwaveProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.MidiPort,
+        creator = LucideIconCreator { midiPortProvider.create() },
+        parameterizedProvider = midiPortProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Milestone,
@@ -6865,6 +7100,21 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Moon,
         creator = LucideIconCreator { moonProvider.create() },
         parameterizedProvider = moonProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.MopSparkles,
+        creator = LucideIconCreator { mopSparklesProvider.create() },
+        parameterizedProvider = mopSparklesProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.Mop,
+        creator = LucideIconCreator { mopProvider.create() },
+        parameterizedProvider = mopProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.Mosque,
+        creator = LucideIconCreator { mosqueProvider.create() },
+        parameterizedProvider = mosqueProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Motorbike,
@@ -7317,9 +7567,19 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = panelsTopLeftProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.PaperBag,
+        creator = LucideIconCreator { paperBagProvider.create() },
+        parameterizedProvider = paperBagProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.Paperclip,
         creator = LucideIconCreator { paperclipProvider.create() },
         parameterizedProvider = paperclipProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.Parasol,
+        creator = LucideIconCreator { parasolProvider.create() },
+        parameterizedProvider = parasolProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Parentheses,
@@ -7387,6 +7647,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = pencilRulerProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.PencilSparkles,
+        creator = LucideIconCreator { pencilSparklesProvider.create() },
+        parameterizedProvider = pencilSparklesProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.Pencil,
         creator = LucideIconCreator { pencilProvider.create() },
         parameterizedProvider = pencilProvider,
@@ -7405,6 +7670,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.PersonStanding,
         creator = LucideIconCreator { personStandingProvider.create() },
         parameterizedProvider = personStandingProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.Phi,
+        creator = LucideIconCreator { phiProvider.create() },
+        parameterizedProvider = phiProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.PhilippinePeso,
@@ -7537,6 +7807,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = planeProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.PlayOff,
+        creator = LucideIconCreator { playOffProvider.create() },
+        parameterizedProvider = playOffProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.Play,
         creator = LucideIconCreator { playProvider.create() },
         parameterizedProvider = playProvider,
@@ -7567,9 +7842,9 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = pocketKnifeProvider,
     )
     registry.register(
-        metadata = LucideGeneratedMetadata.Podcast,
-        creator = LucideIconCreator { podcastProvider.create() },
-        parameterizedProvider = podcastProvider,
+        metadata = LucideGeneratedMetadata.Podium,
+        creator = LucideIconCreator { podiumProvider.create() },
+        parameterizedProvider = podiumProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.PointerOff,
@@ -7927,6 +8202,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = rotate3dProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.RotateCcwClock,
+        creator = LucideIconCreator { rotateCcwClockProvider.create() },
+        parameterizedProvider = rotateCcwClockProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.RotateCcwKey,
         creator = LucideIconCreator { rotateCcwKeyProvider.create() },
         parameterizedProvider = rotateCcwKeyProvider,
@@ -7940,6 +8220,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.RotateCcw,
         creator = LucideIconCreator { rotateCcwProvider.create() },
         parameterizedProvider = rotateCcwProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.RotateCwFadingClock,
+        creator = LucideIconCreator { rotateCwFadingClockProvider.create() },
+        parameterizedProvider = rotateCwFadingClockProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.RotateCwSquare,
@@ -8037,9 +8322,24 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = saveAllProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.SaveCheck,
+        creator = LucideIconCreator { saveCheckProvider.create() },
+        parameterizedProvider = saveCheckProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.SaveOff,
         creator = LucideIconCreator { saveOffProvider.create() },
         parameterizedProvider = saveOffProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.SavePen,
+        creator = LucideIconCreator { savePenProvider.create() },
+        parameterizedProvider = savePenProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.SavePlus,
+        creator = LucideIconCreator { savePlusProvider.create() },
+        parameterizedProvider = savePlusProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Save,
@@ -8065,6 +8365,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.ScanBarcode,
         creator = LucideIconCreator { scanBarcodeProvider.create() },
         parameterizedProvider = scanBarcodeProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.ScanBox,
+        creator = LucideIconCreator { scanBoxProvider.create() },
+        parameterizedProvider = scanBoxProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.ScanEye,
@@ -8095,6 +8400,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.ScanSearch,
         creator = LucideIconCreator { scanSearchProvider.create() },
         parameterizedProvider = scanSearchProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.ScanSquare,
+        creator = LucideIconCreator { scanSquareProvider.create() },
+        parameterizedProvider = scanSquareProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.ScanText,
@@ -8222,6 +8532,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = serverOffProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.ServerPlus,
+        creator = LucideIconCreator { serverPlusProvider.create() },
+        parameterizedProvider = serverPlusProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.Server,
         creator = LucideIconCreator { serverProvider.create() },
         parameterizedProvider = serverProvider,
@@ -8300,6 +8615,16 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.ShieldHalf,
         creator = LucideIconCreator { shieldHalfProvider.create() },
         parameterizedProvider = shieldHalfProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.ShieldKeyhole,
+        creator = LucideIconCreator { shieldKeyholeProvider.create() },
+        parameterizedProvider = shieldKeyholeProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.ShieldLock,
+        creator = LucideIconCreator { shieldLockProvider.create() },
+        parameterizedProvider = shieldLockProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.ShieldMinus,
@@ -8500,16 +8825,6 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Smartphone,
         creator = LucideIconCreator { smartphoneProvider.create() },
         parameterizedProvider = smartphoneProvider,
-    )
-    registry.register(
-        metadata = LucideGeneratedMetadata.SmilePlus,
-        creator = LucideIconCreator { smilePlusProvider.create() },
-        parameterizedProvider = smilePlusProvider,
-    )
-    registry.register(
-        metadata = LucideGeneratedMetadata.Smile,
-        creator = LucideIconCreator { smileProvider.create() },
-        parameterizedProvider = smileProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Snail,
@@ -8792,6 +9107,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = squareDashedProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.SquareDimensions,
+        creator = LucideIconCreator { squareDimensionsProvider.create() },
+        parameterizedProvider = squareDimensionsProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.SquareDivide,
         creator = LucideIconCreator { squareDivideProvider.create() },
         parameterizedProvider = squareDivideProvider,
@@ -8840,6 +9160,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.SquareMousePointer,
         creator = LucideIconCreator { squareMousePointerProvider.create() },
         parameterizedProvider = squareMousePointerProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.SquareOff,
+        creator = LucideIconCreator { squareOffProvider.create() },
+        parameterizedProvider = squareOffProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.SquareParkingOff,
@@ -8952,6 +9277,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = squareTerminalProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.SquareText,
+        creator = LucideIconCreator { squareTextProvider.create() },
+        parameterizedProvider = squareTextProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.SquareUserRound,
         creator = LucideIconCreator { squareUserRoundProvider.create() },
         parameterizedProvider = squareUserRoundProvider,
@@ -9012,14 +9342,34 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = stampProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.StarCheck,
+        creator = LucideIconCreator { starCheckProvider.create() },
+        parameterizedProvider = starCheckProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.StarHalf,
         creator = LucideIconCreator { starHalfProvider.create() },
         parameterizedProvider = starHalfProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.StarMinus,
+        creator = LucideIconCreator { starMinusProvider.create() },
+        parameterizedProvider = starMinusProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.StarOff,
         creator = LucideIconCreator { starOffProvider.create() },
         parameterizedProvider = starOffProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.StarPlus,
+        creator = LucideIconCreator { starPlusProvider.create() },
+        parameterizedProvider = starPlusProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.StarX,
+        creator = LucideIconCreator { starXProvider.create() },
+        parameterizedProvider = starXProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Star,
@@ -9110,6 +9460,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Subscript,
         creator = LucideIconCreator { subscriptProvider.create() },
         parameterizedProvider = subscriptProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.Summary,
+        creator = LucideIconCreator { summaryProvider.create() },
+        parameterizedProvider = summaryProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.SunDim,
@@ -9235,6 +9590,16 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Tablets,
         creator = LucideIconCreator { tabletsProvider.create() },
         parameterizedProvider = tabletsProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.TagPlus,
+        creator = LucideIconCreator { tagPlusProvider.create() },
+        parameterizedProvider = tagPlusProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.TagX,
+        creator = LucideIconCreator { tagXProvider.create() },
+        parameterizedProvider = tagXProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Tag,
@@ -9747,6 +10112,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = uploadProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.UsbCPort,
+        creator = LucideIconCreator { usbCPortProvider.create() },
+        parameterizedProvider = usbCPortProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.Usb,
         creator = LucideIconCreator { usbProvider.create() },
         parameterizedProvider = usbProvider,
@@ -9785,6 +10155,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.UserPlus,
         creator = LucideIconCreator { userPlusProvider.create() },
         parameterizedProvider = userPlusProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.UserRoundArrowLeft,
+        creator = LucideIconCreator { userRoundArrowLeftProvider.create() },
+        parameterizedProvider = userRoundArrowLeftProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.UserRoundCheck,
@@ -9835,6 +10210,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.UserSearch,
         creator = LucideIconCreator { userSearchProvider.create() },
         parameterizedProvider = userSearchProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.UserShield,
+        creator = LucideIconCreator { userShieldProvider.create() },
+        parameterizedProvider = userShieldProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.UserStar,
@@ -10062,6 +10442,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         parameterizedProvider = waypointsProvider,
     )
     registry.register(
+        metadata = LucideGeneratedMetadata.WebcamOff,
+        creator = LucideIconCreator { webcamOffProvider.create() },
+        parameterizedProvider = webcamOffProvider,
+    )
+    registry.register(
         metadata = LucideGeneratedMetadata.Webcam,
         creator = LucideIconCreator { webcamProvider.create() },
         parameterizedProvider = webcamProvider,
@@ -10170,6 +10555,11 @@ internal fun registerGeneratedIcons(registry: MutableIconRegistry) {
         metadata = LucideGeneratedMetadata.Worm,
         creator = LucideIconCreator { wormProvider.create() },
         parameterizedProvider = wormProvider,
+    )
+    registry.register(
+        metadata = LucideGeneratedMetadata.WrenchOff,
+        creator = LucideIconCreator { wrenchOffProvider.create() },
+        parameterizedProvider = wrenchOffProvider,
     )
     registry.register(
         metadata = LucideGeneratedMetadata.Wrench,

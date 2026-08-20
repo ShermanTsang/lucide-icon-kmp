@@ -23,9 +23,9 @@ val Carrot: ImageVector
 val LucideIcons.Carrot: ImageVector
     get() = carrotProvider.create()
 
-private val carrotPath0 = PathParser().parsePathString("M2.27 21.7s9.87-3.5 12.73-6.36a4.5 4.5 0 0 0-6.36-6.37C5.77 11.84 2.27 21.7 2.27 21.7zM8.64 14l-2.05-2.04M15.34 15l-2.46-2.46").toNodes()
-private val carrotPath1 = PathParser().parsePathString("M22 9s-1.33-2-3.5-2C16.86 7 15 9 15 9s1.33 2 3.5 2S22 9 22 9z").toNodes()
-private val carrotPath2 = PathParser().parsePathString("M15 2s-2 1.33-2 3.5S15 9 15 9s2-1.84 2-3.5C17 3.33 15 2 15 2z").toNodes()
+private val carrotPath0 = PathParser().parsePathString("M15 16a1 1 0 0 0-7-7q-4 4-5.987 12.385a.5.5 0 0 0 .602.602Q11 20 15 16l-3-3").toNodes()
+private val carrotPath1 = PathParser().parsePathString("M15 9q4 4 7 0-3-4-7 0 4-4 0-7-4 3 0 7").toNodes()
+private val carrotPath2 = PathParser().parsePathString("m8 15-2.58-2.58").toNodes()
 
 private fun buildCarrot(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

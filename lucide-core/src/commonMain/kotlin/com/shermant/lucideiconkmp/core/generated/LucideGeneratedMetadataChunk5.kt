@@ -6,6 +6,106 @@ import com.shermant.lucideiconkmp.core.model.LucideIconKey
 import com.shermant.lucideiconkmp.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk5 {
+    val CornerDownRight = LucideIconMetadata(
+        key = LucideIconKey("corner-down-right"),
+        displayName = "Corner Down Right",
+        tags = setOf("arrow", "indent", "tab"),
+        zhDisplayName = "右下角",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Development, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CornerLeftDown = LucideIconMetadata(
+        key = LucideIconKey("corner-left-down"),
+        displayName = "Corner Left Down",
+        tags = setOf("arrow"),
+        zhDisplayName = "左下角",
+        categories = setOf(LucideIconCategory.Arrows),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CornerLeftUp = LucideIconMetadata(
+        key = LucideIconKey("corner-left-up"),
+        displayName = "Corner Left Up",
+        tags = setOf("arrow"),
+        zhDisplayName = "角向左向上",
+        categories = setOf(LucideIconCategory.Arrows),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CornerRightDown = LucideIconMetadata(
+        key = LucideIconKey("corner-right-down"),
+        displayName = "Corner Right Down",
+        tags = setOf("arrow"),
+        zhDisplayName = "右下角",
+        categories = setOf(LucideIconCategory.Arrows),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CornerRightUp = LucideIconMetadata(
+        key = LucideIconKey("corner-right-up"),
+        displayName = "Corner Right Up",
+        tags = setOf("arrow"),
+        zhDisplayName = "右角向上",
+        categories = setOf(LucideIconCategory.Arrows),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CornerUpLeft = LucideIconMetadata(
+        key = LucideIconKey("corner-up-left"),
+        displayName = "Corner Up Left",
+        tags = setOf("arrow"),
+        zhDisplayName = "左上角",
+        categories = setOf(LucideIconCategory.Arrows),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CornerUpRight = LucideIconMetadata(
+        key = LucideIconKey("corner-up-right"),
+        displayName = "Corner Up Right",
+        tags = setOf("arrow"),
+        zhDisplayName = "右上角",
+        categories = setOf(LucideIconCategory.Arrows),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Cpu = LucideIconMetadata(
+        key = LucideIconKey("cpu"),
+        displayName = "Cpu",
+        tags = setOf("chip", "circuit", "computer", "cores", "ghz", "gigahertz", "memory", "processor", "ram", "specs", "technology"),
+        zhDisplayName = "中央处理器",
+        categories = setOf(LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CreativeCommons = LucideIconMetadata(
+        key = LucideIconKey("creative-commons"),
+        displayName = "Creative Commons",
+        tags = setOf("licence", "license"),
+        zhDisplayName = "知识共享",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val CreditCard = LucideIconMetadata(
+        key = LucideIconKey("credit-card"),
+        displayName = "Credit Card",
+        tags = setOf("bank", "cc", "payment", "purchase"),
+        zhDisplayName = "信用卡",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Finance),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val Croissant = LucideIconMetadata(
         key = LucideIconKey("croissant"),
         displayName = "Croissant",
@@ -106,6 +206,26 @@ internal object LucideGeneratedMetadataChunk5 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val DatabaseArrowDown = LucideIconMetadata(
+        key = LucideIconKey("database-arrow-down"),
+        displayName = "Database Arrow Down",
+        tags = setOf("backup", "bytes", "download", "downsize", "export", "memory", "pull", "server", "storage"),
+        zhDisplayName = "数据库下箭头",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val DatabaseArrowUp = LucideIconMetadata(
+        key = LucideIconKey("database-arrow-up"),
+        displayName = "Database Arrow Up",
+        tags = setOf("backup", "bytes", "import", "memory", "push", "server", "storage", "upload", "upscale"),
+        zhDisplayName = "数据库上箭头",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val DatabaseBackup = LucideIconMetadata(
         key = LucideIconKey("database-backup"),
         displayName = "Database Backup",
@@ -116,11 +236,51 @@ internal object LucideGeneratedMetadataChunk5 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val DatabaseCheck = LucideIconMetadata(
+        key = LucideIconKey("database-check"),
+        displayName = "Database Check",
+        tags = setOf("bytes", "check", "complete", "confirmed", "memory", "server", "storage", "success", "valid", "verified"),
+        zhDisplayName = "数据库对勾",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val DatabaseMinus = LucideIconMetadata(
+        key = LucideIconKey("database-minus"),
+        displayName = "Database Minus",
+        tags = setOf("bytes", "delete", "memory", "minus", "reduce", "remove", "server", "storage"),
+        zhDisplayName = "数据库减号",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val DatabasePlus = LucideIconMetadata(
+        key = LucideIconKey("database-plus"),
+        displayName = "Database Plus",
+        tags = setOf("add", "bytes", "create", "expand", "insert", "memory", "new", "plus", "server", "storage"),
+        zhDisplayName = "数据库加号",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val DatabaseSearch = LucideIconMetadata(
         key = LucideIconKey("database-search"),
         displayName = "Database Search",
         tags = setOf("bytes", "container", "memory", "pot", "servers", "storage", "tin"),
         zhDisplayName = "数据库检索",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val DatabaseX = LucideIconMetadata(
+        key = LucideIconKey("database-x"),
+        displayName = "Database X",
+        tags = setOf("bytes", "clear", "denied", "disconnect", "error", "failed", "invalid", "memory", "rejected", "remove", "server", "storage", "x"),
+        zhDisplayName = "数据库叉号",
         categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
@@ -656,6 +816,16 @@ internal object LucideGeneratedMetadataChunk5 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val Eject = LucideIconMetadata(
+        key = LucideIconKey("eject"),
+        displayName = "Eject",
+        tags = setOf("blu-ray", "cd", "disc", "drive", "dvd", "media", "optical", "optical drive", "removable media", "storage", "tray", "unmount", "usb"),
+        zhDisplayName = "弹出",
+        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Files, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val Ellipse = LucideIconMetadata(
         key = LucideIconKey("ellipse"),
         displayName = "Ellipse",
@@ -786,6 +956,16 @@ internal object LucideGeneratedMetadataChunk5 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val EyeDashed = LucideIconMetadata(
+        key = LucideIconKey("eye-dashed"),
+        displayName = "Eye Dashed",
+        tags = setOf("conceal", "hidden", "hide", "invisible", "mask", "see", "view", "visibility", "vision", "watch"),
+        zhDisplayName = "虚线眼睛",
+        categories = setOf(LucideIconCategory.Accessibility, LucideIconCategory.Design, LucideIconCategory.Photography, LucideIconCategory.Security),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val EyeOff = LucideIconMetadata(
         key = LucideIconKey("eye-off"),
         displayName = "Eye Off",
@@ -806,207 +986,37 @@ internal object LucideGeneratedMetadataChunk5 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val Factory = LucideIconMetadata(
-        key = LucideIconKey("factory"),
-        displayName = "Factory",
-        tags = setOf("building", "business", "energy", "industry", "manufacture", "sector"),
-        zhDisplayName = "工厂",
-        categories = setOf(LucideIconCategory.Buildings, LucideIconCategory.Navigation),
+    val FaceAngry = LucideIconMetadata(
+        key = LucideIconKey("face-angry"),
+        displayName = "Face Angry",
+        tags = setOf("anger", "angry", "disgust", "emoji", "emotion", "fury", "irritation", "rage", "resentment"),
+        zhDisplayName = "生气",
+        categories = setOf(LucideIconCategory.Emoji),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val Fan = LucideIconMetadata(
-        key = LucideIconKey("fan"),
-        displayName = "Fan",
-        tags = setOf("air", "blower", "cooler", "ventilation", "ventilator"),
-        zhDisplayName = "风扇",
-        categories = setOf(LucideIconCategory.Home),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FastForward = LucideIconMetadata(
-        key = LucideIconKey("fast-forward"),
-        displayName = "Fast Forward",
-        tags = setOf("music"),
-        zhDisplayName = "快进",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Feather = LucideIconMetadata(
-        key = LucideIconKey("feather"),
-        displayName = "Feather",
-        tags = setOf("logo"),
-        zhDisplayName = "羽毛",
-        categories = setOf(LucideIconCategory.Gaming),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Fence = LucideIconMetadata(
-        key = LucideIconKey("fence"),
-        displayName = "Fence",
-        tags = setOf("diy", "garden", "materials", "panels", "picket", "property", "suburban", "territory", "woodwork"),
-        zhDisplayName = "栅栏",
-        categories = setOf(LucideIconCategory.Buildings, LucideIconCategory.Home),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FerrisWheel = LucideIconMetadata(
-        key = LucideIconKey("ferris-wheel"),
-        displayName = "Ferris Wheel",
-        tags = setOf("amusement park", "attraction", "big wheel", "daisy wheel", "entertainment", "funfair", "observation", "theme park"),
-        zhDisplayName = "摩天轮",
-        categories = setOf(LucideIconCategory.Navigation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileArchive = LucideIconMetadata(
-        key = LucideIconKey("file-archive"),
-        displayName = "File Archive",
-        tags = setOf("archive", "package", "zip"),
-        zhDisplayName = "文件存档",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileAxis3d = LucideIconMetadata(
-        key = LucideIconKey("file-axis-3d"),
-        displayName = "File Axis 3d",
-        tags = setOf("3d", "axis", "coordinates", "file-axis-3-d", "model"),
-        zhDisplayName = "文件轴 3d",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileBadge = LucideIconMetadata(
-        key = LucideIconKey("file-badge"),
-        displayName = "File Badge",
-        tags = setOf("achievement", "award", "badge", "file-badge-2", "prize", "rosette", "winner"),
-        zhDisplayName = "文件徽章",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileBox = LucideIconMetadata(
-        key = LucideIconKey("file-box"),
-        displayName = "File Box",
-        tags = setOf("box", "model", "package"),
-        zhDisplayName = "文件盒",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileBracesCorner = LucideIconMetadata(
-        key = LucideIconKey("file-braces-corner"),
-        displayName = "File Braces Corner",
-        tags = setOf("code", "curly braces", "curly brackets", "file-json-2", "json"),
-        zhDisplayName = "文件括号角",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileBraces = LucideIconMetadata(
-        key = LucideIconKey("file-braces"),
-        displayName = "File Braces",
-        tags = setOf("code", "curly braces", "curly brackets", "file-json", "json"),
-        zhDisplayName = "文件大括号",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileChartColumnIncreasing = LucideIconMetadata(
-        key = LucideIconKey("file-chart-column-increasing"),
-        displayName = "File Chart Column Increasing",
-        tags = setOf("analytics", "diagram", "file-bar-chart", "graph", "presentation", "statistics", "trending up"),
-        zhDisplayName = "文件图表列增加",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileChartColumn = LucideIconMetadata(
-        key = LucideIconKey("file-chart-column"),
-        displayName = "File Chart Column",
-        tags = setOf("analytics", "diagram", "file-bar-chart-2", "graph", "presentation", "statistics"),
-        zhDisplayName = "文件图表栏",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileChartLine = LucideIconMetadata(
-        key = LucideIconKey("file-chart-line"),
-        displayName = "File Chart Line",
-        tags = setOf("analytics", "diagram", "file-line-chart", "graph", "presentation", "statistics"),
-        zhDisplayName = "文件图表线",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileChartPie = LucideIconMetadata(
-        key = LucideIconKey("file-chart-pie"),
-        displayName = "File Chart Pie",
-        tags = setOf("analytics", "diagram", "file-pie-chart", "graph", "presentation", "statistics"),
-        zhDisplayName = "文件图表饼图",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileCheckCorner = LucideIconMetadata(
-        key = LucideIconKey("file-check-corner"),
-        displayName = "File Check Corner",
-        tags = setOf("complete", "document", "done", "file-check-2", "task", "tick", "todo"),
-        zhDisplayName = "文件检查角",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileCheck = LucideIconMetadata(
-        key = LucideIconKey("file-check"),
-        displayName = "File Check",
-        tags = setOf("complete", "document", "done", "task", "tick", "todo"),
-        zhDisplayName = "文件检查",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileClock = LucideIconMetadata(
-        key = LucideIconKey("file-clock"),
-        displayName = "File Clock",
-        tags = setOf("clock", "history", "log"),
-        zhDisplayName = "文件时钟",
-        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Time),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FileCodeCorner = LucideIconMetadata(
-        key = LucideIconKey("file-code-corner"),
-        displayName = "File Code Corner",
-        tags = setOf("document", "file-code-2", "html", "plist", "property list", "script", "xml"),
-        zhDisplayName = "文件代码角",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
+    val FaceExpressionless = LucideIconMetadata(
+        key = LucideIconKey("face-expressionless"),
+        displayName = "Face Expressionless",
+        tags = setOf("annoyance", "annoyed", "emoji", "emotion", "frustration", "nuisance"),
+        zhDisplayName = "面无表情",
+        categories = setOf(LucideIconCategory.Emoji),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
 
     val values: List<LucideIconMetadata> = listOf(
+        CornerDownRight,
+        CornerLeftDown,
+        CornerLeftUp,
+        CornerRightDown,
+        CornerRightUp,
+        CornerUpLeft,
+        CornerUpRight,
+        Cpu,
+        CreativeCommons,
+        CreditCard,
         Croissant,
         Crop,
         Cross,
@@ -1017,8 +1027,14 @@ internal object LucideGeneratedMetadataChunk5 {
         Currency,
         Cylinder,
         Dam,
+        DatabaseArrowDown,
+        DatabaseArrowUp,
         DatabaseBackup,
+        DatabaseCheck,
+        DatabaseMinus,
+        DatabasePlus,
         DatabaseSearch,
+        DatabaseX,
         DatabaseZap,
         Database,
         DecimalsArrowLeft,
@@ -1072,6 +1088,7 @@ internal object LucideGeneratedMetadataChunk5 {
         EggFried,
         EggOff,
         Egg,
+        Eject,
         Ellipse,
         EllipsisVertical,
         Ellipsis,
@@ -1085,27 +1102,10 @@ internal object LucideGeneratedMetadataChunk5 {
         Expand,
         ExternalLink,
         EyeClosed,
+        EyeDashed,
         EyeOff,
         Eye,
-        Factory,
-        Fan,
-        FastForward,
-        Feather,
-        Fence,
-        FerrisWheel,
-        FileArchive,
-        FileAxis3d,
-        FileBadge,
-        FileBox,
-        FileBracesCorner,
-        FileBraces,
-        FileChartColumnIncreasing,
-        FileChartColumn,
-        FileChartLine,
-        FileChartPie,
-        FileCheckCorner,
-        FileCheck,
-        FileClock,
-        FileCodeCorner
+        FaceAngry,
+        FaceExpressionless
     )
 }

@@ -23,11 +23,11 @@ val EthernetPort: ImageVector
 val LucideIcons.EthernetPort: ImageVector
     get() = ethernetPortProvider.create()
 
-private val ethernetPortPath0 = PathParser().parsePathString("m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z").toNodes()
-private val ethernetPortPath1 = PathParser().parsePathString("M6 8v1").toNodes()
-private val ethernetPortPath2 = PathParser().parsePathString("M10 8v1").toNodes()
-private val ethernetPortPath3 = PathParser().parsePathString("M14 8v1").toNodes()
-private val ethernetPortPath4 = PathParser().parsePathString("M18 8v1").toNodes()
+private val ethernetPortPath0 = PathParser().parsePathString("M10 8v1").toNodes()
+private val ethernetPortPath1 = PathParser().parsePathString("M14 8v1").toNodes()
+private val ethernetPortPath2 = PathParser().parsePathString("M18 8v1").toNodes()
+private val ethernetPortPath3 = PathParser().parsePathString("M19 17a2 2 0 00-1.765 1.059l-.47.882A2 2 0 0115 20H9a2 2 0 01-1.765-1.059l-.47-.882A2 2 0 005 17H4a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v9a2 2 0 01-2 2z").toNodes()
+private val ethernetPortPath4 = PathParser().parsePathString("M6 8v1").toNodes()
 
 private fun buildEthernetPort(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

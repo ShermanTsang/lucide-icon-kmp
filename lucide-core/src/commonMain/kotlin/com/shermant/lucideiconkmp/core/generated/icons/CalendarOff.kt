@@ -23,12 +23,12 @@ val CalendarOff: ImageVector
 val LucideIcons.CalendarOff: ImageVector
     get() = calendarOffProvider.create()
 
-private val calendarOffPath0 = PathParser().parsePathString("M4.2 4.2A2 2 0 0 0 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 1.82-1.18").toNodes()
-private val calendarOffPath1 = PathParser().parsePathString("M21 15.5V6a2 2 0 0 0-2-2H9.5").toNodes()
-private val calendarOffPath2 = PathParser().parsePathString("M16 2v4").toNodes()
-private val calendarOffPath3 = PathParser().parsePathString("M3 10h7").toNodes()
-private val calendarOffPath4 = PathParser().parsePathString("M21 10h-5.5").toNodes()
-private val calendarOffPath5 = PathParser().parsePathString("m2 2 20 20").toNodes()
+private val calendarOffPath0 = PathParser().parsePathString("M16 2v3").toNodes()
+private val calendarOffPath1 = PathParser().parsePathString("m2 2 20 20").toNodes()
+private val calendarOffPath2 = PathParser().parsePathString("M21 9h-5.5").toNodes()
+private val calendarOffPath3 = PathParser().parsePathString("M3 9h6").toNodes()
+private val calendarOffPath4 = PathParser().parsePathString("M3.586 3.586A2 2 0 003 5v14a2 2 0 002 2h14a2 2 0 001.414-.586").toNodes()
+private val calendarOffPath5 = PathParser().parsePathString("M8.656 3H19a2 2 0 012 2v10.344").toNodes()
 
 private fun buildCalendarOff(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

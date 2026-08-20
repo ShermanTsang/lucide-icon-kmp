@@ -23,11 +23,17 @@ val CalendarCheck2: ImageVector
 val LucideIcons.CalendarCheck2: ImageVector
     get() = calendarCheck2Provider.create()
 
-private val calendarCheck2Path0 = PathParser().parsePathString("M8 2v4").toNodes()
-private val calendarCheck2Path1 = PathParser().parsePathString("M16 2v4").toNodes()
-private val calendarCheck2Path2 = PathParser().parsePathString("M21 14V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8").toNodes()
-private val calendarCheck2Path3 = PathParser().parsePathString("M3 10h18").toNodes()
-private val calendarCheck2Path4 = PathParser().parsePathString("m16 20 2 2 4-4").toNodes()
+private val calendarCheck2Path0 = PathParser().parsePathString("M 19 3 L 5 3").toNodes()
+private val calendarCheck2Path1 = PathParser().parsePathString("M 21 13 L 21 5").toNodes()
+private val calendarCheck2Path2 = PathParser().parsePathString("M 21 5 A2 2 0 0 0 19 3").toNodes()
+private val calendarCheck2Path3 = PathParser().parsePathString("M 3 19 A2 2 0 0 0 5 21").toNodes()
+private val calendarCheck2Path4 = PathParser().parsePathString("M 3 5 L 3 19").toNodes()
+private val calendarCheck2Path5 = PathParser().parsePathString("M 5 3 A2 2 0 0 0 3 5").toNodes()
+private val calendarCheck2Path6 = PathParser().parsePathString("m16 19 2 2 4-4").toNodes()
+private val calendarCheck2Path7 = PathParser().parsePathString("M16 2v3").toNodes()
+private val calendarCheck2Path8 = PathParser().parsePathString("M3 9h18").toNodes()
+private val calendarCheck2Path9 = PathParser().parsePathString("M5 21 L12.5 21").toNodes()
+private val calendarCheck2Path10 = PathParser().parsePathString("M8 2v3").toNodes()
 
 private fun buildCalendarCheck2(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp
@@ -78,6 +84,60 @@ private fun buildCalendarCheck2(parameters: IconRenderParameters = IconRenderPar
         )
         addPath(
             pathData = calendarCheck2Path4,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = calendarCheck2Path5,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = calendarCheck2Path6,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = calendarCheck2Path7,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = calendarCheck2Path8,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = calendarCheck2Path9,
+            pathFillType = PathFillType.NonZero,
+            fill = null,
+            stroke = SolidColor(Color.Black),
+            strokeLineWidth = strokeWidth,
+            strokeLineCap = StrokeCap.Round,
+            strokeLineJoin = StrokeJoin.Round,
+        )
+        addPath(
+            pathData = calendarCheck2Path10,
             pathFillType = PathFillType.NonZero,
             fill = null,
             stroke = SolidColor(Color.Black),

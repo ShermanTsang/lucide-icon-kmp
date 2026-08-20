@@ -23,9 +23,9 @@ val Martini: ImageVector
 val LucideIcons.Martini: ImageVector
     get() = martiniProvider.create()
 
-private val martiniPath0 = PathParser().parsePathString("M8 22h8").toNodes()
-private val martiniPath1 = PathParser().parsePathString("M12 11v11").toNodes()
-private val martiniPath2 = PathParser().parsePathString("m19 3-7 8-7-8Z").toNodes()
+private val martiniPath0 = PathParser().parsePathString("M12 12 4.207 4.207A.707.707 0 0 1 4.707 3h14.586a.707.707 0 0 1 .5 1.207z").toNodes()
+private val martiniPath1 = PathParser().parsePathString("M12 12v10").toNodes()
+private val martiniPath2 = PathParser().parsePathString("M7 22h10").toNodes()
 
 private fun buildMartini(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

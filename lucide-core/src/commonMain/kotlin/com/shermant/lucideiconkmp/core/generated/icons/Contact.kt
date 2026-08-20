@@ -24,10 +24,10 @@ val LucideIcons.Contact: ImageVector
     get() = contactProvider.create()
 
 private val contactPath0 = PathParser().parsePathString("M16 2v2").toNodes()
-private val contactPath1 = PathParser().parsePathString("M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2").toNodes()
+private val contactPath1 = PathParser().parsePathString("M7 21v-2a2 2 0 012-2h6a2 2 0 012 2v2").toNodes()
 private val contactPath2 = PathParser().parsePathString("M8 2v2").toNodes()
-private val contactPath3 = PathParser().parsePathString("M 15 11 A 3 3 0 1 0 9 11 A 3 3 0 1 0 15 11 Z").toNodes()
-private val contactPath4 = PathParser().parsePathString("M 5 4 H 19 A 2 2 0 0 1 21 6 V 20 A 2 2 0 0 1 19 22 H 5 A 2 2 0 0 1 3 20 V 6 A 2 2 0 0 1 5 4 Z").toNodes()
+private val contactPath3 = PathParser().parsePathString("M 15 10 A 3 3 0 1 0 9 10 A 3 3 0 1 0 15 10 Z").toNodes()
+private val contactPath4 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 
 private fun buildContact(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

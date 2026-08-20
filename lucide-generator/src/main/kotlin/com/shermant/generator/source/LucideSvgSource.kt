@@ -1,7 +1,7 @@
 package com.shermant.generator.source
 
-import com.shermant.lucideiconkmp.generator.model.RawLucideIcon
-import com.shermant.lucideiconkmp.generator.model.RawLucideMetadata
+import com.shermant.generator.model.RawLucideIcon
+import com.shermant.generator.model.RawLucideMetadata
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.contentOrNull

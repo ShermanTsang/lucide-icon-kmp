@@ -1,5 +1,5 @@
-commit=2214caa407f4147449c81ac27e30d36edfb7b40f
+commit=59978cecf84986af59f1f9f503bcebdc89c6d166
 source=https://github.com/lucide-icons/lucide
-tag=1.16.0
-svg_count=1711
-metadata_json_count=1711
+tag=1.33.0
+svg_count=1776
+metadata_json_count=1776

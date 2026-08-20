@@ -23,11 +23,11 @@ val CalendarCheck: ImageVector
 val LucideIcons.CalendarCheck: ImageVector
     get() = calendarCheckProvider.create()
 
-private val calendarCheckPath0 = PathParser().parsePathString("M8 2v4").toNodes()
-private val calendarCheckPath1 = PathParser().parsePathString("M16 2v4").toNodes()
-private val calendarCheckPath2 = PathParser().parsePathString("M 5 4 H 19 A 2 2 0 0 1 21 6 V 20 A 2 2 0 0 1 19 22 H 5 A 2 2 0 0 1 3 20 V 6 A 2 2 0 0 1 5 4 Z").toNodes()
-private val calendarCheckPath3 = PathParser().parsePathString("M3 10h18").toNodes()
-private val calendarCheckPath4 = PathParser().parsePathString("m9 16 2 2 4-4").toNodes()
+private val calendarCheckPath0 = PathParser().parsePathString("M8 2v3").toNodes()
+private val calendarCheckPath1 = PathParser().parsePathString("M16 2v3").toNodes()
+private val calendarCheckPath2 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
+private val calendarCheckPath3 = PathParser().parsePathString("M3 9h18").toNodes()
+private val calendarCheckPath4 = PathParser().parsePathString("m9 15 2 2 4-4").toNodes()
 
 private fun buildCalendarCheck(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

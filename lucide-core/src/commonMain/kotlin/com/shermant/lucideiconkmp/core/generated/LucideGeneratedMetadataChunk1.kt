@@ -6,6 +6,26 @@ import com.shermant.lucideiconkmp.core.model.LucideIconKey
 import com.shermant.lucideiconkmp.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk1 {
+    val AudioLinesOff = LucideIconMetadata(
+        key = LucideIconKey("audio-lines-off"),
+        displayName = "Audio Lines Off",
+        tags = setOf("airwaves", "audio", "broadcast", "disabled", "equaliser", "equalizer", "frequency", "hearing", "hertz", "inactive", "levels", "listen", "music", "mute", "noise", "off", "playback", "radio", "silence", "sine", "singer", "song", "sound", "synthesiser", "synthesizer", "track", "vibrate", "vocals", "voice", "waveform", "wavelength"),
+        zhDisplayName = "声波关闭",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val AudioLinesX = LucideIconMetadata(
+        key = LucideIconKey("audio-lines-x"),
+        displayName = "Audio Lines X",
+        tags = setOf("airwaves", "broadcast", "cancel", "disabled", "equaliser", "equalizer", "frequency", "hearing", "hertz", "levels", "listen", "music", "mute", "noise", "playback", "radio", "remove", "silence", "sine", "singer", "song", "sound", "synthesiser", "synthesizer", "track", "unavailable", "vibrate", "vocals", "voice", "waveform", "wavelength"),
+        zhDisplayName = "声波叉号",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val AudioLines = LucideIconMetadata(
         key = LucideIconKey("audio-lines"),
         displayName = "Audio Lines",
@@ -321,6 +341,16 @@ internal object LucideGeneratedMetadataChunk1 {
         displayName = "Banknote Arrow Up",
         tags = setOf("bill", "cash", "credit", "currency", "deposit", "earnings", "finance", "funds", "growth", "in", "income", "increase", "money", "payment", "prepaid", "transaction"),
         zhDisplayName = "钞票向上箭头",
+        categories = setOf(LucideIconCategory.Finance),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val BanknoteCheck = LucideIconMetadata(
+        key = LucideIconKey("banknote-check"),
+        displayName = "Banknote Check",
+        tags = setOf("accepted", "banknote", "bill", "check", "complete", "currency", "document", "done", "finance", "found", "money", "paid", "payment", "success", "task", "tick", "verification", "verified"),
+        zhDisplayName = "钞票对勾",
         categories = setOf(LucideIconCategory.Finance),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
@@ -864,6 +894,16 @@ internal object LucideGeneratedMetadataChunk1 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val BoneFracture = LucideIconMetadata(
+        key = LucideIconKey("bone-fracture"),
+        displayName = "Bone Fracture",
+        tags = setOf("anatomy", "bone", "break", "broken", "crack", "damage", "fracture", "health", "injury", "medical", "orthopedic", "skeletal", "trauma", "vet", "veterinary", "xray"),
+        zhDisplayName = "骨折",
+        categories = setOf(LucideIconCategory.Animals, LucideIconCategory.Medical),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val Bone = LucideIconMetadata(
         key = LucideIconKey("bone"),
         displayName = "Bone",
@@ -964,47 +1004,9 @@ internal object LucideGeneratedMetadataChunk1 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val BookImage = LucideIconMetadata(
-        key = LucideIconKey("book-image"),
-        displayName = "Book Image",
-        tags = setOf("album", "brochure", "browse", "catalog", "catalogue", "collection", "event", "gallery", "images", "magazine", "photos", "pictures"),
-        zhDisplayName = "电池",
-        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Multimedia, LucideIconCategory.Photography, LucideIconCategory.Shopping, LucideIconCategory.Social, LucideIconCategory.Text, LucideIconCategory.Travel),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val BookKey = LucideIconMetadata(
-        key = LucideIconKey("book-key"),
-        displayName = "Book Key",
-        tags = setOf("code", "coding", "git", "hidden", "knowledge", "learning", "private", "public", "repository", "revealed", "secret", "unlocked", "version control"),
-        zhDisplayName = "烧杯",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Security),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val BookLock = LucideIconMetadata(
-        key = LucideIconKey("book-lock"),
-        displayName = "Book Lock",
-        tags = setOf("code", "coding", "git", "hidden", "knowledge", "private", "repository", "secret", "version control"),
-        zhDisplayName = "豆关",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Security),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val BookMarked = LucideIconMetadata(
-        key = LucideIconKey("book-marked"),
-        displayName = "Book Marked",
-        tags = setOf("academy", "author", "booklet", "code", "coding", "college", "dictionary", "documentation", "education", "fiction", "future", "git", "high school", "homework", "index", "information", "knowledge", "later", "leaflet", "learning", "library", "magazine", "novel", "pamphlet", "reading", "reference", "repository", "research", "saved", "script", "story", "student", "study", "tome", "university", "version control", "writer", "writing", "written"),
-        zhDisplayName = "豆",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        AudioLinesOff,
+        AudioLinesX,
         AudioLines,
         AudioWaveform,
         Award,
@@ -1037,6 +1039,7 @@ internal object LucideGeneratedMetadataChunk1 {
         Bandage,
         BanknoteArrowDown,
         BanknoteArrowUp,
+        BanknoteCheck,
         BanknoteX,
         Banknote,
         Barcode,
@@ -1091,6 +1094,7 @@ internal object LucideGeneratedMetadataChunk1 {
         Bold,
         Bolt,
         Bomb,
+        BoneFracture,
         Bone,
         BookA,
         BookAlert,
@@ -1100,10 +1104,6 @@ internal object LucideGeneratedMetadataChunk1 {
         BookDashed,
         BookDown,
         BookHeadphones,
-        BookHeart,
-        BookImage,
-        BookKey,
-        BookLock,
-        BookMarked
+        BookHeart
     )
 }

@@ -22,7 +22,7 @@ import kotlin.test.assertTrue
 
 class IconRegistryTest {
     private companion object {
-        const val expectedGeneratedIconCount = 1711
+        const val expectedGeneratedIconCount = 1776
     }
 
     @Test

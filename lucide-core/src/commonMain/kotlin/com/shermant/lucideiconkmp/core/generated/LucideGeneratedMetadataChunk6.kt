@@ -6,6 +6,256 @@ import com.shermant.lucideiconkmp.core.model.LucideIconKey
 import com.shermant.lucideiconkmp.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk6 {
+    val FaceGrinning = LucideIconMetadata(
+        key = LucideIconKey("face-grinning"),
+        displayName = "Face Grinning",
+        tags = setOf("broad smile", "emoji", "emotion", "funny", "good", "good cheer", "happiness", "happy", "humour", "laugh", "pleasure"),
+        zhDisplayName = "咧嘴笑",
+        categories = setOf(LucideIconCategory.Emoji),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FaceNeutral = LucideIconMetadata(
+        key = LucideIconKey("face-neutral"),
+        displayName = "Face Neutral",
+        tags = setOf("blank stare", "concern", "deadpan", "emoji", "emotion", "irritation", "meh", "neutral", "social masking"),
+        zhDisplayName = "中性表情",
+        categories = setOf(LucideIconCategory.Emoji),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FaceSlightlyFrowning = LucideIconMetadata(
+        key = LucideIconKey("face-slightly-frowning"),
+        displayName = "Face Slightly Frowning",
+        tags = setOf("bad", "concern", "disappointment", "emoji", "emotion", "frown", "sadness"),
+        zhDisplayName = "微微皱眉",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Emoji),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FaceSlightlySmilingPlus = LucideIconMetadata(
+        key = LucideIconKey("face-slightly-smiling-plus"),
+        displayName = "Face Slightly Smiling Plus",
+        tags = setOf("add", "emoji", "emotion", "good", "happy", "react", "reaction", "smile", "smile-plus"),
+        zhDisplayName = "微笑加",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Emoji, LucideIconCategory.Notifications, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FaceSlightlySmiling = LucideIconMetadata(
+        key = LucideIconKey("face-slightly-smiling"),
+        displayName = "Face Slightly Smiling",
+        tags = setOf("emoji", "emotion", "friendly", "good", "happiness", "happy", "ironic", "passive aggressive", "patronizing", "positive", "smile"),
+        zhDisplayName = "微笑",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Emoji),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Factory = LucideIconMetadata(
+        key = LucideIconKey("factory"),
+        displayName = "Factory",
+        tags = setOf("building", "business", "energy", "industry", "manufacture", "sector"),
+        zhDisplayName = "工厂",
+        categories = setOf(LucideIconCategory.Buildings, LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Fan = LucideIconMetadata(
+        key = LucideIconKey("fan"),
+        displayName = "Fan",
+        tags = setOf("air", "blower", "cooler", "ventilation", "ventilator"),
+        zhDisplayName = "风扇",
+        categories = setOf(LucideIconCategory.Home),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FastForward = LucideIconMetadata(
+        key = LucideIconKey("fast-forward"),
+        displayName = "Fast Forward",
+        tags = setOf("music"),
+        zhDisplayName = "快进",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Feather = LucideIconMetadata(
+        key = LucideIconKey("feather"),
+        displayName = "Feather",
+        tags = setOf("author", "bird", "lightweight", "literature", "manuscript", "plumage", "plume", "poetry", "quill", "soft", "writing"),
+        zhDisplayName = "羽毛",
+        categories = setOf(LucideIconCategory.Animals, LucideIconCategory.Gaming, LucideIconCategory.Nature, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Fence = LucideIconMetadata(
+        key = LucideIconKey("fence"),
+        displayName = "Fence",
+        tags = setOf("diy", "garden", "materials", "panels", "picket", "property", "suburban", "territory", "woodwork"),
+        zhDisplayName = "栅栏",
+        categories = setOf(LucideIconCategory.Buildings, LucideIconCategory.Home),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FerrisWheel = LucideIconMetadata(
+        key = LucideIconKey("ferris-wheel"),
+        displayName = "Ferris Wheel",
+        tags = setOf("amusement park", "attraction", "big wheel", "daisy wheel", "entertainment", "funfair", "observation", "theme park"),
+        zhDisplayName = "摩天轮",
+        categories = setOf(LucideIconCategory.Navigation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileArchive = LucideIconMetadata(
+        key = LucideIconKey("file-archive"),
+        displayName = "File Archive",
+        tags = setOf("archive", "package", "zip"),
+        zhDisplayName = "文件存档",
+        categories = setOf(LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileAxis3d = LucideIconMetadata(
+        key = LucideIconKey("file-axis-3d"),
+        displayName = "File Axis 3d",
+        tags = setOf("3d", "axis", "coordinates", "file-axis-3-d", "model"),
+        zhDisplayName = "文件轴 3d",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileBadge = LucideIconMetadata(
+        key = LucideIconKey("file-badge"),
+        displayName = "File Badge",
+        tags = setOf("achievement", "award", "badge", "file-badge-2", "prize", "rosette", "winner"),
+        zhDisplayName = "文件徽章",
+        categories = setOf(LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileBox = LucideIconMetadata(
+        key = LucideIconKey("file-box"),
+        displayName = "File Box",
+        tags = setOf("3d", "ar", "asset", "augmented reality", "blueprint", "box", "cad", "cube", "design", "document", "draft", "geometry", "mesh", "model", "object", "package", "page", "scene", "sheet"),
+        zhDisplayName = "文件盒",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Development, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileBracesCorner = LucideIconMetadata(
+        key = LucideIconKey("file-braces-corner"),
+        displayName = "File Braces Corner",
+        tags = setOf("code", "curly braces", "curly brackets", "file-json-2", "json"),
+        zhDisplayName = "文件括号角",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileBraces = LucideIconMetadata(
+        key = LucideIconKey("file-braces"),
+        displayName = "File Braces",
+        tags = setOf("code", "curly braces", "curly brackets", "file-json", "json"),
+        zhDisplayName = "文件大括号",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileChartColumnIncreasing = LucideIconMetadata(
+        key = LucideIconKey("file-chart-column-increasing"),
+        displayName = "File Chart Column Increasing",
+        tags = setOf("analytics", "diagram", "file-bar-chart", "graph", "presentation", "statistics", "trending up"),
+        zhDisplayName = "文件图表列增加",
+        categories = setOf(LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileChartColumn = LucideIconMetadata(
+        key = LucideIconKey("file-chart-column"),
+        displayName = "File Chart Column",
+        tags = setOf("analytics", "diagram", "file-bar-chart-2", "graph", "presentation", "statistics"),
+        zhDisplayName = "文件图表栏",
+        categories = setOf(LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileChartLine = LucideIconMetadata(
+        key = LucideIconKey("file-chart-line"),
+        displayName = "File Chart Line",
+        tags = setOf("analytics", "diagram", "file-line-chart", "graph", "presentation", "statistics"),
+        zhDisplayName = "文件图表线",
+        categories = setOf(LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileChartPie = LucideIconMetadata(
+        key = LucideIconKey("file-chart-pie"),
+        displayName = "File Chart Pie",
+        tags = setOf("analytics", "diagram", "file-pie-chart", "graph", "presentation", "statistics"),
+        zhDisplayName = "文件图表饼图",
+        categories = setOf(LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileCheckCorner = LucideIconMetadata(
+        key = LucideIconKey("file-check-corner"),
+        displayName = "File Check Corner",
+        tags = setOf("complete", "document", "done", "file-check-2", "task", "tick", "todo"),
+        zhDisplayName = "文件检查角",
+        categories = setOf(LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileCheck = LucideIconMetadata(
+        key = LucideIconKey("file-check"),
+        displayName = "File Check",
+        tags = setOf("complete", "document", "done", "task", "tick", "todo"),
+        zhDisplayName = "文件检查",
+        categories = setOf(LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileClock = LucideIconMetadata(
+        key = LucideIconKey("file-clock"),
+        displayName = "File Clock",
+        tags = setOf("clock", "history", "log"),
+        zhDisplayName = "文件时钟",
+        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Time),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val FileCodeCorner = LucideIconMetadata(
+        key = LucideIconKey("file-code-corner"),
+        displayName = "File Code Corner",
+        tags = setOf("document", "file-code-2", "html", "plist", "property list", "script", "xml"),
+        zhDisplayName = "文件代码角",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val FileCode = LucideIconMetadata(
         key = LucideIconKey("file-code"),
         displayName = "File Code",
@@ -755,257 +1005,32 @@ internal object LucideGeneratedMetadataChunk6 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val FolderDot = LucideIconMetadata(
-        key = LucideIconKey("folder-dot"),
-        displayName = "Folder Dot",
-        tags = setOf("active", "admin", "cogged", "configuration", "controls", "current", "directory", "edit", "gear", "machinery", "mechanical", "pinned", "preferences", "project", "root", "settings", "system"),
-        zhDisplayName = "文件夹点",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderDown = LucideIconMetadata(
-        key = LucideIconKey("folder-down"),
-        displayName = "Folder Down",
-        tags = setOf("directory", "download", "export", "import"),
-        zhDisplayName = "文件夹向下",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderGit2 = LucideIconMetadata(
-        key = LucideIconKey("folder-git-2"),
-        displayName = "Folder Git 2",
-        tags = setOf("directory", "git", "project", "repo", "root"),
-        zhDisplayName = "文件夹 Git 2",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderGit = LucideIconMetadata(
-        key = LucideIconKey("folder-git"),
-        displayName = "Folder Git",
-        tags = setOf("directory", "git", "project", "repo", "root"),
-        zhDisplayName = "文件夹 Git",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderHeart = LucideIconMetadata(
-        key = LucideIconKey("folder-heart"),
-        displayName = "Folder Heart",
-        tags = setOf("bookmark", "directory", "favourite", "heart", "quick link"),
-        zhDisplayName = "文件夹心",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderInput = LucideIconMetadata(
-        key = LucideIconKey("folder-input"),
-        displayName = "Folder Input",
-        tags = setOf("directory", "export", "import"),
-        zhDisplayName = "文件夹输入",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderKanban = LucideIconMetadata(
-        key = LucideIconKey("folder-kanban"),
-        displayName = "Folder Kanban",
-        tags = setOf("agile", "board", "code", "coding", "directory", "intentions", "issues", "manage", "overview", "plan", "productivity", "project", "projects", "roadmap", "root", "tickets", "work"),
-        zhDisplayName = "文件夹看板",
-        categories = setOf(LucideIconCategory.Charts, LucideIconCategory.Design, LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderKey = LucideIconMetadata(
-        key = LucideIconKey("folder-key"),
-        displayName = "Folder Key",
-        tags = setOf("directory", "key", "private", "protected", "security"),
-        zhDisplayName = "文件夹键",
-        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Security),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderLock = LucideIconMetadata(
-        key = LucideIconKey("folder-lock"),
-        displayName = "Folder Lock",
-        tags = setOf("directory", "lock", "private", "protected", "security"),
-        zhDisplayName = "文件夹锁",
-        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Security),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderMinus = LucideIconMetadata(
-        key = LucideIconKey("folder-minus"),
-        displayName = "Folder Minus",
-        tags = setOf("delete", "directory", "remove"),
-        zhDisplayName = "文件夹减号",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderOpenDot = LucideIconMetadata(
-        key = LucideIconKey("folder-open-dot"),
-        displayName = "Folder Open Dot",
-        tags = setOf("active", "current", "directory", "pinned", "project", "root"),
-        zhDisplayName = "文件夹打开点",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderOpen = LucideIconMetadata(
-        key = LucideIconKey("folder-open"),
-        displayName = "Folder Open",
-        tags = setOf("directory"),
-        zhDisplayName = "文件夹打开",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderOutput = LucideIconMetadata(
-        key = LucideIconKey("folder-output"),
-        displayName = "Folder Output",
-        tags = setOf("directory", "export", "import"),
-        zhDisplayName = "文件夹输出",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderPen = LucideIconMetadata(
-        key = LucideIconKey("folder-pen"),
-        displayName = "Folder Pen",
-        tags = setOf("directory", "folder-edit", "rename"),
-        zhDisplayName = "文件夹笔",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderPlus = LucideIconMetadata(
-        key = LucideIconKey("folder-plus"),
-        displayName = "Folder Plus",
-        tags = setOf("add", "create", "directory", "new"),
-        zhDisplayName = "文件夹加",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderRoot = LucideIconMetadata(
-        key = LucideIconKey("folder-root"),
-        displayName = "Folder Root",
-        tags = setOf("directory", "git", "project", "repo", "root"),
-        zhDisplayName = "文件夹根目录",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderSearch2 = LucideIconMetadata(
-        key = LucideIconKey("folder-search-2"),
-        displayName = "Folder Search 2",
-        tags = setOf("browser", "directory", "find", "lens", "lost", "search"),
-        zhDisplayName = "文件夹搜索2",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderSearch = LucideIconMetadata(
-        key = LucideIconKey("folder-search"),
-        displayName = "Folder Search",
-        tags = setOf("browser", "directory", "find", "lens", "lost", "search"),
-        zhDisplayName = "文件夹搜索",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderSymlink = LucideIconMetadata(
-        key = LucideIconKey("folder-symlink"),
-        displayName = "Folder Symlink",
-        tags = setOf("directory", "link", "symbolic", "symlink"),
-        zhDisplayName = "文件夹符号链接",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderSync = LucideIconMetadata(
-        key = LucideIconKey("folder-sync"),
-        displayName = "Folder Sync",
-        tags = setOf("backup", "directory", "reconnect", "refresh", "synchronise", "synchronize", "transfer"),
-        zhDisplayName = "文件夹同步",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderTree = LucideIconMetadata(
-        key = LucideIconKey("folder-tree"),
-        displayName = "Folder Tree",
-        tags = setOf("browser", "directory", "tree"),
-        zhDisplayName = "文件夹树",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderUp = LucideIconMetadata(
-        key = LucideIconKey("folder-up"),
-        displayName = "Folder Up",
-        tags = setOf("directory", "export", "import", "upload"),
-        zhDisplayName = "文件夹向上",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val FolderX = LucideIconMetadata(
-        key = LucideIconKey("folder-x"),
-        displayName = "Folder X",
-        tags = setOf("delete", "directory", "remove"),
-        zhDisplayName = "文件夹X",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Folder = LucideIconMetadata(
-        key = LucideIconKey("folder"),
-        displayName = "Folder",
-        tags = setOf("directory"),
-        zhDisplayName = "文件夹",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Folders = LucideIconMetadata(
-        key = LucideIconKey("folders"),
-        displayName = "Folders",
-        tags = setOf("copy", "directories", "multiple"),
-        zhDisplayName = "文件夹",
-        categories = setOf(LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        FaceGrinning,
+        FaceNeutral,
+        FaceSlightlyFrowning,
+        FaceSlightlySmilingPlus,
+        FaceSlightlySmiling,
+        Factory,
+        Fan,
+        FastForward,
+        Feather,
+        Fence,
+        FerrisWheel,
+        FileArchive,
+        FileAxis3d,
+        FileBadge,
+        FileBox,
+        FileBracesCorner,
+        FileBraces,
+        FileChartColumnIncreasing,
+        FileChartColumn,
+        FileChartLine,
+        FileChartPie,
+        FileCheckCorner,
+        FileCheck,
+        FileClock,
+        FileCodeCorner,
         FileCode,
         FileCog,
         FileDiff,
@@ -1080,31 +1105,6 @@ internal object LucideGeneratedMetadataChunk6 {
         FolderClock,
         FolderClosed,
         FolderCode,
-        FolderCog,
-        FolderDot,
-        FolderDown,
-        FolderGit2,
-        FolderGit,
-        FolderHeart,
-        FolderInput,
-        FolderKanban,
-        FolderKey,
-        FolderLock,
-        FolderMinus,
-        FolderOpenDot,
-        FolderOpen,
-        FolderOutput,
-        FolderPen,
-        FolderPlus,
-        FolderRoot,
-        FolderSearch2,
-        FolderSearch,
-        FolderSymlink,
-        FolderSync,
-        FolderTree,
-        FolderUp,
-        FolderX,
-        Folder,
-        Folders
+        FolderCog
     )
 }

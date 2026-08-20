@@ -56,6 +56,16 @@ internal object LucideGeneratedMetadataChunk0 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val Ad = LucideIconMetadata(
+        key = LucideIconKey("ad"),
+        displayName = "Ad",
+        tags = setOf("advert", "affiliate", "audio description", "brand", "campaign", "commercial", "described video", "marketing", "monetize", "paid", "partner", "promo", "sponsor", "video description", "visual description"),
+        zhDisplayName = "广告",
+        categories = setOf(LucideIconCategory.Accessibility, LucideIconCategory.Multimedia, LucideIconCategory.Notifications),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val AirVent = LucideIconMetadata(
         key = LucideIconKey("air-vent"),
         displayName = "Air Vent",
@@ -416,22 +426,12 @@ internal object LucideGeneratedMetadataChunk0 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val Angry = LucideIconMetadata(
-        key = LucideIconKey("angry"),
-        displayName = "Angry",
-        tags = setOf("anger", "emoji", "emotion", "face"),
-        zhDisplayName = "生气",
-        categories = setOf(LucideIconCategory.Emoji),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Annoyed = LucideIconMetadata(
-        key = LucideIconKey("annoyed"),
-        displayName = "Annoyed",
-        tags = setOf("emoji", "emotion", "face", "nuisance"),
-        zhDisplayName = "生气",
-        categories = setOf(LucideIconCategory.Emoji),
+    val Angle = LucideIconMetadata(
+        key = LucideIconKey("angle"),
+        displayName = "Angle",
+        tags = setOf("angle", "arc", "cad", "corner", "degree", "dimension", "drafting", "geometry", "math", "measure", "measurement", "protractor", "rotate", "slope", "vertex"),
+        zhDisplayName = "角",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Math),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -1011,6 +1011,7 @@ internal object LucideGeneratedMetadataChunk0 {
         ALargeSmall,
         Accessibility,
         Activity,
+        Ad,
         AirVent,
         Airplay,
         AlarmClockCheck,
@@ -1047,8 +1048,7 @@ internal object LucideGeneratedMetadataChunk0 {
         Ampersands,
         Amphora,
         Anchor,
-        Angry,
-        Annoyed,
+        Angle,
         Antenna,
         Anvil,
         Aperture,

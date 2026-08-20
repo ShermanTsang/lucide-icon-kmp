@@ -23,12 +23,12 @@ val CalendarPlus2: ImageVector
 val LucideIcons.CalendarPlus2: ImageVector
     get() = calendarPlus2Provider.create()
 
-private val calendarPlus2Path0 = PathParser().parsePathString("M8 2v4").toNodes()
-private val calendarPlus2Path1 = PathParser().parsePathString("M16 2v4").toNodes()
-private val calendarPlus2Path2 = PathParser().parsePathString("M 5 4 H 19 A 2 2 0 0 1 21 6 V 20 A 2 2 0 0 1 19 22 H 5 A 2 2 0 0 1 3 20 V 6 A 2 2 0 0 1 5 4 Z").toNodes()
-private val calendarPlus2Path3 = PathParser().parsePathString("M3 10h18").toNodes()
-private val calendarPlus2Path4 = PathParser().parsePathString("M10 16h4").toNodes()
-private val calendarPlus2Path5 = PathParser().parsePathString("M12 14v4").toNodes()
+private val calendarPlus2Path0 = PathParser().parsePathString("M8 2v3").toNodes()
+private val calendarPlus2Path1 = PathParser().parsePathString("M16 2v3").toNodes()
+private val calendarPlus2Path2 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
+private val calendarPlus2Path3 = PathParser().parsePathString("M3 9h18").toNodes()
+private val calendarPlus2Path4 = PathParser().parsePathString("M10 15h4").toNodes()
+private val calendarPlus2Path5 = PathParser().parsePathString("M12 13v4").toNodes()
 
 private fun buildCalendarPlus2(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

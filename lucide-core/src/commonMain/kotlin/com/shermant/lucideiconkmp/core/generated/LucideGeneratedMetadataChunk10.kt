@@ -6,11 +6,341 @@ import com.shermant.lucideiconkmp.core.model.LucideIconKey
 import com.shermant.lucideiconkmp.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk10 {
+    val MessageCircleCheck = LucideIconMetadata(
+        key = LucideIconKey("message-circle-check"),
+        displayName = "Message Circle Check",
+        tags = setOf("chat", "check", "comment", "complete", "conversation", "dialog", "done", "feedback", "moderate", "speech bubble", "todo"),
+        zhDisplayName = "消息圈查看",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCircleCode = LucideIconMetadata(
+        key = LucideIconKey("message-circle-code"),
+        displayName = "Message Circle Code",
+        tags = setOf("chat", "code review", "coding", "comment", "conversation", "dialog", "feedback", "speech bubble"),
+        zhDisplayName = "留言圈码",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCircleDashed = LucideIconMetadata(
+        key = LucideIconKey("message-circle-dashed"),
+        displayName = "Message Circle Dashed",
+        tags = setOf("chat", "comment", "conversation", "dialog", "draft", "feedback", "speech bubble"),
+        zhDisplayName = "消息圈虚线",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCircleHeart = LucideIconMetadata(
+        key = LucideIconKey("message-circle-heart"),
+        displayName = "Message Circle Heart",
+        tags = setOf("chat", "comment", "conversation", "date", "dating", "dialog", "feedback", "interest", "like", "love", "positive", "speech bubble", "valentine"),
+        zhDisplayName = "留言圈心",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCircleMore = LucideIconMetadata(
+        key = LucideIconKey("message-circle-more"),
+        displayName = "Message Circle More",
+        tags = setOf("...", "chat", "comment", "conversation", "dialog", "ellipsis", "et cetera", "etc", "feedback", "responding", "speech bubble", "typing", "writing", "…"),
+        zhDisplayName = "留言圈 更多",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCircleOff = LucideIconMetadata(
+        key = LucideIconKey("message-circle-off"),
+        displayName = "Message Circle Off",
+        tags = setOf("cancel", "chat", "clear", "close", "comment", "conversation", "delete", "dialog", "feedback", "moderate", "mute", "remove", "silence", "speech bubble"),
+        zhDisplayName = "消息圈关闭",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCirclePlus = LucideIconMetadata(
+        key = LucideIconKey("message-circle-plus"),
+        displayName = "Message Circle Plus",
+        tags = setOf("add", "chat", "comment", "conversation", "dialog", "feedback", "speech bubble"),
+        zhDisplayName = "留言圈加号",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCircleQuestionMark = LucideIconMetadata(
+        key = LucideIconKey("message-circle-question-mark"),
+        displayName = "Message Circle Question Mark",
+        tags = setOf("chat", "comment", "conversation", "dialog", "feedback", "help", "message-circle-question", "speech bubble"),
+        zhDisplayName = "消息圈问号",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCircleReply = LucideIconMetadata(
+        key = LucideIconKey("message-circle-reply"),
+        displayName = "Message Circle Reply",
+        tags = setOf("chat", "comment", "conversation", "dialog", "feedback", "reply", "response", "speech bubble"),
+        zhDisplayName = "留言圈回复",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCircleWarning = LucideIconMetadata(
+        key = LucideIconKey("message-circle-warning"),
+        displayName = "Message Circle Warning",
+        tags = setOf("abuse", "alert", "caution", "chat", "comment", "conversation", "danger", "dialog", "exclamation mark", "feedback", "offense", "protected", "report", "speech bubble"),
+        zhDisplayName = "消息圈警告",
+        categories = setOf(LucideIconCategory.Notifications, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCircleX = LucideIconMetadata(
+        key = LucideIconKey("message-circle-x"),
+        displayName = "Message Circle X",
+        tags = setOf("cancel", "chat", "clear", "close", "comment", "conversation", "delete", "dialog", "feedback", "moderate", "mute", "remove", "silence", "speech bubble"),
+        zhDisplayName = "留言圈X",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageCircle = LucideIconMetadata(
+        key = LucideIconKey("message-circle"),
+        displayName = "Message Circle",
+        tags = setOf("chat", "comment", "conversation", "dialog", "feedback", "speech bubble"),
+        zhDisplayName = "留言圈",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareCheck = LucideIconMetadata(
+        key = LucideIconKey("message-square-check"),
+        displayName = "Message Square Check",
+        tags = setOf("chat", "check", "comment", "complete", "conversation", "dialog", "done", "feedback", "moderate", "speech bubble", "todo"),
+        zhDisplayName = "留言广场检查",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareCode = LucideIconMetadata(
+        key = LucideIconKey("message-square-code"),
+        displayName = "Message Square Code",
+        tags = setOf("chat", "code review", "coding", "comment", "conversation", "dialog", "feedback", "speech bubble"),
+        zhDisplayName = "消息方代码",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareDashed = LucideIconMetadata(
+        key = LucideIconKey("message-square-dashed"),
+        displayName = "Message Square Dashed",
+        tags = setOf("chat", "comment", "conversation", "dialog", "draft", "feedback", "speech bubble"),
+        zhDisplayName = "消息方块虚线",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareDiff = LucideIconMetadata(
+        key = LucideIconKey("message-square-diff"),
+        displayName = "Message Square Diff",
+        tags = setOf("add", "chat", "code review", "coding", "comment", "conversation", "dialog", "difference", "feedback", "git", "math", "minus", "patch", "plus", "plus-minus", "speech bubble", "version control"),
+        zhDisplayName = "消息广场差异",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareDot = LucideIconMetadata(
+        key = LucideIconKey("message-square-dot"),
+        displayName = "Message Square Dot",
+        tags = setOf("chat", "comment", "conversation", "dialog", "feedback", "speech bubble", "unread", "unresolved"),
+        zhDisplayName = "消息方点",
+        categories = setOf(LucideIconCategory.Notifications, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareHeart = LucideIconMetadata(
+        key = LucideIconKey("message-square-heart"),
+        displayName = "Message Square Heart",
+        tags = setOf("chat", "comment", "conversation", "date", "dating", "dialog", "feedback", "interest", "like", "love", "positive", "speech bubble", "valentine"),
+        zhDisplayName = "留言方心",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareLock = LucideIconMetadata(
+        key = LucideIconKey("message-square-lock"),
+        displayName = "Message Square Lock",
+        tags = setOf("chat", "comment", "conversation", "dialog", "encrypted", "feedback", "secure", "speech bubble"),
+        zhDisplayName = "消息方锁",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareMore = LucideIconMetadata(
+        key = LucideIconKey("message-square-more"),
+        displayName = "Message Square More",
+        tags = setOf("...", "chat", "comment", "conversation", "dialog", "ellipsis", "et cetera", "etc", "feedback", "responding", "speech bubble", "typing", "writing", "…"),
+        zhDisplayName = "留言广场 更多",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareOff = LucideIconMetadata(
+        key = LucideIconKey("message-square-off"),
+        displayName = "Message Square Off",
+        tags = setOf("cancel", "chat", "clear", "close", "comment", "conversation", "delete", "dialog", "feedback", "moderate", "mute", "remove", "silence", "speech bubble"),
+        zhDisplayName = "消息广场关闭",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquarePlus = LucideIconMetadata(
+        key = LucideIconKey("message-square-plus"),
+        displayName = "Message Square Plus",
+        tags = setOf("add", "chat", "comment", "conversation", "dialog", "feedback", "speech bubble"),
+        zhDisplayName = "留言广场Plus",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareQuote = LucideIconMetadata(
+        key = LucideIconKey("message-square-quote"),
+        displayName = "Message Square Quote",
+        tags = setOf("blockquote", "chat", "comment", "conversation", "dialog", "feedback", "indent", "quotation", "reply", "response", "speech bubble"),
+        zhDisplayName = "留言广场报价",
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareReply = LucideIconMetadata(
+        key = LucideIconKey("message-square-reply"),
+        displayName = "Message Square Reply",
+        tags = setOf("chat", "comment", "conversation", "dialog", "feedback", "reply", "response", "speech bubble"),
+        zhDisplayName = "留言广场回复",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareShare = LucideIconMetadata(
+        key = LucideIconKey("message-square-share"),
+        displayName = "Message Square Share",
+        tags = setOf("chat", "comment", "conversation", "dialog", "feedback", "forward", "network", "speech bubble"),
+        zhDisplayName = "留言广场 分享",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareText = LucideIconMetadata(
+        key = LucideIconKey("message-square-text"),
+        displayName = "Message Square Text",
+        tags = setOf("chat", "comment", "conversation", "dialog", "feedback", "speech bubble"),
+        zhDisplayName = "消息方块文本",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareWarning = LucideIconMetadata(
+        key = LucideIconKey("message-square-warning"),
+        displayName = "Message Square Warning",
+        tags = setOf("abuse", "alert", "caution", "chat", "comment", "conversation", "danger", "dialog", "exclamation mark", "feedback", "offense", "protected", "report", "speech bubble"),
+        zhDisplayName = "消息广场警告",
+        categories = setOf(LucideIconCategory.Notifications, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquareX = LucideIconMetadata(
+        key = LucideIconKey("message-square-x"),
+        displayName = "Message Square X",
+        tags = setOf("cancel", "chat", "clear", "close", "comment", "conversation", "delete", "dialog", "feedback", "moderate", "mute", "remove", "silence", "speech bubble"),
+        zhDisplayName = "留言广场X",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessageSquare = LucideIconMetadata(
+        key = LucideIconKey("message-square"),
+        displayName = "Message Square",
+        tags = setOf("chat", "comment", "conversation", "dialog", "feedback", "speech bubble"),
+        zhDisplayName = "留言广场",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MessagesSquare = LucideIconMetadata(
+        key = LucideIconKey("messages-square"),
+        displayName = "Messages Square",
+        tags = setOf("chat", "comment", "conversation", "copy", "debate", "dialog", "discussion", "feedback", "interview", "multiple", "speech bubbles"),
+        zhDisplayName = "留言广场",
+        categories = setOf(LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Metronome = LucideIconMetadata(
+        key = LucideIconKey("metronome"),
+        displayName = "Metronome",
+        tags = setOf("audio", "beat", "bpm", "cadence", "control", "metronome", "music", "playback", "practice", "pulse", "rhythm", "sound", "studio", "sync", "tempo", "time", "timer", "timing", "tool"),
+        zhDisplayName = "节拍器",
+        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Time),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MicAudioLines = LucideIconMetadata(
+        key = LucideIconKey("mic-audio-lines"),
+        displayName = "Mic Audio Lines",
+        tags = setOf("audio", "dictation", "microphone", "noise cancellation", "podcast", "recording", "sound processing", "sound waves", "speech", "stream", "talk", "transcription", "voice", "voice assistant", "waveform"),
+        zhDisplayName = "麦克风声波",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Devices, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val MicOff = LucideIconMetadata(
         key = LucideIconKey("mic-off"),
         displayName = "Mic Off",
         tags = setOf("microphone", "mute", "record", "sound"),
         zhDisplayName = "麦克风关闭",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MicSignal = LucideIconMetadata(
+        key = LucideIconKey("mic-signal"),
+        displayName = "Mic Signal",
+        tags = setOf("airwaves", "audio", "broadcast", "live", "microphone", "podcast", "push to talk", "radio", "signal", "speech", "stream", "talk", "transmission", "voice", "voice chat", "wireless"),
+        zhDisplayName = "麦克风信号",
         categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Multimedia),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
@@ -62,6 +392,16 @@ internal object LucideGeneratedMetadataChunk10 {
         tags = setOf("bake", "cooker", "oven", "toaster oven"),
         zhDisplayName = "微波炉",
         categories = setOf(LucideIconCategory.FoodBeverage, LucideIconCategory.Home),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MidiPort = LucideIconMetadata(
+        key = LucideIconKey("midi-port"),
+        displayName = "Midi Port",
+        tags = setOf("5-pin", "audio", "connector", "controller", "din", "input", "interface", "io", "jack", "keyboard", "music", "musical instrument digital interface", "output", "port", "socket", "synthesizer"),
+        zhDisplayName = "MIDI 端口",
+        categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Multimedia),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -302,6 +642,36 @@ internal object LucideGeneratedMetadataChunk10 {
         tags = setOf("dark", "night"),
         zhDisplayName = "月亮",
         categories = setOf(LucideIconCategory.Accessibility),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val MopSparkles = LucideIconMetadata(
+        key = LucideIconKey("mop-sparkles"),
+        displayName = "Mop Sparkles",
+        tags = setOf("ai", "automation", "chores", "cleaning", "disinfect", "floor", "housekeeping", "hygiene", "magic", "polish", "pristine", "sanitation", "sanitize", "scrubbing", "smart", "sparkle", "spotless", "swab", "sweeping", "tidy"),
+        zhDisplayName = "拖把闪光",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Home, LucideIconCategory.Tools),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Mop = LucideIconMetadata(
+        key = LucideIconKey("mop"),
+        displayName = "Mop",
+        tags = setOf("chores", "cleaning", "disinfect", "floor", "housekeeping", "hygiene", "janitor", "maintenance", "pristine", "sanitation", "scrubbing", "spotless", "swab", "sweeping", "tidy", "wash", "wipe"),
+        zhDisplayName = "拖把",
+        categories = setOf(LucideIconCategory.Home, LucideIconCategory.Tools),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Mosque = LucideIconMetadata(
+        key = LucideIconKey("mosque"),
+        displayName = "Mosque",
+        tags = setOf("architecture", "building", "community", "dome", "eid", "faith", "heritage", "holy", "islam", "landmark", "map", "masjid", "minaret", "mosque", "muslim", "prayer", "ramadan", "religion", "sacred", "spiritual", "tourism", "worship"),
+        zhDisplayName = "清真寺",
+        categories = setOf(LucideIconCategory.Buildings, LucideIconCategory.Navigation, LucideIconCategory.Travel),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -636,383 +1006,47 @@ internal object LucideGeneratedMetadataChunk10 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val Navigation = LucideIconMetadata(
-        key = LucideIconKey("navigation"),
-        displayName = "Navigation",
-        tags = setOf("location", "travel"),
-        zhDisplayName = "导航",
-        categories = setOf(LucideIconCategory.Navigation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Network = LucideIconMetadata(
-        key = LucideIconKey("network"),
-        displayName = "Network",
-        tags = setOf("tree"),
-        zhDisplayName = "网络",
-        categories = setOf(LucideIconCategory.Development),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Newspaper = LucideIconMetadata(
-        key = LucideIconKey("newspaper"),
-        displayName = "Newspaper",
-        tags = setOf("article", "feed", "headline", "home", "magazine", "news"),
-        zhDisplayName = "报纸",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Nfc = LucideIconMetadata(
-        key = LucideIconKey("nfc"),
-        displayName = "Nfc",
-        tags = setOf("contactless", "near-field communication", "payment"),
-        zhDisplayName = "近场通信",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Devices, LucideIconCategory.Finance),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val NonBinary = LucideIconMetadata(
-        key = LucideIconKey("non-binary"),
-        displayName = "Non Binary",
-        tags = setOf("enby", "gender", "nonbinary"),
-        zhDisplayName = "非二进制",
-        categories = setOf(LucideIconCategory.Medical),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val NotebookPen = LucideIconMetadata(
-        key = LucideIconKey("notebook-pen"),
-        displayName = "Notebook Pen",
-        tags = setOf("academy", "college", "diary", "eraser", "high school", "homework", "journal", "noted", "notepad", "notes", "organiser", "organizer", "pencil", "planner", "reading", "research", "rubber", "sketchbook", "stationery", "student", "study", "university", "write", "writing", "written"),
-        zhDisplayName = "笔记本笔",
-        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val NotebookTabs = LucideIconMetadata(
-        key = LucideIconKey("notebook-tabs"),
-        displayName = "Notebook Tabs",
-        tags = setOf("a-z", "acquaintances", "addresses", "alphabetical", "contacts", "details", "diary", "directory", "family", "friends", "listing", "networking", "notepad", "notes", "organiser", "organizer", "people", "phone numbers", "planner", "stationery"),
-        zhDisplayName = "笔记本标签",
-        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Communication, LucideIconCategory.Social),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val NotebookText = LucideIconMetadata(
-        key = LucideIconKey("notebook-text"),
-        displayName = "Notebook Text",
-        tags = setOf("academy", "college", "diary", "high school", "homework", "journal", "lines", "notepad", "notes", "opened", "organiser", "organizer", "pages", "paper", "planner", "reading", "research", "sketchbook", "stationery", "student", "study", "university", "write", "writing", "written"),
-        zhDisplayName = "笔记本文本",
-        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Notebook = LucideIconMetadata(
-        key = LucideIconKey("notebook"),
-        displayName = "Notebook",
-        tags = setOf("academy", "band", "closure", "college", "diary", "elastic", "high school", "homework", "journal", "moleskine", "notepad", "notes", "organiser", "organizer", "planner", "reading", "research", "sketchbook", "stationery", "strap", "student", "study", "university", "writer", "writing", "written"),
-        zhDisplayName = "笔记本",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Design, LucideIconCategory.Social, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val NotepadTextDashed = LucideIconMetadata(
-        key = LucideIconKey("notepad-text-dashed"),
-        displayName = "Notepad Text Dashed",
-        tags = setOf("diary", "draft", "journal", "lines", "notebook", "notes", "pages", "paper", "stationery", "template", "write", "writing", "written"),
-        zhDisplayName = "记事本文本虚线",
-        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val NotepadText = LucideIconMetadata(
-        key = LucideIconKey("notepad-text"),
-        displayName = "Notepad Text",
-        tags = setOf("academy", "college", "diary", "high school", "homework", "journal", "lines", "notebook", "notes", "opened", "organiser", "organizer", "pages", "paper", "planner", "reading", "research", "sketchbook", "stationery", "student", "study", "university", "write", "writing", "written"),
-        zhDisplayName = "记事本文本",
-        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val NutOff = LucideIconMetadata(
-        key = LucideIconKey("nut-off"),
-        displayName = "Nut Off",
-        tags = setOf("acorn", "allergy", "diet", "food", "hazelnut", "intolerance"),
-        zhDisplayName = "螺母关闭",
-        categories = setOf(LucideIconCategory.FoodBeverage),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Nut = LucideIconMetadata(
-        key = LucideIconKey("nut"),
-        displayName = "Nut",
-        tags = setOf("acorn", "diet", "food", "hazelnut"),
-        zhDisplayName = "坚果",
-        categories = setOf(LucideIconCategory.FoodBeverage),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val OctagonAlert = LucideIconMetadata(
-        key = LucideIconKey("octagon-alert"),
-        displayName = "Octagon Alert",
-        tags = setOf("alert", "alert-octagon", "danger", "exclamation mark", "warning"),
-        zhDisplayName = "八边形警报",
-        categories = setOf(LucideIconCategory.Notifications, LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val OctagonMinus = LucideIconMetadata(
-        key = LucideIconKey("octagon-minus"),
-        displayName = "Octagon Minus",
-        tags = setOf("-", "decrease", "forbidden", "halt", "reduce", "remove", "restricted", "stop", "subtract", "traffic"),
-        zhDisplayName = "八边形减号",
-        categories = setOf(LucideIconCategory.Transportation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val OctagonPause = LucideIconMetadata(
-        key = LucideIconKey("octagon-pause"),
-        displayName = "Octagon Pause",
-        tags = setOf("audio", "music", "pause-octagon", "stop"),
-        zhDisplayName = "八边形暂停",
-        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val OctagonX = LucideIconMetadata(
-        key = LucideIconKey("octagon-x"),
-        displayName = "Octagon X",
-        tags = setOf("alert", "clear", "delete", "math", "stop", "times", "warning", "x-octagon"),
-        zhDisplayName = "八边形X",
-        categories = setOf(LucideIconCategory.Math, LucideIconCategory.Notifications),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Octagon = LucideIconMetadata(
-        key = LucideIconKey("octagon"),
-        displayName = "Octagon",
-        tags = setOf("shape", "stop"),
-        zhDisplayName = "八边形",
-        categories = setOf(LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Omega = LucideIconMetadata(
-        key = LucideIconKey("omega"),
-        displayName = "Omega",
-        tags = setOf("angular frequency", "astronomy", "constellations", "dynamical systems", "education", "electrical resistance", "engineering", "greek", "mathematics", "ohms", "philosophy", "physics", "symbol"),
-        zhDisplayName = "欧米茄",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Math, LucideIconCategory.Science, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Option = LucideIconMetadata(
-        key = LucideIconKey("option"),
-        displayName = "Option",
-        tags = setOf("alt", "button", "key", "keyboard", "mac"),
-        zhDisplayName = "选项",
-        categories = setOf(LucideIconCategory.Development),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Orbit = LucideIconMetadata(
-        key = LucideIconKey("orbit"),
-        displayName = "Orbit",
-        tags = setOf("moons", "physics", "planet", "satellites", "space"),
-        zhDisplayName = "轨道",
-        categories = setOf(LucideIconCategory.Science),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Origami = LucideIconMetadata(
-        key = LucideIconKey("origami"),
-        displayName = "Origami",
-        tags = setOf("bird", "paper"),
-        zhDisplayName = "折纸",
-        categories = setOf(LucideIconCategory.Animals, LucideIconCategory.Design),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Package2 = LucideIconMetadata(
-        key = LucideIconKey("package-2"),
-        displayName = "Package 2",
-        tags = setOf("archive", "box", "container", "packed", "sealed", "storage", "undelivered", "unopened", "zip"),
-        zhDisplayName = "套餐2",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PackageCheck = LucideIconMetadata(
-        key = LucideIconKey("package-check"),
-        displayName = "Package Check",
-        tags = setOf("complete", "confirm", "delivered", "done", "task", "tick", "todo", "verified"),
-        zhDisplayName = "包裹检查",
-        categories = setOf(LucideIconCategory.Development),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PackageMinus = LucideIconMetadata(
-        key = LucideIconKey("package-minus"),
-        displayName = "Package Minus",
-        tags = setOf("delete", "remove"),
-        zhDisplayName = "套餐减号",
-        categories = setOf(LucideIconCategory.Development),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PackageOpen = LucideIconMetadata(
-        key = LucideIconKey("package-open"),
-        displayName = "Package Open",
-        tags = setOf("box", "container", "delivered", "opened", "storage", "unarchive", "unpack", "unzip"),
-        zhDisplayName = "包装打开",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PackagePlus = LucideIconMetadata(
-        key = LucideIconKey("package-plus"),
-        displayName = "Package Plus",
-        tags = setOf("add", "create", "new"),
-        zhDisplayName = "套餐加",
-        categories = setOf(LucideIconCategory.Development),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PackageSearch = LucideIconMetadata(
-        key = LucideIconKey("package-search"),
-        displayName = "Package Search",
-        tags = setOf("find", "lens", "product process"),
-        zhDisplayName = "套餐搜索",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PackageX = LucideIconMetadata(
-        key = LucideIconKey("package-x"),
-        displayName = "Package X",
-        tags = setOf("delete", "remove"),
-        zhDisplayName = "套餐X",
-        categories = setOf(LucideIconCategory.Development),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Package = LucideIconMetadata(
-        key = LucideIconKey("package"),
-        displayName = "Package",
-        tags = setOf("archive", "box", "container", "delivery", "module", "packed", "sealed", "storage", "undelivered", "unopened", "zip"),
-        zhDisplayName = "套餐",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Files),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PaintBucket = LucideIconMetadata(
-        key = LucideIconKey("paint-bucket"),
-        displayName = "Paint Bucket",
-        tags = setOf("bucket", "color", "colour", "fill", "paint"),
-        zhDisplayName = "油漆桶",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PaintRoller = LucideIconMetadata(
-        key = LucideIconKey("paint-roller"),
-        displayName = "Paint Roller",
-        tags = setOf("brush", "color", "colour", "decoration", "diy"),
-        zhDisplayName = "油漆滚筒",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Home, LucideIconCategory.Text, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PaintbrushVertical = LucideIconMetadata(
-        key = LucideIconKey("paintbrush-vertical"),
-        displayName = "Paintbrush Vertical",
-        tags = setOf("brush", "color", "colour", "decoration", "design", "diy", "paintbrush", "paintbrush-2"),
-        zhDisplayName = "画笔垂直",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Home, LucideIconCategory.Photography, LucideIconCategory.Text, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Paintbrush = LucideIconMetadata(
-        key = LucideIconKey("paintbrush"),
-        displayName = "Paintbrush",
-        tags = setOf("brush", "color", "colour", "decoration", "design", "diy", "paintbrush"),
-        zhDisplayName = "画笔",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Home, LucideIconCategory.Photography, LucideIconCategory.Text, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Palette = LucideIconMetadata(
-        key = LucideIconKey("palette"),
-        displayName = "Palette",
-        tags = setOf("artist", "colors", "colours", "paint", "scheme", "theme", "watercolor", "watercolour"),
-        zhDisplayName = "调色板",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Photography, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Panda = LucideIconMetadata(
-        key = LucideIconKey("panda"),
-        displayName = "Panda",
-        tags = setOf("animal", "bamboo", "bear", "wildlife", "zoo"),
-        zhDisplayName = "熊猫",
-        categories = setOf(LucideIconCategory.Animals),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val PanelBottomClose = LucideIconMetadata(
-        key = LucideIconKey("panel-bottom-close"),
-        displayName = "Panel Bottom Close",
-        tags = setOf("chevron", "dock", "down", "drawer", "hide"),
-        zhDisplayName = "面板底部关闭",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        MessageCircleCheck,
+        MessageCircleCode,
+        MessageCircleDashed,
+        MessageCircleHeart,
+        MessageCircleMore,
+        MessageCircleOff,
+        MessageCirclePlus,
+        MessageCircleQuestionMark,
+        MessageCircleReply,
+        MessageCircleWarning,
+        MessageCircleX,
+        MessageCircle,
+        MessageSquareCheck,
+        MessageSquareCode,
+        MessageSquareDashed,
+        MessageSquareDiff,
+        MessageSquareDot,
+        MessageSquareHeart,
+        MessageSquareLock,
+        MessageSquareMore,
+        MessageSquareOff,
+        MessageSquarePlus,
+        MessageSquareQuote,
+        MessageSquareReply,
+        MessageSquareShare,
+        MessageSquareText,
+        MessageSquareWarning,
+        MessageSquareX,
+        MessageSquare,
+        MessagesSquare,
+        Metronome,
+        MicAudioLines,
         MicOff,
+        MicSignal,
         MicVocal,
         Mic,
         Microchip,
         Microscope,
         Microwave,
+        MidiPort,
         Milestone,
         MilkOff,
         Milk,
@@ -1037,6 +1071,9 @@ internal object LucideGeneratedMetadataChunk10 {
         Monitor,
         MoonStar,
         Moon,
+        MopSparkles,
+        Mop,
+        Mosque,
         Motorbike,
         MountainSnow,
         Mountain,
@@ -1069,43 +1106,6 @@ internal object LucideGeneratedMetadataChunk10 {
         Music,
         Navigation2Off,
         Navigation2,
-        NavigationOff,
-        Navigation,
-        Network,
-        Newspaper,
-        Nfc,
-        NonBinary,
-        NotebookPen,
-        NotebookTabs,
-        NotebookText,
-        Notebook,
-        NotepadTextDashed,
-        NotepadText,
-        NutOff,
-        Nut,
-        OctagonAlert,
-        OctagonMinus,
-        OctagonPause,
-        OctagonX,
-        Octagon,
-        Omega,
-        Option,
-        Orbit,
-        Origami,
-        Package2,
-        PackageCheck,
-        PackageMinus,
-        PackageOpen,
-        PackagePlus,
-        PackageSearch,
-        PackageX,
-        Package,
-        PaintBucket,
-        PaintRoller,
-        PaintbrushVertical,
-        Paintbrush,
-        Palette,
-        Panda,
-        PanelBottomClose
+        NavigationOff
     )
 }

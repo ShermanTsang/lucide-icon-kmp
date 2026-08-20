@@ -23,12 +23,12 @@ val CalendarSearch: ImageVector
 val LucideIcons.CalendarSearch: ImageVector
     get() = calendarSearchProvider.create()
 
-private val calendarSearchPath0 = PathParser().parsePathString("M16 2v4").toNodes()
-private val calendarSearchPath1 = PathParser().parsePathString("M21 11.75V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.25").toNodes()
-private val calendarSearchPath2 = PathParser().parsePathString("m22 22-1.875-1.875").toNodes()
-private val calendarSearchPath3 = PathParser().parsePathString("M3 10h18").toNodes()
-private val calendarSearchPath4 = PathParser().parsePathString("M8 2v4").toNodes()
-private val calendarSearchPath5 = PathParser().parsePathString("M 21 18 A 3 3 0 1 0 15 18 A 3 3 0 1 0 21 18 Z").toNodes()
+private val calendarSearchPath0 = PathParser().parsePathString("M16 2v3").toNodes()
+private val calendarSearchPath1 = PathParser().parsePathString("M21 10.69V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h7.25").toNodes()
+private val calendarSearchPath2 = PathParser().parsePathString("m22 21-1.875-1.875").toNodes()
+private val calendarSearchPath3 = PathParser().parsePathString("M3 9h18").toNodes()
+private val calendarSearchPath4 = PathParser().parsePathString("M8 2v3").toNodes()
+private val calendarSearchPath5 = PathParser().parsePathString("M 21 17 A 3 3 0 1 0 15 17 A 3 3 0 1 0 21 17 Z").toNodes()
 
 private fun buildCalendarSearch(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

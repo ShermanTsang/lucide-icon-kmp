@@ -23,11 +23,11 @@ val CalendarMinus: ImageVector
 val LucideIcons.CalendarMinus: ImageVector
     get() = calendarMinusProvider.create()
 
-private val calendarMinusPath0 = PathParser().parsePathString("M16 19h6").toNodes()
-private val calendarMinusPath1 = PathParser().parsePathString("M16 2v4").toNodes()
-private val calendarMinusPath2 = PathParser().parsePathString("M21 15V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.5").toNodes()
-private val calendarMinusPath3 = PathParser().parsePathString("M3 10h18").toNodes()
-private val calendarMinusPath4 = PathParser().parsePathString("M8 2v4").toNodes()
+private val calendarMinusPath0 = PathParser().parsePathString("M16 18h6").toNodes()
+private val calendarMinusPath1 = PathParser().parsePathString("M16 2v3").toNodes()
+private val calendarMinusPath2 = PathParser().parsePathString("M21 14V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h8.3").toNodes()
+private val calendarMinusPath3 = PathParser().parsePathString("M3 9h18").toNodes()
+private val calendarMinusPath4 = PathParser().parsePathString("M8 2v3").toNodes()
 
 private fun buildCalendarMinus(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

@@ -1,10 +1,10 @@
 package com.shermant.generator.writer
 
-import com.shermant.lucideiconkmp.generator.model.PaintToken
-import com.shermant.lucideiconkmp.generator.model.ParsedIcon
-import com.shermant.lucideiconkmp.generator.model.StrokeCapToken
-import com.shermant.lucideiconkmp.generator.model.StrokeJoinToken
-import com.shermant.lucideiconkmp.generator.toPascalCaseIdentifier
+import com.shermant.generator.model.PaintToken
+import com.shermant.generator.model.ParsedIcon
+import com.shermant.generator.model.StrokeCapToken
+import com.shermant.generator.model.StrokeJoinToken
+import com.shermant.generator.toPascalCaseIdentifier
 import java.nio.file.Path
 import kotlin.io.path.createDirectories
 import kotlin.io.path.writeText

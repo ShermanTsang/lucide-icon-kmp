@@ -6,6 +6,46 @@ import com.shermant.lucideiconkmp.core.model.LucideIconKey
 import com.shermant.lucideiconkmp.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk2 {
+    val BookImage = LucideIconMetadata(
+        key = LucideIconKey("book-image"),
+        displayName = "Book Image",
+        tags = setOf("album", "brochure", "browse", "catalog", "catalogue", "collection", "event", "gallery", "images", "magazine", "photos", "pictures"),
+        zhDisplayName = "电池",
+        categories = setOf(LucideIconCategory.Files, LucideIconCategory.Multimedia, LucideIconCategory.Photography, LucideIconCategory.Shopping, LucideIconCategory.Social, LucideIconCategory.Text, LucideIconCategory.Travel),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val BookKey = LucideIconMetadata(
+        key = LucideIconKey("book-key"),
+        displayName = "Book Key",
+        tags = setOf("code", "coding", "git", "hidden", "knowledge", "learning", "private", "public", "repository", "revealed", "secret", "unlocked", "version control"),
+        zhDisplayName = "烧杯",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Security),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val BookLock = LucideIconMetadata(
+        key = LucideIconKey("book-lock"),
+        displayName = "Book Lock",
+        tags = setOf("code", "coding", "git", "hidden", "knowledge", "private", "repository", "secret", "version control"),
+        zhDisplayName = "豆关",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Security),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val BookMarked = LucideIconMetadata(
+        key = LucideIconKey("book-marked"),
+        displayName = "Book Marked",
+        tags = setOf("academy", "author", "booklet", "code", "coding", "college", "dictionary", "documentation", "education", "fiction", "future", "git", "high school", "homework", "index", "information", "knowledge", "later", "leaflet", "learning", "library", "magazine", "novel", "pamphlet", "reading", "reference", "repository", "research", "saved", "script", "story", "student", "study", "tome", "university", "version control", "writer", "writing", "written"),
+        zhDisplayName = "豆",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Gaming, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val BookMinus = LucideIconMetadata(
         key = LucideIconKey("book-minus"),
         displayName = "Book Minus",
@@ -411,6 +451,26 @@ internal object LucideGeneratedMetadataChunk2 {
         displayName = "Broccoli",
         tags = setOf("crisp", "culinary", "diet", "food", "fresh", "green", "healthy", "leafy", "nutrition", "plant", "produce", "vegan", "vegetable", "vegetarian", "vegetation"),
         categories = setOf(LucideIconCategory.FoodBeverage),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val BroomSparkles = LucideIconMetadata(
+        key = LucideIconKey("broom-sparkles"),
+        displayName = "Broom Sparkles",
+        tags = setOf("ai", "automation", "bristles", "broomstick", "brush", "chores", "cleaning", "debris", "dust", "floor", "halloween", "handle", "housekeeping", "janitor", "magic", "maintenance", "pristine", "smart", "sparkle", "spotless", "sweep", "sweeping", "tidy", "witch"),
+        zhDisplayName = "扫帚闪光",
+        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Home, LucideIconCategory.Tools),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Broom = LucideIconMetadata(
+        key = LucideIconKey("broom"),
+        displayName = "Broom",
+        tags = setOf("bristles", "broomstick", "brush", "chores", "cleaning", "debris", "dust", "floor", "halloween", "handle", "housekeeping", "janitor", "maintenance", "spotless", "sweep", "sweeping", "tidy", "witch"),
+        zhDisplayName = "扫帚",
+        categories = setOf(LucideIconCategory.Gaming, LucideIconCategory.Home, LucideIconCategory.Tools),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -875,6 +935,16 @@ internal object LucideGeneratedMetadataChunk2 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val CarBattery = LucideIconMetadata(
+        key = LucideIconKey("car-battery"),
+        displayName = "Car Battery",
+        tags = setOf("accumulator", "automobile", "battery", "car", "charge", "electric", "electricity", "energy", "power", "powercell", "transport", "vehicle"),
+        zhDisplayName = "汽车电池",
+        categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Transportation),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val CarFront = LucideIconMetadata(
         key = LucideIconKey("car-front"),
         displayName = "Car Front",
@@ -928,84 +998,18 @@ internal object LucideGeneratedMetadataChunk2 {
     val Carrot = LucideIconMetadata(
         key = LucideIconKey("carrot"),
         displayName = "Carrot",
-        tags = setOf("eat", "food", "vegetable"),
+        tags = setOf("eat", "food", "fresh", "healthy", "nature", "nutrition", "orange", "organic", "produce", "root", "vegetable"),
         zhDisplayName = "胡萝卜",
         categories = setOf(LucideIconCategory.FoodBeverage),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val CaseLower = LucideIconMetadata(
-        key = LucideIconKey("case-lower"),
-        displayName = "Case Lower",
-        tags = setOf("characters", "font", "letters", "text", "typography"),
-        zhDisplayName = "下壳",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CaseSensitive = LucideIconMetadata(
-        key = LucideIconKey("case-sensitive"),
-        displayName = "Case Sensitive",
-        tags = setOf("characters", "font", "letters", "text", "typography"),
-        zhDisplayName = "区分大小写",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CaseUpper = LucideIconMetadata(
-        key = LucideIconKey("case-upper"),
-        displayName = "Case Upper",
-        tags = setOf("characters", "font", "letters", "text", "typography"),
-        zhDisplayName = "外壳上部",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val CassetteTape = LucideIconMetadata(
-        key = LucideIconKey("cassette-tape"),
-        displayName = "Cassette Tape",
-        tags = setOf("audio", "music", "play", "recording"),
-        zhDisplayName = "盒式磁带",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Files, LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Cast = LucideIconMetadata(
-        key = LucideIconKey("cast"),
-        displayName = "Cast",
-        tags = setOf("airplay", "chromecast", "screen"),
-        zhDisplayName = "演员阵容",
-        categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Devices),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Castle = LucideIconMetadata(
-        key = LucideIconKey("castle"),
-        displayName = "Castle",
-        tags = setOf("building", "chateau", "fortress", "palace", "stronghold"),
-        zhDisplayName = "城堡",
-        categories = setOf(LucideIconCategory.Buildings, LucideIconCategory.Gaming, LucideIconCategory.Navigation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Cat = LucideIconMetadata(
-        key = LucideIconKey("cat"),
-        displayName = "Cat",
-        tags = setOf("animal", "feline", "kitten", "pet"),
-        zhDisplayName = "猫",
-        categories = setOf(LucideIconCategory.Animals),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        BookImage,
+        BookKey,
+        BookLock,
+        BookMarked,
         BookMinus,
         BookOpenCheck,
         BookOpenText,
@@ -1047,6 +1051,8 @@ internal object LucideGeneratedMetadataChunk2 {
         Briefcase,
         BringToFront,
         Broccoli,
+        BroomSparkles,
+        Broom,
         BrushCleaning,
         Brush,
         Bubbles,
@@ -1093,18 +1099,12 @@ internal object LucideGeneratedMetadataChunk2 {
         Cannabis,
         CaptionsOff,
         Captions,
+        CarBattery,
         CarFront,
         CarTaxiFront,
         Car,
         Caravan,
         CardSim,
-        Carrot,
-        CaseLower,
-        CaseSensitive,
-        CaseUpper,
-        CassetteTape,
-        Cast,
-        Castle,
-        Cat
+        Carrot
     )
 }

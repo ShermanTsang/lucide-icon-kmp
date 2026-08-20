@@ -1,12 +1,12 @@
 package com.shermant.generator.parser
 
-import com.shermant.lucideiconkmp.generator.model.PaintToken
-import com.shermant.lucideiconkmp.generator.model.ParsedIcon
-import com.shermant.lucideiconkmp.generator.model.ParsedVectorPath
-import com.shermant.lucideiconkmp.generator.model.RawLucideIcon
-import com.shermant.lucideiconkmp.generator.model.StrokeCapToken
-import com.shermant.lucideiconkmp.generator.model.StrokeJoinToken
-import com.shermant.lucideiconkmp.generator.toDisplayName
+import com.shermant.generator.model.PaintToken
+import com.shermant.generator.model.ParsedIcon
+import com.shermant.generator.model.ParsedVectorPath
+import com.shermant.generator.model.RawLucideIcon
+import com.shermant.generator.model.StrokeCapToken
+import com.shermant.generator.model.StrokeJoinToken
+import com.shermant.generator.toDisplayName
 import org.w3c.dom.Element
 import org.xml.sax.InputSource
 import java.io.StringReader

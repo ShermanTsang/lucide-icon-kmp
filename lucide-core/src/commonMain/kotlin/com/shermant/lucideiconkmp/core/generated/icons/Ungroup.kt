@@ -23,8 +23,8 @@ val Ungroup: ImageVector
 val LucideIcons.Ungroup: ImageVector
     get() = ungroupProvider.create()
 
-private val ungroupPath0 = PathParser().parsePathString("M 6 4 H 12 A 1 1 0 0 1 13 5 V 9 A 1 1 0 0 1 12 10 H 6 A 1 1 0 0 1 5 9 V 5 A 1 1 0 0 1 6 4 Z").toNodes()
-private val ungroupPath1 = PathParser().parsePathString("M 12 14 H 18 A 1 1 0 0 1 19 15 V 19 A 1 1 0 0 1 18 20 H 12 A 1 1 0 0 1 11 19 V 15 A 1 1 0 0 1 12 14 Z").toNodes()
+private val ungroupPath0 = PathParser().parsePathString("M 13 14 H 19 A 2 2 0 0 1 21 16 V 19 A 2 2 0 0 1 19 21 H 13 A 2 2 0 0 1 11 19 V 16 A 2 2 0 0 1 13 14 Z").toNodes()
+private val ungroupPath1 = PathParser().parsePathString("M 5 3 H 11 A 2 2 0 0 1 13 5 V 8 A 2 2 0 0 1 11 10 H 5 A 2 2 0 0 1 3 8 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 
 private fun buildUngroup(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

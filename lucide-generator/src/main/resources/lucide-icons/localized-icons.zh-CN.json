@@ -19,12 +19,20 @@
     "displayName": "活动",
     "tags": []
   },
+  "ad": {
+    "displayName": "广告",
+    "tags": []
+  },
   "air-vent": {
     "displayName": "通风口",
     "tags": []
   },
   "airplay": {
     "displayName": "空中播放",
+    "tags": []
+  },
+  "alarm-clock": {
+    "displayName": "闹钟",
     "tags": []
   },
   "alarm-clock-check": {
@@ -41,10 +49,6 @@
   },
   "alarm-clock-plus": {
     "displayName": "闹钟加",
-    "tags": []
-  },
-  "alarm-clock": {
-    "displayName": "闹钟",
     "tags": []
   },
   "alarm-smoke": {
@@ -163,12 +167,8 @@
     "displayName": "锚",
     "tags": []
   },
-  "angry": {
-    "displayName": "生气",
-    "tags": []
-  },
-  "annoyed": {
-    "displayName": "生气",
+  "angle": {
+    "displayName": "角",
     "tags": []
   },
   "antenna": {
@@ -183,16 +183,20 @@
     "displayName": "光圈",
     "tags": []
   },
-  "app-window-mac": {
-    "displayName": "应用程序窗口 Mac",
-    "tags": []
-  },
   "app-window": {
     "displayName": "应用程序窗口",
     "tags": []
   },
+  "app-window-mac": {
+    "displayName": "应用程序窗口 Mac",
+    "tags": []
+  },
   "apple": {
     "displayName": "苹果",
+    "tags": []
+  },
+  "archive": {
+    "displayName": "存档",
     "tags": []
   },
   "archive-restore": {
@@ -203,44 +207,44 @@
     "displayName": "档案X",
     "tags": []
   },
-  "archive": {
-    "displayName": "存档",
-    "tags": []
-  },
   "armchair": {
     "displayName": "扶手椅",
-    "tags": []
-  },
-  "arrow-big-down-dash": {
-    "displayName": "箭头大向下破折号",
     "tags": []
   },
   "arrow-big-down": {
     "displayName": "大向下箭头",
     "tags": []
   },
-  "arrow-big-left-dash": {
-    "displayName": "箭头大左破折号",
+  "arrow-big-down-dash": {
+    "displayName": "箭头大向下破折号",
     "tags": []
   },
   "arrow-big-left": {
     "displayName": "大左箭头",
     "tags": []
   },
-  "arrow-big-right-dash": {
-    "displayName": "箭头大右破折号",
+  "arrow-big-left-dash": {
+    "displayName": "箭头大左破折号",
     "tags": []
   },
   "arrow-big-right": {
     "displayName": "向右大箭头",
     "tags": []
   },
-  "arrow-big-up-dash": {
-    "displayName": "箭头大向上冲刺",
+  "arrow-big-right-dash": {
+    "displayName": "箭头大右破折号",
     "tags": []
   },
   "arrow-big-up": {
     "displayName": "向上箭头",
+    "tags": []
+  },
+  "arrow-big-up-dash": {
+    "displayName": "箭头大向上冲刺",
+    "tags": []
+  },
+  "arrow-down": {
+    "displayName": "向下箭头",
     "tags": []
   },
   "arrow-down-0-1": {
@@ -291,8 +295,8 @@
     "displayName": "向下箭头 Z A",
     "tags": []
   },
-  "arrow-down": {
-    "displayName": "向下箭头",
+  "arrow-left": {
+    "displayName": "向左箭头",
     "tags": []
   },
   "arrow-left-from-line": {
@@ -307,8 +311,8 @@
     "displayName": "向左箭头到线",
     "tags": []
   },
-  "arrow-left": {
-    "displayName": "向左箭头",
+  "arrow-right": {
+    "displayName": "向右箭头",
     "tags": []
   },
   "arrow-right-from-line": {
@@ -323,8 +327,8 @@
     "displayName": "向右箭头到线",
     "tags": []
   },
-  "arrow-right": {
-    "displayName": "向右箭头",
+  "arrow-up": {
+    "displayName": "向上箭头",
     "tags": []
   },
   "arrow-up-0-1": {
@@ -375,10 +379,6 @@
     "displayName": "向上箭头 Z A",
     "tags": []
   },
-  "arrow-up": {
-    "displayName": "向上箭头",
-    "tags": []
-  },
   "arrows-up-from-line": {
     "displayName": "从线向上的箭头",
     "tags": []
@@ -397,6 +397,14 @@
   },
   "audio-lines": {
     "displayName": "音频线",
+    "tags": []
+  },
+  "audio-lines-off": {
+    "displayName": "声波关闭",
+    "tags": []
+  },
+  "audio-lines-x": {
+    "displayName": "声波叉号",
     "tags": []
   },
   "audio-waveform": {
@@ -421,6 +429,10 @@
   },
   "backpack": {
     "displayName": "背包",
+    "tags": []
+  },
+  "badge": {
+    "displayName": "徽章",
     "tags": []
   },
   "badge-alert": {
@@ -491,10 +503,6 @@
     "displayName": "徽章X",
     "tags": []
   },
-  "badge": {
-    "displayName": "徽章",
-    "tags": []
-  },
   "baggage-claim": {
     "displayName": "行李领取处",
     "tags": []
@@ -515,6 +523,10 @@
     "displayName": "绷带",
     "tags": []
   },
+  "banknote": {
+    "displayName": "钞票",
+    "tags": []
+  },
   "banknote-arrow-down": {
     "displayName": "钞票箭头向下",
     "tags": []
@@ -523,12 +535,12 @@
     "displayName": "钞票向上箭头",
     "tags": []
   },
-  "banknote-x": {
-    "displayName": "钞票X",
+  "banknote-check": {
+    "displayName": "钞票对勾",
     "tags": []
   },
-  "banknote": {
-    "displayName": "钞票",
+  "banknote-x": {
+    "displayName": "钞票X",
     "tags": []
   },
   "barcode": {
@@ -545,6 +557,10 @@
   },
   "bath": {
     "displayName": "巴斯",
+    "tags": []
+  },
+  "battery": {
+    "displayName": "电池",
     "tags": []
   },
   "battery-charging": {
@@ -571,20 +587,20 @@
     "displayName": "电池警告",
     "tags": []
   },
-  "battery": {
-    "displayName": "电池",
-    "tags": []
-  },
   "beaker": {
     "displayName": "烧杯",
+    "tags": []
+  },
+  "bean": {
+    "displayName": "豆",
     "tags": []
   },
   "bean-off": {
     "displayName": "豆关",
     "tags": []
   },
-  "bean": {
-    "displayName": "豆",
+  "bed": {
+    "displayName": "床",
     "tags": []
   },
   "bed-double": {
@@ -595,24 +611,24 @@
     "displayName": "单人床",
     "tags": []
   },
-  "bed": {
-    "displayName": "床",
+  "beef": {
+    "displayName": "奖项",
     "tags": []
   },
   "beef-off": {
     "displayName": "音频波形",
     "tags": []
   },
-  "beef": {
-    "displayName": "奖项",
+  "beer": {
+    "displayName": "轴 3d",
     "tags": []
   },
   "beer-off": {
     "displayName": "斧头",
     "tags": []
   },
-  "beer": {
-    "displayName": "轴 3d",
+  "bell": {
+    "displayName": "欧元徽章",
     "tags": []
   },
   "bell-dot": {
@@ -637,10 +653,6 @@
   },
   "bell-ring": {
     "displayName": "徽章美元符号",
-    "tags": []
-  },
-  "bell": {
-    "displayName": "欧元徽章",
     "tags": []
   },
   "between-horizontal-end": {
@@ -703,6 +715,10 @@
     "displayName": "气球",
     "tags": []
   },
+  "bluetooth": {
+    "displayName": "钞票箭头向下",
+    "tags": []
+  },
   "bluetooth-connected": {
     "displayName": "班",
     "tags": []
@@ -713,10 +729,6 @@
   },
   "bluetooth-searching": {
     "displayName": "绷带",
-    "tags": []
-  },
-  "bluetooth": {
-    "displayName": "钞票箭头向下",
     "tags": []
   },
   "bold": {
@@ -733,6 +745,14 @@
   },
   "bone": {
     "displayName": "条码",
+    "tags": []
+  },
+  "bone-fracture": {
+    "displayName": "骨折",
+    "tags": []
+  },
+  "book": {
+    "displayName": "预订",
     "tags": []
   },
   "book-a": {
@@ -791,16 +811,16 @@
     "displayName": "双人床",
     "tags": []
   },
+  "book-open": {
+    "displayName": "已开放预订",
+    "tags": []
+  },
   "book-open-check": {
     "displayName": "单人床",
     "tags": []
   },
   "book-open-text": {
     "displayName": "床",
-    "tags": []
-  },
-  "book-open": {
-    "displayName": "已开放预订",
     "tags": []
   },
   "book-plus": {
@@ -819,12 +839,12 @@
     "displayName": "书籍类型",
     "tags": []
   },
-  "book-up-2": {
-    "displayName": "预订 2",
-    "tags": []
-  },
   "book-up": {
     "displayName": "预订",
+    "tags": []
+  },
+  "book-up-2": {
+    "displayName": "预订 2",
     "tags": []
   },
   "book-user": {
@@ -835,8 +855,8 @@
     "displayName": "第十册",
     "tags": []
   },
-  "book": {
-    "displayName": "预订",
+  "bookmark": {
+    "displayName": "书签",
     "tags": []
   },
   "bookmark-check": {
@@ -859,12 +879,12 @@
     "displayName": "书签X",
     "tags": []
   },
-  "bookmark": {
-    "displayName": "书签",
-    "tags": []
-  },
   "boom-box": {
     "displayName": "音箱",
+    "tags": []
+  },
+  "bot": {
+    "displayName": "机器人",
     "tags": []
   },
   "bot-message-square": {
@@ -873,10 +893,6 @@
   },
   "bot-off": {
     "displayName": "机器人关闭",
-    "tags": []
-  },
-  "bot": {
-    "displayName": "机器人",
     "tags": []
   },
   "bottle-wine": {
@@ -903,6 +919,10 @@
     "displayName": "括号",
     "tags": []
   },
+  "brain": {
+    "displayName": "大脑",
+    "tags": []
+  },
   "brain-circuit": {
     "displayName": "脑回路",
     "tags": []
@@ -911,8 +931,8 @@
     "displayName": "大脑齿轮",
     "tags": []
   },
-  "brain": {
-    "displayName": "大脑",
+  "brick-wall": {
+    "displayName": "砖墙",
     "tags": []
   },
   "brick-wall-fire": {
@@ -923,8 +943,8 @@
     "displayName": "砖墙盾",
     "tags": []
   },
-  "brick-wall": {
-    "displayName": "砖墙",
+  "briefcase": {
+    "displayName": "公文包",
     "tags": []
   },
   "briefcase-business": {
@@ -939,24 +959,32 @@
     "displayName": "公文包医疗",
     "tags": []
   },
-  "briefcase": {
-    "displayName": "公文包",
-    "tags": []
-  },
   "bring-to-front": {
     "displayName": "带到前面",
     "tags": []
   },
-  "brush-cleaning": {
-    "displayName": "刷子清洁",
+  "broom": {
+    "displayName": "扫帚",
+    "tags": []
+  },
+  "broom-sparkles": {
+    "displayName": "扫帚闪光",
     "tags": []
   },
   "brush": {
     "displayName": "刷子",
     "tags": []
   },
+  "brush-cleaning": {
+    "displayName": "刷子清洁",
+    "tags": []
+  },
   "bubbles": {
     "displayName": "气泡",
+    "tags": []
+  },
+  "bug": {
+    "displayName": "错误",
     "tags": []
   },
   "bug-off": {
@@ -967,44 +995,44 @@
     "displayName": "虫子游戏",
     "tags": []
   },
-  "bug": {
-    "displayName": "错误",
+  "building": {
+    "displayName": "建筑",
     "tags": []
   },
   "building-2": {
     "displayName": "2号楼",
     "tags": []
   },
-  "building": {
-    "displayName": "建筑",
+  "bus": {
+    "displayName": "巴士",
     "tags": []
   },
   "bus-front": {
     "displayName": "巴士前部",
     "tags": []
   },
-  "bus": {
-    "displayName": "巴士",
+  "cable": {
+    "displayName": "电缆",
     "tags": []
   },
   "cable-car": {
     "displayName": "缆车",
     "tags": []
   },
-  "cable": {
-    "displayName": "电缆",
+  "cake": {
+    "displayName": "蛋糕",
     "tags": []
   },
   "cake-slice": {
     "displayName": "蛋糕片",
     "tags": []
   },
-  "cake": {
-    "displayName": "蛋糕",
-    "tags": []
-  },
   "calculator": {
     "displayName": "计算器",
+    "tags": []
+  },
+  "calendar": {
+    "displayName": "日历",
     "tags": []
   },
   "calendar-1": {
@@ -1019,12 +1047,12 @@
     "displayName": "日历箭头向上",
     "tags": []
   },
-  "calendar-check-2": {
-    "displayName": "日历检查2",
-    "tags": []
-  },
   "calendar-check": {
     "displayName": "日历检查",
+    "tags": []
+  },
+  "calendar-check-2": {
+    "displayName": "日历检查2",
     "tags": []
   },
   "calendar-clock": {
@@ -1047,24 +1075,24 @@
     "displayName": "日历心",
     "tags": []
   },
-  "calendar-minus-2": {
-    "displayName": "日历减 2",
-    "tags": []
-  },
   "calendar-minus": {
     "displayName": "日历减号",
+    "tags": []
+  },
+  "calendar-minus-2": {
+    "displayName": "日历减 2",
     "tags": []
   },
   "calendar-off": {
     "displayName": "日历关闭",
     "tags": []
   },
-  "calendar-plus-2": {
-    "displayName": "日历加2",
-    "tags": []
-  },
   "calendar-plus": {
     "displayName": "日历加",
+    "tags": []
+  },
+  "calendar-plus-2": {
+    "displayName": "日历加2",
     "tags": []
   },
   "calendar-range": {
@@ -1079,28 +1107,28 @@
     "displayName": "日历同步",
     "tags": []
   },
-  "calendar-x-2": {
-    "displayName": "日历×2",
-    "tags": []
-  },
   "calendar-x": {
     "displayName": "日历 X",
     "tags": []
   },
-  "calendar": {
-    "displayName": "日历",
+  "calendar-x-2": {
+    "displayName": "日历×2",
     "tags": []
   },
   "calendars": {
     "displayName": "日历",
     "tags": []
   },
+  "camera": {
+    "displayName": "相机",
+    "tags": []
+  },
   "camera-off": {
     "displayName": "相机关闭",
     "tags": []
   },
-  "camera": {
-    "displayName": "相机",
+  "candy": {
+    "displayName": "糖果",
     "tags": []
   },
   "candy-cane": {
@@ -1111,24 +1139,28 @@
     "displayName": "糖果关",
     "tags": []
   },
-  "candy": {
-    "displayName": "糖果",
+  "cannabis": {
+    "displayName": "大麻",
     "tags": []
   },
   "cannabis-off": {
     "displayName": "大麻关闭",
     "tags": []
   },
-  "cannabis": {
-    "displayName": "大麻",
+  "captions": {
+    "displayName": "字幕",
     "tags": []
   },
   "captions-off": {
     "displayName": "字幕关闭",
     "tags": []
   },
-  "captions": {
-    "displayName": "字幕",
+  "car": {
+    "displayName": "汽车",
+    "tags": []
+  },
+  "car-battery": {
+    "displayName": "汽车电池",
     "tags": []
   },
   "car-front": {
@@ -1137,10 +1169,6 @@
   },
   "car-taxi-front": {
     "displayName": "汽车出租车前面",
-    "tags": []
-  },
-  "car": {
-    "displayName": "汽车",
     "tags": []
   },
   "caravan": {
@@ -1183,16 +1211,20 @@
     "displayName": "猫",
     "tags": []
   },
-  "cctv-off": {
-    "displayName": "闭路电视",
-    "tags": []
-  },
   "cctv": {
     "displayName": "中央电视台",
     "tags": []
   },
+  "cctv-off": {
+    "displayName": "闭路电视",
+    "tags": []
+  },
   "chart-area": {
     "displayName": "图表区",
+    "tags": []
+  },
+  "chart-bar": {
+    "displayName": "图表栏",
     "tags": []
   },
   "chart-bar-big": {
@@ -1211,12 +1243,12 @@
     "displayName": "堆叠图表栏",
     "tags": []
   },
-  "chart-bar": {
-    "displayName": "图表栏",
-    "tags": []
-  },
   "chart-candlestick": {
     "displayName": "图表烛台",
+    "tags": []
+  },
+  "chart-column": {
+    "displayName": "图表栏",
     "tags": []
   },
   "chart-column-big": {
@@ -1235,10 +1267,6 @@
     "displayName": "堆积图表柱",
     "tags": []
   },
-  "chart-column": {
-    "displayName": "图表栏",
-    "tags": []
-  },
   "chart-gantt": {
     "displayName": "甘特图",
     "tags": []
@@ -1251,16 +1279,16 @@
     "displayName": "图网",
     "tags": []
   },
+  "chart-no-axes-column": {
+    "displayName": "图表无轴列",
+    "tags": []
+  },
   "chart-no-axes-column-decreasing": {
     "displayName": "图表无轴列递减",
     "tags": []
   },
   "chart-no-axes-column-increasing": {
     "displayName": "图表无轴列增加",
-    "tags": []
-  },
-  "chart-no-axes-column": {
-    "displayName": "图表无轴列",
     "tags": []
   },
   "chart-no-axes-combined": {
@@ -1283,16 +1311,16 @@
     "displayName": "图表样条线",
     "tags": []
   },
+  "check": {
+    "displayName": "检查",
+    "tags": []
+  },
   "check-check": {
     "displayName": "支票 支票",
     "tags": []
   },
   "check-line": {
     "displayName": "检查线",
-    "tags": []
-  },
-  "check": {
-    "displayName": "检查",
     "tags": []
   },
   "chef-hat": {
@@ -1351,52 +1379,56 @@
     "displayName": "雪佛龙向上",
     "tags": []
   },
-  "chevrons-down-up": {
-    "displayName": "V 形向下向上",
-    "tags": []
-  },
   "chevrons-down": {
     "displayName": "人字形羽绒服",
     "tags": []
   },
-  "chevrons-left-right-ellipsis": {
-    "displayName": "V 字形左右省略号",
-    "tags": []
-  },
-  "chevrons-left-right": {
-    "displayName": "V 字形 左 右",
+  "chevrons-down-up": {
+    "displayName": "V 形向下向上",
     "tags": []
   },
   "chevrons-left": {
     "displayName": "V 形左",
     "tags": []
   },
-  "chevrons-right-left": {
-    "displayName": "V 形右左",
+  "chevrons-left-right": {
+    "displayName": "V 字形 左 右",
+    "tags": []
+  },
+  "chevrons-left-right-ellipsis": {
+    "displayName": "V 字形左右省略号",
     "tags": []
   },
   "chevrons-right": {
     "displayName": "人字形右",
     "tags": []
   },
-  "chevrons-up-down": {
-    "displayName": "V 字形向上向下",
+  "chevrons-right-left": {
+    "displayName": "V 形右左",
     "tags": []
   },
   "chevrons-up": {
     "displayName": "V 字形向上",
     "tags": []
   },
+  "chevrons-up-down": {
+    "displayName": "V 字形向上向下",
+    "tags": []
+  },
   "church": {
     "displayName": "教堂",
+    "tags": []
+  },
+  "cigarette": {
+    "displayName": "香烟",
     "tags": []
   },
   "cigarette-off": {
     "displayName": "关掉香烟",
     "tags": []
   },
-  "cigarette": {
-    "displayName": "香烟",
+  "circle": {
+    "displayName": "圆",
     "tags": []
   },
   "circle-alert": {
@@ -1435,12 +1467,12 @@
     "displayName": "圆圈向上箭头",
     "tags": []
   },
-  "circle-check-big": {
-    "displayName": "圆圈检查大",
-    "tags": []
-  },
   "circle-check": {
     "displayName": "圆圈检查",
+    "tags": []
+  },
+  "circle-check-big": {
+    "displayName": "圆圈检查大",
     "tags": []
   },
   "circle-chevron-down": {
@@ -1471,12 +1503,12 @@
     "displayName": "圆圈美元符号",
     "tags": []
   },
-  "circle-dot-dashed": {
-    "displayName": "圆点虚线",
-    "tags": []
-  },
   "circle-dot": {
     "displayName": "圆点",
+    "tags": []
+  },
+  "circle-dot-dashed": {
+    "displayName": "圆点虚线",
     "tags": []
   },
   "circle-ellipsis": {
@@ -1485,6 +1517,10 @@
   },
   "circle-equal": {
     "displayName": "等圆",
+    "tags": []
+  },
+  "circle-euro": {
+    "displayName": "圆欧元",
     "tags": []
   },
   "circle-fading-arrow-up": {
@@ -1507,12 +1543,12 @@
     "displayName": "圈出",
     "tags": []
   },
-  "circle-parking-off": {
-    "displayName": "圆圈停车",
-    "tags": []
-  },
   "circle-parking": {
     "displayName": "环形停车场",
+    "tags": []
+  },
+  "circle-parking-off": {
+    "displayName": "圆圈停车",
     "tags": []
   },
   "circle-pause": {
@@ -1547,12 +1583,12 @@
     "displayName": "圆圈问号",
     "tags": []
   },
-  "circle-slash-2": {
-    "displayName": "圆斜线 2",
-    "tags": []
-  },
   "circle-slash": {
     "displayName": "圆斜线",
+    "tags": []
+  },
+  "circle-slash-2": {
+    "displayName": "圆斜线 2",
     "tags": []
   },
   "circle-small": {
@@ -1567,20 +1603,16 @@
     "displayName": "圆圈停止",
     "tags": []
   },
-  "circle-user-round": {
-    "displayName": "圈用户回合",
-    "tags": []
-  },
   "circle-user": {
     "displayName": "圈子用户",
     "tags": []
   },
-  "circle-x": {
-    "displayName": "圆X",
+  "circle-user-round": {
+    "displayName": "圈用户回合",
     "tags": []
   },
-  "circle": {
-    "displayName": "圆",
+  "circle-x": {
+    "displayName": "圆X",
     "tags": []
   },
   "circuit-board": {
@@ -1593,6 +1625,10 @@
   },
   "clapperboard": {
     "displayName": "场记板",
+    "tags": []
+  },
+  "clipboard": {
+    "displayName": "剪贴板",
     "tags": []
   },
   "clipboard-check": {
@@ -1619,12 +1655,12 @@
     "displayName": "剪贴板粘贴",
     "tags": []
   },
-  "clipboard-pen-line": {
-    "displayName": "剪贴板笔线",
-    "tags": []
-  },
   "clipboard-pen": {
     "displayName": "剪贴板笔",
+    "tags": []
+  },
+  "clipboard-pen-line": {
+    "displayName": "剪贴板笔线",
     "tags": []
   },
   "clipboard-plus": {
@@ -1639,8 +1675,8 @@
     "displayName": "剪贴板X",
     "tags": []
   },
-  "clipboard": {
-    "displayName": "剪贴板",
+  "clock": {
+    "displayName": "时钟",
     "tags": []
   },
   "clock-1": {
@@ -1699,6 +1735,14 @@
     "displayName": "时钟箭头向下",
     "tags": []
   },
+  "clock-arrow-left": {
+    "displayName": "时钟左箭头",
+    "tags": []
+  },
+  "clock-arrow-right": {
+    "displayName": "时钟右箭头",
+    "tags": []
+  },
   "clock-arrow-up": {
     "displayName": "时钟箭头向上",
     "tags": []
@@ -1715,12 +1759,12 @@
     "displayName": "时钟加",
     "tags": []
   },
-  "clock": {
-    "displayName": "时钟",
-    "tags": []
-  },
   "closed-caption": {
     "displayName": "隐藏式字幕",
+    "tags": []
+  },
+  "cloud": {
+    "displayName": "云",
     "tags": []
   },
   "cloud-alert": {
@@ -1759,36 +1803,36 @@
     "displayName": "云闪电",
     "tags": []
   },
-  "cloud-moon-rain": {
-    "displayName": "云 月亮 雨",
-    "tags": []
-  },
   "cloud-moon": {
     "displayName": "云月",
+    "tags": []
+  },
+  "cloud-moon-rain": {
+    "displayName": "云 月亮 雨",
     "tags": []
   },
   "cloud-off": {
     "displayName": "云关闭",
     "tags": []
   },
-  "cloud-rain-wind": {
-    "displayName": "云 雨 风",
-    "tags": []
-  },
   "cloud-rain": {
     "displayName": "云雨",
+    "tags": []
+  },
+  "cloud-rain-wind": {
+    "displayName": "云 雨 风",
     "tags": []
   },
   "cloud-snow": {
     "displayName": "云雪",
     "tags": []
   },
-  "cloud-sun-rain": {
-    "displayName": "云 太阳 雨",
-    "tags": []
-  },
   "cloud-sun": {
     "displayName": "云太阳",
+    "tags": []
+  },
+  "cloud-sun-rain": {
+    "displayName": "云 太阳 雨",
     "tags": []
   },
   "cloud-sync": {
@@ -1797,10 +1841,6 @@
   },
   "cloud-upload": {
     "displayName": "云端上传",
-    "tags": []
-  },
-  "cloud": {
-    "displayName": "云",
     "tags": []
   },
   "cloudy": {
@@ -1815,12 +1855,12 @@
     "displayName": "俱乐部",
     "tags": []
   },
-  "code-xml": {
-    "displayName": "代码 XML",
-    "tags": []
-  },
   "code": {
     "displayName": "代码",
+    "tags": []
+  },
+  "code-xml": {
+    "displayName": "代码 XML",
     "tags": []
   },
   "coffee": {
@@ -1839,12 +1879,12 @@
     "displayName": "第 2 栏",
     "tags": []
   },
-  "columns-3-cog": {
-    "displayName": "第 3 列齿轮",
-    "tags": []
-  },
   "columns-3": {
     "displayName": "第 3 栏",
+    "tags": []
+  },
+  "columns-3-cog": {
+    "displayName": "第 3 列齿轮",
     "tags": []
   },
   "columns-4": {
@@ -1883,12 +1923,12 @@
     "displayName": "建筑工程",
     "tags": []
   },
-  "contact-round": {
-    "displayName": "接触轮",
-    "tags": []
-  },
   "contact": {
     "displayName": "联系方式",
+    "tags": []
+  },
+  "contact-round": {
+    "displayName": "接触轮",
     "tags": []
   },
   "container": {
@@ -1905,6 +1945,10 @@
   },
   "cooking-pot": {
     "displayName": "煮锅",
+    "tags": []
+  },
+  "copy": {
+    "displayName": "复制",
     "tags": []
   },
   "copy-check": {
@@ -1925,10 +1969,6 @@
   },
   "copy-x": {
     "displayName": "复制X",
-    "tags": []
-  },
-  "copy": {
-    "displayName": "复制",
     "tags": []
   },
   "copyleft": {
@@ -2023,20 +2063,44 @@
     "displayName": "坝",
     "tags": []
   },
+  "database": {
+    "displayName": "数据库",
+    "tags": []
+  },
+  "database-arrow-down": {
+    "displayName": "数据库下箭头",
+    "tags": []
+  },
+  "database-arrow-up": {
+    "displayName": "数据库上箭头",
+    "tags": []
+  },
   "database-backup": {
     "displayName": "数据库备份",
+    "tags": []
+  },
+  "database-check": {
+    "displayName": "数据库对勾",
+    "tags": []
+  },
+  "database-minus": {
+    "displayName": "数据库减号",
+    "tags": []
+  },
+  "database-plus": {
+    "displayName": "数据库加号",
     "tags": []
   },
   "database-search": {
     "displayName": "数据库检索",
     "tags": []
   },
-  "database-zap": {
-    "displayName": "数据库攻击",
+  "database-x": {
+    "displayName": "数据库叉号",
     "tags": []
   },
-  "database": {
-    "displayName": "数据库",
+  "database-zap": {
+    "displayName": "数据库攻击",
     "tags": []
   },
   "decimals-arrow-left": {
@@ -2059,6 +2123,10 @@
     "displayName": "直径",
     "tags": []
   },
+  "diamond": {
+    "displayName": "钻石",
+    "tags": []
+  },
   "diamond-minus": {
     "displayName": "钻石减号",
     "tags": []
@@ -2069,10 +2137,6 @@
   },
   "diamond-plus": {
     "displayName": "钻石加号",
-    "tags": []
-  },
-  "diamond": {
-    "displayName": "钻石",
     "tags": []
   },
   "dice-1": {
@@ -2107,6 +2171,10 @@
     "displayName": "差异",
     "tags": []
   },
+  "disc": {
+    "displayName": "光盘",
+    "tags": []
+  },
   "disc-2": {
     "displayName": "光盘2",
     "tags": []
@@ -2119,19 +2187,15 @@
     "displayName": "唱片专辑",
     "tags": []
   },
-  "disc": {
-    "displayName": "光盘",
-    "tags": []
-  },
   "divide": {
     "displayName": "划分",
     "tags": []
   },
-  "dna-off": {
+  "dna": {
     "displayName": "脱氧核糖核酸",
     "tags": []
   },
-  "dna": {
+  "dna-off": {
     "displayName": "脱氧核糖核酸",
     "tags": []
   },
@@ -2151,12 +2215,12 @@
     "displayName": "甜甜圈",
     "tags": []
   },
-  "door-closed-locked": {
-    "displayName": "门关闭锁上",
-    "tags": []
-  },
   "door-closed": {
     "displayName": "门已关闭",
+    "tags": []
+  },
+  "door-closed-locked": {
+    "displayName": "门关闭锁上",
     "tags": []
   },
   "door-open": {
@@ -2187,12 +2251,12 @@
     "displayName": "无人机",
     "tags": []
   },
-  "droplet-off": {
-    "displayName": "滴落关闭",
-    "tags": []
-  },
   "droplet": {
     "displayName": "水滴",
+    "tags": []
+  },
+  "droplet-off": {
+    "displayName": "滴落关闭",
     "tags": []
   },
   "droplets": {
@@ -2211,24 +2275,28 @@
     "displayName": "哑铃",
     "tags": []
   },
-  "ear-off": {
-    "displayName": "耳朵关闭",
-    "tags": []
-  },
   "ear": {
     "displayName": "耳朵",
     "tags": []
   },
-  "earth-lock": {
-    "displayName": "地锁",
+  "ear-off": {
+    "displayName": "耳朵关闭",
     "tags": []
   },
   "earth": {
     "displayName": "地球",
     "tags": []
   },
+  "earth-lock": {
+    "displayName": "地锁",
+    "tags": []
+  },
   "eclipse": {
     "displayName": "日食",
+    "tags": []
+  },
+  "egg": {
+    "displayName": "鸡蛋",
     "tags": []
   },
   "egg-fried": {
@@ -2239,20 +2307,24 @@
     "displayName": "蛋关",
     "tags": []
   },
-  "egg": {
-    "displayName": "鸡蛋",
+  "eject": {
+    "displayName": "弹出",
     "tags": []
   },
   "ellipse": {
     "displayName": "椭圆",
     "tags": []
   },
+  "ellipsis": {
+    "displayName": "省略号",
+    "tags": []
+  },
   "ellipsis-vertical": {
     "displayName": "垂直省略号",
     "tags": []
   },
-  "ellipsis": {
-    "displayName": "省略号",
+  "equal": {
+    "displayName": "平等",
     "tags": []
   },
   "equal-approximately": {
@@ -2261,10 +2333,6 @@
   },
   "equal-not": {
     "displayName": "等于不",
-    "tags": []
-  },
-  "equal": {
-    "displayName": "平等",
     "tags": []
   },
   "eraser": {
@@ -2291,16 +2359,48 @@
     "displayName": "外部链接",
     "tags": []
   },
+  "eye": {
+    "displayName": "眼睛",
+    "tags": []
+  },
   "eye-closed": {
     "displayName": "闭眼",
+    "tags": []
+  },
+  "eye-dashed": {
+    "displayName": "虚线眼睛",
     "tags": []
   },
   "eye-off": {
     "displayName": "移开视线",
     "tags": []
   },
-  "eye": {
-    "displayName": "眼睛",
+  "face-angry": {
+    "displayName": "生气",
+    "tags": []
+  },
+  "face-expressionless": {
+    "displayName": "面无表情",
+    "tags": []
+  },
+  "face-grinning": {
+    "displayName": "咧嘴笑",
+    "tags": []
+  },
+  "face-neutral": {
+    "displayName": "中性表情",
+    "tags": []
+  },
+  "face-slightly-frowning": {
+    "displayName": "微微皱眉",
+    "tags": []
+  },
+  "face-slightly-smiling": {
+    "displayName": "微笑",
+    "tags": []
+  },
+  "face-slightly-smiling-plus": {
+    "displayName": "微笑加",
     "tags": []
   },
   "factory": {
@@ -2327,6 +2427,10 @@
     "displayName": "摩天轮",
     "tags": []
   },
+  "file": {
+    "displayName": "文件",
+    "tags": []
+  },
   "file-archive": {
     "displayName": "文件存档",
     "tags": []
@@ -2343,20 +2447,20 @@
     "displayName": "文件盒",
     "tags": []
   },
-  "file-braces-corner": {
-    "displayName": "文件括号角",
-    "tags": []
-  },
   "file-braces": {
     "displayName": "文件大括号",
     "tags": []
   },
-  "file-chart-column-increasing": {
-    "displayName": "文件图表列增加",
+  "file-braces-corner": {
+    "displayName": "文件括号角",
     "tags": []
   },
   "file-chart-column": {
     "displayName": "文件图表栏",
+    "tags": []
+  },
+  "file-chart-column-increasing": {
+    "displayName": "文件图表列增加",
     "tags": []
   },
   "file-chart-line": {
@@ -2367,24 +2471,24 @@
     "displayName": "文件图表饼图",
     "tags": []
   },
-  "file-check-corner": {
-    "displayName": "文件检查角",
-    "tags": []
-  },
   "file-check": {
     "displayName": "文件检查",
+    "tags": []
+  },
+  "file-check-corner": {
+    "displayName": "文件检查角",
     "tags": []
   },
   "file-clock": {
     "displayName": "文件时钟",
     "tags": []
   },
-  "file-code-corner": {
-    "displayName": "文件代码角",
-    "tags": []
-  },
   "file-code": {
     "displayName": "文件代码",
+    "tags": []
+  },
+  "file-code-corner": {
+    "displayName": "文件代码角",
     "tags": []
   },
   "file-cog": {
@@ -2431,12 +2535,12 @@
     "displayName": "文件锁",
     "tags": []
   },
-  "file-minus-corner": {
-    "displayName": "文件减角",
-    "tags": []
-  },
   "file-minus": {
     "displayName": "文件减号",
+    "tags": []
+  },
+  "file-minus-corner": {
+    "displayName": "文件减角",
     "tags": []
   },
   "file-music": {
@@ -2447,24 +2551,24 @@
     "displayName": "文件输出",
     "tags": []
   },
-  "file-pen-line": {
-    "displayName": "锉刀线",
-    "tags": []
-  },
   "file-pen": {
     "displayName": "文件笔",
+    "tags": []
+  },
+  "file-pen-line": {
+    "displayName": "锉刀线",
     "tags": []
   },
   "file-play": {
     "displayName": "文件播放",
     "tags": []
   },
-  "file-plus-corner": {
-    "displayName": "文件加角",
-    "tags": []
-  },
   "file-plus": {
     "displayName": "文件加",
+    "tags": []
+  },
+  "file-plus-corner": {
+    "displayName": "文件加角",
     "tags": []
   },
   "file-question-mark": {
@@ -2475,12 +2579,12 @@
     "displayName": "文件扫描",
     "tags": []
   },
-  "file-search-corner": {
-    "displayName": "文件搜索角",
-    "tags": []
-  },
   "file-search": {
     "displayName": "文件搜索",
+    "tags": []
+  },
+  "file-search-corner": {
+    "displayName": "文件搜索角",
     "tags": []
   },
   "file-signal": {
@@ -2511,12 +2615,12 @@
     "displayName": "文件文本",
     "tags": []
   },
-  "file-type-corner": {
-    "displayName": "文件类型角",
-    "tags": []
-  },
   "file-type": {
     "displayName": "文件类型",
+    "tags": []
+  },
+  "file-type-corner": {
+    "displayName": "文件类型角",
     "tags": []
   },
   "file-up": {
@@ -2535,16 +2639,12 @@
     "displayName": "文件容量",
     "tags": []
   },
-  "file-x-corner": {
-    "displayName": "文件 X 角",
-    "tags": []
-  },
   "file-x": {
     "displayName": "文件X",
     "tags": []
   },
-  "file": {
-    "displayName": "文件",
+  "file-x-corner": {
+    "displayName": "文件 X 角",
     "tags": []
   },
   "files": {
@@ -2563,6 +2663,10 @@
     "displayName": "灭火器",
     "tags": []
   },
+  "fish": {
+    "displayName": "鱼",
+    "tags": []
+  },
   "fish-off": {
     "displayName": "钓鱼关闭",
     "tags": []
@@ -2571,16 +2675,16 @@
     "displayName": "鱼符号",
     "tags": []
   },
-  "fish": {
-    "displayName": "鱼",
-    "tags": []
-  },
   "fishing-hook": {
     "displayName": "钓鱼钩",
     "tags": []
   },
   "fishing-rod": {
     "displayName": "钓鱼竿",
+    "tags": []
+  },
+  "flag": {
+    "displayName": "旗帜",
     "tags": []
   },
   "flag-off": {
@@ -2595,32 +2699,28 @@
     "displayName": "右旗三角",
     "tags": []
   },
-  "flag": {
-    "displayName": "旗帜",
+  "flame": {
+    "displayName": "火焰",
     "tags": []
   },
   "flame-kindling": {
     "displayName": "火焰点燃",
     "tags": []
   },
-  "flame": {
-    "displayName": "火焰",
+  "flashlight": {
+    "displayName": "手电筒",
     "tags": []
   },
   "flashlight-off": {
     "displayName": "手电筒关闭",
     "tags": []
   },
-  "flashlight": {
-    "displayName": "手电筒",
+  "flask-conical": {
+    "displayName": "锥形烧瓶",
     "tags": []
   },
   "flask-conical-off": {
     "displayName": "锥形烧瓶关闭",
-    "tags": []
-  },
-  "flask-conical": {
-    "displayName": "锥形烧瓶",
     "tags": []
   },
   "flask-round": {
@@ -2635,12 +2735,12 @@
     "displayName": "垂直翻转 2",
     "tags": []
   },
-  "flower-2": {
-    "displayName": "花2",
-    "tags": []
-  },
   "flower": {
     "displayName": "花",
+    "tags": []
+  },
+  "flower-2": {
+    "displayName": "花2",
     "tags": []
   },
   "focus": {
@@ -2653,6 +2753,10 @@
   },
   "fold-vertical": {
     "displayName": "垂直折叠",
+    "tags": []
+  },
+  "folder": {
+    "displayName": "文件夹",
     "tags": []
   },
   "folder-archive": {
@@ -2687,12 +2791,12 @@
     "displayName": "文件夹向下",
     "tags": []
   },
-  "folder-git-2": {
-    "displayName": "文件夹 Git 2",
-    "tags": []
-  },
   "folder-git": {
     "displayName": "文件夹 Git",
+    "tags": []
+  },
+  "folder-git-2": {
+    "displayName": "文件夹 Git 2",
     "tags": []
   },
   "folder-heart": {
@@ -2719,12 +2823,12 @@
     "displayName": "文件夹减号",
     "tags": []
   },
-  "folder-open-dot": {
-    "displayName": "文件夹打开点",
-    "tags": []
-  },
   "folder-open": {
     "displayName": "文件夹打开",
+    "tags": []
+  },
+  "folder-open-dot": {
+    "displayName": "文件夹打开点",
     "tags": []
   },
   "folder-output": {
@@ -2743,12 +2847,12 @@
     "displayName": "文件夹根目录",
     "tags": []
   },
-  "folder-search-2": {
-    "displayName": "文件夹搜索2",
-    "tags": []
-  },
   "folder-search": {
     "displayName": "文件夹搜索",
+    "tags": []
+  },
+  "folder-search-2": {
+    "displayName": "文件夹搜索2",
     "tags": []
   },
   "folder-symlink": {
@@ -2769,10 +2873,6 @@
   },
   "folder-x": {
     "displayName": "文件夹X",
-    "tags": []
-  },
-  "folder": {
-    "displayName": "文件夹",
     "tags": []
   },
   "folders": {
@@ -2799,16 +2899,16 @@
     "displayName": "框架",
     "tags": []
   },
-  "frown": {
-    "displayName": "皱眉",
-    "tags": []
-  },
   "fuel": {
     "displayName": "燃料",
     "tags": []
   },
   "fullscreen": {
     "displayName": "全屏",
+    "tags": []
+  },
+  "funnel": {
+    "displayName": "漏斗",
     "tags": []
   },
   "funnel-plus": {
@@ -2819,28 +2919,28 @@
     "displayName": "漏斗X",
     "tags": []
   },
-  "funnel": {
-    "displayName": "漏斗",
+  "gallery-horizontal": {
+    "displayName": "画廊水平",
     "tags": []
   },
   "gallery-horizontal-end": {
     "displayName": "画廊水平端",
     "tags": []
   },
-  "gallery-horizontal": {
-    "displayName": "画廊水平",
-    "tags": []
-  },
   "gallery-thumbnails": {
     "displayName": "画廊缩略图",
+    "tags": []
+  },
+  "gallery-vertical": {
+    "displayName": "垂直画廊",
     "tags": []
   },
   "gallery-vertical-end": {
     "displayName": "画廊垂直端",
     "tags": []
   },
-  "gallery-vertical": {
-    "displayName": "垂直画廊",
+  "gamepad": {
+    "displayName": "游戏手柄",
     "tags": []
   },
   "gamepad-2": {
@@ -2849,10 +2949,6 @@
   },
   "gamepad-directional": {
     "displayName": "游戏手柄方向",
-    "tags": []
-  },
-  "gamepad": {
-    "displayName": "游戏手柄",
     "tags": []
   },
   "gauge": {
@@ -2879,16 +2975,16 @@
     "displayName": "礼物",
     "tags": []
   },
+  "git-branch": {
+    "displayName": "git分支",
+    "tags": []
+  },
   "git-branch-minus": {
     "displayName": "Git 分支减号",
     "tags": []
   },
   "git-branch-plus": {
     "displayName": "Git 分支增强版",
-    "tags": []
-  },
-  "git-branch": {
-    "displayName": "git分支",
     "tags": []
   },
   "git-commit-horizontal": {
@@ -2899,12 +2995,12 @@
     "displayName": "Git 垂直提交",
     "tags": []
   },
-  "git-compare-arrows": {
-    "displayName": "Git 比较箭头",
-    "tags": []
-  },
   "git-compare": {
     "displayName": "Git 比较",
+    "tags": []
+  },
+  "git-compare-arrows": {
+    "displayName": "Git 比较箭头",
     "tags": []
   },
   "git-fork": {
@@ -2915,12 +3011,16 @@
     "displayName": "git图",
     "tags": []
   },
+  "git-merge": {
+    "displayName": "git合并",
+    "tags": []
+  },
   "git-merge-conflict": {
     "displayName": "Git 合并冲突",
     "tags": []
   },
-  "git-merge": {
-    "displayName": "git合并",
+  "git-pull-request": {
+    "displayName": "Git 拉取请求",
     "tags": []
   },
   "git-pull-request-arrow": {
@@ -2931,20 +3031,16 @@
     "displayName": "Git 拉取请求已关闭",
     "tags": []
   },
-  "git-pull-request-create-arrow": {
-    "displayName": "Git 拉取请求创建箭头",
-    "tags": []
-  },
   "git-pull-request-create": {
     "displayName": "Git 拉取请求创建",
     "tags": []
   },
-  "git-pull-request-draft": {
-    "displayName": "Git Pull 请求草稿",
+  "git-pull-request-create-arrow": {
+    "displayName": "Git 拉取请求创建箭头",
     "tags": []
   },
-  "git-pull-request": {
-    "displayName": "Git 拉取请求",
+  "git-pull-request-draft": {
+    "displayName": "Git Pull 请求草稿",
     "tags": []
   },
   "glass-water": {
@@ -2953,6 +3049,14 @@
   },
   "glasses": {
     "displayName": "眼镜",
+    "tags": []
+  },
+  "globe": {
+    "displayName": "地球仪",
+    "tags": []
+  },
+  "globe-check": {
+    "displayName": "地球对勾",
     "tags": []
   },
   "globe-lock": {
@@ -2965,10 +3069,6 @@
   },
   "globe-x": {
     "displayName": "环球X",
-    "tags": []
-  },
-  "globe": {
-    "displayName": "地球仪",
     "tags": []
   },
   "goal": {
@@ -2987,6 +3087,10 @@
     "displayName": "葡萄",
     "tags": []
   },
+  "grid-2x2": {
+    "displayName": "网格 2x2",
+    "tags": []
+  },
   "grid-2x2-check": {
     "displayName": "网格 2x2 检查",
     "tags": []
@@ -2999,10 +3103,6 @@
     "displayName": "网格 2x2 X",
     "tags": []
   },
-  "grid-2x2": {
-    "displayName": "网格 2x2",
-    "tags": []
-  },
   "grid-3x2": {
     "displayName": "网格 3x2",
     "tags": []
@@ -3011,16 +3111,16 @@
     "displayName": "网格 3x3",
     "tags": []
   },
+  "grip": {
+    "displayName": "握力",
+    "tags": []
+  },
   "grip-horizontal": {
     "displayName": "水平握持",
     "tags": []
   },
   "grip-vertical": {
     "displayName": "垂直握把",
-    "tags": []
-  },
-  "grip": {
-    "displayName": "握力",
     "tags": []
   },
   "group": {
@@ -3041,6 +3141,10 @@
   },
   "hammer": {
     "displayName": "锤子",
+    "tags": []
+  },
+  "hand": {
+    "displayName": "手",
     "tags": []
   },
   "hand-coins": {
@@ -3071,10 +3175,6 @@
     "displayName": "手拼盘",
     "tags": []
   },
-  "hand": {
-    "displayName": "手",
-    "tags": []
-  },
   "handbag": {
     "displayName": "手提包",
     "tags": []
@@ -3083,16 +3183,16 @@
     "displayName": "握手",
     "tags": []
   },
+  "hard-drive": {
+    "displayName": "硬盘",
+    "tags": []
+  },
   "hard-drive-download": {
     "displayName": "硬盘下载",
     "tags": []
   },
   "hard-drive-upload": {
     "displayName": "硬盘上传",
-    "tags": []
-  },
-  "hard-drive": {
-    "displayName": "硬盘",
     "tags": []
   },
   "hard-hat": {
@@ -3119,6 +3219,10 @@
     "displayName": "HDMI端口",
     "tags": []
   },
+  "heading": {
+    "displayName": "标题",
+    "tags": []
+  },
   "heading-1": {
     "displayName": "标题 1",
     "tags": []
@@ -3143,10 +3247,6 @@
     "displayName": "标题 6",
     "tags": []
   },
-  "heading": {
-    "displayName": "标题",
-    "tags": []
-  },
   "headphone-off": {
     "displayName": "耳机关闭",
     "tags": []
@@ -3157,6 +3257,10 @@
   },
   "headset": {
     "displayName": "耳机",
+    "tags": []
+  },
+  "heart": {
+    "displayName": "心",
     "tags": []
   },
   "heart-crack": {
@@ -3183,10 +3287,6 @@
     "displayName": "心脏脉搏",
     "tags": []
   },
-  "heart": {
-    "displayName": "心",
-    "tags": []
-  },
   "heater": {
     "displayName": "加热器",
     "tags": []
@@ -3203,16 +3303,12 @@
     "displayName": "荧光笔",
     "tags": []
   },
-  "history": {
-    "displayName": "历史",
+  "hop": {
+    "displayName": "啤酒花",
     "tags": []
   },
   "hop-off": {
     "displayName": "随上随下",
-    "tags": []
-  },
-  "hop": {
-    "displayName": "啤酒花",
     "tags": []
   },
   "hospital": {
@@ -3225,6 +3321,10 @@
   },
   "hourglass": {
     "displayName": "沙漏",
+    "tags": []
+  },
+  "house": {
+    "displayName": "房子",
     "tags": []
   },
   "house-heart": {
@@ -3243,10 +3343,6 @@
     "displayName": "家庭无线网络",
     "tags": []
   },
-  "house": {
-    "displayName": "房子",
-    "tags": []
-  },
   "ice-cream-bowl": {
     "displayName": "冰淇淋碗",
     "tags": []
@@ -3255,12 +3351,16 @@
     "displayName": "蛋卷冰淇淋",
     "tags": []
   },
+  "id-card": {
+    "displayName": "身份证",
+    "tags": []
+  },
   "id-card-lanyard": {
     "displayName": "身份证挂绳",
     "tags": []
   },
-  "id-card": {
-    "displayName": "身份证",
+  "image": {
+    "displayName": "图片",
     "tags": []
   },
   "image-down": {
@@ -3289,10 +3389,6 @@
   },
   "image-upscale": {
     "displayName": "图像高档",
-    "tags": []
-  },
-  "image": {
-    "displayName": "图片",
     "tags": []
   },
   "images": {
@@ -3351,6 +3447,10 @@
     "displayName": "皮划艇",
     "tags": []
   },
+  "key": {
+    "displayName": "钥匙",
+    "tags": []
+  },
   "key-round": {
     "displayName": "关键回合",
     "tags": []
@@ -3359,8 +3459,8 @@
     "displayName": "基广场",
     "tags": []
   },
-  "key": {
-    "displayName": "钥匙",
+  "keyboard": {
+    "displayName": "键盘",
     "tags": []
   },
   "keyboard-music": {
@@ -3371,8 +3471,8 @@
     "displayName": "键盘关闭",
     "tags": []
   },
-  "keyboard": {
-    "displayName": "键盘",
+  "lamp": {
+    "displayName": "灯",
     "tags": []
   },
   "lamp-ceiling": {
@@ -3395,10 +3495,6 @@
     "displayName": "灯墙向上",
     "tags": []
   },
-  "lamp": {
-    "displayName": "灯",
-    "tags": []
-  },
   "land-plot": {
     "displayName": "荧光笔",
     "tags": []
@@ -3411,44 +3507,60 @@
     "displayName": "随上随下",
     "tags": []
   },
-  "laptop-minimal-check": {
-    "displayName": "啤酒花",
+  "laptop": {
+    "displayName": "酒店",
     "tags": []
   },
   "laptop-minimal": {
     "displayName": "医院",
     "tags": []
   },
-  "laptop": {
-    "displayName": "酒店",
-    "tags": []
-  },
-  "lasso-select": {
-    "displayName": "沙漏",
+  "laptop-minimal-check": {
+    "displayName": "啤酒花",
     "tags": []
   },
   "lasso": {
     "displayName": "房子之心",
     "tags": []
   },
-  "laugh": {
-    "displayName": "家用插头",
+  "lasso-select": {
+    "displayName": "沙漏",
     "tags": []
   },
-  "layers-2": {
-    "displayName": "房子加",
+  "layer-arrow-down": {
+    "displayName": "图层下箭头",
     "tags": []
   },
-  "layers-plus": {
-    "displayName": "家庭无线网络",
+  "layer-arrow-up": {
+    "displayName": "图层上箭头",
     "tags": []
   },
   "layers": {
     "displayName": "房子",
     "tags": []
   },
+  "layers-2": {
+    "displayName": "房子加",
+    "tags": []
+  },
+  "layers-arrow-down": {
+    "displayName": "多层下箭头",
+    "tags": []
+  },
+  "layers-arrow-up": {
+    "displayName": "多层上箭头",
+    "tags": []
+  },
+  "layers-plus": {
+    "displayName": "家庭无线网络",
+    "tags": []
+  },
   "layout-dashboard": {
     "displayName": "冰淇淋碗",
+    "tags": []
+  },
+  "layout-freeform": {
+    "displayName": "自由布局",
     "tags": []
   },
   "layout-grid": {
@@ -3491,11 +3603,11 @@
     "displayName": "图像高档",
     "tags": []
   },
-  "library-big": {
+  "library": {
     "displayName": "图片",
     "tags": []
   },
-  "library": {
+  "library-big": {
     "displayName": "图片",
     "tags": []
   },
@@ -3507,12 +3619,12 @@
     "displayName": "收件箱",
     "tags": []
   },
-  "lightbulb-off": {
-    "displayName": "印度卢比",
-    "tags": []
-  },
   "lightbulb": {
     "displayName": "无限",
+    "tags": []
+  },
+  "lightbulb-off": {
+    "displayName": "印度卢比",
     "tags": []
   },
   "line-dot-right-horizontal": {
@@ -3527,16 +3639,20 @@
     "displayName": "斜体",
     "tags": []
   },
-  "link-2-off": {
-    "displayName": "迭代CCW",
+  "link": {
+    "displayName": "日元",
     "tags": []
   },
   "link-2": {
     "displayName": "迭代连续波",
     "tags": []
   },
-  "link": {
-    "displayName": "日元",
+  "link-2-off": {
+    "displayName": "迭代CCW",
+    "tags": []
+  },
+  "list": {
+    "displayName": "列表",
     "tags": []
   },
   "list-check": {
@@ -3555,6 +3671,10 @@
     "displayName": "关键回合",
     "tags": []
   },
+  "list-clock": {
+    "displayName": "时钟列表",
+    "tags": []
+  },
   "list-collapse": {
     "displayName": "基广场",
     "tags": []
@@ -3563,12 +3683,12 @@
     "displayName": "钥匙",
     "tags": []
   },
-  "list-filter-plus": {
-    "displayName": "键盘音乐",
-    "tags": []
-  },
   "list-filter": {
     "displayName": "键盘关闭",
+    "tags": []
+  },
+  "list-filter-plus": {
+    "displayName": "键盘音乐",
     "tags": []
   },
   "list-indent-decrease": {
@@ -3599,6 +3719,14 @@
     "displayName": "灯",
     "tags": []
   },
+  "list-sort-ascending": {
+    "displayName": "列表升序",
+    "tags": []
+  },
+  "list-sort-descending": {
+    "displayName": "列表降序",
+    "tags": []
+  },
   "list-start": {
     "displayName": "列表开始",
     "tags": []
@@ -3619,8 +3747,8 @@
     "displayName": "列表X",
     "tags": []
   },
-  "list": {
-    "displayName": "列表",
+  "loader": {
+    "displayName": "装载机",
     "tags": []
   },
   "loader-circle": {
@@ -3631,8 +3759,8 @@
     "displayName": "装载机风车",
     "tags": []
   },
-  "loader": {
-    "displayName": "装载机",
+  "locate": {
+    "displayName": "定位",
     "tags": []
   },
   "locate-fixed": {
@@ -3643,24 +3771,20 @@
     "displayName": "定位关闭",
     "tags": []
   },
-  "locate": {
-    "displayName": "定位",
-    "tags": []
-  },
-  "lock-keyhole-open": {
-    "displayName": "锁钥匙孔打开",
+  "lock": {
+    "displayName": "锁",
     "tags": []
   },
   "lock-keyhole": {
     "displayName": "锁钥匙孔",
     "tags": []
   },
-  "lock-open": {
-    "displayName": "锁开",
+  "lock-keyhole-open": {
+    "displayName": "锁钥匙孔打开",
     "tags": []
   },
-  "lock": {
-    "displayName": "锁",
+  "lock-open": {
+    "displayName": "锁开",
     "tags": []
   },
   "log-in": {
@@ -3685,6 +3809,14 @@
   },
   "magnet": {
     "displayName": "磁铁",
+    "tags": []
+  },
+  "mail": {
+    "displayName": "邮件",
+    "tags": []
+  },
+  "mail-badge": {
+    "displayName": "邮件徽章",
     "tags": []
   },
   "mail-check": {
@@ -3719,10 +3851,6 @@
     "displayName": "邮件X",
     "tags": []
   },
-  "mail": {
-    "displayName": "邮件",
-    "tags": []
-  },
   "mailbox": {
     "displayName": "邮箱",
     "tags": []
@@ -3731,28 +3859,36 @@
     "displayName": "邮件",
     "tags": []
   },
+  "map": {
+    "displayName": "地图",
+    "tags": []
+  },
   "map-minus": {
     "displayName": "地图减号",
     "tags": []
   },
-  "map-pin-check-inside": {
-    "displayName": "地图图钉检查内部",
+  "map-pin": {
+    "displayName": "地图图钉",
     "tags": []
   },
   "map-pin-check": {
     "displayName": "地图图钉检查",
     "tags": []
   },
+  "map-pin-check-inside": {
+    "displayName": "地图图钉检查内部",
+    "tags": []
+  },
   "map-pin-house": {
     "displayName": "地图别针屋",
     "tags": []
   },
-  "map-pin-minus-inside": {
-    "displayName": "地图图钉减去内部",
-    "tags": []
-  },
   "map-pin-minus": {
     "displayName": "地图图钉减号",
+    "tags": []
+  },
+  "map-pin-minus-inside": {
+    "displayName": "地图图钉减去内部",
     "tags": []
   },
   "map-pin-off": {
@@ -3763,28 +3899,24 @@
     "displayName": "地图针笔",
     "tags": []
   },
-  "map-pin-plus-inside": {
-    "displayName": "地图图钉加内部",
-    "tags": []
-  },
   "map-pin-plus": {
     "displayName": "地图图钉加号",
+    "tags": []
+  },
+  "map-pin-plus-inside": {
+    "displayName": "地图图钉加内部",
     "tags": []
   },
   "map-pin-search": {
     "displayName": "地图图钉搜索",
     "tags": []
   },
-  "map-pin-x-inside": {
-    "displayName": "地图图钉 X 内部",
-    "tags": []
-  },
   "map-pin-x": {
     "displayName": "地图图钉 X",
     "tags": []
   },
-  "map-pin": {
-    "displayName": "地图图钉",
+  "map-pin-x-inside": {
+    "displayName": "地图图钉 X 内部",
     "tags": []
   },
   "map-pinned": {
@@ -3795,44 +3927,36 @@
     "displayName": "地图加号",
     "tags": []
   },
-  "map": {
-    "displayName": "地图",
+  "mars": {
+    "displayName": "火星",
     "tags": []
   },
   "mars-stroke": {
     "displayName": "火星中风",
     "tags": []
   },
-  "mars": {
-    "displayName": "火星",
-    "tags": []
-  },
   "martini": {
     "displayName": "马提尼",
-    "tags": []
-  },
-  "maximize-2": {
-    "displayName": "最大化 2",
     "tags": []
   },
   "maximize": {
     "displayName": "最大化",
     "tags": []
   },
-  "medal": {
-    "displayName": "奖章",
+  "maximize-2": {
+    "displayName": "最大化 2",
     "tags": []
   },
-  "megaphone-off": {
-    "displayName": "扩音器关闭",
+  "medal": {
+    "displayName": "奖章",
     "tags": []
   },
   "megaphone": {
     "displayName": "扩音器",
     "tags": []
   },
-  "meh": {
-    "displayName": "嗯",
+  "megaphone-off": {
+    "displayName": "扩音器关闭",
     "tags": []
   },
   "memory-stick": {
@@ -3845,6 +3969,10 @@
   },
   "merge": {
     "displayName": "合并",
+    "tags": []
+  },
+  "message-circle": {
+    "displayName": "留言圈",
     "tags": []
   },
   "message-circle-check": {
@@ -3891,8 +4019,8 @@
     "displayName": "留言圈X",
     "tags": []
   },
-  "message-circle": {
-    "displayName": "留言圈",
+  "message-square": {
+    "displayName": "留言广场",
     "tags": []
   },
   "message-square-check": {
@@ -3959,10 +4087,6 @@
     "displayName": "留言广场X",
     "tags": []
   },
-  "message-square": {
-    "displayName": "留言广场",
-    "tags": []
-  },
   "messages-square": {
     "displayName": "留言广场",
     "tags": []
@@ -3971,16 +4095,24 @@
     "displayName": "节拍器",
     "tags": []
   },
+  "mic": {
+    "displayName": "麦克风",
+    "tags": []
+  },
+  "mic-audio-lines": {
+    "displayName": "麦克风声波",
+    "tags": []
+  },
   "mic-off": {
     "displayName": "麦克风关闭",
     "tags": []
   },
-  "mic-vocal": {
-    "displayName": "麦克风人声",
+  "mic-signal": {
+    "displayName": "麦克风信号",
     "tags": []
   },
-  "mic": {
-    "displayName": "麦克风",
+  "mic-vocal": {
+    "displayName": "麦克风人声",
     "tags": []
   },
   "microchip": {
@@ -3995,24 +4127,28 @@
     "displayName": "微波炉",
     "tags": []
   },
-  "milestone": {
-    "displayName": "里程碑",
+  "midi-port": {
+    "displayName": "MIDI 端口",
     "tags": []
   },
-  "milk-off": {
-    "displayName": "牛奶关闭",
+  "milestone": {
+    "displayName": "里程碑",
     "tags": []
   },
   "milk": {
     "displayName": "牛奶",
     "tags": []
   },
-  "minimize-2": {
-    "displayName": "最小化 2",
+  "milk-off": {
+    "displayName": "牛奶关闭",
     "tags": []
   },
   "minimize": {
     "displayName": "最小化",
+    "tags": []
+  },
+  "minimize-2": {
+    "displayName": "最小化 2",
     "tags": []
   },
   "minus": {
@@ -4025,6 +4161,10 @@
   },
   "mirror-round": {
     "displayName": "镜面圆",
+    "tags": []
+  },
+  "monitor": {
+    "displayName": "监视器",
     "tags": []
   },
   "monitor-check": {
@@ -4079,28 +4219,40 @@
     "displayName": "监视器X",
     "tags": []
   },
-  "monitor": {
-    "displayName": "监视器",
+  "moon": {
+    "displayName": "月亮",
     "tags": []
   },
   "moon-star": {
     "displayName": "月亮星",
     "tags": []
   },
-  "moon": {
-    "displayName": "月亮",
+  "mop": {
+    "displayName": "拖把",
+    "tags": []
+  },
+  "mop-sparkles": {
+    "displayName": "拖把闪光",
+    "tags": []
+  },
+  "mosque": {
+    "displayName": "清真寺",
     "tags": []
   },
   "motorbike": {
     "displayName": "摩托车",
     "tags": []
   },
+  "mountain": {
+    "displayName": "山",
+    "tags": []
+  },
   "mountain-snow": {
     "displayName": "山雪",
     "tags": []
   },
-  "mountain": {
-    "displayName": "山",
+  "mouse": {
+    "displayName": "鼠标",
     "tags": []
   },
   "mouse-left": {
@@ -4111,12 +4263,16 @@
     "displayName": "鼠标关闭",
     "tags": []
   },
-  "mouse-pointer-2-off": {
-    "displayName": "鼠标指针 2 关闭",
+  "mouse-pointer": {
+    "displayName": "鼠标指针",
     "tags": []
   },
   "mouse-pointer-2": {
     "displayName": "鼠标指针2",
+    "tags": []
+  },
+  "mouse-pointer-2-off": {
+    "displayName": "鼠标指针 2 关闭",
     "tags": []
   },
   "mouse-pointer-ban": {
@@ -4127,28 +4283,28 @@
     "displayName": "鼠标指针单击",
     "tags": []
   },
-  "mouse-pointer": {
-    "displayName": "鼠标指针",
-    "tags": []
-  },
   "mouse-right": {
     "displayName": "鼠标右键",
     "tags": []
   },
-  "mouse": {
-    "displayName": "鼠标",
+  "move": {
+    "displayName": "移动",
     "tags": []
   },
   "move-3d": {
     "displayName": "移动 3d",
     "tags": []
   },
+  "move-diagonal": {
+    "displayName": "移动对角线",
+    "tags": []
+  },
   "move-diagonal-2": {
     "displayName": "移动对角线 2",
     "tags": []
   },
-  "move-diagonal": {
-    "displayName": "移动对角线",
+  "move-down": {
+    "displayName": "下移",
     "tags": []
   },
   "move-down-left": {
@@ -4157,10 +4313,6 @@
   },
   "move-down-right": {
     "displayName": "右下移动",
-    "tags": []
-  },
-  "move-down": {
-    "displayName": "下移",
     "tags": []
   },
   "move-horizontal": {
@@ -4175,6 +4327,10 @@
     "displayName": "向右移动",
     "tags": []
   },
+  "move-up": {
+    "displayName": "向上移动",
+    "tags": []
+  },
   "move-up-left": {
     "displayName": "向左上移",
     "tags": []
@@ -4183,16 +4339,12 @@
     "displayName": "向右上移",
     "tags": []
   },
-  "move-up": {
-    "displayName": "向上移动",
-    "tags": []
-  },
   "move-vertical": {
     "displayName": "垂直移动",
     "tags": []
   },
-  "move": {
-    "displayName": "移动",
+  "music": {
+    "displayName": "音乐",
     "tags": []
   },
   "music-2": {
@@ -4207,24 +4359,20 @@
     "displayName": "音乐4",
     "tags": []
   },
-  "music": {
-    "displayName": "音乐",
-    "tags": []
-  },
-  "navigation-2-off": {
-    "displayName": "导航 2 关闭",
+  "navigation": {
+    "displayName": "导航",
     "tags": []
   },
   "navigation-2": {
     "displayName": "导航2",
     "tags": []
   },
-  "navigation-off": {
-    "displayName": "导航关闭",
+  "navigation-2-off": {
+    "displayName": "导航 2 关闭",
     "tags": []
   },
-  "navigation": {
-    "displayName": "导航",
+  "navigation-off": {
+    "displayName": "导航关闭",
     "tags": []
   },
   "network": {
@@ -4243,6 +4391,10 @@
     "displayName": "非二进制",
     "tags": []
   },
+  "notebook": {
+    "displayName": "笔记本",
+    "tags": []
+  },
   "notebook-pen": {
     "displayName": "笔记本笔",
     "tags": []
@@ -4255,24 +4407,24 @@
     "displayName": "笔记本文本",
     "tags": []
   },
-  "notebook": {
-    "displayName": "笔记本",
+  "notepad-text": {
+    "displayName": "记事本文本",
     "tags": []
   },
   "notepad-text-dashed": {
     "displayName": "记事本文本虚线",
     "tags": []
   },
-  "notepad-text": {
-    "displayName": "记事本文本",
+  "nut": {
+    "displayName": "坚果",
     "tags": []
   },
   "nut-off": {
     "displayName": "螺母关闭",
     "tags": []
   },
-  "nut": {
-    "displayName": "坚果",
+  "octagon": {
+    "displayName": "八边形",
     "tags": []
   },
   "octagon-alert": {
@@ -4291,10 +4443,6 @@
     "displayName": "八边形X",
     "tags": []
   },
-  "octagon": {
-    "displayName": "八边形",
-    "tags": []
-  },
   "omega": {
     "displayName": "欧米茄",
     "tags": []
@@ -4309,6 +4457,10 @@
   },
   "origami": {
     "displayName": "折纸",
+    "tags": []
+  },
+  "package": {
+    "displayName": "套餐",
     "tags": []
   },
   "package-2": {
@@ -4339,10 +4491,6 @@
     "displayName": "套餐X",
     "tags": []
   },
-  "package": {
-    "displayName": "套餐",
-    "tags": []
-  },
   "paint-bucket": {
     "displayName": "油漆桶",
     "tags": []
@@ -4351,12 +4499,12 @@
     "displayName": "油漆滚筒",
     "tags": []
   },
-  "paintbrush-vertical": {
-    "displayName": "画笔垂直",
-    "tags": []
-  },
   "paintbrush": {
     "displayName": "画笔",
+    "tags": []
+  },
+  "paintbrush-vertical": {
+    "displayName": "画笔垂直",
     "tags": []
   },
   "palette": {
@@ -4365,6 +4513,10 @@
   },
   "panda": {
     "displayName": "熊猫",
+    "tags": []
+  },
+  "panel-bottom": {
+    "displayName": "面板底部",
     "tags": []
   },
   "panel-bottom-close": {
@@ -4379,8 +4531,8 @@
     "displayName": "面板底部打开",
     "tags": []
   },
-  "panel-bottom": {
-    "displayName": "面板底部",
+  "panel-left": {
+    "displayName": "面板左",
     "tags": []
   },
   "panel-left-close": {
@@ -4399,8 +4551,8 @@
     "displayName": "面板左右虚线",
     "tags": []
   },
-  "panel-left": {
-    "displayName": "面板左",
+  "panel-right": {
+    "displayName": "右面板",
     "tags": []
   },
   "panel-right-close": {
@@ -4415,8 +4567,8 @@
     "displayName": "面板右开",
     "tags": []
   },
-  "panel-right": {
-    "displayName": "右面板",
+  "panel-top": {
+    "displayName": "面板顶部",
     "tags": []
   },
   "panel-top-bottom-dashed": {
@@ -4435,10 +4587,6 @@
     "displayName": "面板顶部打开",
     "tags": []
   },
-  "panel-top": {
-    "displayName": "面板顶部",
-    "tags": []
-  },
   "panels-left-bottom": {
     "displayName": "面板左下",
     "tags": []
@@ -4451,8 +4599,16 @@
     "displayName": "面板左上",
     "tags": []
   },
+  "paper-bag": {
+    "displayName": "纸袋",
+    "tags": []
+  },
   "paperclip": {
     "displayName": "回形针",
+    "tags": []
+  },
+  "parasol": {
+    "displayName": "遮阳伞",
     "tags": []
   },
   "parentheses": {
@@ -4479,6 +4635,10 @@
     "displayName": "电脑机箱",
     "tags": []
   },
+  "pen": {
+    "displayName": "笔",
+    "tags": []
+  },
   "pen-line": {
     "displayName": "笔线",
     "tags": []
@@ -4491,8 +4651,8 @@
     "displayName": "钢笔工具",
     "tags": []
   },
-  "pen": {
-    "displayName": "笔",
+  "pencil": {
+    "displayName": "铅笔",
     "tags": []
   },
   "pencil-line": {
@@ -4507,8 +4667,8 @@
     "displayName": "铅笔尺",
     "tags": []
   },
-  "pencil": {
-    "displayName": "铅笔",
+  "pencil-sparkles": {
+    "displayName": "铅笔闪光",
     "tags": []
   },
   "pentagon": {
@@ -4523,8 +4683,16 @@
     "displayName": "人站着",
     "tags": []
   },
+  "phi": {
+    "displayName": "Phi 符号",
+    "tags": []
+  },
   "philippine-peso": {
     "displayName": "菲律宾比索",
+    "tags": []
+  },
+  "phone": {
+    "displayName": "电话",
     "tags": []
   },
   "phone-call": {
@@ -4551,10 +4719,6 @@
     "displayName": "电话拨出",
     "tags": []
   },
-  "phone": {
-    "displayName": "电话",
-    "tags": []
-  },
   "pi": {
     "displayName": "圆周率",
     "tags": []
@@ -4567,16 +4731,20 @@
     "displayName": "镐",
     "tags": []
   },
-  "picture-in-picture-2": {
-    "displayName": "画中画2",
-    "tags": []
-  },
   "picture-in-picture": {
     "displayName": "画中画",
     "tags": []
   },
+  "picture-in-picture-2": {
+    "displayName": "画中画2",
+    "tags": []
+  },
   "piggy-bank": {
     "displayName": "存钱罐",
+    "tags": []
+  },
+  "pilcrow": {
+    "displayName": "皮尔克罗",
     "tags": []
   },
   "pilcrow-left": {
@@ -4587,24 +4755,20 @@
     "displayName": "皮尔克罗右",
     "tags": []
   },
-  "pilcrow": {
-    "displayName": "皮尔克罗",
+  "pill": {
+    "displayName": "丸",
     "tags": []
   },
   "pill-bottle": {
     "displayName": "药瓶",
     "tags": []
   },
-  "pill": {
-    "displayName": "丸",
+  "pin": {
+    "displayName": "面板右关闭",
     "tags": []
   },
   "pin-off": {
     "displayName": "面板左",
-    "tags": []
-  },
-  "pin": {
-    "displayName": "面板右关闭",
     "tags": []
   },
   "pipette": {
@@ -4615,6 +4779,10 @@
     "displayName": "面板右开",
     "tags": []
   },
+  "plane": {
+    "displayName": "面板顶部关闭",
+    "tags": []
+  },
   "plane-landing": {
     "displayName": "右面板",
     "tags": []
@@ -4623,12 +4791,16 @@
     "displayName": "面板顶部底部虚线",
     "tags": []
   },
-  "plane": {
-    "displayName": "面板顶部关闭",
-    "tags": []
-  },
   "play": {
     "displayName": "面板顶部虚线",
+    "tags": []
+  },
+  "play-off": {
+    "displayName": "播放关闭",
+    "tags": []
+  },
+  "plug": {
+    "displayName": "面板左下",
     "tags": []
   },
   "plug-2": {
@@ -4639,10 +4811,6 @@
     "displayName": "面板顶部",
     "tags": []
   },
-  "plug": {
-    "displayName": "面板左下",
-    "tags": []
-  },
   "plus": {
     "displayName": "面板右下",
     "tags": []
@@ -4651,16 +4819,16 @@
     "displayName": "面板左上",
     "tags": []
   },
-  "podcast": {
-    "displayName": "回形针",
-    "tags": []
-  },
-  "pointer-off": {
-    "displayName": "括号",
+  "podium": {
+    "displayName": "领奖台",
     "tags": []
   },
   "pointer": {
     "displayName": "停车计时器",
+    "tags": []
+  },
+  "pointer-off": {
+    "displayName": "括号",
     "tags": []
   },
   "popcorn": {
@@ -4675,16 +4843,20 @@
     "displayName": "爪印",
     "tags": []
   },
-  "power-off": {
-    "displayName": "电脑机箱",
-    "tags": []
-  },
   "power": {
     "displayName": "笔线",
     "tags": []
   },
+  "power-off": {
+    "displayName": "电脑机箱",
+    "tags": []
+  },
   "presentation": {
     "displayName": "落笔",
+    "tags": []
+  },
+  "printer": {
+    "displayName": "铅笔线",
     "tags": []
   },
   "printer-check": {
@@ -4693,10 +4865,6 @@
   },
   "printer-x": {
     "displayName": "笔",
-    "tags": []
-  },
-  "printer": {
-    "displayName": "铅笔线",
     "tags": []
   },
   "projector": {
@@ -4739,6 +4907,10 @@
     "displayName": "电话来电",
     "tags": []
   },
+  "radio": {
+    "displayName": "电话",
+    "tags": []
+  },
   "radio-off": {
     "displayName": "电话未接",
     "tags": []
@@ -4749,10 +4921,6 @@
   },
   "radio-tower": {
     "displayName": "电话拨出",
-    "tags": []
-  },
-  "radio": {
-    "displayName": "电话",
     "tags": []
   },
   "radius": {
@@ -4769,6 +4937,10 @@
   },
   "ratio": {
     "displayName": "画中画2",
+    "tags": []
+  },
+  "receipt": {
+    "displayName": "收据",
     "tags": []
   },
   "receipt-cent": {
@@ -4807,10 +4979,6 @@
     "displayName": "收据土耳其里拉",
     "tags": []
   },
-  "receipt": {
-    "displayName": "收据",
-    "tags": []
-  },
   "rectangle-circle": {
     "displayName": "矩形 圆形",
     "tags": []
@@ -4835,6 +5003,10 @@
     "displayName": "回收",
     "tags": []
   },
+  "redo": {
+    "displayName": "重做",
+    "tags": []
+  },
   "redo-2": {
     "displayName": "重做2",
     "tags": []
@@ -4843,24 +5015,20 @@
     "displayName": "重做点",
     "tags": []
   },
-  "redo": {
-    "displayName": "重做",
+  "refresh-ccw": {
+    "displayName": "刷新《特定常规武器公约》",
     "tags": []
   },
   "refresh-ccw-dot": {
     "displayName": "刷新《特定常规武器公约》点",
     "tags": []
   },
-  "refresh-ccw": {
-    "displayName": "刷新《特定常规武器公约》",
+  "refresh-cw": {
+    "displayName": "刷新CW",
     "tags": []
   },
   "refresh-cw-off": {
     "displayName": "刷新 CW 关闭",
-    "tags": []
-  },
-  "refresh-cw": {
-    "displayName": "刷新CW",
     "tags": []
   },
   "refrigerator": {
@@ -4875,6 +5043,10 @@
     "displayName": "删除格式",
     "tags": []
   },
+  "repeat": {
+    "displayName": "重复",
+    "tags": []
+  },
   "repeat-1": {
     "displayName": "重复1",
     "tags": []
@@ -4883,24 +5055,20 @@
     "displayName": "重复2",
     "tags": []
   },
-  "repeat": {
-    "displayName": "重复",
+  "replace": {
+    "displayName": "更换",
     "tags": []
   },
   "replace-all": {
     "displayName": "全部替换",
     "tags": []
   },
-  "replace": {
-    "displayName": "更换",
+  "reply": {
+    "displayName": "回复",
     "tags": []
   },
   "reply-all": {
     "displayName": "全部回复",
-    "tags": []
-  },
-  "reply": {
-    "displayName": "回复",
     "tags": []
   },
   "rewind": {
@@ -4935,6 +5103,14 @@
     "displayName": "旋转 3d",
     "tags": []
   },
+  "rotate-ccw": {
+    "displayName": "逆时针旋转",
+    "tags": []
+  },
+  "rotate-ccw-clock": {
+    "displayName": "逆时针时钟",
+    "tags": []
+  },
   "rotate-ccw-key": {
     "displayName": "旋转 CCW 键",
     "tags": []
@@ -4943,24 +5119,24 @@
     "displayName": "逆时针旋转广场",
     "tags": []
   },
-  "rotate-ccw": {
-    "displayName": "逆时针旋转",
+  "rotate-cw": {
+    "displayName": "顺时针旋转",
+    "tags": []
+  },
+  "rotate-cw-fading-clock": {
+    "displayName": "顺时针淡出时钟",
     "tags": []
   },
   "rotate-cw-square": {
     "displayName": "顺时针旋转方形",
     "tags": []
   },
-  "rotate-cw": {
-    "displayName": "顺时针旋转",
+  "route": {
+    "displayName": "路线",
     "tags": []
   },
   "route-off": {
     "displayName": "路线关闭",
-    "tags": []
-  },
-  "route": {
-    "displayName": "路线",
     "tags": []
   },
   "router": {
@@ -4983,12 +5159,12 @@
     "displayName": "RSS",
     "tags": []
   },
-  "ruler-dimension-line": {
-    "displayName": "标尺尺寸线",
-    "tags": []
-  },
   "ruler": {
     "displayName": "尺子",
+    "tags": []
+  },
+  "ruler-dimension-line": {
+    "displayName": "标尺尺寸线",
     "tags": []
   },
   "russian-ruble": {
@@ -5007,44 +5183,64 @@
     "displayName": "三明治",
     "tags": []
   },
-  "satellite-dish": {
-    "displayName": "卫星天线",
-    "tags": []
-  },
   "satellite": {
     "displayName": "卫星",
+    "tags": []
+  },
+  "satellite-dish": {
+    "displayName": "卫星天线",
     "tags": []
   },
   "saudi-riyal": {
     "displayName": "沙特里亚尔",
     "tags": []
   },
+  "save": {
+    "displayName": "保存",
+    "tags": []
+  },
   "save-all": {
     "displayName": "全部保存",
+    "tags": []
+  },
+  "save-check": {
+    "displayName": "保存对勾",
     "tags": []
   },
   "save-off": {
     "displayName": "保存关闭",
     "tags": []
   },
-  "save": {
-    "displayName": "保存",
+  "save-pen": {
+    "displayName": "保存钢笔",
     "tags": []
   },
-  "scale-3d": {
-    "displayName": "缩放 3d",
+  "save-plus": {
+    "displayName": "保存加号",
     "tags": []
   },
   "scale": {
     "displayName": "规模",
     "tags": []
   },
+  "scale-3d": {
+    "displayName": "缩放 3d",
+    "tags": []
+  },
   "scaling": {
     "displayName": "缩放",
     "tags": []
   },
+  "scan": {
+    "displayName": "扫描",
+    "tags": []
+  },
   "scan-barcode": {
     "displayName": "扫描条码",
+    "tags": []
+  },
+  "scan-box": {
+    "displayName": "扫描框",
     "tags": []
   },
   "scan-eye": {
@@ -5071,44 +5267,48 @@
     "displayName": "扫描搜索",
     "tags": []
   },
-  "scan-text": {
-    "displayName": "扫描文本",
+  "scan-square": {
+    "displayName": "扫描方形",
     "tags": []
   },
-  "scan": {
-    "displayName": "扫描",
+  "scan-text": {
+    "displayName": "扫描文本",
     "tags": []
   },
   "school": {
     "displayName": "学校",
     "tags": []
   },
-  "scissors-line-dashed": {
-    "displayName": "剪刀线虚线",
-    "tags": []
-  },
   "scissors": {
     "displayName": "剪刀",
+    "tags": []
+  },
+  "scissors-line-dashed": {
+    "displayName": "剪刀线虚线",
     "tags": []
   },
   "scooter": {
     "displayName": "踏板车",
     "tags": []
   },
+  "screen-share": {
+    "displayName": "屏幕共享",
+    "tags": []
+  },
   "screen-share-off": {
     "displayName": "屏幕共享关闭",
     "tags": []
   },
-  "screen-share": {
-    "displayName": "屏幕共享",
+  "scroll": {
+    "displayName": "滚动",
     "tags": []
   },
   "scroll-text": {
     "displayName": "滚动文字",
     "tags": []
   },
-  "scroll": {
-    "displayName": "滚动",
+  "search": {
+    "displayName": "搜索",
     "tags": []
   },
   "search-alert": {
@@ -5131,12 +5331,12 @@
     "displayName": "搜索X",
     "tags": []
   },
-  "search": {
-    "displayName": "搜索",
-    "tags": []
-  },
   "section": {
     "displayName": "部分",
+    "tags": []
+  },
+  "send": {
+    "displayName": "发送",
     "tags": []
   },
   "send-horizontal": {
@@ -5147,16 +5347,16 @@
     "displayName": "发送到后面",
     "tags": []
   },
-  "send": {
-    "displayName": "发送",
-    "tags": []
-  },
   "separator-horizontal": {
     "displayName": "卧式分离器",
     "tags": []
   },
   "separator-vertical": {
     "displayName": "垂直分离器",
+    "tags": []
+  },
+  "server": {
+    "displayName": "服务器",
     "tags": []
   },
   "server-cog": {
@@ -5171,28 +5371,28 @@
     "displayName": "服务器关闭",
     "tags": []
   },
-  "server": {
-    "displayName": "服务器",
-    "tags": []
-  },
-  "settings-2": {
-    "displayName": "设置2",
+  "server-plus": {
+    "displayName": "服务器加号",
     "tags": []
   },
   "settings": {
     "displayName": "设置",
     "tags": []
   },
+  "settings-2": {
+    "displayName": "设置2",
+    "tags": []
+  },
   "shapes": {
     "displayName": "形状",
     "tags": []
   },
-  "share-2": {
-    "displayName": "分享2",
-    "tags": []
-  },
   "share": {
     "displayName": "分享",
+    "tags": []
+  },
+  "share-2": {
+    "displayName": "分享2",
     "tags": []
   },
   "sheet": {
@@ -5207,6 +5407,10 @@
     "displayName": "搁架单元",
     "tags": []
   },
+  "shield": {
+    "displayName": "盾牌",
+    "tags": []
+  },
   "shield-alert": {
     "displayName": "护盾警报",
     "tags": []
@@ -5219,12 +5423,12 @@
     "displayName": "屏蔽检查",
     "tags": []
   },
-  "shield-cog-corner": {
-    "displayName": "盾牌齿轮角",
-    "tags": []
-  },
   "shield-cog": {
     "displayName": "盾牌齿轮",
+    "tags": []
+  },
+  "shield-cog-corner": {
+    "displayName": "盾牌齿轮角",
     "tags": []
   },
   "shield-ellipsis": {
@@ -5233,6 +5437,14 @@
   },
   "shield-half": {
     "displayName": "盾牌一半",
+    "tags": []
+  },
+  "shield-keyhole": {
+    "displayName": "盾牌钥匙孔",
+    "tags": []
+  },
+  "shield-lock": {
+    "displayName": "盾牌锁",
     "tags": []
   },
   "shield-minus": {
@@ -5259,16 +5471,12 @@
     "displayName": "盾牌X",
     "tags": []
   },
-  "shield": {
-    "displayName": "盾牌",
+  "ship": {
+    "displayName": "船舶",
     "tags": []
   },
   "ship-wheel": {
     "displayName": "船轮",
-    "tags": []
-  },
-  "ship": {
-    "displayName": "船舶",
     "tags": []
   },
   "shirt": {
@@ -5319,6 +5527,10 @@
     "displayName": "西格玛",
     "tags": []
   },
+  "signal": {
+    "displayName": "信号",
+    "tags": []
+  },
   "signal-high": {
     "displayName": "信号高",
     "tags": []
@@ -5335,20 +5547,16 @@
     "displayName": "信号归零",
     "tags": []
   },
-  "signal": {
-    "displayName": "信号",
-    "tags": []
-  },
   "signature": {
     "displayName": "签名",
     "tags": []
   },
-  "signpost-big": {
-    "displayName": "路标大",
-    "tags": []
-  },
   "signpost": {
     "displayName": "路标",
+    "tags": []
+  },
+  "signpost-big": {
+    "displayName": "路标大",
     "tags": []
   },
   "siren": {
@@ -5383,24 +5591,16 @@
     "displayName": "垂直滑块",
     "tags": []
   },
+  "smartphone": {
+    "displayName": "智能手机",
+    "tags": []
+  },
   "smartphone-charging": {
     "displayName": "智能手机充电",
     "tags": []
   },
   "smartphone-nfc": {
     "displayName": "智能手机 NFC",
-    "tags": []
-  },
-  "smartphone": {
-    "displayName": "智能手机",
-    "tags": []
-  },
-  "smile-plus": {
-    "displayName": "微笑加",
-    "tags": []
-  },
-  "smile": {
-    "displayName": "微笑",
     "tags": []
   },
   "snail": {
@@ -5451,20 +5651,20 @@
     "displayName": "演讲",
     "tags": []
   },
-  "spell-check-2": {
-    "displayName": "拼写检查 2",
-    "tags": []
-  },
   "spell-check": {
     "displayName": "拼写检查",
     "tags": []
   },
-  "spline-pointer": {
-    "displayName": "样条指针",
+  "spell-check-2": {
+    "displayName": "拼写检查 2",
     "tags": []
   },
   "spline": {
     "displayName": "样条线",
+    "tags": []
+  },
+  "spline-pointer": {
+    "displayName": "样条指针",
     "tags": []
   },
   "split": {
@@ -5491,8 +5691,16 @@
     "displayName": "发芽",
     "tags": []
   },
+  "square": {
+    "displayName": "广场",
+    "tags": []
+  },
   "square-activity": {
     "displayName": "广场活动",
+    "tags": []
+  },
+  "square-arrow-down": {
+    "displayName": "向下方形箭头",
     "tags": []
   },
   "square-arrow-down-left": {
@@ -5501,10 +5709,6 @@
   },
   "square-arrow-down-right": {
     "displayName": "右下方形箭头",
-    "tags": []
-  },
-  "square-arrow-down": {
-    "displayName": "向下方形箭头",
     "tags": []
   },
   "square-arrow-left": {
@@ -5527,6 +5731,10 @@
     "displayName": "向右上方的方形箭头",
     "tags": []
   },
+  "square-arrow-right": {
+    "displayName": "向右方箭头",
+    "tags": []
+  },
   "square-arrow-right-enter": {
     "displayName": "方形箭头右输入",
     "tags": []
@@ -5535,8 +5743,8 @@
     "displayName": "方形箭头右出口",
     "tags": []
   },
-  "square-arrow-right": {
-    "displayName": "向右方箭头",
+  "square-arrow-up": {
+    "displayName": "向上方形箭头",
     "tags": []
   },
   "square-arrow-up-left": {
@@ -5545,10 +5753,6 @@
   },
   "square-arrow-up-right": {
     "displayName": "右上方形箭头",
-    "tags": []
-  },
-  "square-arrow-up": {
-    "displayName": "向上方形箭头",
     "tags": []
   },
   "square-asterisk": {
@@ -5571,12 +5775,12 @@
     "displayName": "方形图甘特图",
     "tags": []
   },
-  "square-check-big": {
-    "displayName": "方格大号",
-    "tags": []
-  },
   "square-check": {
     "displayName": "方形格子",
+    "tags": []
+  },
+  "square-check-big": {
+    "displayName": "方格大号",
     "tags": []
   },
   "square-chevron-down": {
@@ -5599,12 +5803,16 @@
     "displayName": "方码",
     "tags": []
   },
-  "square-dashed-bottom-code": {
-    "displayName": "方形虚线底部代码",
+  "square-dashed": {
+    "displayName": "方形虚线",
     "tags": []
   },
   "square-dashed-bottom": {
     "displayName": "方形虚线底",
+    "tags": []
+  },
+  "square-dashed-bottom-code": {
+    "displayName": "方形虚线底部代码",
     "tags": []
   },
   "square-dashed-kanban": {
@@ -5623,8 +5831,8 @@
     "displayName": "方形虚线顶实线",
     "tags": []
   },
-  "square-dashed": {
-    "displayName": "方形虚线",
+  "square-dimensions": {
+    "displayName": "方形尺寸",
     "tags": []
   },
   "square-divide": {
@@ -5667,12 +5875,16 @@
     "displayName": "方形鼠标指针",
     "tags": []
   },
-  "square-parking-off": {
-    "displayName": "广场停车场关闭",
+  "square-off": {
+    "displayName": "方形关闭",
     "tags": []
   },
   "square-parking": {
     "displayName": "广场停车场",
+    "tags": []
+  },
+  "square-parking-off": {
+    "displayName": "广场停车场关闭",
     "tags": []
   },
   "square-pause": {
@@ -5755,20 +5967,20 @@
     "displayName": "方形终端",
     "tags": []
   },
-  "square-user-round": {
-    "displayName": "方 用户 圆",
+  "square-text": {
+    "displayName": "方形文本",
     "tags": []
   },
   "square-user": {
     "displayName": "方用户",
     "tags": []
   },
-  "square-x": {
-    "displayName": "方X",
+  "square-user-round": {
+    "displayName": "方 用户 圆",
     "tags": []
   },
-  "square": {
-    "displayName": "广场",
+  "square-x": {
+    "displayName": "方X",
     "tags": []
   },
   "squares-exclude": {
@@ -5787,12 +5999,12 @@
     "displayName": "广场联合",
     "tags": []
   },
-  "squircle-dashed": {
-    "displayName": "方格虚线",
-    "tags": []
-  },
   "squircle": {
     "displayName": "松鼠",
+    "tags": []
+  },
+  "squircle-dashed": {
+    "displayName": "方格虚线",
     "tags": []
   },
   "squirrel": {
@@ -5803,16 +6015,32 @@
     "displayName": "邮票",
     "tags": []
   },
+  "star": {
+    "displayName": "明星",
+    "tags": []
+  },
+  "star-check": {
+    "displayName": "星形对勾",
+    "tags": []
+  },
   "star-half": {
     "displayName": "星半",
+    "tags": []
+  },
+  "star-minus": {
+    "displayName": "星形减号",
     "tags": []
   },
   "star-off": {
     "displayName": "星关闭",
     "tags": []
   },
-  "star": {
-    "displayName": "明星",
+  "star-plus": {
+    "displayName": "星形加号",
+    "tags": []
+  },
+  "star-x": {
+    "displayName": "星形叉号",
     "tags": []
   },
   "step-back": {
@@ -5859,6 +6087,14 @@
     "displayName": "下标",
     "tags": []
   },
+  "summary": {
+    "displayName": "摘要",
+    "tags": []
+  },
+  "sun": {
+    "displayName": "太阳",
+    "tags": []
+  },
   "sun-dim": {
     "displayName": "太阳昏暗",
     "tags": []
@@ -5873,10 +6109,6 @@
   },
   "sun-snow": {
     "displayName": "太阳雪",
-    "tags": []
-  },
-  "sun": {
-    "displayName": "太阳",
     "tags": []
   },
   "sunrise": {
@@ -5915,6 +6147,10 @@
     "displayName": "注射器",
     "tags": []
   },
+  "table": {
+    "displayName": "表",
+    "tags": []
+  },
   "table-2": {
     "displayName": "表2",
     "tags": []
@@ -5943,16 +6179,12 @@
     "displayName": "表行拆分",
     "tags": []
   },
-  "table": {
-    "displayName": "表",
+  "tablet": {
+    "displayName": "平板电脑",
     "tags": []
   },
   "tablet-smartphone": {
     "displayName": "平板电脑 智能手机",
-    "tags": []
-  },
-  "tablet": {
-    "displayName": "平板电脑",
     "tags": []
   },
   "tablets": {
@@ -5961,6 +6193,14 @@
   },
   "tag": {
     "displayName": "标签",
+    "tags": []
+  },
+  "tag-plus": {
+    "displayName": "标签加号",
+    "tags": []
+  },
+  "tag-x": {
+    "displayName": "标签叉号",
     "tags": []
   },
   "tags": {
@@ -5999,24 +6239,24 @@
     "displayName": "望远镜",
     "tags": []
   },
-  "tent-tree": {
-    "displayName": "帐篷树",
-    "tags": []
-  },
   "tent": {
     "displayName": "帐篷",
+    "tags": []
+  },
+  "tent-tree": {
+    "displayName": "帐篷树",
     "tags": []
   },
   "terminal": {
     "displayName": "终端",
     "tags": []
   },
-  "test-tube-diagonal": {
-    "displayName": "试管对角线",
-    "tags": []
-  },
   "test-tube": {
     "displayName": "试管",
+    "tags": []
+  },
+  "test-tube-diagonal": {
+    "displayName": "试管对角线",
     "tags": []
   },
   "test-tubes": {
@@ -6039,12 +6279,12 @@
     "displayName": "文本对齐开始",
     "tags": []
   },
-  "text-cursor-input": {
-    "displayName": "文本光标输入",
-    "tags": []
-  },
   "text-cursor": {
     "displayName": "文本光标",
+    "tags": []
+  },
+  "text-cursor-input": {
+    "displayName": "文本光标输入",
     "tags": []
   },
   "text-initial": {
@@ -6067,6 +6307,10 @@
     "displayName": "剧院",
     "tags": []
   },
+  "thermometer": {
+    "displayName": "温度计",
+    "tags": []
+  },
   "thermometer-snowflake": {
     "displayName": "温度计雪花",
     "tags": []
@@ -6075,16 +6319,16 @@
     "displayName": "温度计太阳",
     "tags": []
   },
-  "thermometer": {
-    "displayName": "温度计",
-    "tags": []
-  },
   "thumbs-down": {
     "displayName": "拇指朝下",
     "tags": []
   },
   "thumbs-up": {
     "displayName": "竖起大拇指",
+    "tags": []
+  },
+  "ticket": {
+    "displayName": "门票",
     "tags": []
   },
   "ticket-check": {
@@ -6111,7 +6355,7 @@
     "displayName": "票X",
     "tags": []
   },
-  "ticket": {
+  "tickets": {
     "displayName": "门票",
     "tags": []
   },
@@ -6119,8 +6363,8 @@
     "displayName": "机票 飞机",
     "tags": []
   },
-  "tickets": {
-    "displayName": "门票",
+  "timer": {
+    "displayName": "定时器",
     "tags": []
   },
   "timer-off": {
@@ -6129,10 +6373,6 @@
   },
   "timer-reset": {
     "displayName": "定时器重置",
-    "tags": []
-  },
-  "timer": {
-    "displayName": "定时器",
     "tags": []
   },
   "toggle-left": {
@@ -6163,12 +6403,12 @@
     "displayName": "环面",
     "tags": []
   },
-  "touchpad-off": {
-    "displayName": "触摸板关闭",
-    "tags": []
-  },
   "touchpad": {
     "displayName": "触摸板",
+    "tags": []
+  },
+  "touchpad-off": {
+    "displayName": "触摸板关闭",
     "tags": []
   },
   "towel-rack": {
@@ -6191,12 +6431,12 @@
     "displayName": "交通锥",
     "tags": []
   },
-  "train-front-tunnel": {
-    "displayName": "火车前隧道",
-    "tags": []
-  },
   "train-front": {
     "displayName": "火车头",
+    "tags": []
+  },
+  "train-front-tunnel": {
+    "displayName": "火车前隧道",
     "tags": []
   },
   "train-track": {
@@ -6211,12 +6451,12 @@
     "displayName": "跨性别",
     "tags": []
   },
-  "trash-2": {
-    "displayName": "垃圾2",
-    "tags": []
-  },
   "trash": {
     "displayName": "垃圾",
+    "tags": []
+  },
+  "trash-2": {
+    "displayName": "垃圾2",
     "tags": []
   },
   "tree-deciduous": {
@@ -6239,12 +6479,16 @@
     "displayName": "趋势下降",
     "tags": []
   },
+  "trending-up": {
+    "displayName": "趋势上升",
+    "tags": []
+  },
   "trending-up-down": {
     "displayName": "趋势向上 向下",
     "tags": []
   },
-  "trending-up": {
-    "displayName": "趋势上升",
+  "triangle": {
+    "displayName": "三角形",
     "tags": []
   },
   "triangle-alert": {
@@ -6259,20 +6503,16 @@
     "displayName": "右三角",
     "tags": []
   },
-  "triangle": {
-    "displayName": "三角形",
-    "tags": []
-  },
   "trophy": {
     "displayName": "奖杯",
     "tags": []
   },
-  "truck-electric": {
-    "displayName": "电动卡车",
-    "tags": []
-  },
   "truck": {
     "displayName": "卡车",
+    "tags": []
+  },
+  "truck-electric": {
+    "displayName": "电动卡车",
     "tags": []
   },
   "turkish-lira": {
@@ -6287,36 +6527,40 @@
     "displayName": "海龟",
     "tags": []
   },
-  "tv-minimal-play": {
-    "displayName": "电视最低限度播放",
+  "tv": {
+    "displayName": "电视",
     "tags": []
   },
   "tv-minimal": {
     "displayName": "电视最小",
     "tags": []
   },
-  "tv": {
-    "displayName": "电视",
-    "tags": []
-  },
-  "type-outline": {
-    "displayName": "类型概要",
+  "tv-minimal-play": {
+    "displayName": "电视最低限度播放",
     "tags": []
   },
   "type": {
     "displayName": "类型",
     "tags": []
   },
-  "umbrella-off": {
-    "displayName": "关闭雨伞",
+  "type-outline": {
+    "displayName": "类型概要",
     "tags": []
   },
   "umbrella": {
     "displayName": "雨伞",
     "tags": []
   },
+  "umbrella-off": {
+    "displayName": "关闭雨伞",
+    "tags": []
+  },
   "underline": {
     "displayName": "下划线",
+    "tags": []
+  },
+  "undo": {
+    "displayName": "撤消",
     "tags": []
   },
   "undo-2": {
@@ -6325,10 +6569,6 @@
   },
   "undo-dot": {
     "displayName": "撤消点",
-    "tags": []
-  },
-  "undo": {
-    "displayName": "撤消",
     "tags": []
   },
   "unfold-horizontal": {
@@ -6347,12 +6587,12 @@
     "displayName": "大学",
     "tags": []
   },
-  "unlink-2": {
-    "displayName": "取消链接2",
-    "tags": []
-  },
   "unlink": {
     "displayName": "取消链接",
+    "tags": []
+  },
+  "unlink-2": {
+    "displayName": "取消链接2",
     "tags": []
   },
   "unplug": {
@@ -6365,6 +6605,14 @@
   },
   "usb": {
     "displayName": "优盘",
+    "tags": []
+  },
+  "usb-c-port": {
+    "displayName": "USB-C 端口",
+    "tags": []
+  },
+  "user": {
+    "displayName": "用户",
     "tags": []
   },
   "user-check": {
@@ -6393,6 +6641,14 @@
   },
   "user-plus": {
     "displayName": "用户加号",
+    "tags": []
+  },
+  "user-round": {
+    "displayName": "用户回合",
+    "tags": []
+  },
+  "user-round-arrow-left": {
+    "displayName": "用户左箭头",
     "tags": []
   },
   "user-round-check": {
@@ -6427,12 +6683,12 @@
     "displayName": "用户第 X 轮",
     "tags": []
   },
-  "user-round": {
-    "displayName": "用户回合",
-    "tags": []
-  },
   "user-search": {
     "displayName": "用户搜索",
+    "tags": []
+  },
+  "user-shield": {
+    "displayName": "用户盾牌",
     "tags": []
   },
   "user-star": {
@@ -6443,7 +6699,7 @@
     "displayName": "用户X",
     "tags": []
   },
-  "user": {
+  "users": {
     "displayName": "用户",
     "tags": []
   },
@@ -6451,16 +6707,12 @@
     "displayName": "用户回合",
     "tags": []
   },
-  "users": {
-    "displayName": "用户",
+  "utensils": {
+    "displayName": "餐具",
     "tags": []
   },
   "utensils-crossed": {
     "displayName": "交叉的器皿",
-    "tags": []
-  },
-  "utensils": {
-    "displayName": "餐具",
     "tags": []
   },
   "utility-pole": {
@@ -6491,28 +6743,28 @@
     "displayName": "威尼斯面具",
     "tags": []
   },
-  "venus-and-mars": {
-    "displayName": "金星和火星",
-    "tags": []
-  },
   "venus": {
     "displayName": "金星",
     "tags": []
   },
-  "vibrate-off": {
-    "displayName": "振动关闭",
+  "venus-and-mars": {
+    "displayName": "金星和火星",
     "tags": []
   },
   "vibrate": {
     "displayName": "振动",
     "tags": []
   },
-  "video-off": {
-    "displayName": "视频关闭",
+  "vibrate-off": {
+    "displayName": "振动关闭",
     "tags": []
   },
   "video": {
     "displayName": "视频",
+    "tags": []
+  },
+  "video-off": {
+    "displayName": "视频关闭",
     "tags": []
   },
   "videotape": {
@@ -6531,6 +6783,10 @@
     "displayName": "排球",
     "tags": []
   },
+  "volume": {
+    "displayName": "体积",
+    "tags": []
+  },
   "volume-1": {
     "displayName": "第 1 卷",
     "tags": []
@@ -6547,12 +6803,12 @@
     "displayName": "第 X 卷",
     "tags": []
   },
-  "volume": {
-    "displayName": "体积",
-    "tags": []
-  },
   "vote": {
     "displayName": "投票",
+    "tags": []
+  },
+  "wallet": {
+    "displayName": "钱包",
     "tags": []
   },
   "wallet-cards": {
@@ -6563,20 +6819,16 @@
     "displayName": "钱包最小",
     "tags": []
   },
-  "wallet": {
-    "displayName": "钱包",
-    "tags": []
-  },
   "wallpaper": {
     "displayName": "壁纸",
     "tags": []
   },
-  "wand-sparkles": {
-    "displayName": "魔杖闪闪发光",
-    "tags": []
-  },
   "wand": {
     "displayName": "魔杖",
+    "tags": []
+  },
+  "wand-sparkles": {
+    "displayName": "魔杖闪闪发光",
     "tags": []
   },
   "warehouse": {
@@ -6591,6 +6843,10 @@
     "displayName": "手表",
     "tags": []
   },
+  "waves": {
+    "displayName": "波浪",
+    "tags": []
+  },
   "waves-arrow-down": {
     "displayName": "向下波浪箭头",
     "tags": []
@@ -6603,10 +6859,6 @@
     "displayName": "波浪梯",
     "tags": []
   },
-  "waves": {
-    "displayName": "波浪",
-    "tags": []
-  },
   "waypoints": {
     "displayName": "航点",
     "tags": []
@@ -6615,32 +6867,40 @@
     "displayName": "网络摄像头",
     "tags": []
   },
-  "webhook-off": {
-    "displayName": "网络挂接关闭",
+  "webcam-off": {
+    "displayName": "摄像头关闭",
     "tags": []
   },
   "webhook": {
     "displayName": "网络钩子",
     "tags": []
   },
-  "weight-tilde": {
-    "displayName": "重量波形符",
+  "webhook-off": {
+    "displayName": "网络挂接关闭",
     "tags": []
   },
   "weight": {
     "displayName": "重量",
     "tags": []
   },
-  "wheat-off": {
-    "displayName": "小麦关闭",
+  "weight-tilde": {
+    "displayName": "重量波形符",
     "tags": []
   },
   "wheat": {
     "displayName": "小麦",
     "tags": []
   },
+  "wheat-off": {
+    "displayName": "小麦关闭",
+    "tags": []
+  },
   "whole-word": {
     "displayName": "整个词",
+    "tags": []
+  },
+  "wifi": {
+    "displayName": "无线网络",
     "tags": []
   },
   "wifi-cog": {
@@ -6671,24 +6931,20 @@
     "displayName": "无线网络零",
     "tags": []
   },
-  "wifi": {
-    "displayName": "无线网络",
+  "wind": {
+    "displayName": "风",
     "tags": []
   },
   "wind-arrow-down": {
     "displayName": "风箭向下",
     "tags": []
   },
-  "wind": {
-    "displayName": "风",
+  "wine": {
+    "displayName": "酒",
     "tags": []
   },
   "wine-off": {
     "displayName": "酒关",
-    "tags": []
-  },
-  "wine": {
-    "displayName": "酒",
     "tags": []
   },
   "workflow": {
@@ -6703,20 +6959,24 @@
     "displayName": "扳手",
     "tags": []
   },
-  "x-line-top": {
-    "displayName": "X 线上衣",
+  "wrench-off": {
+    "displayName": "扳手关闭",
     "tags": []
   },
   "x": {
     "displayName": "X",
     "tags": []
   },
-  "zap-off": {
-    "displayName": "关闭",
+  "x-line-top": {
+    "displayName": "X 线上衣",
     "tags": []
   },
   "zap": {
     "displayName": "电击",
+    "tags": []
+  },
+  "zap-off": {
+    "displayName": "关闭",
     "tags": []
   },
   "zodiac-aquarius": {

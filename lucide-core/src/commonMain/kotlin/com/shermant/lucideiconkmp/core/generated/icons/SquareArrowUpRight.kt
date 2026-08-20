@@ -23,9 +23,9 @@ val SquareArrowUpRight: ImageVector
 val LucideIcons.SquareArrowUpRight: ImageVector
     get() = squareArrowUpRightProvider.create()
 
-private val squareArrowUpRightPath0 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
-private val squareArrowUpRightPath1 = PathParser().parsePathString("M8 8h8v8").toNodes()
-private val squareArrowUpRightPath2 = PathParser().parsePathString("m8 16 8-8").toNodes()
+private val squareArrowUpRightPath0 = PathParser().parsePathString("M15 15V9H9").toNodes()
+private val squareArrowUpRightPath1 = PathParser().parsePathString("m9 15 6-6").toNodes()
+private val squareArrowUpRightPath2 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 
 private fun buildSquareArrowUpRight(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

@@ -23,9 +23,9 @@ val BookOpenCheck: ImageVector
 val LucideIcons.BookOpenCheck: ImageVector
     get() = bookOpenCheckProvider.create()
 
-private val bookOpenCheckPath0 = PathParser().parsePathString("M12 21V7").toNodes()
+private val bookOpenCheckPath0 = PathParser().parsePathString("M12 5v16").toNodes()
 private val bookOpenCheckPath1 = PathParser().parsePathString("m16 12 2 2 4-4").toNodes()
-private val bookOpenCheckPath2 = PathParser().parsePathString("M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3").toNodes()
+private val bookOpenCheckPath2 = PathParser().parsePathString("M22 6V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2h4.001A2 2 0 0022 17v-1.344").toNodes()
 
 private fun buildBookOpenCheck(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

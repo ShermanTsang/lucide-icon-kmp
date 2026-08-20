@@ -6,6 +6,256 @@ import com.shermant.lucideiconkmp.core.model.LucideIconKey
 import com.shermant.lucideiconkmp.core.model.LucideIconMetadata
 
 internal object LucideGeneratedMetadataChunk8 {
+    val Handshake = LucideIconMetadata(
+        key = LucideIconKey("handshake"),
+        displayName = "Handshake",
+        tags = setOf("agreement", "assistance", "business", "cooperation", "deal", "friendship", "partnership", "terms", "union"),
+        zhDisplayName = "握手",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Communication, LucideIconCategory.Finance, LucideIconCategory.Security, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HardDriveDownload = LucideIconMetadata(
+        key = LucideIconKey("hard-drive-download"),
+        displayName = "Hard Drive Download",
+        tags = setOf("computer", "data", "disk", "hard disk", "memory", "save", "server", "ssd"),
+        zhDisplayName = "硬盘下载",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Development, LucideIconCategory.Devices, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HardDriveUpload = LucideIconMetadata(
+        key = LucideIconKey("hard-drive-upload"),
+        displayName = "Hard Drive Upload",
+        tags = setOf("computer", "data", "disk", "hard disk", "memory", "save", "server", "ssd"),
+        zhDisplayName = "硬盘上传",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Development, LucideIconCategory.Devices, LucideIconCategory.Files),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HardDrive = LucideIconMetadata(
+        key = LucideIconKey("hard-drive"),
+        displayName = "Hard Drive",
+        tags = setOf("backup", "computer", "data", "disk", "hard disk", "hardware", "media", "memory", "server", "ssd", "storage"),
+        zhDisplayName = "硬盘",
+        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Devices),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HardHat = LucideIconMetadata(
+        key = LucideIconKey("hard-hat"),
+        displayName = "Hard Hat",
+        tags = setOf("construction", "helmet", "safety", "savety"),
+        zhDisplayName = "安全帽",
+        categories = setOf(LucideIconCategory.Tools),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Hash = LucideIconMetadata(
+        key = LucideIconKey("hash"),
+        displayName = "Hash",
+        tags = setOf("hashtag", "number", "pound"),
+        zhDisplayName = "哈希值",
+        categories = setOf(LucideIconCategory.Social, LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HatGlasses = LucideIconMetadata(
+        key = LucideIconKey("hat-glasses"),
+        displayName = "Hat Glasses",
+        tags = setOf("agent", "anonymity", "anonymous", "cap", "cloak", "costume", "detective", "disguise", "eyewear", "fedora", "ghost", "hidden", "identity", "incognito", "invisible", "masked", "privacy", "private browsing", "shades", "spectacles", "spy", "stealth", "sunglasses", "undercover"),
+        zhDisplayName = "帽子眼镜",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Security, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Haze = LucideIconMetadata(
+        key = LucideIconKey("haze"),
+        displayName = "Haze",
+        tags = setOf("fog", "mist"),
+        zhDisplayName = "雾霾",
+        categories = setOf(LucideIconCategory.Weather),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Hd = LucideIconMetadata(
+        key = LucideIconKey("hd"),
+        displayName = "Hd",
+        tags = setOf("1080p", "720p", "high definition", "resolution", "tv", "video"),
+        zhDisplayName = "高清",
+        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HdmiPort = LucideIconMetadata(
+        key = LucideIconKey("hdmi-port"),
+        displayName = "Hdmi Port",
+        tags = setOf("audio", "av", "connector", "console", "controller", "data", "input", "interface", "output", "plug", "signal", "slot", "socket", "video", "visual"),
+        zhDisplayName = "HDMI端口",
+        categories = setOf(LucideIconCategory.Devices, LucideIconCategory.Gaming, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Heading1 = LucideIconMetadata(
+        key = LucideIconKey("heading-1"),
+        displayName = "Heading 1",
+        tags = setOf("h1", "html", "markdown", "markup"),
+        zhDisplayName = "标题 1",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Heading2 = LucideIconMetadata(
+        key = LucideIconKey("heading-2"),
+        displayName = "Heading 2",
+        tags = setOf("h2", "html", "markdown", "markup"),
+        zhDisplayName = "标题 2",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Heading3 = LucideIconMetadata(
+        key = LucideIconKey("heading-3"),
+        displayName = "Heading 3",
+        tags = setOf("h3", "html", "markdown", "markup"),
+        zhDisplayName = "标题 3",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Heading4 = LucideIconMetadata(
+        key = LucideIconKey("heading-4"),
+        displayName = "Heading 4",
+        tags = setOf("h4", "html", "markdown", "markup"),
+        zhDisplayName = "标题 4",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Heading5 = LucideIconMetadata(
+        key = LucideIconKey("heading-5"),
+        displayName = "Heading 5",
+        tags = setOf("h5", "html", "markdown", "markup"),
+        zhDisplayName = "标题 5",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Heading6 = LucideIconMetadata(
+        key = LucideIconKey("heading-6"),
+        displayName = "Heading 6",
+        tags = setOf("h6", "html", "markdown", "markup"),
+        zhDisplayName = "标题 6",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Heading = LucideIconMetadata(
+        key = LucideIconKey("heading"),
+        displayName = "Heading",
+        tags = setOf("h1", "html", "markdown", "markup"),
+        zhDisplayName = "标题",
+        categories = setOf(LucideIconCategory.Text),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HeadphoneOff = LucideIconMetadata(
+        key = LucideIconKey("headphone-off"),
+        displayName = "Headphone Off",
+        tags = setOf("audio", "music", "mute", "off", "sound"),
+        zhDisplayName = "耳机关闭",
+        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Gaming, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Headphones = LucideIconMetadata(
+        key = LucideIconKey("headphones"),
+        displayName = "Headphones",
+        tags = setOf("audio", "music", "sound"),
+        zhDisplayName = "耳机",
+        categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Files, LucideIconCategory.Gaming, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val Headset = LucideIconMetadata(
+        key = LucideIconKey("headset"),
+        displayName = "Headset",
+        tags = setOf("audio", "call", "center", "gaming", "headphones", "headset", "music", "phone", "sound", "telephone", "video", "voip"),
+        zhDisplayName = "耳机",
+        categories = setOf(LucideIconCategory.Connectivity, LucideIconCategory.Devices, LucideIconCategory.Files, LucideIconCategory.Gaming, LucideIconCategory.Multimedia),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HeartCrack = LucideIconMetadata(
+        key = LucideIconKey("heart-crack"),
+        displayName = "Heart Crack",
+        tags = setOf("emotion", "heartbreak", "sadness"),
+        zhDisplayName = "心裂",
+        categories = setOf(LucideIconCategory.Emoji),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HeartHandshake = LucideIconMetadata(
+        key = LucideIconKey("heart-handshake"),
+        displayName = "Heart Handshake",
+        tags = setOf("agreement", "charity", "deal", "emotion", "handshake", "help", "terms", "together"),
+        zhDisplayName = "心形握手",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Emoji, LucideIconCategory.Security),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HeartMinus = LucideIconMetadata(
+        key = LucideIconKey("heart-minus"),
+        displayName = "Heart Minus",
+        tags = setOf("damage", "delete", "remove", "unfavorite", "unlike"),
+        zhDisplayName = "心减",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Gaming, LucideIconCategory.Medical, LucideIconCategory.Multimedia, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HeartOff = LucideIconMetadata(
+        key = LucideIconKey("heart-off"),
+        displayName = "Heart Off",
+        tags = setOf("dislike", "emotion", "hate", "unlike"),
+        zhDisplayName = "心关闭",
+        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val HeartPlus = LucideIconMetadata(
+        key = LucideIconKey("heart-plus"),
+        displayName = "Heart Plus",
+        tags = setOf("add", "favorite", "health", "like", "plus", "support"),
+        zhDisplayName = "心加",
+        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Gaming, LucideIconCategory.Medical, LucideIconCategory.Multimedia, LucideIconCategory.Social),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val HeartPulse = LucideIconMetadata(
         key = LucideIconKey("heart-pulse"),
         displayName = "Heart Pulse",
@@ -71,16 +321,6 @@ internal object LucideGeneratedMetadataChunk8 {
         tags = setOf("mark", "text"),
         zhDisplayName = "荧光笔",
         categories = setOf(LucideIconCategory.Design, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val History = LucideIconMetadata(
-        key = LucideIconKey("history"),
-        displayName = "History",
-        tags = setOf("backup", "ccw", "redo", "rewind", "rotate", "time", "time machine", "timeline", "undo", "version"),
-        zhDisplayName = "历史",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Time),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -645,12 +885,22 @@ internal object LucideGeneratedMetadataChunk8 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val Laugh = LucideIconMetadata(
-        key = LucideIconKey("laugh"),
-        displayName = "Laugh",
-        tags = setOf("emoji", "emotion", "face", "good", "happy"),
-        zhDisplayName = "家用插头",
-        categories = setOf(LucideIconCategory.Emoji),
+    val LayerArrowDown = LucideIconMetadata(
+        key = LucideIconKey("layer-arrow-down"),
+        displayName = "Layer Arrow Down",
+        tags = setOf("arrange", "backward", "behind", "demote", "depth", "design", "graphics", "layer", "layers", "lower", "move back", "reorder", "stack", "stacking", "step back", "z-index"),
+        zhDisplayName = "图层下箭头",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val LayerArrowUp = LucideIconMetadata(
+        key = LucideIconKey("layer-arrow-up"),
+        displayName = "Layer Arrow Up",
+        tags = setOf("advance", "arrange", "depth", "design", "forward", "graphics", "lift", "move forward", "promote", "raise", "reorder", "stack", "stacking", "step forward", "z-index"),
+        zhDisplayName = "图层上箭头",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Layout),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -661,6 +911,26 @@ internal object LucideGeneratedMetadataChunk8 {
         tags = setOf("copies", "copy", "double", "duplicate", "pages", "paperwork", "pile", "sheets", "shortcuts", "stack"),
         zhDisplayName = "房子加",
         categories = setOf(LucideIconCategory.Design, LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val LayersArrowDown = LucideIconMetadata(
+        key = LucideIconKey("layers-arrow-down"),
+        displayName = "Layers Arrow Down",
+        tags = setOf("arrange", "back", "background", "behind", "bottom", "bottommost", "demote", "depth", "design", "graphics", "lower", "reorder", "send backward", "send to back", "stack", "stacking", "z-index"),
+        zhDisplayName = "多层下箭头",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
+    val LayersArrowUp = LucideIconMetadata(
+        key = LucideIconKey("layers-arrow-up"),
+        displayName = "Layers Arrow Up",
+        tags = setOf("arrange", "bring forward", "bring to front", "depth", "design", "foreground", "front", "graphics", "lift", "promote", "raise", "reorder", "stack", "stacking", "top", "topmost", "z-index"),
+        zhDisplayName = "多层上箭头",
+        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Design, LucideIconCategory.Layout),
         defaultStrokeWidth = 2.0f,
         sourceSet = IconSourceSet.BuiltIn,
     )
@@ -704,6 +974,16 @@ internal object LucideGeneratedMetadataChunk8 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
+    val LayoutFreeform = LucideIconMetadata(
+        key = LucideIconKey("layout-freeform"),
+        displayName = "Layout Freeform",
+        tags = setOf("absolute", "arrange", "auto layout", "blocks", "canvas", "frame", "free", "freeform", "layout", "position", "scattered", "unaligned"),
+        zhDisplayName = "自由布局",
+        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Layout),
+        defaultStrokeWidth = 2.0f,
+        sourceSet = IconSourceSet.BuiltIn,
+    )
+
     val LayoutGrid = LucideIconMetadata(
         key = LucideIconKey("layout-grid"),
         displayName = "Layout Grid",
@@ -724,287 +1004,32 @@ internal object LucideGeneratedMetadataChunk8 {
         sourceSet = IconSourceSet.BuiltIn,
     )
 
-    val LayoutPanelLeft = LucideIconMetadata(
-        key = LucideIconKey("layout-panel-left"),
-        displayName = "Layout Panel Left",
-        tags = setOf("app", "grid", "home", "start"),
-        zhDisplayName = "身份证",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LayoutPanelTop = LucideIconMetadata(
-        key = LucideIconKey("layout-panel-top"),
-        displayName = "Layout Panel Top",
-        tags = setOf("block", "grid", "section", "structure", "template", "webpage", "window"),
-        zhDisplayName = "图像向下",
-        categories = setOf(LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LayoutTemplate = LucideIconMetadata(
-        key = LucideIconKey("layout-template"),
-        displayName = "Layout Template",
-        tags = setOf("block", "section", "webpage", "window"),
-        zhDisplayName = "图像减号",
-        categories = setOf(LucideIconCategory.Layout),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Leaf = LucideIconMetadata(
-        key = LucideIconKey("leaf"),
-        displayName = "Leaf",
-        tags = setOf("autumn", "energy", "nature", "plant", "sustainability"),
-        zhDisplayName = "图像关闭",
-        categories = setOf(LucideIconCategory.Nature, LucideIconCategory.Seasons, LucideIconCategory.Sustainability),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LeafyGreen = LucideIconMetadata(
-        key = LucideIconKey("leafy-green"),
-        displayName = "Leafy Green",
-        tags = setOf("bok choy", "cabbage", "chard", "lettuce", "salad", "vegetable"),
-        zhDisplayName = "图片播放",
-        categories = setOf(LucideIconCategory.Emoji, LucideIconCategory.FoodBeverage, LucideIconCategory.Sustainability),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Lectern = LucideIconMetadata(
-        key = LucideIconKey("lectern"),
-        displayName = "Lectern",
-        tags = setOf("podium", "pulpit", "stand"),
-        zhDisplayName = "图像加",
-        categories = setOf(LucideIconCategory.Communication, LucideIconCategory.Multimedia),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LensConcave = LucideIconMetadata(
-        key = LucideIconKey("lens-concave"),
-        displayName = "Lens Concave",
-        tags = setOf("concave", "curved", "eyeglass", "focus", "lens", "light", "magnification", "microscope", "optics", "physics", "refraction", "science", "telescope"),
-        zhDisplayName = "图像向上",
-        categories = setOf(LucideIconCategory.Science, LucideIconCategory.Shapes, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LensConvex = LucideIconMetadata(
-        key = LucideIconKey("lens-convex"),
-        displayName = "Lens Convex",
-        tags = setOf("convex", "curved", "eyeglass", "focus", "lens", "light", "magnification", "microscope", "optics", "physics", "refraction", "science", "telescope"),
-        zhDisplayName = "图像高档",
-        categories = setOf(LucideIconCategory.Science, LucideIconCategory.Shapes, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LibraryBig = LucideIconMetadata(
-        key = LucideIconKey("library-big"),
-        displayName = "Library Big",
-        tags = setOf("academy", "albums", "authors", "books", "collection", "college", "education", "fiction", "high school", "information", "knowledge", "learning", "music", "novels", "package", "reading", "records", "research", "stories", "study", "university", "vinyl", "written"),
-        zhDisplayName = "图片",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Multimedia, LucideIconCategory.Navigation, LucideIconCategory.Photography, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Library = LucideIconMetadata(
-        key = LucideIconKey("library"),
-        displayName = "Library",
-        tags = setOf("academy", "albums", "authors", "books", "collection", "college", "education", "fiction", "high school", "information", "knowledge", "learning", "music", "novels", "package", "reading", "records", "research", "stories", "study", "university", "vinyl", "written"),
-        zhDisplayName = "图片",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Multimedia, LucideIconCategory.Navigation, LucideIconCategory.Photography, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LifeBuoy = LucideIconMetadata(
-        key = LucideIconKey("life-buoy"),
-        displayName = "Life Buoy",
-        tags = setOf("donut", "help", "inflatable", "life belt", "lifesaver", "preserver", "raft", "rescue", "ring", "ship", "wheel"),
-        zhDisplayName = "进口",
-        categories = setOf(LucideIconCategory.Accessibility, LucideIconCategory.Medical),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Ligature = LucideIconMetadata(
-        key = LucideIconKey("ligature"),
-        displayName = "Ligature",
-        tags = setOf("alternates", "alternatives", "font", "text", "typography"),
-        zhDisplayName = "收件箱",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LightbulbOff = LucideIconMetadata(
-        key = LucideIconKey("lightbulb-off"),
-        displayName = "Lightbulb Off",
-        tags = setOf("lights"),
-        zhDisplayName = "印度卢比",
-        categories = setOf(LucideIconCategory.Photography),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Lightbulb = LucideIconMetadata(
-        key = LucideIconKey("lightbulb"),
-        displayName = "Lightbulb",
-        tags = setOf("bright", "idea", "lights"),
-        zhDisplayName = "无限",
-        categories = setOf(LucideIconCategory.Photography),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LineDotRightHorizontal = LucideIconMetadata(
-        key = LucideIconKey("line-dot-right-horizontal"),
-        displayName = "Line Dot Right Horizontal",
-        tags = setOf("code", "end", "last", "station", "stop", "version control", "waypoint"),
-        zhDisplayName = "信息",
-        categories = setOf(LucideIconCategory.Development, LucideIconCategory.Navigation),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LineSquiggle = LucideIconMetadata(
-        key = LucideIconKey("line-squiggle"),
-        displayName = "Line Squiggle",
-        tags = setOf("annotate", "art", "curve", "doodle", "draw", "gesture", "line", "pen", "road", "snakes", "stroke", "tool", "wave"),
-        zhDisplayName = "检查小组",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Math, LucideIconCategory.Shapes),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val LineStyle = LucideIconMetadata(
-        key = LucideIconKey("line-style"),
-        displayName = "Line Style",
-        tags = setOf("border", "dashed", "line", "stroke", "style"),
-        zhDisplayName = "斜体",
-        categories = setOf(LucideIconCategory.Design, LucideIconCategory.Tools),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Link2Off = LucideIconMetadata(
-        key = LucideIconKey("link-2-off"),
-        displayName = "Link 2 Off",
-        tags = setOf("chain", "unchain"),
-        zhDisplayName = "迭代CCW",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Link2 = LucideIconMetadata(
-        key = LucideIconKey("link-2"),
-        displayName = "Link 2",
-        tags = setOf("chain", "url"),
-        zhDisplayName = "迭代连续波",
-        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val Link = LucideIconMetadata(
-        key = LucideIconKey("link"),
-        displayName = "Link",
-        tags = setOf("chain", "url"),
-        zhDisplayName = "日元",
-        categories = setOf(LucideIconCategory.Account, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListCheck = LucideIconMetadata(
-        key = LucideIconKey("list-check"),
-        displayName = "List Check",
-        tags = setOf("bom", "check", "complete", "done", "list", "tick", "to-do"),
-        zhDisplayName = "操纵杆",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListChecks = LucideIconMetadata(
-        key = LucideIconKey("list-checks"),
-        displayName = "List Checks",
-        tags = setOf("check", "complete", "done", "items", "pending", "tasks", "tick", "todo"),
-        zhDisplayName = "看板",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListChevronsDownUp = LucideIconMetadata(
-        key = LucideIconKey("list-chevrons-down-up"),
-        displayName = "List Chevrons Down Up",
-        tags = setOf("accordion", "collapse", "details", "disclosure", "expand", "fold", "hide", "items", "less", "more", "options", "show", "toggle", "unfold", "vertical"),
-        zhDisplayName = "皮划艇",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListChevronsUpDown = LucideIconMetadata(
-        key = LucideIconKey("list-chevrons-up-down"),
-        displayName = "List Chevrons Up Down",
-        tags = setOf("accordion", "collapse", "details", "disclosure", "expand", "fold", "hide", "items", "less", "more", "options", "show", "toggle", "unfold", "vertical"),
-        zhDisplayName = "关键回合",
-        categories = setOf(LucideIconCategory.Arrows, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListCollapse = LucideIconMetadata(
-        key = LucideIconKey("list-collapse"),
-        displayName = "List Collapse",
-        tags = setOf("accordion", "collapse", "details", "disclosure", "expand", "fold", "hide", "items", "less", "more", "show", "toggle", "unfold"),
-        zhDisplayName = "基广场",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListEnd = LucideIconMetadata(
-        key = LucideIconKey("list-end"),
-        displayName = "List End",
-        tags = setOf("bottom", "end", "playlist", "queue"),
-        zhDisplayName = "钥匙",
-        categories = setOf(LucideIconCategory.Multimedia, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListFilterPlus = LucideIconMetadata(
-        key = LucideIconKey("list-filter-plus"),
-        displayName = "List Filter Plus",
-        tags = setOf("add", "filter", "options", "plus"),
-        zhDisplayName = "键盘音乐",
-        categories = setOf(LucideIconCategory.Layout, LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
-    val ListFilter = LucideIconMetadata(
-        key = LucideIconKey("list-filter"),
-        displayName = "List Filter",
-        tags = setOf("options"),
-        zhDisplayName = "键盘关闭",
-        categories = setOf(LucideIconCategory.Text),
-        defaultStrokeWidth = 2.0f,
-        sourceSet = IconSourceSet.BuiltIn,
-    )
-
     val values: List<LucideIconMetadata> = listOf(
+        Handshake,
+        HardDriveDownload,
+        HardDriveUpload,
+        HardDrive,
+        HardHat,
+        Hash,
+        HatGlasses,
+        Haze,
+        Hd,
+        HdmiPort,
+        Heading1,
+        Heading2,
+        Heading3,
+        Heading4,
+        Heading5,
+        Heading6,
+        Heading,
+        HeadphoneOff,
+        Headphones,
+        Headset,
+        HeartCrack,
+        HeartHandshake,
+        HeartMinus,
+        HeartOff,
+        HeartPlus,
         HeartPulse,
         HeartX,
         Heart,
@@ -1012,7 +1037,6 @@ internal object LucideGeneratedMetadataChunk8 {
         Helicopter,
         Hexagon,
         Highlighter,
-        History,
         HopOff,
         Hop,
         Hospital,
@@ -1069,41 +1093,17 @@ internal object LucideGeneratedMetadataChunk8 {
         Laptop,
         LassoSelect,
         Lasso,
-        Laugh,
+        LayerArrowDown,
+        LayerArrowUp,
         Layers2,
+        LayersArrowDown,
+        LayersArrowUp,
         LayersMinus,
         LayersPlus,
         Layers,
         LayoutDashboard,
+        LayoutFreeform,
         LayoutGrid,
-        LayoutList,
-        LayoutPanelLeft,
-        LayoutPanelTop,
-        LayoutTemplate,
-        Leaf,
-        LeafyGreen,
-        Lectern,
-        LensConcave,
-        LensConvex,
-        LibraryBig,
-        Library,
-        LifeBuoy,
-        Ligature,
-        LightbulbOff,
-        Lightbulb,
-        LineDotRightHorizontal,
-        LineSquiggle,
-        LineStyle,
-        Link2Off,
-        Link2,
-        Link,
-        ListCheck,
-        ListChecks,
-        ListChevronsDownUp,
-        ListChevronsUpDown,
-        ListCollapse,
-        ListEnd,
-        ListFilterPlus,
-        ListFilter
+        LayoutList
     )
 }

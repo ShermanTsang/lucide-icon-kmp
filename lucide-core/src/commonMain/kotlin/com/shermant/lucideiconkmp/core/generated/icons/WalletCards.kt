@@ -23,9 +23,9 @@ val WalletCards: ImageVector
 val LucideIcons.WalletCards: ImageVector
     get() = walletCardsProvider.create()
 
-private val walletCardsPath0 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
-private val walletCardsPath1 = PathParser().parsePathString("M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2").toNodes()
-private val walletCardsPath2 = PathParser().parsePathString("M3 11h3c.8 0 1.6.3 2.1.9l1.1.9c1.6 1.6 4.1 1.6 5.7 0l1.1-.9c.5-.5 1.3-.9 2.1-.9H21").toNodes()
+private val walletCardsPath0 = PathParser().parsePathString("M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21").toNodes()
+private val walletCardsPath1 = PathParser().parsePathString("M3 7h18").toNodes()
+private val walletCardsPath2 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 
 private fun buildWalletCards(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

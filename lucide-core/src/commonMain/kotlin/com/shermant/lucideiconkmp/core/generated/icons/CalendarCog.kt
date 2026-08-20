@@ -25,16 +25,16 @@ val LucideIcons.CalendarCog: ImageVector
 
 private val calendarCogPath0 = PathParser().parsePathString("m15.228 16.852-.923-.383").toNodes()
 private val calendarCogPath1 = PathParser().parsePathString("m15.228 19.148-.923.383").toNodes()
-private val calendarCogPath2 = PathParser().parsePathString("M16 2v4").toNodes()
+private val calendarCogPath2 = PathParser().parsePathString("M16 2v3").toNodes()
 private val calendarCogPath3 = PathParser().parsePathString("m16.47 14.305.382.923").toNodes()
 private val calendarCogPath4 = PathParser().parsePathString("m16.852 20.772-.383.924").toNodes()
 private val calendarCogPath5 = PathParser().parsePathString("m19.148 15.228.383-.923").toNodes()
 private val calendarCogPath6 = PathParser().parsePathString("m19.53 21.696-.382-.924").toNodes()
-private val calendarCogPath7 = PathParser().parsePathString("m20.772 16.852.924-.383").toNodes()
-private val calendarCogPath8 = PathParser().parsePathString("m20.772 19.148.924.383").toNodes()
-private val calendarCogPath9 = PathParser().parsePathString("M21 10.592V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6").toNodes()
-private val calendarCogPath10 = PathParser().parsePathString("M3 10h18").toNodes()
-private val calendarCogPath11 = PathParser().parsePathString("M8 2v4").toNodes()
+private val calendarCogPath7 = PathParser().parsePathString("m20.773 16.852.924-.383").toNodes()
+private val calendarCogPath8 = PathParser().parsePathString("m20.773 19.148.924.383").toNodes()
+private val calendarCogPath9 = PathParser().parsePathString("M21 10.5V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h5.5").toNodes()
+private val calendarCogPath10 = PathParser().parsePathString("M3 9h18").toNodes()
+private val calendarCogPath11 = PathParser().parsePathString("M8 2v3").toNodes()
 private val calendarCogPath12 = PathParser().parsePathString("M 21 18 A 3 3 0 1 0 15 18 A 3 3 0 1 0 21 18 Z").toNodes()
 
 private fun buildCalendarCog(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {

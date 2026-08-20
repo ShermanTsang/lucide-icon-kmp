@@ -23,8 +23,8 @@ val Option: ImageVector
 val LucideIcons.Option: ImageVector
     get() = optionProvider.create()
 
-private val optionPath0 = PathParser().parsePathString("M3 3h6l6 18h6").toNodes()
-private val optionPath1 = PathParser().parsePathString("M14 3h7").toNodes()
+private val optionPath0 = PathParser().parsePathString("M14 3h7").toNodes()
+private val optionPath1 = PathParser().parsePathString("M3 3h5.28a1 1 0 0 1 .948.684l5.544 16.632a1 1 0 0 0 .949.684H21").toNodes()
 
 private fun buildOption(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

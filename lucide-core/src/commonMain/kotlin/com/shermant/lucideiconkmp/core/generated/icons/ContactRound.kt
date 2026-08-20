@@ -24,10 +24,10 @@ val LucideIcons.ContactRound: ImageVector
     get() = contactRoundProvider.create()
 
 private val contactRoundPath0 = PathParser().parsePathString("M16 2v2").toNodes()
-private val contactRoundPath1 = PathParser().parsePathString("M17.915 22a6 6 0 0 0-12 0").toNodes()
+private val contactRoundPath1 = PathParser().parsePathString("M17.915 21a6 6 0 10-12 0").toNodes()
 private val contactRoundPath2 = PathParser().parsePathString("M8 2v2").toNodes()
-private val contactRoundPath3 = PathParser().parsePathString("M 16 12 A 4 4 0 1 0 8 12 A 4 4 0 1 0 16 12 Z").toNodes()
-private val contactRoundPath4 = PathParser().parsePathString("M 5 4 H 19 A 2 2 0 0 1 21 6 V 20 A 2 2 0 0 1 19 22 H 5 A 2 2 0 0 1 3 20 V 6 A 2 2 0 0 1 5 4 Z").toNodes()
+private val contactRoundPath3 = PathParser().parsePathString("M 16 11 A 4 4 0 1 0 8 11 A 4 4 0 1 0 16 11 Z").toNodes()
+private val contactRoundPath4 = PathParser().parsePathString("M 5 3 H 19 A 2 2 0 0 1 21 5 V 19 A 2 2 0 0 1 19 21 H 5 A 2 2 0 0 1 3 19 V 5 A 2 2 0 0 1 5 3 Z").toNodes()
 
 private fun buildContactRound(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp

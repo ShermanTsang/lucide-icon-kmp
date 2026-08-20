@@ -23,12 +23,12 @@ val CalendarArrowDown: ImageVector
 val LucideIcons.CalendarArrowDown: ImageVector
     get() = calendarArrowDownProvider.create()
 
-private val calendarArrowDownPath0 = PathParser().parsePathString("m14 18 4 4 4-4").toNodes()
-private val calendarArrowDownPath1 = PathParser().parsePathString("M16 2v4").toNodes()
-private val calendarArrowDownPath2 = PathParser().parsePathString("M18 14v8").toNodes()
-private val calendarArrowDownPath3 = PathParser().parsePathString("M21 11.354V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.343").toNodes()
-private val calendarArrowDownPath4 = PathParser().parsePathString("M3 10h18").toNodes()
-private val calendarArrowDownPath5 = PathParser().parsePathString("M8 2v4").toNodes()
+private val calendarArrowDownPath0 = PathParser().parsePathString("m14 17 4 4 4-4").toNodes()
+private val calendarArrowDownPath1 = PathParser().parsePathString("M16 2v3").toNodes()
+private val calendarArrowDownPath2 = PathParser().parsePathString("M18 13v8").toNodes()
+private val calendarArrowDownPath3 = PathParser().parsePathString("M21 10.354V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h7.343").toNodes()
+private val calendarArrowDownPath4 = PathParser().parsePathString("M3 9h18").toNodes()
+private val calendarArrowDownPath5 = PathParser().parsePathString("M8 2v3").toNodes()
 
 private fun buildCalendarArrowDown(parameters: IconRenderParameters = IconRenderParameters()): ImageVector {
     val iconSize = (parameters.size ?: 24.0f).dp
